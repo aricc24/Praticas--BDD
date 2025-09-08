@@ -1,12 +1,25 @@
-from utils.validators.validators import validate_integer, validate_string, validate_sexo, validate_input, validate_float
 from domain.entities.pokemon import Sexo
+from utils.validators.validators import validate_integer, validate_string, validate_sexo, validate_input, validate_float
 
 class PokemonHandler:
+    """
+    Clase encargada de manejar las operaciones relacionadas con los Pokémon del lado del usuario.
+    """
+
     def __init__(self, pokemon_service):
+        """
+        Inicializa el handler con un servicio de Pokémon.
+
+        Args:
+            pokemon_service: Servicio de Pokémon.
+        """
         self.pokemon_service = pokemon_service
 
 
-    def add_pokemon(self):
+    def add_pokemon(self) -> None:
+        """
+        Maneja la adición de un nuevo Pokémon.
+        """
         print("Agregar Pokémon")
         nombre = validate_input(input("Nombre: "), validate_string, "Nombre")
         especie = validate_input(input("Especie: "), validate_string, "Especie")
@@ -21,7 +34,10 @@ class PokemonHandler:
         except Exception as e:
             print(f"Error al crear el Pokémon: {e}")
 
-    def retrieve_pokemon(self):
+    def retrieve_pokemon(self) -> None:
+        """
+        Maneja la consulta de un Pokémon existente por su ID.
+        """
         print("Consultar Pokémon")
         pokemon_id = validate_input(input("ID del Pokémon: "), validate_integer, "ID")
         try:
@@ -34,7 +50,10 @@ class PokemonHandler:
         except Exception as e:
             print(f"Error al consultar el Pokémon: {e}")
 
-    def delete_pokemon(self):
+    def delete_pokemon(self) -> None:
+        """
+        Maneja la eliminación de un Pokémon existente por su ID.
+        """
         print("Eliminar Pokémon")
         pokemon_id = validate_input(input("ID del Pokémon a eliminar: "), validate_integer, "ID")
         try:
@@ -43,7 +62,10 @@ class PokemonHandler:
         except Exception as e:
             print(f"Error al eliminar el Pokémon: {e}")
 
-    def update_pokemon(self):
+    def update_pokemon(self) -> None:
+        """
+        Maneja la actualización de un Pokémon existente por su ID.
+        """
         print("Editar Pokémon")
         pokemon_id = validate_integer(input("ID del Pokémon a editar: "), "ID")
         try:
@@ -53,35 +75,35 @@ class PokemonHandler:
             return
 
         nombre = validate_input(
-            input(f"Nombre [{pokemon.nombre}]: "),
-            lambda x, y: validate_string(x, y) if x.strip() else pokemon.nombre,
-            "Nombre"
-        )
+                    input(f"Nombre [{pokemon.nombre}]: "),
+                    lambda x, y: validate_string(x, y) if x.strip() else pokemon.nombre,
+                    "Nombre"
+                )
         especie = validate_input(
-            input(f"Especie [{pokemon.especie}]: "),
-            lambda x, y: validate_string(x, y) if x.strip() else pokemon.especie,
-            "Especie"
-        )
+                    input(f"Especie [{pokemon.especie}]: "),
+                    lambda x, y: validate_string(x, y) if x.strip() else pokemon.especie,
+                    "Especie"
+                )
         tipo = validate_input(
-            input(f"Tipo [{pokemon.tipo}]: "),
-            lambda x, y: validate_string(x, y) if x.strip() else pokemon.tipo,
-            "Tipo"
-        )
+                    input(f"Tipo [{pokemon.tipo}]: "),
+                    lambda x, y: validate_string(x, y) if x.strip() else pokemon.tipo,
+                    "Tipo"
+                )
         cp = validate_input(
-            input(f"CP [{pokemon.cp}]: "),
-            lambda x, y: validate_integer(x, y) if x.strip() else pokemon.cp,
-            "CP"
-        )
+                    input(f"CP [{pokemon.cp}]: "),
+                    lambda x, y: validate_integer(x, y) if x.strip() else pokemon.cp,
+                    "CP"
+                )
         peso = validate_input(
-            input(f"Peso [{pokemon.peso}]: "),
-            lambda x, y: float(x) if x.strip() else pokemon.peso,
-            "Peso"
-        )
+                    input(f"Peso [{pokemon.peso}]: "),
+                    lambda x, y: float(x) if x.strip() else pokemon.peso,
+                    "Peso"
+                )
         sexo = validate_input(
-            input(f"Sexo (M/F/O) [{pokemon.sexo.value}]: "),
-            lambda x, y: validate_sexo(x, y) if x.strip() else pokemon.sexo,
-            "Sexo"
-        )
+                    input(f"Sexo (M/F/O) [{pokemon.sexo.value}]: "),
+                    lambda x, y: validate_sexo(x, y) if x.strip() else pokemon.sexo,
+                    "Sexo"
+                )
         shiny_input = input(f"Shiny (s/n) [{pokemon.shiny}]: ").strip()
         shiny = pokemon.shiny if shiny_input == "" else shiny_input.lower() == "s"
 

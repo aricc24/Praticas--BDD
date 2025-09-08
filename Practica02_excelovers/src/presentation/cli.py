@@ -16,7 +16,24 @@ from presentation.handlers.pokemon_handler import PokemonHandler
 from presentation.menu import Menu
 
 class CLI:
+    """
+    Interfaz de Línea de Comandos (CLI) para la aplicación.
+    Permite a los usuarios interactuar con el sistema para gestionar Participantes, Cuentas y Pokémon.
+
+    Attributes:
+        running (bool): Indica si la aplicación está en ejecución.
+        participant_service (ParticipanteService): Servicio para gestionar participantes.
+        cuenta_service (CuentaService): Servicio para gestionar cuentas.
+        pokemon_service (PokemonService): Servicio para gestionar Pokémon.
+        participante_handler (ParticipanteHandler): Handler para operaciones de participantes.
+        cuenta_handler (CuentaHandler): Handler para operaciones de cuentas.
+        pokemon_handler (PokemonHandler): Handler para operaciones de Pokémon.
+        handlers (dict): Diccionario que mapea combinaciones de consultas y entidades a sus respectivos handlers.
+    """
     def __init__(self):
+        """
+        Inicializa la CLI y sus componentes.
+        """
         self.running = True
         # Servicios
         self.participant_service = ParticipanteService(ParticipanteRepositoryCSV('data/participants.csv'))
