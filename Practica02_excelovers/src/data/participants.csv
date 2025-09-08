@@ -1,2 +1,2 @@
-nombre,apellido_pat,apellido_mat,fecha_nac,edad,sexo,telefonos,correos,numero_cuenta,facultad,carrera
-José Antonio,Zarco,Romero,14-03-2005,20,M,5571389922;5523232344,yo@correo.com;correo@gmail.com,321100223,Ciencias,Computación
+numero_cuenta,nombre,apellido_pat,apellido_mat,fecha_nac,sexo,telefonos,correos,facultad,carrera
+321111111,Antonio,Zarco,Romero,14-03-2005,M,5511111111,ola@correo.com,ciencias,computación
