@@ -42,12 +42,7 @@ class CLI:
                 break
             except ValueError as ve:
                 print(f"Error: {ve}")
-        while True:
-            try:
-                edad = validate_integer(input("Ingrese la edad: "), "Edad")
-                break
-            except ValueError as ve:
-                print(f"Error: {ve}")
+       
         while True:
             try:
                 numero_cuenta = validate_integer(input("Ingrese el número de cuenta: "), "Número de Cuenta")
@@ -87,7 +82,7 @@ class CLI:
                 print(f"Error: {ve}")
 
         participante = self.participant_service.add_participante(
-            nombre, apellido_pat, apellido_mat, fecha_nac, edad, sexo, telefonos, correos, numero_cuenta, facultad, carrera
+            nombre, apellido_pat, apellido_mat, fecha_nac, sexo, telefonos, correos, numero_cuenta, facultad, carrera
         )
         if participante:
             print("Participante agregado exitosamente.")
@@ -138,21 +133,20 @@ class CLI:
         print("2. Apellido Paterno")
         print("3. Apellido Materno")
         print("4. Fecha de Nacimiento")
-        print("5. Edad")
-        print("6. Sexo")
-        print("7. Teléfonos")
-        print("8. Correos")
-        print("9. Número de Cuenta")
-        print("10. Facultad")
-        print("11. Carrera")
-        print("12. Cancelar")
+        print("5. Sexo")
+        print("6. Teléfonos")
+        print("7. Correos")
+        print("8. Número de Cuenta")
+        print("9. Facultad")
+        print("10. Carrera")
+        print("11. Cancelar")
         while True:
             try:
                 choice = validate_integer(input("Ingrese el número del campo a modificar: "), "Opción")
-                if choice == 12:
+                if choice == 11:
                     print("Modificación cancelada.")
                     return
-                if choice < 1 or choice > 12:
+                if choice < 1 or choice > 11:
                     raise ValueError("Opción inválida.")
                 break
             except ValueError as ve:
@@ -162,13 +156,12 @@ class CLI:
             2: "apellido_pat",
             3: "apellido_mat",
             4: "fecha_nac",
-            5: "edad",
-            6: "sexo",
-            7: "telefonos",
-            8: "correos",
-            9: "numero_cuenta",
-            10: "facultad",
-            11: "carrera"
+            5: "sexo",
+            6: "telefonos",
+            7: "correos",
+            8: "numero_cuenta",
+            9: "facultad",
+            10: "carrera"
         }
         field_name = field_map[choice]
         while True:
@@ -177,7 +170,7 @@ class CLI:
                     new_value = validate_string(input(f"Ingrese el nuevo valor para {field_name}: "), field_name)
                 elif field_name == "fecha_nac":
                     new_value = validate_date(input(f"Ingrese el nuevo valor para {field_name} (DD-MM-YYYY): "), field_name)
-                elif field_name in ["edad", "numero_cuenta"]:
+                elif field_name in ["numero_cuenta"]:
                     new_value = validate_integer(input(f"Ingrese el nuevo valor para {field_name}: "), field_name)
                 elif field_name == "sexo":
                     new_value = validate_sexo(input(f"Ingrese el nuevo valor para {field_name} (M/F/O): "), field_name)
@@ -191,7 +184,7 @@ class CLI:
                 break
             except ValueError as ve:
                 print(f"Error: {ve}")
-        modificado = self.participant_service.update_participante(numero_cuenta, **{field_name: new_value})
+        modificado = self.participant_service.update_participante(numero_cuenta, field_name, new_value)
         if modificado:
             print("Participante modificado exitosamente.")
         else:

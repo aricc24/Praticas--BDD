@@ -2,12 +2,13 @@ from domain.repositories.i_participante_repository import IParticipanteRepositor
 
 from domain.entities.participante import Participante
 
+from datetime import datetime
 class ParticipanteService:
     def __init__(self, repository: IParticipanteRepository):
         self.repository = repository
 
     def add_participante(self, nombre: str, apellido_pat: str, apellido_mat: str, fecha_nac: str,
-                         edad: int, sexo: str, telefonos: list[int], correos: list[str],
+                         sexo: str, telefonos: list[int], correos: list[str],
                          numero_cuenta: int, facultad: str, carrera: str) -> None:
         # revisasi ya estaba
         participante = Participante(
@@ -15,7 +16,6 @@ class ParticipanteService:
             apellido_pat=apellido_pat,
             apellido_mat=apellido_mat,
             fecha_nac=fecha_nac,
-            edad=edad,
             sexo=sexo,
             telefonos=telefonos,
             correos=correos,
@@ -29,15 +29,21 @@ class ParticipanteService:
     def get_by_numero_cuenta(self, numero_cuenta: int) -> Participante:
         return self.repository.get_by_numero_cuenta(numero_cuenta)
 
-    def update_participante(self, numero_cuenta: int, **updates) -> bool:
+    def update_participante(self, numero_cuenta: int, field:str, val:str) -> bool:
        
         participante = self.repository.get_by_numero_cuenta(numero_cuenta)
        
         if not participante:
             return False
-        for key, value in updates.items():
-            if hasattr(participante, key):
-                setattr(participante, key, value)
+        if field == "numero_cuenta":
+            self.delete_participante(participante.numero_cuenta)
+            participante.numero_cuenta = val
+            self.repository.save(participante)
+            return True
+        
+        if hasattr(participante, field):
+            setattr(participante, field, val)
+        print(participante.__dict__)
         self.repository.update(participante)
         return True
 
