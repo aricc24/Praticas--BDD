@@ -6,7 +6,6 @@ Define el contrato para el acceso a datos de las cuentas.
 from abc import ABC, abstractmethod
 from domain.entities.cuenta import Cuenta
 
-
 class ICuentaRepository(ABC):
     """
     Interfaz del repositorio de Cuentas.
@@ -28,7 +27,7 @@ class ICuentaRepository(ABC):
         pass
 
     @abstractmethod
-    def find_by_nombre_usuario(self, codigo_entrenador: int) -> Cuenta | None:
+    def find_by_codigo_entrenador(self, codigo_entrenador: int) -> Cuenta | None:
         """
         Busca una cuenta en el repositorio a partir de su código de entrenador.
 

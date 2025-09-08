@@ -1,3 +1,4 @@
+from domain.entities.enums.equipo_cuenta import EquipoCuenta
 import re
 
 def validate_integer(value: str, field_name: str) -> int:
@@ -38,6 +39,24 @@ def validate_string(value: str, field_name: str) -> str:
         raise ValueError(f"{field_name} debe ser una cadena no vacía.")
     return value.strip()
 
+def validate_equipo(value: str, field_name: str) -> EquipoCuenta:
+    """
+    Valida que el valor corresponda a un equipo válido de EquipoCuenta.
+
+    Args:
+        value (str): El valor a validar.
+
+    Returns:
+        EquipoCuenta: El equipo correspondiente a la entrada.
+
+    Raises:
+        ValueError: Si el valor no corresponde a ningún equipo válido.
+    """
+    try:
+        return EquipoCuenta[value.strip().upper()]
+    except KeyError:
+        valid_teams = ', '.join([team.name for team in EquipoCuenta])
+        raise ValueError(f"{field_name} debe ser uno de los siguientes: {valid_teams}.")
 def validate_date(value: str, field_name: str) -> str:
     """
     Valida que el valor sea una fecha en formato DD-MM-YYYY.

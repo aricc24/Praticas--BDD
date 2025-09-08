@@ -11,3 +11,10 @@ class ValidationException(Exception):
     Indica que los datos no cumplen con los criterios esperados.
     """
     pass
+
+class IOException(Exception):
+    """
+    Excepción de entrada/salida. 
+    Indica que ocurrió un error durante una operación de E/S.
+    """
+    pass
