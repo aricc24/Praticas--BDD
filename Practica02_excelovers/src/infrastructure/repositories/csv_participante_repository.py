@@ -33,7 +33,7 @@ class ParticipanteRepositoryCSV(IParticipanteRepository):
     def update(self, p: Participante): 
         try:
             df = self.file_handler.read_data()
-            index = df.index[df['numero_cuenta'] == p.numero_cuenta].tolist()
+            index = df.index[df['numero_cuenta'] == int(p.numero_cuenta)].tolist()
             if index:
                 df.loc[index[0]] = p.to_dict()
                 self.file_handler.write_data(df)

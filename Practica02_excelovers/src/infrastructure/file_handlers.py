@@ -43,7 +43,18 @@ class CSVFileHandler:
             IOException: Si ocurre un error al leer el archivo CSV.
         """
         try:
-            return pd.read_csv(self.file_path)
+            return pd.read_csv(self.file_path,  dtype={
+                "numero_cuenta": int,  
+                "telefonos": str,
+                "correos": str,
+                "nombre": str,
+                "apellido_pat": str,
+                "apellido_mat": str,
+                "sexo": str,
+                "facultad": str,
+                "carrera": str,
+                "fecha_nac":str
+            })
         except Exception as e:
             raise IOException(f"Error al leer el archivo CSV: {e}")
 
