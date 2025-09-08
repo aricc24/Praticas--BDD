@@ -250,4 +250,4 @@ class CLI:
                     continue
                 self.handle_choice(choice, entity)
             except Exception as e:
-                print(f"Error inesperado: {e}")
+                print(f"Upsi!: {e}")

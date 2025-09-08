@@ -64,13 +64,3 @@ class IParticipanteRepository(ABC):
             None
         """
         pass
-
-    @abstractmethod
-    def all(self) -> list[Participante]: 
-        """
-        Recupera todos los participantes del repositorio.
-
-        Returns:
-            list[Participante]: Una lista de todos los participantes.
-        """
-        pass

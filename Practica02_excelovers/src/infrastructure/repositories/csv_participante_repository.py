@@ -50,10 +50,3 @@ class ParticipanteRepositoryCSV(IParticipanteRepository):
             print(f"Error al eliminar el participante: {e}")
             raise e
 
-    def all(self) -> list[Participante]:
-        try:
-            df = self.file_handler.read_data()
-            return [Participante.from_dict(row.to_dict()) for _, row in df.iterrows()]
-        except Exception as e:
-            print(f"Error al obtener todos los participantes: {e}")
-            raise e

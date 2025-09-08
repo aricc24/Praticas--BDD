@@ -10,7 +10,9 @@ class ParticipanteService:
     def add_participante(self, nombre: str, apellido_pat: str, apellido_mat: str, fecha_nac: str,
                          sexo: str, telefonos: list[int], correos: list[str],
                          numero_cuenta: int, facultad: str, carrera: str) -> None:
-        # revisasi ya estaba
+        participante = self.repository.get_by_numero_cuenta(numero_cuenta)
+        if participante:
+            raise ValueError(f"El participante con número de cuenta {numero_cuenta} ya existe.")
         participante = Participante(
             nombre=nombre,
             apellido_pat=apellido_pat,

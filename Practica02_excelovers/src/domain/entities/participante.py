@@ -16,7 +16,6 @@ class Participante:
         self.apellido_pat = apellido_pat
         self.apellido_mat = apellido_mat
         self.fecha_nac = fecha_nac
-        # calcula edad
         self.edad = self.calcular_edad()
         self.sexo = sexo
         self.telefonos = telefonos or []
