@@ -1,4 +1,2 @@
 nombre,apellido_pat,apellido_mat,fecha_nac,edad,sexo,telefonos,correos,numero_cuenta,facultad,carrera
-a,a,a,,1,,,,1,a,a
-Juan,Pérez,Ruíz,,45,,,,321012345,Derecho,Derecho
-Fer,Peralta,Urrutia,11-01-1970,55,M,5512345678,fer@correo.com.mx,123456789,medicina,cirujano
+José Antonio,Zarco,Romero,14-03-2005,20,M,5571389922;5523232344,yo@correo.com;correo@gmail.com,321100223,Ciencias,Computación

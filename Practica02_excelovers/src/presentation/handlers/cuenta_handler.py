@@ -1,10 +1,23 @@
 from utils.validators.validators import validate_integer, validate_string, validate_equipo, validate_input
 
 class CuentaHandler:
+    """
+    Clase encargada de manejar las operaciones relacionadas con las cuentas del lado del usuario.
+
+    """
     def __init__(self, cuenta_service):
+        """
+        Inicializa el handler con un servicio de cuentas.
+
+        Args:
+            cuenta_service: Servicio de cuentas.
+        """
         self.cuenta_service = cuenta_service
 
-    def add_cuenta(self):
+    def add_cuenta(self) -> None:
+        """
+        Maneja la adición de una nueva cuenta.
+        """
         print("Agregar Cuenta")
         codigo = validate_integer(input("Código entrenador: "), "Código")
         usuario = validate_string(input("Usuario: "), "Usuario")
@@ -16,7 +29,10 @@ class CuentaHandler:
         except Exception as e:
             print(f"Error al crear la cuenta: {e}")
 
-    def retrieve_cuenta(self):
+    def retrieve_cuenta(self) -> None:
+        """
+        Maneja la consulta de una cuenta existente por su código.
+        """
         print("Consultar Cuenta")
         codigo = validate_integer(input("Código entrenador: "), "Código")
         try:
@@ -29,7 +45,10 @@ class CuentaHandler:
         except Exception as e:
             print(f"Error al consultar la cuenta: {e}")
 
-    def delete_cuenta(self):
+    def delete_cuenta(self) -> None:
+        """
+        Maneja la eliminación de una cuenta existente por su código.
+        """
         print("Eliminar Cuenta")
         codigo = validate_integer(input("Código entrenador a eliminar: "), "Código")
         try:
@@ -37,7 +56,10 @@ class CuentaHandler:
         except Exception as e:
             print(f"Error al eliminar la cuenta: {e}")
 
-    def update_cuenta(self):
+    def update_cuenta(self) -> None:
+        """
+        Maneja la actualización de una cuenta existente por su código.
+        """
         print("Editar Cuenta")
         codigo = validate_integer(input("Código de entrenador a editar: "), "Código")
         try:
@@ -45,9 +67,21 @@ class CuentaHandler:
         except Exception as e:
             print(f"No se encontró la cuenta: {e}")
             return
-        usuario = validate_input(input(f"Usuario [{cuenta.nombre_usuario}]: "), lambda x, y: validate_string(x, y) if x.strip() else cuenta.nombre_usuario, "Usuario")
-        nivel = validate_input(input(f"Nivel [{cuenta.nivel_entrenador}]: "), lambda x, y: validate_integer(x, y) if x.strip() else cuenta.nivel_entrenador, "Nivel")
-        equipo = validate_input(input(f"Equipo (Sabiduría, Instinto, Valor) [{cuenta.equipo.value}]: "), lambda x, y: validate_equipo(x, y) if x.strip() else cuenta.equipo, "Equipo")
+        usuario = validate_input(
+                    input(f"Usuario [{cuenta.nombre_usuario}]: "), 
+                    lambda x, y: validate_string(x, y) if x.strip() else cuenta.nombre_usuario, 
+                    "Usuario"
+                )
+        nivel = validate_input(
+                    input(f"Nivel [{cuenta.nivel_entrenador}]: "), 
+                    lambda x, y: validate_integer(x, y) if x.strip() else cuenta.nivel_entrenador, 
+                    "Nivel"
+                )
+        equipo = validate_input(
+                    input(f"Equipo (Sabiduría, Instinto, Valor) [{cuenta.equipo.value}]: "), 
+                    lambda x, y: validate_equipo(x, y) if x.strip() else cuenta.equipo, 
+                    "Equipo"
+                )
         try:
             cuenta_actualizada = self.cuenta_service.update_cuenta(
                 codigo,

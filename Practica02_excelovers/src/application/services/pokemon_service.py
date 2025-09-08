@@ -1,7 +1,7 @@
 from domain.entities.pokemon import Pokemon
 from domain.entities.enums.sexo import Sexo
 from domain.repositories.i_pokemon_repository import IPokemonRepository
-from utils.exceptions.exceptions import EntityNotFoundException, ValidationException
+from utils.exceptions.exceptions import EntityNotFoundException
 
 class PokemonService:
     """

@@ -223,7 +223,7 @@ class Pokemon:
             "tipo": self._tipo,
             "cp": self._cp,
             "peso": self._peso,
-            'sexo': self.sexo.value if self.sexo else "",
+            'sexo': self.sexo.value if isinstance(self.sexo, Sexo) else str(self.sexo),
             "shiny": self._shiny
         }
     
