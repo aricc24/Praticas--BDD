@@ -79,3 +79,17 @@ class CSVFileHandler:
             self.write_data(df)
         except Exception as e:
             raise IOException(f"Error al agregar datos al archivo CSV: {e}")
+
+    def lookup(self, key: str, value) -> pd.DataFrame:
+        """
+        Busca registros en el CSV donde la columna `key` tenga el valor `value`.
+
+        Args:
+            key (str): Nombre de la columna para buscar.
+            value: Valor a buscar en la columna.
+
+        Returns:
+            pd.DataFrame: DataFrame con los registros que coinciden.
+        """
+        df = self.read_data()
+        return df[df[key] == value]

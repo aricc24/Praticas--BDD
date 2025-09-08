@@ -27,7 +27,7 @@ class IParticipanteRepository(ABC):
         pass
 
     @abstractmethod
-    def find_by_numero_cuenta(self, participante_id: int) -> Participante | None: 
+    def get_by_numero_cuenta(self, participante_id: int) -> Participante | None: 
         """
         Busca un participante por su número de cuenta.
 
