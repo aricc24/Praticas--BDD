@@ -1,2 +1,4 @@
 numero_cuenta,nombre,apellido_pat,apellido_mat,fecha_nac,sexo,telefonos,correos,facultad,carrera
-321111111,Antonio,Zarco,Romero,14-03-2005,M,5511111111,ola@correo.com,ciencias,computación
+2,Ariadna,Garcia,,,,,,,
+321256870,Ariadna,García,Díaz,24-11-2005,F,5562233778,aricc24@gmail.com,Ciencias,CC
+333333333,Lara,Guillen,Gilabert,15-07-2005,F,55124324234,lara@gmail.com,Ciencias,CC

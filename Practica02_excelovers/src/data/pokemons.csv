@@ -1,2 +1,3 @@
 pokemon_id,nombre,especie,tipo,cp,peso,sexo,shiny
 1,pikachu,nose,nose,1234,42331.4,O,False
+2,H,Lol,No se,23123,13.0,M,True
