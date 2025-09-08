@@ -2,8 +2,13 @@ from enum import Enum
 
 class EquipoCuenta(Enum):
     """
-    Enum para los equipos disponibles para una cuenta
+    Enumeración de los equipos disponibles en Pokémon Go para una cuenta.
+
+    Attributes:
+        SABIDURIA (str): Representa al equipo Sabiduría.
+        INSTINTO (str): Representa al equipo Instinto.
+        VALOR (str): Representa al equipo Valor.
     """
     SABIDURIA = "Sabiduría"
     INSTINTO = "Instinto"
-    VALOR  = "Valor"
+    VALOR = "Valor"
