@@ -121,3 +121,20 @@ class Cuenta:
             "nivel_entrenador": self._nivel_entrenador,
             "equipo": self._equipo.value
         }
+    
+    def from_dict(data: dict) -> 'Cuenta':
+        """
+        Crea una instancia de Cuenta a partir de un diccionario.
+
+        Args:
+            data (dict): Diccionario con los atributos de la cuenta.
+
+        Returns:
+            Cuenta: Instancia de Cuenta creada a partir del diccionario.
+        """
+        return Cuenta(
+            _codigo_entrenador=data["codigo_entrenador"],
+            _nombre_usuario=data["nombre_usuario"],
+            _nivel_entrenador=data["nivel_entrenador"],
+            _equipo=EquipoCuenta(data["equipo"])
+        )
