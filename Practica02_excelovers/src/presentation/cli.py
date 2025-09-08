@@ -90,9 +90,113 @@ class CLI:
         else:
             print("Error al agregar el participante.")
 
+    def update_participant(self):
+        print("¿A quien quieres modificar?")
+        while True:
+            try:
+                numero_cuenta = validate_integer(input("Ingrese el número de cuenta del participante a modificar: "), "Número de Cuenta")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+    
+        print(f"¿Qué campo deseas modificar ?")
+        print("1. Nombre")
+        print("2. Apellido Paterno")
+        print("3. Apellido Materno")
+        print("4. Fecha de Nacimiento")
+        print("5. Edad")
+        print("6. Sexo")
+        print("7. Teléfonos")
+        print("8. Correos")
+        print("9. Número de Cuenta")
+        print("10. Facultad")
+        print("11. Carrera")
+        print("12. Cancelar")
+        while True:
+            try:
+                choice = validate_integer(input("Ingrese el número del campo a modificar: "), "Opción")
+                if choice == 12:
+                    print("Modificación cancelada.")
+                    return
+                if choice < 1 or choice > 12:
+                    raise ValueError("Opción inválida.")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        field_map = {
+            1: "nombre",
+            2: "apellido_pat",
+            3: "apellido_mat",
+            4: "fecha_nac",
+            5: "edad",
+            6: "sexo",
+            7: "telefonos",
+            8: "correos",
+            9: "numero_cuenta",
+            10: "facultad",
+            11: "carrera"
+        }
+        field_name = field_map[choice]
+        while True:
+            try:
+                if field_name in ["nombre", "apellido_pat", "apellido_mat", "facultad", "carrera"]:
+                    new_value = validate_string(input(f"Ingrese el nuevo valor para {field_name}: "), field_name)
+                elif field_name == "fecha_nac":
+                    new_value = validate_date(input(f"Ingrese el nuevo valor para {field_name} (DD-MM-YYYY): "), field_name)
+                elif field_name in ["edad", "numero_cuenta"]:
+                    new_value = validate_integer(input(f"Ingrese el nuevo valor para {field_name}: "), field_name)
+                elif field_name == "sexo":
+                    new_value = validate_sexo(input(f"Ingrese el nuevo valor para {field_name} (M/F/O): "), field_name)
+                elif field_name == "telefonos":
+                    new_value = validate_int_list(input(f"Ingrese los nuevos teléfonos (separados por comas): "), field_name)
+                elif field_name == "correos":
+                    new_value = validate_list(input(f"Ingrese los nuevos correos (separados por comas): "), field_name)
+                else:
+                    print("Campo no válido.")
+                    return
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        modificado = self.participant_service.update_participante(numero_cuenta, **{field_name: new_value})
+        if modificado:
+            print("Participante modificado exitosamente.")
+        else:
+            print("Participante no encontrado.")
+
+    def delete_participant(self):
+        while True:
+            try:
+                numero_cuenta = validate_integer(input("Ingrese el número de cuenta del participante a eliminar: "), "Número de Cuenta")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        eliminado = self.participant_service.delete_participante(numero_cuenta)
+        if eliminado:
+            print("Participante eliminado")
+        else:
+            print("Participante no encontrado")
+
+    def retrieve_participant(self):
+        while True:
+            try:
+                numero_cuenta = validate_integer(input("Ingrese el número de cuenta del participante a consultar: "), "Número de Cuenta")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        participante = self.participant_service.get_by_numero_cuenta(numero_cuenta)
+        if participante:
+            print("Información del Participante:")
+            for key, value in participante.to_dict().items():
+                print(f"{key}: {value}")
+        else:
+            print("Participante no encontrado.")
+        
     def handle_choice(self, choice: Consultas, entity: Entidades):
         handlers = {
             (Consultas.AGREGAR, Entidades.PARTICIPANTE): self.add_participant,
+            (Consultas.EDITAR, Entidades.PARTICIPANTE): self.update_participant,
+            (Consultas.ELIMINAR, Entidades.PARTICIPANTE): self.delete_participant,
+            (Consultas.CONSULTAR, Entidades.PARTICIPANTE): self.retrieve_participant, 
         }
         handler = handlers.get((choice, entity))
         if handler:

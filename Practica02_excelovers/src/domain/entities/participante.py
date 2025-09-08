@@ -42,3 +42,25 @@ class Participante:
             'facultad': self.facultad,
             'carrera': self.carrera
         }
+
+    def from_dict(data: dict) -> 'Participante':
+       
+        telefonos_raw = data.get('telefonos', [])
+        correos_raw = data.get('correos', [])
+
+        telefonos = [int(t) for t in (telefonos_raw.split(';') if isinstance(telefonos_raw, str) else [telefonos_raw])]
+        correos = [str(c) for c in (correos_raw.split(';') if isinstance(correos_raw, str) else [correos_raw])]
+
+        return Participante(
+            nombre=data.get('nombre', ''),
+            apellido_pat=data.get('apellido_pat', ''),
+            apellido_mat=data.get('apellido_mat', ''),
+            fecha_nac=data.get('fecha_nac', ''),
+            edad=int(data.get('edad', 0)),
+            sexo=data.get('sexo', ''),
+            telefonos=telefonos,
+            correos=correos,
+            numero_cuenta=int(data.get('numero_cuenta', 0)),
+            facultad=data.get('facultad', ''),
+            carrera=data.get('carrera', '')
+        )

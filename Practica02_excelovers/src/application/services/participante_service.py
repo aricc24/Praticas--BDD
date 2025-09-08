@@ -25,3 +25,25 @@ class ParticipanteService:
         )
         self.repository.save(participante)
         return participante
+
+    def get_by_numero_cuenta(self, numero_cuenta: int) -> Participante:
+        return self.repository.get_by_numero_cuenta(numero_cuenta)
+
+    def update_participante(self, numero_cuenta: int, **updates) -> bool:
+       
+        participante = self.repository.get_by_numero_cuenta(numero_cuenta)
+       
+        if not participante:
+            return False
+        for key, value in updates.items():
+            if hasattr(participante, key):
+                setattr(participante, key, value)
+        self.repository.update(participante)
+        return True
+
+    def delete_participante(self, numero_cuenta: int) -> bool:
+        participante = self.repository.get_by_numero_cuenta(numero_cuenta)
+        if not participante:
+            return False
+        self.repository.delete(numero_cuenta)
+        return True

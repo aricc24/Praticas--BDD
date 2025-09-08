@@ -37,3 +37,7 @@ class CSVFileHandler:
         except Exception as e:
             print(f"Error al agregar datos al archivo CSV: {e}")
             raise e # crear excepcioon
+
+    def lookup(self, key: str, value) -> pd.DataFrame:
+        df = self.read_data()
+        return df[df[key] == value]
