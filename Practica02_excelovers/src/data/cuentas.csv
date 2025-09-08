@@ -1,4 +1,5 @@
 codigo_entrenador,nombre_usuario,nivel_entrenador,equipo
-123,Pancho,1,Valor
+123,Pancho,10,Sabiduría
 1234,Luis,55,Valor
-99,juan,7,Valor
+99,juan,7,Sabiduría
+15,alex,2,Instinto

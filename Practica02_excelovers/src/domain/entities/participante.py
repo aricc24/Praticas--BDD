@@ -141,8 +141,8 @@ class Participante:
 
     @staticmethod
     def from_dict(data: dict) -> 'Participante':
-        telefonos_raw = data.get('telefonos', "")
-        correos_raw = data.get('correos', "")
+        telefonos_raw = str(data.get('telefonos') or "")
+        correos_raw = str(data.get('correos') or "")
 
         if isinstance(telefonos_raw, str):
             telefonos = [int(t) for t in telefonos_raw.split(';') if t]

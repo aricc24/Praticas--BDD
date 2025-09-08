@@ -1,8 +1,3 @@
-"""
-Cuenta Repository Interface.
-Define el contrato para el acceso a datos de las cuentas.
-"""
-
 from abc import ABC, abstractmethod
 from domain.entities.cuenta import Cuenta
 

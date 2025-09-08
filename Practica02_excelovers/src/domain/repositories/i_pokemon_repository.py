@@ -1,11 +1,5 @@
-"""
-Pokémon Repository Interface.
-Define el contrato para el acceso a datos de los Pokémon.
-"""
-
 from abc import ABC, abstractmethod
 from domain.entities.pokemon import Pokemon
-
 
 class IPokemonRepository(ABC):
     """

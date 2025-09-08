@@ -1,5 +1,3 @@
-import pandas as pd
-
 from domain.entities.cuenta import Cuenta
 from domain.repositories.i_cuenta_repository import ICuentaRepository
 from infrastructure.file_handlers import CSVFileHandler
