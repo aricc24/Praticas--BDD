@@ -1,10 +1,18 @@
 from domain.repositories.i_participante_repository import IParticipanteRepository
-
 from domain.entities.participante import Participante
 
-from datetime import datetime
 class ParticipanteService:
+    """
+    Servicio para los participantes
+    Permite guardar, obtener, modificar y eliminar participantes.
+    """
     def __init__(self, repository: IParticipanteRepository):
+        """
+        Inicializa el servicio con un repositorio de participantes.
+
+        Args:
+            repository (IParticipanteRepository): Repositorio de participantes.
+        """
         self.repository = repository
 
     def add_participante(self, nombre: str, apellido_pat: str, apellido_mat: str, fecha_nac: str,
@@ -45,7 +53,7 @@ class ParticipanteService:
         
         if hasattr(participante, field):
             setattr(participante, field, val)
-        print(participante.__dict__)
+
         self.repository.update(participante)
         return True
 

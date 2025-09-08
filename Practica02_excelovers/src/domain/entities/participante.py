@@ -1,4 +1,3 @@
-
 from typing import List, Optional, Union
 from datetime import datetime, date
 from domain.entities.enums.sexo import Sexo
@@ -6,17 +5,16 @@ from datetime import datetime, date
 
 
 class Participante:
-    def __init__(self, nombre: str, apellido_pat: str, apellido_mat: str,
+    def __init__(self, numero_cuenta, nombre: str, apellido_pat: str, apellido_mat: str,
                  fecha_nac:  date, sexo:  Sexo,
                  telefonos: List[int],
-                 correos: Optional[List[str]] = None,
-                 numero_cuenta: int = 0, facultad: str = "", carrera: str = ""):
+                 correos: List[str],
+                facultad: str, carrera: str ):
 
         self.nombre = nombre
         self.apellido_pat = apellido_pat
         self.apellido_mat = apellido_mat
         self.fecha_nac = fecha_nac
-        self.edad = self.calcular_edad()
         self.sexo = sexo
         self.telefonos = telefonos or []
         self.correos = correos or []
@@ -24,12 +22,7 @@ class Participante:
         self.facultad = facultad
         self.carrera = carrera
 
-    def calcular_edad(self) -> int:
-        if not self.fecha_nac:
-            return 0
-        today = date.today()
-        edad = today.year - self.fecha_nac.year - ((today.month, today.day) < (self.fecha_nac.month, self.fecha_nac.day))
-        return edad
+  
     
     @property
     def nombre(self) -> str:
@@ -68,14 +61,6 @@ class Participante:
         else:
             self._fecha_nac = None
 
-    @property
-    def edad(self) -> int:
-        self._edad = self.calcular_edad()
-        return self._edad
-
-    @edad.setter
-    def edad(self, value: Union[str, int]):
-        self._edad = int(value) if value is not None else 0
 
     @property
     def sexo(self) -> Optional[Sexo]:
@@ -95,7 +80,7 @@ class Participante:
         return self._telefonos
 
     @telefonos.setter
-    def telefonos(self, value: List[Union[str, int]]):
+    def telefonos(self, value:List[Union[str, int]]):
         self._telefonos = [int(t) for t in value] if value else []
 
     @property
@@ -133,18 +118,23 @@ class Participante:
     def carrera(self, value: str):
         self._carrera = str(value).strip()
 
-
+    def edad(self) -> int:
+        if not self.fecha_nac:
+            return 0
+        today = date.today()
+        edad = today.year - self.fecha_nac.year - ((today.month, today.day) < (self.fecha_nac.month, self.fecha_nac.day))
+        return edad
+    
     def to_dict(self) -> dict:
         return {
+            'numero_cuenta': self.numero_cuenta,
             'nombre': self.nombre,
             'apellido_pat': self.apellido_pat,
             'apellido_mat': self.apellido_mat,
             'fecha_nac': self.fecha_nac.strftime("%d-%m-%Y") if self.fecha_nac else "",
-            'edad': self.edad,
             'sexo': self.sexo.value if self.sexo else "",
             'telefonos': ';'.join(map(str, self.telefonos)),
             'correos': ';'.join(self.correos),
-            'numero_cuenta': self.numero_cuenta,
             'facultad': self.facultad,
             'carrera': self.carrera
         }
@@ -154,10 +144,17 @@ class Participante:
         telefonos_raw = str(data.get('telefonos') or "")
         correos_raw = str(data.get('correos') or "")
 
-        telefonos = [int(t) for t in telefonos_raw.split(';') if t.isdigit()]
-        correos = [c for c in correos_raw.split(';') if c]
+        if isinstance(telefonos_raw, str):
+            telefonos = [int(t) for t in telefonos_raw.split(';') if t]
+        else:
+            telefonos = [telefonos_raw]
+        if not isinstance(correos_raw, str):
+            correos = [correos_raw]
+        else:
+            correos = [c for c in correos_raw.split(';') if c]
 
         return Participante(
+            numero_cuenta=int(data.get('numero_cuenta', 0)),
             nombre=data.get('nombre', ''),
             apellido_pat=data.get('apellido_pat', ''),
             apellido_mat=data.get('apellido_mat', ''),
@@ -165,7 +162,6 @@ class Participante:
             sexo=data.get('sexo', ''),
             telefonos=telefonos,
             correos=correos,
-            numero_cuenta=data.get('numero_cuenta', 0),
             facultad=data.get('facultad', ''),
             carrera=data.get('carrera', '')
         )

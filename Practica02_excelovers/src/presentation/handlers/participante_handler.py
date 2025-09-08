@@ -176,6 +176,7 @@ class ParticipanteHandler:
             print("Información del Participante:")
             for key, value in participante.to_dict().items():
                 print(f"{key}: {value}")
+            print(f"Edad: {participante.edad()} años")
         else:
             print("Participante no encontrado.")
         
