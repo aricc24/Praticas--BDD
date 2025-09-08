@@ -7,7 +7,7 @@ class ParticipanteService:
         self.repository = repository
 
     def add_participante(self, nombre: str, apellido_pat: str, apellido_mat: str, fecha_nac: str,
-                         edad: int, sexo: str, telefonos: list[str], correos: list[str],
+                         edad: int, sexo: str, telefonos: list[int], correos: list[str],
                          numero_cuenta: int, facultad: str, carrera: str) -> None:
         # revisasi ya estaba
         participante = Participante(

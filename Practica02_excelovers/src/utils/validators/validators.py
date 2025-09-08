@@ -1,3 +1,5 @@
+import re
+
 def validate_integer(value: str, field_name: str) -> int:
     """
     Valida que el valor sea un entero.
@@ -15,3 +17,44 @@ def validate_string(value: str, field_name: str) -> str:
     if not value or not isinstance(value, str):
         raise ValueError(f"{field_name} debe ser una cadena no vacía.")
     return value.strip()
+
+def validate_date(value: str, field_name: str) -> str:
+    """
+    Valida que el valor sea una fecha en formato DD-MM-YYYY.
+    """
+    pattern = r'^\d{2}-\d{2}-\d{4}$'
+    if not re.match(pattern, value):
+        raise ValueError(f"{field_name} debe tener el formato DD-MM-YYYY.")
+    return value
+
+def validate_sexo(value: str, field_name: str) -> str:
+    """
+    Valida que el valor sea 'M', 'F' o 'O'.
+    """
+    value = value.upper()
+    if value not in ['M', 'F', 'O']:
+        raise ValueError(f"{field_name} debe ser 'M', 'F' o 'O'.")
+    return value
+
+def validate_int_list(value: str, field_name: str) -> list:
+    """
+    Valida que el valor sea una lista de enteros separados por comas.
+    """
+    
+    if not value:
+        raise ValueError(f"Debes ingresar algún valor para {field_name} ")
+    try:
+        return [int(item.strip()) for item in value.split(',') if item.strip()]
+    except ValueError:
+        raise ValueError(f"{field_name} debe ser una lista de números enteros separados por comas.")
+    
+def validate_list(value: str, field_name: str) -> list:
+    """
+    Valida que el valor sea una lista de cadenas separadas por comas.
+    """
+    if not value:
+        raise ValueError(f"Debes ingresar algún valor para {field_name} ")
+    try:
+        return [item.strip() for item in value.split(',') if item.strip()]
+    except ValueError:
+        raise ValueError(f"{field_name} debe ser una lista de cadenas separadas por comas.")

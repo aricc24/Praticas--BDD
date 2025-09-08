@@ -10,15 +10,15 @@ class Participante:
     """
 
     def __init__(self, nombre: str, apellido_pat: str, apellido_mat: str,
-                 fecha_nac: Optional[str], edad: int, sexo: str,
-                 telefonos: Optional[List[str]] = None,
+                 fecha_nac: str, edad: int, sexo: str,
+                 telefonos: List[int],
                  correos: Optional[List[str]] = None,
                  numero_cuenta: int = 0, facultad: str = "", carrera: str = ""):
 
         self.nombre = nombre
         self.apellido_pat = apellido_pat
         self.apellido_mat = apellido_mat
-        self.fecha_nac = (datetime.strptime(fecha_nac, "%Y-%m-%d").date()
+        self.fecha_nac = (datetime.strptime(fecha_nac, "%d-%m-%Y").date()
                           if isinstance(fecha_nac, str) and fecha_nac else None)
         self.edad = edad
         self.sexo = Sexo(sexo) if isinstance(sexo, str) else sexo
@@ -33,10 +33,10 @@ class Participante:
             'nombre': self.nombre,
             'apellido_pat': self.apellido_pat,
             'apellido_mat': self.apellido_mat,
-            'fecha_nac': self.fecha_nac.strftime("%Y-%m-%d") if self.fecha_nac else "",
+            'fecha_nac': self.fecha_nac.strftime("%d-%m-%Y") if self.fecha_nac else "",
             'edad': self.edad,
             'sexo': self.sexo.value if self.sexo else "",
-            'telefonos': ';'.join(self.telefonos),
+            'telefonos': ';'.join(str(t) for t in self.telefonos), 
             'correos': ';'.join(self.correos),
             'numero_cuenta': self.numero_cuenta,
             'facultad': self.facultad,
