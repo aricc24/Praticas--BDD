@@ -223,6 +223,43 @@ class Pokemon:
             "tipo": self._tipo,
             "cp": self._cp,
             "peso": self._peso,
-            "sexo": self._sexo.value,
+            'sexo': self.sexo.value if self.sexo else "",
             "shiny": self._shiny
         }
+    
+    def from_dict(data: dict) -> 'Pokemon':
+        """
+        Crea una instancia de Pokémon a partir de un diccionario.
+
+        Args:
+            data (dict): Diccionario con los atributos del Pokémon.
+
+        Returns:
+            Pokemon: Instancia de Pokémon creada a partir del diccionario.
+        """
+        return Pokemon(
+            _pokemon_id=data.get("pokemon_id"),
+            _nombre=data.get("nombre"),
+            _especie=data.get("especie"),
+            _tipo=data.get("tipo"),
+            _cp=data.get("cp"),
+            _peso=data.get("peso"),
+            _sexo=Sexo(data.get("sexo")),
+            _shiny=data.get("shiny")
+        )
+
+    def __str__(self) -> str:
+        """
+        Representación en cadena del Pokémon.
+
+        Returns:
+            str: Cadena con la información del Pokémon.
+        """
+        return (f"ID: {self._pokemon_id}\n"
+                f"Nombre: {self._nombre}\n"
+                f"Especie: {self._especie}\n"
+                f"Tipo: {self._tipo}\n"
+                f"CP: {self._cp}\n"
+                f"Peso: {self._peso}\n"
+                f"Sexo: {self._sexo.value}\n"
+                f"Shiny: {'Sí' if self._shiny else 'No'}")

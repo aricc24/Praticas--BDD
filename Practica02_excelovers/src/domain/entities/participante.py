@@ -151,10 +151,10 @@ class Participante:
 
     @staticmethod
     def from_dict(data: dict) -> 'Participante':
-        telefonos_raw = data.get('telefonos', "")
-        correos_raw = data.get('correos', "")
+        telefonos_raw = str(data.get('telefonos') or "")
+        correos_raw = str(data.get('correos') or "")
 
-        telefonos = [int(t) for t in telefonos_raw.split(';') if t]
+        telefonos = [int(t) for t in telefonos_raw.split(';') if t.isdigit()]
         correos = [c for c in correos_raw.split(';') if c]
 
         return Participante(

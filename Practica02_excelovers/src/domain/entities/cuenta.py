@@ -138,3 +138,15 @@ class Cuenta:
             _nivel_entrenador=data["nivel_entrenador"],
             _equipo=EquipoCuenta(data["equipo"])
         )
+
+    def __str__(self) -> str:
+        """
+        Representación en cadena de la cuenta.
+
+        Returns:
+            str: Representación en cadena de la cuenta.
+        """
+        return (f"Código Entrenador: {self._codigo_entrenador}\n"
+                f"Nombre Usuario: {self._nombre_usuario}\n"
+                f"Nivel Entrenador: {self._nivel_entrenador}\n"
+                f"Equipo: {self._equipo.name}\n")
