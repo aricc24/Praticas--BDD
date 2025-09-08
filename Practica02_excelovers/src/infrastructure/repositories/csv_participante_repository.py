@@ -7,8 +7,8 @@ class ParticipanteRepositoryCSV(IParticipanteRepository):
     def __init__(self, file_path: str):
         self.file_path = file_path
         self.file_handler = CSVFileHandler(file_path, [
-            'nombre', 'apellido_pat', 'apellido_mat', 'fecha_nac', 'edad', 'sexo',
-            'telefonos', 'correos', 'numero_cuenta', 'facultad', 'carrera'
+            'numero_cuenta', 'nombre', 'apellido_pat', 'apellido_mat', 'fecha_nac', 'sexo',
+            'telefonos', 'correos', 'facultad', 'carrera'
         ])
 
     def save(self, p: Participante): 
@@ -20,9 +20,10 @@ class ParticipanteRepositoryCSV(IParticipanteRepository):
             raise e
 
  
-    def get_by_numero_cuenta(self, participante_id: str) -> Participante | None: 
+    def get_by_numero_cuenta(self, numero_cuenta: str) -> Participante | None: 
         try:
-            df = self.file_handler.lookup('numero_cuenta', participante_id)
+            df = self.file_handler.lookup('numero_cuenta', numero_cuenta)
+         
             if not df.empty:
                 return Participante.from_dict(df.iloc[0].to_dict())
         except Exception as e:
@@ -41,12 +42,14 @@ class ParticipanteRepositoryCSV(IParticipanteRepository):
             raise e
 
     
-    def delete(self, participante_id: str): 
+    def delete(self, numero_cuenta: int): 
         try:
             df = self.file_handler.read_data()
-            df = df[df['numero_cuenta'] != participante_id]
+            df = df[df['numero_cuenta'] != numero_cuenta]
             self.file_handler.write_data(df)
         except Exception as e:
             print(f"Error al eliminar el participante: {e}")
             raise e
+
+            
 
