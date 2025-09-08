@@ -75,11 +75,7 @@ class CSVFileHandler:
         try:
             df = self.read_data()
             new_df = pd.DataFrame([data])
-            new_df = new_df.dropna(how='all')  
-            if not new_df.empty and not df.empty:
-                df = pd.concat([df, new_df], ignore_index=True)
-            elif not new_df.empty:
-                df = new_df
+            df = pd.concat([df, new_df], ignore_index=True)
             self.write_data(df)
         except Exception as e:
             raise IOException(f"Error al agregar datos al archivo CSV: {e}")

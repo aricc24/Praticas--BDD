@@ -120,6 +120,19 @@ def validate_list(value: str, field_name: str) -> list:
     except ValueError:
         raise ValueError(f"{field_name} debe ser una lista de cadenas separadas por comas.")
 
+def validate_correos(value: str, field_name: str) -> list:
+
+    """
+    Valida que el valor sea una lista de correos electrónicos separados por comas.
+    """
+    if not value:
+        raise ValueError(f"Debes ingresar algún valor para {field_name} ")
+    correos = [item.strip() for item in value.split(',') if item.strip()]
+    for correo in correos:
+        if not re.match(r"^[\w\.-]+@[\w\.-]+\.\w+$", correo):
+            raise ValueError(f"{field_name} debe ser una lista de correos electrónicos válidos.")
+    return correos
+
 def validate_input(value: str, validator, field_name: str):
     """
     Valida la entrada utilizando la función de validación proporcionada.

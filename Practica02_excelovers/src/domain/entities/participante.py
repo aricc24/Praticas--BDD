@@ -5,7 +5,7 @@ from datetime import datetime, date
 
 
 class Participante:
-    def __init__(self, numero_cuenta, nombre: str, apellido_pat: str, apellido_mat: str,
+    def __init__(self, numero_cuenta:int, nombre: str, apellido_pat: str, apellido_mat: str,
                  fecha_nac:  date, sexo:  Sexo,
                  telefonos: List[int],
                  correos: List[str],

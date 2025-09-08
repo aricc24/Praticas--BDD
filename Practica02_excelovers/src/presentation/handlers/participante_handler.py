@@ -1,6 +1,6 @@
 from utils.validators.validators import (
     validate_integer, validate_string, validate_date, validate_sexo,
-    validate_int_list, validate_list
+    validate_int_list, validate_list, validate_correos
 )
 
 class ParticipanteHandler:
@@ -67,7 +67,7 @@ class ParticipanteHandler:
                 print(f"Error: {ve}")
         while True:
             try:
-                correos = validate_list(input("Ingrese los correos (separados por comas): "), "Correos")
+                correos = validate_correos(input("Ingrese los correos (separados por comas): "), "Correos")
                 break
             except ValueError as ve:
                 print(f"Error: {ve}")
@@ -138,7 +138,7 @@ class ParticipanteHandler:
                 elif field_name == "telefonos":
                     new_value = validate_int_list(input(f"Ingrese los nuevos teléfonos (separados por comas): "), field_name)
                 elif field_name == "correos":
-                    new_value = validate_list(input(f"Ingrese los nuevos correos (separados por comas): "), field_name)
+                    new_value = validate_correos(input(f"Ingrese los nuevos correos (separados por comas): "), field_name)
                 else:
                     print("Campo no válido.")
                     return
