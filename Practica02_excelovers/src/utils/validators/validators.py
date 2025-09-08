@@ -45,6 +45,9 @@ def validate_date(value: str, field_name: str) -> str:
     pattern = r'^\d{2}-\d{2}-\d{4}$'
     if not re.match(pattern, value):
         raise ValueError(f"{field_name} debe tener el formato DD-MM-YYYY.")
+    dia, mes, anio = map(int, value.split('-'))
+    if not (1 <= dia <= 31 and 1 <= mes <= 12 and anio > 1900):
+        raise ValueError(f"{field_name} no es una fecha válida.")
     return value
 
 def validate_sexo(value: str, field_name: str) -> str:
