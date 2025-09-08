@@ -5,18 +5,73 @@ Define el contrato para el acceso a datos de las cuentas.
 
 from abc import ABC, abstractmethod
 from domain.entities.cuenta import Cuenta
-class CuentaRepository(ABC):
-    @abstractmethod
-    def save(self, c: Cuenta): pass
+
+
+class ICuentaRepository(ABC):
+    """
+    Interfaz del repositorio de Cuentas.
+    Define las operaciones CRUD (Create, Read, Update, Delete)
+    que cualquier implementación concreta del repositorio debe realizar.
+    """
 
     @abstractmethod
-    def find_by_nombre_usuario(self, codigo_entrenador: int) -> Cuenta | None: pass
+    def save(self, c: Cuenta) -> None:
+        """
+        Guarda una nueva cuenta en el repositorio.
+
+        Args:
+            c (Cuenta): La cuenta a guardar.
+
+        Returns:
+            None
+        """
+        pass
 
     @abstractmethod
-    def update(self, c: Cuenta): pass
+    def find_by_nombre_usuario(self, codigo_entrenador: int) -> Cuenta | None:
+        """
+        Busca una cuenta en el repositorio a partir de su código de entrenador.
+
+        Args:
+            codigo_entrenador (int): El código único del entrenador asociado a la cuenta.
+
+        Returns:
+            Cuenta | None: La cuenta encontrada o None si no existe.
+        """
+        pass
 
     @abstractmethod
-    def delete(self, codigo_entrenador: int): pass
+    def update(self, c: Cuenta) -> None:
+        """
+        Actualiza la información de una cuenta existente.
+
+        Args:
+            c (Cuenta): La cuenta con la información actualizada.
+
+        Returns:
+            None
+        """
+        pass
 
     @abstractmethod
-    def all(self) -> list[Cuenta]: pass
+    def delete(self, codigo_entrenador: int) -> None:
+        """
+        Elimina una cuenta del repositorio por su código de entrenador.
+
+        Args:
+            codigo_entrenador (int): El código del entrenador asociado a la cuenta a eliminar.
+
+        Returns:
+            None
+        """
+        pass
+
+    @abstractmethod
+    def all(self) -> list[Cuenta]:
+        """
+        Recupera todas las cuentas almacenadas en el repositorio.
+
+        Returns:
+            list[Cuenta]: Una lista de todas las cuentas.
+        """
+        pass
