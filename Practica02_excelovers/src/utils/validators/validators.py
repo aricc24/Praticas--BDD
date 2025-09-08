@@ -1,3 +1,5 @@
+from domain.entities.enums.equipo_cuenta import EquipoCuenta
+
 def validate_integer(value: str, field_name: str) -> int:
     """
     Valida que el valor sea un entero.
@@ -35,3 +37,22 @@ def validate_string(value: str, field_name: str) -> str:
     if not value or not isinstance(value, str):
         raise ValueError(f"{field_name} debe ser una cadena no vacía.")
     return value.strip()
+
+def validate_equipo(value: str, field_name: str) -> EquipoCuenta:
+    """
+    Valida que el valor corresponda a un equipo válido de EquipoCuenta.
+
+    Args:
+        value (str): El valor a validar.
+
+    Returns:
+        EquipoCuenta: El equipo correspondiente a la entrada.
+
+    Raises:
+        ValueError: Si el valor no corresponde a ningún equipo válido.
+    """
+    try:
+        return EquipoCuenta[value.strip().upper()]
+    except KeyError:
+        valid_teams = ', '.join([team.name for team in EquipoCuenta])
+        raise ValueError(f"{field_name} debe ser uno de los siguientes: {valid_teams}.")
