@@ -1,0 +1,181 @@
+from utils.validators.validators import (
+    validate_integer, validate_string, validate_date, validate_sexo,
+    validate_int_list, validate_list
+)
+
+class ParticipanteHandler:
+    def __init__(self, participante_service):
+        self.participant_service = participante_service
+
+    def add_participant(self):
+        print("Agregar Participante")
+        while True:
+            try:
+                nombre = validate_string(input("Ingrese el nombre: "), "Nombre")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        while True:
+            try:
+                apellido_pat = validate_string(input("Ingrese el apellido paterno: "), "Apellido Paterno")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        while True:
+            try:
+                apellido_mat = validate_string(input("Ingrese el apellido materno: "), "Apellido Materno")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        while True:
+            try:
+                fecha_nac = validate_date(input("Ingrese la fecha de nacimiento (DD-MM-YYYY): "), "Fecha de Nacimiento")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+       
+        while True:
+            try:
+                numero_cuenta = validate_integer(input("Ingrese el número de cuenta: "), "Número de Cuenta")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        while True:
+            try:
+                facultad = validate_string(input("Ingrese la facultad: "), "Facultad")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        while True:
+            try:
+                carrera = validate_string(input("Ingrese la carrera: "), "Carrera")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")   
+        
+        while True:
+            try:
+                sexo = validate_sexo(input("Ingrese el sexo (M/F/O): "), "Sexo")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        while True:
+            try:
+                telefonos = validate_int_list(input("Ingrese los teléfonos (separados por comas): "), "Teléfonos")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        while True:
+            try:
+                correos = validate_list(input("Ingrese los correos (separados por comas): "), "Correos")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+
+        participante = self.participant_service.add_participante(
+            nombre, apellido_pat, apellido_mat, fecha_nac, sexo, telefonos, correos, numero_cuenta, facultad, carrera
+        )
+        if participante:
+            print("Participante agregado exitosamente.")
+        else:
+            print("Error al agregar el participante.")
+
+    def update_participant(self):
+        print("¿A quien quieres modificar?")
+        while True:
+            try:
+                numero_cuenta = validate_integer(input("Ingrese el número de cuenta del participante a modificar: "), "Número de Cuenta")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+    
+        print(f"¿Qué campo deseas modificar ?")
+        print("1. Nombre")
+        print("2. Apellido Paterno")
+        print("3. Apellido Materno")
+        print("4. Fecha de Nacimiento")
+        print("5. Sexo")
+        print("6. Teléfonos")
+        print("7. Correos")
+        print("8. Número de Cuenta")
+        print("9. Facultad")
+        print("10. Carrera")
+        print("11. Cancelar")
+        while True:
+            try:
+                choice = validate_integer(input("Ingrese el número del campo a modificar: "), "Opción")
+                if choice == 11:
+                    print("Modificación cancelada.")
+                    return
+                if choice < 1 or choice > 11:
+                    raise ValueError("Opción inválida.")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        field_map = {
+            1: "nombre",
+            2: "apellido_pat",
+            3: "apellido_mat",
+            4: "fecha_nac",
+            5: "sexo",
+            6: "telefonos",
+            7: "correos",
+            8: "numero_cuenta",
+            9: "facultad",
+            10: "carrera"
+        }
+        field_name = field_map[choice]
+        while True:
+            try:
+                if field_name in ["nombre", "apellido_pat", "apellido_mat", "facultad", "carrera"]:
+                    new_value = validate_string(input(f"Ingrese el nuevo valor para {field_name}: "), field_name)
+                elif field_name == "fecha_nac":
+                    new_value = validate_date(input(f"Ingrese el nuevo valor para {field_name} (DD-MM-YYYY): "), field_name)
+                elif field_name in ["numero_cuenta"]:
+                    new_value = validate_integer(input(f"Ingrese el nuevo valor para {field_name}: "), field_name)
+                elif field_name == "sexo":
+                    new_value = validate_sexo(input(f"Ingrese el nuevo valor para {field_name} (M/F/O): "), field_name)
+                elif field_name == "telefonos":
+                    new_value = validate_int_list(input(f"Ingrese los nuevos teléfonos (separados por comas): "), field_name)
+                elif field_name == "correos":
+                    new_value = validate_list(input(f"Ingrese los nuevos correos (separados por comas): "), field_name)
+                else:
+                    print("Campo no válido.")
+                    return
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        modificado = self.participant_service.update_participante(numero_cuenta, field_name, new_value)
+        if modificado:
+            print("Participante modificado exitosamente.")
+        else:
+            print("Participante no encontrado.")
+
+    def delete_participant(self):
+        while True:
+            try:
+                numero_cuenta = validate_integer(input("Ingrese el número de cuenta del participante a eliminar: "), "Número de Cuenta")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        eliminado = self.participant_service.delete_participante(numero_cuenta)
+        if eliminado:
+            print("Participante eliminado")
+        else:
+            print("Participante no encontrado")
+
+    def retrieve_participant(self):
+        while True:
+            try:
+                numero_cuenta = validate_integer(input("Ingrese el número de cuenta del participante a consultar: "), "Número de Cuenta")
+                break
+            except ValueError as ve:
+                print(f"Error: {ve}")
+        participante = self.participant_service.get_by_numero_cuenta(numero_cuenta)
+        if participante:
+            print("Información del Participante:")
+            for key, value in participante.to_dict().items():
+                print(f"{key}: {value}")
+        else:
+            print("Participante no encontrado.")
+        

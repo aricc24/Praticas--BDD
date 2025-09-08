@@ -1,8 +1,3 @@
-"""
-Participante Repository Interface.
-Define el contrato para el acceso a datos de los participantes.
-"""
-
 from abc import ABC, abstractmethod
 from domain.entities.participante import Participante
 

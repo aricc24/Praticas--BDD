@@ -20,6 +20,25 @@ def validate_integer(value: str, field_name: str) -> int:
     except ValueError:
         raise ValueError(f"{field_name} debe ser un número entero.")
     
+def validate_float(value: str, field_name: str) -> float:
+    """
+    Valida que el valor sea un número de punto flotante.
+
+    Args:
+        value (str): El valor a validar.
+        field_name (str): El nombre del campo para mensajes de error.
+
+    Returns:
+        float: El valor convertido a float.
+
+    Raises:
+        ValueError: Si el valor no es un número de punto flotante válido.
+    """
+    try:
+        return float(value)
+    except ValueError:
+        raise ValueError(f"{field_name} debe ser un número decimal.")
+    
 
 def validate_string(value: str, field_name: str) -> str:
     """
@@ -100,3 +119,25 @@ def validate_list(value: str, field_name: str) -> list:
         return [item.strip() for item in value.split(',') if item.strip()]
     except ValueError:
         raise ValueError(f"{field_name} debe ser una lista de cadenas separadas por comas.")
+
+def validate_input(value: str, validator, field_name: str):
+    """
+    Valida la entrada utilizando la función de validación proporcionada.
+
+    Args:
+        value (str): El valor a validar.
+        validator (function): La función de validación a utilizar.
+        field_name (str): El nombre del campo para mensajes de error.
+
+    Returns:
+        The validated value.
+
+    Raises:
+        ValueError: Si la validación falla.
+    """
+    while True:
+        try:
+            return validator(value, field_name)
+        except ValueError as ve:
+            print(f"Error: {ve}")
+            value = input(f"Ingrese nuevamente el valor para {field_name}: ")
