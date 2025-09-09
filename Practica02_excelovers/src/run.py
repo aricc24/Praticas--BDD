@@ -2,7 +2,10 @@ import sys
 from presentation.cli import CLI
 from presentation.gui import gui 
 
-def main():
+def main() -> None:
+    """
+    Función principal que inicia la aplicación.
+    """
     if len(sys.argv) > 1 and sys.argv[1].lower() == "gui":
         gui.iniciar_gui()
     else:

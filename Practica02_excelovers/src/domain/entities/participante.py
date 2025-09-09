@@ -31,9 +31,9 @@ class Participante:
         Inicializa una nueva instancia de Participante.
     """
     def __init__(self, numero_cuenta:int, nombre: str, apellido_pat: str, apellido_mat: str,
-                 fecha_nac:  date, sexo:  Sexo,
-                 telefonos: List[int],
-                 correos: List[str],
+                fecha_nac:  date, sexo:  Sexo,
+                telefonos: List[int],
+                correos: List[str],
                 facultad: str, carrera: str ):
         """
         Constructor de la clase Participante.
@@ -301,7 +301,7 @@ class Participante:
         
         Returns:
             dict: Diccionario con todos los atributos del participante
-                  en formato adecuado para almacenamiento
+                    en formato adecuado para almacenamiento
         """
         return {
             'numero_cuenta': self.numero_cuenta,
