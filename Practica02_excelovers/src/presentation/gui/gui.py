@@ -50,7 +50,8 @@ class BaseCRUD:
         tk.Button(frame, text="Agregar", command=self.add).grid(row=0, column=0, padx=5)
         tk.Button(frame, text="Editar", command=self.edit).grid(row=0, column=1, padx=5)
         tk.Button(frame, text="Eliminar", command=self.delete).grid(row=0, column=2, padx=5)
-        tk.Button(frame, text="Refrescar", command=self.load_data).grid(row=0, column=3, padx=5)
+        tk.Button(frame, text="Consultar", command=self.consultar).grid(row=0, column=3, padx=5)
+        tk.Button(frame, text="Actualizar", command=self.load_data).grid(row=0, column=4, padx=5)
         self.load_data()
 
     def load_data(self):
@@ -122,6 +123,100 @@ class BaseCRUD:
             writer = csv.writer(f)
             writer.writerows(rows)
         self.load_data()
+
+    def consultar(self):
+        """Abre un diálogo para consultar un registro por su ID/llave principal."""
+        id_field = self.fields[0]
+        id_field_label = self._get_field_labels().get(id_field, id_field.replace("_", " ").capitalize())
+        
+        dialog = tk.Toplevel(self.window)
+        dialog.title(f"Consultar por {id_field_label}")
+        dialog.geometry("400x200")
+        
+        tk.Label(dialog, text=f"Ingrese el {id_field_label.lower()}:").pack(pady=10)
+        
+        id_entry = tk.Entry(dialog, width=30)
+        id_entry.pack(pady=5)
+        
+        def buscar_por_id():
+            id_value = id_entry.get().strip()
+            if not id_value:
+                messagebox.showwarning("Advertencia", f"Por favor ingrese un {id_field_label.lower()}")
+                return
+            
+            registro = self._buscar_por_id(id_value)
+            if registro:
+                self._open_consult_form(registro)
+                dialog.destroy()
+            else:
+                messagebox.showerror("Error", f"No se encontró ningún registro con {id_field_label.lower()} {id_value}")
+        
+        tk.Button(dialog, text="Buscar", command=buscar_por_id).pack(pady=10)
+        tk.Button(dialog, text="Cancelar", command=dialog.destroy).pack(pady=10)
+
+    def _buscar_por_id(self, id_value):
+        """
+        Busca un registro por su ID/llave principal.
+        
+        Args:
+            id_value (str): Valor del ID a buscar.
+            
+        Returns:
+            list: Valores del registro encontrado, o None si no se encuentra.
+        """
+        try:
+            with open(self.filename, newline="", encoding="utf-8") as f:
+                reader = csv.reader(f)
+                header = next(reader, None)
+                if header:
+                    for row in reader:
+                        if row and row[0] == id_value:
+                            return row
+            return None
+        except FileNotFoundError:
+            return None
+
+    def _open_consult_form(self, values):
+        """
+        Abre un formulario de solo lectura para consultar un registro.
+        
+        Args:
+            values (list): Valores del registro a consultar.
+        """
+        form = tk.Toplevel(self.window)
+        form.title("Consultar Registro")
+        form.geometry("600x500")
+        
+        main_frame = tk.Frame(form)
+        main_frame.pack(fill="both", expand=True, padx=20, pady=20)
+        
+        canvas = tk.Canvas(main_frame)
+        scrollbar = ttk.Scrollbar(main_frame, orient="vertical", command=canvas.yview)
+        scrollable_frame = tk.Frame(canvas)
+        
+        scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
+        
+        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+        
+        for i, field in enumerate(self.fields):
+            label_text = self._get_field_labels().get(field, field.replace("_", " ").capitalize() + ":")
+            tk.Label(scrollable_frame, text=label_text, font=("Arial", 10, "bold"), 
+                    width=25, anchor="w").grid(row=i, column=0, sticky="w", padx=30, pady=8)
+            
+            value_text = values[i] if i < len(values) else ""
+            tk.Label(scrollable_frame, text=value_text, font=("Arial", 10),
+                    width=30, anchor="w", wraplength=300).grid(
+                row=i, column=1, sticky="w", padx=30, pady=8
+            )
+        
+        canvas.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
+        
+        tk.Button(form, text="Cerrar", command=form.destroy, width=15).pack(pady=10)
 
     def _open_form(self, action, current_values=None):
         """
@@ -203,6 +298,9 @@ class BaseCRUD:
             dict: Diccionario con etiquetas personalizadas para campos específicos.
         """
         return {
+            "numero_cuenta": "Número de cuenta:",
+            "codigo_entrenador": "Código de entrenador:",
+            "pokemon_id": "ID Pokémon:",
             "apellido_pat": "Apellido paterno:", 
             "apellido_mat": "Apellido Materno:",
             "fecha_nac": "Fecha de Nacimiento (DD-MM-YYYY):",

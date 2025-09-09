@@ -29,6 +29,7 @@ class PokemonGUI(BaseCRUD):
             root: Ventana principal de la aplicación Tkinter.
         """
         super().__init__(root, "Pokémon", POKEMONS_FILE, CSV_FIELDS, form_fields=FORM_FIELDS)
+        self.id_field = "pokemon_id"
 
     def validate(self, row):
         """
