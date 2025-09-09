@@ -1,3 +1,8 @@
+"""
+Módulo de repositorio CSV para la entidad Cuenta.
+
+Este módulo implementa la interfaz ICuentaRepository utilizando archivos CSV.
+"""
 from domain.entities.cuenta import Cuenta
 from domain.repositories.i_cuenta_repository import ICuentaRepository
 from infrastructure.file_handlers import CSVFileHandler
@@ -7,6 +12,9 @@ class CuentaRepositoryCSV(ICuentaRepository):
     Implementación del repositorio de Cuentas utilizando archivos CSV.
     Proporciona métodos para guardar, buscar, actualizar y eliminar cuentas
     en un archivo CSV.
+    Attributes:
+        file_path (str): Ruta al archivo CSV utilizado
+        file_handler (CSVFileHandler): Manejador de archivos CSV auxiliar
     """
 
     def __init__(self, file_path: str):
@@ -19,6 +27,9 @@ class CuentaRepositoryCSV(ICuentaRepository):
 
         Args:
             c (Cuenta): La cuenta a guardar.
+
+        Raises:
+            Exception: Si ocurre algún error durante la operación de guardado
 
         Returns:
             None
@@ -38,6 +49,9 @@ class CuentaRepositoryCSV(ICuentaRepository):
 
         Returns:
             Cuenta | None: La cuenta encontrada o None si no existe.
+        
+        Raises:
+            Exception: Si ocurre algún error durante la operación de búsqueda
         """
         try:
             df = self.file_handler.read_data()
@@ -58,6 +72,9 @@ class CuentaRepositoryCSV(ICuentaRepository):
         Args:
             c (Cuenta): La cuenta con la información actualizada.
 
+        Raises:
+            Exception: Si ocurre algún error durante la operación de actualización
+    
         Returns:
             None
         """
@@ -75,6 +92,9 @@ class CuentaRepositoryCSV(ICuentaRepository):
 
         Args:
             codigo_entrenador (int): El código del entrenador asociado a la cuenta a eliminar.
+        
+        Raises:
+            Exception: Si ocurre algún error durante la operación de eliminación
 
         Returns:
             None
@@ -92,6 +112,8 @@ class CuentaRepositoryCSV(ICuentaRepository):
 
         Returns:
             list[Cuenta]: Una lista de todas las cuentas.
+         Raises:
+            Exception: Si ocurre algún error durante la operación de lectura
         """
         try:
             df = self.file_handler.read_data()

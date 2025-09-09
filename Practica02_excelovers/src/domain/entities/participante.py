@@ -1,3 +1,10 @@
+"""
+Módulo que define la entidad Participante para el sistema de torneo de Pokemon Go.
+
+Este módulo contiene la clase Participante que representa a un jugador
+registrado en el torneo, con todas sus informaciones personales y de contacto.
+"""
+
 from typing import List, Optional, Union
 from datetime import datetime, date
 from domain.entities.enums.sexo import Sexo
@@ -7,30 +14,21 @@ from datetime import datetime, date
 
 class Participante:
     """
-    Clase que representa a una entidad Participante del torneo.
+    Representa a un participante registrado en el torneo de Pokémon.
     Attributes:
-    ----------
-        numero_cuenta (int): Número de cuenta del participante.
-        nombre (str): Nombre del participante.
-        apellido_pat (str): Apellido paterno del participante.
-        apellido_mat (str): Apellido materno del participante.
-        fecha_nac (date): Fecha de nacimiento del participante.
-        sexo (Sexo): Sexo del participante (Enum: Masculino, Femenino, Otro).
-        telefonos (List[int]): Lista de números de teléfono del participante.
-        correos (List[str]): Lista de correos electrónicos del participante.
-        facultad (str): Facultad del participante.
-        carrera (str): Carrera del participante.
-    Methods:
-    -------
-        edad() -> int:
-            Calcula y devuelve la edad del participante.
-        to_dict() -> dict:
-            Convierte la instancia del participante a un diccionario.
-        from_dict(data: dict) -> 'Participante':    
-            Crea una instancia de Participante a partir de un diccionario.
-    Raises:
-        ValueError: Si los datos proporcionados no son válidos.
-
+        nombre (str): Nombre del participante
+        apellido_pat (str): Apellido paterno del participante
+        apellido_mat (str): Apellido materno del participante
+        fecha_nac (date): Fecha de nacimiento del participante
+        sexo (Sexo): Sexo del participante (enum)
+        telefonos (List[int]): Lista de números telefónicos
+        correos (List[str]): Lista de correos electrónicos
+        numero_cuenta (int): Número de cuenta único del participante
+        facultad (str): Facultad a la que pertenece el participante
+        carrera (str): Carrera que estudia el participante
+    """
+    """
+        Inicializa una nueva instancia de Participante.
     """
     def __init__(self, numero_cuenta:int, nombre: str, apellido_pat: str, apellido_mat: str,
                  fecha_nac:  date, sexo:  Sexo,
@@ -63,47 +61,86 @@ class Participante:
         self.numero_cuenta = numero_cuenta
         self.facultad = facultad
         self.carrera = carrera
-
-  
     
     @property
     def nombre(self) -> str:
+        """
+        Obtiene el nombre del participante.
+        
+        Returns:
+            str: Nombre del participante
+        """
         return self._nombre
 
     @nombre.setter
     def nombre(self, value: str):
+        """
+        Establece el nombre del participante.
+        
+        Args:
+            value (str): Nuevo nombre para el participante
+        """
         self._nombre = str(value).strip()
 
     @property
     def apellido_pat(self) -> str:
+        """
+        Obtiene el apellido paterno del participante.
+        
+        Returns:
+            str: Apellido paterno del participante
+        """
         return self._apellido_pat
 
     @apellido_pat.setter
     def apellido_pat(self, value: str):
+        """
+        Establece el apellido paterno del participante.
+        
+        Args:
+            value (str): Nuevo apellido paterno para el participante
+        """
         self._apellido_pat = str(value).strip()
 
     @property
     def apellido_mat(self) -> str:
+        """
+        Obtiene el apellido materno del participante.
+        
+        Returns:
+            str: Apellido materno del participante.
+        """
         return self._apellido_mat
 
     @apellido_mat.setter
     def apellido_mat(self, value: str):
+        """
+        Establece el apellido materno del participante.
+        
+        Args:
+            value (str): Nuevo apellido materno para el participante
+        """
         self._apellido_mat = str(value).strip()
 
     @property
     def fecha_nac(self) -> date:
+        """
+        Obtiene la fecha de nacimiento del participante.
+        
+        Returns:
+            date: Fecha de nacimiento del participante.
+        """
         return self._fecha_nac
 
     @fecha_nac.setter
     def fecha_nac(self, value: Union[str, date, None]):
         """
         Establece la fecha de nacimiento del participante.
-        Acepta una cadena en formato "DD-MM-YYYY" o un objeto date.
-        Si el valor es None o una cadena vacía, se establece como None.
+        
         Args:
-            value (Union[str, date, None]): Fecha de nacimiento en formato cadena o date.
-        Raises:
-            ValueError: Si la cadena no está en el formato correcto.
+            value: Nueva fecha de nacimiento (puede ser string, date o None)
+            
+        Note: Si se proporciona un string, debe estar en formato "dd-mm-aaaa"
         """
         if isinstance(value, str) and value:
             self._fecha_nac = datetime.strptime(value, "%d-%m-%Y").date()
@@ -115,14 +152,21 @@ class Participante:
 
     @property
     def sexo(self) -> Optional[Sexo]:
+        """
+        Obtiene el sexo del participante.
+        
+        Returns:
+            Optional[Sexo]: Sexo del participante o None.
+        """
         return self._sexo
 
     @sexo.setter
     def sexo(self, value: Union[str, Sexo, None]):
         """
         Establece el sexo del participante.
-        Acepta una cadena o un valor del enum Sexo.
-        Si el valor es None o una cadena vacía, se establece como None.
+        
+        Args:
+            value: Nuevo sexo para el participante (puede ser string, enum Sexo o None)
         """
         if isinstance(value, Sexo):
             self._sexo = value
@@ -133,40 +177,63 @@ class Participante:
 
     @property
     def telefonos(self) -> List[int]:
+        """
+        Obtiene la lista de números telefónicos del participante.
+        
+        Returns:
+            List[int]: Lista de números telefónicos
+        """
         return self._telefonos
 
     @telefonos.setter
-    def telefonos(self, value: List[Union[str, int]]):
+    def telefonos(self, value:List[Union[str, int]]):
         """
-        Establece los números de teléfono del participante.
-        Acepta una lista de cadenas o enteros.
-        Si la lista está vacía, se establece como una lista vacía.
+        Establece la lista de números telefónicos.
+        
+        Args:
+            value: Nueva lista de números telefónicos
         """
         self._telefonos = [int(t) for t in value] if value else []
 
     @property
     def correos(self) -> List[str]:
+        """
+        Obtiene la lista de correos electrónicos del participante.
+        
+        Returns:
+            List[str]: Lista de correos electrónicos
+        """
         return self._correos
 
     @correos.setter
     def correos(self, value: List[str]):
         """
-        Establece los correos electrónicos del participante.
-        Acepta una lista de cadenas.
-        Si la lista está vacía, se establece como una lista vacía.
+        Establece la lista de correos electrónicos con validación.
+        
+        Args:
+            value: Nueva lista de correos electrónicos
         """
         self._correos = [str(c).strip() for c in value] if value else []
 
     @property
     def numero_cuenta(self) -> int:
+        """
+        Obtiene el número de cuenta único del participante.
+        
+        Returns:
+            int: Número de cuenta del participante
+        """
         return self._numero_cuenta
 
     @numero_cuenta.setter
     def numero_cuenta(self, value: int):
         """
         Establece el número de cuenta del participante.
-        Si el valor es None, se establece como 0.
+        
+        Args:
+            value: Nuevo número de cuenta para el participante
         """
+
         if value is None:
             self._numero_cuenta = 0
         else:
@@ -174,28 +241,53 @@ class Participante:
 
     @property
     def facultad(self) -> str:
+        """
+        Obtiene la facultad del participante.
+        
+        Returns:
+            str: Facultad actual del participante
+        """
         return self._facultad
 
     @facultad.setter
     def facultad(self, value: str):
         """
         Establece la facultad del participante.
+        
+        Args:
+            value: Nueva facultad para el participante
         """
         self._facultad = str(value).strip()
 
     @property
     def carrera(self) -> str:
+        """
+        Obtiene la carrera del participante.
+        
+        Returns:
+            str: Carrera actual del participante
+        """
         return self._carrera
 
     @carrera.setter
     def carrera(self, value: str):
+        """
+        Establece la carrera del participante.
+        
+        Args:
+            value: Nueva carrera para el participante
+        """
         self._carrera = str(value).strip()
 
     def edad(self) -> int:
         """
-        Calcula y devuelve la edad del participante en años.
+        Calcula la edad actual del participante basándose en su fecha de nacimiento.
+        
         Returns:
-            int: Edad del participante.
+            int: Edad actual del participante en años
+            
+        Note:
+            Retorna 0 si no hay fecha de nacimiento
         """
         if not self.fecha_nac:
             return 0
@@ -205,9 +297,11 @@ class Participante:
     
     def to_dict(self) -> dict:
         """
-        Convierte la instancia del participante a un diccionario.
+        Convierte la instancia de Participante a un diccionario serializable.
+        
         Returns:
-            dict: Diccionario con los atributos del participante.
+            dict: Diccionario con todos los atributos del participante
+                  en formato adecuado para almacenamiento
         """
         return {
             'numero_cuenta': self.numero_cuenta,
@@ -226,12 +320,13 @@ class Participante:
     def from_dict(data: dict) -> 'Participante':
         """
         Crea una instancia de Participante a partir de un diccionario.
+        
         Args:
-            data (dict): Diccionario con los datos del participante.
+            data (dict): Diccionario con los datos del participante
+            
         Returns:
-            Participante: Instancia creada a partir del diccionario.
+            Participante: Nueva instancia de Participante creada a partir de los datos
         """
-
         telefonos_raw = str(data.get('telefonos') or "")
         correos_raw = str(data.get('correos') or "")
 
