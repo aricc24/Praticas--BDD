@@ -1,3 +1,9 @@
+"""
+Módulo de interfaz gráfica para la gestión de participantes.
+Proporciona una interfaz CRUD para gestionar participantes con validación exhaustiva de datos.
+"""
+
+
 from .gui import BaseCRUD
 import os, csv
 from tkinter import messagebox
@@ -12,10 +18,34 @@ FIELDS = [
 ]
 
 class ParticipanteGUI(BaseCRUD):
+    """
+    Interfaz gráfica para la gestión de participantes.
+    Hereda de BaseCRUD para proporcionar funcionalidades básicas de CRUD.
+    Implementa validación específica para datos de participantes.
+    
+    Attributes:
+        root: Ventana principal de la aplicación Tkinter.
+    """
     def __init__(self, root):
+        """
+        Inicializa la interfaz gráfica para participantes.
+        
+        Args:
+            root: Ventana principal de la aplicación Tkinter.
+        """
         super().__init__(root, "Participantes", PARTICIPANTS_FILE, FIELDS)
 
     def validate(self, row):
+        """
+        Valida los datos de un participante antes de guardarlos.
+        Realiza validaciones exhaustivas para cada campo del formulario.
+        
+        Args:
+            row (list): Lista con los valores de los campos a validar.
+            
+        Returns:
+            bool: True si la validación es exitosa, False en caso contrario.
+        """
         if not row[0].isdigit() or len(row[0]) != 9:
             messagebox.showerror("Error", "Número de cuenta debe ser numérico de 9 dígitos.")
             return False
