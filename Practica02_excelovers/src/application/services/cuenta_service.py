@@ -5,8 +5,9 @@ from utils.exceptions.exceptions import EntityNotFoundException, ValidationExcep
 
 class CuentaService:
     """
-    Servicio para las cuentas.
+    Servicio para la gestión de cuentas de entrenadores.
     Permite crear, actualizar, eliminar y consultar cuentas.
+    Valida la existencia de cuentas antes de operaciones críticas.
     """
 
     def __init__(self, repository: ICuentaRepository):

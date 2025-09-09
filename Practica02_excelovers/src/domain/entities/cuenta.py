@@ -1,10 +1,17 @@
+"""
+Módulo que define la entidad Cuenta para el sistema de gestión de Pokémon.
+
+Este módulo contiene la clase Cuenta que representa la información de la cuenta
+de un jugador en Pokémon Go.
+"""
+
 from dataclasses import dataclass
 from domain.entities.enums.equipo_cuenta import EquipoCuenta
 
 @dataclass
 class Cuenta:
     """
-    Cuenta que representa la información de la cuenta de un jugador en Pokémon Go.
+    Representa la información de la cuenta de un jugador en Pokémon Go.
 
     Attributes:
         codigo_entrenador (int): Código único del entrenador.
@@ -66,7 +73,7 @@ class Cuenta:
     @property
     def nivel_entrenador(self) -> int:
         """
-        Obtiene el nivel del entrenador.
+        Obtiene el nivel actual del entrenador.
 
         Returns:
             int: Nivel del entrenador.
@@ -90,6 +97,7 @@ class Cuenta:
     def equipo(self) -> EquipoCuenta:
         """
         Obtiene el equipo al que pertenece el entrenador.
+
         Returns:
             EquipoCuenta: Equipo del entrenador.
         """
@@ -110,7 +118,7 @@ class Cuenta:
 
     def to_dict(self) -> dict:
         """
-        Convierte la cuenta a un diccionario.
+        Convierte la instancia de Cuenta a un diccionario.
 
         Returns:
             dict: Diccionario con los atributos de la cuenta.
@@ -130,7 +138,7 @@ class Cuenta:
             data (dict): Diccionario con los atributos de la cuenta.
 
         Returns:
-            Cuenta: Instancia de Cuenta creada a partir del diccionario.
+            Cuenta: Nueva instancia de Cuenta creada a partir del diccionario.
         """
         return Cuenta(
             _codigo_entrenador=data["codigo_entrenador"],

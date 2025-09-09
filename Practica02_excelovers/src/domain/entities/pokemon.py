@@ -1,3 +1,9 @@
+"""
+Módulo que define la entidad Pokémon para el sistema de torneos.
+
+Este módulo contiene la clase Pokémon que representa la información completa
+de un Pokémon registrado en el torneo, con todos sus atributos y características.
+"""
 from dataclasses import dataclass
 from domain.entities.enums.sexo import Sexo
 

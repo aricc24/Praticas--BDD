@@ -1,3 +1,8 @@
+"""
+Módulo de repositorio CSV para la entidad Pokémon.
+
+Este módulo implementa la interfaz IPokemonRepository utilizando archivos CSV.
+"""
 from domain.entities.pokemon import Pokemon
 from domain.repositories.i_pokemon_repository import IPokemonRepository
 from infrastructure.file_handlers import CSVFileHandler
