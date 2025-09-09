@@ -121,7 +121,7 @@ def iniciar_gui():
     root.title("Torneo Pokémon Go - Solrock Battle Association")
     root.geometry("500x400")
 
-    tk.Label(root, text="Menú Principal", font=("Arial", 18)).pack(pady=20)
+    tk.Label(root, text="Menú", font=("Arial", 18)).pack(pady=20)
 
     tk.Button(root, text="Participantes", width=20,
               command=lambda: ParticipanteGUI(root)).pack(pady=5)

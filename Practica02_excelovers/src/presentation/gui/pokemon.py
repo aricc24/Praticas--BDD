@@ -2,14 +2,14 @@ from .gui import BaseCRUD
 import os
 from tkinter import messagebox
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "data")
 POKEMONS_FILE = os.path.join(DATA_DIR, "pokemons.csv")
 
-FIELDS = ["pokemon_id","nombre","especie","tipo","cp","peso","sexo","shiny"]
+FIELDS = ["nombre","especie","tipo","cp","peso","sexo","shiny"]
 
 class PokemonGUI(BaseCRUD):
     def __init__(self, root):
-        super().__init__(root, "Pokémon - CRUD", POKEMONS_FILE, FIELDS)
+        super().__init__(root, "Pokémon", POKEMONS_FILE, FIELDS)
 
     def validate(self, row):
         if not row[0].isdigit():
