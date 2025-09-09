@@ -133,6 +133,55 @@ def validate_correos(value: str, field_name: str) -> list:
             raise ValueError(f"{field_name} debe ser una lista de correos electrónicos válidos.")
     return correos
 
+
+def validate_telefonos(value: str, field_name: str) -> list:
+    """
+    Valida que el valor sea una lista de números de teléfono separados por comas.
+    """
+    if not value:
+        raise ValueError(f"Debes ingresar algún valor para {field_name} ")
+    telefonos = [item.strip() for item in value.split(',') if item.strip()]
+    for telefono in telefonos:
+        if not re.match(r"^\d{8,10}$", telefono):
+            raise ValueError(f"{field_name} debe ser una lista de números de teléfono válidos (8-10 dígitos).")
+    return telefonos
+
+def validate_cuenta(value: str, field_name: str) -> str:
+    """
+    Valida que el valor sea una cuenta válida (número de 9 dígitos).
+
+    Args:
+        value (str): El valor a validar.
+        field_name (str): El nombre del campo para mensajes de error.
+
+    Returns:
+        str: El valor validado.
+
+    Raises:
+        ValueError: Si el valor no es una cuenta válida.
+    """
+    if not re.match(r'^\d{9}$', value):
+        raise ValueError(f"{field_name} debe ser un número de cuenta válido de 9 dígitos.")
+    return value
+
+def validate_nombre_propio(value: str, field_name: str) -> str:
+    """
+    Valida que el valor sea un nombre propio (solo letras y espacios).
+
+    Args:
+        value (str): El valor a validar.
+        field_name (str): El nombre del campo para mensajes de error.
+
+    Returns:
+        str: El valor validado.
+
+    Raises:
+        ValueError: Si el valor no es un nombre propio válido.
+    """
+    if not re.match(r'^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$', value):
+        raise ValueError(f"{field_name} debe contener solo letras y espacios.")
+    return value.strip()
+
 def validate_input(value: str, validator, field_name: str):
     """
     Valida la entrada utilizando la función de validación proporcionada.

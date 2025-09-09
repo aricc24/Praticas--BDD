@@ -1,32 +1,50 @@
 from utils.validators.validators import (
-    validate_integer, validate_string, validate_date, validate_sexo,
-    validate_int_list, validate_correos, validate_input
+    validate_integer, validate_date, validate_sexo,
+    validate_correos, validate_input, validate_telefonos,
+    validate_nombre_propio, validate_cuenta
+
 )
+from domain.entities.enums.sexo import Sexo
+
+
 
 class ParticipanteHandler:
+    """
+    Clase encargada de manejar las operaciones relacionadas con los Participantes del lado del usuario.
+        """
     def __init__(self, participante_service):
+        """
+        Inicializa el handler con un servicio de Participante.
+
+        Args:
+            participante_service: Servicio de Participante.
+        """
         self.participant_service = participante_service
 
     def add_participant(self):
+        """
+        Maneja la adición de un nuevo Participante.
+        """
+
         print("Agregar Participante")
 
-        nombre = validate_input(input("Ingrese el nombre: "), validate_string, "Nombre")
+        nombre = validate_input(input("Ingrese el nombre: "), validate_nombre_propio, "Nombre")
 
-        apellido_pat = validate_input(input("Ingrese el apellido paterno: "), validate_string, "Apellido Paterno")
+        apellido_pat = validate_input(input("Ingrese el apellido paterno: "), validate_nombre_propio, "Apellido Paterno")
 
-        apellido_mat = validate_input(input("Ingrese el apellido materno: "), validate_string, "Apellido Materno")
+        apellido_mat = validate_input(input("Ingrese el apellido materno: "), validate_nombre_propio, "Apellido Materno")
 
         fecha_nac = validate_input(input("Ingrese la fecha de nacimiento (DD-MM-YYYY): "), validate_date, "Fecha de Nacimiento")
 
-        numero_cuenta = validate_input(input("Ingrese el número de cuenta: "), validate_integer, "Número de Cuenta")
+        numero_cuenta = validate_input(input("Ingrese el número de cuenta: "), validate_cuenta, "Número de Cuenta")
 
-        facultad = validate_input(input("Ingrese la facultad: "), validate_string, "Facultad")
-        carrera = validate_input(input("Ingrese la carrera: "), validate_string, "Carrera")
+        facultad = validate_input(input("Ingrese la facultad: "), validate_nombre_propio, "Facultad")
+        carrera = validate_input(input("Ingrese la carrera: "), validate_nombre_propio, "Carrera")
 
         sexo = validate_input(input("Ingrese el sexo (M/F/O): "), validate_sexo, "Sexo")
 
-      
-        telefonos = validate_input(input("Ingrese los teléfonos (separados por comas): "), validate_int_list, "Teléfonos")
+
+        telefonos = validate_input(input("Ingrese los teléfonos (separados por comas): "), validate_telefonos, "Teléfonos")
         correos = validate_input(input("Ingrese los correos (separados por comas): "), validate_correos, "Correos")
 
         participante = self.participant_service.add_participante(
@@ -38,6 +56,9 @@ class ParticipanteHandler:
             print("Error al agregar el participante.")
 
     def update_participant(self):
+        """
+        Maneja la actualización de un Participante existente.
+        """
         print("¿A quien quieres modificar?")
         while True:
             try:
@@ -82,26 +103,25 @@ class ParticipanteHandler:
             10: "carrera"
         }
         field_name = field_map[choice]
-        while True:
-            try:
-                if field_name in ["nombre", "apellido_pat", "apellido_mat", "facultad", "carrera"]:
-                    new_value = validate_string(input(f"Ingrese el nuevo valor para {field_name}: "), field_name)
-                elif field_name == "fecha_nac":
-                    new_value = validate_date(input(f"Ingrese el nuevo valor para {field_name} (DD-MM-YYYY): "), field_name)
-                elif field_name in ["numero_cuenta"]:
-                    new_value = validate_integer(input(f"Ingrese el nuevo valor para {field_name}: "), field_name)
-                elif field_name == "sexo":
-                    new_value = validate_sexo(input(f"Ingrese el nuevo valor para {field_name} (M/F/O): "), field_name)
-                elif field_name == "telefonos":
-                    new_value = validate_int_list(input(f"Ingrese los nuevos teléfonos (separados por comas): "), field_name)
-                elif field_name == "correos":
-                    new_value = validate_correos(input(f"Ingrese los nuevos correos (separados por comas): "), field_name)
-                else:
-                    print("Campo no válido.")
-                    return
-                break
-            except ValueError as ve:
-                print(f"Error: {ve}")
+       
+        try:
+            if field_name in ["nombre", "apellido_pat", "apellido_mat", "facultad", "carrera"]:
+                validate_input(input(f"Ingrese el nuevo valor para {field_name}: "), validate_nombre_propio, "Nombre")
+            elif field_name == "fecha_nac":
+                new_value = validate_input(input(f"Ingrese la nueva fecha de nacimiento (DD-MM-YYYY): "), validate_date, "Fecha de Nacimiento")
+            elif field_name in ["numero_cuenta"]:
+                new_value = validate_input(input(f"Ingrese el nuevo valor para {field_name}: "), validate_cuenta, "Número de Cuenta")
+            elif field_name == "sexo":
+                new_value = validate_input(input(f"Ingrese el nuevo valor para {field_name} (M/F/O): "), validate_sexo, "Sexo")
+            elif field_name == "telefonos":
+                new_value = validate_input(input(f"Ingrese los nuevos teléfonos (separados por comas): "), validate_telefonos, "Teléfonos")
+            elif field_name == "correos":
+                new_value = validate_input(input(f"Ingrese los nuevos correos (separados por comas): "), validate_correos, "Correos")
+            else:
+                print("Campo no válido.")
+                return
+        except ValueError as ve:
+            print(f"Error: {ve}")
         modificado = self.participant_service.update_participante(numero_cuenta, field_name, new_value)
         if modificado:
             print("Participante modificado exitosamente.")
@@ -109,6 +129,9 @@ class ParticipanteHandler:
             print("Participante no encontrado.")
 
     def delete_participant(self):
+        """
+        Maneja la eliminación de un Participante existente.
+        """
         while True:
             try:
                 numero_cuenta = validate_integer(input("Ingrese el número de cuenta del participante a eliminar: "), "Número de Cuenta")
@@ -122,6 +145,9 @@ class ParticipanteHandler:
             print("Participante no encontrado")
 
     def retrieve_participant(self):
+        """
+        Maneja la consulta de un Participante existente.
+        """
         while True:
             try:
                 numero_cuenta = validate_integer(input("Ingrese el número de cuenta del participante a consultar: "), "Número de Cuenta")
@@ -132,7 +158,10 @@ class ParticipanteHandler:
         if participante:
             print("Información del Participante:")
             for key, value in participante.to_dict().items():
-                print(f"{key}: {value}")
+                if key== "sexo":
+                    print(f"{key}: {Sexo(value).name.capitalize()}")
+                else:
+                    print(f"{key}: {value}")
             print(f"Edad: {participante.edad()} años")
         else:
             print("Participante no encontrado.")
