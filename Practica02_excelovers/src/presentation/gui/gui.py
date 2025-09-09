@@ -185,7 +185,7 @@ class BaseCRUD:
         """
         form = tk.Toplevel(self.window)
         form.title("Consultar Registro")
-        form.geometry("600x500")
+        form.geometry("800x500")
         
         main_frame = tk.Frame(form)
         main_frame.pack(fill="both", expand=True, padx=20, pady=20)
@@ -202,15 +202,18 @@ class BaseCRUD:
         canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
         canvas.configure(yscrollcommand=scrollbar.set)
         
+        scrollable_frame.grid_columnconfigure(0, minsize=250)  
+        scrollable_frame.grid_columnconfigure(1, minsize=400) 
+
         for i, field in enumerate(self.fields):
             label_text = self._get_field_labels().get(field, field.replace("_", " ").capitalize() + ":")
             tk.Label(scrollable_frame, text=label_text, font=("Arial", 10, "bold"), 
-                    width=25, anchor="w").grid(row=i, column=0, sticky="w", padx=30, pady=8)
+                anchor="w").grid(row=i, column=0, sticky="w", padx=(0, 20), pady=8)
             
             value_text = values[i] if i < len(values) else ""
             tk.Label(scrollable_frame, text=value_text, font=("Arial", 10),
-                    width=30, anchor="w", wraplength=300).grid(
-                row=i, column=1, sticky="w", padx=30, pady=8
+                anchor="w", wraplength=380).grid(
+            row=i, column=1, sticky="w", padx=(0, 0), pady=8
             )
         
         canvas.pack(side="left", fill="both", expand=True)
