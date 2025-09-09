@@ -15,6 +15,12 @@ class PokemonRepositoryCSV(IPokemonRepository):
     """
 
     def __init__(self, file_path: str):
+        """
+        Inicializa el repositorio con la ruta al archivo CSV.
+
+        Args:
+            file_path (str): Ruta al archivo CSV
+        """
         self.file_path = file_path
         self.file_handler = CSVFileHandler(
             file_path,

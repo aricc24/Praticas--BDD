@@ -12,7 +12,7 @@ from datetime import datetime, date
 
 
 class Participante:
-     """
+    """
     Representa a un participante registrado en el torneo de Pokémon.
     Attributes:
         nombre (str): Nombre del participante
@@ -31,9 +31,9 @@ class Participante:
         Inicializa una nueva instancia de Participante.
     """
     def __init__(self, numero_cuenta:int, nombre: str, apellido_pat: str, apellido_mat: str,
-                 fecha_nac:  date, sexo:  Sexo,
-                 telefonos: List[int],
-                 correos: List[str],
+                fecha_nac:  date, sexo:  Sexo,
+                telefonos: List[int],
+                correos: List[str],
                 facultad: str, carrera: str ):
 
         self.nombre = nombre
@@ -46,8 +46,6 @@ class Participante:
         self.numero_cuenta = numero_cuenta
         self.facultad = facultad
         self.carrera = carrera
-
-  
     
     @property
     def nombre(self) -> str:
@@ -288,7 +286,7 @@ class Participante:
         
         Returns:
             dict: Diccionario con todos los atributos del participante
-                  en formato adecuado para almacenamiento
+                    en formato adecuado para almacenamiento
         """
         return {
             'numero_cuenta': self.numero_cuenta,
