@@ -1,9 +1,36 @@
+"""
+Módulo de interfaz gráfica base para operaciones CRUD.
+Proporciona una base reutilizable para interfaces de creación, lectura, actualización y eliminación de registros.
+"""
+
 import tkinter as tk
 from tkinter import ttk, messagebox
-import csv, os
+import csv
+import os
 
 class BaseCRUD:
+    """
+    Clase base para interfaces CRUD que manejan operaciones sobre archivos CSV.
+    
+    Attributes:
+        filename (str): Ruta al archivo CSV donde se almacenan los datos.
+        fields (list): Lista de campos/columnas del archivo CSV.
+        form_fields (list): Lista de campos a mostrar en el formulario (puede diferir de fields).
+        window (Toplevel): Ventana principal de la interfaz CRUD.
+        tree (Treeview): Widget de tabla para mostrar los registros.
+    """
+
     def __init__(self, root, title, filename, fields, form_fields=None):
+        """
+        Inicializa la interfaz CRUD base.
+        
+        Args:
+            root: Ventana raíz de la aplicación Tkinter.
+            title (str): Título de la ventana.
+            filename (str): Ruta al archivo CSV para almacenar datos.
+            fields (list): Lista de campos/columnas del archivo CSV.
+            form_fields (list, optional): Campos a mostrar en formularios. Si es None, usa fields.
+        """
         self.filename = filename
         self.fields = fields
         self.form_fields = form_fields if form_fields is not None else self.fields
@@ -24,10 +51,10 @@ class BaseCRUD:
         tk.Button(frame, text="Editar", command=self.edit).grid(row=0, column=1, padx=5)
         tk.Button(frame, text="Eliminar", command=self.delete).grid(row=0, column=2, padx=5)
         tk.Button(frame, text="Refrescar", command=self.load_data).grid(row=0, column=3, padx=5)
-
         self.load_data()
 
     def load_data(self):
+        """Carga los datos desde el archivo CSV y los muestra en la tabla."""
         for row in self.tree.get_children():
             self.tree.delete(row)
         try:
@@ -45,6 +72,12 @@ class BaseCRUD:
                 writer.writerow(self.fields)
 
     def _get_next_id(self):
+        """
+        Obtiene el siguiente ID disponible para un nuevo registro.
+        
+        Returns:
+            int: Siguiente ID disponible.
+        """
         try:
             with open(self.filename, 'r', newline='', encoding='utf-8') as f:
                 reader = csv.reader(f)
@@ -59,9 +92,11 @@ class BaseCRUD:
             return 1
 
     def add(self):
+        """Abre el formulario para agregar un nuevo registro."""
         self._open_form("Agregar")
 
     def edit(self):
+        """Abre el formulario para editar el registro seleccionado."""
         item = self.tree.selection()
         if not item:
             messagebox.showwarning("Advertencia", "Selecciona un registro para editar")
@@ -70,6 +105,7 @@ class BaseCRUD:
         self._open_form("Editar", values)
 
     def delete(self):
+        """Elimina el registro seleccionado después de confirmación."""
         item = self.tree.selection()
         if not item:
             messagebox.showwarning("Advertencia", "Selecciona un registro para eliminar")
@@ -88,6 +124,13 @@ class BaseCRUD:
         self.load_data()
 
     def _open_form(self, action, current_values=None):
+        """
+        Abre un formulario para agregar o editar registros.
+        
+        Args:
+            action (str): Acción a realizar ("Agregar" o "Editar").
+            current_values (list, optional): Valores actuales del registro para edición.
+        """
         form = tk.Toplevel(self.window)
         form.title(f"{action} Registro")
         entries = {}
@@ -109,6 +152,7 @@ class BaseCRUD:
             entries[f] = e
 
         def save():
+            """Guarda los datos del formulario en el archivo CSV."""
             row_from_form = [entries[f].get().strip() for f in self.form_fields]
 
             if not self.validate(row_from_form):
@@ -152,6 +196,12 @@ class BaseCRUD:
         tk.Button(form, text="Guardar", command=save).grid(row=len(self.form_fields), column=0, columnspan=2, pady=10)
 
     def _get_field_labels(self):
+        """
+        Proporciona etiquetas personalizadas para los campos del formulario.
+        
+        Returns:
+            dict: Diccionario con etiquetas personalizadas para campos específicos.
+        """
         return {
             "apellido_pat": "Apellido paterno:", 
             "apellido_mat": "Apellido Materno:",
@@ -165,6 +215,15 @@ class BaseCRUD:
         }
 
     def _get_placeholder(self, field_name):
+        """
+        Proporciona textos de placeholder para campos del formulario.
+        
+        Args:
+            field_name (str): Nombre del campo.
+            
+        Returns:
+            str: Texto de placeholder para el campo especificado.
+        """
         placeholders = {
             "fecha_nac": "DD-MM-YYYY",
             "sexo": "M, F u O",
@@ -176,6 +235,15 @@ class BaseCRUD:
         return placeholders.get(field_name)
 
     def validate(self, row):
+        """
+        Valida los datos de un registro antes de guardar.
+        
+        Args:
+            row (list): Lista con los valores a validar.
+            
+        Returns:
+            bool: True si la validación es exitosa, False en caso contrario.
+        """
         return True  
 
 from .participantes import ParticipanteGUI
@@ -183,6 +251,10 @@ from .pokemon import PokemonGUI
 from .cuenta import CuentaGUI
 
 def iniciar_gui():
+    """
+    Inicia la interfaz gráfica principal de la aplicación.
+    Crea la ventana principal con botones para acceder a las diferentes secciones.
+    """
     root = tk.Tk()
     root.title("Torneo Pokémon Go - Solrock Battle Association")
     root.geometry("500x400")
