@@ -6,8 +6,6 @@ from utils.validators.validators import (
 )
 from domain.entities.enums.sexo import Sexo
 
-
-
 class ParticipanteHandler:
     """
     Clase encargada de manejar las operaciones relacionadas con los Participantes del lado del usuario.
