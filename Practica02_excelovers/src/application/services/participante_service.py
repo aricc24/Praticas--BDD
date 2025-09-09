@@ -18,6 +18,25 @@ class ParticipanteService:
     def add_participante(self, nombre: str, apellido_pat: str, apellido_mat: str, fecha_nac: str,
                          sexo: str, telefonos: list[int], correos: list[str],
                          numero_cuenta: int, facultad: str, carrera: str) -> None:
+        """
+        Agrega un nuevo participante al sistema.
+        Args:
+            nombre (str): Nombre del participante.
+            apellido_pat (str): Apellido paterno del participante.
+            apellido_mat (str): Apellido materno del participante.
+            fecha_nac (str): Fecha de nacimiento del participante.
+            sexo (str): Sexo del participante.
+            telefonos (list[int]): Lista de números de teléfono del participante.
+            correos (list[str]): Lista de correos electrónicos del participante.
+            numero_cuenta (int): Número de cuenta del participante.
+            facultad (str): Facultad del participante.
+            carrera (str): Carrera del participante.
+        Returns:
+            Participante: El participante creado.
+        Raises:
+            ValueError: Si el participante ya existe.
+        """
+    
         participante = self.repository.get_by_numero_cuenta(numero_cuenta)
         if participante:
             raise ValueError(f"El participante con número de cuenta {numero_cuenta} ya existe.")
@@ -37,10 +56,25 @@ class ParticipanteService:
         return participante
 
     def get_by_numero_cuenta(self, numero_cuenta: int) -> Participante:
+        """
+        Obtiene un participante por su número de cuenta.
+        Args:
+            numero_cuenta (int): Número de cuenta del participante.
+        Returns:
+            Participante: El participante encontrado o None si no existe.
+        """
         return self.repository.get_by_numero_cuenta(numero_cuenta)
 
     def update_participante(self, numero_cuenta: int, field:str, val:str) -> bool:
-       
+        """
+        Obtiene un participante por su número de cuenta.
+        Args:
+            numero_cuenta (int): Número de cuenta del participante.
+            field (str): Campo a modificar.
+            val (str): Nuevo valor para el campo.
+        Returns:
+            bool: True si se actualizó correctamente, False si no se encontró el participante.
+        """
         participante = self.repository.get_by_numero_cuenta(numero_cuenta)
        
         if not participante:
