@@ -1,6 +1,7 @@
 
-----FUERTES
-
+-- ========
+-- Evento
+-- =======
 CREATE TABLE Evento (
     edicion INTEGER,
     fecha DATE
@@ -8,7 +9,9 @@ CREATE TABLE Evento (
 
 ALTER TABLE Evento ADD PRIMARY KEY (edicion);
 
--- Débiles
+-- ========
+-- CuentaPokemon
+-- =======
 
 CREATE TABLE CuentaPokemon (
     id_persona INTEGER,
@@ -23,6 +26,10 @@ ALTER TABLE CuentaPokemon ADD PRIMARY KEY (id_persona, codigo_de_entrenador);
 ALTER TABLE CuentaPokemon ADD FOREIGN KEY (id_persona) 
     REFERENCES ParticipanteUNAM (id_persona);
 
+
+-- ========
+-- Pokemon
+-- =======
 CREATE TABLE Pokemon (
     id_pokemon INTEGER,
     nombre VARCHAR(50),
