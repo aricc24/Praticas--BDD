@@ -1,31 +1,31 @@
 
 -- ========
--- Evento 
+-- Evento
 -- =======
 CREATE TABLE Evento (
-    Edicion INTEGER NOT NULL UNIQUE,
-    Fecha DATE NOT NULL
+    edicion INTEGER,
+    fecha DATE
 );
 
-ALTER TABLE Evento ADD CONSTRAINT pk_evento PRIMARY KEY (Edicion);
-
+ALTER TABLE Evento ADD PRIMARY KEY (edicion);
 
 -- ========
 -- CuentaPokemon
 -- =======
 
-CREATE TABLE CuentaPokemonGo (
-    id_persona INTEGER NOT NULL,
-    CodigoDeEntrenador INTEGER NOT NULL UNIQUE SERIAL,
-    Equipo VARCHAR(20) NOT NULL,
-    Nivel SMALLINT NOT NULL CHECK (Nivel >= 1),
-    NombreDeUsuario VARCHAR(30) NOT NULL UNIQUE
+CREATE TABLE CuentaPokemon (
+    id_persona INTEGER,
+    codigo_de_entrenador INTEGER,
+    equipo VARCHAR(20),
+    nivel INTEGER,
+    nombreDeUsuario VARCHAR(30),
 );
 
+ALTER TABLE CuentaPokemon ADD PRIMARY KEY (id_persona, codigo_de_entrenador);
 
-ALTER TABLE CuentaPokemonGo ADD CONSTRAINT pk_cuenta_pokemon_go PRIMARY KEY (id_persona, CodigoDeEntrenador);
+ALTER TABLE CuentaPokemon ADD FOREIGN KEY (id_persona) 
+    REFERENCES ParticipanteUNAM (id_persona);
 
-ALTER TABLE CuentaPokemonGo ADD CONSTRAINT fk_cuenta_pokemon_go_participante_unam FOREIGN KEY (id_persona) REFERENCES ParticipanteUNAM(id_persona);
 
 -- ========
 -- Pokemon
@@ -132,8 +132,8 @@ ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_torneo_dist
 CREATE TABLE ComprarCuidador (
     id_persona INTEGER NOT NULL,
     id_alimento INTEGER NOT NULL,
-    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
-    Cantidad REAL NOT NULL CHECK (Cantidad > 0)
+    MetodoDePago VARCHAR(20),
+    Cantidad REAL
 );
 ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_cuidador FOREIGN KEY (id_persona) REFERENCES Cuidador(id_persona);
 ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_alimento FOREIGN KEY (id_alimento) REFERENCES Alimento(id_alimento);
@@ -142,21 +142,21 @@ ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_alimento FOREIGN 
 -- Limpiador 
 -- =======
 CREATE TABLE Limpiador (
-    id_persona INTEGER,
-    Nombre VARCHAR(20) NOT NULL,
-    ApellidoMaterno VARCHAR(20) NOT NULL,
-    ApellidoPaterno VARCHAR(20) NOT NULL,
-    FechaNacimiento DATE NOT NULL,
-    Sexo VARCHAR(10) NOT NULL CHECK (Sexo IN ('M', 'H', 'Otro')),
-    Calle VARCHAR(20) NOT NULL,
-    Colonia VARCHAR(20) NOT NULL,
-    Ciudad VARCHAR(20) NOT NULL,
-    CodigoPostal INTEGER NOT NULL,
+    id_persona INTEGER NOT NULL,
+    Nombre VARCHAR(20),
+    ApellidoMaterno VARCHAR(20),
+    ApellidoPaterno VARCHAR(20),
+    FechaNacimiento DATE,
+    Sexo VARCHAR(10),
+    Calle VARCHAR(20),
+    Colonia VARCHAR(20),
+    Ciudad VARCHAR(20),
+    CodigoPostal INTEGER,
     NumInterior INTEGER,
-    NumExterior INTEGER NOT NULL,
-    Ubicacion VARCHAR(20) CHECHO  ,
+    NumExterior INTEGER,
+    Ubicacion VARCHAR(20),
     Horario TIMETZ,
-    Salario REAL CHECK (Salario >= 0)
+    Salario REAL
 );
 ALTER TABLE Limpiador ADD CONSTRAINT pk_limpiador PRIMARY KEY (id_persona);
 
@@ -164,8 +164,8 @@ ALTER TABLE Limpiador ADD CONSTRAINT pk_limpiador PRIMARY KEY (id_persona);
 -- CorreoLimpiador (Va después de Limpiador)
 -- =======
 CREATE TABLE CorreoLimpiador (
-    id_persona INTEGER,
-    Correo VARCHAR(50) 
+    id_persona INTEGER NOT NULL,
+    Correo VARCHAR(50) NOT NULL
 );
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT pk_correo_limpiador PRIMARY KEY (id_persona, Correo);
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT fk_correo_limpiador_limpiador FOREIGN KEY (id_persona) REFERENCES Limpiador(id_persona);
@@ -174,8 +174,8 @@ ALTER TABLE CorreoLimpiador ADD CONSTRAINT fk_correo_limpiador_limpiador FOREIGN
 -- TelefonoLimpiador (Va después de Limpiador)
 -- =======
 CREATE TABLE TelefonoLimpiador (
-    id_persona INTEGER,
-    Telefono CHAR(10) 
+    id_persona INTEGER NOT NULL,
+    Telefono CHAR(10) NOT NULL
 );
 ALTER TABLE TelefonoLimpiador ADD CONSTRAINT pk_telefono_limpiador PRIMARY KEY (id_persona, Telefono);
 ALTER TABLE TelefonoLimpiador ADD CONSTRAINT fk_telefono_limpiador_limpiador FOREIGN KEY (id_persona) REFERENCES Limpiador(id_persona);
@@ -184,7 +184,7 @@ ALTER TABLE TelefonoLimpiador ADD CONSTRAINT fk_telefono_limpiador_limpiador FOR
 -- TrabajarLimpiador (Va después de Limpiador y Evento)
 -- =======
 CREATE TABLE TrabajarLimpiador (
-    id_persona INTEGER,
+    id_persona INTEGER NOT NULL,
     Edicion INTEGER NOT NULL
 );
 ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_limpiador_limpiador FOREIGN KEY (id_persona) REFERENCES Limpiador(id_persona);
@@ -206,8 +206,8 @@ ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_alimento FOREIG
 -- TorneoPelea (Va después de Evento y ParticipanteUNAM)
 -- =======
 CREATE TABLE TorneoPelea (
-    Edicion INTEGER,
-    id_torneo INTEGER,
+    Edicion INTEGER NOT NULL,
+    id_torneo INTEGER NOT NULL,
     id_persona INTEGER,
     CantidadAPremiar REAL
 );
@@ -219,9 +219,9 @@ ALTER TABLE TorneoPelea ADD CONSTRAINT fk_torneo_pelea_participante_unam FOREIGN
 -- PeleaTorneo (Va después de TorneoPelea y CuentaPokemonGo)
 -- =======
 CREATE TABLE PeleaTorneo (
-    Edicion INTEGER ,
-    id_torneo INTEGER,
-    NumeroPelea INTEGER,
+    Edicion INTEGER NOT NULL,
+    id_torneo INTEGER NOT NULL,
+    NumeroPelea INTEGER NOT NULL,
     id_persona INTEGER,
     CodigoDeEntrenador INTEGER,
     Fecha DATE,
@@ -242,3 +242,122 @@ CREATE TABLE Utilizar (
 );
 ALTER TABLE Utilizar ADD CONSTRAINT fk_utilizar_pokemon FOREIGN KEY (id_pokemon) REFERENCES Pokemon(id_pokemon);
 ALTER TABLE Utilizar ADD CONSTRAINT fk_utilizar_pelea_torneo FOREIGN KEY (Edicion, id_torneo, NumeroPelea) REFERENCES PeleaTorneo(Edicion, id_torneo, NumeroPelea);
+
+
+
+-- ========
+-- Alimento (Va después de Vendedor)
+-- ========
+ 
+CREATE TABLE Alimento (
+    id_alimento INTEGER, 
+    id_persona INTEGER, 
+    FechaDeCaducidad DATE,
+    Nombre VARCHAR(20),
+    Tipo VARCHAR(20),
+    Precio REAL
+);
+
+ALTER TABLE Alimento ADD CONSTRAINT pk_alimento PRIMARY KEY (id_alimento);
+ALTER TABLE Alimento ADD CONSTRAINT fk_alimento_vendedor FOREIGN KEY (id_persona) REFERENCES Vendedor(id_persona);
+
+
+-- ========
+-- Encargado Regsitro 
+-- ========
+ 
+CREATE TABLE EncargadoRegistro (
+    id_persona INTEGER, 
+    Nombre VARCHAR(20),
+    ApellidoMaterno VARCHAR(20),
+    ApellidoPaterno VARCHAR(20),
+    FechaDeNacimiento DATE,
+    Sexo VARCHAR(10),
+    Calle VARCHAR(20),
+    Colonia VARCHAR(20),
+    Ciudad VARCHAR(20),
+    CodigoPostal INTEGER, 
+    NumInterior INTEGER, 
+    NumExterior INTEGER, 
+    EsJugador BOOLEAN
+
+);
+
+ALTER TABLE EncargadoRegistro ADD CONSTRAINT pk_encargado_registro PRIMARY KEY (id_persona);
+
+
+-- ======== 
+-- ComprarEncargadoRegsitro (Va después de EncargadoRegistro y Alimento)
+-- ========
+
+CREATE TABLE ComprarEncargadoRegistro (
+    id_persona INTEGER NOT NULL, 
+    id_alimento INTEGER NOT NULL, 
+    MetodoDePago VARCHAR(20),
+    Cantidad REAL
+);
+
+ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT fk_comprar_encargado_registro_encargado FOREIGN KEY (id_persona) REFERENCES EncargadoRegistro(id_persona);
+ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT fk_comprar_encargado_registro_alimento FOREIGN KEY (id_alimento) REFERENCES Alimento(id_alimento);
+
+-- ========
+-- CorreoEncargadoRegistro (Va después de EncargadoRegistro)
+-- =======
+CREATE TABLE CorreoEncargadoRegistro (
+    id_persona INTEGER NOT NULL,
+    Correo VARCHAR(50) NOT NULL
+);
+ALTER TABLE CorreoEncargadoRegistro ADD CONSTRAINT pk_correo_encargado_registro PRIMARY KEY (id_persona, Correo);
+ALTER TABLE CorreoEncargadoRegistro ADD CONSTRAINT fk_correo_encargado_registro FOREIGN KEY (id_persona) REFERENCES EncargadoRegistro(id_persona);
+
+-- ========
+-- TelefonoEncragadoResgitro (Va después de EncargadoRegistro)
+-- =======
+CREATE TABLE TelefonoEncragadoResgitro (
+    id_persona INTEGER NOT NULL,
+    Telefono CHAR(10) NOT NULL
+);
+ALTER TABLE TelefonoEncragadoResgitro ADD CONSTRAINT pk_telefono_encargado_registro PRIMARY KEY (id_persona, Telefono);
+ALTER TABLE TelefonoEncragadoResgitro ADD CONSTRAINT fk_telefono_encargado_registro FOREIGN KEY (id_persona) REFERENCES EncargadoRegistro(id_persona);
+
+
+-- ========
+-- EncargadoInscribirParticipante (Va después de EncargadoRegistro y ParticipanteUNAM)
+-- =======
+
+CREATE TABLE EncargadoInscribirParticipante (
+    id_persona_encargado INTEGER NOT NULL, 
+    id_persona_participante INTEGER NOT NULL, 
+    Fecha DATE
+);
+
+ALTER TABLE EncargadoInscribirParticipante ADD CONSTRAINT fk_encargado_inscribir_participante_encargado FOREIGN KEY (id_persona_encargado) REFERENCES EncargadoRegistro(id_persona);
+ALTER TABLE EncargadoInscribirParticipante ADD CONSTRAINT fk_encargado_inscribir_participante_participante FOREIGN KEY (id_persona_participante) REFERENCES ParticipanteUNAM(id_persona);
+
+
+-- ========
+-- TrabajarEncargadoRegistro (Va después de EncargadoRegistro y Evento)
+-- =======
+
+CREATE TABLE TrabajarEncargadoRegistro (
+    edicion INTEGER NOT NULL, 
+    id_persona INTEGER NOT NULL
+);
+
+ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_registro_evento FOREIGN KEY (edicion) REFERENCES Evento(edicion);
+ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_registro_encargado FOREIGN KEY (id_persona) REFERENCES EncargadoRegistro(id_persona);
+
+
+
+-- ========
+-- TrabajarEncargadoRegistro (Va después de Cuidador y Evento)
+-- =======
+
+CREATE TABLE TrabajarCuidador (
+    edicion INTEGER NOT NULL, 
+    id_persona INTEGER NOT NULL
+);
+
+ALTER TABLE TrabajarCuidador ADD CONSTRAINT fk_trabajar_cuidador_evento FOREIGN KEY (edicion) REFERENCES Evento(edicion);
+ALTER TABLE TrabajarCuidador ADD CONSTRAINT fk_trabajar_cuidador_cuidador FOREIGN KEY (id_persona) REFERENCES Cuidador(id_persona);
+
