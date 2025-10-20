@@ -52,8 +52,8 @@ ALTER TABLE Pokemon ADD CONSTRAINT fk_pokemon_cuenta_pokemon_go FOREIGN KEY (id_
 -- TorneoCapturaShinys 
 -- ========
 CREATE TABLE TorneoCapturaShinys (
-    Edicion INTEGER,
-    id_torneo INTEGER,
+    Edicion INTEGER NOT NULL,
+    id_torneo INTEGER NOT NULL UNIQUE SERIAL,
     id_persona INTEGER,
     CantidadAPremiar REAL DEFAULT 500.0
 );
@@ -66,8 +66,8 @@ ALTER TABLE TorneoCapturaShinys ADD CONSTRAINT fk_torneo_captura_shinys_particip
 -- TorneoDistanciaRecorrida
 -- ========
 CREATE TABLE TorneoDistanciaRecorrida (
-    Edicion INTEGER,
-    id_torneo INTEGER,
+    Edicion INTEGER NOT NULL,
+    id_torneo INTEGER NOT NULL UNIQUE SERIAL,
     id_persona INTEGER,
     CantidadAPremiar REAL DEFAULT 500.0
 );
@@ -80,9 +80,9 @@ ALTER TABLE TorneoDistanciaRecorrida ADD CONSTRAINT fk_torneo_distancia_recorrid
 -- CapturaPokemon
 -- ========
 CREATE TABLE CapturaPokemon (
-    Edicion INTEGER ,
-    id_torneo INTEGER,
-    id_captura INTEGER
+    Edicion INTEGER NOT NULL,
+    id_torneo INTEGER NOT NULL,
+    id_captura INTEGER NOT NULL UNIQUE SERIAL
 );
 
 
@@ -112,9 +112,9 @@ ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_pokemon FOREIGN KEY (id_pokemo
 -- DistanciaRecorrida
 -- ========
 CREATE TABLE DistanciaRecorrida (
-    Edicion INTEGER,
-    id_torneo INTEGER,
-    id_distancia INTEGER,
+    Edicion INTEGER NOT NULL,
+    id_torneo INTEGER NOT NULL,
+    id_distancia INTEGER NOT NULL UNIQUE SERIAL,
     id_persona INTEGER NOT NULL,
     CodigoDeEntrenador INTEGER NOT NULL,
     Locación VARCHAR(10) NOT NULL CHECK (Locación IN ('Universum', 'Entrada', 'Rectoria')),
