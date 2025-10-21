@@ -252,3 +252,29 @@ CREATE TABLE EncargadoInscribirParticipante (
 
 ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_registro_evento FOREIGN KEY (edicion) REFERENCES Evento(edicion);
 ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_registro_encargado FOREIGN KEY (id_persona) REFERENCES EncargadoRegistro(id_persona);
+
+
+-- ========
+-- TrabajarEncargadoRegistro (Va después de EncargadoRegistro y Evento)
+-- =======
+
+CREATE TABLE TrabajarEncargadoRegistro (
+    Edicion INTEGER NOT NULL, 
+    id_persona INTEGER NOT NULL
+);
+
+ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_registro_evento FOREIGN KEY (Edicion) REFERENCES Evento(edicion);
+ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_registro_encargado FOREIGN KEY (id_persona) REFERENCES EncargadoRegistro(id_persona);
+
+
+-- ========
+-- TrabajarCuidador (Va después de Cuidador y Evento)
+-- =======
+
+CREATE TABLE TrabajarCuidador (
+    Edicion INTEGER NOT NULL, 
+    id_persona INTEGER NOT NULL
+);
+
+ALTER TABLE TrabajarCuidador ADD CONSTRAINT fk_trabajar_cuidador_evento FOREIGN KEY (Edicion) REFERENCES Evento(edicion);
+ALTER TABLE TrabajarCuidador ADD CONSTRAINT fk_trabajar_cuidador_cuidador FOREIGN KEY (id_persona) REFERENCES Cuidador(id_persona);
