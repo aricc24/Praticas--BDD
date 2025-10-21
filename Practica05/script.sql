@@ -395,13 +395,21 @@ ADD CONSTRAINT fk_Alimento_Comprar FOREIGN KEY (IdAlimento) REFERENCES Alimento(
 -- ComprarParticipanteUNAM
 -- ========
 CREATE TABLE ComprarParticipanteUNAM (
-    IdPersona INTEGER NOT NULL,
-    IdAlimento INTEGER NOT NULL,
-    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
-    Cantidad REAL CHECK (Cantidad > 0)
+    IdPersona INTEGER,
+    IdAlimento INTEGER,
+    MetodoDePago VARCHAR(20),
+    Cantidad REAL
 );
 
 ALTER TABLE ComprarParticipanteUNAM 
+    ALTER COLUMN IdPersona SET NOT NULL,
+    ALTER COLUMN IdAlimento SET NOT NULL,
+    ALTER COLUMN MetodoDePago SET NOT NULL,
+    ALTER COLUMN Cantidad SET NOT NULL;
+
+ALTER TABLE ComprarParticipanteUNAM 
+    ADD CONSTRAINT chk_metodo_de_pago CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
+    ADD CONSTRAINT chk_cantidad CHECK (Cantidad > 0); 
 ADD CONSTRAINT fk_Participante_Comprar FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
 
 ALTER TABLE ComprarParticipanteUNAM 
@@ -424,7 +432,7 @@ CREATE TABLE EncargadoInscribirParticipante (
 ALTER TABLE EncargadoInscribirParticipante
 ALTER COLUMN IdPersona_encargado SET NOT NULL,
 ALTER COLUMN IdPersona_participante SET NOT NULL,
-ALTER COLUMN Fecha SET NOT NULL,
+ALTER COLUMN Fecha SET NOT NULL;
 
 -- ========
 -- ParticipanteInscribirEvento
