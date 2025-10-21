@@ -125,6 +125,41 @@ ALTER TABLE DistanciaRecorrida ADD CONSTRAINT pk_distancia_recorrido PRIMARY KEY
 ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_cuenta_pokemon_go FOREIGN KEY (id_persona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(id_persona, CodigoDeEntrenador);
 ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_torneo_distancia_recorrida FOREIGN KEY (Edicion, id_torneo) REFERENCES TorneoDistanciaRecorrida(Edicion, id_torneo);
 
+
+-- ========
+-- ComprarCuidador (Va después de Cuidador y Alimento)
+-- ========
+CREATE TABLE ComprarCuidador (
+    id_persona INTEGER NOT NULL,
+    id_alimento INTEGER NOT NULL,
+    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
+    Cantidad REAL NOT NULL CHECK (Cantidad > 0)
+);
+ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_cuidador FOREIGN KEY (id_persona) REFERENCES Cuidador(id_persona);
+ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_alimento FOREIGN KEY (id_alimento) REFERENCES Alimento(id_alimento);
+
+-- ========
+-- Limpiador 
+-- =======
+CREATE TABLE Limpiador (
+    id_persona INTEGER NOT NULL SERIAL,
+    Nombre VARCHAR(20) NOT NULL,
+    ApellidoMaterno VARCHAR(20) NOT NULL,
+    ApellidoPaterno VARCHAR(20) NOT NULL,
+    FechaNacimiento DATE NOT NULL,
+    Sexo VARCHAR(10) NOT NULL CHECK (Sexo IN ('M', 'H', 'Otro')),
+    Calle VARCHAR(20) NOT NULL,
+    Colonia VARCHAR(20) NOT NULL,
+    Ciudad VARCHAR(20) NOT NULL,
+    CodigoPostal INTEGER NOT NULL,
+    NumInterior INTEGER,
+    NumExterior INTEGER NOT NULL,
+    Ubicacion VARCHAR(20),
+    Horario VARCHAR(10) CHECK (Horario IN ('Matutino', 'Vespertino')),
+    Salario REAL CHECK (Salario >= 0)
+);
+ALTER TABLE Limpiador ADD CONSTRAINT pk_limpiador PRIMARY KEY (id_persona);
+
 -- ========
 -- CorreoLimpiador (Va después de Limpiador)
 -- =======
@@ -161,8 +196,8 @@ ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_limpiador_evento FOREIG
 CREATE TABLE ComprarLimpiador (
     id_persona INTEGER NOT NULL,
     id_alimento INTEGER NOT NULL,
-    MetodoDePago VARCHAR(20),
-    Cantidad REAL
+    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
+    Cantidad REAL NOT NULL CHECK (Cantidad > 0)
 );
 ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_limpiador FOREIGN KEY (id_persona) REFERENCES Limpiador(id_persona);
 ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_alimento FOREIGN KEY (id_alimento) REFERENCES Alimento(id_alimento);
@@ -174,7 +209,7 @@ CREATE TABLE TorneoPelea (
     Edicion INTEGER NOT NULL,
     id_torneo INTEGER NOT NULL,
     id_persona INTEGER,
-    CantidadAPremiar REAL
+    CantidadAPremiar REAL DEFAULT 500.0
 );
 ALTER TABLE TorneoPelea ADD CONSTRAINT pk_torneo_pelea PRIMARY KEY (Edicion, id_torneo);
 ALTER TABLE TorneoPelea ADD CONSTRAINT fk_torneo_pelea_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
@@ -186,11 +221,11 @@ ALTER TABLE TorneoPelea ADD CONSTRAINT fk_torneo_pelea_participante_unam FOREIGN
 CREATE TABLE PeleaTorneo (
     Edicion INTEGER NOT NULL,
     id_torneo INTEGER NOT NULL,
-    NumeroPelea INTEGER NOT NULL,
+    NumeroPelea INTEGER NOT NULL SERIAL,
     id_persona INTEGER,
-    CodigoDeEntrenador INTEGER,
-    Fecha DATE,
-    Fase INTEGER
+    CodigoDeEntrenador INTEGER NOT NULL,
+    Fecha DATE NOT NULL,
+    Fase INTEGER NOT NULL
 );
 ALTER TABLE PeleaTorneo ADD CONSTRAINT pk_pelea_torneo PRIMARY KEY (Edicion, id_torneo, NumeroPelea);
 ALTER TABLE PeleaTorneo ADD CONSTRAINT fk_pelea_torneo_torneo FOREIGN KEY (Edicion, id_torneo) REFERENCES TorneoPelea(Edicion, id_torneo);
