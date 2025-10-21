@@ -357,3 +357,148 @@ CREATE TABLE TrabajarCuidador (
 
 ALTER TABLE TrabajarCuidador ADD CONSTRAINT fk_trabajar_cuidador_evento FOREIGN KEY (Edicion) REFERENCES Evento(edicion);
 ALTER TABLE TrabajarCuidador ADD CONSTRAINT fk_trabajar_cuidador_cuidador FOREIGN KEY (id_persona) REFERENCES Cuidador(id_persona);
+
+
+-- ========
+-- ParticipanteUNAM
+-- ========
+CREATE TABLE ParticipanteUNAM (
+    IdPersona INTEGER NOT NULL,
+    NumeroDeCuenta INTEGER NOT NULL UNIQUE,
+    Nombre VARCHAR(20) NOT NULL,
+    ApellidoMaterno VARCHAR(20) NOT NULL,
+    ApellidoPaterno VARCHAR(20) NOT NULL,
+    FechaNacimiento DATE NOT NULL,
+    Sexo CHAR(10) CHECK (Sexo IN ('M', 'H', 'Otro')),
+    Carrera VARCHAR(20) NOT NULL,
+    Facultad VARCHAR(20) NOT NULL
+);
+
+ALTER TABLE ParticipanteUNAM 
+ADD CONSTRAINT PK_ParticipanteUNAM PRIMARY KEY (IdPersona);
+
+
+-- ========
+-- Espectador
+-- ========
+CREATE TABLE Espectador (
+    IdPersona INTEGER NOT NULL,
+    Nombre VARCHAR(20) NOT NULL,
+    ApellidoMaterno VARCHAR(20) NOT NULL,
+    ApellidoPaterno VARCHAR(20) NOT NULL,
+    FechaNacimiento DATE NOT NULL,
+    Sexo CHAR(10) CHECK (Sexo IN ('M', 'H', 'Otro')),
+    HoraIngreso TIMETZ,
+    HoraSalida TIMETZ
+);
+
+ALTER TABLE Espectador 
+ADD CONSTRAINT PK_Espectador PRIMARY KEY (IdPersona);
+
+
+-- ========
+-- ComprarEspectador
+-- ========
+CREATE TABLE ComprarEspectador (
+    IdPersona INTEGER NOT NULL,
+    IdAlimento INTEGER NOT NULL,
+    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
+    Cantidad REAL
+);
+
+ALTER TABLE ComprarEspectador 
+ADD CONSTRAINT PK_ComprarEspectador PRIMARY KEY (IdPersona, IdAlimento);
+
+ALTER TABLE ComprarEspectador 
+ADD CONSTRAINT FK_Espectador_Comprar FOREIGN KEY (IdPersona) REFERENCES Espectador(IdPersona);
+
+ALTER TABLE ComprarEspectador 
+ADD CONSTRAINT FK_Alimento_Comprar FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
+
+
+-- ========
+-- ComprarParticipanteUNAM
+-- ========
+CREATE TABLE ComprarParticipanteUNAM (
+    IdPersona INTEGER NOT NULL,
+    IdAlimento INTEGER NOT NULL,
+    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
+    Cantidad REAL
+);
+
+ALTER TABLE ComprarParticipanteUNAM 
+ADD CONSTRAINT PK_ComprarParticipanteUNAM PRIMARY KEY (IdPersona, IdAlimento);
+
+ALTER TABLE ComprarParticipanteUNAM 
+ADD CONSTRAINT FK_Participante_Comprar FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+
+ALTER TABLE ComprarParticipanteUNAM 
+ADD CONSTRAINT FK_Alimento_Comprar_Participante FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
+
+
+-- ========
+-- CorreoParticipante
+-- ========
+CREATE TABLE CorreoParticipante (
+    IdPersona INTEGER NOT NULL,
+    Correo VARCHAR(50) NOT NULL
+);
+
+ALTER TABLE CorreoParticipante 
+ADD CONSTRAINT PK_CorreoParticipante PRIMARY KEY (IdPersona, Correo);
+
+ALTER TABLE CorreoParticipante 
+ADD CONSTRAINT FK_Participante_Correo FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+
+
+-- ========
+-- ParticipanteInscribirEvento
+-- ========
+CREATE TABLE ParticipanteInscribirEvento (
+    Edicion INTEGER NOT NULL,
+    IdPersona INTEGER NOT NULL,
+    Fecha DATE NOT NULL,
+    Costo REAL NOT NULL
+);
+
+ALTER TABLE ParticipanteInscribirEvento 
+ADD CONSTRAINT PK_ParticipanteInscribirEvento PRIMARY KEY (Edicion, IdPersona);
+
+ALTER TABLE ParticipanteInscribirEvento 
+ADD CONSTRAINT FK_InscribirEvento_Edicion FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
+
+ALTER TABLE ParticipanteInscribirEvento 
+ADD CONSTRAINT FK_InscribirEvento_Participante FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+
+
+-- ========
+-- Asistir
+-- ========
+CREATE TABLE Asistir (
+    Edicion INTEGER NOT NULL,
+    IdPersona INTEGER NOT NULL
+);
+
+ALTER TABLE Asistir 
+ADD CONSTRAINT PK_Asistir PRIMARY KEY (Edicion, IdPersona);
+
+ALTER TABLE Asistir 
+ADD CONSTRAINT FK_Asistir_Edicion FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
+
+ALTER TABLE Asistir 
+ADD CONSTRAINT FK_Asistir_Espectador FOREIGN KEY (IdPersona) REFERENCES Espectador(IdPersona);
+
+
+-- ========
+-- TelefonoParticipante
+-- ========
+CREATE TABLE TelefonoParticipante (
+    IdPersona INTEGER NOT NULL,
+    Telefono CHAR(10) NOT NULL
+);
+
+ALTER TABLE TelefonoParticipante 
+ADD CONSTRAINT PK_TelefonoParticipante PRIMARY KEY (IdPersona, Telefono);
+
+ALTER TABLE TelefonoParticipante 
+ADD CONSTRAINT FK_Telefono_Participante FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
