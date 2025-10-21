@@ -412,28 +412,34 @@ ADD CONSTRAINT fk_Alimento_Comprar_Participante FOREIGN KEY (IdAlimento) REFEREN
 -----------Relaciones extra --------------------------------
 
 -- ========
--- EncargadoInscribirParticipante (Va después de EncargadoRegistro y ParticipanteUNAM)
+-- EncargadoInscribirParticipante 
 -- =======
 
 CREATE TABLE EncargadoInscribirParticipante (
-    IdPersona_encargado INTEGER NOT NULL, 
-    IdPersona_participante INTEGER NOT NULL, 
-    Fecha DATE NOT NULL
+    IdPersona_encargado INTEGER,
+    IdPersona_participante INTEGER,
+    Fecha DATE
 );
 
-ALTER TABLE EncargadoInscribirParticipante 
-ADD CONSTRAINT fk_encargado_inscribir_participante_encargado FOREIGN KEY (IdPersona_encargado) REFERENCES EncargadoRegistro(IdPersona),
-ADD CONSTRAINT fk_encargado_inscribir_participante_participante FOREIGN KEY (IdPersona_participante) REFERENCES ParticipanteUNAM(IdPersona);
+ALTER TABLE EncargadoInscribirParticipante
+ALTER COLUMN IdPersona_encargado SET NOT NULL,
+ALTER COLUMN IdPersona_participante SET NOT NULL,
+ALTER COLUMN Fecha SET NOT NULL,
 
 -- ========
 -- ParticipanteInscribirEvento
 -- ========
 CREATE TABLE ParticipanteInscribirEvento (
-    Edicion INTEGER NOT NULL,
-    IdPersona INTEGER NOT NULL,
-    Fecha DATE NOT NULL,
-    Costo REAL NOT NULL
+    Edicion INTEGER,
+    IdPersona INTEGER,
+    Fecha DATE,
+    Costo REAL
 );
+
+ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Edicion SET NOT NULL;
+ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Fecha SET NOT NULL;
+ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Costo SET NOT NULL;
 
 ALTER TABLE ParticipanteInscribirEvento 
 ADD CONSTRAINT pk_ParticipanteInscribirEvento PRIMARY KEY (Edicion, IdPersona);
@@ -449,9 +455,12 @@ ADD CONSTRAINT fk_InscribirEvento_Participante FOREIGN KEY (IdPersona) REFERENCE
 -- Asistir
 -- ========
 CREATE TABLE Asistir (
-    Edicion INTEGER NOT NULL,
-    IdPersona INTEGER NOT NULL
+    Edicion INTEGER,
+    IdPersona INTEGER
 );
+
+ALTER TABLE Asistir ALTER COLUMN Edicion SET NOT NULL;
+ALTER TABLE Asistir ALTER COLUMN IdPersona SET NOT NULL;
 
 ALTER TABLE Asistir 
 ADD CONSTRAINT pk_Asistir PRIMARY KEY (Edicion, IdPersona);
