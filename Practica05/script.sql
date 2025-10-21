@@ -1,31 +1,30 @@
-
--- ========
--- Evento
+- ========
+-- Evento 
 -- =======
 CREATE TABLE Evento (
-    edicion INTEGER,
-    fecha DATE
+    Edicion INTEGER NOT NULL UNIQUE,
+    Fecha DATE NOT NULL
 );
 
-ALTER TABLE Evento ADD PRIMARY KEY (edicion);
+ALTER TABLE Evento ADD CONSTRAINT pk_evento PRIMARY KEY (Edicion);
+
 
 -- ========
 -- CuentaPokemon
 -- =======
 
-CREATE TABLE CuentaPokemon (
-    id_persona INTEGER,
-    codigo_de_entrenador INTEGER,
-    equipo VARCHAR(20),
-    nivel INTEGER,
-    nombreDeUsuario VARCHAR(30),
+CREATE TABLE CuentaPokemonGo (
+    id_persona INTEGER NOT NULL,
+    CodigoDeEntrenador INTEGER NOT NULL UNIQUE SERIAL,
+    Equipo VARCHAR(20) NOT NULL,
+    Nivel SMALLINT NOT NULL CHECK (Nivel >= 1),
+    NombreDeUsuario VARCHAR(30) NOT NULL UNIQUE
 );
 
-ALTER TABLE CuentaPokemon ADD PRIMARY KEY (id_persona, codigo_de_entrenador);
 
-ALTER TABLE CuentaPokemon ADD FOREIGN KEY (id_persona) 
-    REFERENCES ParticipanteUNAM (id_persona);
+ALTER TABLE CuentaPokemonGo ADD CONSTRAINT pk_cuenta_pokemon_go PRIMARY KEY (id_persona, CodigoDeEntrenador);
 
+ALTER TABLE CuentaPokemonGo ADD CONSTRAINT fk_cuenta_pokemon_go_participante_unam FOREIGN KEY (id_persona) REFERENCES ParticipanteUNAM(id_persona);
 
 -- ========
 -- Pokemon
