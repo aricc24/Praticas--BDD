@@ -270,7 +270,7 @@ CREATE TABLE EncargadoRegistro (
     ApellidoMaterno VARCHAR(20) NOT NULL,
     ApellidoPaterno VARCHAR(20) NOT NULL,
     FechaDeNacimiento DATE NOT NULL,
-    Sexo VARCHAR(10) NOT NULL,
+    Sexo CHAR(10) NOT NULL CHECK (Sexo IN ('M', 'H', 'Otro')),
     Calle VARCHAR(20) NOT NULL,
     Colonia VARCHAR(20) NOT NULL,
     Ciudad VARCHAR(20) NOT NULL,
@@ -289,7 +289,7 @@ ALTER TABLE EncargadoRegistro ADD CONSTRAINT pk_encargado_registro PRIMARY KEY (
 CREATE TABLE ComprarEncargadoRegistro (
     id_persona INTEGER NOT NULL, 
     id_alimento INTEGER NOT NULL, 
-    MetodoDePago VARCHAR(20) NOT NULL,
+    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
     Cantidad REAL NOT NULL CHECK (Cantidad > 0)
 );
 
