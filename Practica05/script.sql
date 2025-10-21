@@ -145,7 +145,7 @@ ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_alimento FOREIGN 
 -- 2. Limpiador 
 -- =======
 CREATE TABLE Limpiador (
-    IdPersona INTEGER NOT NULL SERIAL,
+    IdPersona INTEGER NOT NULL SERIAL UNIQUE,
     Nombre VARCHAR(20) NOT NULL,
     ApellidoMaterno VARCHAR(20) NOT NULL,
     ApellidoPaterno VARCHAR(20) NOT NULL,
@@ -210,7 +210,7 @@ ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_alimento FOREIG
 -- =======
 CREATE TABLE TorneoPelea (
     Edicion INTEGER NOT NULL,
-    IdTorneo INTEGER NOT NULL,
+    IdTorneo INTEGER NOT NULL UNIQUE SERIAL,
     IdPersona INTEGER,
     CantidadAPremiar REAL DEFAULT 500.0
 );
@@ -224,7 +224,7 @@ ALTER TABLE TorneoPelea ADD CONSTRAINT fk_torneo_pelea_participante_unam FOREIGN
 CREATE TABLE PeleaTorneo (
     Edicion INTEGER NOT NULL,
     IdTorneo INTEGER NOT NULL,
-    NumeroPelea INTEGER NOT NULL SERIAL,
+    NumeroPelea INTEGER NOT NULL SERIAL UNIQUE,
     IdPersona INTEGER,
     CodigoDeEntrenador INTEGER NOT NULL,
     Fecha DATE NOT NULL,
