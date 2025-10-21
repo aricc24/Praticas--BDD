@@ -2,10 +2,12 @@
 --  Evento 
 -- =======
 CREATE TABLE Evento (
-    Edicion INTEGER NOT NULL UNIQUE,
-    Fecha DATE NOT NULL
+    Edicion INTEGER,
+    Fecha DATE
 );
-
+ALTER TABLE Evento ALTER COLUMN Edicion SET NOT NULL;
+ALTER TABLE Evento ADD CONSTRAINT uq_evento_edicion UNIQUE (Edicion);
+ALTER TABLE Evento ALTER COLUMN Fecha SET NOT NULL;
 ALTER TABLE Evento ADD CONSTRAINT pk_evento PRIMARY KEY (Edicion);
 
 ------------------- PERSONAS -------------------
@@ -13,61 +15,94 @@ ALTER TABLE Evento ADD CONSTRAINT pk_evento PRIMARY KEY (Edicion);
 --  ParticipanteUNAM
 -- ========
 CREATE TABLE ParticipanteUNAM (
-    IdPersona INTEGER NOT NULL UNIQUE ,
-    NumeroDeCuenta INTEGER NOT NULL UNIQUE,
-    Nombre VARCHAR(20) NOT NULL,
-    ApellidoMaterno VARCHAR(20) NOT NULL,
-    ApellidoPaterno VARCHAR(20) NOT NULL,
-    FechaNacimiento DATE NOT NULL,
-    Sexo VARCHAR(10) CHECK (Sexo IN ('M', 'H', 'Otro')),
-    Carrera VARCHAR(20) NOT NULL,
-    Facultad VARCHAR(20) NOT NULL
+    IdPersona INTEGER,
+    NumeroDeCuenta INTEGER,
+    Nombre VARCHAR(20),
+    ApellidoMaterno VARCHAR(20),
+    ApellidoPaterno VARCHAR(20)
+    FechaNacimiento DATE,
+    Sexo VARCHAR(10),
+    Carrera VARCHAR(20),
+    Facultad VARCHAR(20)
 );
-
-ALTER TABLE ParticipanteUNAM 
-ADD CONSTRAINT pk_ParticipanteUNAM PRIMARY KEY (IdPersona);
+ALTER TABLE ParticipanteUNAM ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ADD CONSTRAINT uq_participante_unam_idpersona UNIQUE (IdPersona);
+ALTER TABLE ParticipanteUNAM ALTER COLUMN NumeroDeCuenta SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ADD CONSTRAINT uq_participante_unam_numerodecuenta UNIQUE (NumeroDeCuenta);
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Nombre SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ALTER COLUMN ApellidoMaterno SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ALTER COLUMN ApellidoPaterno SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ALTER COLUMN FechaNacimiento SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ADD CONSTRAINT chk_participante_unam_sexo CHECK (Sexo IN ('M', 'H', 'Otro'));
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Carrera SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Facultad SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ADD CONSTRAINT pk_ParticipanteUNAM PRIMARY KEY (IdPersona);
 
 -- ========
 -- EncargadoRegistro 
 -- ========
- 
 CREATE TABLE EncargadoRegistro (
-    IdPersona INTEGER NOT NULL UNIQUE , 
-    Nombre VARCHAR(20) NOT NULL,
-    ApellidoMaterno VARCHAR(20) NOT NULL,
-    ApellidoPaterno VARCHAR(20) NOT NULL,
-    FechaDeNacimiento DATE NOT NULL,
-    Sexo VARCHAR(10) NOT NULL CHECK (Sexo IN ('M', 'H', 'Otro')),
-    Calle VARCHAR(20) NOT NULL,
-    Colonia VARCHAR(20) NOT NULL,
-    Ciudad VARCHAR(20) NOT NULL,
-    CodigoPostal INTEGER NOT NULL, 
-    NumInterior INTEGER NOT NULL, 
-    NumExterior INTEGER NOT NULL, 
-    EsJugador BOOLEAN NOT NULL
+    IdPersona INTEGER,
+    Nombre VARCHAR(20),
+    ApellidoMaterno VARCHAR(20),
+    ApellidoPaterno VARCHAR(20),
+    FechaDeNacimiento DATE,
+    Sexo VARCHAR(10),
+    Calle VARCHAR(20),
+    Colonia VARCHAR(20),
+    Ciudad VARCHAR(20),
+    CodigoPostal INTEGER,
+    NumInterior INTEGER,
+    NumExterior INTEGER,
+    EsJugador BOOLEAN 
 );
-
+ALTER TABLE EncargadoRegistro ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE EncargadoRegistro ADD CONSTRAINT uq_encargado_registro_idpersona UNIQUE (IdPersona);
+ALTER TABLE EncargadoRegistro ALTER COLUMN Nombre SET NOT NULL;
+ALTER TABLE EncargadoRegistro ALTER COLUMN ApellidoMaterno SET NOT NULL;
+ALTER TABLE EncargadoRegistro ALTER COLUMN ApellidoPaterno SET NOT NULL;
+ALTER TABLE EncargadoRegistro ALTER COLUMN FechaDeNacimiento SET NOT NULL;
+ALTER TABLE EncargadoRegistro ADD CONSTRAINT chk_encargado_registro_sexo CHECK (Sexo IN ('M', 'H', 'Otro'));
+ALTER TABLE EncargadoRegistro ALTER COLUMN Sexo SET NOT NULL;
+ALTER TABLE EncargadoRegistro ALTER COLUMN Calle SET NOT NULL;
+ALTER TABLE EncargadoRegistro ALTER COLUMN Colonia SET NOT NULL;
+ALTER TABLE EncargadoRegistro ALTER COLUMN Ciudad SET NOT NULL;
+ALTER TABLE EncargadoRegistro ALTER COLUMN CodigoPostal SET NOT NULL;
+ALTER TABLE EncargadoRegistro ALTER COLUMN NumExterior SET NOT NULL;
+ALTER TABLE EncargadoRegistro ALTER COLUMN EsJugador SET NOT NULL;
 ALTER TABLE EncargadoRegistro ADD CONSTRAINT pk_encargado_registro PRIMARY KEY (IdPersona);
 
 -- ========
 -- Vendedor 
 -- =======
 CREATE TABLE Vendedor (
-    IdPersona INTEGER NOT NULL UNIQUE , 
-    Nombre VARCHAR(20) NOT NULL,
-    ApellidoMaterno VARCHAR(20) NOT NULL,
-    ApellidoPaterno VARCHAR(20) NOT NULL,
-    FechaNacimiento DATE NOT NULL,
-    Sexo VARCHAR (10) NOT NULL CHECK (Sexo IN ('M', 'H', 'Otro')),
-    Calle VARCHAR (20) NOT NULL,
-    Colonia VARCHAR (20) NOT NULL,
-    Ciudad VARCHAR (20) NOT NULL,
-    CodigoPostal INTEGER NOT NULL,
+    IdPersona INTEGER,
+    Nombre VARCHAR(20),
+    ApellidoMaterno VARCHAR(20),
+    ApellidoPaterno VARCHAR(20),
+    FechaNacimiento DATE,
+    Sexo VARCHAR (10),
+    Calle VARCHAR (20),
+    Colonia VARCHAR (20),
+    Ciudad VARCHAR (20),
+    CodigoPostal INTEGER,
     NumInterior INTEGER,
-    NumExterior INTEGER NOT NULL,
+    NumExterior INTEGER,
     Ubicacion VARCHAR (20) 
-
 );
+ALTER TABLE Vendedor ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE Vendedor ADD CONSTRAINT uq_vendedor_idpersona UNIQUE (IdPersona);
+ALTER TABLE Vendedor ALTER COLUMN Nombre SET NOT NULL;
+ALTER TABLE Vendedor ALTER COLUMN ApellidoMaterno SET NOT NULL;
+ALTER TABLE Vendedor ALTER COLUMN ApellidoPaterno SET NOT NULL;
+ALTER TABLE Vendedor ALTER COLUMN FechaNacimiento SET NOT NULL;
+ALTER TABLE Vendedor ADD CONSTRAINT chk_vendedor_sexo CHECK (Sexo IN ('M', 'H', 'Otro'));
+ALTER TABLE Vendedor ALTER COLUMN Sexo SET NOT NULL;
+ALTER TABLE Vendedor ALTER COLUMN Calle SET NOT NULL;
+ALTER TABLE Vendedor ALTER COLUMN Colonia SET NOT NULL;
+ALTER TABLE Vendedor ALTER COLUMN Ciudad SET NOT NULL;
+ALTER TABLE Vendedor ALTER COLUMN CodigoPostal SET NOT NULL;
+ALTER TABLE Vendedor ALTER COLUMN NumExterior SET NOT NULL
 ALTER TABLE Vendedor ADD CONSTRAINT pk_vendedor PRIMARY KEY (IdPersona);
 
 
@@ -75,75 +110,110 @@ ALTER TABLE Vendedor ADD CONSTRAINT pk_vendedor PRIMARY KEY (IdPersona);
 -- Cuidador
 -- =======
 CREATE TABLE Cuidador (
-    IdPersona INTEGER NOT NULL UNIQUE ,
-    Nombre VARCHAR (20) NOT NULL,
-    ApellidoMaterno VARCHAR (20) NOT NULL,
-    ApellidoPaterno VARCHAR (20) NOT NULL,
-    FechaNacimiento DATE NOT NULL,
-    Sexo VARCHAR (10) NOT NULL CHECK (Sexo IN ('M', 'H', 'Otro')),
-    Calle VARCHAR (20) NOT NULL,
-    Colonia VARCHAR (20) NOT NULL,
-    Ciudad VARCHAR (20) NOT NULL,
-    CodigoPostal INTEGER NOT NULL,
+    IdPersona INTEGER,
+    Nombre VARCHAR (20),
+    ApellidoMaterno VARCHAR (20),
+    ApellidoPaterno VARCHAR (20),
+    FechaNacimiento DATE,
+    Sexo VARCHAR (10),
+    Calle VARCHAR (20),
+    Colonia VARCHAR (20),
+    Ciudad VARCHAR (20),
+    CodigoPostal INTEGER,
     NumInterior INTEGER ,
-    NumExterior INTEGER NOT NULL,
+    NumExterior INTEGER,
     Ubicacion VARCHAR (20),
-    Horario VARCHAR (10) CHECK (Horario IN ('Matutino', 'Vespertino')),
-    Salario REAL  CHECK (Salario >= 0)
+    Horario VARCHAR (10) ,
+    Salario REAL 
 );
+ALTER TABLE Cuidador ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE Cuidador ADD CONSTRAINT uq_cuidador_idpersona UNIQUE (IdPersona);
+ALTER TABLE Cuidador ALTER COLUMN Nombre SET NOT NULL;
+ALTER TABLE Cuidador ALTER COLUMN ApellidoMaterno SET NOT NULL;
+ALTER TABLE Cuidador ALTER COLUMN ApellidoPaterno SET NOT NULL;
+ALTER TABLE Cuidador ALTER COLUMN FechaNacimiento SET NOT NULL;
+ALTER TABLE Cuidador ADD CONSTRAINT chk_cuidador_sexo CHECK (Sexo IN ('M', 'H', 'Otro'));
+ALTER TABLE Cuidador ALTER COLUMN Sexo SET NOT NULL;
+ALTER TABLE Cuidador ALTER COLUMN Calle SET NOT NULL;
+ALTER TABLE Cuidador ALTER COLUMN Colonia SET NOT NULL;
+ALTER TABLE Cuidador ALTER COLUMN Ciudad SET NOT NULL;
+ALTER TABLE Cuidador ALTER COLUMN CodigoPostal SET NOT NULL;
+ALTER TABLE Cuidador ALTER COLUMN NumExterior SET NOT NULL;
+ALTER TABLE Cuidador ADD CONSTRAINT chk_cuidador_horario CHECK (Horario IN ('Matutino', 'Vespertino'));
+ALTER TABLE Cuidador ALTER COLUMN Salario SET NOT NULL;
+ALTER TABLE Cuidador ADD CONSTRAINT chk_cuidador_salario CHECK (Salario >= 0);
 ALTER TABLE Cuidador ADD CONSTRAINT pk_cuidador PRIMARY KEY (IdPersona);
 
 -- ========
 -- Limpiador 
 -- =======
 CREATE TABLE Limpiador (
-    IdPersona INTEGER NOT NULL  UNIQUE ,
-    Nombre VARCHAR(20) NOT NULL,
-    ApellidoMaterno VARCHAR(20) NOT NULL,
-    ApellidoPaterno VARCHAR(20) NOT NULL,
-    FechaNacimiento DATE NOT NULL,
-    Sexo VARCHAR(10) NOT NULL CHECK (Sexo IN ('M', 'H', 'Otro')),
-    Calle VARCHAR(20) NOT NULL,
-    Colonia VARCHAR(20) NOT NULL,
-    Ciudad VARCHAR(20) NOT NULL,
-    CodigoPostal INTEGER NOT NULL,
+    IdPersona INTEGER,
+    Nombre VARCHAR(20),
+    ApellidoMaterno VARCHAR(20),
+    ApellidoPaterno VARCHAR(20),
+    FechaNacimiento DATE ,
+    Sexo VARCHAR(10) ,
+    Calle VARCHAR(20) ,
+    Colonia VARCHAR(20) ,
+    Ciudad VARCHAR(20) ,
+    CodigoPostal INTEGER ,
     NumInterior INTEGER,
-    NumExterior INTEGER NOT NULL,
+    NumExterior INTEGER ,
     Ubicacion VARCHAR(20),
-    Horario VARCHAR(10) CHECK (Horario IN ('Matutino', 'Vespertino')),
-    Salario REAL CHECK (Salario >= 0)
+    Horario VARCHAR(10) ,
+    Salario REAL
 );
+ALTER TABLE Limpiador ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE Limpiador ADD CONSTRAINT uq_limpiador_idpersona UNIQUE (IdPersona);
+ALTER TABLE Limpiador ALTER COLUMN Nombre SET NOT NULL;
+ALTER TABLE Limpiador ALTER COLUMN ApellidoMaterno SET NOT NULL;
+ALTER TABLE Limpiador ALTER COLUMN ApellidoPaterno SET NOT NULL;
+ALTER TABLE Limpiador ALTER COLUMN FechaNacimiento SET NOT NULL;
+ALTER TABLE Limpiador ALTER COLUMN Sexo SET NOT NULL;
+ALTER TABLE Limpiador ADD CONSTRAINT chk_limpiador_sexo CHECK (Sexo IN ('M', 'H', 'Otro'));
+ALTER TABLE Limpiador ALTER COLUMN Calle SET NOT NULL;
+ALTER TABLE Limpiador ALTER COLUMN Colonia SET NOT NULL;
+ALTER TABLE Limpiador ALTER COLUMN Ciudad SET NOT NULL;
+ALTER TABLE Limpiador ALTER COLUMN CodigoPostal SET NOT NULL;
+ALTER TABLE Limpiador ALTER COLUMN NumExterior SET NOT NULL;
+ALTER TABLE Limpiador ADD CONSTRAINT chk_limpiador_horario CHECK (Horario IN ('Matutino', 'Vespertino'));
+ALTER TABLE Limpiador ADD CONSTRAINT chk_limpiador_salario CHECK (Salario >= 0);
 ALTER TABLE Limpiador ADD CONSTRAINT pk_limpiador PRIMARY KEY (IdPersona);
 
 -- ========
 -- Espectador
 -- ========
 CREATE TABLE Espectador (
-    IdPersona INTEGER NOT NULL ,
-    Nombre VARCHAR(20) NOT NULL,
-    ApellidoMaterno VARCHAR(20) NOT NULL,
-    ApellidoPaterno VARCHAR(20) NOT NULL,
-    FechaNacimiento DATE NOT NULL,
-    Sexo VARCHAR(10) CHECK (Sexo IN ('M', 'H', 'Otro')),
+    IdPersona INTEGER,
+    Nombre VARCHAR(20),
+    ApellidoMaterno VARCHAR(20),
+    ApellidoPaterno VARCHAR(20),
+    FechaNacimiento DATE,
+    Sexo VARCHAR(10),
     HoraIngreso TIMETZ,
-    HoraSalida TIMETZ CHECK (HoraSalida >= HoraIngreso)
+    HoraSalida TIMETZ,
 );
-
-ALTER TABLE Espectador 
-ADD CONSTRAINT pk_Espectador PRIMARY KEY (IdPersona);
-
-
+ALTER TABLE Espectador ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN Nombre SET NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN ApellidoMaterno SET NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN ApellidoPaterno SET NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN FechaNacimiento SET NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN Sexo SET NOT NULL;
+ALTER TABLE Espectador ADD CONSTRAINT chk_espectador_sexo CHECK (Sexo IN ('M', 'H', 'Otro'));
+ALTER TABLE Espectador ADD CONSTRAINT chk_espectador_horas CHECK (HoraSalida >= HoraIngreso);
+ALTER TABLE Espectador ADD CONSTRAINT pk_Espectador PRIMARY KEY (IdPersona);
 
 -- DATOS -------------------------------------
-
-
 -- ========
 -- 7. CorreoCuidador 
 -- =======
 CREATE TABLE CorreoCuidador (
-    IdPersona INTEGER NOT NULL,
-    Correo VARCHAR (50) NOT NULL
+    IdPersona INTEGER,
+    Correo VARCHAR (50)
 );
+ALTER TABLE CorreoCuidador ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE CorreoCuidador ALTER COLUMN Correo SET NOT NULL
 ALTER TABLE CorreoCuidador ADD CONSTRAINT pk_correo_cuidador PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoCuidador ADD CONSTRAINT fk_correo_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
 
@@ -151,44 +221,47 @@ ALTER TABLE CorreoCuidador ADD CONSTRAINT fk_correo_cuidador_cuidador FOREIGN KE
 -- 8. TelefonoCuidador
 -- =======
 CREATE TABLE TelefonoCuidador(
-    IdPersona INTEGER NOT NULL,
-    Telefono CHAR(10) NOT NULL
+    IdPersona INTEGER,
+    Telefono CHAR(10)
 );
+ALTER TABLE TelefonoCuidador ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE TelefonoCuidador ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT pk_telefono_cuidador PRIMARY KEY (IdPersona, Telefono);
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT fk_telefono_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
-
-
 
 -- ========
 -- 4. CorreoEncargadoRegistro (Va después de EncargadoRegistro)
 -- =======
 CREATE TABLE CorreoEncargadoRegistro (
-    IdPersona INTEGER NOT NULL,
-    Correo VARCHAR(50) NOT NULL
+    IdPersona INTEGER,
+    Correo VARCHAR(50)
 );
-
+ALTER TABLE CorreoEncargadoRegistro ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE CorreoEncargadoRegistro ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoEncargadoRegistro ADD CONSTRAINT pk_correo_encargado_registro PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoEncargadoRegistro ADD CONSTRAINT fk_correo_encargado_registro FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona);
-
 
 -- ========
 -- 5. TelefonoEncargadoRegistro (Va después de EncargadoRegistro)
 -- =======
 CREATE TABLE TelefonoEncargadoRegistro (
-    IdPersona INTEGER NOT NULL,
-    Telefono CHAR(10) NOT NULL
+    IdPersona INTEGER,
+    Telefono CHAR(10)
 );
+ALTER TABLE TelefonoEncargadoRegistro ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE TelefonoEncargadoRegistro ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoEncargadoRegistro ADD CONSTRAINT pk_telefono_encargado_registro PRIMARY KEY (IdPersona, Telefono);
 ALTER TABLE TelefonoEncargadoRegistro ADD CONSTRAINT fk_telefono_encargado_registro FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona);
-
 
 -- ========
 -- 3. CorreoLimpiador (Va después de Limpiador)
 -- =======
 CREATE TABLE CorreoLimpiador (
-    IdPersona INTEGER NOT NULL,
-    Correo VARCHAR(50) NOT NULL
+    IdPersona INTEGER ,
+    Correo VARCHAR(50)
 );
+ALTER TABLE CorreoLimpiador ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE CorreoLimpiador ALTER COLUMN Correo SET NOT NULL
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT pk_correo_limpiador PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT fk_correo_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
 
@@ -196,9 +269,11 @@ ALTER TABLE CorreoLimpiador ADD CONSTRAINT fk_correo_limpiador_limpiador FOREIGN
 -- 4. TelefonoLimpiador (Va después de Limpiador)
 -- =======
 CREATE TABLE TelefonoLimpiador (
-    IdPersona INTEGER NOT NULL,
-    Telefono CHAR(10) NOT NULL
+    IdPersona INTEGER ,
+    Telefono CHAR(10) 
 );
+ALTER TABLE TelefonoLimpiador ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE TelefonoLimpiador ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoLimpiador ADD CONSTRAINT pk_telefono_limpiador PRIMARY KEY (IdPersona, Telefono);
 ALTER TABLE TelefonoLimpiador ADD CONSTRAINT fk_telefono_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
 
@@ -206,9 +281,11 @@ ALTER TABLE TelefonoLimpiador ADD CONSTRAINT fk_telefono_limpiador_limpiador FOR
 -- 3. CorreoVendedor 
 -- =======
 CREATE TABLE CorreoVendedor(
-    IdPersona INTEGER NOT NULL,
-    Correo VARCHAR(50) NOT NULL
+    IdPersona INTEGER,
+    Correo VARCHAR(50)
 );
+ALTER TABLE CorreoVendedor ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE CorreoVendedor ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoVendedor ADD CONSTRAINT pk_correo_vendedor PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoVendedor ADD CONSTRAINT fk_correo_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona);
 
@@ -216,9 +293,11 @@ ALTER TABLE CorreoVendedor ADD CONSTRAINT fk_correo_vendedor_vendedor FOREIGN KE
 -- 4. TelefonoVendedor 
 -- =======
 CREATE TABLE TelefonoVendedor(
-    IdPersona INTEGER NOT NULL,
-    Telefono CHAR(10) NOT NULL
+    IdPersona INTEGER,
+    Telefono CHAR(10)
 );
+ALTER TABLE TelefonoVendedor ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE TelefonoVendedor ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoVendedor ADD CONSTRAINT pk_telefono_vendedor PRIMARY KEY (IdPersona, Telefono);
 ALTER TABLE TelefonoVendedor ADD CONSTRAINT fk_telefono_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona);
 
@@ -226,40 +305,36 @@ ALTER TABLE TelefonoVendedor ADD CONSTRAINT fk_telefono_vendedor_vendedor FOREIG
 -- 5. CorreoParticipante
 -- ========
 CREATE TABLE CorreoParticipante (
-    IdPersona INTEGER NOT NULL,
-    Correo VARCHAR(50) NOT NULL
+    IdPersona INTEGER,
+    Correo VARCHAR(50)
 );
-
-ALTER TABLE CorreoParticipante 
-ADD CONSTRAINT pk_CorreoParticipante PRIMARY KEY (IdPersona, Correo);
-
-ALTER TABLE CorreoParticipante 
-ADD CONSTRAINT fk_Participante_Correo FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+ALTER TABLE CorreoParticipante ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE CorreoParticipante ALTER COLUMN Correo SET NOT NULL
+ALTER TABLE CorreoParticipante ADD CONSTRAINT pk_CorreoParticipante PRIMARY KEY (IdPersona, Correo);
+ALTER TABLE CorreoParticipante ADD CONSTRAINT fk_Participante_Correo FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
 
 -- ========
 -- 8. TelefonoParticipante
 -- ========
 CREATE TABLE TelefonoParticipante (
-    IdPersona INTEGER NOT NULL,
-    Telefono CHAR(10) NOT NULL
+    IdPersona INTEGER,
+    Telefono CHAR(10)
 );
-
-ALTER TABLE TelefonoParticipante 
-ADD CONSTRAINT pk_TelefonoParticipante PRIMARY KEY (IdPersona, Telefono);
-
-ALTER TABLE TelefonoParticipante 
-ADD CONSTRAINT fk_Telefono_Participante FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
-
-
+ALTER TABLE TelefonoParticipante ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE TelefonoParticipante ALTER COLUMN Telefono SET NOT NULL
+ALTER TABLE TelefonoParticipante ADD CONSTRAINT pk_TelefonoParticipante PRIMARY KEY (IdPersona, Telefono);
+ALTER TABLE TelefonoParticipante ADD CONSTRAINT fk_Telefono_Participante FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
 
 ---- TRABAJAR -------------------------------------------------
 -- ========
 -- TrabajarVendedor 
 -- =======
 CREATE TABLE TrabajarVendedor(
-    Edicion INTEGER NOT NULL,
-    IdPersona INTEGER NOT NULL
+    Edicion INTEGER,
+    IdPersona INTEGER
 );
+ALTER TABLE TrabajarVendedor ALTER COLUMN Edicion SET NOT NULL;
+ALTER TABLE TrabajarVendedor ALTER COLUMN IdPersona SET NOT NULL
 ALTER TABLE TrabajarVendedor ADD CONSTRAINT fk_trabajar_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona);
 ALTER TABLE TrabajarVendedor ADD CONSTRAINT fk_trabajar_vendedor_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
 
@@ -267,73 +342,76 @@ ALTER TABLE TrabajarVendedor ADD CONSTRAINT fk_trabajar_vendedor_evento FOREIGN 
 -- TrabajarCuidador 
 -- =======
 CREATE TABLE TrabajarCuidador (
-    Edicion INTEGER NOT NULL, 
-    IdPersona INTEGER NOT NULL
+    Edicion INTEGER, 
+    IdPersona INTEGER 
 );
-
+ALTER TABLE TrabajarCuidador ALTER COLUMN Edicion SET NOT NULL;
+ALTER TABLE TrabajarCuidador ALTER COLUMN IdPersona SET NOT NULL
 ALTER TABLE TrabajarCuidador ADD CONSTRAINT fk_trabajar_cuidador_evento FOREIGN KEY (Edicion) REFERENCES Evento(edicion);
 ALTER TABLE TrabajarCuidador ADD CONSTRAINT fk_trabajar_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
-
-
 
 -- ========
 --  TrabajarLimpiador
 -- =======
 CREATE TABLE TrabajarLimpiador (
-    IdPersona INTEGER NOT NULL,
-    Edicion INTEGER NOT NULL
+    IdPersona INTEGER,
+    Edicion INTEGER
 );
+ALTER TABLE TrabajarLimpiador ALTER COLUMN Edicion SET NOT NULL;
+ALTER TABLE TrabajarLimpiador ALTER COLUMN IdPersona SET NOT NULL
 ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
 ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_limpiador_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
-
-
-
 
 -- ========
 -- TrabajarEncargadoRegistro 
 -- =======
-
 CREATE TABLE TrabajarEncargadoRegistro (
-    Edicion INTEGER NOT NULL, 
-    IdPersona INTEGER NOT NULL
+    Edicion INTEGER, 
+    IdPersona INTEGER
 );
-
+ALTER TABLE TrabajarEncargadoRegistro ALTER COLUMN Edicion SET NOT NULL;
+ALTER TABLE TrabajarEncargadoRegistro ALTER COLUMN IdPersona SET NOT NULL
 ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_registro_evento FOREIGN KEY (Edicion) REFERENCES Evento(edicion);
 ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_registro_encargado FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona);
 
-
-
 --- COMPRAS---------------------------------------------
-
-
 -- ========
 -- Alimento (Va después de Vendedor)
 -- ========
- 
 CREATE TABLE Alimento (
-    IdAlimento INTEGER NOT NULL UNIQUE , 
-    IdPersona INTEGER NOT NULL, 
-    FechaDeCaducidad DATE NOT NULL,
-    Nombre VARCHAR(20) NOT NULL,
-    Tipo VARCHAR(20) NOT NULL,
-    Precio REAL NOT NULL CHECK (Precio > 0)
+    IdAlimento INTEGER,
+    IdPersona INTEGER, 
+    FechaDeCaducidad DATE,
+    Nombre VARCHAR(20),
+    Tipo VARCHAR(20),
+    Precio REAL
 );
-
+ALTER TABLE Alimento ALTER COLUMN IdAlimento SET NOT NULL;
+ALTER TABLE Alimento ADD CONSTRAINT uq_alimento_idalimento UNIQUE (IdAlimento);
+ALTER TABLE Alimento ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE Alimento ALTER COLUMN FechaDeCaducidad SET NOT NULL;
+ALTER TABLE Alimento ALTER COLUMN Nombre SET NOT NULL;
+ALTER TABLE Alimento ALTER COLUMN Tipo SET NOT NULL;
+ALTER TABLE Alimento ALTER COLUMN Precio SET NOT NULL;
+ALTER TABLE Alimento ADD CONSTRAINT chk_alimento_precio CHECK (Precio >= 0);
 ALTER TABLE Alimento ADD CONSTRAINT pk_alimento PRIMARY KEY (IdAlimento);
 ALTER TABLE Alimento ADD CONSTRAINT fk_alimento_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona);
-
 
 -- ======== 
 -- ComprarEncargadoRegistro 
 -- ========
-
 CREATE TABLE ComprarEncargadoRegistro (
-    IdPersona INTEGER NOT NULL, 
-    IdAlimento INTEGER NOT NULL, 
-    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
-    Cantidad REAL NOT NULL CHECK (Cantidad > 0)
+    IdPersona INTEGER, 
+    IdAlimento INTEGER, 
+    MetodoDePago VARCHAR(20),
+    Cantidad REAL 
 );
-
+ALTER TABLE ComprarEncargadoRegistro ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE ComprarEncargadoRegistro ALTER COLUMN IdAlimento SET NOT NULL;
+ALTER TABLE ComprarEncargadoRegistro ALTER COLUMN MetodoDePago SET NOT NULL;
+ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT chk_comprar_encargado_registro_metodopago CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
+ALTER TABLE ComprarEncargadoRegistro ALTER COLUMN Cantidad SET NOT NULL;
+ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT chk_comprar_encargado_registro_cantidad CHECK (Cantidad > 0);
 ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT fk_comprar_encargado_registro_encargado FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona);
 ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT fk_comprar_encargado_registro_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
 
