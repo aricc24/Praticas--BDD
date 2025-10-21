@@ -246,19 +246,19 @@ ALTER TABLE Utilizar ADD CONSTRAINT fk_utilizar_pelea_torneo FOREIGN KEY (Edicio
 -- Vendedor 
 -- =======
 CREATE TABLE Vendedor (
-    id_persona INTEGER NOT NULL, --UNIQUE?
-    Nombre VARCHAR(20),
-    ApellidoMaterno VARCHAR(20),
-    ApellidoPaterno VARCHAR(20),
-    FechaNacimiento DATE,
-    Sexo VARCHAR (10),
-    Calle VARCHAR (20),
-    Colonia VARCHAR (20),
-    Ciudad VARCHAR (20),
-    CodigoPostal INTEGER,
+    id_persona INTEGER NOT NULL, 
+    Nombre VARCHAR(20) NOT NULL,
+    ApellidoMaterno VARCHAR(20) NOT NULL,
+    ApellidoPaterno VARCHAR(20) NOT NULL,
+    FechaNacimiento DATE NOT NULL,
+    Sexo VARCHAR (10) NOT NULL CHECK (Sexo IN ('M', 'H', 'Otro')),
+    Calle VARCHAR (20) NOT NULL,
+    Colonia VARCHAR (20) NOT NULL,
+    Ciudad VARCHAR (20) NOT NULL,
+    CodigoPostal INTEGER NOT NULL,
     NumInterior INTEGER,
-    NumExterior INTEGER,
-    Ubicacion VARCHAR (20)
+    NumExterior INTEGER NOT NULL,
+    Ubicacion VARCHAR (20) 
 
 );
 ALTER TABLE Vendedor ADD CONSTRAINT pk_vendedor PRIMARY KEY (id_persona);
@@ -269,8 +269,8 @@ ALTER TABLE Vendedor ADD CONSTRAINT pk_vendedor PRIMARY KEY (id_persona);
 CREATE TABLE ComprarVendedor (
     id_persona INTEGER NOT NULL,
     id_alimento INTEGER NOT NULL,
-    MetodoDePago VARCHAR(20),
-    Cantidad REAL
+    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),,
+    Cantidad REAL NOT NULL CHECK (Cantidad > 0)
 );
 ALTER TABLE ComprarVendedor  ADD CONSTRAINT fk_comprar_vendedor_vendedor FOREIGN KEY (id_persona) REFERENCES Vendedor (id_persona);
 ALTER TABLE ComprarVendedor ADD CONSTRAINT fk_comprar_vendedor_alimento FOREIGN KEY (id_alimento) REFERENCES Alimento(id_alimento);
@@ -310,20 +310,20 @@ ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_vendedor_evento FOREIGN
 -- =======
 CREATE TABLE Cuidador (
     id_persona INTEGER NOT NULL,
-    Nombre VARCHAR (20),
-    ApellidoMaterno VARCHAR (20),
-    ApellidoPaterno VARCHAR (20),
-    FechaNacimiento DATE,
-    Sexo VARCHAR (10),
-    Calle VARCHAR (20),
-    Colonia VARCHAR (20),
-    Ciudad VARCHAR (20),
-    CodigoPostal INTEGER,
-    NumInterior INTEGER,
-    NumExterior INTEGER,
-    Ubicacion VARCHAR (20)
-    Horario VARCHAR (10),
-    Salario REAL
+    Nombre VARCHAR (20) NOT NULL,
+    ApellidoMaterno VARCHAR (20) NOT NULL,
+    ApellidoPaterno VARCHAR (20) NOT NULL,
+    FechaNacimiento DATE NOT NULL,
+    Sexo VARCHAR (10) NOT NULL CHECK (Sexo IN ('M', 'H', 'Otro')),
+    Calle VARCHAR (20) NOT NULL,
+    Colonia VARCHAR (20) NOT NULL,
+    Ciudad VARCHAR (20) NOT NULL,
+    CodigoPostal INTEGER NOT NULL,
+    NumInterior INTEGER ,
+    NumExterior INTEGER NOT NULL,
+    Ubicacion VARCHAR (20),
+    Horario VARCHAR (10) CHECK (Horario IN ('Matutino', 'Vespertino')),
+    Salario REAL  CHECK (Salario >= 0)
 );
 ALTER TABLE Cuidador ADD CONSTRAINT pk_cuidador PRIMARY KEY (id_persona);
 
@@ -340,7 +340,7 @@ ALTER TABLE CorreoCuidador ADD CONSTRAINT fk_correo_cuidador_cuidador FOREIGN KE
 -- ========
 -- TelefonoCuidador 
 -- =======
-CREATE TABLE Telefono Cuidador(
+CREATE TABLE TelefonoCuidador(
     id_persona INTEGER NOT NULL,
     Telefono CHAR(10) NOT NULL
 );
