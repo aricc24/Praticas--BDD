@@ -419,37 +419,53 @@ ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT fk_comprar_encargado_registr
 -- ComprarLimpiador  
 -- =======
 CREATE TABLE ComprarLimpiador (
-    IdPersona INTEGER NOT NULL,
-    IdAlimento INTEGER NOT NULL,
-    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
-    Cantidad REAL NOT NULL CHECK (Cantidad > 0)
+    IdPersona INTEGER,
+    IdAlimento INTEGER,
+    MetodoDePago VARCHAR(20),
+    Cantidad REAL
 );
+ALTER TABLE ComprarLimpiador ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE ComprarLimpiador ALTER COLUMN IdAlimento SET NOT NULL;
+ALTER TABLE ComprarLimpiador ALTER COLUMN MetodoDePago SET NOT NULL;
+ALTER TABLE ComprarLimpiador ADD CONSTRAINT chk_comprar_limpiador_metodopago CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
+ALTER TABLE ComprarLimpiador ALTER COLUMN Cantidad SET NOT NULL;
+ALTER TABLE ComprarLimpiador ADD CONSTRAINT chk_comprar_limpiador_cantidad CHECK (Cantidad > 0);
 ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
 ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
-
 
 -- ========
 -- ComprarCuidador 
 -- ========
 CREATE TABLE ComprarCuidador (
-    IdPersona INTEGER NOT NULL,
-    IdAlimento INTEGER NOT NULL,
-    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
-    Cantidad REAL NOT NULL CHECK (Cantidad > 0)
+    IdPersona INTEGER,
+    IdAlimento INTEGER,
+    MetodoDePago VARCHAR(20),
+    Cantidad REAL
 );
+ALTER TABLE ComprarCuidador ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE ComprarCuidador ALTER COLUMN IdAlimento SET NOT NULL;
+ALTER TABLE ComprarCuidador ALTER COLUMN MetodoDePago SET NOT NULL;
+ALTER TABLE ComprarCuidador ADD CONSTRAINT chk_comprar_cuidador_metodopago CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
+ALTER TABLE ComprarCuidador ALTER COLUMN Cantidad SET NOT NULL;
+ALTER TABLE ComprarCuidador ADD CONSTRAINT chk_comprar_cuidador_cantidad CHECK (Cantidad > 0);
 ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
 ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
-
 
 -- ========
 -- ComprarVendedor 
 -- =======
 CREATE TABLE ComprarVendedor (
-    IdPersona INTEGER NOT NULL,
-    IdAlimento INTEGER NOT NULL,
-    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
-    Cantidad REAL NOT NULL CHECK (Cantidad > 0)
+    IdPersona INTEGER,
+    IdAlimento INTEGER,
+    MetodoDePago VARCHAR(20),
+    Cantidad REAL
 );
+ALTER TABLE ComprarVendedor ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE ComprarVendedor ALTER COLUMN IdAlimento SET NOT NULL;
+ALTER TABLE ComprarVendedor ALTER COLUMN MetodoDePago SET NOT NULL;
+ALTER TABLE ComprarVendedor ADD CONSTRAINT chk_comprar_vendedor_metodopago CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
+ALTER TABLE ComprarVendedor ALTER COLUMN Cantidad SET NOT NULL;
+ALTER TABLE ComprarVendedor ADD CONSTRAINT chk_comprar_vendedor_cantidad CHECK (Cantidad > 0);
 ALTER TABLE ComprarVendedor  ADD CONSTRAINT fk_comprar_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor (IdPersona);
 ALTER TABLE ComprarVendedor ADD CONSTRAINT fk_comprar_vendedor_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
 
@@ -457,17 +473,19 @@ ALTER TABLE ComprarVendedor ADD CONSTRAINT fk_comprar_vendedor_alimento FOREIGN 
 -- ComprarEspectador
 -- ========
 CREATE TABLE ComprarEspectador (
-    IdPersona INTEGER NOT NULL,
-    IdAlimento INTEGER NOT NULL,
-    MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
-    Cantidad REAL CHECK (Cantidad > 0)
+    IdPersona INTEGER,
+    IdAlimento INTEGER,
+    MetodoDePago VARCHAR(20),
+    Cantidad REAL
 );
-
-ALTER TABLE ComprarEspectador 
-ADD CONSTRAINT fk_Espectador_Comprar FOREIGN KEY (IdPersona) REFERENCES Espectador(IdPersona);
-
-ALTER TABLE ComprarEspectador 
-ADD CONSTRAINT fk_Alimento_Comprar FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
+ALTER TABLE ComprarEspectador ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE ComprarEspectador ALTER COLUMN IdAlimento SET NOT NULL;
+ALTER TABLE ComprarEspectador ALTER COLUMN MetodoDePago SET NOT NULL;
+ALTER TABLE ComprarEspectador ADD CONSTRAINT chk_comprar_espectador_metodopago CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
+ALTER TABLE ComprarEspectador ALTER COLUMN Cantidad SET NOT NULL;
+ALTER TABLE ComprarEspectador ADD CONSTRAINT chk_comprar_espectador_cantidad CHECK (Cantidad > 0);
+ALTER TABLE ComprarEspectador ADD CONSTRAINT fk_Espectador_Comprar FOREIGN KEY (IdPersona) REFERENCES Espectador(IdPersona);
+ALTER TABLE ComprarEspectador ADD CONSTRAINT fk_Alimento_Comprar FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
 
 -- ========
 -- ComprarParticipanteUNAM
