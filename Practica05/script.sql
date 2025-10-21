@@ -1,85 +1,129 @@
-
--- ========
--- Evento
+- ========
+-- Evento 
 -- =======
 CREATE TABLE Evento (
-    edicion INTEGER,
-    fecha DATE
+    Edicion INTEGER NOT NULL UNIQUE,
+    Fecha DATE NOT NULL
 );
 
-ALTER TABLE Evento ADD PRIMARY KEY (edicion);
+ALTER TABLE Evento ADD CONSTRAINT pk_evento PRIMARY KEY (Edicion);
+
 
 -- ========
 -- CuentaPokemon
 -- =======
 
-CREATE TABLE CuentaPokemon (
-    id_persona INTEGER,
-    codigo_de_entrenador INTEGER,
-    equipo VARCHAR(20),
-    nivel INTEGER,
-    nombreDeUsuario VARCHAR(30),
+CREATE TABLE CuentaPokemonGo (
+    id_persona INTEGER NOT NULL,
+    CodigoDeEntrenador INTEGER NOT NULL UNIQUE SERIAL,
+    Equipo VARCHAR(20) NOT NULL,
+    Nivel SMALLINT NOT NULL CHECK (Nivel >= 1),
+    NombreDeUsuario VARCHAR(30) NOT NULL UNIQUE
 );
 
-ALTER TABLE CuentaPokemon ADD PRIMARY KEY (id_persona, codigo_de_entrenador);
 
-ALTER TABLE CuentaPokemon ADD FOREIGN KEY (id_persona) 
-    REFERENCES ParticipanteUNAM (id_persona);
+ALTER TABLE CuentaPokemonGo ADD CONSTRAINT pk_cuenta_pokemon_go PRIMARY KEY (id_persona, CodigoDeEntrenador);
 
+ALTER TABLE CuentaPokemonGo ADD CONSTRAINT fk_cuenta_pokemon_go_participante_unam FOREIGN KEY (id_persona) REFERENCES ParticipanteUNAM(id_persona);
 
 -- ========
 -- Pokemon
 -- =======
 CREATE TABLE Pokemon (
-    id_pokemon INTEGER,
-    nombre VARCHAR(50),
-    sexo VARCHAR(10),
-    peso REAL,
-    puntosDeCombate INTEGER,
-    shiny BOOLEAN,
-    tipo VARCHAR(20),
-    especie VARCHAR(20),
+    id_pokemon INTEGER NOT NULL UNIQUE SERIAL,
+    id_persona INTEGER NOT NULL,
+    CodigoDeEntrenador INTEGER NOT NULL,
+    Nombre VARCHAR(50) NOT NULL,
+    Sexo CHAR(10) NOT NULL CHECK (Sexo IN ('M', 'H', 'Otro')),
+    Peso REAL NOT NULL CHECK (Peso > 0),
+    PuntosDeCombate INTEGER NOT NULL CHECK (PuntosDeCombate >= 0),
+    Shiny BOOLEAN NOT NULL,
+    Tipo VARCHAR(20) NOT NULL,
+    Especie VARCHAR(20) NOT NULL
+);
+
+ALTER TABLE Pokemon ADD CONSTRAINT pk_pokemon PRIMARY KEY (id_pokemon);
+
+ALTER TABLE Pokemon ADD CONSTRAINT fk_pokemon_cuenta_pokemon_go FOREIGN KEY (id_persona, CodigoDeEntrenador)
+    REFERENCES CuentaPokemonGo (id_persona, CodigoDeEntrenador);
+
+-- ========
+-- TorneoCapturaShinys 
+-- ========
+CREATE TABLE TorneoCapturaShinys (
+    Edicion INTEGER NOT NULL,
+    id_torneo INTEGER NOT NULL UNIQUE SERIAL,
     id_persona INTEGER,
-    codigo_de_entrenador INTEGER
+    CantidadAPremiar REAL DEFAULT 500.0
+);
+   
+ALTER TABLE TorneoCapturaShinys ADD CONSTRAINT pk_torneo_captura_shinys PRIMARY KEY (Edicion, id_torneo);
+ALTER TABLE TorneoCapturaShinys ADD CONSTRAINT fk_torneo_captura_shinys_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
+ALTER TABLE TorneoCapturaShinys ADD CONSTRAINT fk_torneo_captura_shinys_participante_unam FOREIGN KEY (id_persona) REFERENCES ParticipanteUNAM(id_persona);
+
+-- ========
+-- TorneoDistanciaRecorrida
+-- ========
+CREATE TABLE TorneoDistanciaRecorrida (
+    Edicion INTEGER NOT NULL,
+    id_torneo INTEGER NOT NULL UNIQUE SERIAL,
+    id_persona INTEGER,
+    CantidadAPremiar REAL DEFAULT 500.0
 );
 
-ALTER TABLE Pokemon ADD PRIMARY KEY (id_pokemon);
-ALTER TABLE Pokemon ADD FOREIGN KEY (id_persona, codigo_de_entrenador)
-    REFERENCES CuentaPokemon (id_persona, codigo_de_entrenador);
+ALTER TABLE TorneoDistanciaRecorrida ADD CONSTRAINT pk_torneo_distancia_recorrida PRIMARY KEY (Edicion, id_torneo);
+ALTER TABLE TorneoDistanciaRecorrida ADD CONSTRAINT fk_torneo_distancia_recorrida_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
+ALTER TABLE TorneoDistanciaRecorrida ADD CONSTRAINT fk_torneo_distancia_recorrida_participante_unam FOREIGN KEY (id_persona) REFERENCES ParticipanteUNAM(id_persona);
 
 -- ========
--- ComprarCuidador (Va después de Cuidador y Alimento)
+-- CapturaPokemon
 -- ========
-CREATE TABLE ComprarCuidador (
+CREATE TABLE CapturaPokemon (
+    Edicion INTEGER NOT NULL,
+    id_torneo INTEGER NOT NULL,
+    id_captura INTEGER NOT NULL UNIQUE SERIAL
+);
+
+
+ALTER TABLE CapturaPokemon ADD CONSTRAINT pk_captura_pokemon PRIMARY KEY (Edicion, id_torneo, id_captura);
+ALTER TABLE CapturaPokemon ADD CONSTRAINT fk_captura_pokemon_torneo_captura_shinys FOREIGN KEY (Edicion, id_torneo) REFERENCES TorneoCapturaShinys(Edicion, id_torneo);
+
+-- ========
+-- Registrar
+-- ========
+CREATE TABLE Registrar (
+    id_pokemon INTEGER NOT NULL,
+    CodigoDeEntrenador INTEGER NOT NULL,
     id_persona INTEGER NOT NULL,
-    id_alimento INTEGER NOT NULL,
-    MetodoDePago VARCHAR(20),
-    Cantidad REAL
+    id_captura INTEGER NOT NULL,
+    Edicion INTEGER NOT NULL,
+    id_torneo INTEGER NOT NULL,
+    Fecha DATE NOT NULL,
+    Hora TIMETZ NOT NULL
 );
-ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_cuidador FOREIGN KEY (id_persona) REFERENCES Cuidador(id_persona);
-ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_alimento FOREIGN KEY (id_alimento) REFERENCES Alimento(id_alimento);
+
+
+ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_cuenta_pokemon_go FOREIGN KEY (id_persona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(id_persona, CodigoDeEntrenador);
+ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_captura_pokemon FOREIGN KEY (Edicion, id_torneo, id_captura) REFERENCES CapturaPokemon(Edicion, id_torneo, id_captura);
+ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_pokemon FOREIGN KEY (id_pokemon) REFERENCES Pokemon(id_pokemon);
 
 -- ========
--- Limpiador 
--- =======
-CREATE TABLE Limpiador (
+-- DistanciaRecorrida
+-- ========
+CREATE TABLE DistanciaRecorrida (
+    Edicion INTEGER NOT NULL,
+    id_torneo INTEGER NOT NULL,
+    id_distancia INTEGER NOT NULL UNIQUE SERIAL,
     id_persona INTEGER NOT NULL,
-    Nombre VARCHAR(20),
-    ApellidoMaterno VARCHAR(20),
-    ApellidoPaterno VARCHAR(20),
-    FechaNacimiento DATE,
-    Sexo VARCHAR(10),
-    Calle VARCHAR(20),
-    Colonia VARCHAR(20),
-    Ciudad VARCHAR(20),
-    CodigoPostal INTEGER,
-    NumInterior INTEGER,
-    NumExterior INTEGER,
-    Ubicacion VARCHAR(20),
-    Horario TIMETZ,
-    Salario REAL
+    CodigoDeEntrenador INTEGER NOT NULL,
+    Locación VARCHAR(10) NOT NULL CHECK (Locación IN ('Universum', 'Entrada', 'Rectoria')),
+    Fecha DATE NOT NULL,
+    Hora TIMETZ NOT NULL
 );
-ALTER TABLE Limpiador ADD CONSTRAINT pk_limpiador PRIMARY KEY (id_persona);
+
+ALTER TABLE DistanciaRecorrida ADD CONSTRAINT pk_distancia_recorrido PRIMARY KEY (Edicion, id_torneo, id_distancia);
+ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_cuenta_pokemon_go FOREIGN KEY (id_persona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(id_persona, CodigoDeEntrenador);
+ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_torneo_distancia_recorrida FOREIGN KEY (Edicion, id_torneo) REFERENCES TorneoDistanciaRecorrida(Edicion, id_torneo);
 
 -- ========
 -- CorreoLimpiador (Va después de Limpiador)

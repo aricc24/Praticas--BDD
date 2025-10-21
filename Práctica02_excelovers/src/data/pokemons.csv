@@ -1,7 +1,7 @@
 pokemon_id,nombre,especie,tipo,cp,peso,sexo,shiny
 1,Pikachu,Ratón,Eléctrico,1234,6.0,M,False
 2,Charmander,Reptil,Fuego,2312,8.5,M,True
-3,Bulbasaur,Semilla,Planta/Veneno,1523,7.2,F,True
+3,Bulbasaur,Semilla,Planta,1523,7.2,F,True
 4,Squirtle,Tortuga,Agua,1400,9.0,M,True
 5,Jigglypuff,Globo,Hada,1123,5.5,F,True
 6,Eevee,Vulpéx,Normal,1200,6.5,M,True
