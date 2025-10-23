@@ -19,7 +19,7 @@ CREATE TABLE ParticipanteUNAM (
     NumeroDeCuenta INTEGER,
     Nombre VARCHAR(20),
     ApellidoMaterno VARCHAR(20),
-    ApellidoPaterno VARCHAR(20)
+    ApellidoPaterno VARCHAR(20),
     FechaNacimiento DATE,
     Sexo VARCHAR(10),
     Carrera VARCHAR(20),
@@ -102,7 +102,7 @@ ALTER TABLE Vendedor ALTER COLUMN Calle SET NOT NULL;
 ALTER TABLE Vendedor ALTER COLUMN Colonia SET NOT NULL;
 ALTER TABLE Vendedor ALTER COLUMN Ciudad SET NOT NULL;
 ALTER TABLE Vendedor ALTER COLUMN CodigoPostal SET NOT NULL;
-ALTER TABLE Vendedor ALTER COLUMN NumExterior SET NOT NULL
+ALTER TABLE Vendedor ALTER COLUMN NumExterior SET NOT NULL;
 ALTER TABLE Vendedor ADD CONSTRAINT pk_vendedor PRIMARY KEY (IdPersona);
 
 
@@ -213,7 +213,7 @@ CREATE TABLE CorreoCuidador (
     Correo VARCHAR (50)
 );
 ALTER TABLE CorreoCuidador ALTER COLUMN IdPersona SET NOT NULL;
-ALTER TABLE CorreoCuidador ALTER COLUMN Correo SET NOT NULL
+ALTER TABLE CorreoCuidador ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoCuidador ADD CONSTRAINT pk_correo_cuidador PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoCuidador ADD CONSTRAINT fk_correo_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
 
@@ -261,7 +261,7 @@ CREATE TABLE CorreoLimpiador (
     Correo VARCHAR(50)
 );
 ALTER TABLE CorreoLimpiador ALTER COLUMN IdPersona SET NOT NULL;
-ALTER TABLE CorreoLimpiador ALTER COLUMN Correo SET NOT NULL
+ALTER TABLE CorreoLimpiador ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT pk_correo_limpiador PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT fk_correo_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
 
@@ -309,7 +309,7 @@ CREATE TABLE CorreoParticipante (
     Correo VARCHAR(50)
 );
 ALTER TABLE CorreoParticipante ALTER COLUMN IdPersona SET NOT NULL;
-ALTER TABLE CorreoParticipante ALTER COLUMN Correo SET NOT NULL
+ALTER TABLE CorreoParticipante ALTER COLUMN Correo SET NOT NULL;
 ALTER TABLE CorreoParticipante ADD CONSTRAINT pk_CorreoParticipante PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoParticipante ADD CONSTRAINT fk_Participante_Correo FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
 
@@ -321,7 +321,7 @@ CREATE TABLE TelefonoParticipante (
     Telefono CHAR(10)
 );
 ALTER TABLE TelefonoParticipante ALTER COLUMN IdPersona SET NOT NULL;
-ALTER TABLE TelefonoParticipante ALTER COLUMN Telefono SET NOT NULL
+ALTER TABLE TelefonoParticipante ALTER COLUMN Telefono SET NOT NULL;
 ALTER TABLE TelefonoParticipante ADD CONSTRAINT pk_TelefonoParticipante PRIMARY KEY (IdPersona, Telefono);
 ALTER TABLE TelefonoParticipante ADD CONSTRAINT fk_Telefono_Participante FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
 
@@ -334,7 +334,7 @@ CREATE TABLE TrabajarVendedor(
     IdPersona INTEGER
 );
 ALTER TABLE TrabajarVendedor ALTER COLUMN Edicion SET NOT NULL;
-ALTER TABLE TrabajarVendedor ALTER COLUMN IdPersona SET NOT NULL
+ALTER TABLE TrabajarVendedor ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE TrabajarVendedor ADD CONSTRAINT fk_trabajar_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona);
 ALTER TABLE TrabajarVendedor ADD CONSTRAINT fk_trabajar_vendedor_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
 
@@ -346,7 +346,7 @@ CREATE TABLE TrabajarCuidador (
     IdPersona INTEGER 
 );
 ALTER TABLE TrabajarCuidador ALTER COLUMN Edicion SET NOT NULL;
-ALTER TABLE TrabajarCuidador ALTER COLUMN IdPersona SET NOT NULL
+ALTER TABLE TrabajarCuidador ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE TrabajarCuidador ADD CONSTRAINT fk_trabajar_cuidador_evento FOREIGN KEY (Edicion) REFERENCES Evento(edicion);
 ALTER TABLE TrabajarCuidador ADD CONSTRAINT fk_trabajar_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
 
@@ -358,7 +358,7 @@ CREATE TABLE TrabajarLimpiador (
     Edicion INTEGER
 );
 ALTER TABLE TrabajarLimpiador ALTER COLUMN Edicion SET NOT NULL;
-ALTER TABLE TrabajarLimpiador ALTER COLUMN IdPersona SET NOT NULL
+ALTER TABLE TrabajarLimpiador ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
 ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_limpiador_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
 
@@ -370,7 +370,7 @@ CREATE TABLE TrabajarEncargadoRegistro (
     IdPersona INTEGER
 );
 ALTER TABLE TrabajarEncargadoRegistro ALTER COLUMN Edicion SET NOT NULL;
-ALTER TABLE TrabajarEncargadoRegistro ALTER COLUMN IdPersona SET NOT NULL
+ALTER TABLE TrabajarEncargadoRegistro ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_registro_evento FOREIGN KEY (Edicion) REFERENCES Evento(edicion);
 ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_registro_encargado FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona);
 
