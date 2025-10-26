@@ -8,6 +8,11 @@ CREATE TABLE Evento (
 
 ALTER TABLE Evento ADD CONSTRAINT pk_evento PRIMARY KEY (Edicion);
 
+COMMENT ON TABLE Evento IS 'Tabla que almacena la información de los torneos de pokémon go.';
+COMMENT ON COLUMN Evento.Edicion IS 'Número de edición del evento.';
+COMMENT ON COLUMN Evento.Fecha IS 'Fecha en la que se lleva a cabo el evento.';
+COMMENT ON CONSTRAINT pk_evento ON Evento IS 'Restricción de entidad para la tabla Evento.';
+
 ------------------- PERSONAS -------------------
 -- ========
 --  ParticipanteUNAM
@@ -115,6 +120,24 @@ CREATE TABLE Limpiador (
 );
 ALTER TABLE Limpiador ADD CONSTRAINT pk_limpiador PRIMARY KEY (IdPersona);
 
+COMMENT ON TABLE Limpiador IS 'Tabla que almacena la información de los limpiadores del evento.';
+COMMENT ON COLUMN Limpiador.IdPersona IS 'Identificador único de la persona limpiadora.';
+COMMENT ON COLUMN Limpiador.Nombre IS 'Nombre de la persona limpiadora.';
+COMMENT ON COLUMN Limpiador.ApellidoMaterno IS 'Apellido materno de la persona limpiadora.';
+COMMENT ON COLUMN Limpiador.ApellidoPaterno IS 'Apellido paterno de la persona limpiadora.';
+COMMENT ON COLUMN Limpiador.FechaNacimiento IS 'Fecha de nacimiento de la persona limpiadora.';
+COMMENT ON COLUMN Limpiador.Sexo IS 'Sexo de la persona limpiadora.';
+COMMENT ON COLUMN Limpiador.Calle IS 'Calle de residencia de la persona limpiadora.';
+COMMENT ON COLUMN Limpiador.Colonia IS 'Colonia de residencia de la persona limpiadora.';
+COMMENT ON COLUMN Limpiador.Ciudad IS 'Ciudad de residencia de la persona limpiadora.';
+COMMENT ON COLUMN Limpiador.CodigoPostal IS 'Código postal de la residencia de la persona limpiadora.';
+COMMENT ON COLUMN Limpiador.NumInterior IS 'Número interior de la residencia de la persona limpiadora.';
+COMMENT ON COLUMN Limpiador.NumExterior IS 'Número exterior de la residencia de la persona limpiadora.';
+COMMENT ON COLUMN Limpiador.Ubicacion IS 'Ubicación asignada al limpiador dentro del evento.';
+COMMENT ON COLUMN Limpiador.Horario IS 'Horario de trabajo del limpiador.';
+COMMENT ON COLUMN Limpiador.Salario IS 'Salario asignado al limpiador.';
+COMMENT ON CONSTRAINT pk_limpiador ON Limpiador IS 'Restricción de entidad para la tabla Limpiador.';
+
 -- ========
 -- Espectador
 -- ========
@@ -192,6 +215,12 @@ CREATE TABLE CorreoLimpiador (
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT pk_correo_limpiador PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT fk_correo_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
 
+COMMENT ON TABLE CorreoLimpiador IS 'Tabla que almacena los correos electrónicos de los limpiadores.';
+COMMENT ON COLUMN CorreoLimpiador.IdPersona IS 'Identificador único de la persona limpiadora.';
+COMMENT ON COLUMN CorreoLimpiador.Correo IS 'Correo electrónico de la persona limpiadora.';
+COMMENT ON CONSTRAINT pk_correo_limpiador ON CorreoLimpiador IS 'Restricción de entidad para la tabla CorreoLimpiador.';
+COMMENT ON CONSTRAINT fk_correo_limpiador_limpiador ON CorreoLimpiador IS 'Restricción referencial que vincula CorreoLimpiador con Limpiador.';
+
 -- ========
 -- 4. TelefonoLimpiador (Va después de Limpiador)
 -- =======
@@ -201,6 +230,12 @@ CREATE TABLE TelefonoLimpiador (
 );
 ALTER TABLE TelefonoLimpiador ADD CONSTRAINT pk_telefono_limpiador PRIMARY KEY (IdPersona, Telefono);
 ALTER TABLE TelefonoLimpiador ADD CONSTRAINT fk_telefono_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
+
+COMMENT ON TABLE TelefonoLimpiador IS 'Tabla que almacena los teléfonos de los limpiadores.';
+COMMENT ON COLUMN TelefonoLimpiador.IdPersona IS 'Identificador único de la persona limpiadora.';
+COMMENT ON COLUMN TelefonoLimpiador.Telefono IS 'Número de teléfono de la persona limpiadora.';
+COMMENT ON CONSTRAINT pk_telefono_limpiador ON TelefonoLimpiador IS 'Restricción de entidad para la tabla TelefonoLimpiador.';
+COMMENT ON CONSTRAINT fk_telefono_limpiador_limpiador ON TelefonoLimpiador IS 'Restricción referencial que vincula TelefonoLimpiador con Limpiador.';
 
 -- ========
 -- 3. CorreoVendedor 
@@ -286,6 +321,12 @@ CREATE TABLE TrabajarLimpiador (
 ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
 ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_limpiador_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
 
+COMMENT ON TABLE TrabajarLimpiador IS 'Tabla que registra la relación de trabajo entre los limpiadores y los eventos.';
+COMMENT ON COLUMN TrabajarLimpiador.IdPersona IS 'Identificador único de la persona limpiadora.';
+COMMENT ON COLUMN TrabajarLimpiador.Edicion IS 'Edición del evento en la que el limpiador trabaja.';
+COMMENT ON CONSTRAINT fk_trabajar_limpiador_limpiador ON TrabajarLimpiador IS 'Restricción referencial que vincula TrabajarLimpiador con Limpiador.';
+COMMENT ON CONSTRAINT fk_trabajar_limpiador_evento ON TrabajarLimpiador IS 'Restricción referencial que vincula TrabajarLimpiador con Evento.';
+
 
 
 
@@ -309,7 +350,6 @@ ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_regis
 -- ========
 -- Alimento (Va después de Vendedor)
 -- ========
- 
 CREATE TABLE Alimento (
     IdAlimento INTEGER NOT NULL UNIQUE , 
     IdPersona INTEGER NOT NULL, 
@@ -349,6 +389,14 @@ CREATE TABLE ComprarLimpiador (
 ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
 ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
 
+COMMENT ON TABLE ComprarLimpiador IS 'Tabla que registra las compras realizadas por los limpiadores.';
+COMMENT ON COLUMN ComprarLimpiador.IdPersona IS 'Identificador único de la persona limpiadora que realiza la compra.';
+COMMENT ON COLUMN ComprarLimpiador.IdAlimento IS 'Identificador único del alimento comprado.';
+COMMENT ON COLUMN ComprarLimpiador.MetodoDePago IS 'Método de pago utilizado para la compra.';
+COMMENT ON COLUMN ComprarLimpiador.Cantidad IS 'Cantidad de alimento comprada.';
+COMMENT ON CONSTRAINT fk_comprar_limpiador_limpiador ON ComprarLimpiador IS 'Restricción referencial que vincula ComprarLimpiador con Limpiador.';
+COMMENT ON CONSTRAINT fk_comprar_limpiador_alimento ON ComprarLimpiador IS 'Restricción referencial que vincula ComprarLimpiador con Alimento.';
+
 
 -- ========
 -- ComprarCuidador 
@@ -361,6 +409,14 @@ CREATE TABLE ComprarCuidador (
 );
 ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
 ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
+
+COMMENT ON TABLE ComprarCuidador IS 'Tabla que registra las compras realizadas por los cuidadores.';
+COMMENT ON COLUMN ComprarCuidador.IdPersona IS 'Identificador único de la persona cuidadora que realiza la compra.';
+COMMENT ON COLUMN ComprarCuidador.IdAlimento IS 'Identificador único del alimento comprado.';
+COMMENT ON COLUMN ComprarCuidador.MetodoDePago IS 'Método de pago utilizado para la compra.';
+COMMENT ON COLUMN ComprarCuidador.Cantidad IS 'Cantidad de alimento comprada.';
+COMMENT ON CONSTRAINT fk_comprar_cuidador_cuidador ON ComprarCuidador IS 'Restricción referencial que vincula ComprarCuidador con Cuidador.';
+COMMENT ON CONSTRAINT fk_comprar_cuidador_alimento ON ComprarCuidador IS 'Restricción referencial que vincula ComprarCuidador con Alimento.';
 
 
 -- ========
@@ -484,6 +540,15 @@ ALTER TABLE CuentaPokemonGo ADD CONSTRAINT pk_cuenta_pokemon_go PRIMARY KEY (IdP
 
 ALTER TABLE CuentaPokemonGo ADD CONSTRAINT fk_cuenta_pokemon_go_participante_unam FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
 
+COMMENT ON TABLE CuentaPokemonGo IS 'Tabla que almacena la información de las cuentas de Pokémon Go de los participantes.';
+COMMENT ON COLUMN CuentaPokemonGo.IdPersona IS 'Identificador único del participante UNAM propietario de la cuenta de Pokémon Go.';
+COMMENT ON COLUMN CuentaPokemonGo.CodigoDeEntrenador IS 'Código de entrenador de la cuenta de Pokémon Go.';
+COMMENT ON COLUMN CuentaPokemonGo.Equipo IS 'Equipo al que pertenece la cuenta de Pokémon Go.';
+COMMENT ON COLUMN CuentaPokemonGo.Nivel IS 'Nivel de la cuenta de Pokémon Go.';
+COMMENT ON COLUMN CuentaPokemonGo.NombreDeUsuario IS 'Nombre de usuario de la cuenta de Pokémon Go.';
+COMMENT ON CONSTRAINT pk_cuenta_pokemon_go ON CuentaPokemonGo IS 'Restricción de entidad para la tabla CuentaPokemonGo.';
+COMMENT ON CONSTRAINT fk_cuenta_pokemon_go_participante_unam ON CuentaPokemonGo IS 'Restricción referencial que vincula CuentaPokemonGo con ParticipanteUNAM.';
+
 -- ========
 -- Pokemon
 -- =======
@@ -505,7 +570,19 @@ ALTER TABLE Pokemon ADD CONSTRAINT pk_pokemon PRIMARY KEY (IdPokemon);
 ALTER TABLE Pokemon ADD CONSTRAINT fk_pokemon_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador)
     REFERENCES CuentaPokemonGo (IdPersona, CodigoDeEntrenador);
 
-
+COMMENT ON TABLE Pokemon IS 'Tabla que almacena la información de los pokémones';
+COMMENT ON COLUMN Pokemon.IdPokemon IS 'Identificador único del pokémon.';
+COMMENT ON COLUMN Pokemon.IdPersona IS 'Identificador de la persona que posee el pokémon.';
+COMMENT ON COLUMN Pokemon.CodigoDeEntrenador IS 'Código de entrenador de la cuenta a la que pertenece el pokémon.';
+COMMENT ON COLUMN Pokemon.Nombre IS 'Nombre del pokémon.';
+COMMENT ON COLUMN Pokemon.Sexo IS 'Sexo del pokémon.';
+COMMENT ON COLUMN Pokemon.Peso IS 'Peso del pokémon.';
+COMMENT ON COLUMN Pokemon.PuntosDeCombate IS 'Puntos de combate del pokémon.';
+COMMENT ON COLUMN Pokemon.Shiny IS 'Indica si el pokémon es shiny o no.';
+COMMENT ON COLUMN Pokemon.Tipo IS 'Tipo del pokémon.';
+COMMENT ON COLUMN Pokemon.Especie IS 'Especie del pokémon.';
+COMMENT ON CONSTRAINT pk_pokemon ON Pokemon IS 'Restricción de entidad para la tabla Pokemon.';
+COMMENT ON CONSTRAINT fk_pokemon_cuenta_pokemon_go ON Pokemon IS 'Restricción referencial que vincula Pokemon con CuentaPokemonGo.';
 
 ------------- TORNEOS ------------
 
@@ -524,6 +601,15 @@ ALTER TABLE TorneoCapturaShinys ADD CONSTRAINT pk_torneo_captura_shinys PRIMARY 
 ALTER TABLE TorneoCapturaShinys ADD CONSTRAINT fk_torneo_captura_shinys_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
 ALTER TABLE TorneoCapturaShinys ADD CONSTRAINT fk_torneo_captura_shinys_participante_unam FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
 
+COMMENT ON TABLE TorneoCapturaShinys IS 'Tabla que almacena la información de los torneos de captura de pokémones shiny.';
+COMMENT ON COLUMN TorneoCapturaShinys.Edicion IS 'Edición del torneo de captura de pokémones shiny.';
+COMMENT ON COLUMN TorneoCapturaShinys.IdTorneo IS 'Identificador único del torneo de captura de pokémones shiny.';
+COMMENT ON COLUMN TorneoCapturaShinys.IdPersona IS 'Identificador único del participante UNAM que ganó el torneo.';
+COMMENT ON COLUMN TorneoCapturaShinys.CantidadAPremiar IS 'Cantidad en dinero a premiar al ganador del torneo.';
+COMMENT ON CONSTRAINT pk_torneo_captura_shinys ON TorneoCapturaShinys IS 'Restricción de entidad para la tabla TorneoCapturaShinys.';
+COMMENT ON CONSTRAINT fk_torneo_captura_shinys_evento ON TorneoCapturaShinys IS 'Restricción referencial que vincula TorneoCapturaShinys con Evento.';
+COMMENT ON CONSTRAINT fk_torneo_captura_shinys_participante_unam ON TorneoCapturaShinys IS 'Restricción referencial que vincula TorneoCapturaShinys con ParticipanteUNAM.';
+
 
 -- ========
 -- TorneoDistanciaRecorrida
@@ -539,6 +625,15 @@ ALTER TABLE TorneoDistanciaRecorrida ADD CONSTRAINT pk_torneo_distancia_recorrid
 ALTER TABLE TorneoDistanciaRecorrida ADD CONSTRAINT fk_torneo_distancia_recorrida_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
 ALTER TABLE TorneoDistanciaRecorrida ADD CONSTRAINT fk_torneo_distancia_recorrida_participante_unam FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
 
+COMMENT ON TABLE TorneoDistanciaRecorrida IS 'Tabla que almacena la información de los torneos de distancia recorrida.';
+COMMENT ON COLUMN TorneoDistanciaRecorrida.Edicion IS 'Edición del torneo de distancia recorrida.';
+COMMENT ON COLUMN TorneoDistanciaRecorrida.IdTorneo IS 'Identificador único del torneo de distancia recorrida.';
+COMMENT ON COLUMN TorneoDistanciaRecorrida.IdPersona IS 'Identificador único del participante UNAM que ganó el torneo.';
+COMMENT ON COLUMN TorneoDistanciaRecorrida.CantidadAPremiar IS 'Cantidad en dinero a premiar al ganador del torneo.';
+COMMENT ON CONSTRAINT pk_torneo_distancia_recorrida ON TorneoDistanciaRecorrida IS 'Restricción de entidad para la tabla TorneoDistanciaRecorrida.';
+COMMENT ON CONSTRAINT fk_torneo_distancia_recorrida_evento ON TorneoDistanciaRecorrida IS 'Restricción referencial que vincula TorneoDistanciaRecorrida con Evento.';
+COMMENT ON CONSTRAINT fk_torneo_distancia_recorrida_participante_unam ON TorneoDistanciaRecorrida IS 'Restricción referencial que vincula TorneoDistanciaRecorrida con ParticipanteUNAM.';
+
 -- ========
 -- TorneoPelea 
 -- =======
@@ -551,6 +646,15 @@ CREATE TABLE TorneoPelea (
 ALTER TABLE TorneoPelea ADD CONSTRAINT pk_torneo_pelea PRIMARY KEY (Edicion, IdTorneo);
 ALTER TABLE TorneoPelea ADD CONSTRAINT fk_torneo_pelea_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
 ALTER TABLE TorneoPelea ADD CONSTRAINT fk_torneo_pelea_participante_unam FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+
+COMMENT ON TABLE TorneoPelea IS 'Tabla que almacena la información de los torneos de pelea.';
+COMMENT ON COLUMN TorneoPelea.Edicion IS 'Edición del torneo de pelea.';
+COMMENT ON COLUMN TorneoPelea.IdTorneo IS 'Identificador único del torneo de pelea.';
+COMMENT ON COLUMN TorneoPelea.IdPersona IS 'Identificador único del participante UNAM que ganó el torneo.';
+COMMENT ON COLUMN TorneoPelea.CantidadAPremiar IS 'Cantidad en dinero a premiar al ganador del torneo.';
+COMMENT ON CONSTRAINT pk_torneo_pelea ON TorneoPelea IS 'Restricción de entidad para la tabla TorneoPelea.';
+COMMENT ON CONSTRAINT fk_torneo_pelea_evento ON TorneoPelea IS 'Restricción referencial que vincula TorneoPelea con Evento.';
+COMMENT ON CONSTRAINT fk_torneo_pelea_participante_unam ON TorneoPelea IS 'Restricción referencial que vincula TorneoPelea con ParticipanteUNAM.';
 
 
 -- ========
@@ -568,6 +672,18 @@ CREATE TABLE PeleaTorneo (
 ALTER TABLE PeleaTorneo ADD CONSTRAINT pk_pelea_torneo PRIMARY KEY (Edicion, IdTorneo, NumeroPelea);
 ALTER TABLE PeleaTorneo ADD CONSTRAINT fk_pelea_torneo_torneo FOREIGN KEY (Edicion, IdTorneo) REFERENCES TorneoPelea(Edicion, IdTorneo);
 ALTER TABLE PeleaTorneo ADD CONSTRAINT fk_pelea_torneo_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador);
+
+COMMENT ON TABLE PeleaTorneo IS 'Tabla que almacena la información de las peleas en los torneos.';
+COMMENT ON COLUMN PeleaTorneo.Edicion IS 'Edición del torneo de pelea.';
+COMMENT ON COLUMN PeleaTorneo.IdTorneo IS 'Identificador único del torneo de pelea.';
+COMMENT ON COLUMN PeleaTorneo.NumeroPelea IS 'Número de la pelea dentro del torneo.';
+COMMENT ON COLUMN PeleaTorneo.IdPersona IS 'Identificador único del participante UNAM en la pelea.';
+COMMENT ON COLUMN PeleaTorneo.CodigoDeEntrenador IS 'Código de entrenador de la cuenta de Pokémon Go del participante.';
+COMMENT ON COLUMN PeleaTorneo.Fecha IS 'Fecha en la que se llevó a cabo la pelea.';
+COMMENT ON COLUMN PeleaTorneo.Fase IS 'Fase del torneo en la que se realizó la pelea.';
+COMMENT ON CONSTRAINT pk_pelea_torneo ON PeleaTorneo IS 'Restricción de entidad para la tabla PeleaTorneo.';
+COMMENT ON CONSTRAINT fk_pelea_torneo_torneo ON PeleaTorneo IS 'Restricción referencial que vincula PeleaTorneo con TorneoPelea.';
+COMMENT ON CONSTRAINT fk_pelea_torneo_cuenta_pokemon_go ON PeleaTorneo IS 'Restricción referencial que vincula PeleaTorneo con CuentaPokemonGo.';
 
 -- ========
 -- DistanciaRecorrida
@@ -587,6 +703,19 @@ ALTER TABLE DistanciaRecorrida ADD CONSTRAINT pk_distancia_recorrido PRIMARY KEY
 ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador);
 ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_torneo_distancia_recorrida FOREIGN KEY (Edicion, IdTorneo) REFERENCES TorneoDistanciaRecorrida(Edicion, IdTorneo);
 
+COMMENT ON TABLE DistanciaRecorrida IS 'Tabla que almacena la información de las distancias recorridas por los participantes en los torneos.';
+COMMENT ON COLUMN DistanciaRecorrida.Edicion IS 'Edición del torneo en la que se registró la distancia recorrida.';
+COMMENT ON COLUMN DistanciaRecorrida.IdTorneo IS 'Identificador único del torneo de distancia recorrida.';
+COMMENT ON COLUMN DistanciaRecorrida.IdDistancia IS 'Identificador único de la distancia recorrida.';
+COMMENT ON COLUMN DistanciaRecorrida.IdPersona IS 'Identificador único del participante que recorrió la distancia.';
+COMMENT ON COLUMN DistanciaRecorrida.CodigoDeEntrenador IS 'Código de entrenador de la cuenta de Pokémon Go del participante.';
+COMMENT ON COLUMN DistanciaRecorrida.Locacion IS 'Locación donde se registró la distancia recorrida.';
+COMMENT ON COLUMN DistanciaRecorrida.Fecha IS 'Fecha en la que se registró la distancia recorrida.';
+COMMENT ON COLUMN DistanciaRecorrida.Hora IS 'Hora en la que se registró la distancia recorrida.';
+COMMENT ON CONSTRAINT pk_distancia_recorrido ON DistanciaRecorrida IS 'Restricción de entidad para la tabla DistanciaRecorrida.';
+COMMENT ON CONSTRAINT fk_distancia_recorrida_cuenta_pokemon_go ON DistanciaRecorrida IS 'Restricción referencial que vincula DistanciaRecorrida con CuentaPokemonGo.';
+COMMENT ON CONSTRAINT fk_distancia_recorrida_torneo_distancia_recorrida ON DistanciaRecorrida IS 'Restricción referencial que vincula DistanciaRecorrida con TorneoDistanciaRecorrida.';
+
 
 -- ========
 -- Utilizar 
@@ -599,6 +728,14 @@ CREATE TABLE Utilizar (
 );
 ALTER TABLE Utilizar ADD CONSTRAINT fk_utilizar_pokemon FOREIGN KEY (IdPokemon) REFERENCES Pokemon(IdPokemon);
 ALTER TABLE Utilizar ADD CONSTRAINT fk_utilizar_pelea_torneo FOREIGN KEY (Edicion, IdTorneo, NumeroPelea) REFERENCES PeleaTorneo(Edicion, IdTorneo, NumeroPelea);
+
+COMMENT ON TABLE Utilizar IS 'Tabla que registra qué pokémones fueron utilizados en las peleas de los torneos.';
+COMMENT ON COLUMN Utilizar.IdPokemon IS 'Identificador único del pokémon utilizado en la pelea.';
+COMMENT ON COLUMN Utilizar.Edicion IS 'Edición del torneo en la que se llevó a cabo la pelea.';
+COMMENT ON COLUMN Utilizar.IdTorneo IS 'Identificador único del torneo en el que se llevó a cabo la pelea.';
+COMMENT ON COLUMN Utilizar.NumeroPelea IS 'Número de la pelea en la que se utilizó el pokémon.';
+COMMENT ON CONSTRAINT fk_utilizar_pokemon ON Utilizar IS 'Restricción referencial que vincula Utilizar con Pokemon.';
+COMMENT ON CONSTRAINT fk_utilizar_pelea_torneo ON Utilizar IS 'Restricción referencial que vincula Utilizar con PeleaTorneo.';
 
 
 
@@ -614,6 +751,13 @@ CREATE TABLE CapturaPokemon (
 
 ALTER TABLE CapturaPokemon ADD CONSTRAINT pk_captura_pokemon PRIMARY KEY (Edicion, IdTorneo, IdCaptura);
 ALTER TABLE CapturaPokemon ADD CONSTRAINT fk_captura_pokemon_torneo_captura_shinys FOREIGN KEY (Edicion, IdTorneo) REFERENCES TorneoCapturaShinys(Edicion, IdTorneo);
+
+COMMENT ON TABLE CapturaPokemon IS 'Tabla que almacena la información de las capturas de pokémones en los torneos.';
+COMMENT ON COLUMN CapturaPokemon.Edicion IS 'Edición del torneo en la que se realizó la captura.';
+COMMENT ON COLUMN CapturaPokemon.IdTorneo IS 'Identificador único del torneo de captura de pokémones shiny.';
+COMMENT ON COLUMN CapturaPokemon.IdCaptura IS 'Identificador único de la captura realizada.';
+COMMENT ON CONSTRAINT pk_captura_pokemon ON CapturaPokemon IS 'Restricción de entidad para la tabla CapturaPokemon.';
+COMMENT ON CONSTRAINT fk_captura_pokemon_torneo_captura_shinys ON CapturaPokemon IS 'Restricción referencial que vincula CapturaPokemon con TorneoCapturaShinys.';
 
 -- ========
 --  Registrar
@@ -633,3 +777,16 @@ CREATE TABLE Registrar (
 ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador);
 ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_captura_pokemon FOREIGN KEY (Edicion, IdTorneo, IdCaptura) REFERENCES CapturaPokemon(Edicion, IdTorneo, IdCaptura);
 ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_pokemon FOREIGN KEY (IdPokemon) REFERENCES Pokemon(IdPokemon);
+
+COMMENT ON TABLE Registrar IS 'Tabla que registra las capturas de pokémones por los participantes en los torneos.';
+COMMENT ON COLUMN Registrar.IdPokemon IS 'Identificador único del pokémon capturado.';
+COMMENT ON COLUMN Registrar.CodigoDeEntrenador IS 'Código de entrenador de la cuenta de Pokémon Go del participante.';
+COMMENT ON COLUMN Registrar.IdPersona IS 'Identificador único del participante que realizó la captura.';
+COMMENT ON COLUMN Registrar.IdCaptura IS 'Identificador único de la captura realizada.';
+COMMENT ON COLUMN Registrar.Edicion IS 'Edición del torneo en la que se realizó la captura.';
+COMMENT ON COLUMN Registrar.IdTorneo IS 'Identificador único del torneo de captura de pokémones shiny.';
+COMMENT ON COLUMN Registrar.Fecha IS 'Fecha en la que se realizó la captura.';
+COMMENT ON COLUMN Registrar.Hora IS 'Hora en la que se realizó la captura.';
+COMMENT ON CONSTRAINT fk_registrar_cuenta_pokemon_go ON Registrar IS 'Restricción referencial que vincula Registrar con CuentaPokemonGo.';
+COMMENT ON CONSTRAINT fk_registrar_captura_pokemon ON Registrar IS 'Restricción referencial que vincula Registrar con CapturaPokemon.';
+COMMENT ON CONSTRAINT fk_registrar_pokemon ON Registrar IS 'Restricción referencial que vincula Registrar con Pokemon.';
