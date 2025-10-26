@@ -54,6 +54,24 @@ CREATE TABLE EncargadoRegistro (
 
 ALTER TABLE EncargadoRegistro ADD CONSTRAINT pk_encargado_registro PRIMARY KEY (IdPersona);
 
+COMMENT ON TABLE EncargadoRegistro IS 'Tabla que contiene los datos de los encargados de registro.';
+COMMENT ON COLUMN EncargadoRegistro.IdPersona IS 'Identificador único del encargado de registro.';
+COMMENT ON COLUMN EncargadoRegistro.Nombre IS 'Nombre del encargado de registro.';
+COMMENT ON COLUMN EncargadoRegistro.ApellidoMaterno IS 'Apellido materno del encargado de registro.';
+COMMENT ON COLUMN EncargadoRegistro.ApellidoPaterno IS 'Apellido paterno del encargado de registro.';
+COMMENT ON COLUMN EncargadoRegistro.FechaDeNacimiento IS 'Fecha de nacimiento del encargado de registro.';
+COMMENT ON COLUMN EncargadoRegistro.Sexo IS 'Sexo del encargado de registro; valores permitidos: M, H, Otro.';
+COMMENT ON COLUMN EncargadoRegistro.Calle IS 'Calle de residencia del encargado de registro.';
+COMMENT ON COLUMN EncargadoRegistro.Colonia IS 'Colonia de residencia del encargado de registro.';
+COMMENT ON COLUMN EncargadoRegistro.Ciudad IS 'Ciudad de residencia del encargado de registro.';
+COMMENT ON COLUMN EncargadoRegistro.CodigoPostal IS 'Código postal de la dirección del encargado de registro.';
+COMMENT ON COLUMN EncargadoRegistro.NumInterior IS 'Número interior de la vivienda del encargado de registro.';
+COMMENT ON COLUMN EncargadoRegistro.NumExterior IS 'Número exterior de la vivienda del encargado de registro.';
+COMMENT ON COLUMN EncargadoRegistro.EsJugador IS 'Indica si el encargado de registro también es jugador (TRUE) o no (FALSE).';
+
+COMMENT ON CONSTRAINT pk_encargado_registro ON EncargadoRegistro IS 'Llave primaria de la tabla EncargadoRegistro, compuesta por IdPersona.';
+
+
 -- ========
 -- Vendedor 
 -- =======
@@ -191,8 +209,16 @@ CREATE TABLE CorreoEncargadoRegistro (
 );
 
 ALTER TABLE CorreoEncargadoRegistro ADD CONSTRAINT pk_correo_encargado_registro PRIMARY KEY (IdPersona, Correo);
-ALTER TABLE CorreoEncargadoRegistro ADD CONSTRAINT fk_correo_encargado_registro FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona);
+ALTER TABLE CorreoEncargadoRegistro ADD CONSTRAINT fk_correo_encargado_registro FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
 
+COMMENT ON TABLE CorreoEncargadoRegistro IS 'Tabla que almacena los correos electrónicos asociados a cada encargado de registro.';
+COMMENT ON COLUMN CorreoEncargadoRegistro.IdPersona IS 'Identificador del encargado de registro al que pertenece el correo (llave foránea hacia EncargadoRegistro).';
+COMMENT ON COLUMN CorreoEncargadoRegistro.Correo IS 'Dirección de correo electrónico del encargado de registro.';
+
+COMMENT ON CONSTRAINT pk_correo_encargado_registro ON CorreoEncargadoRegistro IS 'Llave primaria compuesta por IdPersona y Correo.';
+COMMENT ON CONSTRAINT fk_correo_encargado_registro ON CorreoEncargadoRegistro IS 'Llave foránea que referencia al encargado de registro correspondiente, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
 
 -- ========
 -- 5. TelefonoEncargadoRegistro (Va después de EncargadoRegistro)
@@ -202,7 +228,16 @@ CREATE TABLE TelefonoEncargadoRegistro (
     Telefono CHAR(10) NOT NULL
 );
 ALTER TABLE TelefonoEncargadoRegistro ADD CONSTRAINT pk_telefono_encargado_registro PRIMARY KEY (IdPersona, Telefono);
-ALTER TABLE TelefonoEncargadoRegistro ADD CONSTRAINT fk_telefono_encargado_registro FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona);
+ALTER TABLE TelefonoEncargadoRegistro ADD CONSTRAINT fk_telefono_encargado_registro FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
+
+COMMENT ON TABLE TelefonoEncargadoRegistro IS 'Tabla que almacena los números telefónicos asociados a cada encargado de registro.';
+COMMENT ON COLUMN TelefonoEncargadoRegistro.IdPersona IS 'Identificador del encargado de registro al que pertenece el número telefónico (llave foránea hacia EncargadoRegistro).';
+COMMENT ON COLUMN TelefonoEncargadoRegistro.Telefono IS 'Número telefónico del encargado de registro; debe contener 10 dígitos.';
+
+COMMENT ON CONSTRAINT pk_telefono_encargado_registro ON TelefonoEncargadoRegistro IS 'Llave primaria compuesta por IdPersona y Telefono.';
+COMMENT ON CONSTRAINT fk_telefono_encargado_registro ON TelefonoEncargadoRegistro IS 'Llave foránea que referencia al encargado de registro correspondiente, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
 
 
 -- ========
@@ -306,9 +341,22 @@ CREATE TABLE TrabajarCuidador (
     IdPersona INTEGER NOT NULL
 );
 
-ALTER TABLE TrabajarCuidador ADD CONSTRAINT fk_trabajar_cuidador_evento FOREIGN KEY (Edicion) REFERENCES Evento(edicion);
-ALTER TABLE TrabajarCuidador ADD CONSTRAINT fk_trabajar_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
+ALTER TABLE TrabajarCuidador 
+ADD CONSTRAINT fk_trabajar_cuidador_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
 
+ALTER TABLE TrabajarCuidador 
+ADD CONSTRAINT fk_trabajar_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
+
+COMMENT ON TABLE TrabajarCuidador IS 'Tabla que registra la participación de los cuidadores en diferentes ediciones de eventos.';
+COMMENT ON COLUMN TrabajarCuidador.Edicion IS 'Número de edición del evento en el que participa el cuidador (llave foránea hacia Evento).';
+COMMENT ON COLUMN TrabajarCuidador.IdPersona IS 'Identificador del cuidador que trabaja en la edición (llave foránea hacia Cuidador).';
+
+COMMENT ON CONSTRAINT fk_trabajar_cuidador_evento ON TrabajarCuidador IS 'Llave foránea que referencia la edición del evento, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
+COMMENT ON CONSTRAINT fk_trabajar_cuidador_cuidador ON TrabajarCuidador IS 'Llave foránea que referencia al cuidador que trabaja en la edición, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
 
 
 -- ========
@@ -339,9 +387,22 @@ CREATE TABLE TrabajarEncargadoRegistro (
     IdPersona INTEGER NOT NULL
 );
 
-ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_registro_evento FOREIGN KEY (Edicion) REFERENCES Evento(edicion);
-ALTER TABLE TrabajarEncargadoRegistro ADD CONSTRAINT fk_trabajar_encargado_registro_encargado FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona);
+ALTER TABLE TrabajarEncargadoRegistro 
+ADD CONSTRAINT fk_trabajar_encargado_registro_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
 
+ALTER TABLE TrabajarEncargadoRegistro 
+ADD CONSTRAINT fk_trabajar_encargado_registro_encargado FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
+
+COMMENT ON TABLE TrabajarEncargadoRegistro IS 'Tabla que registra la participación de los encargados de registro en diferentes ediciones de eventos.';
+COMMENT ON COLUMN TrabajarEncargadoRegistro.Edicion IS 'Número de edición del evento en el que participa el encargado (llave foránea hacia Evento).';
+COMMENT ON COLUMN TrabajarEncargadoRegistro.IdPersona IS 'Identificador del encargado de registro que trabaja en la edición (llave foránea hacia EncargadoRegistro).';
+
+COMMENT ON CONSTRAINT fk_trabajar_encargado_registro_evento ON TrabajarEncargadoRegistro IS 'Llave foránea que referencia la edición del evento, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
+COMMENT ON CONSTRAINT fk_trabajar_encargado_registro_encargado ON TrabajarEncargadoRegistro IS 'Llave foránea que referencia al encargado de registro que trabaja en la edición, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
 
 
 --- COMPRAS---------------------------------------------
@@ -360,7 +421,20 @@ CREATE TABLE Alimento (
 );
 
 ALTER TABLE Alimento ADD CONSTRAINT pk_alimento PRIMARY KEY (IdAlimento);
-ALTER TABLE Alimento ADD CONSTRAINT fk_alimento_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona);
+ALTER TABLE Alimento ADD CONSTRAINT fk_alimento_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
+
+COMMENT ON TABLE Alimento IS 'Tabla que contiene los alimentos ofrecidos por los vendedores en el evento.';
+COMMENT ON COLUMN Alimento.IdAlimento IS 'Identificador único del alimento.';
+COMMENT ON COLUMN Alimento.IdPersona IS 'Identificador del vendedor que ofrece el alimento (llave foránea hacia Vendedor).';
+COMMENT ON COLUMN Alimento.FechaDeCaducidad IS 'Fecha de caducidad del alimento.';
+COMMENT ON COLUMN Alimento.Nombre IS 'Nombre del alimento.';
+COMMENT ON COLUMN Alimento.Tipo IS 'Tipo o categoría del alimento.';
+COMMENT ON COLUMN Alimento.Precio IS 'Precio del alimento; debe ser un valor positivo.';
+
+COMMENT ON CONSTRAINT pk_alimento ON Alimento IS 'Llave primaria de la tabla Alimento.';
+COMMENT ON CONSTRAINT fk_alimento_vendedor ON Alimento IS 'Llave foránea que referencia al vendedor correspondiente, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
 
 
 -- ======== 
@@ -374,8 +448,22 @@ CREATE TABLE ComprarEncargadoRegistro (
     Cantidad REAL NOT NULL CHECK (Cantidad > 0)
 );
 
-ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT fk_comprar_encargado_registro_encargado FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona);
-ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT fk_comprar_encargado_registro_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
+ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT fk_comprar_encargado_registro_encargado FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
+
+ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT fk_comprar_encargado_registro_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
+
+COMMENT ON TABLE ComprarEncargadoRegistro IS 'Tabla que registra las compras realizadas por los encargados de registro, incluyendo el método de pago y la cantidad adquirida.';
+COMMENT ON COLUMN ComprarEncargadoRegistro.IdPersona IS 'Identificador del encargado de registro que realiza la compra (llave foránea hacia EncargadoRegistro).';
+COMMENT ON COLUMN ComprarEncargadoRegistro.IdAlimento IS 'Identificador del alimento comprado (llave foránea hacia Alimento).';
+COMMENT ON COLUMN ComprarEncargadoRegistro.MetodoDePago IS 'Método de pago utilizado en la compra; puede ser Tarjeta, Efectivo o Transferencia.';
+COMMENT ON COLUMN ComprarEncargadoRegistro.Cantidad IS 'Cantidad de unidades del alimento compradas; debe ser mayor a 0.';
+
+COMMENT ON CONSTRAINT fk_comprar_encargado_registro_encargado ON ComprarEncargadoRegistro IS 'Llave foránea que referencia al encargado de registro comprador, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
+COMMENT ON CONSTRAINT fk_comprar_encargado_registro_alimento ON ComprarEncargadoRegistro IS 'Llave foránea que referencia al alimento adquirido, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
 
 -- ========
 -- ComprarLimpiador  
@@ -478,8 +566,20 @@ CREATE TABLE EncargadoInscribirParticipante (
 );
 
 ALTER TABLE EncargadoInscribirParticipante 
-ADD CONSTRAINT fk_encargado_inscribir_participante_encargado FOREIGN KEY (IdPersona_encargado) REFERENCES EncargadoRegistro(IdPersona),
-ADD CONSTRAINT fk_encargado_inscribir_participante_participante FOREIGN KEY (IdPersona_participante) REFERENCES ParticipanteUNAM(IdPersona);
+ADD CONSTRAINT fk_encargado_inscribir_participante_encargado FOREIGN KEY (IdPersona_encargado) REFERENCES EncargadoRegistro(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE,
+ADD CONSTRAINT fk_encargado_inscribir_participante_participante FOREIGN KEY (IdPersona_participante) REFERENCES ParticipanteUNAM(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
+
+COMMENT ON TABLE EncargadoInscribirParticipante IS 'Tabla que registra las inscripciones realizadas por los encargados a los participantes, incluyendo la fecha en que se efectuó la inscripción.';
+COMMENT ON COLUMN EncargadoInscribirParticipante.IdPersona_encargado IS 'Identificador del encargado de registro que inscribe al participante (llave foránea hacia EncargadoRegistro).';
+COMMENT ON COLUMN EncargadoInscribirParticipante.IdPersona_participante IS 'Identificador del participante inscrito (llave foránea hacia ParticipanteUNAM).';
+COMMENT ON COLUMN EncargadoInscribirParticipante.Fecha IS 'Fecha en la que el encargado realizó la inscripción del participante.';
+
+COMMENT ON CONSTRAINT fk_encargado_inscribir_participante_encargado ON EncargadoInscribirParticipante IS 'Llave foránea que referencia al encargado de registro que realiza la inscripción, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
+COMMENT ON CONSTRAINT fk_encargado_inscribir_participante_participante ON EncargadoInscribirParticipante IS 'Llave foránea que referencia al participante inscrito, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
 
 -- ========
 -- ParticipanteInscribirEvento
