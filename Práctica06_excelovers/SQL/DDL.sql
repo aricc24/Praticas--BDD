@@ -579,9 +579,6 @@ CREATE TABLE ComprarEspectador (
 );
 
 ALTER TABLE ComprarEspectador 
-ADD CONSTRAINT PK_ComprarEspectador PRIMARY KEY (IdPersona, IdAlimento);
-
-ALTER TABLE ComprarEspectador 
 ADD CONSTRAINT FK_Espectador_Comprar FOREIGN KEY (IdPersona) REFERENCES Espectador(IdPersona)
 ON DELETE RESTRICT
 ON UPDATE CASCADE;
@@ -611,8 +608,6 @@ CREATE TABLE ComprarParticipanteUNAM (
     Cantidad REAL CHECK (Cantidad > 0)
 );
 
-ALTER TABLE ComprarParticipanteUNAM 
-ADD CONSTRAINT PK_ComprarParticipanteUNAM PRIMARY KEY (IdPersona, IdAlimento);
 
 ALTER TABLE ComprarParticipanteUNAM 
 ADD CONSTRAINT FK_Participante_Comprar FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona)
