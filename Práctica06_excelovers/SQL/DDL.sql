@@ -248,7 +248,9 @@ CREATE TABLE CorreoCuidador (
     Correo VARCHAR (50) NOT NULL
 );
 ALTER TABLE CorreoCuidador ADD CONSTRAINT pk_correo_cuidador PRIMARY KEY (IdPersona, Correo);
-ALTER TABLE CorreoCuidador ADD CONSTRAINT fk_correo_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
+ALTER TABLE CorreoCuidador ADD CONSTRAINT fk_correo_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
 
 COMMENT ON TABLE CorreoCuidador IS 'Tabla que almacena los correos electrónicos de los cuidadores.';
 COMMENT ON COLUMN CorreoCuidador.IdPersona IS 'Identificador único del cuidador.';
@@ -264,7 +266,9 @@ CREATE TABLE TelefonoCuidador(
     Telefono CHAR(10) NOT NULL
 );
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT pk_telefono_cuidador PRIMARY KEY (IdPersona, Telefono);
-ALTER TABLE TelefonoCuidador ADD CONSTRAINT fk_telefono_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
+ALTER TABLE TelefonoCuidador ADD CONSTRAINT fk_telefono_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
 
 COMMENT ON TABLE TelefonoCuidador IS 'Tabla que almacena los teléfonos de los cuidadores.';
 COMMENT ON COLUMN TelefonoCuidador.IdPersona IS 'Identificador único del cuidador.';
@@ -352,7 +356,9 @@ CREATE TABLE CorreoVendedor(
     Correo VARCHAR(50) NOT NULL
 );
 ALTER TABLE CorreoVendedor ADD CONSTRAINT pk_correo_vendedor PRIMARY KEY (IdPersona, Correo);
-ALTER TABLE CorreoVendedor ADD CONSTRAINT fk_correo_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona);
+ALTER TABLE CorreoVendedor ADD CONSTRAINT fk_correo_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
 
 COMMENT ON TABLE CorreoVendedor IS 'Tabla que almacena los correos electrónicos de los vendedores.';
 COMMENT ON COLUMN CorreoVendedor.IdPersona IS 'Identificador único del vendedor.';
@@ -368,7 +374,9 @@ CREATE TABLE TelefonoVendedor(
     Telefono CHAR(10) NOT NULL
 );
 ALTER TABLE TelefonoVendedor ADD CONSTRAINT pk_telefono_vendedor PRIMARY KEY (IdPersona, Telefono);
-ALTER TABLE TelefonoVendedor ADD CONSTRAINT fk_telefono_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona);
+ALTER TABLE TelefonoVendedor ADD CONSTRAINT fk_telefono_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
 
 COMMENT ON TABLE TelefonoVendedor IS 'Tabla que almacena los teléfonos de los vendedores.';
 COMMENT ON COLUMN TelefonoVendedor.IdPersona IS 'Identificador único del vendedor.';
@@ -435,8 +443,12 @@ CREATE TABLE TrabajarVendedor(
     Edicion INTEGER NOT NULL,
     IdPersona INTEGER NOT NULL
 );
-ALTER TABLE TrabajarVendedor ADD CONSTRAINT fk_trabajar_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona);
-ALTER TABLE TrabajarVendedor ADD CONSTRAINT fk_trabajar_vendedor_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
+ALTER TABLE TrabajarVendedor ADD CONSTRAINT fk_trabajar_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
+ALTER TABLE TrabajarVendedor ADD CONSTRAINT fk_trabajar_vendedor_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
 
 COMMENT ON TABLE TrabajarVendedor IS 'Tabla que registra la relación de trabajo entre los vendedores y los eventos.';
 COMMENT ON COLUMN TrabajarVendedor.IdPersona IS 'Identificador único del vendedor.';
@@ -627,8 +639,12 @@ CREATE TABLE ComprarVendedor (
     MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
     Cantidad REAL NOT NULL CHECK (Cantidad > 0)
 );
-ALTER TABLE ComprarVendedor  ADD CONSTRAINT fk_comprar_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor (IdPersona);
-ALTER TABLE ComprarVendedor ADD CONSTRAINT fk_comprar_vendedor_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
+ALTER TABLE ComprarVendedor  ADD CONSTRAINT fk_comprar_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor (IdPersona)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
+ALTER TABLE ComprarVendedor ADD CONSTRAINT fk_comprar_vendedor_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE;
 
 COMMENT ON TABLE ComprarVendedor IS 'Tabla que registra las compras realizadas por los vendedores.';
 COMMENT ON COLUMN ComprarVendedor.IdPersona IS 'Identificador único del vendedor.';
