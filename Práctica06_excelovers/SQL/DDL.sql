@@ -32,6 +32,22 @@ CREATE TABLE ParticipanteUNAM (
 ALTER TABLE ParticipanteUNAM 
 ADD CONSTRAINT pk_ParticipanteUNAM PRIMARY KEY (IdPersona);
 
+COMMENT ON TABLE ParticipanteUNAM IS 'Tabla que almacena los datos personales de los participantes de la UNAM en el torneo';
+
+COMMENT ON COLUMN ParticipanteUNAM.IdPersona IS 'Identificador único del participante dentro del sistema';
+COMMENT ON COLUMN ParticipanteUNAM.NumeroDeCuenta IS 'Número de cuenta de la UNAM del participante';
+COMMENT ON COLUMN ParticipanteUNAM.Nombre IS 'Nombre del participante';
+COMMENT ON COLUMN ParticipanteUNAM.ApellidoPaterno IS 'Apellido materno del participante';
+COMMENT ON COLUMN ParticipanteUNAM.ApellidoMaterno IS 'Apellido paterno del participante';
+COMMENT ON COLUMN ParticipanteUNAM.FechaNacimiento IS 'Fecha de nacimiento del participante en formato YYYY-MM-DD';
+COMMENT ON COLUMN ParticipanteUNAM.Sexo IS 'Sexo o identidad de género del participante (M, H u Otro)';
+COMMENT ON COLUMN ParticipanteUNAM.Carrera IS 'Carrera universitaria que cursa el participante';
+COMMENT ON COLUMN ParticipanteUNAM.Facultad IS 'Facultad de la UNAM a la que pertenece el participante';
+
+COMMENT ON CONSTRAINT PK_ParticipanteUNAM ON ParticipanteUNAM IS 'Llave primaria que identifica de forma única a cada participante.';
+COMMENT ON CONSTRAINT CK_Sexo ON ParticipanteUNAM IS 'Restricción CHECK que valida que el valor de Sexo sea M, H u Otro.';
+COMMENT ON CONSTRAINT UQ_NumeroDeCuenta ON ParticipanteUNAM IS 'Restricción UNIQUE que asegura que el número de cuenta de la UNAM no se repita entre participantes.';
+
 -- ========
 -- EncargadoRegistro 
 -- ========
@@ -173,6 +189,18 @@ CREATE TABLE Espectador (
 ALTER TABLE Espectador 
 ADD CONSTRAINT pk_Espectador PRIMARY KEY (IdPersona);
 
+COMMENT ON TABLE Espectador IS 'Tabla que almacena los datos personales de los espectadores de los torneos';
+
+COMMENT ON COLUMN Espectador.IdPersona IS 'Identificador único del participante dentro del sistema';
+COMMENT ON COLUMN Espectador.Nombre IS 'Nombre del espectador';
+COMMENT ON COLUMN ParticipanteUNAM.ApellidoMaterno IS 'Apellido materno del espectador';
+COMMENT ON COLUMN ParticipanteUNAM.ApellidoPaterno IS 'Apellido paterno del espectador';
+COMMENT ON COLUMN ParticipanteUNAM.FechaNacimiento IS 'Fecha de nacimiento del espectador en formato YYYY-MM-DD';
+COMMENT ON COLUMN ParticipanteUNAM.Sexo IS 'Sexo o identidad de género del participante (M, H u Otro)';
+COMMENT ON COLUMN ParticipanteUNAM.HoraIngreso IS 'Hora de ingreso del espectador al evento';
+COMMENT ON COLUMN ParticipanteUNAM.HoraSalida IS 'Hora de salida del espectador al evento';
+
+COMMENT ON CONSTRAINT PK_Espectador ON Espectador IS 'Llave primaria que identifica de forma única a cada espectador';
 
 
 -- DATOS -------------------------------------
@@ -304,7 +332,18 @@ ALTER TABLE CorreoParticipante
 ADD CONSTRAINT pk_CorreoParticipante PRIMARY KEY (IdPersona, Correo);
 
 ALTER TABLE CorreoParticipante 
-ADD CONSTRAINT fk_Participante_Correo FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+ADD CONSTRAINT FK_Participante_Correo FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
+
+
+COMMENT ON TABLE CorreoParticipante IS 'Tabla que almacena las direcciones de correo electrónico asociadas a cada participante de la UNAM.';
+
+COMMENT ON COLUMN CorreoParticipante.IdPersona IS 'Identificador del participante al que pertenece el correo.';
+COMMENT ON COLUMN CorreoParticipante.Correo IS 'Dirección de correo electrónico del participante. Puede haber más de una por persona.';
+
+COMMENT ON CONSTRAINT PK_CorreoParticipante ON CorreoParticipante IS 'Llave primaria compuesta que asegura que un mismo participante no tenga correos repetidos.';
+COMMENT ON CONSTRAINT FK_Participante_Correo ON CorreoParticipante IS 'Llave foránea que vincula cada correo con el participante correspondiente. Se eliminan los correos si el participante es eliminado.';
 
 -- ========
 -- 8. TelefonoParticipante
@@ -315,11 +354,21 @@ CREATE TABLE TelefonoParticipante (
 );
 
 ALTER TABLE TelefonoParticipante 
-ADD CONSTRAINT pk_TelefonoParticipante PRIMARY KEY (IdPersona, Telefono);
+ADD CONSTRAINT PK_TelefonoParticipante PRIMARY KEY (IdPersona, Telefono);
 
 ALTER TABLE TelefonoParticipante 
-ADD CONSTRAINT fk_Telefono_Participante FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+ADD CONSTRAINT FK_Telefono_Participante 
+FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
 
+COMMENT ON TABLE TelefonoParticipante IS 'Tabla que almacena los números telefónicos asociados a los participantes de la UNAM.';
+
+COMMENT ON COLUMN TelefonoParticipante.IdPersona IS 'Identificador del participante de la UNAM al que pertenece el número telefónico';
+COMMENT ON COLUMN TelefonoParticipante.Telefono IS 'Número telefónico de contacto del participante. Se almacena con una longitud fija de 10 dígitos';
+
+COMMENT ON CONSTRAINT PK_TelefonoParticipante ON TelefonoParticipante IS 'Llave primaria compuesta que impide duplicar números telefónicos para un mismo participante.';
+COMMENT ON CONSTRAINT FK_Telefono_Participante ON TelefonoParticipante IS 'Llave foránea que vincula cada teléfono con el participante correspondiente. Se eliminan los teléfonos en cascada si el participante es eliminado.';
 
 
 ---- TRABAJAR -------------------------------------------------
@@ -530,11 +579,28 @@ CREATE TABLE ComprarEspectador (
 );
 
 ALTER TABLE ComprarEspectador 
-ADD CONSTRAINT fk_Espectador_Comprar FOREIGN KEY (IdPersona) REFERENCES Espectador(IdPersona);
+ADD CONSTRAINT PK_ComprarEspectador PRIMARY KEY (IdPersona, IdAlimento);
 
 ALTER TABLE ComprarEspectador 
-ADD CONSTRAINT fk_Alimento_Comprar FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
+ADD CONSTRAINT FK_Espectador_Comprar FOREIGN KEY (IdPersona) REFERENCES Espectador(IdPersona)
+ON DELETE RESTRICT
+ON UPDATE CASCADE;
 
+ALTER TABLE ComprarEspectador 
+ADD CONSTRAINT FK_Alimento_Comprar FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento)
+ON DELETE RESTRICT
+ON UPDATE CASCADE;
+
+COMMENT ON TABLE ComprarEspectador IS 'Tabla que registra las compras de alimentos realizadas por los espectadores.';
+
+COMMENT ON COLUMN ComprarEspectador.IdPersona IS 'Identificador del espectador que realiza la compra.';
+COMMENT ON COLUMN ComprarEspectador.IdAlimento IS 'Identificador del alimento adquirido por el espectador.';
+COMMENT ON COLUMN ComprarEspectador.MetodoDePago IS 'Método de pago utilizado: Tarjeta, Efectivo o Transferencia.';
+COMMENT ON COLUMN ComprarEspectador.Cantidad IS 'Cantidad total del alimento adquirido por el espectador.';
+
+COMMENT ON CONSTRAINT PK_ComprarEspectador ON ComprarEspectador IS 'Llave primaria compuesta por IdPersona e IdAlimento.';
+COMMENT ON CONSTRAINT FK_Espectador_Comprar ON ComprarEspectador IS 'Llave foránea que relaciona la compra con el espectador correspondiente. No permite eliminar un espectador si tiene compras registradas';
+COMMENT ON CONSTRAINT FK_Alimento_Comprar ON ComprarEspectador IS 'Llave foránea que vincula el alimento con la compra. No permite eliminar un alimento si está asociado a una compra.';
 -- ========
 -- ComprarParticipanteUNAM
 -- ========
@@ -546,11 +612,28 @@ CREATE TABLE ComprarParticipanteUNAM (
 );
 
 ALTER TABLE ComprarParticipanteUNAM 
-ADD CONSTRAINT fk_Participante_Comprar FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+ADD CONSTRAINT PK_ComprarParticipanteUNAM PRIMARY KEY (IdPersona, IdAlimento);
 
 ALTER TABLE ComprarParticipanteUNAM 
-ADD CONSTRAINT fk_Alimento_Comprar_Participante FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
+ADD CONSTRAINT FK_Participante_Comprar FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona)
+ON DELETE RESTRICT
+ON UPDATE CASCADE;
 
+ALTER TABLE ComprarParticipanteUNAM 
+ADD CONSTRAINT FK_Alimento_Comprar_Participante FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento)
+ON DELETE RESTRICT
+ON UPDATE CASCADE;
+
+COMMENT ON TABLE ComprarParticipanteUNAM IS 'Tabla que registra las compras de alimentos realizadas por los participantes de la UNAM.';
+
+COMMENT ON COLUMN ComprarParticipanteUNAM.IdPersona IS 'Identificador del participante de la UNAM que realiza la compra.';
+COMMENT ON COLUMN ComprarParticipanteUNAM.IdAlimento IS 'Identificador del alimento adquirido por el participante.';
+COMMENT ON COLUMN ComprarParticipanteUNAM.MetodoDePago IS 'Método de pago utilizado: Tarjeta, Efectivo o Transferencia.';
+COMMENT ON COLUMN ComprarParticipanteUNAM.Cantidad IS 'Cantidad total de alimento comprada por el participante.';
+
+COMMENT ON CONSTRAINT PK_ComprarParticipanteUNAM ON ComprarParticipanteUNAM IS 'Llave primaria compuesta por IdPersona e IdAlimento.';
+COMMENT ON CONSTRAINT FK_Participante_Comprar ON ComprarParticipanteUNAM IS 'Llave foránea que vincula la compra con el participante correspondiente. No permite eliminar un participante si tiene compras registradas';
+COMMENT ON CONSTRAINT FK_Alimento_Comprar_Participante ON ComprarParticipanteUNAM IS 'Llave foránea que vincula el alimento con la compra. No permite eliminar un alimento si está asociado a una compra.';
 
 
 -----------Relaciones extra --------------------------------
@@ -592,13 +675,29 @@ CREATE TABLE ParticipanteInscribirEvento (
 );
 
 ALTER TABLE ParticipanteInscribirEvento 
-ADD CONSTRAINT pk_ParticipanteInscribirEvento PRIMARY KEY (Edicion, IdPersona);
+ADD CONSTRAINT PK_ParticipanteInscribirEvento PRIMARY KEY (Edicion, IdPersona);
 
 ALTER TABLE ParticipanteInscribirEvento 
-ADD CONSTRAINT fk_InscribirEvento_Edicion FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
+ADD CONSTRAINT FK_InscribirEvento_Edicion FOREIGN KEY (Edicion) REFERENCES Evento(Edicion)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
+
 
 ALTER TABLE ParticipanteInscribirEvento 
-ADD CONSTRAINT fk_InscribirEvento_Participante FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+ADD CONSTRAINT FK_InscribirEvento_Participante FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
+
+COMMENT ON TABLE ParticipanteInscribirEvento IS 'Tabla que registra la inscripción de participantes de la UNAM a las distintas ediciones de los eventos.';
+
+COMMENT ON COLUMN ParticipanteInscribirEvento.Edicion IS 'Número o identificador de la edición del evento en la que se inscribe el participante.';
+COMMENT ON COLUMN ParticipanteInscribirEvento.IdPersona IS 'Identificador del participante de la UNAM inscrito en el evento.';
+COMMENT ON COLUMN ParticipanteInscribirEvento.Fecha IS 'Fecha en que el participante realizó su inscripción al evento.';
+COMMENT ON COLUMN ParticipanteInscribirEvento.Costo IS 'Costo total de inscripción pagado por el participante.';
+
+COMMENT ON CONSTRAINT PK_ParticipanteInscribirEvento ON ParticipanteInscribirEvento IS 'Llave primaria compuesta por Edicion e IdPersona que garantiza que un participante no se inscriba dos veces al mismo evento.';
+COMMENT ON CONSTRAINT FK_InscribirEvento_Edicion ON ParticipanteInscribirEvento IS 'Llave foránea que vincula la inscripción con la edición correspondiente del evento. Si la edición se elimina, también se eliminan las inscripciones asociadas.';
+COMMENT ON CONSTRAINT FK_InscribirEvento_Participante ON ParticipanteInscribirEvento IS 'Llave foránea que vincula la inscripción con el participante. Si el participante se elimina, también se eliminan sus registros de inscripción.';
 
 
 -- ========
@@ -610,14 +709,27 @@ CREATE TABLE Asistir (
 );
 
 ALTER TABLE Asistir 
-ADD CONSTRAINT pk_Asistir PRIMARY KEY (Edicion, IdPersona);
+ADD CONSTRAINT PK_Asistir PRIMARY KEY (Edicion, IdPersona);
 
 ALTER TABLE Asistir 
-ADD CONSTRAINT fk_Asistir_Edicion FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
+ADD CONSTRAINT FK_Asistir_Edicion FOREIGN KEY (Edicion) REFERENCES Evento(Edicion)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
 
 ALTER TABLE Asistir 
-ADD CONSTRAINT fk_Asistir_Espectador FOREIGN KEY (IdPersona) REFERENCES Espectador(IdPersona);
+ADD CONSTRAINT FK_Asistir_Espectador 
+FOREIGN KEY (IdPersona) REFERENCES Espectador(IdPersona)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
 
+COMMENT ON TABLE Asistir IS 'Tabla que registra la asistencia de los espectadores a las distintas ediciones de los eventos.';
+
+COMMENT ON COLUMN Asistir.Edicion IS 'Número o identificador de la edición del evento al que asiste el espectador';
+COMMENT ON COLUMN Asistir.IdPersona IS 'Identificador del espectador que asiste al evento.';
+
+COMMENT ON CONSTRAINT PK_Asistir ON Asistir IS 'Llave primaria compuesta por Edicion e IdPersona que evita registros duplicados de asistencia.';
+COMMENT ON CONSTRAINT FK_Asistir_Edicion ON Asistir IS 'Llave foránea que vincula la asistencia con la edición correspondiente del evento. Si el evento se elimina, también se eliminan los registros de asistencia asociados.';
+COMMENT ON CONSTRAINT FK_Asistir_Espectador ON Asistir IS 'Llave foránea que vincula la asistencia con el espectador correspondiente. Si el espectador se elimina, también se eliminan sus registros de asistencia.';
 
 
 
