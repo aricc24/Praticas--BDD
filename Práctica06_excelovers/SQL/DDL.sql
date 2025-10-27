@@ -109,6 +109,22 @@ CREATE TABLE Vendedor (
 );
 ALTER TABLE Vendedor ADD CONSTRAINT pk_vendedor PRIMARY KEY (IdPersona);
 
+COMMENT ON TABLE Vendedor IS 'Tabla para almacenar la información de los venderores.';
+COMMENT ON COLUMN Vendedor.IdPersona IS 'Identificador único del vendedor (PK).';
+COMMENT ON COLUMN Vendedor.Nombre IS 'Nombre del vendedor.';
+COMMENT ON COLUMN Vendedor.ApellidoMaterno IS 'Apellido materno del vendedor.';
+COMMENT ON COLUMN Vendedor.ApellidoPaterno IS 'Apellido paterno del vendedor.';
+COMMENT ON COLUMN Vendedor.FechaNacimiento IS 'Fecha de nacimiento del vendedor.';
+COMMENT ON COLUMN Vendedor.Sexo IS 'Sexo del vendedor.';
+COMMENT ON COLUMN Vendedor.Calle IS 'Calle de residencia del vendedor.';
+COMMENT ON COLUMN Vendedor.Colonia IS 'Colonia de residencia del vendedor.';
+COMMENT ON COLUMN Vendedor.Ciudad IS 'Ciudad de residencia del vendedor.';
+COMMENT ON COLUMN Vendedor.CodigoPostal IS 'Código postal del vendedor.';
+COMMENT ON COLUMN Vendedor.NumInterior IS 'Número interior del vendedor.';
+COMMENT ON COLUMN Vendedor.NumExterior IS 'Número exterior del vendedor.';
+COMMENT ON COLUMN Vendedor.Ubicacion IS 'Ubicación asignada del vendedor.';
+COMMENT ON CONSTRAINT pk_vendedor ON Vendedor IS 'Restricción de entidad para la tabla Vendedor.';
+
 
 -- ========
 -- Cuidador
@@ -131,6 +147,24 @@ CREATE TABLE Cuidador (
     Salario REAL  CHECK (Salario >= 0)
 );
 ALTER TABLE Cuidador ADD CONSTRAINT pk_cuidador PRIMARY KEY (IdPersona);
+
+COMMENT ON TABLE Cuidador IS 'Tabla que almacena la información de los cuidadores del evento.';
+COMMENT ON COLUMN Cuidador.IdPersona IS 'Identificador único del cuidador.';
+COMMENT ON COLUMN Cuidador.Nombre IS 'Nombre del cuidador.';
+COMMENT ON COLUMN Cuidador.ApellidoMaterno IS 'Apellido materno del cuidador.';
+COMMENT ON COLUMN Cuidador.ApellidoPaterno IS 'Apellido paterno del cuidador.';
+COMMENT ON COLUMN Cuidador.FechaNacimiento IS 'Fecha de nacimiento del cuidador.';
+COMMENT ON COLUMN Cuidador.Sexo IS 'Sexo del cuidador.';
+COMMENT ON COLUMN Cuidador.Calle IS 'Calle de residencia del cuidador.';
+COMMENT ON COLUMN Cuidador.Colonia IS 'Colonia de residencia del cuidador.';
+COMMENT ON COLUMN Cuidador.Ciudad IS 'Ciudad de residencia del cuidador.';
+COMMENT ON COLUMN Cuidador.CodigoPostal IS 'Código postal de la residencia del cuidador.';
+COMMENT ON COLUMN Cuidador.NumInterior IS 'Número interior de la residencia del cuidador.';
+COMMENT ON COLUMN Cuidador.NumExterior IS 'Número exterior de la residencia del cuidador.';
+COMMENT ON COLUMN Cuidador.Ubicacion IS 'Ubicación asignada al cuidador dentro del evento.';
+COMMENT ON COLUMN Cuidador.Horario IS 'Horario de trabajo del cuidador.';
+COMMENT ON COLUMN Cuidador.Salario IS 'Salario asignado al cuidador.';
+COMMENT ON CONSTRAINT pk_cuidador ON Cuidador IS 'Restricción de entidad para la tabla Cuidador.';
 
 -- ========
 -- Limpiador 
@@ -216,6 +250,12 @@ CREATE TABLE CorreoCuidador (
 ALTER TABLE CorreoCuidador ADD CONSTRAINT pk_correo_cuidador PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoCuidador ADD CONSTRAINT fk_correo_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
 
+COMMENT ON TABLE CorreoCuidador IS 'Tabla que almacena los correos electrónicos de los cuidadores.';
+COMMENT ON COLUMN CorreoCuidador.IdPersona IS 'Identificador único del cuidador.';
+COMMENT ON COLUMN CorreoVendedor.Correo IS 'Correo electrónico del cuidador.';
+COMMENT ON CONSTRAINT pk_correo_cuidador ON CorreoCuidador IS 'Restricción de entidad para la tabla CorreoCuidador.';
+COMMENT ON CONSTRAINT fk_correo_cuidador_cuidador ON CorreoCuidador IS 'Restricción referencial que vincula CorreoCuidador con Cuidador.';
+
 -- ========
 -- 8. TelefonoCuidador
 -- =======
@@ -226,7 +266,11 @@ CREATE TABLE TelefonoCuidador(
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT pk_telefono_cuidador PRIMARY KEY (IdPersona, Telefono);
 ALTER TABLE TelefonoCuidador ADD CONSTRAINT fk_telefono_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
 
-
+COMMENT ON TABLE TelefonoCuidador IS 'Tabla que almacena los teléfonos de los cuidadores.';
+COMMENT ON COLUMN TelefonoCuidador.IdPersona IS 'Identificador único del cuidador.';
+COMMENT ON COLUMN TelefonoCuidador.Telefono IS 'Número de teléfono del cuidador.';
+COMMENT ON CONSTRAINT pk_correo_cuidador ON CorreoCuidador IS 'Restricción de entidad para la tabla TeléfonoCuidador.';
+COMMENT ON CONSTRAINT fk_correo_cuidador_cuidador ON CorreoCuidador IS 'Restricción referencial que vincula TelefonoCuidador con Cuidador.';
 
 -- ========
 -- 4. CorreoEncargadoRegistro (Va después de EncargadoRegistro)
@@ -310,6 +354,12 @@ CREATE TABLE CorreoVendedor(
 ALTER TABLE CorreoVendedor ADD CONSTRAINT pk_correo_vendedor PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoVendedor ADD CONSTRAINT fk_correo_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona);
 
+COMMENT ON TABLE CorreoVendedor IS 'Tabla que almacena los correos electrónicos de los vendedores.';
+COMMENT ON COLUMN CorreoVendedor.IdPersona IS 'Identificador único del vendedor.';
+COMMENT ON COLUMN CorreoVendedor.Correo IS 'Correo electrónico del vendedor.';
+COMMENT ON CONSTRAINT pk_correo_vendedor ON CorreoVendedor IS 'Restricción de entidad para la tabla CorreoVendedor.';
+COMMENT ON CONSTRAINT fk_correo_vendedor_vendedor ON CorreoVendedor IS 'Restricción referencial que vincula CorreoVendedor con Vendedor.';
+
 -- ========
 -- 4. TelefonoVendedor 
 -- =======
@@ -319,6 +369,12 @@ CREATE TABLE TelefonoVendedor(
 );
 ALTER TABLE TelefonoVendedor ADD CONSTRAINT pk_telefono_vendedor PRIMARY KEY (IdPersona, Telefono);
 ALTER TABLE TelefonoVendedor ADD CONSTRAINT fk_telefono_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona);
+
+COMMENT ON TABLE TelefonoVendedor IS 'Tabla que almacena los teléfonos de los vendedores.';
+COMMENT ON COLUMN TelefonoVendedor.IdPersona IS 'Identificador único del vendedor.';
+COMMENT ON COLUMN TelefonoVendedor.Telefono IS 'Número de teléfono del vendedor.';
+COMMENT ON CONSTRAINT pk_correo_vendedor ON CorreoVendedor IS 'Restricción de entidad para la tabla TeléfonoVendedor.';
+COMMENT ON CONSTRAINT fk_correo_vendedor_vendedor ON CorreoVendedor IS 'Restricción referencial que vincula TelefonoVendedor con Vendedor.';
 
 -- ========
 -- 5. CorreoParticipante
@@ -381,6 +437,12 @@ CREATE TABLE TrabajarVendedor(
 );
 ALTER TABLE TrabajarVendedor ADD CONSTRAINT fk_trabajar_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona);
 ALTER TABLE TrabajarVendedor ADD CONSTRAINT fk_trabajar_vendedor_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
+
+COMMENT ON TABLE TrabajarVendedor IS 'Tabla que registra la relación de trabajo entre los vendedores y los eventos.';
+COMMENT ON COLUMN TrabajarVendedor.IdPersona IS 'Identificador único del vendedor.';
+COMMENT ON COLUMN TrabajarVendedor.Edicion IS 'Edición del evento en la que el vendedor trabaja.';
+COMMENT ON CONSTRAINT fk_trabajar_vendedor_vendedor ON TrabajarVendedor IS 'Restricción referencial que vincula TrabajarVendedor con Vendedor.';
+COMMENT ON CONSTRAINT fk_trabajar_vendedor_evento ON TrabajarVendedor IS 'Restricción referencial que vincula TrabajarVendedor con Evento.';
 
 -- ========
 -- TrabajarCuidador 
@@ -567,6 +629,14 @@ CREATE TABLE ComprarVendedor (
 );
 ALTER TABLE ComprarVendedor  ADD CONSTRAINT fk_comprar_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor (IdPersona);
 ALTER TABLE ComprarVendedor ADD CONSTRAINT fk_comprar_vendedor_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
+
+COMMENT ON TABLE ComprarVendedor IS 'Tabla que registra las compras realizadas por los vendedores.';
+COMMENT ON COLUMN ComprarVendedor.IdPersona IS 'Identificador único del vendedor.';
+COMMENT ON COLUMN ComprarVendedor.IdAlimento IS 'Identificador único del alimento comprado.';
+COMMENT ON COLUMN ComprarVendedor.MetodoDePago IS 'Método de pago utilizado para la compra.';
+COMMENT ON COLUMN ComprarVendedor.Cantidad IS 'Cantidad de alimento comprada.';
+COMMENT ON CONSTRAINT fk_comprar_vendedor_vendedor ON ComprarVendedor IS 'Restricción referencial que vincula ComprarVendedor con Vendedor.';
+COMMENT ON CONSTRAINT fk_comprar_vendedor_alimento ON ComprarVendedor IS 'Restricción referencial que vincula ComprarVendedor con Alimento.';
 
 -- ========
 -- ComprarEspectador
