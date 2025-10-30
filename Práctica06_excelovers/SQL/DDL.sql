@@ -324,7 +324,7 @@ CREATE TABLE CorreoLimpiador (
     Correo VARCHAR(50) NOT NULL
 );
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT pk_correo_limpiador PRIMARY KEY (IdPersona, Correo);
-ALTER TABLE CorreoLimpiador ADD CONSTRAINT fk_correo_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
+ALTER TABLE CorreoLimpiador ADD CONSTRAINT fk_correo_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE CorreoLimpiador IS 'Tabla que almacena los correos electrónicos de los limpiadores.';
 COMMENT ON COLUMN CorreoLimpiador.IdPersona IS 'Identificador único de la persona limpiadora.';
@@ -340,7 +340,7 @@ CREATE TABLE TelefonoLimpiador (
     Telefono CHAR(10) NOT NULL
 );
 ALTER TABLE TelefonoLimpiador ADD CONSTRAINT pk_telefono_limpiador PRIMARY KEY (IdPersona, Telefono);
-ALTER TABLE TelefonoLimpiador ADD CONSTRAINT fk_telefono_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
+ALTER TABLE TelefonoLimpiador ADD CONSTRAINT fk_telefono_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE TelefonoLimpiador IS 'Tabla que almacena los teléfonos de los limpiadores.';
 COMMENT ON COLUMN TelefonoLimpiador.IdPersona IS 'Identificador único de la persona limpiadora.';
@@ -489,8 +489,8 @@ CREATE TABLE TrabajarLimpiador (
     IdPersona INTEGER NOT NULL,
     Edicion INTEGER NOT NULL
 );
-ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
-ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_limpiador_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
+ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE TrabajarLimpiador ADD CONSTRAINT fk_trabajar_limpiador_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE TrabajarLimpiador IS 'Tabla que registra la relación de trabajo entre los limpiadores y los eventos.';
 COMMENT ON COLUMN TrabajarLimpiador.IdPersona IS 'Identificador único de la persona limpiadora.';
@@ -597,8 +597,8 @@ CREATE TABLE ComprarLimpiador (
     MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
     Cantidad REAL NOT NULL CHECK (Cantidad > 0)
 );
-ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona);
-ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
+ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE ComprarLimpiador IS 'Tabla que registra las compras realizadas por los limpiadores.';
 COMMENT ON COLUMN ComprarLimpiador.IdPersona IS 'Identificador único de la persona limpiadora que realiza la compra.';
@@ -618,8 +618,8 @@ CREATE TABLE ComprarCuidador (
     MetodoDePago VARCHAR(20) NOT NULL CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia')),
     Cantidad REAL NOT NULL CHECK (Cantidad > 0)
 );
-ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona);
-ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento);
+ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE ComprarCuidador IS 'Tabla que registra las compras realizadas por los cuidadores.';
 COMMENT ON COLUMN ComprarCuidador.IdPersona IS 'Identificador único de la persona cuidadora que realiza la compra.';
@@ -831,7 +831,7 @@ CREATE TABLE CuentaPokemonGo (
 
 ALTER TABLE CuentaPokemonGo ADD CONSTRAINT pk_cuenta_pokemon_go PRIMARY KEY (IdPersona, CodigoDeEntrenador);
 
-ALTER TABLE CuentaPokemonGo ADD CONSTRAINT fk_cuenta_pokemon_go_participante_unam FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+ALTER TABLE CuentaPokemonGo ADD CONSTRAINT fk_cuenta_pokemon_go_participante_unam FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE CuentaPokemonGo IS 'Tabla que almacena la información de las cuentas de Pokémon Go de los participantes.';
 COMMENT ON COLUMN CuentaPokemonGo.IdPersona IS 'Identificador único del participante UNAM propietario de la cuenta de Pokémon Go.';
@@ -861,7 +861,7 @@ CREATE TABLE Pokemon (
 ALTER TABLE Pokemon ADD CONSTRAINT pk_pokemon PRIMARY KEY (IdPokemon);
 
 ALTER TABLE Pokemon ADD CONSTRAINT fk_pokemon_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador)
-    REFERENCES CuentaPokemonGo (IdPersona, CodigoDeEntrenador);
+    REFERENCES CuentaPokemonGo (IdPersona, CodigoDeEntrenador) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE Pokemon IS 'Tabla que almacena la información de los pokémones';
 COMMENT ON COLUMN Pokemon.IdPokemon IS 'Identificador único del pokémon.';
@@ -891,8 +891,8 @@ CREATE TABLE TorneoCapturaShinys (
 );
    
 ALTER TABLE TorneoCapturaShinys ADD CONSTRAINT pk_torneo_captura_shinys PRIMARY KEY (Edicion, IdTorneo);
-ALTER TABLE TorneoCapturaShinys ADD CONSTRAINT fk_torneo_captura_shinys_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
-ALTER TABLE TorneoCapturaShinys ADD CONSTRAINT fk_torneo_captura_shinys_participante_unam FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+ALTER TABLE TorneoCapturaShinys ADD CONSTRAINT fk_torneo_captura_shinys_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE TorneoCapturaShinys ADD CONSTRAINT fk_torneo_captura_shinys_participante_unam FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE TorneoCapturaShinys IS 'Tabla que almacena la información de los torneos de captura de pokémones shiny.';
 COMMENT ON COLUMN TorneoCapturaShinys.Edicion IS 'Edición del torneo de captura de pokémones shiny.';
@@ -915,8 +915,8 @@ CREATE TABLE TorneoDistanciaRecorrida (
 );
 
 ALTER TABLE TorneoDistanciaRecorrida ADD CONSTRAINT pk_torneo_distancia_recorrida PRIMARY KEY (Edicion, IdTorneo);
-ALTER TABLE TorneoDistanciaRecorrida ADD CONSTRAINT fk_torneo_distancia_recorrida_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
-ALTER TABLE TorneoDistanciaRecorrida ADD CONSTRAINT fk_torneo_distancia_recorrida_participante_unam FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+ALTER TABLE TorneoDistanciaRecorrida ADD CONSTRAINT fk_torneo_distancia_recorrida_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE TorneoDistanciaRecorrida ADD CONSTRAINT fk_torneo_distancia_recorrida_participante_unam FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE TorneoDistanciaRecorrida IS 'Tabla que almacena la información de los torneos de distancia recorrida.';
 COMMENT ON COLUMN TorneoDistanciaRecorrida.Edicion IS 'Edición del torneo de distancia recorrida.';
@@ -937,8 +937,8 @@ CREATE TABLE TorneoPelea (
     CantidadAPremiar REAL DEFAULT 500.0
 );
 ALTER TABLE TorneoPelea ADD CONSTRAINT pk_torneo_pelea PRIMARY KEY (Edicion, IdTorneo);
-ALTER TABLE TorneoPelea ADD CONSTRAINT fk_torneo_pelea_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion);
-ALTER TABLE TorneoPelea ADD CONSTRAINT fk_torneo_pelea_participante_unam FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona);
+ALTER TABLE TorneoPelea ADD CONSTRAINT fk_torneo_pelea_evento FOREIGN KEY (Edicion) REFERENCES Evento(Edicion) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE TorneoPelea ADD CONSTRAINT fk_torneo_pelea_participante_unam FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE TorneoPelea IS 'Tabla que almacena la información de los torneos de pelea.';
 COMMENT ON COLUMN TorneoPelea.Edicion IS 'Edición del torneo de pelea.';
@@ -963,8 +963,8 @@ CREATE TABLE PeleaTorneo (
     Fase INTEGER NOT NULL
 );
 ALTER TABLE PeleaTorneo ADD CONSTRAINT pk_pelea_torneo PRIMARY KEY (Edicion, IdTorneo, NumeroPelea);
-ALTER TABLE PeleaTorneo ADD CONSTRAINT fk_pelea_torneo_torneo FOREIGN KEY (Edicion, IdTorneo) REFERENCES TorneoPelea(Edicion, IdTorneo);
-ALTER TABLE PeleaTorneo ADD CONSTRAINT fk_pelea_torneo_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador);
+ALTER TABLE PeleaTorneo ADD CONSTRAINT fk_pelea_torneo_torneo FOREIGN KEY (Edicion, IdTorneo) REFERENCES TorneoPelea(Edicion, IdTorneo) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE PeleaTorneo ADD CONSTRAINT fk_pelea_torneo_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE PeleaTorneo IS 'Tabla que almacena la información de las peleas en los torneos.';
 COMMENT ON COLUMN PeleaTorneo.Edicion IS 'Edición del torneo de pelea.';
@@ -993,8 +993,8 @@ CREATE TABLE DistanciaRecorrida (
 );
 
 ALTER TABLE DistanciaRecorrida ADD CONSTRAINT pk_distancia_recorrido PRIMARY KEY (Edicion, IdTorneo, IdDistancia);
-ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador);
-ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_torneo_distancia_recorrida FOREIGN KEY (Edicion, IdTorneo) REFERENCES TorneoDistanciaRecorrida(Edicion, IdTorneo);
+ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_torneo_distancia_recorrida FOREIGN KEY (Edicion, IdTorneo) REFERENCES TorneoDistanciaRecorrida(Edicion, IdTorneo) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE DistanciaRecorrida IS 'Tabla que almacena la información de las distancias recorridas por los participantes en los torneos.';
 COMMENT ON COLUMN DistanciaRecorrida.Edicion IS 'Edición del torneo en la que se registró la distancia recorrida.';
@@ -1019,8 +1019,8 @@ CREATE TABLE Utilizar (
     IdTorneo INTEGER NOT NULL,
     NumeroPelea INTEGER NOT NULL
 );
-ALTER TABLE Utilizar ADD CONSTRAINT fk_utilizar_pokemon FOREIGN KEY (IdPokemon) REFERENCES Pokemon(IdPokemon);
-ALTER TABLE Utilizar ADD CONSTRAINT fk_utilizar_pelea_torneo FOREIGN KEY (Edicion, IdTorneo, NumeroPelea) REFERENCES PeleaTorneo(Edicion, IdTorneo, NumeroPelea);
+ALTER TABLE Utilizar ADD CONSTRAINT fk_utilizar_pokemon FOREIGN KEY (IdPokemon) REFERENCES Pokemon(IdPokemon) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE Utilizar ADD CONSTRAINT fk_utilizar_pelea_torneo FOREIGN KEY (Edicion, IdTorneo, NumeroPelea) REFERENCES PeleaTorneo(Edicion, IdTorneo, NumeroPelea) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE Utilizar IS 'Tabla que registra qué pokémones fueron utilizados en las peleas de los torneos.';
 COMMENT ON COLUMN Utilizar.IdPokemon IS 'Identificador único del pokémon utilizado en la pelea.';
@@ -1043,7 +1043,7 @@ CREATE TABLE CapturaPokemon (
 
 
 ALTER TABLE CapturaPokemon ADD CONSTRAINT pk_captura_pokemon PRIMARY KEY (Edicion, IdTorneo, IdCaptura);
-ALTER TABLE CapturaPokemon ADD CONSTRAINT fk_captura_pokemon_torneo_captura_shinys FOREIGN KEY (Edicion, IdTorneo) REFERENCES TorneoCapturaShinys(Edicion, IdTorneo);
+ALTER TABLE CapturaPokemon ADD CONSTRAINT fk_captura_pokemon_torneo_captura_shinys FOREIGN KEY (Edicion, IdTorneo) REFERENCES TorneoCapturaShinys(Edicion, IdTorneo) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE CapturaPokemon IS 'Tabla que almacena la información de las capturas de pokémones en los torneos.';
 COMMENT ON COLUMN CapturaPokemon.Edicion IS 'Edición del torneo en la que se realizó la captura.';
@@ -1067,9 +1067,9 @@ CREATE TABLE Registrar (
 );
 
 
-ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador);
-ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_captura_pokemon FOREIGN KEY (Edicion, IdTorneo, IdCaptura) REFERENCES CapturaPokemon(Edicion, IdTorneo, IdCaptura);
-ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_pokemon FOREIGN KEY (IdPokemon) REFERENCES Pokemon(IdPokemon);
+ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_captura_pokemon FOREIGN KEY (Edicion, IdTorneo, IdCaptura) REFERENCES CapturaPokemon(Edicion, IdTorneo, IdCaptura) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_pokemon FOREIGN KEY (IdPokemon) REFERENCES Pokemon(IdPokemon) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 COMMENT ON TABLE Registrar IS 'Tabla que registra las capturas de pokémones por los participantes en los torneos.';
 COMMENT ON COLUMN Registrar.IdPokemon IS 'Identificador único del pokémon capturado.';
