@@ -1520,3 +1520,11 @@ ALTER TABLE Limpiador
 CREATE SEQUENCE pokemon_idpokemon_seq OWNED BY Pokemon.IdPokemon;
 ALTER TABLE Pokemon ALTER COLUMN IdPokemon SET DEFAULT nextval('pokemon_idpokemon_seq');
 COMMENT ON SEQUENCE pokemon_idpokemon_seq IS 'Secuencia para generar identificadores únicos para la tabla Pokemon.';
+
+-- ========
+-- EncargadoRegistro
+-- ========
+CREATE SEQUENCE encargadoRegistro_idpersona_seq OWNED BY EncargadoRegistro.IdPersona;
+ALTER TABLE EncargadoRegistro ALTER COLUMN IdPersona SET DEFAULT nextval('encargadoRegistro_idpersona_seq');
+COMMENT ON SEQUENCE encargadoRegistro_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla EncargadoRegistro.';
+
