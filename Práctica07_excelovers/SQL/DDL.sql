@@ -1513,3 +1513,10 @@ ALTER TABLE Limpiador
 
 ALTER TABLE Limpiador
     ALTER COLUMN Ubicacion TYPE VARCHAR(100);
+
+-- ========
+-- Pokemon
+-- ========
+CREATE SEQUENCE pokemon_idpokemon_seq OWNED BY Pokemon.IdPokemon;
+ALTER TABLE Pokemon ALTER COLUMN IdPokemon SET DEFAULT nextval('pokemon_idpokemon_seq');
+COMMENT ON SEQUENCE pokemon_idpokemon_seq IS 'Secuencia para generar identificadores únicos para la tabla Pokemon.';
