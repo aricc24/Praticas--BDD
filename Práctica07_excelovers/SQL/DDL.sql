@@ -1485,6 +1485,7 @@ COMMENT ON CONSTRAINT fk_registrar_pokemon ON Registrar IS 'Restricción referen
 
 
 -- Modificaciones
+-- ===============================================================================
 
 -- ========
 -- Limpiador 
@@ -1513,6 +1514,9 @@ ALTER TABLE Limpiador
 
 ALTER TABLE Limpiador
     ALTER COLUMN Ubicacion TYPE VARCHAR(100);
+
+ALTER TABLE Limpiador ALTER COLUMN NumInterior SET NOT NULL;
+ALTER TABLE Limpiador ALTER COLUMN Ubicacion SET NOT NULL;
 
 -- ========
 -- Pokemon
