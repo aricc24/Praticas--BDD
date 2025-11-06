@@ -1582,3 +1582,118 @@ ALTER TABLE ParticipanteInscribirEvento DROP CONSTRAINT PK_ParticipanteInscribir
 -- Asistir
 -- ========
 ALTER TABLE Asistir DROP CONSTRAINT PK_Asistir;
+
+-- ========
+-- ParticipanteUNAM
+-- ========
+
+-- SEQUENCE
+CREATE SEQUENCE seq_participanteunam
+    START 1
+    INCREMENT 1
+    OWNED BY ParticipanteUNAM.IdPersona;
+
+ALTER TABLE ParticipanteUNAM
+ALTER COLUMN IdPersona SET DEFAULT nextval('seq_participanteunam');
+
+-- NOT NULL
+ALTER TABLE ParticipanteUNAM ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ALTER COLUMN NumeroDeCuenta SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Nombre SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ALTER COLUMN ApellidoMaterno SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ALTER COLUMN ApellidoPaterno SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ALTER COLUMN FechaNacimiento SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Sexo SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Carrera SET NOT NULL;
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Facultad SET NOT NULL;
+
+-- CHECK
+ALTER TABLE ParticipanteUNAM 
+ADD CONSTRAINT CK_Sexo CHECK (Sexo IN ('M', 'H', 'Otro'));
+
+
+-- ========
+-- Espectador
+-- ========
+
+-- SEQUENCE
+CREATE SEQUENCE seq_espectador
+    START 1
+    INCREMENT 1
+    OWNED BY Espectador.IdPersona;
+
+ALTER TABLE Espectador
+ALTER COLUMN IdPersona SET DEFAULT nextval('seq_espectador');
+
+-- NOT NULL
+ALTER TABLE Espectador ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN Nombre SET NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN ApellidoMaterno SET NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN ApellidoPaterno SET NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN FechaNacimiento SET NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN Sexo SET NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN HoraIngreso SET NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN HoraSalida SET NOT NULL; 
+
+-- CHECK
+ALTER TABLE Espectador 
+ADD CONSTRAINT CK_SexoEspectador CHECK (Sexo IN ('M', 'H', 'Otro'));
+
+
+-- ========
+-- ComprarEspectador
+-- ========
+-- CHECK
+ALTER TABLE ComprarEspectador 
+ADD CONSTRAINT CK_MetodoDePago CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
+-- NOT NULL
+ALTER TABLE ComprarEspectador ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE ComprarEspectador ALTER COLUMN IdAlimento SET NOT NULL;
+ALTER TABLE ComprarEspectador ALTER COLUMN MetodoDePago SET NOT NULL;
+
+
+-- ========
+-- ComprarParticipanteUNAM
+-- ========
+-- CHECK
+ALTER TABLE ComprarParticipanteUNAM 
+ADD CONSTRAINT CK_MetodoDePago_Participante CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
+
+-- NOT NULL
+ALTER TABLE ComprarParticipanteUNAM ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE ComprarParticipanteUNAM ALTER COLUMN IdAlimento SET NOT NULL;
+ALTER TABLE ComprarParticipanteUNAM ALTER COLUMN MetodoDePago SET NOT NULL;
+
+-- ========
+-- CorreoParticipante
+-- ========
+-- NOT NULL
+ALTER TABLE CorreoParticipante ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE CorreoParticipante ALTER COLUMN IdPersona SET NOT NULL;
+
+-- ========
+-- ParticipanteInscribirEvento
+-- ========
+
+-- NOT NULL
+ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Edicion SET NOT NULL;
+ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Fecha SET NOT NULL;
+ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Costo SET NOT NULL;
+-- ELiminacion de la llave primaria
+
+-- ========
+-- Asistir
+-- ========
+-- NOT NULL
+ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Edicion SET NOT NULL;
+ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN IdPersona SET NOT NULL;
+-- ELiminacion de la llave primaria
+
+-- ========
+-- TelefonoParticipante
+-- ========
+-- NOT NULL
+ALTER TABLE TelefonoParticipante ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE TelefonoParticipante ALTER COLUMN IdPersona SET NOT NULL;
+
