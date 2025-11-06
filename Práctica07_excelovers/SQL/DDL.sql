@@ -1501,6 +1501,9 @@ ALTER TABLE EncargadoRegistro ALTER COLUMN Ciudad TYPE VARCHAR(100);
 
 ALTER TABLE EncargadoRegistro ALTER COLUMN NumInterior SET NOT NULL; -- no tiene ubicación
 
+-- renombra columna para que coincida con las demás
+ALTER TABLE EncargadoRegistro RENAME COLUMN FechaDeNacimiento TO FechaNacimiento;
+
 -- ========
 -- Alimento
 -- ========
