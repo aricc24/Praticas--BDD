@@ -1058,20 +1058,8 @@ CREATE TABLE ParticipanteInscribirEvento (
     Costo REAL
 );
 
-ALTER TABLE ParticipanteInscribirEvento 
-ADD CONSTRAINT PK_ParticipanteInscribirEvento PRIMARY KEY (Edicion, IdPersona);
-
-ALTER TABLE ParticipanteInscribirEvento 
-ADD CONSTRAINT FK_InscribirEvento_Edicion FOREIGN KEY (Edicion) REFERENCES Evento(Edicion)
-ON DELETE CASCADE
-ON UPDATE CASCADE;
-
-
-ALTER TABLE ParticipanteInscribirEvento 
-ADD CONSTRAINT FK_InscribirEvento_Participante FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona)
-ON DELETE CASCADE
-ON UPDATE CASCADE;
-
+ALTER TABLE ParticipanteInscribirEvento ADD CONSTRAINT FK_InscribirEvento_Edicion FOREIGN KEY (Edicion) REFERENCES Evento(Edicion) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE ParticipanteInscribirEvento ADD CONSTRAINT FK_InscribirEvento_Participante FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona) ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE ParticipanteInscribirEvento ADD CONSTRAINT CK_Costo_Positive CHECK (Costo >= 0);
 ALTER TABLE ParticipanteInscribirEvento ADD CONSTRAINT CK_Fecha_Inscripcion CHECK (Fecha <= CURRENT_DATE);
 ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Costo SET NOT NULL;
@@ -1079,7 +1067,6 @@ ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Fecha SET NOT NULL;
 
 
 COMMENT ON TABLE ParticipanteInscribirEvento IS 'Tabla que registra la inscripción de participantes de la UNAM a las distintas ediciones de los eventos.';
-
 COMMENT ON COLUMN ParticipanteInscribirEvento.Edicion IS 'Número o identificador de la edición del evento en la que se inscribe el participante.';
 COMMENT ON COLUMN ParticipanteInscribirEvento.IdPersona IS 'Identificador del participante de la UNAM inscrito en el evento.';
 COMMENT ON COLUMN ParticipanteInscribirEvento.Fecha IS 'Fecha en que el participante realizó su inscripción al evento.';
@@ -1087,7 +1074,6 @@ COMMENT ON COLUMN ParticipanteInscribirEvento.Costo IS 'Costo total de inscripci
 COMMENT ON CONSTRAINT CK_Costo_Positive ON ParticipanteInscribirEvento IS 'Restricción CHECK que asegura que el costo de inscripción sea un valor no negativo.';
 COMMENT ON CONSTRAINT CK_Fecha_Inscripcion ON ParticipanteInscribirEvento IS 'Restricción CHECK que garantiza que la fecha de inscripción no sea posterior a la fecha actual.';
 
-COMMENT ON CONSTRAINT PK_ParticipanteInscribirEvento ON ParticipanteInscribirEvento IS 'Llave primaria compuesta por Edicion e IdPersona que garantiza que un participante no se inscriba dos veces al mismo evento.';
 COMMENT ON CONSTRAINT FK_InscribirEvento_Edicion ON ParticipanteInscribirEvento IS 'Llave foránea que vincula la inscripción con la edición correspondiente del evento. Si la edición se elimina, también se eliminan las inscripciones asociadas.';
 COMMENT ON CONSTRAINT FK_InscribirEvento_Participante ON ParticipanteInscribirEvento IS 'Llave foránea que vincula la inscripción con el participante. Si el participante se elimina, también se eliminan sus registros de inscripción.';
 
@@ -1100,26 +1086,13 @@ CREATE TABLE Asistir (
     IdPersona INTEGER
 );
 
-ALTER TABLE Asistir 
-ADD CONSTRAINT PK_Asistir PRIMARY KEY (Edicion, IdPersona);
-
-ALTER TABLE Asistir 
-ADD CONSTRAINT FK_Asistir_Edicion FOREIGN KEY (Edicion) REFERENCES Evento(Edicion)
-ON DELETE CASCADE
-ON UPDATE CASCADE;
-
-ALTER TABLE Asistir 
-ADD CONSTRAINT FK_Asistir_Espectador 
-FOREIGN KEY (IdPersona) REFERENCES Espectador(IdPersona)
-ON DELETE CASCADE
-ON UPDATE CASCADE;
+ALTER TABLE Asistir ADD CONSTRAINT FK_Asistir_Edicion FOREIGN KEY (Edicion) REFERENCES Evento(Edicion) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE Asistir ADD CONSTRAINT FK_Asistir_Espectador FOREIGN KEY (IdPersona) REFERENCES Espectador(IdPersona) ON DELETE CASCADE ON UPDATE CASCADE;
 
 COMMENT ON TABLE Asistir IS 'Tabla que registra la asistencia de los espectadores a las distintas ediciones de los eventos.';
-
 COMMENT ON COLUMN Asistir.Edicion IS 'Número o identificador de la edición del evento al que asiste el espectador';
 COMMENT ON COLUMN Asistir.IdPersona IS 'Identificador del espectador que asiste al evento.';
 
-COMMENT ON CONSTRAINT PK_Asistir ON Asistir IS 'Llave primaria compuesta por Edicion e IdPersona que evita registros duplicados de asistencia.';
 COMMENT ON CONSTRAINT FK_Asistir_Edicion ON Asistir IS 'Llave foránea que vincula la asistencia con la edición correspondiente del evento. Si el evento se elimina, también se eliminan los registros de asistencia asociados.';
 COMMENT ON CONSTRAINT FK_Asistir_Espectador ON Asistir IS 'Llave foránea que vincula la asistencia con el espectador correspondiente. Si el espectador se elimina, también se eliminan sus registros de asistencia.';
 
