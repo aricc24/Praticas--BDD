@@ -1485,7 +1485,7 @@ COMMENT ON CONSTRAINT fk_registrar_pokemon ON Registrar IS 'Restricción referen
 
 
 -- Modificaciones
--- ===============================================================================
+-- ======================================================================================================================================================================
 
 -- ========
 -- Limpiador 
@@ -1535,16 +1535,18 @@ COMMENT ON SEQUENCE encargadoRegistro_idpersona_seq IS 'Secuencia para generar i
 -- ========
 -- Alimento
 -- ========
-CREATE SEQUENCE alimento_idaliemnto_seq OWNED BY Alimento.IdAlimento;
+CREATE SEQUENCE alimento_idalimento_seq OWNED BY Alimento.IdAlimento;
 ALTER TABLE Alimento ALTER COLUMN IdAlimento SET DEFAULT nextval('alimento_idalimento_seq');
 COMMENT ON SEQUENCE alimento_idalimento_seq IS 'Secuencia para generar identificadores únicos para la tabla Alimento.';
 -- ========
 -- Vendedor
 -- ========
-ALTER TABLE vendedor ALTER COLUMN IdPersona SET DEFAULT nextval('vendedor_idpersona_seq');
+CREATE SEQUENCE vendedor_idpersona_seq OWNED BY Vendedor.IdPersona;
+ALTER TABLE Vendedor ALTER COLUMN IdPersona SET DEFAULT nextval('vendedor_idpersona_seq');
 COMMENT ON SEQUENCE vendedor_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla Vendedor.';
 -- ========
 -- Cuidador
 -- ========
-ALTER TABLE Cuuidador ALTER COLUMN IdPersona SET DEFAULT nextval('cuidador_idpersona_seq');
+CREATE SEQUENCE cuidador_idpersona_seq OWNED BY Cuidador.IdPersona;
+ALTER TABLE Cuidador ALTER COLUMN IdPersona SET DEFAULT nextval('cuidador_idpersona_seq');
 COMMENT ON SEQUENCE cuidador_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla Cuidador.';
