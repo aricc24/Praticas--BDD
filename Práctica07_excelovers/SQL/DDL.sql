@@ -1532,6 +1532,9 @@ CREATE SEQUENCE encargadoRegistro_idpersona_seq OWNED BY EncargadoRegistro.IdPer
 ALTER TABLE EncargadoRegistro ALTER COLUMN IdPersona SET DEFAULT nextval('encargadoRegistro_idpersona_seq');
 COMMENT ON SEQUENCE encargadoRegistro_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla EncargadoRegistro.';
 
+ALTER TABLE EncargadoRegistro ALTER COLUMN NumInterior SET NOT NULL;
+ALTER TABLE EncargadoRegistro ALTER COLUMN Ubicacion SET NOT NULL;
+
 -- ========
 -- Alimento
 -- ========
@@ -1544,9 +1547,16 @@ COMMENT ON SEQUENCE alimento_idalimento_seq IS 'Secuencia para generar identific
 CREATE SEQUENCE vendedor_idpersona_seq OWNED BY Vendedor.IdPersona;
 ALTER TABLE Vendedor ALTER COLUMN IdPersona SET DEFAULT nextval('vendedor_idpersona_seq');
 COMMENT ON SEQUENCE vendedor_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla Vendedor.';
+
+ALTER TABLE Vendedor ALTER COLUMN NumInterior SET NOT NULL;
+ALTER TABLE Vendedor ALTER COLUMN Ubicacion SET NOT NULL;
+
 -- ========
 -- Cuidador
 -- ========
 CREATE SEQUENCE cuidador_idpersona_seq OWNED BY Cuidador.IdPersona;
 ALTER TABLE Cuidador ALTER COLUMN IdPersona SET DEFAULT nextval('cuidador_idpersona_seq');
 COMMENT ON SEQUENCE cuidador_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla Cuidador.';
+
+ALTER TABLE Cuidador ALTER COLUMN NumInterior SET NOT NULL;
+ALTER TABLE Cuidador ALTER COLUMN Ubicacion SET NOT NULL;
