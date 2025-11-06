@@ -1494,26 +1494,13 @@ CREATE SEQUENCE limpiador_idpersona_seq OWNED BY Limpiador.IdPersona;
 ALTER TABLE Limpiador ALTER COLUMN IdPersona SET DEFAULT nextval('limpiador_idpersona_seq');
 COMMENT ON SEQUENCE limpiador_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla Limpiador.';
 
-ALTER TABLE Limpiador 
-    ALTER COLUMN Nombre TYPE VARCHAR(100);
-
-ALTER TABLE Limpiador
-    ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
-
-ALTER TABLE Limpiador
-    ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
-
-ALTER TABLE Limpiador
-    ALTER COLUMN Calle TYPE VARCHAR(100);
-
-ALTER TABLE Limpiador
-    ALTER COLUMN Colonia TYPE VARCHAR(100);
-
-ALTER TABLE Limpiador
-    ALTER COLUMN Ciudad TYPE VARCHAR(100);
-
-ALTER TABLE Limpiador
-    ALTER COLUMN Ubicacion TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN Nombre TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN Calle TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN Colonia TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN Ciudad TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN Ubicacion TYPE VARCHAR(100);
 
 ALTER TABLE Limpiador ALTER COLUMN NumInterior SET NOT NULL;
 ALTER TABLE Limpiador ALTER COLUMN Ubicacion SET NOT NULL;
@@ -1532,8 +1519,14 @@ CREATE SEQUENCE encargadoRegistro_idpersona_seq OWNED BY EncargadoRegistro.IdPer
 ALTER TABLE EncargadoRegistro ALTER COLUMN IdPersona SET DEFAULT nextval('encargadoRegistro_idpersona_seq');
 COMMENT ON SEQUENCE encargadoRegistro_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla EncargadoRegistro.';
 
-ALTER TABLE EncargadoRegistro ALTER COLUMN NumInterior SET NOT NULL;
-ALTER TABLE EncargadoRegistro ALTER COLUMN Ubicacion SET NOT NULL;
+ALTER TABLE EncargadoRegistro ALTER COLUMN Nombre TYPE VARCHAR(100);
+ALTER TABLE EncargadoRegistro ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
+ALTER TABLE EncargadoRegistro ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
+ALTER TABLE EncargadoRegistro ALTER COLUMN Calle TYPE VARCHAR(100);
+ALTER TABLE EncargadoRegistro ALTER COLUMN Colonia TYPE VARCHAR(100);
+ALTER TABLE EncargadoRegistro ALTER COLUMN Ciudad TYPE VARCHAR(100);
+
+ALTER TABLE EncargadoRegistro ALTER COLUMN NumInterior SET NOT NULL; -- no tiene ubicación
 
 -- ========
 -- Alimento
@@ -1541,12 +1534,21 @@ ALTER TABLE EncargadoRegistro ALTER COLUMN Ubicacion SET NOT NULL;
 CREATE SEQUENCE alimento_idalimento_seq OWNED BY Alimento.IdAlimento;
 ALTER TABLE Alimento ALTER COLUMN IdAlimento SET DEFAULT nextval('alimento_idalimento_seq');
 COMMENT ON SEQUENCE alimento_idalimento_seq IS 'Secuencia para generar identificadores únicos para la tabla Alimento.';
+
 -- ========
 -- Vendedor
 -- ========
 CREATE SEQUENCE vendedor_idpersona_seq OWNED BY Vendedor.IdPersona;
 ALTER TABLE Vendedor ALTER COLUMN IdPersona SET DEFAULT nextval('vendedor_idpersona_seq');
 COMMENT ON SEQUENCE vendedor_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla Vendedor.';
+
+ALTER TABLE Vendedor ALTER COLUMN Nombre TYPE VARCHAR(100);
+ALTER TABLE Vendedor ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
+ALTER TABLE Vendedor ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
+ALTER TABLE Vendedor ALTER COLUMN Calle TYPE VARCHAR(100);
+ALTER TABLE Vendedor ALTER COLUMN Colonia TYPE VARCHAR(100);
+ALTER TABLE Vendedor ALTER COLUMN Ciudad TYPE VARCHAR(100);
+ALTER TABLE Vendedor ALTER COLUMN Ubicacion TYPE VARCHAR(100);
 
 ALTER TABLE Vendedor ALTER COLUMN NumInterior SET NOT NULL;
 ALTER TABLE Vendedor ALTER COLUMN Ubicacion SET NOT NULL;
@@ -1557,6 +1559,14 @@ ALTER TABLE Vendedor ALTER COLUMN Ubicacion SET NOT NULL;
 CREATE SEQUENCE cuidador_idpersona_seq OWNED BY Cuidador.IdPersona;
 ALTER TABLE Cuidador ALTER COLUMN IdPersona SET DEFAULT nextval('cuidador_idpersona_seq');
 COMMENT ON SEQUENCE cuidador_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla Cuidador.';
+
+ALTER TABLE Cuidador ALTER COLUMN Nombre TYPE VARCHAR(100);
+ALTER TABLE Cuidador ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
+ALTER TABLE Cuidador ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
+ALTER TABLE Cuidador ALTER COLUMN Calle TYPE VARCHAR(100);
+ALTER TABLE Cuidador ALTER COLUMN Colonia TYPE VARCHAR(100);
+ALTER TABLE Cuidador ALTER COLUMN Ciudad TYPE VARCHAR(100);
+ALTER TABLE Cuidador ALTER COLUMN Ubicacion TYPE VARCHAR(100);
 
 ALTER TABLE Cuidador ALTER COLUMN NumInterior SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN Ubicacion SET NOT NULL;
