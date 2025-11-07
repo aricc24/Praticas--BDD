@@ -1,0 +1,121 @@
+ idpersona | numerodecuenta | nombre  | apellidomaterno | apellidopaterno | fechanacimiento | sexo |       carrera       |                   facultad                   
+-----------+----------------+---------+-----------------+-----------------+-----------------+------+---------------------+----------------------------------------------
+        15 |      434211565 | Robinet | Kiljan          | Aldridge        | 1967-08-16      | Otro | Ingeniería Mecánica | ENES León
+        47 |      301640618 | Rube    | Smale           | Braams          | 1973-10-16      | Otro | Ciencia de Datos    | Facultad de Estudios Superiores Acatlán
+        48 |      304772188 | Rose    | Schrei          | Nickoles        | 1934-09-28      | H    | Educación           | Facultad de Economía
+        90 |      398636192 | Red     | Stormouth       | Capun           | 1967-02-25      | Otro | Fisioterapia        | Escuela Nacional de Enfermería y Obstetricia
+       128 |      466287240 | Reynold | Maria           | Gulley          | 1981-12-27      | M    | Ciencias Genómicas  | Facultad de Psicología
+       147 |      484367603 | Ryann   | Dummer          | Doumer          | 1949-04-23      | H    | Ciencias Genómicas  | Facultad de Ciencias
+       148 |      485990814 | Rachele | Carne           | Scarfe          | 1973-07-08      | Otro | Filosofía           | Facultad de Ingeniería
+(7 rows)
+
+ idalimento | idpersona | fechadecaducidad |       nombre       |  tipo   | precio 
+------------+-----------+------------------+--------------------+---------+--------
+          4 |       109 | 2025-11-09       | Café molido        | Sopa    |  89.98
+         22 |       149 | 2025-11-19       | Tacos al pastor    | Sopa    | 117.22
+         27 |        95 | 2025-11-14       | Elote con mayonesa | Cereal  | 488.44
+         73 |        77 | 2025-11-28       | Empanada           | Aceite  |  76.89
+         91 |        14 | 2025-11-07       | Arroz blanco       | Pescado | 251.23
+        111 |       103 | 2025-11-16       | Nachos con queso   | Pescado | 312.51
+(6 rows)
+
+ idpersona |  nombre  | apellidomaterno | apellidopaterno | fechanacimiento | sexo |   calle   |     colonia     |     ciudad      | codigopostal | numinterior | numexterior | ubicacion |  horario   | salario 
+-----------+----------+-----------------+-----------------+-----------------+------+-----------+-----------------+-----------------+--------------+-------------+-------------+-----------+------------+---------
+        25 | Teresina | Pardie          | Fairhead        | 1969-11-04      | Otro | Farragut  | Sorongan        | Särö            |        87656 |          40 |          27 | Gimnasio  | Vespertino |  327.66
+        36 | Cecil    | Lemar           | Asch            | 1927-11-30      | H    | Muir      | Songgang        | Borowno         |        48391 |           8 |          66 | Auditorio | Vespertino |  596.27
+        54 | Elias    | Seyers          | Edgeson         | 1948-11-17      | H    | Cascade   | Clarin          | Ryazanskiy      |        77624 |          34 |          57 | Auditorio | Vespertino |  621.63
+        76 | Letitia  | Gierok          | Harefoot        | 1986-11-05      | H    | Hovde     | Sunduk          | Shihui          |        29193 |          28 |          41 | Islas     | Matutino   |   308.4
+        91 | Thibaut  | Tosh            | Bridgeman       | 1942-11-23      | M    | Lillian   | Phoenix         | Cipinang        |        85062 |          27 |          54 | Estadio   | Vespertino |  307.08
+       131 | Maia     | Kimmons         | Ireson          | 1987-11-07      | Otro | Pleasure  | Skinnskatteberg | Ocumare del Tuy |        71006 |          34 |          88 | Cafetería | Matutino   |  558.48
+       137 | Iorgos   | McMychem        | Pasque          | 1969-11-01      | Otro | Bellgrove | Mananum         | Girijaya        |        24369 |          26 |          23 | Auditorio | Vespertino |  840.94
+(7 rows)
+
+ idpokemon | idpersona | codigodeentrenador |   nombre   | sexo | peso | puntosdecombate | shiny | tipo  |  especie   
+-----------+-----------+--------------------+------------+------+------+-----------------+-------+-------+------------
+         1 |        84 |                138 | bulbasaur  | H    |   69 |             818 | f     | grass | jigglypuff
+         2 |       128 |                148 | ivysaur    | M    |  130 |             818 | t     | grass | jigglypuff
+         3 |        39 |                 43 | venusaur   | H    | 1000 |             818 | f     | grass | jigglypuff
+         4 |        65 |                 63 | charmander | Otro |   85 |             818 | f     | fire  | jigglypuff
+         5 |       121 |                126 | charmeleon | Otro |  190 |             818 | f     | fire  | jigglypuff
+(5 rows)
+
+  especie   
+------------
+ jigglypuff
+ articuno
+ electabuzz
+ hitmonlee
+ weepinbell
+ sandslash
+ nidorina
+ nidoqueen
+ seadra
+ dewgong
+ geodude
+ squirtle
+ magmar
+ horsea
+ graveler
+ pidgeotto
+ starmie
+ bellsprout
+ tauros
+ persian
+ hypno
+ psyduck
+ arcanine
+ arbok
+ caterpie
+ moltres
+ ditto
+ rhyhorn
+ dratini
+ wartortle
+ golem
+ diglett
+ nidorino
+ raticate
+ porygon
+ machamp
+ clefable
+ parasect
+ mankey
+ ninetales
+ staryu
+ slowpoke
+ mewtwo
+ blastoise
+ raichu
+ vaporeon
+ kangaskhan
+ vileplume
+ eevee
+ onix
+ fearow
+ victreebel
+ poliwhirl
+ snorlax
+ goldeen
+ lickitung
+ dragonair
+ slowbro
+ kakuna
+ rattata
+ charizard
+ omanyte
+ lapras
+ dugtrio
+ vulpix
+ pidgey
+ venomoth
+ scyther
+ oddish
+ growlithe
+ shellder
+ aerodactyl
+ koffing
+ nidoran-m
+ magneton
+ omastar
+(76 rows)
+
