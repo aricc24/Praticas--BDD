@@ -1607,9 +1607,11 @@ ALTER TABLE ParticipanteUNAM ALTER COLUMN Sexo SET NOT NULL;
 ALTER TABLE ParticipanteUNAM ALTER COLUMN Carrera SET NOT NULL;
 ALTER TABLE ParticipanteUNAM ALTER COLUMN Facultad SET NOT NULL;
 
--- CHECK
-ALTER TABLE ParticipanteUNAM 
-ADD CONSTRAINT CK_Sexo CHECK (Sexo IN ('M', 'H', 'Otro'));
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Nombre TYPE VARCHAR(100);
+ALTER TABLE ParticipanteUNAM ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
+ALTER TABLE ParticipanteUNAM ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Carrera TYPE VARCHAR(100);
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Facultad TYPE VARCHAR(100);
 
 
 -- ========
@@ -1635,17 +1637,16 @@ ALTER TABLE Espectador ALTER COLUMN Sexo SET NOT NULL;
 ALTER TABLE Espectador ALTER COLUMN HoraIngreso SET NOT NULL;
 ALTER TABLE Espectador ALTER COLUMN HoraSalida SET NOT NULL; 
 
--- CHECK
-ALTER TABLE Espectador 
-ADD CONSTRAINT CK_SexoEspectador CHECK (Sexo IN ('M', 'H', 'Otro'));
+
+
+ALTER TABLE Espectador ALTER COLUMN Nombre TYPE VARCHAR(100);
+ALTER TABLE Espectador ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
+ALTER TABLE Espectador ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
 
 
 -- ========
 -- ComprarEspectador
 -- ========
--- CHECK
-ALTER TABLE ComprarEspectador 
-ADD CONSTRAINT CK_MetodoDePago CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
 -- NOT NULL
 ALTER TABLE ComprarEspectador ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE ComprarEspectador ALTER COLUMN IdAlimento SET NOT NULL;
@@ -1655,10 +1656,6 @@ ALTER TABLE ComprarEspectador ALTER COLUMN MetodoDePago SET NOT NULL;
 -- ========
 -- ComprarParticipanteUNAM
 -- ========
--- CHECK
-ALTER TABLE ComprarParticipanteUNAM 
-ADD CONSTRAINT CK_MetodoDePago_Participante CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
-
 -- NOT NULL
 ALTER TABLE ComprarParticipanteUNAM ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE ComprarParticipanteUNAM ALTER COLUMN IdAlimento SET NOT NULL;
