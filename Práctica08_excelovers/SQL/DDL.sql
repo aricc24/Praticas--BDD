@@ -444,6 +444,8 @@ COMMENT ON CONSTRAINT CK_ApellidoPaterno_Espectador ON Espectador IS 'Restricci�
 COMMENT ON CONSTRAINT CK_Sexo_Espectador ON Espectador IS 'Restricción CHECK que valida que el valor de Sexo sea M, H u Otro.';
 COMMENT ON CONSTRAINT CK_HoraIngreso_Espectador ON Espectador IS 'Restricción CHECK que valida que la hora de ingreso no sea nula.';
 COMMENT ON CONSTRAINT CK_HoraSalida_Espectador ON Espectador IS 'Restricción CHECK que valida que la hora de salida sea mayor o igual a la hora de ingreso.';
+COMMENT ON CONSTRAINT CK_FechaNacimiento_Espectador ON Espectador IS 'Restricción CHECK que valida que la fecha de nacimiento sea anterior al día actual.';
+COMMENT ON CONSTRAINT CK_EdadMaxima_Espectador ON Espectador IS 'Restricción CHECK que valida que la edad de un espectador máxima sea de 100 años.';
 
 COMMENT ON CONSTRAINT PK_Espectador ON Espectador IS 'Llave primaria que identifica de forma única a cada espectador';
 
