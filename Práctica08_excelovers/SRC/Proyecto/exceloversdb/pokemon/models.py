@@ -1,3 +1,8 @@
+"""
+Este módulo contiene las clases que representan las tablas de la base de datos
+relacionadas con los vendedores y los alimentos del sistema
+"""
+
 # This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:
 #   * Rearrange models' order
@@ -7,7 +12,13 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
+"""
+Clase que representa a vendedores dentro del sistema.
 
+Cada instancia de esta clase corresponde a un registro en la tabla
+`vendedor`, donde se almacena la información personal, ubicación y
+datos de contacto del vendedor participante en el evento.
+"""
 class Vendedor(models.Model):
     idpersona = models.AutoField(primary_key=True, db_comment='Identificador único del vendedor (PK).')
     nombre = models.CharField(max_length=100, db_comment='Nombre del vendedor.')
@@ -28,7 +39,13 @@ class Vendedor(models.Model):
         db_table = 'vendedor'
         db_table_comment = 'Tabla para almacenar la información de los venderores.'
 
+"""
+Clase que representa a los alimentos dentro del sistema.
 
+Cada instancia corresponde a un producto específico que un vendedor
+ofrece durante el evento. Los alimentos están relacionados con
+los vendedores mediante una llave foránea (`idpersona`).
+"""
 class Alimento(models.Model):
     idalimento = models.AutoField(primary_key=True, db_comment='Identificador único del alimento.')
     idpersona = models.ForeignKey(Vendedor, models.DO_NOTHING, db_column='idpersona', db_comment='Identificador del vendedor que ofrece el alimento (llave foránea hacia Vendedor).')
