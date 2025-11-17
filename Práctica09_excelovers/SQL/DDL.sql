@@ -1330,7 +1330,7 @@ CREATE TABLE PeleaTorneo (
     NumeroPelea INTEGER,
     IdPersona INTEGER,
     CodigoDeEntrenador INTEGER,
-    Fecha DATE ,
+    Fecha DATE,
     Fase INTEGER
 );
 ALTER TABLE PeleaTorneo ADD CONSTRAINT pk_pelea_torneo PRIMARY KEY (Edicion, IdTorneo, NumeroPelea);
@@ -1711,3 +1711,48 @@ ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE TelefonoParticipante ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE TelefonoParticipante ALTER COLUMN IdPersona SET NOT NULL;
 
+
+-- ============================
+-- InscripcionTorneoPelea
+-- ============================
+CREATE TABLE InscripcionTorneoPelea (
+    Edicion INTEGER,
+    IdTorneo INTEGER,
+    IdPersona INTEGER,
+    CodigoDeEntrenador INTEGER,
+    FechaInscripcion DATE
+);
+
+ALTER TABLE InscripcionTorneoPelea
+    ADD CONSTRAINT fk_inscripcion_pelea_torneo
+    FOREIGN KEY (Edicion, IdTorneo)
+    REFERENCES TorneoPelea(Edicion, IdTorneo)
+    ON DELETE RESTRICT ON UPDATE CASCADE;
+
+ALTER TABLE InscripcionTorneoPelea
+    ADD CONSTRAINT fk_inscripcion_pelea_cuenta
+    FOREIGN KEY (IdPersona, CodigoDeEntrenador)
+    REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador)
+    ON DELETE RESTRICT ON UPDATE CASCADE;
+
+ALTER TABLE InscripcionTorneoPelea ALTER COLUMN FechaInscripcion SET NOT NULL;
+ALTER TABLE InscripcionTorneoPelea ALTER COLUMN CodigoDeEntrenador SET NOT NULL;
+ALTER TABLE InscripcionTorneoPelea ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE InscripcionTorneoPelea ALTER COLUMN IdTorneo SET NOT NULL;
+ALTER TABLE InscripcionTorneoPelea ALTER COLUMN Edicion SET NOT NULL;
+ALTER TABLE InscripcionTorneoPelea ALTER COLUMN FechaInscripcion SET DEFAULT CURRENT_DATE;
+
+COMMENT ON TABLE InscripcionTorneoPelea IS 'Inscripciones al torneo de pelea Pokémon.';
+COMMENT ON COLUMN InscripcionTorneoPelea.Edicion IS 'Edición del torneo de pelea.';
+COMMENT ON COLUMN InscripcionTorneoPelea.IdTorneo IS 'Identificador del torneo de pelea.';
+COMMENT ON COLUMN InscripcionTorneoPelea.IdPersona IS 'Persona inscrita.';
+COMMENT ON COLUMN InscripcionTorneoPelea.CodigoDeEntrenador IS 'Código del entrenador inscrito.';
+COMMENT ON COLUMN InscripcionTorneoPelea.FechaInscripcion IS 'Fecha de inscripción.';
+
+COMMENT ON CONSTRAINT fk_inscripcion_pelea_torneo ON InscripcionTorneoPelea IS 'Restricción referencial que vincula InscripcionTorneoPelea con TorneoPelea.';
+COMMENT ON CONSTRAINT fk_inscripcion_pelea_cuenta ON InscripcionTorneoPelea IS 'Restricción referencial que vincula InscripcionTorneoPelea con CuentaPokemonGo.';
+
+-- PeleaTorneo 
+CREATE SEQUENCE peleatorneo_numeropelea_seq OWNED BY PeleaTorneo.NumeroPelea;
+ALTER TABLE PeleaTorneo ALTER COLUMN NumeroPelea SET DEFAULT nextval('peleatorneo_numeropelea_seq');
+COMMENT ON SEQUENCE peleatorneo_numeropelea_seq IS 'Secuencia para generar números de pelea únicos dentro de cada torneo en la tabla PeleaTorneo.';
