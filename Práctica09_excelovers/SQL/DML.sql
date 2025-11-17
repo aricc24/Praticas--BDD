@@ -1,7 +1,12 @@
 -- July
 -- Evento
 insert into Evento (edicion, fecha) values (1, '2025-11-02');
-
+-- TorneoPelea
+INSERT INTO TorneoPelea (Edicion, CantidadAPremiar) VALUES (1, 1500.00);
+-- TorneoDistanciaRecorrida
+INSERT INTO TorneoDistanciaRecorrida (Edicion, CantidadAPremiar) VALUES (1, 1500.00);
+-- TorneoCapturaShinys
+INSERT INTO TorneoCapturaShinys (Edicion, CantidadAPremiar) VALUES (1, 1500.00);
 -- PARTICIPANTE UNAM
 insert into ParticipanteUNAM (numerodecuenta, nombre, apellidomaterno, apellidopaterno, fechanacimiento, sexo, carrera, facultad) values (270610665, 'Wendall', 'Yanele', 'Flowitt', '1991-03-24', 'M', 'Farmacia', 'Facultad de Economía');
 insert into ParticipanteUNAM (numerodecuenta, nombre, apellidomaterno, apellidopaterno, fechanacimiento, sexo, carrera, facultad) values (493013980, 'Hartley', 'Cunah', 'Kitchenman', '1939-08-25', 'Otro', 'Estudios Internacionales', 'Facultad de Ingeniería');

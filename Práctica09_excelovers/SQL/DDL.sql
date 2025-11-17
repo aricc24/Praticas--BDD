@@ -1488,6 +1488,21 @@ COMMENT ON CONSTRAINT fk_registrar_pokemon ON Registrar IS 'Restricción referen
 -- Modificaciones
 -- ======================================================================================================================================================================
 
+-- TorneoPelea
+CREATE SEQUENCE torneopelea_idtorneo_seq OWNED BY TorneoPelea.IdTorneo;
+ALTER TABLE TorneoPelea ALTER COLUMN IdTorneo SET DEFAULT nextval('torneopelea_idtorneo_seq');
+COMMENT ON SEQUENCE torneopelea_idtorneo_seq IS 'Secuencia para generar identificadores únicos para la tabla TorneoPelea.';
+
+-- TorneoCapturaShinys
+CREATE SEQUENCE torneocapturashinys_idtorneo_seq OWNED BY TorneoCapturaShinys.IdTorneo;
+ALTER TABLE TorneoCapturaShinys ALTER COLUMN IdTorneo SET DEFAULT nextval('torneocapturashinys_idtorneo_seq');
+COMMENT ON SEQUENCE torneocapturashinys_idtorneo_seq IS 'Secuencia para generar identificadores únicos para la tabla TorneoCapturaShinys.';
+
+-- TorneoDistanciaRecorrida
+CREATE SEQUENCE torneodistanciarecorrida_idtorneo_seq OWNED BY TorneoDistanciaRecorrida.IdTorneo;
+ALTER TABLE TorneoDistanciaRecorrida ALTER COLUMN IdTorneo SET DEFAULT nextval('torneodistanciarecorrida_idtorneo_seq');
+COMMENT ON SEQUENCE torneodistanciarecorrida_idtorneo_seq IS 'Secuencia para generar identificadores únicos para la tabla TorneoDistanciaRecorrida.';
+
 -- ========
 -- Limpiador 
 -- ========
