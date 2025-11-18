@@ -49,16 +49,17 @@ FROM
     AND r.idcaptura = c.idcaptura
 WHERE
     p.shiny = TRUE
-    AND r.hora BETWEEN '14:00:00' AND '18:00:00'
+    AND r.hora BETWEEN '14:00:00' AND '18:00:00';
+
 -- vii. Mostrar a todos los vendedores junto con los alimentos que venden, indicando el precio sin IVA y el precio final
 -- con IVA del 16 %.
 
 SELECT  v.nombre,
         v.apellidomaterno, 
         v.apellidopaterno, 
-        a.nombre AS nombre\_alimento,
+        a.nombre AS nombre_alimento,
         precio, 
-        precio * 1.16 AS precio\_iva
+        precio * 1.16 AS precio_iva
 FROM alimento a
 RIGHT JOIN vendedor v ON a.idpersona = v.idpersona;
 
