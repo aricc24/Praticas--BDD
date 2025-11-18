@@ -1,5 +1,12 @@
 -- i. Mostrar el nombre completo de todos los participantes junto con su cuenta de Pokémon Go.
+SELECT  p.Nombre || ' ' || p.ApellidoPaterno || ' ' || p.ApellidoMaterno AS NombreCompleto, c.NombreDeUsuario AS CuentaPokemonGo
+FROM ParticipanteUNAM p JOIN CuentaPokemonGo c ON p.IdPersona = c.IdPersona;
+
 -- ii. Calcular cuántos Pokémons registró cada participante para el torneo de peleas por cada una de las ediciones.
+SELECT r.Edicion, r.IdPersona, COUNT(r.IdPokemon) AS TotalPokemonRegistrados FROM Registrar r
+GROUP BY r.Edicion, r.IdPersona 
+ORDER BY r.Edicion, r.IdPersona;
+
 -- iii. Listar todos los Pokémones cuya especie contenga la cadena ćhu ́
 -- .
 
