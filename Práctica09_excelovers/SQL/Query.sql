@@ -54,9 +54,9 @@ WHERE
 -- vii. Mostrar a todos los vendedores junto con los alimentos que venden, indicando el precio sin IVA y el precio final
 -- con IVA del 16 %.
 
-SELECT  v.nombre,
-        v.apellidomaterno, 
-        v.apellidopaterno, 
+SELECT 
+    v.Nombre || ' ' || v.ApellidoPaterno || ' ' || v.ApellidoMaterno 
+        AS NombreCompleto,
         a.nombre AS nombre_alimento,
         precio, 
         precio * 1.16 AS precio_iva
@@ -65,6 +65,18 @@ RIGHT JOIN vendedor v ON a.idpersona = v.idpersona;
 
 -- viii. Mostrar las facultades que tienen más de 5 participantes inscritos en cualquier torneo.
 
+SELECT pu.Facultad,
+       COUNT(participantesTorneos.IdPersona) AS TotalParticipantes
+FROM (
+    SELECT IdPersona FROM InscripcionTorneoPelea
+    UNION
+    SELECT IdPersona FROM InscripcionTorneoDistancia
+    UNION
+    SELECT IdPersona FROM InscripcionTorneoCaptura
+) participantesTorneos
+JOIN ParticipanteUNAM pu ON pu.IdPersona = participantesTorneos.IdPersona
+GROUP BY pu.Facultad
+HAVING COUNT(participantesTorneos.IdPersona) > 5;
 
 -- ix. Listar a los vendedores cuyo total de alimentos de alimentos vendidos (número de productos distintos que ofrecen) sea mayor a 3.
 SELECT v.* FROM Vendedor v JOIN Alimento a ON v.IdPersona = a.IdPersona GROUP BY v.IdPersona HAVING COUNT(DISTINCT a.IdAlimento) > 3;

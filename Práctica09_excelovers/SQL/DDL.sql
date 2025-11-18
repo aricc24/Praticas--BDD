@@ -1758,8 +1758,6 @@ ALTER TABLE PeleaTorneo ALTER COLUMN NumeroPelea SET DEFAULT nextval('peleatorne
 COMMENT ON SEQUENCE peleatorneo_numeropelea_seq IS 'Secuencia para generar números de pelea únicos dentro de cada torneo en la tabla PeleaTorneo.';
 
 
-
-
 -- ============================
 -- InscripcionTorneoDistancia
 -- ============================
