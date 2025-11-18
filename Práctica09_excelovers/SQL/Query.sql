@@ -1,9 +1,17 @@
 -- i. Mostrar el nombre completo de todos los participantes junto con su cuenta de Pokémon Go.
 -- ii. Calcular cuántos Pokémons registró cada participante para el torneo de peleas por cada una de las ediciones.
 -- iii. Listar todos los Pokémones cuya especie contenga la cadena ćhu ́
--- .
-
+SELECT * FROM Pokemon WHERE Especie ILIKE '%chu%';
 -- iv. Obtener la lista de participantes que estén inscritos en el Torneo de Captura de Shiny y a su vez que no estén
+SELECT DISTINCT
+    p.IdPersona,
+    p.Nombre || ' ' || p.ApellidoPaterno || ' ' || p.ApellidoMaterno AS NombreCompleto
+FROM ParticipanteUNAM p
+JOIN TorneoCapturaShinys ts
+    ON p.IdPersona = ts.IdPersona
+LEFT JOIN TorneoDistanciaRecorrida td
+    ON p.IdPersona = td.IdPersona
+WHERE td.IdPersona IS NULL;
 -- inscritos en el torneo de distancia recorrida.
 -- v. Calcular la distancia total recorrida por cada participante en el torneo de distancia recorrida.
 SELECT
