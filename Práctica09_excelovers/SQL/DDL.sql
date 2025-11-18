@@ -1802,7 +1802,7 @@ COMMENT ON CONSTRAINT fk_inscripcion_distancia_cuenta ON InscripcionTorneoDistan
 
 
 -- ============================
--- InscripcionTorneoDistancia
+-- InscripcionTorneoCaptura
 -- ============================
 CREATE TABLE InscripcionTorneoCaptura (
     Edicion INTEGER,
