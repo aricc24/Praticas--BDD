@@ -52,7 +52,19 @@ WHERE
     AND r.hora BETWEEN '14:00:00' AND '18:00:00'
 -- vii. Mostrar a todos los vendedores junto con los alimentos que venden, indicando el precio sin IVA y el precio final
 -- con IVA del 16 %.
+
+SELECT  v.nombre,
+        v.apellidomaterno, 
+        v.apellidopaterno, 
+        a.nombre AS nombre\_alimento,
+        precio, 
+        precio * 1.16 AS precio\_iva
+FROM alimento a
+RIGHT JOIN vendedor v ON a.idpersona = v.idpersona;
+
 -- viii. Mostrar las facultades que tienen más de 5 participantes inscritos en cualquier torneo.
+
+
 -- ix. Listar a los vendedores cuyo total de alimentos de alimentos vendidos (número de productos distintos que ofrecen) sea mayor a 3.
 SELECT v.* FROM Vendedor v JOIN Alimento a ON v.IdPersona = a.IdPersona GROUP BY v.IdPersona HAVING COUNT(DISTINCT a.IdAlimento) > 3;
 -- x. Obtener el nombre completo de los participantes y su facultad que hayan participado tanto en el torneo de distancia recorrida como en el de captura de shinys, cuya distancia total recorrida sea mayor al promedio de distancia de todos los participantes y ademas que su numero de capturas de shinys sean mayor a 5.
