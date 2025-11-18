@@ -101,3 +101,5 @@ for ed in ediciones:
     print(f"Edición {ed} ({eventos[ed]}):")
     print(participantes_por_edicion[ed])
     print()
+
+

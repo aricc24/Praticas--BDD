@@ -1756,3 +1756,89 @@ COMMENT ON CONSTRAINT fk_inscripcion_pelea_cuenta ON InscripcionTorneoPelea IS '
 CREATE SEQUENCE peleatorneo_numeropelea_seq OWNED BY PeleaTorneo.NumeroPelea;
 ALTER TABLE PeleaTorneo ALTER COLUMN NumeroPelea SET DEFAULT nextval('peleatorneo_numeropelea_seq');
 COMMENT ON SEQUENCE peleatorneo_numeropelea_seq IS 'Secuencia para generar números de pelea únicos dentro de cada torneo en la tabla PeleaTorneo.';
+
+
+
+
+-- ============================
+-- InscripcionTorneoDistancia
+-- ============================
+CREATE TABLE InscripcionTorneoDistancia (
+    Edicion INTEGER,
+    IdTorneo INTEGER,
+    IdPersona INTEGER,
+    CodigoDeEntrenador INTEGER,
+    FechaInscripcion DATE
+);
+
+ALTER TABLE InscripcionTorneoDistancia
+    ADD CONSTRAINT fk_inscripcion_distancia_torneo
+    FOREIGN KEY (Edicion, IdTorneo)
+    REFERENCES TorneoDistancia(Edicion, IdTorneo)
+    ON DELETE RESTRICT ON UPDATE CASCADE;
+
+ALTER TABLE InscripcionTorneoDistancia
+    ADD CONSTRAINT fk_inscripcion_distancia_cuenta
+    FOREIGN KEY (IdPersona, CodigoDeEntrenador)
+    REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador)
+    ON DELETE RESTRICT ON UPDATE CASCADE;
+
+ALTER TABLE InscripcionTorneoDistancia ALTER COLUMN FechaInscripcion SET NOT NULL;
+ALTER TABLE InscripcionTorneoDistancia ALTER COLUMN CodigoDeEntrenador SET NOT NULL;
+ALTER TABLE InscripcionTorneoDistancia ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE InscripcionTorneoDistancia ALTER COLUMN IdTorneo SET NOT NULL;
+ALTER TABLE InscripcionTorneoDistancia ALTER COLUMN Edicion SET NOT NULL;
+ALTER TABLE InscripcionTorneoDistancia ALTER COLUMN FechaInscripcion SET DEFAULT CURRENT_DATE;
+
+COMMENT ON TABLE InscripcionTorneoDistancia IS 'Inscripciones al torneo de distancia Pokémon.';
+COMMENT ON COLUMN InscripcionTorneoDistancia.Edicion IS 'Edición del torneo de distancia.';
+COMMENT ON COLUMN InscripcionTorneoDistancia.IdTorneo IS 'Identificador del torneo de distancia.';
+COMMENT ON COLUMN InscripcionTorneoDistancia.IdPersona IS 'Persona inscrita.';
+COMMENT ON COLUMN InscripcionTorneoDistancia.CodigoDeEntrenador IS 'Código del entrenador inscrito.';
+COMMENT ON COLUMN InscripcionTorneoDistancia.FechaInscripcion IS 'Fecha de inscripción.';
+
+COMMENT ON CONSTRAINT fk_inscripcion_distancia_torneo ON InscripcionTorneoDistancia IS 'Restricción referencial que vincula InscripcionTorneoDistancia con TorneoDistancia.';
+COMMENT ON CONSTRAINT fk_inscripcion_distancia_cuenta ON InscripcionTorneoDistancia IS 'Restricción referencial que vincula InscripcionTorneoDistancia con CuentaPokemonGo.';
+
+
+-- ============================
+-- InscripcionTorneoDistancia
+-- ============================
+CREATE TABLE InscripcionTorneoCaptura (
+    Edicion INTEGER,
+    IdTorneo INTEGER,
+    IdPersona INTEGER,
+    CodigoDeEntrenador INTEGER,
+    FechaInscripcion DATE
+);
+
+ALTER TABLE InscripcionTorneoCaptura
+    ADD CONSTRAINT fk_inscripcion_captura_torneo
+    FOREIGN KEY (Edicion, IdTorneo)
+    REFERENCES TorneoCaptura(Edicion, IdTorneo)
+    ON DELETE RESTRICT ON UPDATE CASCADE;
+
+ALTER TABLE InscripcionTorneoCaptura
+    ADD CONSTRAINT fk_inscripcion_captura_cuenta
+    FOREIGN KEY (IdPersona, CodigoDeEntrenador)
+    REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador)
+    ON DELETE RESTRICT ON UPDATE CASCADE;
+
+ALTER TABLE InscripcionTorneoCaptura ALTER COLUMN FechaInscripcion SET NOT NULL;
+ALTER TABLE InscripcionTorneoCaptura ALTER COLUMN CodigoDeEntrenador SET NOT NULL;
+ALTER TABLE InscripcionTorneoCaptura ALTER COLUMN IdPersona SET NOT NULL;
+ALTER TABLE InscripcionTorneoCaptura ALTER COLUMN IdTorneo SET NOT NULL;
+ALTER TABLE InscripcionTorneoCaptura ALTER COLUMN Edicion SET NOT NULL;
+ALTER TABLE InscripcionTorneoCaptura ALTER COLUMN FechaInscripcion SET DEFAULT CURRENT_DATE;
+
+COMMENT ON TABLE InscripcionTorneoCaptura IS 'Inscripciones al torneo de captura Pokémon.';
+COMMENT ON COLUMN InscripcionTorneoCaptura.Edicion IS 'Edición del torneo de captura.';
+COMMENT ON COLUMN InscripcionTorneoCaptura.IdTorneo IS 'Identificador del torneo de captura.';
+COMMENT ON COLUMN InscripcionTorneoCaptura.IdPersona IS 'Persona inscrita.';
+COMMENT ON COLUMN InscripcionTorneoCaptura.CodigoDeEntrenador IS 'Código del entrenador inscrito.';
+COMMENT ON COLUMN InscripcionTorneoCaptura.FechaInscripcion IS 'Fecha de inscripción.';
+
+COMMENT ON CONSTRAINT fk_inscripcion_captura_torneo ON InscripcionTorneoCaptura IS 'Restricción referencial que vincula InscripcionTorneoCaptura con TorneoCaptura.';
+COMMENT ON CONSTRAINT fk_inscripcion_captura_cuenta ON InscripcionTorneoCaptura IS 'Restricción referencial que vincula InscripcionTorneoCaptura con CuentaPokemonGo.';
+
+
