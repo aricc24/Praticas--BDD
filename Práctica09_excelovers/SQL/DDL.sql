@@ -1774,7 +1774,7 @@ CREATE TABLE InscripcionTorneoDistancia (
 ALTER TABLE InscripcionTorneoDistancia
     ADD CONSTRAINT fk_inscripcion_distancia_torneo
     FOREIGN KEY (Edicion, IdTorneo)
-    REFERENCES TorneoDistancia(Edicion, IdTorneo)
+    REFERENCES TorneoDistanciaRecorrida(Edicion, IdTorneo)
     ON DELETE RESTRICT ON UPDATE CASCADE;
 
 ALTER TABLE InscripcionTorneoDistancia
@@ -1815,7 +1815,7 @@ CREATE TABLE InscripcionTorneoCaptura (
 ALTER TABLE InscripcionTorneoCaptura
     ADD CONSTRAINT fk_inscripcion_captura_torneo
     FOREIGN KEY (Edicion, IdTorneo)
-    REFERENCES TorneoCaptura(Edicion, IdTorneo)
+    REFERENCES TorneoCapturaShinys(Edicion, IdTorneo)
     ON DELETE RESTRICT ON UPDATE CASCADE;
 
 ALTER TABLE InscripcionTorneoCaptura
