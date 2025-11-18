@@ -10,33 +10,38 @@ SELECT
     p.nombre,
     p.apellidopaterno,
     p.apellidomaterno,
-    dr.idparticipante,
-    SUM(dr.distancia) AS distancia_total
+    dr.idpersona,
+    SUM(dr.iddistancia) AS distancia_total
 FROM
-    DistanciaRecorrida dr JOIN ParticipanteUNAM p ON dr.idparticipante = p.idparticipante
-    JOIN TorneoDistanciaRecorrida t ON dr.idTorneoDistancia = t.idTorneoDistancia
+    DistanciaRecorrida dr JOIN ParticipanteUNAM p ON dr.idpersona = p.idpersona
+    JOIN TorneoDistanciaRecorrida t ON dr.idtorneo = t.idtorneo
 GROUP BY
     p.nombre,
     p.apellidopaterno,
-    p.apellidomaterno
-    dr.idparticipante
+    p.apellidomaterno,
+    dr.idpersona
 ORDER BY
-    distancia_total
+    distancia_total;
 -- vi. Listar los Pokémones shinys, que fueron capturados durante el evento, únicamente si fueron capturados entre
 -- las 14:00hrs y las 18:00hrs.
 SELECT
-    p.nombre AS nombre,
+    p.idpokemon,
+    p.nombre,
+    p.especie,
     p.tipo,
     p.shiny,
-    c.fechacaptura,
-    c.horacaptura,
-    e.edicion AS evento
+    r.fecha,
+    r.idpersona,
+    r.edicion,
+    r.idtorneo
 FROM
-    CapturaPokemon c JOIN Pokemon p ON c.idpokemon = p.idpokemon 
-    JOIN Evento e ON c.idevento = e.idevento
+    registrar r JOIN pokemon p ON p.idpokemon = r.idpokemon 
+    JOIN capturapokemon c ON c.edicion = r.edicion
+    AND r.idtorneo = c.idtorneo
+    AND r.idcaptura = c.idcaptura
 WHERE
-    p.shiny = TRUE AND c.idevento IS NOT NULL 
-    AND c.horacaptura BETWEEN '14:00:00' AND '18:00:00'
+    p.shiny = TRUE
+    AND r.hora BETWEEN '14:00:00' AND '18:00:00'
 -- vii. Mostrar a todos los vendedores junto con los alimentos que venden, indicando el precio sin IVA y el precio final
 -- con IVA del 16 %.
 -- viii. Mostrar las facultades que tienen más de 5 participantes inscritos en cualquier torneo.
