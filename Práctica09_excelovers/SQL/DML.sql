@@ -359,7 +359,7 @@ insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosde
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (115, 146, 'spearow', 'M', 20, 52, False, 'normal', 'spearow');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (28, 107, 'fearow', 'Otro', 380, 155, True, 'normal', 'fearow');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (131, 39, 'ekans', 'M', 69, 58, False, 'poison', 'ekans');
-insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (109, 115, 'arbok', 'H', 650, 157, True, 'poison', 'arbok');
+insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (109, 115, 'arbok', 'H', 650, 157, True, 'poison', 'pichu');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (92, 7, 'pikachu', 'M', 60, 112, False, 'electric', 'pikachu');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (109, 139, 'raichu', 'Otro', 300, 218, True, 'electric', 'raichu');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (60, 130, 'sandshrew', 'H', 120, 60, False, 'ground', 'sandshrew');
@@ -373,13 +373,13 @@ insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosde
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (57, 92, 'clefairy', 'M', 75, 113, False, 'fairy', 'clefairy');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (69, 70, 'clefable', 'H', 400, 217, True, 'fairy', 'clefable');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (68, 108, 'vulpix', 'M', 99, 60, True, 'fire', 'vulpix');
-insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (51, 50, 'ninetales', 'Otro', 199, 177, True, 'fire', 'ninetales');
+insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (51, 50, 'ninetales', 'Otro', 199, 177, True, 'fire', 'Smoochum');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (40, 14, 'jigglypuff', 'Otro', 55, 95, False, 'normal', 'jigglypuff');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (85, 15, 'wigglytuff', 'M', 120, 196, False, 'normal', 'wigglytuff');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (72, 10, 'zubat', 'M', 75, 49, False, 'poison', 'zubat');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (50, 125, 'golbat', 'M', 550, 159, False, 'poison', 'golbat');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (49, 145, 'oddish', 'Otro', 54, 64, True, 'grass', 'oddish');
-insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (44, 4, 'gloom', 'Otro', 86, 138, False, 'grass', 'gloom');
+insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (44, 4, 'gloom', 'Otro', 86, 138, False, 'grass', 'Smoochum');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (126, 80, 'vileplume', 'M', 186, 221, True, 'grass', 'vileplume');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (147, 136, 'paras', 'H', 54, 57, False, 'bug', 'paras');
 insert into pokemon (idpersona, codigodeentrenador, nombre, sexo, peso, puntosdecombate, shiny, tipo, especie) values (106, 50, 'parasect', 'Otro', 295, 142, True, 'bug', 'parasect');

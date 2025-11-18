@@ -68,3 +68,43 @@ RIGHT JOIN vendedor v ON a.idpersona = v.idpersona;
 -- ix. Listar a los vendedores cuyo total de alimentos de alimentos vendidos (número de productos distintos que ofrecen) sea mayor a 3.
 SELECT v.* FROM Vendedor v JOIN Alimento a ON v.IdPersona = a.IdPersona GROUP BY v.IdPersona HAVING COUNT(DISTINCT a.IdAlimento) > 3;
 -- x. Obtener el nombre completo de los participantes y su facultad que hayan participado tanto en el torneo de distancia recorrida como en el de captura de shinys, cuya distancia total recorrida sea mayor al promedio de distancia de todos los participantes y ademas que su numero de capturas de shinys sean mayor a 5.
+SELECT 
+    pu.Nombre || ' ' || pu.ApellidoPaterno || ' ' || pu.ApellidoMaterno AS NombreCompleto,
+    pu.Facultad
+FROM (  SELECT 
+            dr.IdPersona,
+            SUM(CASE lower(dr.Locacion)
+                    WHEN 'entrada'   THEN 0
+                    WHEN 'universum' THEN 100
+                    WHEN 'rectoria'  THEN 200
+                END) AS DistanciaTotal
+        FROM DistanciaRecorrida dr
+        GROUP BY dr.IdPersona
+    ) AS dt
+JOIN (  SELECT 
+            r.IdPersona, 
+            COUNT(DISTINCT r.IdCaptura) AS NumeroCapturas
+        FROM Registrar r
+        JOIN Pokemon p ON p.IdPokemon = r.IdPokemon
+        WHERE p.Shiny = TRUE
+        GROUP BY r.IdPersona
+    ) AS cs 
+        ON cs.IdPersona = dt.IdPersona
+JOIN ParticipanteUNAM pu
+        ON pu.IdPersona = dt.IdPersona
+WHERE 
+    cs.NumeroCapturas > 5 
+    AND dt.DistanciaTotal >
+        (   SELECT 
+                AVG(suma.DistanciaTotal)
+            FROM ( SELECT 
+                    dr2.IdPersona,
+                    SUM(CASE lower(dr2.Locacion)
+                            WHEN 'entrada'   THEN 0
+                            WHEN 'universum' THEN 100
+                            WHEN 'rectoria'  THEN 200
+                        END) AS DistanciaTotal
+                FROM DistanciaRecorrida dr2
+                GROUP BY dr2.IdPersona
+            ) AS suma
+        );
