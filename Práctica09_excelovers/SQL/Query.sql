@@ -14,26 +14,36 @@ LEFT JOIN TorneoDistanciaRecorrida td
 WHERE td.IdPersona IS NULL;
 -- inscritos en el torneo de distancia recorrida.
 -- v. Calcular la distancia total recorrida por cada participante en el torneo de distancia recorrida.
-SELECT
-    p.nombre,
-    p.apellidopaterno,
-    p.apellidomaterno,
-    dr.idpersona,
-    SUM(dr.iddistancia) AS distancia_total
-FROM
-    DistanciaRecorrida dr JOIN ParticipanteUNAM p ON dr.idpersona = p.idpersona
-    JOIN TorneoDistanciaRecorrida t ON dr.idtorneo = t.idtorneo
-GROUP BY
-    p.nombre,
-    p.apellidopaterno,
-    p.apellidomaterno,
-    dr.idpersona
-ORDER BY
-    distancia_total;
+WITH Recorridos AS (
+    SELECT 
+        dr.IdPersona,
+        SUM(
+            CASE LOWER(dr.Locacion)
+                WHEN 'entrada' THEN 0
+                WHEN 'universum' THEN 100
+                WHEN 'rectoria' THEN 200
+                ELSE 0
+            END
+        ) AS DistanciaTotal
+    FROM DistanciaRecorrida dr
+    GROUP BY dr.IdPersona
+)
+
+SELECT 
+    p.IdPersona,
+    p.Nombre || ' ' || p.ApellidoPaterno || ' ' || p.ApellidoMaterno AS NombreCompleto,
+    r.DistanciaTotal
+FROM Recorridos r
+JOIN ParticipanteUNAM p
+    ON r.IdPersona = p.IdPersona
+    WHERE r.DistanciaTotal IS NOT NULL
+    GROUP BY r.DistanciaTotal, p.idpersona, NombreCompleto
+    ORDER BY r.DistanciaTotal DESC;
 -- vi. Listar los Pokémones shinys, que fueron capturados durante el evento, únicamente si fueron capturados entre
 -- las 14:00hrs y las 18:00hrs.
 SELECT
     p.idpokemon,
+    r.hora,
     p.nombre,
     p.especie,
     p.tipo,
