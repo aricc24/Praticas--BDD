@@ -121,3 +121,6 @@ WHERE
                 GROUP BY dr2.IdPersona
             ) AS suma
         );
+
+
+
