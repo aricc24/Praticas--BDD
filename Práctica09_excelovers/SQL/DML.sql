@@ -7037,6 +7037,15 @@ INSERT INTO InscripcionTorneoCaptura (Edicion, IdTorneo, IdPersona, CodigoDeEntr
 INSERT INTO InscripcionTorneoCaptura (Edicion, IdTorneo, IdPersona, CodigoDeEntrenador) VALUES (6, 6, 17, 115);
 
 
+
+-- Locacion
+INSERT INTO Locacion(Nombre, Latitud, Longitud) VALUES ('Universum', 19.311389486377056, -99.18047490799879);
+INSERT INTO Locacion(Nombre, Latitud, Longitud) VALUES ('Rectoria', 19.33239610733749, -99.18815731964332);
+INSERT INTO Locacion(Nombre, Latitud, Longitud) VALUES ('Entrada', 19.32512602000524, -99.17938984081997);
+
+
+
+
 -- DistanciaRecorrida
 
 
@@ -7959,9 +7968,4 @@ INSERT INTO registrar (idpokemon, codigodeentrenador, idpersona, idcaptura, edic
 INSERT INTO registrar (idpokemon, codigodeentrenador, idpersona, idcaptura, edicion, idtorneo, fecha, hora) VALUES (41, 115, 17, 49, 6, 6, '2025-11-02', '08:26:00');
 INSERT INTO registrar (idpokemon, codigodeentrenador, idpersona, idcaptura, edicion, idtorneo, fecha, hora) VALUES (62, 115, 17, 50, 6, 6, '2025-11-02', '15:44:00');
 
-
--- Locacion
-INSERT INTO Locacion(Nombre, Latitud, Longitud) VALUES ('Universum', 19.311389486377056, -99.18047490799879);
-INSERT INTO Locacion(Nombre, Latitud, Longitud) VALUES ('Rectoria', 19.33239610733749, -99.18815731964332);
-INSERT INTO Locacion(Nombre, Latitud, Longitud) VALUES ('Entrada', 19.32512602000524, -99.17938984081997);
 
