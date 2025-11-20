@@ -3,15 +3,23 @@
 -- iii. Listar todos los Pokémones cuya especie contenga la cadena ćhu ́
 SELECT * FROM Pokemon WHERE Especie ILIKE '%chu%';
 -- iv. Obtener la lista de participantes que estén inscritos en el Torneo de Captura de Shiny y a su vez que no estén
-SELECT DISTINCT
+ WITH participantes_shiny AS (
+    SELECT DISTINCT IdPersona
+    FROM Registrar
+),
+participantes_distancia AS (
+    SELECT DISTINCT IdPersona
+    FROM DistanciaRecorrida
+)
+SELECT 
     p.IdPersona,
     p.Nombre || ' ' || p.ApellidoPaterno || ' ' || p.ApellidoMaterno AS NombreCompleto
 FROM ParticipanteUNAM p
-JOIN TorneoCapturaShinys ts
-    ON p.IdPersona = ts.IdPersona
-LEFT JOIN TorneoDistanciaRecorrida td
-    ON p.IdPersona = td.IdPersona
-WHERE td.IdPersona IS NULL;
+JOIN participantes_shiny s
+    ON p.IdPersona = s.IdPersona
+LEFT JOIN participantes_distancia d
+    ON p.IdPersona = d.IdPersona
+WHERE d.IdPersona IS NULL;
 -- inscritos en el torneo de distancia recorrida.
 -- v. Calcular la distancia total recorrida por cada participante en el torneo de distancia recorrida.
 WITH Recorridos AS (
