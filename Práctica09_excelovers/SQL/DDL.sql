@@ -1841,28 +1841,29 @@ COMMENT ON CONSTRAINT fk_inscripcion_captura_cuenta ON InscripcionTorneoCaptura 
 
 
 
-CREATE TABLE Locacion (
-    Nombre VARCHAR(10),
-    Latitud REAL
-    Longitud REAL
-)
+-- Idea
+-- CREATE TABLE Locacion (
+--     Nombre VARCHAR(10),
+--     Latitud REAL
+--     Longitud REAL
+-- )
 
-ALTER TABLE Locacion ADD CONSTRAINT pk_locacion PRIMARY KEY (Nombre);
-ALTER TABLE Locacion ALTER COLUMN Latitud SET NOT NULL;
-ALTER TABLE Locacion ALTER COLUMN Longitud SET NOT NULL;
+-- ALTER TABLE Locacion ADD CONSTRAINT pk_locacion PRIMARY KEY (Nombre);
+-- ALTER TABLE Locacion ALTER COLUMN Latitud SET NOT NULL;
+-- ALTER TABLE Locacion ALTER COLUMN Longitud SET NOT NULL;
 
-COMMENT ON TABLE Locacion IS 'Tabla que almacena las locaciones disponibles para registrar distancias recorridas.';
-COMMENT ON COLUMN Locacion.Nombre IS 'Nombre de la locación.';
-COMMENT ON COLUMN Locacion.Latitud IS 'Latitud de la locación.';
-COMMENT ON COLUMN Locacion.Longitud IS 'Longitud de la locación.';
-COMMENT ON CONSTRAINT pk_locacion ON Locacion IS 'Restricción de entidad para la tabla Locacion.';
+-- COMMENT ON TABLE Locacion IS 'Tabla que almacena las locaciones disponibles para registrar distancias recorridas.';
+-- COMMENT ON COLUMN Locacion.Nombre IS 'Nombre de la locación.';
+-- COMMENT ON COLUMN Locacion.Latitud IS 'Latitud de la locación.';
+-- COMMENT ON COLUMN Locacion.Longitud IS 'Longitud de la locación.';
+-- COMMENT ON CONSTRAINT pk_locacion ON Locacion IS 'Restricción de entidad para la tabla Locacion.';
 
 
 
--- Corrección de la restricción en DistanciaRecorrida
+-- -- Corrección de la restricción en DistanciaRecorrida
 
-ALTER TABLE DistanciaRecorrida RENAME COLUMN Locacion TO NombreLocacion;
-ALTER TABLE DistanciaRecorrida DROP CONSTRAINT CK_Locacion_DistanciaRecorrida;
-ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_locacion FOREIGN KEY (NombreLocacion) REFERENCES Locacion(Nombre) ON DELETE RESTRICT ON UPDATE CASCADE;
-COMMENT ON CONSTRAINT fk_distancia_recorrida_locacion ON DistanciaRecorrida IS 'Restricción referencial que vincula DistanciaRecorrida con Locacion.';
+-- ALTER TABLE DistanciaRecorrida RENAME COLUMN Locacion TO NombreLocacion;
+-- ALTER TABLE DistanciaRecorrida DROP CONSTRAINT CK_Locacion_DistanciaRecorrida;
+-- ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_locacion FOREIGN KEY (NombreLocacion) REFERENCES Locacion(Nombre) ON DELETE RESTRICT ON UPDATE CASCADE;
+-- COMMENT ON CONSTRAINT fk_distancia_recorrida_locacion ON DistanciaRecorrida IS 'Restricción referencial que vincula DistanciaRecorrida con Locacion.';
 
