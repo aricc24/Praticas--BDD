@@ -22,13 +22,13 @@ COMMENT ON CONSTRAINT pk_evento ON Evento IS 'Restricción de entidad para la ta
 CREATE TABLE ParticipanteUNAM (
     IdPersona INTEGER,
     NumeroDeCuenta INTEGER,
-    Nombre VARCHAR(100),
-    ApellidoMaterno VARCHAR(100),
-    ApellidoPaterno VARCHAR(100),
+    Nombre VARCHAR(20),
+    ApellidoMaterno VARCHAR(20),
+    ApellidoPaterno VARCHAR(20),
     FechaNacimiento DATE,
     Sexo VARCHAR(10),
-    Carrera VARCHAR(100) ,
-    Facultad VARCHAR(100)
+    Carrera VARCHAR(20) ,
+    Facultad VARCHAR(20)
 );
 
 ALTER TABLE ParticipanteUNAM ADD CONSTRAINT pk_ParticipanteUNAM PRIMARY KEY (IdPersona);
@@ -43,6 +43,12 @@ ALTER TABLE ParticipanteUNAM ALTER COLUMN Sexo SET NOT NULL;
 ALTER TABLE ParticipanteUNAM ALTER COLUMN Carrera SET NOT NULL;
 ALTER TABLE ParticipanteUNAM ALTER COLUMN Facultad SET NOT NULL;
 ALTER TABLE ParticipanteUNAM ALTER COLUMN IdPersona SET NOT NULL;
+
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Nombre TYPE VARCHAR(100);
+ALTER TABLE ParticipanteUNAM ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
+ALTER TABLE ParticipanteUNAM ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Carrera TYPE VARCHAR(100);
+ALTER TABLE ParticipanteUNAM ALTER COLUMN Facultad TYPE VARCHAR(100);
 
 ALTER TABLE ParticipanteUNAM ADD CONSTRAINT CK_Sexo CHECK (Sexo IN ('M', 'H', 'Otro'));
 ALTER TABLE ParticipanteUNAM ADD CONSTRAINT CK_FechaNacimiento CHECK (FechaNacimiento <= CURRENT_DATE);
@@ -87,25 +93,26 @@ ALTER COLUMN IdPersona SET DEFAULT nextval('seq_participanteunam');
  
 CREATE TABLE EncargadoRegistro (
     IdPersona INTEGER, 
-    Nombre VARCHAR(100),
-    ApellidoMaterno VARCHAR(100),
-    ApellidoPaterno VARCHAR(100),
-    FechaNacimiento DATE,
+    Nombre VARCHAR(20),
+    ApellidoMaterno VARCHAR(20),
+    ApellidoPaterno VARCHAR(20),
+    FechaDeNacimiento DATE,
     Sexo VARCHAR(10),
-    Calle VARCHAR(100),
-    Colonia VARCHAR(100),
-    Ciudad VARCHAR(100),
+    Calle VARCHAR(20),
+    Colonia VARCHAR(20),
+    Ciudad VARCHAR(20),
     CodigoPostal INTEGER,
     NumInterior INTEGER,
     NumExterior INTEGER,
     EsJugador BOOLEAN
 );
 
+
 ALTER TABLE EncargadoRegistro ADD CONSTRAINT pk_encargado_registro PRIMARY KEY (IdPersona);
 ALTER TABLE EncargadoRegistro ALTER COLUMN Nombre SET NOT NULL;
 ALTER TABLE EncargadoRegistro ALTER COLUMN ApellidoMaterno SET NOT NULL;
 ALTER TABLE EncargadoRegistro ALTER COLUMN ApellidoPaterno SET NOT NULL;
-ALTER TABLE EncargadoRegistro ALTER COLUMN FechaNacimiento SET NOT NULL;
+ALTER TABLE EncargadoRegistro ALTER COLUMN FechaDeNacimiento SET NOT NULL;
 ALTER TABLE EncargadoRegistro ALTER COLUMN Sexo SET NOT NULL;
 ALTER TABLE EncargadoRegistro ALTER COLUMN Calle SET NOT NULL;
 ALTER TABLE EncargadoRegistro ALTER COLUMN Colonia SET NOT NULL;
@@ -114,6 +121,13 @@ ALTER TABLE EncargadoRegistro ALTER COLUMN CodigoPostal SET NOT NULL;
 ALTER TABLE EncargadoRegistro ALTER COLUMN NumInterior SET NOT NULL;
 ALTER TABLE EncargadoRegistro ALTER COLUMN NumExterior SET NOT NULL;
 ALTER TABLE EncargadoRegistro ALTER COLUMN EsJugador SET NOT NULL;
+
+ALTER TABLE EncargadoRegistro ALTER COLUMN Nombre TYPE VARCHAR(100);
+ALTER TABLE EncargadoRegistro ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
+ALTER TABLE EncargadoRegistro ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
+ALTER TABLE EncargadoRegistro ALTER COLUMN Calle TYPE VARCHAR(100);
+ALTER TABLE EncargadoRegistro ALTER COLUMN Colonia TYPE VARCHAR(100);
+ALTER TABLE EncargadoRegistro ALTER COLUMN Ciudad TYPE VARCHAR(100);
 
 ALTER TABLE EncargadoRegistro ADD CONSTRAINT CK_Sexo_EncargadoRegistro CHECK (Sexo IN ('M', 'H', 'Otro'));
 ALTER TABLE EncargadoRegistro ADD CONSTRAINT CK_CodigoPostal CHECK (CodigoPostal BETWEEN 10000 AND 99999);
@@ -158,6 +172,8 @@ COMMENT ON CONSTRAINT CK_Calle_EncargadoRegistro ON EncargadoRegistro IS 'Restri
 COMMENT ON CONSTRAINT CK_Colonia_EncargadoRegistro ON EncargadoRegistro IS 'Restricción CHECK que valida que la colonia no esté vacía.';
 COMMENT ON CONSTRAINT CK_Ciudad_EncargadoRegistro ON EncargadoRegistro IS 'Restricción CHECK que valida que la ciudad no esté vacía.';
 
+ALTER TABLE EncargadoRegistro RENAME COLUMN FechaDeNacimiento TO FechaNacimiento;
+
 CREATE SEQUENCE encargadoRegistro_idpersona_seq OWNED BY EncargadoRegistro.IdPersona;
 ALTER TABLE EncargadoRegistro ALTER COLUMN IdPersona SET DEFAULT nextval('encargadoRegistro_idpersona_seq');
 COMMENT ON SEQUENCE encargadoRegistro_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla EncargadoRegistro.';
@@ -167,19 +183,18 @@ COMMENT ON SEQUENCE encargadoRegistro_idpersona_seq IS 'Secuencia para generar i
 -- =======
 CREATE TABLE Vendedor (
     IdPersona INTEGER, 
-    Nombre VARCHAR(100),
-    ApellidoMaterno VARCHAR(100),
-    ApellidoPaterno VARCHAR(100),
+    Nombre VARCHAR(20),
+    ApellidoMaterno VARCHAR(20),
+    ApellidoPaterno VARCHAR(20),
     FechaNacimiento DATE,
     Sexo VARCHAR (10),
-    Calle VARCHAR (100) ,
-    Colonia VARCHAR (100),
-    Ciudad VARCHAR (100),
+    Calle VARCHAR (20) ,
+    Colonia VARCHAR (20),
+    Ciudad VARCHAR (20),
     CodigoPostal INTEGER,
     NumInterior INTEGER,
     NumExterior INTEGER,
-    Ubicacion VARCHAR (100) 
-
+    Ubicacion VARCHAR (20) 
 );
 ALTER TABLE Vendedor ADD CONSTRAINT pk_vendedor PRIMARY KEY (IdPersona);
 
@@ -195,6 +210,14 @@ ALTER TABLE Vendedor ALTER COLUMN CodigoPostal SET NOT NULL;
 ALTER TABLE Vendedor ALTER COLUMN NumExterior SET NOT NULL;
 ALTER TABLE Vendedor ALTER COLUMN NumInterior SET NOT NULL;
 ALTER TABLE Vendedor ALTER COLUMN Ubicacion SET NOT NULL;
+
+ALTER TABLE Vendedor ALTER COLUMN Nombre TYPE VARCHAR(100);
+ALTER TABLE Vendedor ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
+ALTER TABLE Vendedor ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
+ALTER TABLE Vendedor ALTER COLUMN Calle TYPE VARCHAR(100);
+ALTER TABLE Vendedor ALTER COLUMN Colonia TYPE VARCHAR(100);
+ALTER TABLE Vendedor ALTER COLUMN Ciudad TYPE VARCHAR(100);
+ALTER TABLE Vendedor ALTER COLUMN Ubicacion TYPE VARCHAR(100);
 
 ALTER TABLE Vendedor ADD CONSTRAINT CK_Sexo_Vendedor CHECK (Sexo IN ('M', 'H', 'Otro'));
 ALTER TABLE Vendedor ADD CONSTRAINT CK_CodigoPostal_Vendedor CHECK (CodigoPostal BETWEEN 10000 AND 99999);
@@ -249,18 +272,18 @@ COMMENT ON SEQUENCE vendedor_idpersona_seq IS 'Secuencia para generar identifica
 -- =======
 CREATE TABLE Cuidador (
     IdPersona INTEGER,
-    Nombre VARCHAR (100),
-    ApellidoMaterno VARCHAR (100),
-    ApellidoPaterno VARCHAR (100),
+    Nombre VARCHAR (20),
+    ApellidoMaterno VARCHAR (20),
+    ApellidoPaterno VARCHAR (20),
     FechaNacimiento DATE ,
     Sexo VARCHAR (10) ,
-    Calle VARCHAR (100),
-    Colonia VARCHAR (100),
-    Ciudad VARCHAR (100),
+    Calle VARCHAR (20),
+    Colonia VARCHAR (20),
+    Ciudad VARCHAR (20),
     CodigoPostal INTEGER,
     NumInterior INTEGER ,
     NumExterior INTEGER,
-    Ubicacion VARCHAR (100),
+    Ubicacion VARCHAR (20),
     Horario VARCHAR (10),
     Salario REAL  
 );
@@ -277,6 +300,14 @@ ALTER TABLE Cuidador ALTER COLUMN CodigoPostal SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN NumExterior SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN NumInterior SET NOT NULL;
 ALTER TABLE Cuidador ALTER COLUMN Ubicacion SET NOT NULL;
+
+ALTER TABLE Cuidador ALTER COLUMN Nombre TYPE VARCHAR(100);
+ALTER TABLE Cuidador ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
+ALTER TABLE Cuidador ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
+ALTER TABLE Cuidador ALTER COLUMN Calle TYPE VARCHAR(100);
+ALTER TABLE Cuidador ALTER COLUMN Colonia TYPE VARCHAR(100);
+ALTER TABLE Cuidador ALTER COLUMN Ciudad TYPE VARCHAR(100);
+ALTER TABLE Cuidador ALTER COLUMN Ubicacion TYPE VARCHAR(100);
 
 ALTER TABLE Cuidador ADD CONSTRAINT CK_Sexo_Cuidador CHECK (Sexo IN ('M', 'H', 'Otro'));
 ALTER TABLE Cuidador ADD CONSTRAINT CK_CodigoPostal_Cuidador CHECK (CodigoPostal >= 10000 AND CodigoPostal < 100000);
@@ -336,18 +367,18 @@ COMMENT ON SEQUENCE cuidador_idpersona_seq IS 'Secuencia para generar identifica
 -- =======
 CREATE TABLE Limpiador (
     IdPersona INTEGER,
-    Nombre VARCHAR(100),
-    ApellidoMaterno VARCHAR(100),
-    ApellidoPaterno VARCHAR(100),
+    Nombre VARCHAR(20),
+    ApellidoMaterno VARCHAR(20),
+    ApellidoPaterno VARCHAR(20),
     FechaNacimiento DATE,
     Sexo VARCHAR(10),
-    Calle VARCHAR(100) ,
-    Colonia VARCHAR(100),
-    Ciudad VARCHAR(100),
+    Calle VARCHAR(20) ,
+    Colonia VARCHAR(20),
+    Ciudad VARCHAR(20),
     CodigoPostal INTEGER,
     NumInterior INTEGER,
     NumExterior INTEGER,
-    Ubicacion VARCHAR(100),
+    Ubicacion VARCHAR(20),
     Horario VARCHAR(10),
     Salario REAL
 );
@@ -365,6 +396,14 @@ ALTER TABLE Limpiador ALTER COLUMN CodigoPostal SET NOT NULL;
 ALTER TABLE Limpiador ALTER COLUMN NumExterior SET NOT NULL;
 ALTER TABLE Limpiador ALTER COLUMN NumInterior SET NOT NULL;
 ALTER TABLE Limpiador ALTER COLUMN Ubicacion SET NOT NULL;
+
+ALTER TABLE Limpiador ALTER COLUMN Nombre TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN Calle TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN Colonia TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN Ciudad TYPE VARCHAR(100);
+ALTER TABLE Limpiador ALTER COLUMN Ubicacion TYPE VARCHAR(100);
 
 
 ALTER TABLE Limpiador ADD CONSTRAINT CK_Sexo CHECK (Sexo IN ('M', 'H', 'Otro'));
@@ -430,9 +469,9 @@ COMMENT ON SEQUENCE limpiador_idpersona_seq IS 'Secuencia para generar identific
 -- ========
 CREATE TABLE Espectador (
     IdPersona INTEGER  ,
-    Nombre VARCHAR(100),
-    ApellidoMaterno VARCHAR(100),
-    ApellidoPaterno VARCHAR(100),
+    Nombre VARCHAR(20),
+    ApellidoMaterno VARCHAR(20),
+    ApellidoPaterno VARCHAR(20),
     FechaNacimiento DATE,
     Sexo VARCHAR(10) ,
     HoraIngreso TIMETZ,
@@ -450,6 +489,10 @@ ALTER TABLE Espectador  ALTER COLUMN Sexo SET NOT NULL;
 ALTER TABLE Espectador  ALTER COLUMN HoraIngreso SET NOT NULL;
 ALTER TABLE Espectador ALTER COLUMN HoraSalida SET NOT NULL; 
 
+
+ALTER TABLE Espectador ALTER COLUMN Nombre TYPE VARCHAR(100);
+ALTER TABLE Espectador ALTER COLUMN ApellidoMaterno TYPE VARCHAR(100);
+ALTER TABLE Espectador ALTER COLUMN ApellidoPaterno TYPE VARCHAR(100);
 
 
 
@@ -495,6 +538,16 @@ CREATE SEQUENCE seq_espectador
 ALTER TABLE Espectador
 ALTER COLUMN IdPersona SET DEFAULT nextval('seq_espectador');
 
+
+ALTER TABLE Espectador DROP CONSTRAINT CK_HoraIngreso_Espectador;
+ALTER TABLE Espectador DROP CONSTRAINT CK_HoraSalida_Espectador;
+ALTER TABLE Espectador ALTER COLUMN HoraIngreso DROP NOT NULL;
+ALTER TABLE Espectador ALTER COLUMN HoraSalida DROP NOT NULL;
+ALTER TABLE Espectador
+DROP COLUMN HoraIngreso,
+DROP COLUMN HoraSalida;
+
+
 -- DATOS -------------------------------------
 
 
@@ -528,8 +581,6 @@ ALTER TABLE TelefonoCuidador ADD CONSTRAINT fk_telefono_cuidador_cuidador FOREIG
     ON DELETE RESTRICT
     ON UPDATE CASCADE;
 
-ALTER TABLE TelefonoParticipante ALTER COLUMN IdPersona SET NOT NULL;
-ALTER TABLE TelefonoParticipante ALTER COLUMN IdPersona SET NOT NULL;
 
 COMMENT ON TABLE TelefonoCuidador IS 'Tabla que almacena los teléfonos de los cuidadores.';
 COMMENT ON COLUMN TelefonoCuidador.IdPersona IS 'Identificador único del cuidador.';
@@ -550,6 +601,8 @@ ALTER TABLE CorreoEncargadoRegistro ADD CONSTRAINT fk_correo_encargado_registro 
     ON DELETE RESTRICT
     ON UPDATE CASCADE;
 
+
+
 COMMENT ON TABLE CorreoEncargadoRegistro IS 'Tabla que almacena los correos electrónicos asociados a cada encargado de registro.';
 COMMENT ON COLUMN CorreoEncargadoRegistro.IdPersona IS 'Identificador del encargado de registro al que pertenece el correo (llave foránea hacia EncargadoRegistro).';
 COMMENT ON COLUMN CorreoEncargadoRegistro.Correo IS 'Dirección de correo electrónico del encargado de registro.';
@@ -568,6 +621,8 @@ ALTER TABLE TelefonoEncargadoRegistro ADD CONSTRAINT pk_telefono_encargado_regis
 ALTER TABLE TelefonoEncargadoRegistro ADD CONSTRAINT fk_telefono_encargado_registro FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona)
     ON DELETE RESTRICT
     ON UPDATE CASCADE;
+
+
 
 COMMENT ON TABLE TelefonoEncargadoRegistro IS 'Tabla que almacena los números telefónicos asociados a cada encargado de registro.';
 COMMENT ON COLUMN TelefonoEncargadoRegistro.IdPersona IS 'Identificador del encargado de registro al que pertenece el número telefónico (llave foránea hacia EncargadoRegistro).';
@@ -806,7 +861,7 @@ COMMENT ON CONSTRAINT fk_trabajar_encargado_registro_encargado ON TrabajarEncarg
 
 
 -- ========
--- Alimento (Va después de Vendedor)
+-- Alimento 
 -- ========
 CREATE TABLE Alimento (
     IdAlimento INTEGER, 
@@ -860,7 +915,8 @@ CREATE TABLE ComprarEncargadoRegistro (
     IdPersona INTEGER, 
     IdAlimento INTEGER, 
     MetodoDePago VARCHAR(20),
-    Cantidad REAL 
+    Cantidad REAL, 
+    Fecha TIMESTAMPTZ
 );
 
 ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT fk_comprar_encargado_registro_encargado FOREIGN KEY (IdPersona) REFERENCES EncargadoRegistro(IdPersona)
@@ -899,7 +955,8 @@ CREATE TABLE ComprarLimpiador (
     IdPersona INTEGER,
     IdAlimento INTEGER,
     MetodoDePago VARCHAR(20),
-    Cantidad REAL
+    Cantidad REAL, 
+    Fecha TIMESTAMPTZ
 );
 ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
 ALTER TABLE ComprarLimpiador ADD CONSTRAINT fk_comprar_limpiador_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento) ON DELETE RESTRICT ON UPDATE CASCADE;
@@ -931,7 +988,8 @@ CREATE TABLE ComprarCuidador (
     IdPersona INTEGER ,
     IdAlimento INTEGER,
     MetodoDePago VARCHAR(20),
-    Cantidad REAL
+    Cantidad REAL, 
+    Fecha TIMESTAMPTZ
 );
 ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
 ALTER TABLE ComprarCuidador ADD CONSTRAINT fk_comprar_cuidador_alimento FOREIGN KEY (IdAlimento) REFERENCES Alimento(IdAlimento) ON DELETE RESTRICT ON UPDATE CASCADE;
@@ -962,7 +1020,8 @@ CREATE TABLE ComprarVendedor (
     IdPersona INTEGER,
     IdAlimento INTEGER,
     MetodoDePago VARCHAR(20),
-    Cantidad REAL
+    Cantidad REAL, 
+    Fecha TIMESTAMPTZ
 );
 ALTER TABLE ComprarVendedor  ADD CONSTRAINT fk_comprar_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor (IdPersona)
     ON DELETE RESTRICT
@@ -996,7 +1055,8 @@ CREATE TABLE ComprarEspectador (
     IdPersona INTEGER,
     IdAlimento INTEGER,
     MetodoDePago VARCHAR(20),
-    Cantidad REAL
+    Cantidad REAL,
+    Fecha TIMESTAMPTZ
 );
 
 ALTER TABLE ComprarEspectador 
@@ -1036,7 +1096,8 @@ CREATE TABLE ComprarParticipanteUNAM (
     IdPersona INTEGER,
     IdAlimento INTEGER,
     MetodoDePago VARCHAR(20),
-    Cantidad REAL
+    Cantidad REAL,
+    Fecha TIMESTAMPTZ   
 );
 
 
@@ -1109,10 +1170,11 @@ COMMENT ON CONSTRAINT fk_encargado_inscribir_participante_participante ON Encarg
 CREATE TABLE ParticipanteInscribirEvento (
     Edicion INTEGER,
     IdPersona INTEGER,
-    Fecha TIMESTAMPTZ
+    Fecha TIMESTAMPTZ,
     Costo REAL
 );
 
+Alter TABLE ParticipanteInscribirEvento ADD CONSTRAINT PK_ParticipanteInscribirEvento PRIMARY KEY (Edicion, IdPersona);
 
 ALTER TABLE ParticipanteInscribirEvento 
 ADD CONSTRAINT FK_InscribirEvento_Edicion FOREIGN KEY (Edicion) REFERENCES Evento(Edicion)
@@ -1135,6 +1197,7 @@ ALTER TABLE ParticipanteInscribirEvento ADD CONSTRAINT CK_Fecha_Inscripcion CHEC
 ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Costo SET NOT NULL;
 ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Fecha SET NOT NULL;
 
+ALTER TABLE ParticipanteInscribirEvento ADD CONSTRAINT uq_inscripcionEvento UNIQUE (Edicion, IdPersona);
 
 COMMENT ON TABLE ParticipanteInscribirEvento IS 'Tabla que registra la inscripción de participantes de la UNAM a las distintas ediciones de los eventos.';
 
@@ -1144,10 +1207,13 @@ COMMENT ON COLUMN ParticipanteInscribirEvento.Fecha IS 'Fecha en que el particip
 COMMENT ON COLUMN ParticipanteInscribirEvento.Costo IS 'Costo total de inscripción pagado por el participante.';
 COMMENT ON CONSTRAINT CK_Costo_Positive ON ParticipanteInscribirEvento IS 'Restricción CHECK que asegura que el costo de inscripción sea un valor no negativo.';
 COMMENT ON CONSTRAINT CK_Fecha_Inscripcion ON ParticipanteInscribirEvento IS 'Restricción CHECK que garantiza que la fecha de inscripción no sea posterior a la fecha actual.';
+COMMENT ON CONSTRAINT uq_inscripcionEvento ON ParticipanteInscribirEvento IS 'Restricción de unicidad que asegura que un participante no pueda inscribirse más de una vez en la misma edición del evento.';
 
+COMMENT ON CONSTRAINT PK_ParticipanteInscribirEvento ON ParticipanteInscribirEvento IS 'Llave primaria compuesta por Edicion e IdPersona que garantiza que un participante no se inscriba dos veces al mismo evento.';
 COMMENT ON CONSTRAINT FK_InscribirEvento_Edicion ON ParticipanteInscribirEvento IS 'Llave foránea que vincula la inscripción con la edición correspondiente del evento. Si la edición se elimina, también se eliminan las inscripciones asociadas.';
 COMMENT ON CONSTRAINT FK_InscribirEvento_Participante ON ParticipanteInscribirEvento IS 'Llave foránea que vincula la inscripción con el participante. Si el participante se elimina, también se eliminan sus registros de inscripción.';
 
+ALTER TABLE ParticipanteInscribirEvento DROP CONSTRAINT PK_ParticipanteInscribirEvento;
 -- ========
 -- Asistir
 -- ========
@@ -1155,6 +1221,9 @@ CREATE TABLE Asistir (
     Edicion INTEGER,
     IdPersona INTEGER
 );
+
+ALTER TABLE Asistir 
+ADD CONSTRAINT PK_Asistir PRIMARY KEY (Edicion, IdPersona);
 
 ALTER TABLE Asistir 
 ADD CONSTRAINT FK_Asistir_Edicion FOREIGN KEY (Edicion) REFERENCES Evento(Edicion)
@@ -1175,8 +1244,26 @@ COMMENT ON TABLE Asistir IS 'Tabla que registra la asistencia de los espectadore
 COMMENT ON COLUMN Asistir.Edicion IS 'Número o identificador de la edición del evento al que asiste el espectador';
 COMMENT ON COLUMN Asistir.IdPersona IS 'Identificador del espectador que asiste al evento.';
 
+COMMENT ON CONSTRAINT PK_Asistir ON Asistir IS 'Llave primaria compuesta por Edicion e IdPersona que evita registros duplicados de asistencia.';
 COMMENT ON CONSTRAINT FK_Asistir_Edicion ON Asistir IS 'Llave foránea que vincula la asistencia con la edición correspondiente del evento. Si el evento se elimina, también se eliminan los registros de asistencia asociados.';
 COMMENT ON CONSTRAINT FK_Asistir_Espectador ON Asistir IS 'Llave foránea que vincula la asistencia con el espectador correspondiente. Si el espectador se elimina, también se eliminan sus registros de asistencia.';
+
+ALTER TABLE Asistir DROP CONSTRAINT PK_Asistir;
+
+ALTER TABLE Asistir
+ADD COLUMN HoraIngreso TIMETZ;
+
+ALTER TABLE Asistir
+ADD COLUMN HoraSalida TIMETZ;
+
+ALTER TABLE Asistir ALTER COLUMN HoraIngreso SET NOT NULL;
+ALTER TABLE Asistir ALTER COLUMN HoraSalida SET NOT NULL;
+
+ALTER TABLE Asistir ADD CONSTRAINT CK_HoraSalida_Asistir CHECK (HoraSalida >= HoraIngreso);
+
+COMMENT ON COLUMN Asistir.HoraIngreso IS 'Hora de ingreso del espectador al evento.';
+COMMENT ON COLUMN Asistir.HoraSalida IS 'Hora de salida del espectador del evento.';
+COMMENT ON CONSTRAINT CK_HoraSalida_Asistir ON Asistir IS 'Restricción CHECK que valida que la hora de salida sea mayor o igual a la hora de ingreso.';
 
 --------------- JUEGO 
 
@@ -1219,6 +1306,20 @@ COMMENT ON CONSTRAINT uq_NombreDeUsuario ON CuentaPokemonGo IS 'Restricción de 
 
 COMMENT ON CONSTRAINT pk_cuenta_pokemon_go ON CuentaPokemonGo IS 'Restricción de entidad para la tabla CuentaPokemonGo.';
 COMMENT ON CONSTRAINT fk_cuenta_pokemon_go_participante_unam ON CuentaPokemonGo IS 'Restricción referencial que vincula CuentaPokemonGo con ParticipanteUNAM.';
+
+CREATE SEQUENCE cuenta_pokemongo_codentrenador_seq
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    OWNED BY CuentaPokemonGo.CodigoDeEntrenador;
+
+ALTER TABLE CuentaPokemonGo
+    ALTER COLUMN CodigoDeEntrenador
+    SET DEFAULT nextval('cuenta_pokemongo_codentrenador_seq');
+
+COMMENT ON SEQUENCE cuenta_pokemongo_codentrenador_seq IS
+'Secuencia para generar automáticamente los códigos de entrenador en la tabla CuentaPokemonGo.';
+
 
 -- ========
 -- Pokemon
@@ -1421,6 +1522,27 @@ ALTER TABLE PeleaTorneo ALTER COLUMN NumeroPelea SET DEFAULT nextval('peleatorne
 COMMENT ON SEQUENCE peleatorneo_numeropelea_seq IS 'Secuencia para generar números de pelea únicos dentro de cada torneo en la tabla PeleaTorneo.';
 
 -- ========
+-- Locacion
+-- ========
+
+CREATE TABLE Locacion (
+    NombreLocacion VARCHAR(10),
+    Latitud REAL,
+    Longitud REAL
+);
+
+ALTER TABLE Locacion ADD CONSTRAINT pk_locacion PRIMARY KEY (NombreLocacion);
+
+ALTER TABLE Locacion ALTER COLUMN Latitud SET NOT NULL;
+ALTER TABLE Locacion ALTER COLUMN Longitud SET NOT NULL;
+
+COMMENT ON TABLE Locacion IS 'Tabla que almacena las locaciones disponibles para registrar distancias recorridas.';
+COMMENT ON COLUMN Locacion.NombreLocacion IS 'Nombre de la locación.';
+COMMENT ON COLUMN Locacion.Latitud IS 'Latitud de la locación.';
+COMMENT ON COLUMN Locacion.Longitud IS 'Longitud de la locación.';
+COMMENT ON CONSTRAINT pk_locacion ON Locacion IS 'Restricción de entidad para la tabla Locacion.';
+
+-- ========
 -- DistanciaRecorrida
 -- ========
 CREATE TABLE DistanciaRecorrida (
@@ -1437,7 +1559,7 @@ CREATE TABLE DistanciaRecorrida (
 ALTER TABLE DistanciaRecorrida ADD CONSTRAINT pk_distancia_recorrido PRIMARY KEY (Edicion, IdTorneo, IdDistancia);
 ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador) ON DELETE RESTRICT ON UPDATE CASCADE;
 ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_torneo_distancia_recorrida FOREIGN KEY (Edicion, IdTorneo) REFERENCES TorneoDistanciaRecorrida(Edicion, IdTorneo) ON DELETE RESTRICT ON UPDATE CASCADE;
-ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_locacion FOREIGN KEY (NombreLocacion) REFERENCES Locacion(Nombre) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE DistanciaRecorrida ADD CONSTRAINT fk_distancia_recorrida_locacion FOREIGN KEY (NombreLocacion) REFERENCES Locacion(NombreLocacion) ON DELETE RESTRICT ON UPDATE CASCADE;
 
 ALTER TABLE DistanciaRecorrida ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE DistanciaRecorrida ALTER COLUMN CodigoDeEntrenador SET NOT NULL;
@@ -1451,7 +1573,7 @@ COMMENT ON COLUMN DistanciaRecorrida.IdTorneo IS 'Identificador único del torne
 COMMENT ON COLUMN DistanciaRecorrida.IdDistancia IS 'Identificador único de la distancia recorrida.';
 COMMENT ON COLUMN DistanciaRecorrida.IdPersona IS 'Identificador único del participante que recorrió la distancia.';
 COMMENT ON COLUMN DistanciaRecorrida.CodigoDeEntrenador IS 'Código de entrenador de la cuenta de Pokémon Go del participante.';
-COMMENT ON COLUMN DistanciaRecorrida.Locacion IS 'Locación donde se registró la distancia recorrida.';
+COMMENT ON COLUMN DistanciaRecorrida.NombreLocacion IS 'Locación donde se registró la distancia recorrida.';
 COMMENT ON COLUMN DistanciaRecorrida.Fecha IS 'Fecha en la que se registró la distancia recorrida.';
 COMMENT ON COLUMN DistanciaRecorrida.Hora IS 'Hora en la que se registró la distancia recorrida.';
 
@@ -1506,6 +1628,18 @@ COMMENT ON COLUMN CapturaPokemon.IdTorneo IS 'Identificador único del torneo de
 COMMENT ON COLUMN CapturaPokemon.IdCaptura IS 'Identificador único de la captura realizada.';
 COMMENT ON CONSTRAINT pk_captura_pokemon ON CapturaPokemon IS 'Restricción de entidad para la tabla CapturaPokemon.';
 COMMENT ON CONSTRAINT fk_captura_pokemon_torneo_captura_shinys ON CapturaPokemon IS 'Restricción referencial que vincula CapturaPokemon con TorneoCapturaShinys.';
+
+CREATE SEQUENCE captura_pokemon_idcaptura_seq
+    START WITH 1
+    INCREMENT BY 1
+    OWNED BY CapturaPokemon.IdCaptura;
+
+ALTER TABLE CapturaPokemon
+    ALTER COLUMN IdCaptura
+    SET DEFAULT nextval('captura_pokemon_idcaptura_seq');
+COMMENT ON SEQUENCE captura_pokemon_idcaptura_seq IS 
+'Secuencia para generar automáticamente IdCaptura en la tabla CapturaPokemon.';
+
 
 -- ========
 --  Registrar
@@ -1676,22 +1810,3 @@ COMMENT ON COLUMN InscripcionTorneoCaptura.FechaInscripcion IS 'Fecha de inscrip
 COMMENT ON CONSTRAINT fk_inscripcion_captura_torneo ON InscripcionTorneoCaptura IS 'Restricción referencial que vincula InscripcionTorneoCaptura con TorneoCaptura.';
 COMMENT ON CONSTRAINT fk_inscripcion_captura_cuenta ON InscripcionTorneoCaptura IS 'Restricción referencial que vincula InscripcionTorneoCaptura con CuentaPokemonGo.';
 
-
-
-
-CREATE TABLE Locacion (
-    NombreLocacion VARCHAR(10),
-    Latitud REAL,
-    Longitud REAL
-);
-
-ALTER TABLE Locacion ADD CONSTRAINT pk_locacion PRIMARY KEY (NombreLocacion);
-
-ALTER TABLE Locacion ALTER COLUMN Latitud SET NOT NULL;
-ALTER TABLE Locacion ALTER COLUMN Longitud SET NOT NULL;
-
-COMMENT ON TABLE Locacion IS 'Tabla que almacena las locaciones disponibles para registrar distancias recorridas.';
-COMMENT ON COLUMN Locacion.NombreLocacion IS 'Nombre de la locación.';
-COMMENT ON COLUMN Locacion.Latitud IS 'Latitud de la locación.';
-COMMENT ON COLUMN Locacion.Longitud IS 'Longitud de la locación.';
-COMMENT ON CONSTRAINT pk_locacion ON Locacion IS 'Restricción de entidad para la tabla Locacion.';
