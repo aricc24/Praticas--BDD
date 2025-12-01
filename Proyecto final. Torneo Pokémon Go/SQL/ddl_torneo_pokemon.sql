@@ -1809,4 +1809,3 @@ COMMENT ON COLUMN InscripcionTorneoCaptura.FechaInscripcion IS 'Fecha de inscrip
 
 COMMENT ON CONSTRAINT fk_inscripcion_captura_torneo ON InscripcionTorneoCaptura IS 'Restricción referencial que vincula InscripcionTorneoCaptura con TorneoCaptura.';
 COMMENT ON CONSTRAINT fk_inscripcion_captura_cuenta ON InscripcionTorneoCaptura IS 'Restricción referencial que vincula InscripcionTorneoCaptura con CuentaPokemonGo.';
-

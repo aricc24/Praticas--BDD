@@ -8,7 +8,7 @@ BEGIN
     VALUES (NEW.edicion, 1500.00);
 
     INSERT INTO TorneoCapturaShinys(Edicion, CantidadAPremiar)
-    VALUES ( 1500.00);
+    VALUES (NEW.edicion,1500.00);
 
     RETURN NEW;
 END;

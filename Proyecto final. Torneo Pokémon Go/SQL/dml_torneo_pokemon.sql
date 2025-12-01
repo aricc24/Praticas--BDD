@@ -3313,7 +3313,6 @@ INSERT INTO Vendedor (nombre, apellidomaterno, apellidopaterno, fechanacimiento,
 INSERT INTO Vendedor (nombre, apellidomaterno, apellidopaterno, fechanacimiento, sexo, calle, colonia, ciudad, codigopostal, numinterior, numexterior, ubicacion) values ('Regan', 'Jeanin', 'Drance', '1979-01-14', 'M', 'Sutteridge', 'Tours', 'Sadabumi', 61939, 0, 77, 'Islas');
 INSERT INTO Vendedor (nombre, apellidomaterno, apellidopaterno, fechanacimiento, sexo, calle, colonia, ciudad, codigopostal, numinterior, numexterior, ubicacion) values ('Lilias', 'Linbohm', 'Casserly', '1952-12-19', 'H', 'Grayhawk', 'Gzy', 'Thomazeau', 87494, 13, 32, 'Rectoría');
 
--- Ari
 -- Alimento
 INSERT INTO Alimento (idpersona, FechaDeCaducidad, nombre, tipo, precio) values (122, '2028-12-20', 'Manzana roja', 'Dulce', 97.9);
 INSERT INTO Alimento (idpersona, FechaDeCaducidad, nombre, tipo, precio) values (13, '2027-02-25', 'Helado de vainilla', 'Postre', 222.06);
