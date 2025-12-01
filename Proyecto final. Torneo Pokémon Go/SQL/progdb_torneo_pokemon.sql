@@ -450,13 +450,13 @@ CREATE OR REPLACE FUNCTION crear_torneos_al_insertar_evento()
 RETURNS TRIGGER AS $$
 BEGIN
     INSERT INTO TorneoPelea(Edicion, CantidadAPremiar)
-    VALUES (NEW.edicion, 1500.00);
+    VALUES (NEW.edicion, 5000.00);
 
     INSERT INTO TorneoDistanciaRecorrida(Edicion, CantidadAPremiar)
-    VALUES (NEW.edicion, 1500.00);
+    VALUES (NEW.edicion, 5000.00);
 
     INSERT INTO TorneoCapturaShinys(Edicion, CantidadAPremiar)
-    VALUES (NEW.edicion,1500.00);
+    VALUES (NEW.edicion, 5000.00);
 
     RETURN NEW;
 END;

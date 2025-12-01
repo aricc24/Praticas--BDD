@@ -1843,3 +1843,16 @@ COMMENT ON COLUMN InscripcionTorneoCaptura.FechaInscripcion IS 'Fecha de inscrip
 
 COMMENT ON CONSTRAINT fk_inscripcion_captura_torneo ON InscripcionTorneoCaptura IS 'Restricción referencial que vincula InscripcionTorneoCaptura con TorneoCaptura.';
 COMMENT ON CONSTRAINT fk_inscripcion_captura_cuenta ON InscripcionTorneoCaptura IS 'Restricción referencial que vincula InscripcionTorneoCaptura con CuentaPokemonGo.';
+
+
+ALTER TABLE Registrar
+ADD CONSTRAINT chk_registrar_hora
+CHECK (EXTRACT(HOUR FROM Hora) >= 9 AND EXTRACT(HOUR FROM Hora) < 21);
+
+COMMENT ON CONSTRAINT chk_registrar_hora ON Registrar IS 'Restricción CHECK que valida que la hora de captura esté dentro del horario permitido (9:00 a 21:00).';
+
+ALTER TABLE DistanciaRecorrida
+ADD CONSTRAINT chk_distanciarecorrida_hora
+CHECK (EXTRACT(HOUR FROM Hora) >= 9 AND EXTRACT(HOUR FROM Hora) < 21);
+
+COMMENT ON CONSTRAINT chk_distanciarecorrida_hora ON DistanciaRecorrida IS 'Restricción CHECK que valida que la hora de registro de distancia esté dentro del horario permitido (9:00 a 21:00).';
