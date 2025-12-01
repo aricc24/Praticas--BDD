@@ -178,6 +178,13 @@ CREATE SEQUENCE encargadoRegistro_idpersona_seq OWNED BY EncargadoRegistro.IdPer
 ALTER TABLE EncargadoRegistro ALTER COLUMN IdPersona SET DEFAULT nextval('encargadoRegistro_idpersona_seq');
 COMMENT ON SEQUENCE encargadoRegistro_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla EncargadoRegistro.';
 
+ALTER TABLE EncargadoRegistro
+DROP CONSTRAINT IF EXISTS CK_CodigoPostal;
+
+ALTER TABLE EncargadoRegistro
+ADD CONSTRAINT CK_CodigoPostal
+CHECK (CodigoPostal BETWEEN 1 AND 99999);
+
 -- ========
 -- Vendedor 
 -- =======
@@ -266,6 +273,14 @@ COMMENT ON CONSTRAINT pk_vendedor ON Vendedor IS 'Restricción de entidad para l
 CREATE SEQUENCE vendedor_idpersona_seq OWNED BY Vendedor.IdPersona;
 ALTER TABLE Vendedor ALTER COLUMN IdPersona SET DEFAULT nextval('vendedor_idpersona_seq');
 COMMENT ON SEQUENCE vendedor_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla Vendedor.';
+
+ALTER TABLE Vendedor
+DROP CONSTRAINT IF EXISTS CK_CodigoPostal;
+
+ALTER TABLE Vendedor
+ADD CONSTRAINT CK_CodigoPostal
+CHECK (CodigoPostal BETWEEN 1 AND 99999);
+
 
 -- ========
 -- Cuidador
@@ -361,6 +376,13 @@ COMMENT ON CONSTRAINT pk_cuidador ON Cuidador IS 'Restricción de entidad para l
 CREATE SEQUENCE cuidador_idpersona_seq OWNED BY Cuidador.IdPersona;
 ALTER TABLE Cuidador ALTER COLUMN IdPersona SET DEFAULT nextval('cuidador_idpersona_seq');
 COMMENT ON SEQUENCE cuidador_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla Cuidador.';
+
+ALTER TABLE Cuidador
+DROP CONSTRAINT IF EXISTS CK_CodigoPostal;
+
+ALTER TABLE Cuidador
+ADD CONSTRAINT CK_CodigoPostal
+CHECK (CodigoPostal BETWEEN 1 AND 99999);
 
 -- ========
 -- Limpiador 
@@ -461,6 +483,14 @@ COMMENT ON CONSTRAINT pk_limpiador ON Limpiador IS 'Restricción de entidad para
 CREATE SEQUENCE limpiador_idpersona_seq OWNED BY Limpiador.IdPersona;
 ALTER TABLE Limpiador ALTER COLUMN IdPersona SET DEFAULT nextval('limpiador_idpersona_seq');
 COMMENT ON SEQUENCE limpiador_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla Limpiador.';
+
+
+ALTER TABLE Limpiador
+DROP CONSTRAINT IF EXISTS CK_CodigoPostal;
+
+ALTER TABLE Limpiador
+ADD CONSTRAINT CK_CodigoPostal
+CHECK (CodigoPostal BETWEEN 1 AND 99999);
 
 
 
@@ -824,9 +854,6 @@ COMMENT ON COLUMN TrabajarLimpiador.Edicion IS 'Edición del evento en la que el
 COMMENT ON CONSTRAINT fk_trabajar_limpiador_limpiador ON TrabajarLimpiador IS 'Restricción referencial que vincula TrabajarLimpiador con Limpiador.';
 COMMENT ON CONSTRAINT fk_trabajar_limpiador_evento ON TrabajarLimpiador IS 'Restricción referencial que vincula TrabajarLimpiador con Evento.';
 
-
-
-
 -- ========
 -- TrabajarEncargadoRegistro 
 -- =======
@@ -882,7 +909,6 @@ ALTER TABLE Alimento ALTER COLUMN FechaDeCaducidad SET NOT NULL;
 ALTER TABLE Alimento ALTER COLUMN Nombre SET NOT NULL;
 ALTER TABLE Alimento ALTER COLUMN Tipo SET NOT NULL;
 ALTER TABLE Alimento ALTER COLUMN Precio SET NOT NULL;
-ALTER TABLE Alimento ALTER COLUMN FechaDeCaducidad SET NOT NULL;
 
 ALTER TABLE Alimento ADD CONSTRAINT CK_Precio_Alimento CHECK (Precio > 0);
 ALTER TABLE Alimento ADD CONSTRAINT CK_Nombre_Alimento CHECK (Nombre <> '');
@@ -1384,6 +1410,14 @@ COMMENT ON CONSTRAINT fk_pokemon_cuenta_pokemon_go ON Pokemon IS 'Restricción r
 CREATE SEQUENCE pokemon_idpokemon_seq OWNED BY Pokemon.IdPokemon;
 ALTER TABLE Pokemon ALTER COLUMN IdPokemon SET DEFAULT nextval('pokemon_idpokemon_seq');
 COMMENT ON SEQUENCE pokemon_idpokemon_seq IS 'Secuencia para generar identificadores únicos para la tabla Pokemon.';
+
+ALTER TABLE Pokemon
+DROP CONSTRAINT IF EXISTS CK_Peso_Pokemon;
+
+ALTER TABLE Pokemon
+ADD CONSTRAINT CK_Peso_Pokemon
+CHECK (Peso >= 0);
+COMMENT ON CONSTRAINT CK_Peso_Pokemon ON Pokemon IS 'Restricción CHECK que valida que el peso del pokémon sea mayor o igual a 0.';
 
 ------------- TORNEOS ------------
 
