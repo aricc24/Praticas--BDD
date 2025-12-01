@@ -179,11 +179,13 @@ ALTER TABLE EncargadoRegistro ALTER COLUMN IdPersona SET DEFAULT nextval('encarg
 COMMENT ON SEQUENCE encargadoRegistro_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla EncargadoRegistro.';
 
 ALTER TABLE EncargadoRegistro
-DROP CONSTRAINT IF EXISTS CK_CodigoPostal;
+DROP CONSTRAINT IF EXISTS CK_CodigoPostal_EncargadoRegistro;
 
 ALTER TABLE EncargadoRegistro
-ADD CONSTRAINT CK_CodigoPostal
-CHECK (CodigoPostal BETWEEN 1 AND 99999);
+ADD CONSTRAINT CK_CodigoPostal_EncargadoRegistro
+CHECK (CodigoPostal BETWEEN 1000 AND 99999);
+COMMENT ON CONSTRAINT CK_CodigoPostal_EncargadoRegistro ON EncargadoRegistro IS 'Restricción CHECK que valida que el Código Postal tenga entre 4 y 5 dígitos.';
+
 
 -- ========
 -- Vendedor 
@@ -275,12 +277,13 @@ ALTER TABLE Vendedor ALTER COLUMN IdPersona SET DEFAULT nextval('vendedor_idpers
 COMMENT ON SEQUENCE vendedor_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla Vendedor.';
 
 ALTER TABLE Vendedor
-DROP CONSTRAINT IF EXISTS CK_CodigoPostal;
+DROP CONSTRAINT IF EXISTS CK_CodigoPostal_Vendedor;
 
 ALTER TABLE Vendedor
-ADD CONSTRAINT CK_CodigoPostal
-CHECK (CodigoPostal BETWEEN 1 AND 99999);
+ADD CONSTRAINT CK_CodigoPostal_Vendedor
+CHECK (CodigoPostal BETWEEN 1000 AND 99999);
 
+COMMENT ON CONSTRAINT CK_CodigoPostal_Vendedor ON Vendedor IS 'Restricción CHECK que valida que el Código Postal tenga entre 4 y 5 dígitos.';
 
 -- ========
 -- Cuidador
@@ -378,11 +381,13 @@ ALTER TABLE Cuidador ALTER COLUMN IdPersona SET DEFAULT nextval('cuidador_idpers
 COMMENT ON SEQUENCE cuidador_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla Cuidador.';
 
 ALTER TABLE Cuidador
-DROP CONSTRAINT IF EXISTS CK_CodigoPostal;
+DROP CONSTRAINT IF EXISTS CK_CodigoPostal_Cuidador;
 
 ALTER TABLE Cuidador
-ADD CONSTRAINT CK_CodigoPostal
-CHECK (CodigoPostal BETWEEN 1 AND 99999);
+ADD CONSTRAINT CK_CodigoPostal_Cuidador
+CHECK (CodigoPostal BETWEEN 1000 AND 99999);
+
+COMMENT ON CONSTRAINT CK_CodigoPostal_Cuidador ON Cuidador IS 'Restricción CHECK que valida que el Código Postal tenga entre 4 y 5 dígitos.';
 
 -- ========
 -- Limpiador 
@@ -486,13 +491,13 @@ COMMENT ON SEQUENCE limpiador_idpersona_seq IS 'Secuencia para generar identific
 
 
 ALTER TABLE Limpiador
-DROP CONSTRAINT IF EXISTS CK_CodigoPostal;
+DROP CONSTRAINT IF EXISTS CK_CodigoPostal_Limpiador;
 
 ALTER TABLE Limpiador
-ADD CONSTRAINT CK_CodigoPostal
-CHECK (CodigoPostal BETWEEN 1 AND 99999);
+ADD CONSTRAINT CK_CodigoPostal_Limpiador
+CHECK (CodigoPostal BETWEEN 1000 AND 99999);
 
-
+COMMENT ON CONSTRAINT CK_CodigoPostal_Limpiador ON Limpiador IS 'Restricción CHECK que valida que el Código Postal tenga entre 4 y 5 dígitos.';
 
 -- ========
 -- Espectador
@@ -910,6 +915,9 @@ ALTER TABLE Alimento ALTER COLUMN Nombre SET NOT NULL;
 ALTER TABLE Alimento ALTER COLUMN Tipo SET NOT NULL;
 ALTER TABLE Alimento ALTER COLUMN Precio SET NOT NULL;
 
+
+ALTER TABLE Alimento ALTER COLUMN Nombre TYPE VARCHAR(100);
+
 ALTER TABLE Alimento ADD CONSTRAINT CK_Precio_Alimento CHECK (Precio > 0);
 ALTER TABLE Alimento ADD CONSTRAINT CK_Nombre_Alimento CHECK (Nombre <> '');
 ALTER TABLE Alimento ADD CONSTRAINT CK_Tipo_Alimento CHECK (Tipo <> '');
@@ -932,6 +940,9 @@ COMMENT ON CONSTRAINT fk_alimento_vendedor ON Alimento IS 'Llave foránea que re
 CREATE SEQUENCE alimento_idalimento_seq OWNED BY Alimento.IdAlimento;
 ALTER TABLE Alimento ALTER COLUMN IdAlimento SET DEFAULT nextval('alimento_idalimento_seq');
 COMMENT ON SEQUENCE alimento_idalimento_seq IS 'Secuencia para generar identificadores únicos para la tabla Alimento.';
+
+ALTER TABLE Alimento
+ALTER COLUMN FechaDeCaducidad DROP NOT NULL;
 
 -- ======== 
 -- ComprarEncargadoRegistro 

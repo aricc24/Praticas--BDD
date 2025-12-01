@@ -1,6 +1,12 @@
 -- July
 -- Evento
-insert into Evento (edicion, fecha) values (1, '2025-11-02');
+insert into Evento (edicion, fecha) values (1, '2023-04-10');
+insert into Evento (edicion, fecha) values (2, '2023-07-14');
+insert into Evento (edicion, fecha) values (3, '2024-05-11');
+insert into Evento (edicion, fecha) values (4, '2024-11-02');
+insert into Evento (edicion, fecha) values (5, '2025-02-02');
+insert into Evento (edicion, fecha) values (6, '2025-12-02');
+
 
 -- PARTICIPANTE UNAM
 insert into ParticipanteUNAM (numerodecuenta, nombre, apellidomaterno, apellidopaterno, fechanacimiento, sexo, carrera, facultad) values (270610665, 'Wendall', 'Yanele', 'Flowitt', '1991-03-24', 'M', 'Farmacia', 'Facultad de Economía');
