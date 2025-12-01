@@ -1,3 +1,448 @@
+
+/**
+* Función para validar concordancia entre carrera y facultad de ParticipanteUNAM
+*/
+CREATE OR REPLACE FUNCTION validar_carrera_facultad()
+RETURNS TRIGGER AS $$
+DECLARE
+    fac TEXT;
+    car TEXT;
+    carreras_validas TEXT[];
+BEGIN
+    -- Normalización
+    fac := lower(quitar_acentos(NEW.Facultad));
+    car := lower(quitar_acentos(NEW.Carrera));
+
+    CASE fac
+
+        -- =====================================================
+        -- FACULTAD DE ARQUITECTURA
+        -- =====================================================
+        WHEN 'facultad de arquitectura' THEN
+            carreras_validas := ARRAY[
+                'arquitectura',
+                'arquitectura de paisaje',
+                'diseno industrial',
+                'urbanismo'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ARTES Y DISEÑO
+        -- =====================================================
+        WHEN 'facultad de artes y diseno' THEN
+            carreras_validas := ARRAY[
+                'arte y diseno',
+                'artes visuales',
+                'diseno y comunicacion visual'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE CIENCIAS
+        -- =====================================================
+        WHEN 'facultad de ciencias' THEN
+            carreras_validas := ARRAY[
+                'actuaria', 'biologia', 'ciencias de la computacion',
+                'fisica', 'fisica biomedica', 'matematicas',
+                'matematicas aplicadas'
+            ];
+
+         -- =====================================================
+        -- FACULTAD DE CIENCIAS POLÍTICAS Y SOCIALES
+        -- =====================================================
+        WHEN 'facultad de ciencias politicas y sociales' THEN
+            carreras_validas := ARRAY[
+                'antropologia',
+                'sociologia',
+                'ciencias de la comunicacion',
+                'relaciones internacionales'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE CONTADURÍA Y ADMINISTRACIÓN
+        -- =====================================================
+        WHEN 'facultad de contaduria y administracion' THEN
+            carreras_validas := ARRAY[
+                'administracion',
+                'contaduria',
+                'informatica',
+                'negocios internacionales'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE DERECHO
+        -- =====================================================
+        WHEN 'facultad de derecho' THEN
+            carreras_validas := ARRAY[
+                'derecho'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ECONOMÍA
+        -- =====================================================
+        WHEN 'facultad de economia' THEN
+            carreras_validas := ARRAY[
+                'economia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ENFERMERÍA Y OBSTETRICIA
+        -- =====================================================
+        WHEN 'facultad de enfermeria y obstetricia' THEN
+            carreras_validas := ARRAY[
+                'enfermeria',
+                'enfermeria y obstetricia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ESTUDIOS SUPERIORES ACATLÁN
+        -- =====================================================
+        WHEN 'facultad de estudios superiores acatlan' THEN
+            carreras_validas := ARRAY[
+                'actuaria',
+                'arquitectura',
+                'ciencias politicas y administracion publica',
+                'comunicacion',
+                'derecho',
+                'diseno grafico',
+                'economia',
+                'ensenanza de espanol como lengua extranjera',
+                'ensenanza de ingles como lengua extranjera',
+                'filosofia',
+                'historia',
+                'ingenieria civil',
+                'lengua y literaturas hispanicas',
+                'matematicas aplicadas y computacion',
+                'pedagogia',
+                'relaciones internacionales',
+                'sociologia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ESTUDIOS SUPERIORES ARAGÓN
+        -- =====================================================
+        WHEN 'facultad de estudios superiores aragon' THEN
+            carreras_validas := ARRAY[
+                'arquitectura',
+                'comunicacion y periodismo',
+                'derecho',
+                'diseno industrial',
+                'economia',
+                'ingenieria civil',
+                'ingenieria electrica electronica',
+                'ingenieria en computacion',
+                'ingenieria mecanica',
+                'ingenieria industrial',
+                'planificacion para el desarrollo agropecuario',
+                'pedagogia',
+                'relaciones internacionales',
+                'sociologia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ESTUDIOS SUPERIORES CUAUTITLÁN
+        -- =====================================================
+        WHEN 'facultad de estudios superiores cuautitlan' THEN
+            carreras_validas := ARRAY[
+                'administracion',
+                'bioquimica diagnostica',
+                'contaduria',
+                'diseno y comunicacion visual',
+                'farmacia',
+                'informatica',
+                'ingenieria agricola',
+                'ingenieria en alimentos',
+                'ingenieria en telecomunicaciones sistemas y electronica',
+                'ingenieria industrial',
+                'ingenieria mecanica electrica',
+                'ingenieria quimica',
+                'medicina veterinaria y zootecnia',
+                'quimica',
+                'quimica industrial',
+                'tecnologia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ESTUDIOS SUPERIORES IZTACALA
+        -- =====================================================
+        WHEN 'facultad de estudios superiores iztacala' THEN
+            carreras_validas := ARRAY[
+                'biologia',
+                'cirujano dentista',
+                'ecologia',
+                'enfermeria',
+                'medico cirujano',
+                'optometria',
+                'psicologia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ESTUDIOS SUPERIORES ZARAGOZA
+        -- =====================================================
+        WHEN 'facultad de estudios superiores zaragoza' THEN
+            carreras_validas := ARRAY[
+                'biologia',
+                'cirujano dentista',
+                'desarrollo comunitario para el envejecimiento',
+                'enfermeria',
+                'ingenieria quimica',
+                'medico cirujano',
+                'nutriologia',
+                'psicologia',
+                'quimica farmaceutico biologica'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE FILOSOFÍA Y LETRAS
+        -- =====================================================
+
+        WHEN 'facultad de filosofia y letras' THEN
+            carreras_validas := ARRAY[
+                'administracion de archivos y gestion documental',
+                'bibliotecologia y estudios de la informacion',
+                'desarrollo y gestion interculturales',
+                'estudios latinoamericanos',
+                'filosofia',
+                'geografia',
+                'historia',
+                'lengua y literaturas hispanicas',
+                'lengua y literaturas modernas',
+                'letras clasicas',
+                'literatura dramatica y teatro',
+                'pedagogia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE INGENIERÍA
+        -- =====================================================
+
+        WHEN 'facultad de ingenieria' THEN
+            carreras_validas := ARRAY[
+                'ingenieria aeroespacial',
+                'ingenieria ambiental',
+                'ingenieria civil',
+                'ingenieria de minas y metalurgia',
+                'ingenieria electrica electronica',
+                'ingenieria en computacion',
+                'ingenieria en sistemas biomedicos',
+                'ingenieria en telecomunicaciones',
+                'ingenieria geofisica',
+                'ingenieria geologica',
+                'ingenieria geometrica',
+                'ingenieria industrial',
+                'ingenieria mecanica',
+                'ingenieria mecatronica',
+                'ingenieria petrolera'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE MEDICINA
+        -- =====================================================
+
+        WHEN 'facultad de medicina' THEN
+            carreras_validas := ARRAY[
+                'ciencia de la nutricion humana',
+                'fisioterapia',
+                'investigacion biomedica basica',
+                'medico cirujano',
+                'neurociencias'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE MEDICINA VETERINARIA Y ZOOTECNIA
+        -- =====================================================
+        WHEN 'facultad de medicina veterinaria y zootecnia' THEN
+            carreras_validas := ARRAY[
+                'medicina veterinaria y zootecnia'
+            ];
+
+        WHEN 'facultad de musica' THEN
+            carreras_validas := ARRAY[
+                'etnomusicologia',
+                'musica - canto',
+                'musica - composicion',
+                'musica - educacion musical',
+                'musica - instrumentista',
+                'musica - piano'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ODONTOLOGÍA
+        -- =====================================================
+
+        WHEN 'facultad de odontologia' THEN
+            carreras_validas := ARRAY[
+                'cirujano dentista'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE PSICOLOGÍA
+        -- =====================================================
+
+        WHEN 'facultad de psicologia' THEN
+            carreras_validas := ARRAY[
+                'psicologia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE QUÍMICA
+        -- =====================================================
+
+        WHEN 'facultad de quimica' THEN
+            carreras_validas := ARRAY[
+                'ingenieria quimica',
+                'ingenieria quimica metalurgica',
+                'quimica',
+                'quimica de alimentos',
+                'quimica e ingenieria en materiales',
+                'quimica farmaceutico biologica'
+            ];
+
+        -- =====================================================
+        -- ESCUELA NACIONAL DE ESTUDIOS SUPERIORES UNIDAD JURIQUILLA
+        -- =====================================================
+        WHEN 'escuela nacional de estudios superiores unidad juriquilla' THEN
+            carreras_validas := ARRAY[
+                'ciencias de la tierra',
+                'ciencias genomicas',
+                'ingenieria aeroespacial',
+                'ingenieria en energias renovables',
+                'matematicas para el desarrollo',
+                'negocios internacionales',
+                'neurociencias',
+                'ortesis y protesis',
+                'tecnologia'
+            ];
+
+        -- =====================================================
+        -- ESCUELA NACIONAL DE ESTUDIOS SUPERIORES UNIDAD LEON
+        -- =====================================================
+        WHEN 'escuela nacional de estudios superiores unidad leon' THEN
+            carreras_validas := ARRAY[
+                'administracion agropecuaria',
+                'ciencias agrogenomicas',
+                'desarrollo territorial',
+                'desarrollo y gestion interculturales',
+                'economia industrial',
+                'fisioterapia',
+                'odontologia',
+                'optometria',
+                'traduccion',
+                'turismo y desarrollo sostenible'
+            ];
+
+        -- =====================================================
+        -- ESCUELA NACIONAL DE ESTUDIOS SUPERIORES UNIDAD MERIDA
+        -- =====================================================
+        WHEN 'escuela nacional de estudios superiores unidad merida' THEN
+            carreras_validas := ARRAY[
+                'ciencias ambientales',
+                'ciencias de la tierra',
+                'desarrollo y gestion interculturales',
+                'ecologia',
+                'geografia aplicada',
+                'manejo sustentable de zonas costeras',
+                'sociologia aplicada'
+            ];
+
+        -- =====================================================
+        -- ESCUELA NACIONAL DE ESTUDIOS SUPERIORES UNIDAD MORELIA
+        -- =====================================================
+        WHEN 'escuela nacional de estudios superiores unidad morelia' THEN
+            carreras_validas := ARRAY[
+                'administracion de archivos y gestion documental',
+                'arte y diseno',
+                'ciencia de materiales sustentables',
+                'ciencias agroforestales',
+                'ciencias ambientales',
+                'ecologia',
+                'estudios sociales y gestion local',
+                'geociencias',
+                'geohistoria',
+                'historia del arte',
+                'literatura intercultural',
+                'musica y tecnologia artistica',
+                'tecnologias para la informacion en ciencias'
+            ];
+
+        -- =====================================================
+        -- ESCUELA NACIONAL DE LENGUAS LINGUISTICA Y TRADUCCION
+        -- =====================================================
+        WHEN 'escuela nacional de lenguas linguistica y traduccion' THEN
+            carreras_validas := ARRAY[
+                'linguistica aplicada',
+                'traduccion'
+            ];
+
+        -- =====================================================
+        -- ESCUELA NACIONAL DE TRABAJO SOCIAL
+        -- =====================================================
+        WHEN 'escuela nacional de trabajo social' THEN
+            carreras_validas := ARRAY[
+                'trabajo social'
+            ];
+
+        -- =====================================================
+        -- CENTRO DE CIENCIAS GENOMICAS
+        -- =====================================================
+        WHEN 'centro de ciencias genomicas' THEN
+            carreras_validas := ARRAY[
+                'ciencias genomicas'
+            ];
+
+        -- =====================================================
+        -- CENTRO DE NANOCIENCIAS Y NANOTECNOLOGIA
+        -- =====================================================
+        WHEN 'centro de nanociencias y nanotecnologia' THEN
+            carreras_validas := ARRAY[
+                'nanotecnologia'
+            ];
+
+        -- =====================================================
+        -- CENTRO UNIVERSITARIO DE TEATRO
+        -- =====================================================
+        WHEN 'centro universitario de teatro' THEN
+            carreras_validas := ARRAY[
+                'teatro y actuacion'
+            ];
+
+        -- =====================================================
+        -- INSTITUTO DE ENERGIAS RENOVABLES
+        -- =====================================================
+        WHEN 'instituto de energias renovables' THEN
+            carreras_validas := ARRAY[
+                'ingenieria en energias renovables'
+            ];
+
+        -- =====================================================
+        -- INSTITUTO DE INVESTIGACIONES EN MATEMATICAS APLICADAS Y EN SISTEMAS
+        -- =====================================================
+        WHEN 'instituto de investigaciones en matematicas aplicadas y en sistemas' THEN
+            carreras_validas := ARRAY[
+                'ciencia de datos'
+            ];
+
+        ELSE
+            RETURN NEW;
+    END CASE;
+
+    -- Validación
+    IF car NOT IN (SELECT unnest(carreras_validas)) THEN
+        RAISE EXCEPTION
+        'La carrera "%" no pertenece a la facultad "%".',
+        NEW.Carrera, NEW.Facultad;
+    END IF;
+
+    RETURN NEW;
+
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trg_validar_carrera_facultad
+BEFORE INSERT OR UPDATE ON ParticipanteUNAM
+FOR EACH ROW
+EXECUTE FUNCTION validar_carrera_facultad();
+
+
 /**
 * Función para crear torneos automáticamente al insertar un nuevo evento.
 */
