@@ -1,3 +1,448 @@
+
+/**
+* Función para validar concordancia entre carrera y facultad de ParticipanteUNAM
+*/
+CREATE OR REPLACE FUNCTION validar_carrera_facultad()
+RETURNS TRIGGER AS $$
+DECLARE
+    fac TEXT;
+    car TEXT;
+    carreras_validas TEXT[];
+BEGIN
+    -- Normalización
+    fac := lower(quitar_acentos(NEW.Facultad));
+    car := lower(quitar_acentos(NEW.Carrera));
+
+    CASE fac
+
+        -- =====================================================
+        -- FACULTAD DE ARQUITECTURA
+        -- =====================================================
+        WHEN 'facultad de arquitectura' THEN
+            carreras_validas := ARRAY[
+                'arquitectura',
+                'arquitectura de paisaje',
+                'diseno industrial',
+                'urbanismo'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ARTES Y DISEÑO
+        -- =====================================================
+        WHEN 'facultad de artes y diseno' THEN
+            carreras_validas := ARRAY[
+                'arte y diseno',
+                'artes visuales',
+                'diseno y comunicacion visual'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE CIENCIAS
+        -- =====================================================
+        WHEN 'facultad de ciencias' THEN
+            carreras_validas := ARRAY[
+                'actuaria', 'biologia', 'ciencias de la computacion',
+                'fisica', 'fisica biomedica', 'matematicas',
+                'matematicas aplicadas'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE CIENCIAS POLÍTICAS Y SOCIALES
+        -- =====================================================
+        WHEN 'facultad de ciencias politicas y sociales' THEN
+            carreras_validas := ARRAY[
+                'antropologia',
+                'sociologia',
+                'ciencias de la comunicacion',
+                'relaciones internacionales'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE CONTADURÍA Y ADMINISTRACIÓN
+        -- =====================================================
+        WHEN 'facultad de contaduria y administracion' THEN
+            carreras_validas := ARRAY[
+                'administracion',
+                'contaduria',
+                'informatica',
+                'negocios internacionales'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE DERECHO
+        -- =====================================================
+        WHEN 'facultad de derecho' THEN
+            carreras_validas := ARRAY[
+                'derecho'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ECONOMÍA
+        -- =====================================================
+        WHEN 'facultad de economia' THEN
+            carreras_validas := ARRAY[
+                'economia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ENFERMERÍA Y OBSTETRICIA
+        -- =====================================================
+        WHEN 'facultad de enfermeria y obstetricia' THEN
+            carreras_validas := ARRAY[
+                'enfermeria',
+                'enfermeria y obstetricia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ESTUDIOS SUPERIORES ACATLÁN
+        -- =====================================================
+        WHEN 'facultad de estudios superiores acatlan' THEN
+            carreras_validas := ARRAY[
+                'actuaria',
+                'arquitectura',
+                'ciencias politicas y administracion publica',
+                'comunicacion',
+                'derecho',
+                'diseno grafico',
+                'economia',
+                'ensenanza de espanol como lengua extranjera',
+                'ensenanza de ingles como lengua extranjera',
+                'filosofia',
+                'historia',
+                'ingenieria civil',
+                'lengua y literaturas hispanicas',
+                'matematicas aplicadas y computacion',
+                'pedagogia',
+                'relaciones internacionales',
+                'sociologia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ESTUDIOS SUPERIORES ARAGÓN
+        -- =====================================================
+        WHEN 'facultad de estudios superiores aragon' THEN
+            carreras_validas := ARRAY[
+                'arquitectura',
+                'comunicacion y periodismo',
+                'derecho',
+                'diseno industrial',
+                'economia',
+                'ingenieria civil',
+                'ingenieria electrica electronica',
+                'ingenieria en computacion',
+                'ingenieria mecanica',
+                'ingenieria industrial',
+                'planificacion para el desarrollo agropecuario',
+                'pedagogia',
+                'relaciones internacionales',
+                'sociologia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ESTUDIOS SUPERIORES CUAUTITLÁN
+        -- =====================================================
+        WHEN 'facultad de estudios superiores cuautitlan' THEN
+            carreras_validas := ARRAY[
+                'administracion',
+                'bioquimica diagnostica',
+                'contaduria',
+                'diseno y comunicacion visual',
+                'farmacia',
+                'informatica',
+                'ingenieria agricola',
+                'ingenieria en alimentos',
+                'ingenieria en telecomunicaciones sistemas y electronica',
+                'ingenieria industrial',
+                'ingenieria mecanica electrica',
+                'ingenieria quimica',
+                'medicina veterinaria y zootecnia',
+                'quimica',
+                'quimica industrial',
+                'tecnologia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ESTUDIOS SUPERIORES IZTACALA
+        -- =====================================================
+        WHEN 'facultad de estudios superiores iztacala' THEN
+            carreras_validas := ARRAY[
+                'biologia',
+                'cirujano dentista',
+                'ecologia',
+                'enfermeria',
+                'medico cirujano',
+                'optometria',
+                'psicologia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ESTUDIOS SUPERIORES ZARAGOZA
+        -- =====================================================
+        WHEN 'facultad de estudios superiores zaragoza' THEN
+            carreras_validas := ARRAY[
+                'biologia',
+                'cirujano dentista',
+                'desarrollo comunitario para el envejecimiento',
+                'enfermeria',
+                'ingenieria quimica',
+                'medico cirujano',
+                'nutriologia',
+                'psicologia',
+                'quimica farmaceutico biologica'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE FILOSOFÍA Y LETRAS
+        -- =====================================================
+
+        WHEN 'facultad de filosofia y letras' THEN
+            carreras_validas := ARRAY[
+                'administracion de archivos y gestion documental',
+                'bibliotecologia y estudios de la informacion',
+                'desarrollo y gestion interculturales',
+                'estudios latinoamericanos',
+                'filosofia',
+                'geografia',
+                'historia',
+                'lengua y literaturas hispanicas',
+                'lengua y literaturas modernas',
+                'letras clasicas',
+                'literatura dramatica y teatro',
+                'pedagogia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE INGENIERÍA
+        -- =====================================================
+
+        WHEN 'facultad de ingenieria' THEN
+            carreras_validas := ARRAY[
+                'ingenieria aeroespacial',
+                'ingenieria ambiental',
+                'ingenieria civil',
+                'ingenieria de minas y metalurgia',
+                'ingenieria electrica electronica',
+                'ingenieria en computacion',
+                'ingenieria en sistemas biomedicos',
+                'ingenieria en telecomunicaciones',
+                'ingenieria geofisica',
+                'ingenieria geologica',
+                'ingenieria geometrica',
+                'ingenieria industrial',
+                'ingenieria mecanica',
+                'ingenieria mecatronica',
+                'ingenieria petrolera'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE MEDICINA
+        -- =====================================================
+
+        WHEN 'facultad de medicina' THEN
+            carreras_validas := ARRAY[
+                'ciencia de la nutricion humana',
+                'fisioterapia',
+                'investigacion biomedica basica',
+                'medico cirujano',
+                'neurociencias'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE MEDICINA VETERINARIA Y ZOOTECNIA
+        -- =====================================================
+        WHEN 'facultad de medicina veterinaria y zootecnia' THEN
+            carreras_validas := ARRAY[
+                'medicina veterinaria y zootecnia'
+            ];
+
+        WHEN 'facultad de musica' THEN
+            carreras_validas := ARRAY[
+                'etnomusicologia',
+                'musica - canto',
+                'musica - composicion',
+                'musica - educacion musical',
+                'musica - instrumentista',
+                'musica - piano'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE ODONTOLOGÍA
+        -- =====================================================
+
+        WHEN 'facultad de odontologia' THEN
+            carreras_validas := ARRAY[
+                'cirujano dentista'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE PSICOLOGÍA
+        -- =====================================================
+
+        WHEN 'facultad de psicologia' THEN
+            carreras_validas := ARRAY[
+                'psicologia'
+            ];
+
+        -- =====================================================
+        -- FACULTAD DE QUÍMICA
+        -- =====================================================
+
+        WHEN 'facultad de quimica' THEN
+            carreras_validas := ARRAY[
+                'ingenieria quimica',
+                'ingenieria quimica metalurgica',
+                'quimica',
+                'quimica de alimentos',
+                'quimica e ingenieria en materiales',
+                'quimica farmaceutico biologica'
+            ];
+
+        -- =====================================================
+        -- ESCUELA NACIONAL DE ESTUDIOS SUPERIORES UNIDAD JURIQUILLA
+        -- =====================================================
+        WHEN 'escuela nacional de estudios superiores unidad juriquilla' THEN
+            carreras_validas := ARRAY[
+                'ciencias de la tierra',
+                'ciencias genomicas',
+                'ingenieria aeroespacial',
+                'ingenieria en energias renovables',
+                'matematicas para el desarrollo',
+                'negocios internacionales',
+                'neurociencias',
+                'ortesis y protesis',
+                'tecnologia'
+            ];
+
+        -- =====================================================
+        -- ESCUELA NACIONAL DE ESTUDIOS SUPERIORES UNIDAD LEON
+        -- =====================================================
+        WHEN 'escuela nacional de estudios superiores unidad leon' THEN
+            carreras_validas := ARRAY[
+                'administracion agropecuaria',
+                'ciencias agrogenomicas',
+                'desarrollo territorial',
+                'desarrollo y gestion interculturales',
+                'economia industrial',
+                'fisioterapia',
+                'odontologia',
+                'optometria',
+                'traduccion',
+                'turismo y desarrollo sostenible'
+            ];
+
+        -- =====================================================
+        -- ESCUELA NACIONAL DE ESTUDIOS SUPERIORES UNIDAD MERIDA
+        -- =====================================================
+        WHEN 'escuela nacional de estudios superiores unidad merida' THEN
+            carreras_validas := ARRAY[
+                'ciencias ambientales',
+                'ciencias de la tierra',
+                'desarrollo y gestion interculturales',
+                'ecologia',
+                'geografia aplicada',
+                'manejo sustentable de zonas costeras',
+                'sociologia aplicada'
+            ];
+
+        -- =====================================================
+        -- ESCUELA NACIONAL DE ESTUDIOS SUPERIORES UNIDAD MORELIA
+        -- =====================================================
+        WHEN 'escuela nacional de estudios superiores unidad morelia' THEN
+            carreras_validas := ARRAY[
+                'administracion de archivos y gestion documental',
+                'arte y diseno',
+                'ciencia de materiales sustentables',
+                'ciencias agroforestales',
+                'ciencias ambientales',
+                'ecologia',
+                'estudios sociales y gestion local',
+                'geociencias',
+                'geohistoria',
+                'historia del arte',
+                'literatura intercultural',
+                'musica y tecnologia artistica',
+                'tecnologias para la informacion en ciencias'
+            ];
+
+        -- =====================================================
+        -- ESCUELA NACIONAL DE LENGUAS LINGUISTICA Y TRADUCCION
+        -- =====================================================
+        WHEN 'escuela nacional de lenguas linguistica y traduccion' THEN
+            carreras_validas := ARRAY[
+                'linguistica aplicada',
+                'traduccion'
+            ];
+
+        -- =====================================================
+        -- ESCUELA NACIONAL DE TRABAJO SOCIAL
+        -- =====================================================
+        WHEN 'escuela nacional de trabajo social' THEN
+            carreras_validas := ARRAY[
+                'trabajo social'
+            ];
+
+        -- =====================================================
+        -- CENTRO DE CIENCIAS GENOMICAS
+        -- =====================================================
+        WHEN 'centro de ciencias genomicas' THEN
+            carreras_validas := ARRAY[
+                'ciencias genomicas'
+            ];
+
+        -- =====================================================
+        -- CENTRO DE NANOCIENCIAS Y NANOTECNOLOGIA
+        -- =====================================================
+        WHEN 'centro de nanociencias y nanotecnologia' THEN
+            carreras_validas := ARRAY[
+                'nanotecnologia'
+            ];
+
+        -- =====================================================
+        -- CENTRO UNIVERSITARIO DE TEATRO
+        -- =====================================================
+        WHEN 'centro universitario de teatro' THEN
+            carreras_validas := ARRAY[
+                'teatro y actuacion'
+            ];
+
+        -- =====================================================
+        -- INSTITUTO DE ENERGIAS RENOVABLES
+        -- =====================================================
+        WHEN 'instituto de energias renovables' THEN
+            carreras_validas := ARRAY[
+                'ingenieria en energias renovables'
+            ];
+
+        -- =====================================================
+        -- INSTITUTO DE INVESTIGACIONES EN MATEMATICAS APLICADAS Y EN SISTEMAS
+        -- =====================================================
+        WHEN 'instituto de investigaciones en matematicas aplicadas y en sistemas' THEN
+            carreras_validas := ARRAY[
+                'ciencia de datos'
+            ];
+
+        ELSE
+            RETURN NEW;
+    END CASE;
+
+    -- Validación
+    IF car NOT IN (SELECT unnest(carreras_validas)) THEN
+        RAISE EXCEPTION
+        'La carrera "%" no pertenece a la facultad "%".',
+        NEW.Carrera, NEW.Facultad;
+    END IF;
+
+    RETURN NEW;
+
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trg_validar_carrera_facultad
+BEFORE INSERT OR UPDATE ON ParticipanteUNAM
+FOR EACH ROW
+EXECUTE FUNCTION validar_carrera_facultad();
+
+
 /**
 * Función para crear torneos automáticamente al insertar un nuevo evento.
 */
@@ -5,13 +450,13 @@ CREATE OR REPLACE FUNCTION crear_torneos_al_insertar_evento()
 RETURNS TRIGGER AS $$
 BEGIN
     INSERT INTO TorneoPelea(Edicion, CantidadAPremiar)
-    VALUES (NEW.edicion, 1500.00);
+    VALUES (NEW.edicion, 5000.00);
 
     INSERT INTO TorneoDistanciaRecorrida(Edicion, CantidadAPremiar)
-    VALUES (NEW.edicion, 1500.00);
+    VALUES (NEW.edicion, 5000.00);
 
     INSERT INTO TorneoCapturaShinys(Edicion, CantidadAPremiar)
-    VALUES (NEW.edicion,1500.00);
+    VALUES (NEW.edicion, 5000.00);
 
     RETURN NEW;
 END;
@@ -19,7 +464,7 @@ $$ LANGUAGE plpgsql;
 /**
 * Trigger para crear torneos al insertar un nuevo evento.
 */
-CREATE TRIGGER trigger_crear_torneos
+CREATE TRIGGER trg_crear_torneos_evento
 AFTER INSERT ON Evento
 FOR EACH ROW
 EXECUTE FUNCTION crear_torneos_al_insertar_evento();
@@ -36,10 +481,10 @@ BEGIN
             SELECT 1
             FROM ParticipanteUNAM P
             WHERE P.Nombre = NEW.Nombre
-              AND P.ApellidoPaterno = NEW.ApellidoPaterno
-              AND P.ApellidoMaterno = NEW.ApellidoMaterno
-              AND P.FechaNacimiento = NEW.FechaNacimiento
-              AND P.Sexo = NEW.Sexo
+                AND P.ApellidoPaterno = NEW.ApellidoPaterno
+                AND P.ApellidoMaterno = NEW.ApellidoMaterno
+                AND P.FechaNacimiento = NEW.FechaNacimiento
+                AND P.Sexo = NEW.Sexo
         ) THEN
             RAISE EXCEPTION 'Esta persona no está registrada como ParticipanteUNAM, por lo que no puede ser jugador.';
         END IF;
@@ -428,3 +873,664 @@ CREATE TRIGGER trg_validar_captura
 BEFORE INSERT ON InscripcionTorneoCaptura
 FOR EACH ROW
 EXECUTE FUNCTION validar_no_pelea_inscripcion();
+
+/**
+* Función para determinar si un producto es perecedero
+* (si su fecha de caducidad es NULL, no es perecedero).
+*/
+CREATE OR REPLACE FUNCTION es_perecedero(fecha_cad DATE)
+RETURNS BOOLEAN AS $$
+BEGIN
+    RETURN fecha_cad IS NULL;
+END;
+$$ LANGUAGE plpgsql;
+
+/**
+* Función para calcular el precio con IVA incluido (16%) de un producto.
+*/
+CREATE OR REPLACE FUNCTION precio_con_iva(precio REAL)
+RETURNS REAL AS $$
+BEGIN
+    RETURN precio * 1.16;
+END;
+$$ LANGUAGE plpgsql;
+
+/**
+* Función para verificar que la persona que compra un alimento
+* esté inscrita en la misma edición que el vendedor al que pertenece el alimento.
+*/
+CREATE OR REPLACE FUNCTION verificar_compra_alimento()
+RETURNS TRIGGER AS $$
+DECLARE
+    v_edicion INTEGER;
+BEGIN
+    SELECT Edicion INTO v_edicion
+    FROM TrabajarVendedor
+    WHERE IdPersona = (SELECT IdPersona FROM Alimento WHERE IdAlimento = NEW.IdAlimento);
+
+    IF NOT FOUND THEN
+        RAISE EXCEPTION 'El alimento % no pertenece a un vendedor trabajando en alguna edición', NEW.IdAlimento;
+    END IF;
+
+    IF TG_TABLE_NAME = 'comprarcuidador' THEN
+        IF NOT EXISTS (
+            SELECT 1
+            FROM TrabajarCuidador
+            WHERE IdPersona = NEW.IdPersona
+                AND Edicion = v_edicion
+        ) THEN
+            RAISE EXCEPTION 'Cuidador % no trabaja en la edición % y no puede comprar este alimento', NEW.IdPersona, v_edicion;
+        END IF;
+
+    ELSIF TG_TABLE_NAME = 'comprarlimpiador' THEN
+        IF NOT EXISTS (
+            SELECT 1
+            FROM TrabajarLimpiador
+            WHERE IdPersona = NEW.IdPersona
+                AND Edicion = v_edicion
+        ) THEN
+            RAISE EXCEPTION 'Limpiador % no trabaja en la edición % y no puede comprar este alimento', NEW.IdPersona, v_edicion;
+        END IF;
+
+    ELSIF TG_TABLE_NAME = 'comprarencargadoregistro' THEN
+        IF NOT EXISTS (
+            SELECT 1
+            FROM TrabajarEncargadoRegistro
+            WHERE IdPersona = NEW.IdPersona
+                AND Edicion = v_edicion
+        ) THEN
+            RAISE EXCEPTION 'Encargado % no trabaja en la edición % y no puede comprar este alimento', NEW.IdPersona, v_edicion;
+        END IF;
+
+    ELSIF TG_TABLE_NAME = 'comprarparticipanteunam' THEN
+        IF NOT EXISTS (
+            SELECT 1
+            FROM ParticipanteInscribirEvento
+            WHERE IdPersona = NEW.IdPersona
+                AND Edicion = v_edicion
+        ) THEN
+            RAISE EXCEPTION 'Participante % no inscrito en la edición % y no puede comprar este alimento', NEW.IdPersona, v_edicion;
+        END IF;
+
+    ELSIF TG_TABLE_NAME = 'comprarespectador' THEN
+        IF NOT EXISTS (
+            SELECT 1
+            FROM Asistir
+            WHERE IdPersona = NEW.IdPersona
+                AND Edicion = v_edicion
+        ) THEN
+            RAISE EXCEPTION 'Espectador % no inscrito en la edición % y no puede comprar este alimento', NEW.IdPersona, v_edicion;
+        END IF;
+
+    ELSIF TG_TABLE_NAME = 'comprarvendedor' THEN
+        IF NOT EXISTS (
+            SELECT 1
+            FROM TrabajarVendedor
+            WHERE IdPersona = NEW.IdPersona
+                AND Edicion = v_edicion
+        ) THEN
+            RAISE EXCEPTION 'Vendedor % no trabaja en la edición % y no puede comprar este alimento', NEW.IdPersona, v_edicion;
+        END IF;
+
+    ELSE
+        RAISE EXCEPTION 'Tabla de compras % no reconocida', TG_TABLE_NAME;
+    END IF;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+/**
+* Trigger para verificar que el cuidador esté inscrito en la edición
+* correspondiente al alimento que intenta comprar.
+*/
+CREATE TRIGGER trg_comprar_cuidador
+BEFORE INSERT ON ComprarCuidador
+FOR EACH ROW
+EXECUTE FUNCTION verificar_compra_alimento();
+/*** Trigger para verificar que el limpiador esté inscrito en la edición
+* correspondiente al alimento que intenta comprar.
+*/
+CREATE TRIGGER trg_comprar_limpiador
+BEFORE INSERT ON ComprarLimpiador
+FOR EACH ROW
+EXECUTE FUNCTION verificar_compra_alimento();
+/**
+* Trigger para verificar que el encargado de registro esté inscrito en la edición
+* correspondiente al alimento que intenta comprar.
+*/
+CREATE TRIGGER trg_comprar_encargado
+BEFORE INSERT ON ComprarEncargadoRegistro
+FOR EACH ROW
+EXECUTE FUNCTION verificar_compra_alimento();
+/**
+* Trigger para verificar que el participante UNAM esté inscrito en la edición
+* correspondiente al alimento que intenta comprar.
+*/
+CREATE TRIGGER trg_comprar_participante
+BEFORE INSERT ON ComprarParticipanteUNAM
+FOR EACH ROW
+EXECUTE FUNCTION verificar_compra_alimento();
+/**
+* Trigger para verificar que el espectador esté inscrito en la edición
+* correspondiente al alimento que intenta comprar.
+*/
+CREATE TRIGGER trg_comprar_espectador
+BEFORE INSERT ON ComprarEspectador
+FOR EACH ROW
+EXECUTE FUNCTION verificar_compra_alimento();
+/**
+* Trigger para verificar que el vendedor esté inscrito en la edición
+* correspondiente al alimento que intenta comprar.
+*/
+CREATE TRIGGER trg_comprar_vendedor
+BEFORE INSERT ON ComprarVendedor
+FOR EACH ROW
+EXECUTE FUNCTION verificar_compra_alimento();
+
+
+/**
+* Función para calcular el total de compras realizadas por una persona
+* en una edición específica, considerando su rol.
+* Valida que la persona tenga el rol indicado en esa edición, y el alimento
+* comprado pertenezca a un vendedor que trabaje en esa edición.
+*/
+CREATE OR REPLACE FUNCTION total_compras_persona(
+    p_idpersona INTEGER,
+    p_rol VARCHAR,
+    p_edicion INTEGER
+)
+RETURNS TABLE (
+    MontoSinIVA REAL,
+    MontoConIVA REAL
+) AS $$
+DECLARE
+    precio_total REAL;
+BEGIN
+    MontoSinIVA := 0;
+    MontoConIVA := 0;
+
+    IF LOWER(p_rol) = 'cuidador' THEN
+        IF NOT EXISTS (
+            SELECT 1 FROM TrabajarCuidador WHERE IdPersona = p_idpersona AND Edicion = p_edicion
+        ) THEN
+            RAISE EXCEPTION 'El cuidador % no está trabajando en la edición %', p_idpersona, p_edicion;
+        END IF;
+
+        FOR precio_total IN
+            SELECT c.Cantidad * a.Precio
+            FROM ComprarCuidador c
+            JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+            JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+            WHERE c.IdPersona = p_idpersona
+                AND tv.Edicion = p_edicion
+        LOOP
+            MontoSinIVA := MontoSinIVA + precio_total;
+            MontoConIVA := MontoConIVA + precio_con_iva(precio_total);
+        END LOOP;
+
+    ELSIF LOWER(p_rol) = 'limpiador' THEN
+        IF NOT EXISTS (
+            SELECT 1 FROM TrabajarLimpiador WHERE IdPersona = p_idpersona AND Edicion = p_edicion
+        ) THEN
+            RAISE EXCEPTION 'El limpiador % no está trabajando en la edición %', p_idpersona, p_edicion;
+        END IF;
+
+        FOR precio_total IN
+            SELECT c.Cantidad * a.Precio
+            FROM ComprarLimpiador c
+            JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+            JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+            WHERE c.IdPersona = p_idpersona
+                AND tv.Edicion = p_edicion
+        LOOP
+            MontoSinIVA := MontoSinIVA + precio_total;
+            MontoConIVA := MontoConIVA + precio_con_iva(precio_total);
+        END LOOP;
+
+    ELSIF LOWER(p_rol) = 'encargadoregistro' THEN
+        IF NOT EXISTS (
+            SELECT 1 FROM TrabajarEncargadoRegistro WHERE IdPersona = p_idpersona AND Edicion = p_edicion
+        ) THEN
+            RAISE EXCEPTION 'El encargado % no está trabajando en la edición %', p_idpersona, p_edicion;
+        END IF;
+
+        FOR precio_total IN
+            SELECT c.Cantidad * a.Precio
+            FROM ComprarEncargadoRegistro c
+            JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+            JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+            WHERE c.IdPersona = p_idpersona
+                AND tv.Edicion = p_edicion
+        LOOP
+            MontoSinIVA := MontoSinIVA + precio_total;
+            MontoConIVA := MontoConIVA + precio_con_iva(precio_total);
+        END LOOP;
+
+    ELSIF LOWER(p_rol) = 'participanteunam' THEN
+        IF NOT EXISTS (
+            SELECT 1 FROM ParticipanteInscribirEvento WHERE IdPersona = p_idpersona AND Edicion = p_edicion
+        ) THEN
+            RAISE EXCEPTION 'El participante % no está inscrito en la edición %', p_idpersona, p_edicion;
+        END IF;
+
+        FOR precio_total IN
+            SELECT c.Cantidad * a.Precio
+            FROM ComprarParticipanteUNAM c
+            JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+            JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+            WHERE c.IdPersona = p_idpersona
+                AND tv.Edicion = p_edicion
+        LOOP
+            MontoSinIVA := MontoSinIVA + precio_total;
+            MontoConIVA := MontoConIVA + precio_con_iva(precio_total);
+        END LOOP;
+
+    ELSIF LOWER(p_rol) = 'espectador' THEN
+        IF NOT EXISTS (
+            SELECT 1 FROM Asistir WHERE IdPersona = p_idpersona AND Edicion = p_edicion
+        ) THEN
+            RAISE EXCEPTION 'El espectador % no está inscrito en la edición %', p_idpersona, p_edicion;
+        END IF;
+
+        FOR precio_total IN
+            SELECT c.Cantidad * a.Precio
+            FROM ComprarEspectador c
+            JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+            JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+            WHERE c.IdPersona = p_idpersona
+                AND tv.Edicion = p_edicion
+        LOOP
+            MontoSinIVA := MontoSinIVA + precio_total;
+            MontoConIVA := MontoConIVA + precio_con_iva(precio_total);
+        END LOOP;
+
+    ELSIF LOWER(p_rol) = 'vendedor' THEN
+        IF NOT EXISTS (
+            SELECT 1 FROM TrabajarVendedor WHERE IdPersona = p_idpersona AND Edicion = p_edicion
+        ) THEN
+            RAISE EXCEPTION 'El vendedor % no está trabajando en la edición %', p_idpersona, p_edicion;
+        END IF;
+
+        FOR precio_total IN
+            SELECT c.Cantidad * a.Precio
+            FROM ComprarVendedor c
+            JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+            JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+            WHERE c.IdPersona = p_idpersona
+                AND tv.Edicion = p_edicion
+        LOOP
+            MontoSinIVA := MontoSinIVA + precio_total;
+            MontoConIVA := MontoConIVA + precio_con_iva(precio_total);
+        END LOOP;
+
+    ELSE
+        RAISE EXCEPTION 'Rol "%" no válido', p_rol;
+    END IF;
+
+    RETURN;
+END;
+$$ LANGUAGE plpgsql;
+
+/**
+* Procedimiento para calcular las ventas totales de un vendedor
+* en una edición específica.
+*/
+CREATE OR REPLACE FUNCTION calcular_ventas_vendedor(
+    p_idvendedor INTEGER,
+    p_edicion INTEGER
+)
+RETURNS REAL
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    total_ventas REAL;
+BEGIN
+    SELECT SUM(c.Cantidad * a.Precio)
+    INTO total_ventas
+    FROM (
+        SELECT IdAlimento, Cantidad FROM ComprarCuidador
+        UNION ALL
+        SELECT IdAlimento, Cantidad FROM ComprarLimpiador
+        UNION ALL
+        SELECT IdAlimento, Cantidad FROM ComprarEncargadoRegistro
+        UNION ALL
+        SELECT IdAlimento, Cantidad FROM ComprarParticipanteUNAM
+        UNION ALL
+        SELECT IdAlimento, Cantidad FROM ComprarEspectador
+        UNION ALL
+        SELECT IdAlimento, Cantidad FROM ComprarVendedor
+    ) c
+    JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+    JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+    WHERE tv.Edicion = p_edicion
+        AND a.IdPersona = p_idvendedor;
+
+    IF total_ventas IS NULL THEN
+        total_ventas := 0;
+    END IF;
+
+    RETURN total_ventas;
+END;
+$$;
+
+/**
+* Función para calcular el salario de un vendedor en una edición específica,
+* considerando el 25% de sus ventas totales.
+*/
+CREATE OR REPLACE FUNCTION salario_vendedor(
+    p_idvendedor INTEGER,
+    p_edicion INTEGER
+)
+RETURNS REAL AS $$
+DECLARE
+    total_ventas REAL;
+BEGIN
+    total_ventas := calcular_ventas_vendedor(p_idvendedor, p_edicion);
+    RETURN total_ventas * 0.25;
+END;
+$$ LANGUAGE plpgsql;
+
+/**
+* Función para contar el número de participantes inscritos por un Encargado de Registro
+* en una edición específica.
+*/
+CREATE OR REPLACE FUNCTION contar_inscritos_encargado(
+    p_idpersona INTEGER,
+    p_edicion INTEGER
+)
+RETURNS INTEGER AS $$
+DECLARE
+    inscritos INTEGER;
+BEGIN
+    SELECT COUNT(*) INTO inscritos
+    FROM EncargadoInscribirParticipante eip
+    JOIN ParticipanteInscribirEvento pie
+        ON eip.IdPersona_participante = pie.IdPersona
+        AND pie.Edicion = p_edicion
+    WHERE eip.IdPersona_encargado = p_idpersona;
+
+    RETURN inscritos;
+END;
+$$ LANGUAGE plpgsql;
+
+/**
+* Función para calcular el salario de un Encargado de Registro
+* en una edición específica, considerando 50 pesos por cada participante inscrito.
+*/
+CREATE OR REPLACE FUNCTION salario_encargado_registro(
+    p_idpersona INTEGER,
+    p_edicion INTEGER
+)
+RETURNS REAL AS $$
+DECLARE
+    inscritos INTEGER;
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1 FROM EncargadoRegistro WHERE IdPersona = p_idpersona
+    ) THEN
+        RAISE EXCEPTION 'Encargado con id % no existe', p_idpersona;
+    END IF;
+    inscritos := contar_inscritos_encargado(p_idpersona, p_edicion);
+    RETURN inscritos * 50.0;
+END;
+$$ LANGUAGE plpgsql;
+
+
+/**
+* Procedimiento para inscribir a un participante en un evento,
+* validando que el encargado trabaje en la edición correspondiente
+* y que el participante no haya sido inscrito previamente.
+*/
+CREATE OR REPLACE PROCEDURE inscribir_participante_evento(
+    p_edicion INTEGER,
+    p_idparticipante INTEGER,
+    p_idencargado INTEGER,
+    p_fecha TIMESTAMPTZ
+)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1 FROM TrabajarEncargadoRegistro
+        WHERE Edicion = p_edicion AND IdPersona = p_idencargado
+    ) THEN
+        RAISE EXCEPTION 'El encargado % no trabaja en la edición %', p_idencargado, p_edicion;
+    END IF;
+
+    IF EXISTS (
+        SELECT 1 FROM EncargadoInscribirParticipante
+        WHERE IdPersona_participante = p_idparticipante
+            AND Edicion = p_edicion
+    ) THEN
+        RAISE EXCEPTION 'El participante % ya fue inscrito por otro registrador en la edición %', p_idparticipante, p_edicion;
+    END IF;
+
+    INSERT INTO ParticipanteInscribirEvento(Edicion, IdPersona, Fecha, Costo)
+    VALUES(p_edicion, p_idparticipante, p_fecha, 250.0);
+
+    INSERT INTO EncargadoInscribirParticipante(IdPersona_encargado, IdPersona_participante, Fecha)
+    VALUES(p_idencargado, p_idparticipante, p_fecha);
+END;
+$$;
+
+/**
+* Función para validar que un participante esté inscrito en el evento general
+* antes de inscribirse en un torneo específico.
+*/
+CREATE OR REPLACE FUNCTION validar_inscripcion_torneo()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1 FROM ParticipanteInscribirEvento
+        WHERE Edicion = NEW.Edicion AND IdPersona = NEW.IdPersona
+    ) THEN
+        RAISE EXCEPTION 'El participante % no está inscrito en el evento general de la edición %', NEW.IdPersona, NEW.Edicion;
+    END IF;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+/**
+* Trigger para validar inscripción en torneo pelea.
+*/
+CREATE TRIGGER trg_validar_inscripcion_torneo
+BEFORE INSERT ON InscripcionTorneoPelea
+FOR EACH ROW
+EXECUTE FUNCTION validar_inscripcion_torneo();
+/**
+* Trigger para validar inscripción en torneo distancia recorrida.
+*/
+CREATE TRIGGER trg_validar_inscripcion_torneo_distancia
+BEFORE INSERT ON InscripcionTorneoDistancia
+FOR EACH ROW
+EXECUTE FUNCTION validar_inscripcion_torneo();
+/**
+* Trigger para validar inscripción en torneo captura de shinys.
+*/
+CREATE TRIGGER trg_validar_inscripcion_torneo_captura
+BEFORE INSERT ON InscripcionTorneoCaptura
+FOR EACH ROW
+EXECUTE FUNCTION validar_inscripcion_torneo();
+
+/**
+* Función para verificar que un participante esté inscrito en el torneo de pelea
+* antes de registrar una pelea en el torneo.
+*/
+CREATE OR REPLACE FUNCTION verificar_inscripcion_pelea()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1
+        FROM InscripcionTorneoPelea i
+        WHERE i.Edicion = NEW.Edicion
+            AND i.IdTorneo = NEW.IdTorneo
+            AND i.IdPersona = NEW.IdPersona
+            AND i.CodigoDeEntrenador = NEW.CodigoDeEntrenador
+    ) THEN
+        RAISE EXCEPTION 'El participante % con código de entrenador % no está inscrito en el torneo pelea % edición %',
+            NEW.IdPersona, NEW.CodigoDeEntrenador, NEW.IdTorneo, NEW.Edicion;
+    END IF;
+
+    RETURN NEW;
+END;
+$$;
+/**
+* Trigger para verificar inscripción en torneo pelea.
+*/
+CREATE TRIGGER trg_verificar_inscripcion_pelea
+BEFORE INSERT ON PeleaTorneo
+FOR EACH ROW
+EXECUTE FUNCTION verificar_inscripcion_pelea();
+
+/**
+* Función para verificar que un participante esté inscrito en el torneo de distancia
+* antes de registrar una distancia recorrida en el torneo.
+*/
+CREATE OR REPLACE FUNCTION verificar_inscripcion_distancia()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1
+        FROM InscripcionTorneoDistancia i
+        WHERE i.Edicion = NEW.Edicion
+            AND i.IdTorneo = NEW.IdTorneo
+            AND i.IdPersona = NEW.IdPersona
+            AND i.CodigoDeEntrenador = NEW.CodigoDeEntrenador
+    ) THEN
+        RAISE EXCEPTION 'El participante % con código de entrenador % no está inscrito en el torneo de distancia % edición %',
+            NEW.IdPersona, NEW.CodigoDeEntrenador, NEW.IdTorneo, NEW.Edicion;
+    END IF;
+
+    RETURN NEW;
+END;
+$$;
+/**
+* Trigger para verificar inscripción en torneo distancia recorrida.
+*/
+CREATE TRIGGER trg_verificar_inscripcion_distancia
+BEFORE INSERT ON DistanciaRecorrida
+FOR EACH ROW
+EXECUTE FUNCTION verificar_inscripcion_distancia();
+
+/**
+* Función para verificar que un participante esté inscrito en el torneo de capturas
+* antes de registrar una captura en el torneo.
+*/
+CREATE OR REPLACE FUNCTION verificar_inscripcion_captura()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1
+        FROM InscripcionTorneoCaptura i
+        WHERE i.Edicion = NEW.Edicion
+            AND i.IdTorneo = NEW.IdTorneo
+            AND i.IdPersona = NEW.IdPersona
+            AND i.CodigoDeEntrenador = NEW.CodigoDeEntrenador
+    ) THEN
+        RAISE EXCEPTION 'El participante % con código de entrenador % no está inscrito en el torneo de capturas % edición %',
+            NEW.IdPersona, NEW.CodigoDeEntrenador, NEW.IdTorneo, NEW.Edicion;
+    END IF;
+
+    RETURN NEW;
+END;
+$$;
+/**
+* Trigger para verificar inscripción en torneo captura de shinys.
+*/
+CREATE TRIGGER trg_verificar_inscripcion_captura
+BEFORE INSERT ON Registrar
+FOR EACH ROW
+EXECUTE FUNCTION verificar_inscripcion_captura();
+
+/**
+* Función para calcular la ganancia neta de un evento en una edición específica.
+* Ganancia = ventas totales + ingresos por inscripciones - salarios - premios
+*/
+CREATE OR REPLACE FUNCTION ganancia_evento(p_edicion INTEGER)
+RETURNS REAL AS $$
+DECLARE
+    total_ventas REAL := 0;
+    ingresos_inscripcion REAL := 0;
+    salarios_encargados REAL := 0;
+    salarios_vendedores REAL := 0;
+    salarios_cuidador REAL := 0;
+    salarios_limpiador REAL := 0;
+    premios_totales REAL := 0;
+BEGIN
+    -- 1. Total de ventas 
+    SELECT COALESCE(SUM(c.Cantidad * a.Precio),0)
+    INTO total_ventas
+    FROM (
+        SELECT * FROM ComprarCuidador
+        UNION ALL
+        SELECT * FROM ComprarLimpiador
+        UNION ALL
+        SELECT * FROM ComprarEncargadoRegistro
+        UNION ALL
+        SELECT * FROM ComprarParticipanteUNAM
+        UNION ALL
+        SELECT * FROM ComprarEspectador
+        UNION ALL
+        SELECT * FROM ComprarVendedor
+    ) c
+    JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+    JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+    WHERE tv.Edicion = p_edicion;
+
+    -- 2. Ingresos por inscripciones
+    SELECT COALESCE(SUM(Costo),0)
+    INTO ingresos_inscripcion
+    FROM ParticipanteInscribirEvento
+    WHERE Edicion = p_edicion;
+
+    -- 3. Salarios de vendedores
+    SELECT COALESCE(SUM(salario_vendedor(v.IdPersona, p_edicion)),0)
+    INTO salarios_vendedores
+    FROM Vendedor v
+    JOIN TrabajarVendedor tv ON tv.IdPersona = v.IdPersona
+    WHERE tv.Edicion = p_edicion;
+
+    -- 4. Salarios de encargados
+    SELECT COALESCE(SUM(salario_encargado_registro(er.IdPersona, p_edicion)),0)
+    INTO salarios_encargados
+    FROM EncargadoRegistro er
+    JOIN TrabajarEncargadoRegistro ter ON ter.IdPersona = er.IdPersona
+    WHERE ter.Edicion = p_edicion;
+
+    -- 5. Salarios de cuidadores 
+    SELECT COALESCE(SUM(cu.Salario),0)
+    INTO salarios_cuidador
+    FROM Cuidador cu
+    JOIN TrabajarCuidador tc ON tc.IdPersona = cu.IdPersona
+    WHERE tc.Edicion = p_edicion;
+
+    -- 6. Salarios de limpiadores 
+    SELECT COALESCE(SUM(li.Salario),0)
+    INTO salarios_limpiador
+    FROM Limpiador li
+    JOIN TrabajarLimpiador tl ON tl.IdPersona = li.IdPersona
+    WHERE tl.Edicion = p_edicion;
+
+    -- 7. Premios totales de torneos
+    SELECT COALESCE(SUM(CantidadAPremiar),0)
+    INTO premios_totales
+    FROM (
+        SELECT CantidadAPremiar FROM TorneoPelea WHERE Edicion = p_edicion
+        UNION ALL
+        SELECT CantidadAPremiar FROM TorneoDistanciaRecorrida WHERE Edicion = p_edicion
+        UNION ALL
+        SELECT CantidadAPremiar FROM TorneoCapturaShinys WHERE Edicion = p_edicion
+    ) t;
+
+    -- Ganancia neta
+    RETURN total_ventas + ingresos_inscripcion
+            - (salarios_vendedores + salarios_encargados + salarios_cuidador + salarios_limpiador + premios_totales);
+END;
+$$ LANGUAGE plpgsql;

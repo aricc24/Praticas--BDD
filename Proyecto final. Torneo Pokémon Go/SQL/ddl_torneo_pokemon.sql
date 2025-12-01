@@ -971,6 +971,7 @@ ALTER TABLE ComprarEncargadoRegistro ALTER COLUMN Cantidad SET NOT NULL;
 
 ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT CK_Cantidad_ComprarEncargadoRegistro CHECK (Cantidad > 0);
 ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT CK_MetodoDePago_ComprarEncargadoRegistro CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
+ALTER TABLE ComprarEncargadoRegistro ADD CONSTRAINT CK_hora_compra CHECK (EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') >= 9 AND EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') < 21);
 
 COMMENT ON TABLE ComprarEncargadoRegistro IS 'Tabla que registra las compras realizadas por los encargados de registro, incluyendo el método de pago y la cantidad adquirida.';
 COMMENT ON COLUMN ComprarEncargadoRegistro.IdPersona IS 'Identificador del encargado de registro que realiza la compra (llave foránea hacia EncargadoRegistro).';
@@ -980,7 +981,7 @@ COMMENT ON COLUMN ComprarEncargadoRegistro.Cantidad IS 'Cantidad de unidades del
 COMMENT ON CONSTRAINT CK_Cantidad_ComprarEncargadoRegistro ON ComprarEncargadoRegistro IS 'Restricción CHECK que valida que la cantidad comprada sea mayor a 0.';
 COMMENT ON CONSTRAINT CK_MetodoDePago_ComprarEncargadoRegistro ON ComprarEncargadoRegistro IS 'Restricción CHECK que valida que el método de pago sea uno de los
     especificados: Tarjeta, Efectivo o Transferencia.';
-
+COMMENT ON CONSTRAINT CK_hora_compra ON ComprarEncargadoRegistro IS 'Restricción CHECK que valida que la compra se realice entre las 9:00 y las 21:00 horas, hora local de Ciudad de México.';
 
 COMMENT ON CONSTRAINT fk_comprar_encargado_registro_encargado ON ComprarEncargadoRegistro IS 'Llave foránea que referencia al encargado de registro comprador, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
 COMMENT ON CONSTRAINT fk_comprar_encargado_registro_alimento ON ComprarEncargadoRegistro IS 'Llave foránea que referencia al alimento adquirido, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
@@ -1005,6 +1006,7 @@ ALTER TABLE ComprarLimpiador ALTER COLUMN Cantidad SET NOT NULL;
 
 ALTER TABLE ComprarLimpiador ADD CONSTRAINT CK_Cantidad_ComprarLimpiador CHECK (Cantidad > 0);
 ALTER TABLE ComprarLimpiador ADD CONSTRAINT CK_MetodoDePago_ComprarLimpiador CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
+ALTER TABLE ComprarLimpiador ADD CONSTRAINT CK_hora_compra CHECK (EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') >= 9 AND EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') < 21);
 
 COMMENT ON TABLE ComprarLimpiador IS 'Tabla que registra las compras realizadas por los limpiadores.';
 COMMENT ON COLUMN ComprarLimpiador.IdPersona IS 'Identificador único de la persona limpiadora que realiza la compra.';
@@ -1013,6 +1015,7 @@ COMMENT ON COLUMN ComprarLimpiador.MetodoDePago IS 'Método de pago utilizado pa
 COMMENT ON COLUMN ComprarLimpiador.Cantidad IS 'Cantidad de alimento comprada.';
 COMMENT ON CONSTRAINT CK_Cantidad_ComprarLimpiador ON ComprarLimpiador IS 'Restricción CHECK que valida que la cantidad comprada sea mayor a 0.';
 COMMENT ON CONSTRAINT CK_MetodoDePago_ComprarLimpiador ON ComprarLimpiador IS 'Restricción CHECK que valida que el método de pago sea uno de los especificados: Tarjeta, Efectivo o Transferencia.';
+COMMENT ON CONSTRAINT CK_hora_compra ON ComprarLimpiador IS 'Restricción CHECK que valida que la compra se realice entre las 9:00 y las 21:00 horas, hora local de Ciudad de México.';
 
 COMMENT ON CONSTRAINT fk_comprar_limpiador_limpiador ON ComprarLimpiador IS 'Restricción referencial que vincula ComprarLimpiador con Limpiador.';
 COMMENT ON CONSTRAINT fk_comprar_limpiador_alimento ON ComprarLimpiador IS 'Restricción referencial que vincula ComprarLimpiador con Alimento.';
@@ -1038,6 +1041,7 @@ ALTER TABLE ComprarCuidador ALTER COLUMN Cantidad SET NOT NULL;
 
 ALTER TABLE ComprarCuidador ADD CONSTRAINT CK_Cantidad_ComprarCuidador CHECK (Cantidad > 0);
 ALTER TABLE ComprarCuidador ADD CONSTRAINT CK_MetodoDePago_ComprarCuidador CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
+ALTER TABLE ComprarCuidador ADD CONSTRAINT CK_hora_compra CHECK (EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') >= 9 AND EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') < 21);
 
 COMMENT ON TABLE ComprarCuidador IS 'Tabla que registra las compras realizadas por los cuidadores.';
 COMMENT ON COLUMN ComprarCuidador.IdPersona IS 'Identificador único de la persona cuidadora que realiza la compra.';
@@ -1048,6 +1052,7 @@ COMMENT ON CONSTRAINT CK_Cantidad_ComprarCuidador ON ComprarCuidador IS 'Restric
 COMMENT ON CONSTRAINT CK_MetodoDePago_ComprarCuidador ON ComprarCuidador IS 'Restricción CHECK que valida que el método de pago sea uno de los especificados: Tarjeta, Efectivo o Transferencia.';
 COMMENT ON CONSTRAINT fk_comprar_cuidador_cuidador ON ComprarCuidador IS 'Restricción referencial que vincula ComprarCuidador con Cuidador.';
 COMMENT ON CONSTRAINT fk_comprar_cuidador_alimento ON ComprarCuidador IS 'Restricción referencial que vincula ComprarCuidador con Alimento.';
+COMMENT ON CONSTRAINT CK_hora_compra ON ComprarCuidador IS 'Restricción CHECK que valida que la compra se realice entre las 9:00 y las 21:00 horas, hora local de Ciudad de México.';
 
 
 -- ========
@@ -1074,6 +1079,7 @@ ALTER TABLE ComprarVendedor ALTER COLUMN Cantidad SET NOT NULL;
 
 ALTER TABLE ComprarVendedor ADD CONSTRAINT CK_Cantidad_ComprarVendedor CHECK (Cantidad > 0);
 ALTER TABLE ComprarVendedor ADD CONSTRAINT CK_MetodoDePago_ComprarVendedor CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));
+ALTER TABLE ComprarVendedor ADD CONSTRAINT CK_hora_compra CHECK (EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') >= 9 AND EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') < 21);
 
 COMMENT ON TABLE ComprarVendedor IS 'Tabla que registra las compras realizadas por los vendedores.';
 COMMENT ON COLUMN ComprarVendedor.IdPersona IS 'Identificador único del vendedor.';
@@ -1082,6 +1088,7 @@ COMMENT ON COLUMN ComprarVendedor.MetodoDePago IS 'Método de pago utilizado par
 COMMENT ON COLUMN ComprarVendedor.Cantidad IS 'Cantidad de alimento comprada.';
 COMMENT ON CONSTRAINT CK_Cantidad_ComprarVendedor ON ComprarVendedor IS 'Restricción CHECK que valida que la cantidad comprada sea mayor a 0.';
 COMMENT ON CONSTRAINT CK_MetodoDePago_ComprarVendedor ON ComprarVendedor IS 'Restricción CHECK que valida que el método de pago sea uno de los especificados: Tarjeta, Efectivo o Transferencia.';
+COMMENT ON CONSTRAINT CK_hora_compra ON ComprarVendedor IS 'Restricción CHECK que valida que la compra se realice entre las 9:00 y las 21:00 horas, hora local de Ciudad de México.';
 COMMENT ON CONSTRAINT fk_comprar_vendedor_vendedor ON ComprarVendedor IS 'Restricción referencial que vincula ComprarVendedor con Vendedor.';
 COMMENT ON CONSTRAINT fk_comprar_vendedor_alimento ON ComprarVendedor IS 'Restricción referencial que vincula ComprarVendedor con Alimento.';
 
@@ -1113,6 +1120,7 @@ ALTER TABLE ComprarEspectador ALTER COLUMN Cantidad SET NOT NULL;
 
 ALTER TABLE ComprarEspectador ADD CONSTRAINT CK_Cantidad_ComprarEspectador CHECK (Cantidad > 0);
 ALTER TABLE ComprarEspectador ADD CONSTRAINT CK_MetodoDePago_ComprarEspectador CHECK (MetodoDePago IN ('Tarjeta', 'Efectivo', 'Transferencia'));    
+ALTER TABLE ComprarEspectador ADD CONSTRAINT CK_hora_compra CHECK (EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') >= 9 AND EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') < 21);
 
 COMMENT ON TABLE ComprarEspectador IS 'Tabla que registra las compras de alimentos realizadas por los espectadores.';
 
@@ -1122,6 +1130,7 @@ COMMENT ON COLUMN ComprarEspectador.MetodoDePago IS 'Método de pago utilizado: 
 COMMENT ON COLUMN ComprarEspectador.Cantidad IS 'Cantidad total del alimento adquirido por el espectador.';
 COMMENT ON CONSTRAINT CK_Cantidad_ComprarEspectador ON ComprarEspectador IS 'Restricción CHECK que valida que la cantidad comprada sea mayor a 0.';
 COMMENT ON CONSTRAINT CK_MetodoDePago_ComprarEspectador ON ComprarEspectador IS 'Restricción CHECK que valida que el método de pago sea uno de los especificados: Tarjeta, Efectivo o Transferencia.';
+COMMENT ON CONSTRAINT CK_hora_compra ON ComprarEspectador IS 'Restricción CHECK que valida que la compra se realice entre las 9:00 y las 21:00 horas, hora local de Ciudad de México.';
 
 COMMENT ON CONSTRAINT FK_Espectador_Comprar ON ComprarEspectador IS 'Llave foránea que relaciona la compra con el espectador correspondiente. No permite eliminar un espectador si tiene compras registradas';
 COMMENT ON CONSTRAINT FK_Alimento_Comprar ON ComprarEspectador IS 'Llave foránea que vincula el alimento con la compra. No permite eliminar un alimento si está asociado a una compra.';
@@ -1148,6 +1157,8 @@ ADD CONSTRAINT FK_Alimento_Comprar_Participante FOREIGN KEY (IdAlimento) REFEREN
 ON DELETE RESTRICT
 ON UPDATE CASCADE;
 
+ALTER TABLE ComprarParticipanteUNAM ADD CONSTRAINT CK_hora_compra CHECK (EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') >= 9 AND EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') < 21);
+
 ALTER TABLE ComprarParticipanteUNAM ALTER COLUMN Cantidad SET NOT NULL;
 ALTER TABLE ComprarParticipanteUNAM ALTER COLUMN MetodoDePago SET NOT NULL;
 ALTER TABLE ComprarParticipanteUNAM ALTER COLUMN IdPersona SET NOT NULL;
@@ -1164,6 +1175,7 @@ COMMENT ON COLUMN ComprarParticipanteUNAM.MetodoDePago IS 'Método de pago utili
 COMMENT ON COLUMN ComprarParticipanteUNAM.Cantidad IS 'Cantidad total de alimento comprada por el participante.';
 COMMENT ON CONSTRAINT CK_Cantidad_ComprarParticipanteUNAM ON ComprarParticipanteUNAM IS 'Restricción CHECK que valida que la cantidad comprada sea mayor a 0.';
 COMMENT ON CONSTRAINT CK_MetodoDePago_ComprarParticipanteUNAM ON ComprarParticipanteUNAM IS 'Restricción CHECK que valida que el método de pago sea uno de los especificados: Tarjeta, Efectivo o Transferencia.';
+COMMENT ON CONSTRAINT CK_hora_compra ON ComprarParticipanteUNAM IS 'Restricción CHECK que valida que la compra se realice entre las 9:00 y las 21:00 horas, hora local de Ciudad de México.';
 
 COMMENT ON CONSTRAINT FK_Participante_Comprar ON ComprarParticipanteUNAM IS 'Llave foránea que vincula la compra con el participante correspondiente. No permite eliminar un participante si tiene compras registradas';
 COMMENT ON CONSTRAINT FK_Alimento_Comprar_Participante ON ComprarParticipanteUNAM IS 'Llave foránea que vincula el alimento con la compra. No permite eliminar un alimento si está asociado a una compra.';
@@ -1612,6 +1624,8 @@ ALTER TABLE DistanciaRecorrida ALTER COLUMN NombreLocacion SET NOT NULL;
 ALTER TABLE DistanciaRecorrida ALTER COLUMN Fecha SET NOT NULL;
 ALTER TABLE DistanciaRecorrida ALTER COLUMN Hora SET NOT NULL;
 
+ALTER TABLE DistanciaRecorrida ADD CONSTRAINT CK_distanciarecorrida_hora CHECK (EXTRACT(HOUR FROM Hora) >= 9 AND EXTRACT(HOUR FROM Hora) < 21);
+
 COMMENT ON TABLE DistanciaRecorrida IS 'Tabla que almacena la información de las distancias recorridas por los participantes en los torneos.';
 COMMENT ON COLUMN DistanciaRecorrida.Edicion IS 'Edición del torneo en la que se registró la distancia recorrida.';
 COMMENT ON COLUMN DistanciaRecorrida.IdTorneo IS 'Identificador único del torneo de distancia recorrida.';
@@ -1626,6 +1640,7 @@ COMMENT ON CONSTRAINT fk_distancia_recorrida_locacion ON DistanciaRecorrida IS '
 COMMENT ON CONSTRAINT pk_distancia_recorrido ON DistanciaRecorrida IS 'Restricción de entidad para la tabla DistanciaRecorrida.';
 COMMENT ON CONSTRAINT fk_distancia_recorrida_cuenta_pokemon_go ON DistanciaRecorrida IS 'Restricción referencial que vincula DistanciaRecorrida con CuentaPokemonGo.';
 COMMENT ON CONSTRAINT fk_distancia_recorrida_torneo_distancia_recorrida ON DistanciaRecorrida IS 'Restricción referencial que vincula DistanciaRecorrida con TorneoDistanciaRecorrida.';
+COMMENT ON CONSTRAINT CK_distanciarecorrida_hora ON DistanciaRecorrida IS 'Restricción CHECK que valida que la hora de registro de distancia esté dentro del horario permitido (9:00 a 21:00).';
 
 -- ========
 -- Utilizar 
@@ -1704,6 +1719,7 @@ CREATE TABLE Registrar (
 ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_cuenta_pokemon_go FOREIGN KEY (IdPersona, CodigoDeEntrenador) REFERENCES CuentaPokemonGo(IdPersona, CodigoDeEntrenador) ON DELETE RESTRICT ON UPDATE CASCADE;
 ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_captura_pokemon FOREIGN KEY (Edicion, IdTorneo, IdCaptura) REFERENCES CapturaPokemon(Edicion, IdTorneo, IdCaptura) ON DELETE RESTRICT ON UPDATE CASCADE;
 ALTER TABLE Registrar ADD CONSTRAINT fk_registrar_pokemon FOREIGN KEY (IdPokemon) REFERENCES Pokemon(IdPokemon) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE Registrar ADD CONSTRAINT CK_registrar_hora CHECK (EXTRACT(HOUR FROM Hora) >= 9 AND EXTRACT(HOUR FROM Hora) < 21);
 
 ALTER TABLE Registrar ALTER COLUMN IdPokemon SET NOT NULL;
 ALTER TABLE Registrar ALTER COLUMN CodigoDeEntrenador SET NOT NULL;
@@ -1726,6 +1742,7 @@ COMMENT ON COLUMN Registrar.Hora IS 'Hora en la que se realizó la captura.';
 COMMENT ON CONSTRAINT fk_registrar_cuenta_pokemon_go ON Registrar IS 'Restricción referencial que vincula Registrar con CuentaPokemonGo.';
 COMMENT ON CONSTRAINT fk_registrar_captura_pokemon ON Registrar IS 'Restricción referencial que vincula Registrar con CapturaPokemon.';
 COMMENT ON CONSTRAINT fk_registrar_pokemon ON Registrar IS 'Restricción referencial que vincula Registrar con Pokemon.';
+COMMENT ON CONSTRAINT CK_registrar_hora ON Registrar IS 'Restricción CHECK que valida que la hora de captura esté dentro del horario permitido (9:00 a 21:00).';
 
 -- ============================
 -- InscripcionTorneoPelea
