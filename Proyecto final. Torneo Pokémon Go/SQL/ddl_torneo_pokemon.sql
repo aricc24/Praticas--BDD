@@ -179,12 +179,12 @@ ALTER TABLE EncargadoRegistro ALTER COLUMN IdPersona SET DEFAULT nextval('encarg
 COMMENT ON SEQUENCE encargadoRegistro_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla EncargadoRegistro.';
 
 ALTER TABLE EncargadoRegistro
-DROP CONSTRAINT IF EXISTS CK_CodigoPostal_EncargadoRegistro;
+DROP CONSTRAINT IF EXISTS CK_CodigoPostal
 
 ALTER TABLE EncargadoRegistro
-ADD CONSTRAINT CK_CodigoPostal_EncargadoRegistro
+ADD CONSTRAINT CK_CodigoPostal
 CHECK (CodigoPostal BETWEEN 1000 AND 99999);
-COMMENT ON CONSTRAINT CK_CodigoPostal_EncargadoRegistro ON EncargadoRegistro IS 'Restricción CHECK que valida que el Código Postal tenga entre 4 y 5 dígitos.';
+COMMENT ON CONSTRAINT CK_CodigoPostal ON EncargadoRegistro IS 'Restricción CHECK que valida que el Código Postal tenga entre 4 y 5 dígitos.';
 
 
 -- ========
