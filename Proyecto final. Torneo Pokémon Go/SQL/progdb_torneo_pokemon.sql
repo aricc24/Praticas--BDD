@@ -1636,3 +1636,5 @@ CREATE TRIGGER trg_validar_encargado_registro
 BEFORE INSERT OR UPDATE ON TrabajarEncargadoRegistro
 FOR EACH ROW
 EXECUTE FUNCTION validar_trabajador();
+
+
