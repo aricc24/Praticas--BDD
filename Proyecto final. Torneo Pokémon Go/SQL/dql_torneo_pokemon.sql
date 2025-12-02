@@ -158,3 +158,25 @@ WHERE
                 GROUP BY dr2.IdPersona
             ) AS suma
         );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---- Para el proyecto
+
+-- 1. Distancia recorrida hombres vs mujeres de cada facultad 
+
+-- 2. Top 5 pokemones mas registrados en el torneo de peleas 
+
+-- 3. Top 10 horas con mas capturas de shiny
+

@@ -1614,7 +1614,7 @@ COMMENT ON SEQUENCE peleatorneo_numeropelea_seq IS 'Secuencia para generar núme
 -- ========
 
 CREATE TABLE Locacion (
-    NombreLocacion VARCHAR(10),
+    NombreLocacion VARCHAR(15),
     Latitud REAL,
     Longitud REAL
 );
@@ -1639,7 +1639,7 @@ CREATE TABLE DistanciaRecorrida (
     IdDistancia INTEGER ,
     IdPersona INTEGER,
     CodigoDeEntrenador INTEGER,
-    NombreLocacion VARCHAR(10),
+    NombreLocacion VARCHAR(15),
     Fecha DATE,
     Hora TIMETZ
 );
@@ -1672,6 +1672,17 @@ COMMENT ON CONSTRAINT pk_distancia_recorrido ON DistanciaRecorrida IS 'Restricci
 COMMENT ON CONSTRAINT fk_distancia_recorrida_cuenta_pokemon_go ON DistanciaRecorrida IS 'Restricción referencial que vincula DistanciaRecorrida con CuentaPokemonGo.';
 COMMENT ON CONSTRAINT fk_distancia_recorrida_torneo_distancia_recorrida ON DistanciaRecorrida IS 'Restricción referencial que vincula DistanciaRecorrida con TorneoDistanciaRecorrida.';
 COMMENT ON CONSTRAINT CK_distanciarecorrida_hora ON DistanciaRecorrida IS 'Restricción CHECK que valida que la hora de registro de distancia esté dentro del horario permitido (9:00 a 21:00).';
+
+CREATE SEQUENCE distanciarecorrida_iddistancia_seq
+    START WITH 1
+    INCREMENT BY 1
+    OWNED BY DistanciaRecorrida.IdDistancia;
+
+ALTER TABLE DistanciaRecorrida
+    ALTER COLUMN IdDistancia
+    SET DEFAULT nextval('distanciarecorrida_iddistancia_seq');
+COMMENT ON SEQUENCE distanciarecorrida_iddistancia_seq IS 
+'Secuencia para generar automáticamente IdDistancia en la tabla DistanciaRecorrida.';
 
 -- ========
 -- Utilizar 
