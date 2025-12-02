@@ -598,21 +598,11 @@ ALTER TABLE CorreoCuidador ADD CONSTRAINT fk_correo_cuidador_cuidador FOREIGN KE
     ON DELETE RESTRICT
     ON UPDATE CASCADE;
 
-ALTER TABLE CorreoCuidador
-    ADD CONSTRAINT CK_CorreoCuidador
-    CHECK (
-        position('@' IN Correo) > 1
-        AND length(split_part(Correo,'@',1)) <= 64
-        AND length(split_part(Correo,'@',2)) <= 255
-        AND position('@' IN Correo) = length(Correo) - length(replace(Correo,'@',''))
-    );
-
 COMMENT ON TABLE CorreoCuidador IS 'Tabla que almacena los correos electrónicos de los cuidadores.';
 COMMENT ON COLUMN CorreoCuidador.IdPersona IS 'Identificador único del cuidador.';
 COMMENT ON COLUMN CorreoCuidador.Correo IS 'Correo electrónico del cuidador.';
 COMMENT ON CONSTRAINT pk_correo_cuidador ON CorreoCuidador IS 'Restricción de entidad para la tabla CorreoCuidador.';
 COMMENT ON CONSTRAINT fk_correo_cuidador_cuidador ON CorreoCuidador IS 'Restricción referencial que vincula CorreoCuidador con Cuidador.';
-COMMENT ON CONSTRAINT CK_CorreoCuidador ON CorreoCuidador IS 'Restricción CHECK que verifica que el formato de la dirección de correo electrónico sea válido.';
 
 -- ========
 -- 8. TelefonoCuidador
@@ -652,23 +642,12 @@ ALTER TABLE CorreoEncargadoRegistro ADD CONSTRAINT fk_correo_encargado_registro 
     ON DELETE RESTRICT
     ON UPDATE CASCADE;
 
-ALTER TABLE CorreoEncargadoRegistro
-    ADD CONSTRAINT CK_CorreoEncargadoRegistro
-    CHECK (
-        position('@' IN Correo) > 1
-        AND length(split_part(Correo,'@',1)) <= 64
-        AND length(split_part(Correo,'@',2)) <= 255
-        AND position('@' IN Correo) = length(Correo) - length(replace(Correo,'@',''))
-    );
-
 COMMENT ON TABLE CorreoEncargadoRegistro IS 'Tabla que almacena los correos electrónicos asociados a cada encargado de registro.';
 COMMENT ON COLUMN CorreoEncargadoRegistro.IdPersona IS 'Identificador del encargado de registro al que pertenece el correo (llave foránea hacia EncargadoRegistro).';
 COMMENT ON COLUMN CorreoEncargadoRegistro.Correo IS 'Dirección de correo electrónico del encargado de registro.';
 
 COMMENT ON CONSTRAINT pk_correo_encargado_registro ON CorreoEncargadoRegistro IS 'Llave primaria compuesta por IdPersona y Correo.';
 COMMENT ON CONSTRAINT fk_correo_encargado_registro ON CorreoEncargadoRegistro IS 'Llave foránea que referencia al encargado de registro correspondiente, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
-COMMENT ON CONSTRAINT CK_CorreoEncargadoRegistro ON CorreoEncargadoRegistro IS 'Restricción CHECK que verifica que el formato de la dirección de correo electrónico sea válido.';
-
 -- ========
 -- 5. TelefonoEncargadoRegistro (Va después de EncargadoRegistro)
 -- =======
@@ -706,22 +685,11 @@ CREATE TABLE CorreoLimpiador (
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT pk_correo_limpiador PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT fk_correo_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
 
-ALTER TABLE CorreoLimpiador
-    ADD CONSTRAINT CK_CorreoLimpiador
-    CHECK (
-        position('@' IN Correo) > 1
-        AND length(split_part(Correo,'@',1)) <= 64
-        AND length(split_part(Correo,'@',2)) <= 255
-        AND position('@' IN Correo) = length(Correo) - length(replace(Correo,'@',''))
-    );
-
 COMMENT ON TABLE CorreoLimpiador IS 'Tabla que almacena los correos electrónicos de los limpiadores.';
 COMMENT ON COLUMN CorreoLimpiador.IdPersona IS 'Identificador único de la persona limpiadora.';
 COMMENT ON COLUMN CorreoLimpiador.Correo IS 'Correo electrónico de la persona limpiadora.';
 COMMENT ON CONSTRAINT pk_correo_limpiador ON CorreoLimpiador IS 'Restricción de entidad para la tabla CorreoLimpiador.';
 COMMENT ON CONSTRAINT fk_correo_limpiador_limpiador ON CorreoLimpiador IS 'Restricción referencial que vincula CorreoLimpiador con Limpiador.';
-COMMENT ON CONSTRAINT CK_CorreoLimpiador ON CorreoLimpiador IS 'Restricción CHECK que verifica que el formato de la dirección de correo electrónico sea válido.';
-
 
 
 -- ========
@@ -759,22 +727,11 @@ ALTER TABLE CorreoVendedor ADD CONSTRAINT fk_correo_vendedor_vendedor FOREIGN KE
     ON DELETE RESTRICT
     ON UPDATE CASCADE;
 
-ALTER TABLE CorreoVendedor
-    ADD CONSTRAINT CK_CorreoVendedor
-    CHECK (
-        position('@' IN Correo) > 1
-        AND length(split_part(Correo,'@',1)) <= 64
-        AND length(split_part(Correo,'@',2)) <= 255
-        AND position('@' IN Correo) = length(Correo) - length(replace(Correo,'@',''))
-    );
-
 COMMENT ON TABLE CorreoVendedor IS 'Tabla que almacena los correos electrónicos de los vendedores.';
 COMMENT ON COLUMN CorreoVendedor.IdPersona IS 'Identificador único del vendedor.';
 COMMENT ON COLUMN CorreoVendedor.Correo IS 'Correo electrónico del vendedor.';
 COMMENT ON CONSTRAINT pk_correo_vendedor ON CorreoVendedor IS 'Restricción de entidad para la tabla CorreoVendedor.';
 COMMENT ON CONSTRAINT fk_correo_vendedor_vendedor ON CorreoVendedor IS 'Restricción referencial que vincula CorreoVendedor con Vendedor.';
-COMMENT ON CONSTRAINT CK_CorreoVendedor ON CorreoVendedor IS 'Restricción CHECK que verifica que el formato de la dirección de correo electrónico sea válido.';
-
 
 -- ========
 -- 4. TelefonoVendedor 
@@ -820,15 +777,6 @@ ON UPDATE CASCADE;
 ALTER TABLE CorreoParticipante ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE CorreoParticipante ALTER COLUMN IdPersona SET NOT NULL;
 
-ALTER TABLE CorreoParticipante
-    ADD CONSTRAINT CK_CorreoParticipante
-    CHECK (
-        position('@' IN Correo) > 1
-        AND length(split_part(Correo,'@',1)) <= 64
-        AND length(split_part(Correo,'@',2)) <= 255
-        AND position('@' IN Correo) = length(Correo) - length(replace(Correo,'@',''))
-    );
-
 COMMENT ON TABLE CorreoParticipante IS 'Tabla que almacena las direcciones de correo electrónico asociadas a cada participante de la UNAM.';
 
 COMMENT ON COLUMN CorreoParticipante.IdPersona IS 'Identificador del participante al que pertenece el correo.';
@@ -836,7 +784,6 @@ COMMENT ON COLUMN CorreoParticipante.Correo IS 'Dirección de correo electrónic
 
 COMMENT ON CONSTRAINT pk_CorreoParticipante ON CorreoParticipante IS 'Llave primaria compuesta que asegura que un mismo participante no tenga correos repetidos.';
 COMMENT ON CONSTRAINT fk_Participante_Correo ON CorreoParticipante IS 'Llave foránea que vincula cada correo con el participante correspondiente. Se eliminan los correos si el participante es eliminado.';
-COMMENT ON CONSTRAINT CK_CorreoParticipante ON CorreoParticipante IS 'Restricción CHECK que verifica que el formato de la dirección de correo electrónico sea válido.';
 
 -- ========
 -- 8. TelefonoParticipante
