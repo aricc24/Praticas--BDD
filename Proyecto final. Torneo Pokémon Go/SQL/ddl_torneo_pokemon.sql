@@ -591,18 +591,28 @@ DROP COLUMN HoraSalida;
 -- =======
 CREATE TABLE CorreoCuidador (
     IdPersona INTEGER,
-    Correo VARCHAR (50)
+    Correo VARCHAR (254)
 );
 ALTER TABLE CorreoCuidador ADD CONSTRAINT pk_correo_cuidador PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoCuidador ADD CONSTRAINT fk_correo_cuidador_cuidador FOREIGN KEY (IdPersona) REFERENCES Cuidador(IdPersona)
     ON DELETE RESTRICT
     ON UPDATE CASCADE;
 
+ALTER TABLE CorreoCuidador
+    ADD CONSTRAINT CK_CorreoCuidador
+    CHECK (
+        position('@' IN Correo) > 1
+        AND length(split_part(Correo,'@',1)) <= 64
+        AND length(split_part(Correo,'@',2)) <= 255
+        AND position('@' IN Correo) = length(Correo) - length(replace(Correo,'@',''))
+    );
+
 COMMENT ON TABLE CorreoCuidador IS 'Tabla que almacena los correos electrónicos de los cuidadores.';
 COMMENT ON COLUMN CorreoCuidador.IdPersona IS 'Identificador único del cuidador.';
 COMMENT ON COLUMN CorreoCuidador.Correo IS 'Correo electrónico del cuidador.';
 COMMENT ON CONSTRAINT pk_correo_cuidador ON CorreoCuidador IS 'Restricción de entidad para la tabla CorreoCuidador.';
 COMMENT ON CONSTRAINT fk_correo_cuidador_cuidador ON CorreoCuidador IS 'Restricción referencial que vincula CorreoCuidador con Cuidador.';
+COMMENT ON CONSTRAINT CK_CorreoCuidador ON CorreoCuidador IS 'Restricción CHECK que verifica que el formato de la dirección de correo electrónico sea válido.';
 
 -- ========
 -- 8. TelefonoCuidador
@@ -616,19 +626,25 @@ ALTER TABLE TelefonoCuidador ADD CONSTRAINT fk_telefono_cuidador_cuidador FOREIG
     ON DELETE RESTRICT
     ON UPDATE CASCADE;
 
+ALTER TABLE TelefonoCuidador
+    ADD CONSTRAINT CK_TelefonoCuidador
+    CHECK (
+        Telefono ~ '^[0-9]{10}$'
+    );
 
 COMMENT ON TABLE TelefonoCuidador IS 'Tabla que almacena los teléfonos de los cuidadores.';
 COMMENT ON COLUMN TelefonoCuidador.IdPersona IS 'Identificador único del cuidador.';
 COMMENT ON COLUMN TelefonoCuidador.Telefono IS 'Número de teléfono del cuidador.';
 COMMENT ON CONSTRAINT fk_telefono_cuidador_cuidador ON TelefonoCuidador IS 'Restricción referencial que vincula TelefonoCuidador con Cuidador.';
 COMMENT ON CONSTRAINT pk_telefono_cuidador ON TelefonoCuidador IS 'Restricción de entidad para la tabla TelefonoCuidador.';
+COMMENT ON CONSTRAINT CK_TelefonoCuidador ON TelefonoCuidador IS 'Restricción CHECK que verifica que el teléfono tenga exactamente 10 dígitos.';
 
 -- ========
 -- 4. CorreoEncargadoRegistro (Va después de EncargadoRegistro)
 -- =======
 CREATE TABLE CorreoEncargadoRegistro (
     IdPersona INTEGER,
-    Correo VARCHAR(50)
+    Correo VARCHAR(254)
 );
 
 ALTER TABLE CorreoEncargadoRegistro ADD CONSTRAINT pk_correo_encargado_registro PRIMARY KEY (IdPersona, Correo);
@@ -636,7 +652,14 @@ ALTER TABLE CorreoEncargadoRegistro ADD CONSTRAINT fk_correo_encargado_registro 
     ON DELETE RESTRICT
     ON UPDATE CASCADE;
 
-
+ALTER TABLE CorreoEncargadoRegistro
+    ADD CONSTRAINT CK_CorreoEncargadoRegistro
+    CHECK (
+        position('@' IN Correo) > 1
+        AND length(split_part(Correo,'@',1)) <= 64
+        AND length(split_part(Correo,'@',2)) <= 255
+        AND position('@' IN Correo) = length(Correo) - length(replace(Correo,'@',''))
+    );
 
 COMMENT ON TABLE CorreoEncargadoRegistro IS 'Tabla que almacena los correos electrónicos asociados a cada encargado de registro.';
 COMMENT ON COLUMN CorreoEncargadoRegistro.IdPersona IS 'Identificador del encargado de registro al que pertenece el correo (llave foránea hacia EncargadoRegistro).';
@@ -644,6 +667,7 @@ COMMENT ON COLUMN CorreoEncargadoRegistro.Correo IS 'Dirección de correo electr
 
 COMMENT ON CONSTRAINT pk_correo_encargado_registro ON CorreoEncargadoRegistro IS 'Llave primaria compuesta por IdPersona y Correo.';
 COMMENT ON CONSTRAINT fk_correo_encargado_registro ON CorreoEncargadoRegistro IS 'Llave foránea que referencia al encargado de registro correspondiente, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
+COMMENT ON CONSTRAINT CK_CorreoEncargadoRegistro ON CorreoEncargadoRegistro IS 'Restricción CHECK que verifica que el formato de la dirección de correo electrónico sea válido.';
 
 -- ========
 -- 5. TelefonoEncargadoRegistro (Va después de EncargadoRegistro)
@@ -657,7 +681,11 @@ ALTER TABLE TelefonoEncargadoRegistro ADD CONSTRAINT fk_telefono_encargado_regis
     ON DELETE RESTRICT
     ON UPDATE CASCADE;
 
-
+ALTER TABLE TelefonoEncargadoRegistro
+    ADD CONSTRAINT CK_TelefonoEncargadoRegistro
+    CHECK (
+        Telefono ~ '^[0-9]{10}$'
+    );
 
 COMMENT ON TABLE TelefonoEncargadoRegistro IS 'Tabla que almacena los números telefónicos asociados a cada encargado de registro.';
 COMMENT ON COLUMN TelefonoEncargadoRegistro.IdPersona IS 'Identificador del encargado de registro al que pertenece el número telefónico (llave foránea hacia EncargadoRegistro).';
@@ -665,6 +693,7 @@ COMMENT ON COLUMN TelefonoEncargadoRegistro.Telefono IS 'Número telefónico del
 
 COMMENT ON CONSTRAINT pk_telefono_encargado_registro ON TelefonoEncargadoRegistro IS 'Llave primaria compuesta por IdPersona y Telefono.';
 COMMENT ON CONSTRAINT fk_telefono_encargado_registro ON TelefonoEncargadoRegistro IS 'Llave foránea que referencia al encargado de registro correspondiente, con política ON DELETE RESTRICT ON UPDATE CASCADE.';
+COMMENT ON CONSTRAINT CK_TelefonoEncargadoRegistro ON TelefonoEncargadoRegistro IS 'Restricción CHECK que verifica que el teléfono tenga exactamente 10 dígitos.';
 
 
 -- ========
@@ -672,16 +701,28 @@ COMMENT ON CONSTRAINT fk_telefono_encargado_registro ON TelefonoEncargadoRegistr
 -- =======
 CREATE TABLE CorreoLimpiador (
     IdPersona INTEGER,
-    Correo VARCHAR(50)
+    Correo VARCHAR(254)
 );
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT pk_correo_limpiador PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoLimpiador ADD CONSTRAINT fk_correo_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+ALTER TABLE CorreoLimpiador
+    ADD CONSTRAINT CK_CorreoLimpiador
+    CHECK (
+        position('@' IN Correo) > 1
+        AND length(split_part(Correo,'@',1)) <= 64
+        AND length(split_part(Correo,'@',2)) <= 255
+        AND position('@' IN Correo) = length(Correo) - length(replace(Correo,'@',''))
+    );
 
 COMMENT ON TABLE CorreoLimpiador IS 'Tabla que almacena los correos electrónicos de los limpiadores.';
 COMMENT ON COLUMN CorreoLimpiador.IdPersona IS 'Identificador único de la persona limpiadora.';
 COMMENT ON COLUMN CorreoLimpiador.Correo IS 'Correo electrónico de la persona limpiadora.';
 COMMENT ON CONSTRAINT pk_correo_limpiador ON CorreoLimpiador IS 'Restricción de entidad para la tabla CorreoLimpiador.';
 COMMENT ON CONSTRAINT fk_correo_limpiador_limpiador ON CorreoLimpiador IS 'Restricción referencial que vincula CorreoLimpiador con Limpiador.';
+COMMENT ON CONSTRAINT CK_CorreoLimpiador ON CorreoLimpiador IS 'Restricción CHECK que verifica que el formato de la dirección de correo electrónico sea válido.';
+
+
 
 -- ========
 -- 4. TelefonoLimpiador (Va después de Limpiador)
@@ -693,29 +734,47 @@ CREATE TABLE TelefonoLimpiador (
 ALTER TABLE TelefonoLimpiador ADD CONSTRAINT pk_telefono_limpiador PRIMARY KEY (IdPersona, Telefono);
 ALTER TABLE TelefonoLimpiador ADD CONSTRAINT fk_telefono_limpiador_limpiador FOREIGN KEY (IdPersona) REFERENCES Limpiador(IdPersona) ON DELETE RESTRICT ON UPDATE CASCADE;
 
+ALTER TABLE TelefonoLimpiador
+    ADD CONSTRAINT CK_TelefonoLimpiador
+    CHECK (
+        Telefono ~ '^[0-9]{10}$'
+    );
+
 COMMENT ON TABLE TelefonoLimpiador IS 'Tabla que almacena los teléfonos de los limpiadores.';
 COMMENT ON COLUMN TelefonoLimpiador.IdPersona IS 'Identificador único de la persona limpiadora.';
 COMMENT ON COLUMN TelefonoLimpiador.Telefono IS 'Número de teléfono de la persona limpiadora.';
 COMMENT ON CONSTRAINT pk_telefono_limpiador ON TelefonoLimpiador IS 'Restricción de entidad para la tabla TelefonoLimpiador.';
 COMMENT ON CONSTRAINT fk_telefono_limpiador_limpiador ON TelefonoLimpiador IS 'Restricción referencial que vincula TelefonoLimpiador con Limpiador.';
+COMMENT ON CONSTRAINT CK_TelefonoLimpiador ON TelefonoLimpiador IS 'Restricción CHECK que verifica que el teléfono tenga exactamente 10 dígitos.';
 
 -- ========
 -- 3. CorreoVendedor 
 -- =======
 CREATE TABLE CorreoVendedor(
     IdPersona INTEGER,
-    Correo VARCHAR(50)
+    Correo VARCHAR(254)
 );
 ALTER TABLE CorreoVendedor ADD CONSTRAINT pk_correo_vendedor PRIMARY KEY (IdPersona, Correo);
 ALTER TABLE CorreoVendedor ADD CONSTRAINT fk_correo_vendedor_vendedor FOREIGN KEY (IdPersona) REFERENCES Vendedor(IdPersona)
     ON DELETE RESTRICT
     ON UPDATE CASCADE;
 
+ALTER TABLE CorreoVendedor
+    ADD CONSTRAINT CK_CorreoVendedor
+    CHECK (
+        position('@' IN Correo) > 1
+        AND length(split_part(Correo,'@',1)) <= 64
+        AND length(split_part(Correo,'@',2)) <= 255
+        AND position('@' IN Correo) = length(Correo) - length(replace(Correo,'@',''))
+    );
+
 COMMENT ON TABLE CorreoVendedor IS 'Tabla que almacena los correos electrónicos de los vendedores.';
 COMMENT ON COLUMN CorreoVendedor.IdPersona IS 'Identificador único del vendedor.';
 COMMENT ON COLUMN CorreoVendedor.Correo IS 'Correo electrónico del vendedor.';
 COMMENT ON CONSTRAINT pk_correo_vendedor ON CorreoVendedor IS 'Restricción de entidad para la tabla CorreoVendedor.';
 COMMENT ON CONSTRAINT fk_correo_vendedor_vendedor ON CorreoVendedor IS 'Restricción referencial que vincula CorreoVendedor con Vendedor.';
+COMMENT ON CONSTRAINT CK_CorreoVendedor ON CorreoVendedor IS 'Restricción CHECK que verifica que el formato de la dirección de correo electrónico sea válido.';
+
 
 -- ========
 -- 4. TelefonoVendedor 
@@ -729,17 +788,25 @@ ALTER TABLE TelefonoVendedor ADD CONSTRAINT fk_telefono_vendedor_vendedor FOREIG
     ON DELETE RESTRICT
     ON UPDATE CASCADE;
 
+ALTER TABLE TelefonoVendedor
+    ADD CONSTRAINT CK_TelefonoVendedor
+    CHECK (
+        Telefono ~ '^[0-9]{10}$'
+    );
+
 COMMENT ON TABLE TelefonoVendedor IS 'Tabla que almacena los teléfonos de los vendedores.';
 COMMENT ON COLUMN TelefonoVendedor.IdPersona IS 'Identificador único del vendedor.';
 COMMENT ON COLUMN TelefonoVendedor.Telefono IS 'Número de teléfono del vendedor.';
 COMMENT ON CONSTRAINT pk_telefono_vendedor ON TelefonoVendedor IS 'Restricción de entidad para la tabla TeléfonoVendedor.';
 COMMENT ON CONSTRAINT fk_telefono_vendedor_vendedor ON TelefonoVendedor IS 'Restricción referencial que vincula TelefonoVendedor con Vendedor.';
+COMMENT ON CONSTRAINT CK_TelefonoVendedor ON TelefonoVendedor IS 'Restricción CHECK que verifica que el teléfono tenga exactamente 10 dígitos.';
+
 -- ========
 -- 5. CorreoParticipante
 -- ========
 CREATE TABLE CorreoParticipante (
     IdPersona INTEGER,
-    Correo VARCHAR(50)
+    Correo VARCHAR(254)
 );
 
 ALTER TABLE CorreoParticipante 
@@ -753,6 +820,15 @@ ON UPDATE CASCADE;
 ALTER TABLE CorreoParticipante ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE CorreoParticipante ALTER COLUMN IdPersona SET NOT NULL;
 
+ALTER TABLE CorreoParticipante
+    ADD CONSTRAINT CK_CorreoParticipante
+    CHECK (
+        position('@' IN Correo) > 1
+        AND length(split_part(Correo,'@',1)) <= 64
+        AND length(split_part(Correo,'@',2)) <= 255
+        AND position('@' IN Correo) = length(Correo) - length(replace(Correo,'@',''))
+    );
+
 COMMENT ON TABLE CorreoParticipante IS 'Tabla que almacena las direcciones de correo electrónico asociadas a cada participante de la UNAM.';
 
 COMMENT ON COLUMN CorreoParticipante.IdPersona IS 'Identificador del participante al que pertenece el correo.';
@@ -760,6 +836,7 @@ COMMENT ON COLUMN CorreoParticipante.Correo IS 'Dirección de correo electrónic
 
 COMMENT ON CONSTRAINT pk_CorreoParticipante ON CorreoParticipante IS 'Llave primaria compuesta que asegura que un mismo participante no tenga correos repetidos.';
 COMMENT ON CONSTRAINT fk_Participante_Correo ON CorreoParticipante IS 'Llave foránea que vincula cada correo con el participante correspondiente. Se eliminan los correos si el participante es eliminado.';
+COMMENT ON CONSTRAINT CK_CorreoParticipante ON CorreoParticipante IS 'Restricción CHECK que verifica que el formato de la dirección de correo electrónico sea válido.';
 
 -- ========
 -- 8. TelefonoParticipante
@@ -778,6 +855,12 @@ FOREIGN KEY (IdPersona) REFERENCES ParticipanteUNAM(IdPersona)
 ON DELETE CASCADE
 ON UPDATE CASCADE;
 
+ALTER TABLE TelefonoParticipante
+    ADD CONSTRAINT CK_TelefonoParticipante
+    CHECK (
+        Telefono ~ '^[0-9]{10}$'
+    );
+
 COMMENT ON TABLE TelefonoParticipante IS 'Tabla que almacena los números telefónicos asociados a los participantes de la UNAM.';
 
 COMMENT ON COLUMN TelefonoParticipante.IdPersona IS 'Identificador del participante de la UNAM al que pertenece el número telefónico';
@@ -785,6 +868,7 @@ COMMENT ON COLUMN TelefonoParticipante.Telefono IS 'Número telefónico de conta
 
 COMMENT ON CONSTRAINT PK_TelefonoParticipante ON TelefonoParticipante IS 'Llave primaria compuesta que impide duplicar números telefónicos para un mismo participante.';
 COMMENT ON CONSTRAINT FK_Telefono_Participante ON TelefonoParticipante IS 'Llave foránea que vincula cada teléfono con el participante correspondiente. Se eliminan los teléfonos en cascada si el participante es eliminado.';
+COMMENT ON CONSTRAINT CK_TelefonoParticipante ON TelefonoParticipante IS 'Restricción CHECK que verifica que el teléfono tenga exactamente 10 dígitos.';
 
 
 ---- TRABAJAR -------------------------------------------------
