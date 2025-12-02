@@ -179,7 +179,7 @@ ALTER TABLE EncargadoRegistro ALTER COLUMN IdPersona SET DEFAULT nextval('encarg
 COMMENT ON SEQUENCE encargadoRegistro_idpersona_seq IS 'Secuencia para generar identificadores únicos para la tabla EncargadoRegistro.';
 
 ALTER TABLE EncargadoRegistro
-DROP CONSTRAINT IF EXISTS CK_CodigoPostal
+DROP CONSTRAINT IF EXISTS CK_CodigoPostal;
 
 ALTER TABLE EncargadoRegistro
 ADD CONSTRAINT CK_CodigoPostal
