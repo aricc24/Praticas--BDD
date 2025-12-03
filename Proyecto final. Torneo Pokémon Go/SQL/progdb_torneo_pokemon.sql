@@ -1130,10 +1130,20 @@ EXECUTE FUNCTION verificar_compra_alimento();
 
 
 /**
-* Función para calcular el total de compras realizadas por una persona
-* en una edición específica, considerando su rol.
+* Función para calcular el total de compras (el monto sin IVA y con IVA)
+* realizadas por una persona en una edición específica, según su rol.
 * Valida que la persona tenga el rol indicado en esa edición, y el alimento
 * comprado pertenezca a un vendedor que trabaje en esa edición.
+
+* Ejemplo de uso:
+* SELECT 
+*     MontoSinIVA AS monto_sin_iva,
+*     MontoConIVA AS monto_con_iva
+* FROM total_compras_persona(702,'limpiador',27);
+*  monto_sin_iva | monto_con_iva 
+* --------------+--------------
+*        139.12 |     161.3792
+* (1 row)
 */
 CREATE OR REPLACE FUNCTION total_compras_persona(
     p_idpersona INTEGER,
@@ -1144,131 +1154,147 @@ RETURNS TABLE (
     MontoSinIVA REAL,
     MontoConIVA REAL
 ) AS $$
-DECLARE
-    precio_total REAL;
 BEGIN
-    MontoSinIVA := 0;
-    MontoConIVA := 0;
-
-    IF LOWER(p_rol) = 'cuidador' THEN
+    p_rol := LOWER(p_rol);
+    IF p_rol = 'cuidador' THEN
         IF NOT EXISTS (
-            SELECT 1 FROM TrabajarCuidador WHERE IdPersona = p_idpersona AND Edicion = p_edicion
+            SELECT 1 FROM TrabajarCuidador
+            WHERE IdPersona = p_idpersona AND Edicion = p_edicion
         ) THEN
-            RAISE EXCEPTION 'El cuidador % no está trabajando en la edición %', p_idpersona, p_edicion;
+            RAISE EXCEPTION 'El cuidador % no está trabajando en la edición %',
+                p_idpersona, p_edicion;
         END IF;
 
-        FOR precio_total IN
-            SELECT c.Cantidad * a.Precio
-            FROM ComprarCuidador c
-            JOIN Alimento a ON a.IdAlimento = c.IdAlimento
-            JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-            WHERE c.IdPersona = p_idpersona
-                AND tv.Edicion = p_edicion
-        LOOP
-            MontoSinIVA := MontoSinIVA + precio_total;
-            MontoConIVA := MontoConIVA + precio_con_iva(precio_total);
-        END LOOP;
+        SELECT COALESCE(SUM(c.cantidad * a.precio), 0)
+        INTO MontoSinIVA
+        FROM ComprarCuidador c
+        JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+        JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+        WHERE c.IdPersona = p_idpersona
+            AND tv.Edicion = p_edicion;
 
-    ELSIF LOWER(p_rol) = 'limpiador' THEN
-        IF NOT EXISTS (
-            SELECT 1 FROM TrabajarLimpiador WHERE IdPersona = p_idpersona AND Edicion = p_edicion
-        ) THEN
-            RAISE EXCEPTION 'El limpiador % no está trabajando en la edición %', p_idpersona, p_edicion;
-        END IF;
+        MontoConIVA := MontoSinIVA * 1.16;
 
-        FOR precio_total IN
-            SELECT c.Cantidad * a.Precio
-            FROM ComprarLimpiador c
-            JOIN Alimento a ON a.IdAlimento = c.IdAlimento
-            JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-            WHERE c.IdPersona = p_idpersona
-                AND tv.Edicion = p_edicion
-        LOOP
-            MontoSinIVA := MontoSinIVA + precio_total;
-            MontoConIVA := MontoConIVA + precio_con_iva(precio_total);
-        END LOOP;
-
-    ELSIF LOWER(p_rol) = 'encargadoregistro' THEN
-        IF NOT EXISTS (
-            SELECT 1 FROM TrabajarEncargadoRegistro WHERE IdPersona = p_idpersona AND Edicion = p_edicion
-        ) THEN
-            RAISE EXCEPTION 'El encargado % no está trabajando en la edición %', p_idpersona, p_edicion;
-        END IF;
-
-        FOR precio_total IN
-            SELECT c.Cantidad * a.Precio
-            FROM ComprarEncargadoRegistro c
-            JOIN Alimento a ON a.IdAlimento = c.IdAlimento
-            JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-            WHERE c.IdPersona = p_idpersona
-                AND tv.Edicion = p_edicion
-        LOOP
-            MontoSinIVA := MontoSinIVA + precio_total;
-            MontoConIVA := MontoConIVA + precio_con_iva(precio_total);
-        END LOOP;
-
-    ELSIF LOWER(p_rol) = 'participanteunam' THEN
-        IF NOT EXISTS (
-            SELECT 1 FROM ParticipanteInscribirEvento WHERE IdPersona = p_idpersona AND Edicion = p_edicion
-        ) THEN
-            RAISE EXCEPTION 'El participante % no está inscrito en la edición %', p_idpersona, p_edicion;
-        END IF;
-
-        FOR precio_total IN
-            SELECT c.Cantidad * a.Precio
-            FROM ComprarParticipanteUNAM c
-            JOIN Alimento a ON a.IdAlimento = c.IdAlimento
-            JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-            WHERE c.IdPersona = p_idpersona
-                AND tv.Edicion = p_edicion
-        LOOP
-            MontoSinIVA := MontoSinIVA + precio_total;
-            MontoConIVA := MontoConIVA + precio_con_iva(precio_total);
-        END LOOP;
-
-    ELSIF LOWER(p_rol) = 'espectador' THEN
-        IF NOT EXISTS (
-            SELECT 1 FROM Asistir WHERE IdPersona = p_idpersona AND Edicion = p_edicion
-        ) THEN
-            RAISE EXCEPTION 'El espectador % no está inscrito en la edición %', p_idpersona, p_edicion;
-        END IF;
-
-        FOR precio_total IN
-            SELECT c.Cantidad * a.Precio
-            FROM ComprarEspectador c
-            JOIN Alimento a ON a.IdAlimento = c.IdAlimento
-            JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-            WHERE c.IdPersona = p_idpersona
-                AND tv.Edicion = p_edicion
-        LOOP
-            MontoSinIVA := MontoSinIVA + precio_total;
-            MontoConIVA := MontoConIVA + precio_con_iva(precio_total);
-        END LOOP;
-
-    ELSIF LOWER(p_rol) = 'vendedor' THEN
-        IF NOT EXISTS (
-            SELECT 1 FROM TrabajarVendedor WHERE IdPersona = p_idpersona AND Edicion = p_edicion
-        ) THEN
-            RAISE EXCEPTION 'El vendedor % no está trabajando en la edición %', p_idpersona, p_edicion;
-        END IF;
-
-        FOR precio_total IN
-            SELECT c.Cantidad * a.Precio
-            FROM ComprarVendedor c
-            JOIN Alimento a ON a.IdAlimento = c.IdAlimento
-            JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-            WHERE c.IdPersona = p_idpersona
-                AND tv.Edicion = p_edicion
-        LOOP
-            MontoSinIVA := MontoSinIVA + precio_total;
-            MontoConIVA := MontoConIVA + precio_con_iva(precio_total);
-        END LOOP;
-
-    ELSE
-        RAISE EXCEPTION 'Rol "%" no válido', p_rol;
+        RETURN NEXT;
+        RETURN;
     END IF;
 
-    RETURN;
+    IF p_rol = 'limpiador' THEN
+        IF NOT EXISTS (
+            SELECT 1 FROM TrabajarLimpiador
+            WHERE IdPersona = p_idpersona AND Edicion = p_edicion
+        ) THEN
+            RAISE EXCEPTION 'El limpiador % no está trabajando en la edición %',
+                p_idpersona, p_edicion;
+        END IF;
+
+        SELECT COALESCE(SUM(c.cantidad * a.precio), 0)
+        INTO MontoSinIVA
+        FROM ComprarLimpiador c
+        JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+        JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+        WHERE c.IdPersona = p_idpersona
+            AND tv.Edicion = p_edicion;
+
+        MontoConIVA := MontoSinIVA * 1.16;
+        
+        RETURN NEXT;
+        RETURN;
+    END IF;
+    
+    IF p_rol = 'encargadoregistro' THEN
+        IF NOT EXISTS (
+            SELECT 1 FROM TrabajarEncargadoRegistro
+            WHERE IdPersona = p_idpersona AND Edicion = p_edicion
+        ) THEN
+            RAISE EXCEPTION 'El encargado % no está trabajando en la edición %',
+                p_idpersona, p_edicion;
+        END IF;
+
+        SELECT COALESCE(SUM(c.cantidad * a.precio), 0)
+        INTO MontoSinIVA
+        FROM ComprarEncargadoRegistro c
+        JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+        JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+        WHERE c.IdPersona = p_idpersona
+            AND tv.Edicion = p_edicion;
+
+        MontoConIVA := MontoSinIVA * 1.16;
+        
+        RETURN NEXT;
+        RETURN;
+    END IF;
+    
+    IF p_rol = 'participanteunam' THEN
+        IF NOT EXISTS (
+            SELECT 1 FROM ParticipanteInscribirEvento
+            WHERE IdPersona = p_idpersona AND Edicion = p_edicion
+        ) THEN
+            RAISE EXCEPTION 'El participante % no está inscrito en la edición %',
+                p_idpersona, p_edicion;
+        END IF;
+
+        SELECT COALESCE(SUM(c.cantidad * a.precio), 0)
+        INTO MontoSinIVA
+        FROM ComprarParticipanteUNAM c
+        JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+        JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+        WHERE c.IdPersona = p_idpersona
+            AND tv.Edicion = p_edicion;
+
+        MontoConIVA := MontoSinIVA * 1.16;
+        
+        RETURN NEXT;
+        RETURN;
+    END IF;
+    
+    IF p_rol = 'espectador' THEN
+        IF NOT EXISTS (
+            SELECT 1 FROM Asistir
+            WHERE IdPersona = p_idpersona AND Edicion = p_edicion
+        ) THEN
+            RAISE EXCEPTION 'El espectador % no está inscrito en la edición %',
+                p_idpersona, p_edicion;
+        END IF;
+
+        SELECT COALESCE(SUM(c.cantidad * a.precio), 0)
+        INTO MontoSinIVA
+        FROM ComprarEspectador c
+        JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+        JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+        WHERE c.IdPersona = p_idpersona
+            AND tv.Edicion = p_edicion;
+
+        MontoConIVA := MontoSinIVA * 1.16;
+        
+        RETURN NEXT;
+        RETURN;
+    END IF;
+    
+    IF p_rol = 'vendedor' THEN
+        IF NOT EXISTS (
+            SELECT 1 FROM TrabajarVendedor
+            WHERE IdPersona = p_idpersona AND Edicion = p_edicion
+        ) THEN
+            RAISE EXCEPTION 'El vendedor % no está trabajando en la edición %',
+                p_idpersona, p_edicion;
+        END IF;
+
+        SELECT COALESCE(SUM(c.cantidad * a.precio), 0)
+        INTO MontoSinIVA
+        FROM ComprarVendedor c
+        JOIN Alimento a ON a.IdAlimento = c.IdAlimento
+        JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
+        WHERE c.IdPersona = p_idpersona
+            AND tv.Edicion = p_edicion;
+
+        MontoConIVA := MontoSinIVA * 1.16;
+        
+        RETURN NEXT;
+        RETURN;
+    END IF;
+    
+    RAISE EXCEPTION 'Rol "%" no válido', p_rol;
 END;
 $$ LANGUAGE plpgsql;
 
