@@ -784,6 +784,13 @@ BEGIN
         RAISE EXCEPTION 'No hubo recorridos en torneo distancia recorrida %, edición %', p_torneo, p_edicion;
     END IF;
 
+    WITH distancias_cuenta AS (
+        SELECT IdPersona, CodigoDeEntrenador,
+                distancia_total_entrenador(p_edicion, CodigoDeEntrenador) AS total_dist
+        FROM DistanciaRecorrida
+        WHERE Edicion = p_edicion AND IdTorneo = p_torneo
+        GROUP BY IdPersona, CodigoDeEntrenador
+    )
     SELECT COUNT(*) INTO empate
     FROM distancias_cuenta
     WHERE total_dist = max_distancia;
