@@ -1,22 +1,29 @@
-docker exec -i postgres psql -U postgres -d prueba < Eventos.sql
+docker exec -i postgres psql -U postgres -d prueba < Evento.sql
 docker exec -i postgres psql -U postgres -d prueba < ParticipanteUNAM.sql
 docker exec -i postgres psql -U postgres -d prueba < CorreoParticipante.sql
 docker exec -i postgres psql -U postgres -d prueba < TelefonoParticipante.sql
-docker exec -i postgres psql -U postgres -d prueba < Limpiador.sql
-docker exec -i postgres psql -U postgres -d prueba < CorreoLimpiador.sql
-docker exec -i postgres psql -U postgres -d prueba < TelefonoLimpiador.sql
-docker exec -i postgres psql -U postgres -d prueba < Cuidador.sql
-docker exec -i postgres psql -U postgres -d prueba < CorreoCuidador.sql
-docker exec -i postgres psql -U postgres -d prueba < TelefonoCuidador.sql
-docker exec -i postgres psql -U postgres -d prueba < Encargado.sql
-docker exec -i postgres psql -U postgres -d prueba < CorreoEncargado.sql
-docker exec -i postgres psql -U postgres -d prueba < TelefonoEncargado.sql
-
+docker exec -i postgres psql -U postgres -d prueba < limpiador.sql
+docker exec -i postgres psql -U postgres -d prueba < correo_limpiador.sql
+docker exec -i postgres psql -U postgres -d prueba < telefono_limpiador.sql
+docker exec -i postgres psql -U postgres -d prueba < trabajar_limpiador.sql
+docker exec -i postgres psql -U postgres -d prueba < cuidador.sql
+docker exec -i postgres psql -U postgres -d prueba < correo_cuidador.sql
+docker exec -i postgres psql -U postgres -d prueba < telefono_cuidador.sql
+docker exec -i postgres psql -U postgres -d prueba < trabajar_cuidador.sql
+docker exec -i postgres psql -U postgres -d prueba < encargado_registro.sql
+docker exec -i postgres psql -U postgres -d prueba < correo_encargado_registro.sql
+docker exec -i postgres psql -U postgres -d prueba < telefono_encargado_registro.sql
+docker exec -i postgres psql -U postgres -d prueba < trabajar_encargado_registro.sql
 docker exec -i postgres psql -U postgres -d prueba < CuentaPokemon.sql
 docker exec -i postgres psql -U postgres -d prueba < Pokemon.sql
-
-
-docker exec -i postgres psql -U postgres -d prueba < Vendedor.sql
+docker exec -i postgres psql -U postgres -d prueba < vendedor.sql
+docker exec -i postgres psql -U postgres -d prueba < correo_vendedor.sql
+docker exec -i postgres psql -U postgres -d prueba < telefono_vendedor.sql
+docker exec -i postgres psql -U postgres -d prueba < trabajar_vendedor.sql
 docker exec -i postgres psql -U postgres -d prueba < Alimentos.sql
 docker exec -i postgres psql -U postgres -d prueba < Espectador.sql
 docker exec -i postgres psql -U postgres -d prueba < Asistir.sql
+docker exec -i postgres psql -U postgres -d prueba < CapturasPokemon.sql
+docker exec -i postgres psql -U postgres -d prueba < inscripcionEncargado.sql
+
+

@@ -3297,4 +3297,3 @@ VALUES (1099, 'Leonardo', 'Ruiz', 'Hernández', '1965-09-17', 'Otro', 'Calle Hid
 
 INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
 VALUES (1100, 'María', 'Zamora', 'Rangel', '1972-08-11', 'Otro', 'Calzada de Tlalpan', 'Oblatos', 'Saltillo', 17882, 0, 204, FALSE);
-
