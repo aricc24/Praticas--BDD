@@ -469,11 +469,11 @@ LANGUAGE plpgsql
 AS $$
 DECLARE
     v_edicion INTEGER;
-BEGINSQL/progdb_torneo_pokemon.sql
+BEGIN
     -- Validar que exista un evento en la fecha dada
     SELECT Edicion INTO v_edicion
     FROM Evento
-    WHERE Fecha = NEW.Fecha;
+    WHERE DATE_TRUNC('day', Fecha) = DATE_TRUNC('day', NEW.Fecha);
 
     IF v_edicion IS NULL THEN
         RAISE EXCEPTION
