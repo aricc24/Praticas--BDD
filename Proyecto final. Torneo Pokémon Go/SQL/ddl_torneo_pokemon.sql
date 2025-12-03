@@ -1571,6 +1571,10 @@ COMMENT ON CONSTRAINT pk_torneo_pelea ON TorneoPelea IS 'Restricción de entidad
 COMMENT ON CONSTRAINT fk_torneo_pelea_evento ON TorneoPelea IS 'Restricción referencial que vincula TorneoPelea con Evento.';
 COMMENT ON CONSTRAINT fk_torneo_pelea_participante_unam ON TorneoPelea IS 'Restricción referencial que vincula TorneoPelea con ParticipanteUNAM.';
 
+CREATE SEQUENCE torneopelea_idtorneo_seq OWNED BY TorneoPelea.IdTorneo;
+ALTER TABLE TorneoPelea ALTER COLUMN IdTorneo SET DEFAULT nextval('torneopelea_idtorneo_seq');
+COMMENT ON SEQUENCE torneopelea_idtorneo_seq IS 'Secuencia para generar identificadores únicos para la tabla TorneoPelea.';
+
 
 -- ========
 -- PeleaTorneo 
@@ -1826,10 +1830,6 @@ COMMENT ON COLUMN InscripcionTorneoPelea.FechaInscripcion IS 'Fecha de inscripci
 COMMENT ON CONSTRAINT fk_inscripcion_pelea_torneo ON InscripcionTorneoPelea IS 'Restricción referencial que vincula InscripcionTorneoPelea con TorneoPelea.';
 COMMENT ON CONSTRAINT fk_inscripcion_pelea_cuenta ON InscripcionTorneoPelea IS 'Restricción referencial que vincula InscripcionTorneoPelea con CuentaPokemonGo.';
 
-
-CREATE SEQUENCE torneopelea_idtorneo_seq OWNED BY TorneoPelea.IdTorneo;
-ALTER TABLE TorneoPelea ALTER COLUMN IdTorneo SET DEFAULT nextval('torneopelea_idtorneo_seq');
-COMMENT ON SEQUENCE torneopelea_idtorneo_seq IS 'Secuencia para generar identificadores únicos para la tabla TorneoPelea.';
 
 
 

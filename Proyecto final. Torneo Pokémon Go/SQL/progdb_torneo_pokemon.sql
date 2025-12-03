@@ -469,11 +469,12 @@ LANGUAGE plpgsql
 AS $$
 DECLARE
     v_edicion INTEGER;
-BEGINSQL/progdb_torneo_pokemon.sql
+BEGIN
     -- Validar que exista un evento en la fecha dada
-    SELECT Edicion INTO v_edicion
-    FROM Evento
-    WHERE Fecha = NEW.Fecha;
+    SELECT edicion INTO v_edicion
+    FROM evento
+    WHERE fecha = DATE(NEW.fecha);
+
 
     IF v_edicion IS NULL THEN
         RAISE EXCEPTION
@@ -513,7 +514,7 @@ END;
 $$;
 
 -- TRIGGER
-CREATE TRIGGER tg_inscribir_participante
+CREATE OR REPLACE TRIGGER trg_encargado_inscribir_part
 AFTER INSERT ON EncargadoInscribirParticipante
 FOR EACH ROW
 EXECUTE FUNCTION trg_encargado_inscribir_part();
@@ -647,25 +648,30 @@ $$ LANGUAGE plpgsql;
 * Función para contar los pokemones utilizados por un participante en un torneo pelea específico.
 */
 CREATE OR REPLACE FUNCTION contar_pokemones_en_torneo_pelea(
-    idpersona INTEGER,
-    codigoentrenador INTEGER,
-    edicion   INTEGER,
-    idtorneo  INTEGER
+    p_idPersona INTEGER,
+    p_codigoEntrenador INTEGER,
+    p_edicion   INTEGER,
+    p_idtorneo  INTEGER
 )
 RETURNS INTEGER
 AS $$
-DECLARE pokemones_totales INTEGER;      
+DECLARE 
+    pokemones_totales INTEGER;      
 BEGIN
-    SELECT COUNT(*) INTO pokemones_totales
+    SELECT COUNT(*) 
+    INTO pokemones_totales
     FROM Utilizar u
     JOIN Pokemon p ON p.IdPokemon = u.IdPokemon
-    WHERE p.IdPersona = idpersona
-        AND p.CodigoDeEntrenador = codigoentrenador
-        AND u.Edicion = edicion
-        AND u.IdTorneo = idtorneo;
+    WHERE p.IdPersona = p_idPersona
+      AND p.CodigoDeEntrenador = p_codigoEntrenador
+      AND u.Edicion = p_edicion
+      AND u.IdTorneo = p_idtorneo;
+
     RETURN pokemones_totales;
 END;
 $$ LANGUAGE plpgsql;
+
+
 
 /**
 * Función para validar que un participante no registre más de 6 pokemones 
@@ -673,17 +679,18 @@ $$ LANGUAGE plpgsql;
 CREATE OR REPLACE FUNCTION validar_limite_pokemones()
 RETURNS TRIGGER AS $$
 DECLARE
-    idPersona INTEGER;
-    codigoEntrenador INTEGER;
+    v_idPersona INTEGER;
+    v_codigoEntrenador INTEGER;
     total_pokemones INTEGER;
 BEGIN
-    SELECT IdPersona, CodigoDeEntrenador INTO idPersona, codigoEntrenador
-    FROM Pokemon
-    WHERE IdPokemon = NEW.IdPokemon;
+    SELECT p.IdPersona, p.CodigoDeEntrenador
+    INTO v_idPersona, v_codigoEntrenador
+    FROM Pokemon p
+    WHERE p.IdPokemon = NEW.IdPokemon;
 
     total_pokemones := contar_pokemones_en_torneo_pelea(
-                            idPersona,
-                            codigoEntrenador,
+                            v_idPersona,
+                            v_codigoEntrenador,
                             NEW.Edicion,
                             NEW.IdTorneo
                         );
@@ -691,20 +698,22 @@ BEGIN
     IF total_pokemones >= 6 THEN
         RAISE EXCEPTION
             'El participante (% , %) ha alcanzado el límite de 6 pokemones en el torneo pelea % edición %.',
-            idPersona, codigoEntrenador, NEW.IdTorneo, NEW.Edicion;
+            v_idPersona, v_codigoEntrenador, NEW.IdTorneo, NEW.Edicion;
     END IF;
 
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
 
+
 /**
 * Trigger para validar el límite de pokemones por participante en un torneo pelea.
 */
-CREATE TRIGGER trg_validar_limite_pokemones
+CREATE OR REPLACE TRIGGER trg_validar_limite_pokemones
 BEFORE INSERT OR UPDATE ON Utilizar
 FOR EACH ROW
 EXECUTE FUNCTION validar_limite_pokemones();
+
 
 /**
  * Procedimiento para determinar el ganador de un torneo de pelea
