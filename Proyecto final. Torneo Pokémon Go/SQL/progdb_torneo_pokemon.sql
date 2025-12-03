@@ -738,6 +738,12 @@ BEGIN
         RAISE EXCEPTION 'No hubo peleas en torneo pelea %, edición %', torneo, ed;
     END IF;
 
+    WITH peleas_cuenta AS (
+        SELECT IdPersona, CodigoDeEntrenador, COUNT(*) AS cnt
+        FROM PeleaTorneo
+        WHERE Edicion = ed AND IdTorneo = torneo
+        GROUP BY IdPersona, CodigoDeEntrenador
+    )
     SELECT COUNT(*) INTO empate
     FROM peleas_cuenta
     WHERE cnt = ganador_cnt;
