@@ -1,3 +1,5 @@
+-- seleccionar las 5 menos triviales de la practipa pasada
+-- (la manera en que se calcula la distancia recorrida cambió)
 -- i. Mostrar el nombre completo de todos los participantes junto con su cuenta de Pokémon Go.
 SELECT 
     p.Nombre || ' ' || p.ApellidoPaterno || ' ' || p.ApellidoMaterno AS NombreCompleto,
@@ -102,7 +104,7 @@ RIGHT JOIN vendedor v ON a.idpersona = v.idpersona;
 
 -- viii. Mostrar las facultades que tienen más de 5 participantes inscritos en cualquier torneo.
 SELECT pu.Facultad,
-       COUNT(participantesTorneos.IdPersona) AS TotalParticipantes
+    COUNT(participantesTorneos.IdPersona) AS TotalParticipantes
 FROM (
     SELECT IdPersona FROM InscripcionTorneoPelea
     UNION
@@ -159,122 +161,51 @@ WHERE
             ) AS suma
         );
 
-
-
-
-
-
-
--------
-
-CREATE OR REPLACE PROCEDURE generar_1000_inscripciones_valido()
-LANGUAGE plpgsql
-AS $$
-DECLARE
-    contador INTEGER := 0;
-    p_edicion INTEGER;
-    p_idparticipante INTEGER;
-    p_idencargado INTEGER;
-    p_fecha TIMESTAMPTZ;
-
-    encargados_por_edicion JSONB;
-    ediciones_con_encargados INTEGER[];
-    max_participante_id INTEGER;
-
-BEGIN
-    RAISE NOTICE '=== INICIANDO GENERACIÓN VÁLIDA DE 1000 INSCRIPCIONES ===';
-
-    -- Obtener máximo participante actual
-    SELECT COALESCE(MAX(IdPersona), 1000)
-    INTO max_participante_id
-    FROM ParticipanteUNAM;
-
-    -- Crear mapa JSON: edicion -> encargados
-    SELECT jsonb_object_agg(edicion::text, encargados)
-    INTO encargados_por_edicion
-    FROM (
-        SELECT Edicion AS edicion, array_agg(IdPersona) AS encargados
-        FROM TrabajarEncargadoRegistro
-        GROUP BY Edicion
-        HAVING COUNT(*) > 0
-    ) sub;
-
-    -- Lista de ediciones válidas
-    SELECT array_agg(DISTINCT Edicion)
-    INTO ediciones_con_encargados
-    FROM TrabajarEncargadoRegistro;
-
-    IF ediciones_con_encargados IS NULL THEN
-        RAISE EXCEPTION 'No hay ediciones válidas.';
-    END IF;
-
-    WHILE contador < 1000 LOOP
-
-        -- Edición válida
-        p_edicion :=
-            ediciones_con_encargados[
-                floor(random() * array_length(ediciones_con_encargados, 1))::int + 1
-            ];
-
-        -- ID participante nuevo
-        max_participante_id := max_participante_id + 1;
-        p_idparticipante := max_participante_id;
-
-        -- Insertar participante (sin tabla Persona)
-        INSERT INTO ParticipanteUNAM(IdPersona)
-        VALUES(p_idparticipante)
-        ON CONFLICT DO NOTHING;
-
-        -- Encargado aleatorio
-        SELECT (encargados_por_edicion->p_edicion::text)->>idx
-        INTO p_idencargado
-        FROM LATERAL (
-            SELECT floor(random() * jsonb_array_length(encargados_por_edicion->p_edicion::text))::int AS idx
-        ) s;
-
-        -- Fecha aleatoria 2024
-        p_fecha := '2024-01-01'::timestamp
-                   + (floor(random() * 365) || ' days')::interval
-                   + (floor(random() * 86400) || ' seconds')::interval;
-
-        BEGIN
-            CALL inscribir_participante_evento(
-                p_edicion,
-                p_idparticipante,
-                p_idencargado,
-                p_fecha
-            );
-
-            contador := contador + 1;
-
-            IF contador % 100 = 0 THEN
-                RAISE NOTICE '% inscripciones creadas', contador;
-            END IF;
-
-        EXCEPTION WHEN OTHERS THEN
-            RAISE NOTICE 'Error con participante %: %', p_idparticipante, SQLERRM;
-            max_participante_id := max_participante_id - 1;
-            CONTINUE;
-        END;
-
-    END LOOP;
-
-    RAISE NOTICE '=== FINALIZADO: % inscripciones creadas ===', contador;
-
-END;
-$$;
-
-
-
-
-
-
-
----- Para el proyecto
-
--- 1. Distancia recorrida hombres vs mujeres de cada facultad 
+---- Para el proyecto final
+-- Calcular la distancia total recorrida en kilómetros por los participantes de cada facultad, desglosada por sexo / género.
+WITH distancia_total AS (
+    SELECT
+        dr.IdPersona,
+        dr.Edicion,
+        dr.CodigoDeEntrenador,
+        distancia_total_entrenador(dr.Edicion, dr.CodigoDeEntrenador) AS distancia_total
+    FROM DistanciaRecorrida dr
+    GROUP BY
+        dr.IdPersona,
+        dr.Edicion,
+        dr.CodigoDeEntrenador
+)
+SELECT
+    p.Facultad,
+    p.Sexo,
+    SUM(dt.distancia_total) / 1000 AS kilometros_recorridos
+FROM distancia_total dt
+JOIN ParticipanteUNAM p
+    ON p.IdPersona = dt.IdPersona
+GROUP BY
+    p.Facultad,
+    p.Sexo
+ORDER BY
+    p.Facultad,
+    p.Sexo;
 
 -- 2. Top 5 pokemones mas registrados en el torneo de peleas 
 
--- 3. Top 10 horas con mas capturas de shiny
+-- Recuperar las 10 horas del día con más capturas de Pokémon shinys durante los torneos.
+SELECT
+    EXTRACT(HOUR FROM r.Hora) AS hora,
+    COUNT(*) AS total_capturas_shiny
+FROM Registrar r
+JOIN Pokemon p 
+    ON p.IdPokemon = r.IdPokemon
+WHERE p.Shiny = TRUE
+GROUP BY EXTRACT(HOUR FROM r.Hora)
+ORDER BY total_capturas_shiny DESC
+LIMIT 10;
 
+-- Reportar las ganancias totales obtenidas en cada evento, ordenadas de mayor a menor ganancia.
+SELECT
+    e.Edicion,
+    COALESCE(ganancia_evento(e.Edicion), 0) AS Ganancia
+FROM Evento e
+ORDER BY Ganancia DESC;
