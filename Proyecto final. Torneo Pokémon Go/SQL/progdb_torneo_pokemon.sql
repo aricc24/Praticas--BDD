@@ -457,6 +457,68 @@ BEFORE INSERT OR UPDATE ON ParticipanteUNAM
 FOR EACH ROW
 EXECUTE FUNCTION validar_carrera_facultad();
 
+/**
+ * Trigger que revisa la validez de una inscripción y de ser 
+ * valida,  inscribe a un participante al evento basándose en la inserción
+ * realizada por un encargado en EncargadoInscribirParticipante.
+ */
+
+CREATE OR REPLACE FUNCTION trg_encargado_inscribir_part()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    v_edicion INTEGER;
+BEGINSQL/progdb_torneo_pokemon.sql
+    -- Validar que exista un evento en la fecha dada
+    SELECT Edicion INTO v_edicion
+    FROM Evento
+    WHERE Fecha = NEW.Fecha;
+
+    IF v_edicion IS NULL THEN
+        RAISE EXCEPTION
+            'No existe un evento en la fecha % para determinar la edición', NEW.Fecha;
+    END IF;
+
+    -- Validar que el encargado trabaja en esa edición
+    IF NOT EXISTS (
+        SELECT 1
+        FROM TrabajarEncargadoRegistro
+        WHERE Edicion = v_edicion
+          AND IdPersona = NEW.IdPersona_encargado
+    ) THEN
+        RAISE EXCEPTION
+            'El encargado % no trabaja en la edición %',
+            NEW.IdPersona_encargado, v_edicion;
+    END IF;
+
+    -- Validar que el participante no ha sido inscrito previamente
+    IF EXISTS (
+        SELECT 1
+        FROM ParticipanteInscribirEvento
+        WHERE Edicion = v_edicion
+          AND IdPersona = NEW.IdPersona_participante
+    ) THEN
+        RAISE EXCEPTION
+            'El participante % ya está inscrito en la edición %',
+            NEW.IdPersona_participante, v_edicion;
+    END IF;
+
+    -- 4. Insertar en ParticipanteInscribirEvento
+    INSERT INTO ParticipanteInscribirEvento(Edicion, IdPersona, Fecha, Costo)
+    VALUES (v_edicion, NEW.IdPersona_participante, NEW.Fecha, 250.0);
+
+    RETURN NEW;
+END;
+$$;
+
+-- TRIGGER
+CREATE TRIGGER tg_inscribir_participante
+AFTER INSERT ON EncargadoInscribirParticipante
+FOR EACH ROW
+EXECUTE FUNCTION trg_encargado_inscribir_part();
+
+
 
 /**
 * Función para crear torneos automáticamente al insertar un nuevo evento.
@@ -507,6 +569,7 @@ BEGIN
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
+
 /**
 * Trigger para validar encargado jugador.
 */
@@ -1292,42 +1355,7 @@ END;
 $$ LANGUAGE plpgsql;
 
 
-/**
-* Procedimiento para inscribir a un participante en un evento,
-* validando que el encargado trabaje en la edición correspondiente
-* y que el participante no haya sido inscrito previamente.
-*/
-CREATE OR REPLACE PROCEDURE inscribir_participante_evento(
-    p_edicion INTEGER,
-    p_idparticipante INTEGER,
-    p_idencargado INTEGER,
-    p_fecha TIMESTAMPTZ
-)
-LANGUAGE plpgsql
-AS $$
-BEGIN
-    IF NOT EXISTS (
-        SELECT 1 FROM TrabajarEncargadoRegistro
-        WHERE Edicion = p_edicion AND IdPersona = p_idencargado
-    ) THEN
-        RAISE EXCEPTION 'El encargado % no trabaja en la edición %', p_idencargado, p_edicion;
-    END IF;
 
-    IF EXISTS (
-        SELECT 1 FROM EncargadoInscribirParticipante
-        WHERE IdPersona_participante = p_idparticipante
-            AND Edicion = p_edicion
-    ) THEN
-        RAISE EXCEPTION 'El participante % ya fue inscrito por otro registrador en la edición %', p_idparticipante, p_edicion;
-    END IF;
-
-    INSERT INTO ParticipanteInscribirEvento(Edicion, IdPersona, Fecha, Costo)
-    VALUES(p_edicion, p_idparticipante, p_fecha, 250.0);
-
-    INSERT INTO EncargadoInscribirParticipante(IdPersona_encargado, IdPersona_participante, Fecha)
-    VALUES(p_idencargado, p_idparticipante, p_fecha);
-END;
-$$;
 
 /**
 * Función para validar que un participante esté inscrito en el evento general
