@@ -466,14 +466,14 @@ RETURNS TRIGGER
 LANGUAGE plpgsql
 AS $$
 DECLARE
-    edicion INTEGER;
+    ed INTEGER; -- edicion
 BEGIN
     -- Validar que exista un evento en la fecha dada
-    SELECT Edicion INTO edicion
+    SELECT Edicion INTO ed
     FROM Evento
     WHERE DATE_TRUNC('day', Fecha) = DATE_TRUNC('day', NEW.Fecha);
 
-    IF edicion IS NULL THEN
+    IF ed IS NULL THEN
         RAISE EXCEPTION
             'No existe un evento en la fecha % para determinar la edición', NEW.Fecha;
     END IF;
@@ -482,29 +482,29 @@ BEGIN
     IF NOT EXISTS (
         SELECT 1
         FROM TrabajarEncargadoRegistro
-        WHERE Edicion = edicion
+        WHERE Edicion = ed
             AND IdPersona = NEW.IdPersona_encargado
     ) THEN
         RAISE EXCEPTION
             'El encargado % no trabaja en la edición %',
-            NEW.IdPersona_encargado, edicion;
+            NEW.IdPersona_encargado, ed;
     END IF;
 
     -- Validar que el participante no ha sido inscrito previamente
     IF EXISTS (
         SELECT 1
         FROM ParticipanteInscribirEvento
-        WHERE Edicion = edicion
+        WHERE Edicion = ed
             AND IdPersona = NEW.IdPersona_participante
     ) THEN
         RAISE EXCEPTION
             'El participante % ya está inscrito en la edición %',
-            NEW.IdPersona_participante, edicion;
+            NEW.IdPersona_participante, ed;
     END IF;
 
     -- 4. Insertar en ParticipanteInscribirEvento
     INSERT INTO ParticipanteInscribirEvento(Edicion, IdPersona, Fecha, Costo)
-    VALUES (edicion, NEW.IdPersona_participante, NEW.Fecha, 250.0);
+    VALUES (ed, NEW.IdPersona_participante, NEW.Fecha, 250.0);
 
     RETURN NEW;
 END;
@@ -605,7 +605,7 @@ $$ LANGUAGE plpgsql;
 * Función para calcular la distancia total recorrida por un entrenador en una edición.
 */
 CREATE OR REPLACE FUNCTION distancia_total_entrenador(
-    edicion INTEGER,
+    ed INTEGER,
     codigo_entrenador INTEGER
 )
 RETURNS DOUBLE PRECISION AS $$
@@ -623,7 +623,7 @@ BEGIN
             L.Longitud AS lon
         FROM DistanciaRecorrida D
         JOIN Locacion L ON L.NombreLocacion = D.NombreLocacion
-        WHERE D.Edicion = edicion
+        WHERE D.Edicion = ed
             AND D.CodigoDeEntrenador = codigo_entrenador
         ORDER BY D.Fecha, D.Hora
     LOOP
@@ -659,9 +659,9 @@ BEGIN
     FROM Utilizar u
     JOIN Pokemon p ON p.IdPokemon = u.IdPokemon
     WHERE p.IdPersona = p_idPersona
-      AND p.CodigoDeEntrenador = p_codigoEntrenador
-      AND u.Edicion = p_edicion
-      AND u.IdTorneo = p_idtorneo;
+        AND p.CodigoDeEntrenador = p_codigoEntrenador
+        AND u.Edicion = p_edicion
+        AND u.IdTorneo = p_idtorneo;
 
     RETURN pokemones_totales;
 END;
@@ -714,7 +714,7 @@ EXECUTE FUNCTION validar_limite_pokemones();
 /**
  * Procedimiento para determinar el ganador de un torneo de pelea
  * basado en el número de peleas ganadas.
- * En caso de empate, se lanza una excepción.
+ * En caso de empate, no se actualiza el ganador.
  */
 CREATE OR REPLACE PROCEDURE determinar_ganador_torneo_pelea(
     ed INT,
@@ -753,14 +753,6 @@ BEGIN
     FROM peleas_cuenta
     WHERE cnt = ganador_cnt;
 
-    -- IF empate > 1 THEN
-    --     RAISE EXCEPTION 'Empate en torneo pelea %, edición %', torneo, ed;
-    -- END IF;
-
-    -- UPDATE TorneoPelea
-    -- SET IdPersona = ganador_id
-    -- WHERE Edicion = ed AND IdTorneo = torneo;
-
     IF empate = 1 THEN
         UPDATE TorneoPelea
         SET IdPersona = ganador_id
@@ -774,7 +766,7 @@ $$;
 * usando la cuenta con mayor distancia total. No actualiza si hay empate.
 */
 CREATE OR REPLACE PROCEDURE determinar_ganador_torneo_distancia(
-    edicion INT,
+    ed INT,
     torneo INT
 )
 LANGUAGE plpgsql
@@ -786,9 +778,9 @@ DECLARE
 BEGIN
     WITH distancias_cuenta AS (
         SELECT IdPersona, CodigoDeEntrenador,
-                distancia_total_entrenador(edicion, CodigoDeEntrenador) AS total_dist
+                distancia_total_entrenador(ed, CodigoDeEntrenador) AS total_dist
         FROM DistanciaRecorrida
-        WHERE Edicion = edicion AND IdTorneo = torneo
+        WHERE Edicion = ed AND IdTorneo = torneo
         GROUP BY IdPersona, CodigoDeEntrenador
     )
     SELECT IdPersona, total_dist
@@ -798,33 +790,24 @@ BEGIN
     LIMIT 1;
 
     IF ganador_id IS NULL THEN
-        RAISE EXCEPTION 'No hubo recorridos en torneo distancia recorrida %, edición %', torneo, edicion;
+        RAISE EXCEPTION 'No hubo recorridos en torneo distancia recorrida %, edición %', torneo, ed;
     END IF;
 
     WITH distancias_cuenta AS (
         SELECT IdPersona, CodigoDeEntrenador,
-                distancia_total_entrenador(edicion, CodigoDeEntrenador) AS total_dist
+                distancia_total_entrenador(ed, CodigoDeEntrenador) AS total_dist
         FROM DistanciaRecorrida
-        WHERE Edicion = edicion AND IdTorneo = torneo
+        WHERE Edicion = ed AND IdTorneo = torneo
         GROUP BY IdPersona, CodigoDeEntrenador
     )
     SELECT COUNT(*) INTO empate
     FROM distancias_cuenta
     WHERE total_dist = max_distancia;
 
-    -- IF empate > 1 THEN
-    --     RAISE EXCEPTION 'Empate en torneo distancia recorrida %, edición %. Distancia recorrida: % metros',
-    --         torneo, edicion, max_distancia;
-    -- END IF;
-
-    -- UPDATE TorneoDistanciaRecorrida
-    -- SET IdPersona = ganador_id
-    -- WHERE Edicion = edicion AND IdTorneo = torneo;
-
     IF empate = 1 THEN
         UPDATE TorneoDistanciaRecorrida
         SET IdPersona = ganador_id
-        WHERE Edicion = edicion AND IdTorneo = torneo;
+        WHERE Edicion = ed AND IdTorneo = torneo;
     END IF;
 END;
 $$;
@@ -833,9 +816,9 @@ $$;
 * Función para contar el número de pokémones shiny capturados por una cuenta en un torneo específico.
 */
 CREATE OR REPLACE FUNCTION contar_shinys_cuenta(
-    edicion INTEGER,
+    ed INTEGER,
     torneo INTEGER,
-    idpersona INTEGER,
+    id_persona INTEGER,
     codigo_entrenador INTEGER
 )
 RETURNS INTEGER
@@ -847,9 +830,9 @@ BEGIN
     INTO total_shinys
     FROM Registrar r
     JOIN Pokemon p ON r.IdPokemon = p.IdPokemon
-    WHERE r.Edicion = edicion
+    WHERE r.Edicion = ed
         AND r.IdTorneo = torneo
-        AND r.IdPersona = idpersona
+        AND r.IdPersona = id_persona
         AND r.CodigoDeEntrenador = codigo_entrenador
         AND p.Shiny = TRUE;
 
@@ -859,10 +842,10 @@ $$ LANGUAGE plpgsql;
 
 /**
 * Procedimiento para determinar el ganador de un torneo de captura de shinys.
-* En caso de empate, se lanza una excepción.
+* En caso de empate, no se actualiza el ganador.
 */
 CREATE OR REPLACE PROCEDURE determinar_ganador_torneo_shiny(
-    edicion INT,
+    ed INT,
     torneo INT
 )
 LANGUAGE plpgsql
@@ -874,9 +857,9 @@ DECLARE
 BEGIN
     WITH shinys_cuenta AS (
         SELECT IdPersona, CodigoDeEntrenador,
-                contar_shinys_cuenta(edicion, torneo, IdPersona, CodigoDeEntrenador) AS total_shinys
+                contar_shinys_cuenta(ed, torneo, IdPersona, CodigoDeEntrenador) AS total_shinys
         FROM Registrar
-        WHERE Edicion = edicion AND IdTorneo = torneo
+        WHERE Edicion = ed AND IdTorneo = torneo
         GROUP BY IdPersona, CodigoDeEntrenador
     )
     SELECT IdPersona, total_shinys
@@ -886,33 +869,24 @@ BEGIN
     LIMIT 1;
 
     IF ganador_id IS NULL THEN
-        RAISE EXCEPTION 'No hubo capturas en torneo captura shiny %, edición %', torneo, edicion;
+        RAISE EXCEPTION 'No hubo capturas en torneo captura shiny %, edición %', torneo, ed;
     END IF;
 
     WITH shinys_cuenta AS (
         SELECT IdPersona, CodigoDeEntrenador,
-                contar_shinys_cuenta(edicion, torneo, IdPersona, CodigoDeEntrenador) AS total_shinys
+                contar_shinys_cuenta(ed, torneo, IdPersona, CodigoDeEntrenador) AS total_shinys
         FROM Registrar
-        WHERE Edicion = edicion AND IdTorneo = torneo
+        WHERE Edicion = ed AND IdTorneo = torneo
         GROUP BY IdPersona, CodigoDeEntrenador
     )
     SELECT COUNT(*) INTO empate
     FROM shinys_cuenta
     WHERE total_shinys = max_shinys;
 
-    -- IF empate > 1 THEN
-    --     RAISE EXCEPTION 'Empate en torneo captura shiny %, edición %. Cantidad de shinys capturados: %',
-    --         torneo, edicion, max_shinys;
-    -- END IF;
-
-    -- UPDATE TorneoCapturaShinys
-    -- SET IdPersona = ganador_id
-    -- WHERE Edicion = edicion AND IdTorneo = torneo;
-
     IF empate = 1 THEN
         UPDATE TorneoCapturaShinys
         SET IdPersona = ganador_id
-        WHERE Edicion = edicion AND IdTorneo = torneo;
+        WHERE Edicion = ed AND IdTorneo = torneo;
     END IF;
 END;
 $$;
@@ -1025,9 +999,9 @@ $$ LANGUAGE plpgsql;
 CREATE OR REPLACE FUNCTION verificar_compra_alimento()
 RETURNS TRIGGER AS $$
 DECLARE
-    edicion INTEGER;
+    ed INTEGER;
 BEGIN
-    SELECT Edicion INTO edicion
+    SELECT Edicion INTO ed
     FROM TrabajarVendedor
     WHERE IdPersona = (SELECT IdPersona FROM Alimento WHERE IdAlimento = NEW.IdAlimento);
 
@@ -1040,9 +1014,9 @@ BEGIN
             SELECT 1
             FROM TrabajarCuidador
             WHERE IdPersona = NEW.IdPersona
-                AND Edicion = edicion
+                AND Edicion = ed
         ) THEN
-            RAISE EXCEPTION 'Cuidador % no trabaja en la edición % y no puede comprar este alimento', NEW.IdPersona, edicion;
+            RAISE EXCEPTION 'Cuidador % no trabaja en la edición % y no puede comprar este alimento', NEW.IdPersona, ed;
         END IF;
 
     ELSIF TG_TABLE_NAME = 'comprarlimpiador' THEN
@@ -1050,9 +1024,9 @@ BEGIN
             SELECT 1
             FROM TrabajarLimpiador
             WHERE IdPersona = NEW.IdPersona
-                AND Edicion = edicion
+                AND Edicion = ed
         ) THEN
-            RAISE EXCEPTION 'Limpiador % no trabaja en la edición % y no puede comprar este alimento', NEW.IdPersona, edicion;
+            RAISE EXCEPTION 'Limpiador % no trabaja en la edición % y no puede comprar este alimento', NEW.IdPersona, ed;
         END IF;
 
     ELSIF TG_TABLE_NAME = 'comprarencargadoregistro' THEN
@@ -1060,9 +1034,9 @@ BEGIN
             SELECT 1
             FROM TrabajarEncargadoRegistro
             WHERE IdPersona = NEW.IdPersona
-                AND Edicion = edicion
+                AND Edicion = ed
         ) THEN
-            RAISE EXCEPTION 'Encargado % no trabaja en la edición % y no puede comprar este alimento', NEW.IdPersona, edicion;
+            RAISE EXCEPTION 'Encargado % no trabaja en la edición % y no puede comprar este alimento', NEW.IdPersona, ed;
         END IF;
 
     ELSIF TG_TABLE_NAME = 'comprarparticipanteunam' THEN
@@ -1070,9 +1044,9 @@ BEGIN
             SELECT 1
             FROM ParticipanteInscribirEvento
             WHERE IdPersona = NEW.IdPersona
-                AND Edicion = edicion
+                AND Edicion = ed
         ) THEN
-            RAISE EXCEPTION 'Participante % no inscrito en la edición % y no puede comprar este alimento', NEW.IdPersona, edicion;
+            RAISE EXCEPTION 'Participante % no inscrito en la edición % y no puede comprar este alimento', NEW.IdPersona, ed;
         END IF;
 
     ELSIF TG_TABLE_NAME = 'comprarespectador' THEN
@@ -1080,9 +1054,9 @@ BEGIN
             SELECT 1
             FROM Asistir
             WHERE IdPersona = NEW.IdPersona
-                AND Edicion = edicion
+                AND Edicion = ed
         ) THEN
-            RAISE EXCEPTION 'Espectador % no inscrito en la edición % y no puede comprar este alimento', NEW.IdPersona, edicion;
+            RAISE EXCEPTION 'Espectador % no inscrito en la edición % y no puede comprar este alimento', NEW.IdPersona, ed;
         END IF;
 
     ELSIF TG_TABLE_NAME = 'comprarvendedor' THEN
@@ -1090,9 +1064,9 @@ BEGIN
             SELECT 1
             FROM TrabajarVendedor
             WHERE IdPersona = NEW.IdPersona
-                AND Edicion = edicion
+                AND Edicion = ed
         ) THEN
-            RAISE EXCEPTION 'Vendedor % no trabaja en la edición % y no puede comprar este alimento', NEW.IdPersona, edicion;
+            RAISE EXCEPTION 'Vendedor % no trabaja en la edición % y no puede comprar este alimento', NEW.IdPersona, ed;
         END IF;
 
     ELSE
@@ -1169,9 +1143,9 @@ EXECUTE FUNCTION verificar_compra_alimento();
 * (1 row)
 */
 CREATE OR REPLACE FUNCTION total_compras_persona(
-    idpersona INTEGER,
+    p_idpersona INTEGER,
     rol VARCHAR,
-    edicion INTEGER
+    p_edicion INTEGER
 )
 RETURNS TABLE (
     MontoSinIVA REAL,
@@ -1182,10 +1156,10 @@ BEGIN
     IF rol = 'cuidador' THEN
         IF NOT EXISTS (
             SELECT 1 FROM TrabajarCuidador
-            WHERE IdPersona = idpersona AND Edicion = edicion
+            WHERE IdPersona = p_idpersona AND Edicion = p_edicion
         ) THEN
             RAISE EXCEPTION 'El cuidador % no está trabajando en la edición %',
-                idpersona, edicion;
+                p_idpersona, p_edicion;
         END IF;
 
         SELECT COALESCE(SUM(c.cantidad * a.precio), 0)
@@ -1193,8 +1167,8 @@ BEGIN
         FROM ComprarCuidador c
         JOIN Alimento a ON a.IdAlimento = c.IdAlimento
         JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-        WHERE c.IdPersona = idpersona
-            AND tv.Edicion = edicion;
+        WHERE c.IdPersona = p_idpersona
+            AND tv.Edicion = p_edicion;
 
         MontoConIVA := MontoSinIVA * 1.16;
 
@@ -1205,10 +1179,10 @@ BEGIN
     IF rol = 'limpiador' THEN
         IF NOT EXISTS (
             SELECT 1 FROM TrabajarLimpiador
-            WHERE IdPersona = idpersona AND Edicion = edicion
+            WHERE IdPersona = p_idpersona AND Edicion = p_edicion
         ) THEN
             RAISE EXCEPTION 'El limpiador % no está trabajando en la edición %',
-                idpersona, edicion;
+                p_idpersona, p_edicion;
         END IF;
 
         SELECT COALESCE(SUM(c.cantidad * a.precio), 0)
@@ -1216,8 +1190,8 @@ BEGIN
         FROM ComprarLimpiador c
         JOIN Alimento a ON a.IdAlimento = c.IdAlimento
         JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-        WHERE c.IdPersona = idpersona
-            AND tv.Edicion = edicion;
+        WHERE c.IdPersona = p_idpersona
+            AND tv.Edicion = p_edicion;
 
         MontoConIVA := MontoSinIVA * 1.16;
         
@@ -1228,10 +1202,10 @@ BEGIN
     IF rol = 'encargadoregistro' THEN
         IF NOT EXISTS (
             SELECT 1 FROM TrabajarEncargadoRegistro
-            WHERE IdPersona = idpersona AND Edicion = edicion
+            WHERE IdPersona = p_idpersona AND Edicion = p_edicion
         ) THEN
             RAISE EXCEPTION 'El encargado % no está trabajando en la edición %',
-                idpersona, edicion;
+                p_idpersona, p_edicion;
         END IF;
 
         SELECT COALESCE(SUM(c.cantidad * a.precio), 0)
@@ -1239,8 +1213,8 @@ BEGIN
         FROM ComprarEncargadoRegistro c
         JOIN Alimento a ON a.IdAlimento = c.IdAlimento
         JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-        WHERE c.IdPersona = idpersona
-            AND tv.Edicion = edicion;
+        WHERE c.IdPersona = p_idpersona
+            AND tv.Edicion = p_edicion;
 
         MontoConIVA := MontoSinIVA * 1.16;
         
@@ -1251,10 +1225,10 @@ BEGIN
     IF rol = 'participanteunam' THEN
         IF NOT EXISTS (
             SELECT 1 FROM ParticipanteInscribirEvento
-            WHERE IdPersona = idpersona AND Edicion = edicion
+            WHERE IdPersona = p_idpersona AND Edicion = p_edicion
         ) THEN
             RAISE EXCEPTION 'El participante % no está inscrito en la edición %',
-                idpersona, edicion;
+                p_idpersona, p_edicion;
         END IF;
 
         SELECT COALESCE(SUM(c.cantidad * a.precio), 0)
@@ -1262,8 +1236,8 @@ BEGIN
         FROM ComprarParticipanteUNAM c
         JOIN Alimento a ON a.IdAlimento = c.IdAlimento
         JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-        WHERE c.IdPersona = idpersona
-            AND tv.Edicion = edicion;
+        WHERE c.IdPersona = p_idpersona
+            AND tv.Edicion = p_edicion;
 
         MontoConIVA := MontoSinIVA * 1.16;
         
@@ -1274,10 +1248,10 @@ BEGIN
     IF rol = 'espectador' THEN
         IF NOT EXISTS (
             SELECT 1 FROM Asistir
-            WHERE IdPersona = idpersona AND Edicion = edicion
+            WHERE IdPersona = p_idpersona AND Edicion = p_edicion
         ) THEN
             RAISE EXCEPTION 'El espectador % no está inscrito en la edición %',
-                idpersona, edicion;
+                p_idpersona, p_edicion;
         END IF;
 
         SELECT COALESCE(SUM(c.cantidad * a.precio), 0)
@@ -1285,8 +1259,8 @@ BEGIN
         FROM ComprarEspectador c
         JOIN Alimento a ON a.IdAlimento = c.IdAlimento
         JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-        WHERE c.IdPersona = idpersona
-            AND tv.Edicion = edicion;
+        WHERE c.IdPersona = p_idpersona
+            AND tv.Edicion = p_edicion;
 
         MontoConIVA := MontoSinIVA * 1.16;
         
@@ -1297,10 +1271,10 @@ BEGIN
     IF rol = 'vendedor' THEN
         IF NOT EXISTS (
             SELECT 1 FROM TrabajarVendedor
-            WHERE IdPersona = idpersona AND Edicion = edicion
+            WHERE IdPersona = p_idpersona AND Edicion = p_edicion
         ) THEN
             RAISE EXCEPTION 'El vendedor % no está trabajando en la edición %',
-                idpersona, edicion;
+                p_idpersona, p_edicion;
         END IF;
 
         SELECT COALESCE(SUM(c.cantidad * a.precio), 0)
@@ -1308,8 +1282,8 @@ BEGIN
         FROM ComprarVendedor c
         JOIN Alimento a ON a.IdAlimento = c.IdAlimento
         JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-        WHERE c.IdPersona = idpersona
-            AND tv.Edicion = edicion;
+        WHERE c.IdPersona = p_idpersona
+            AND tv.Edicion = p_edicion;
 
         MontoConIVA := MontoSinIVA * 1.16;
         
@@ -1326,8 +1300,8 @@ $$ LANGUAGE plpgsql;
 * en una edición específica.
 */
 CREATE OR REPLACE FUNCTION calcular_ventas_vendedor(
-    idvendedor INTEGER,
-    edicion INTEGER
+    p_idvendedor INTEGER,
+    p_edicion INTEGER
 )
 RETURNS REAL
 LANGUAGE plpgsql
@@ -1352,8 +1326,8 @@ BEGIN
     ) c
     JOIN Alimento a ON a.IdAlimento = c.IdAlimento
     JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-    WHERE tv.Edicion = edicion
-        AND a.IdPersona = idvendedor;
+    WHERE tv.Edicion = p_edicion
+        AND a.IdPersona = p_idvendedor;
 
     RETURN total_ventas;
 END;
@@ -1364,14 +1338,14 @@ $$;
 * considerando el 25% de sus ventas totales.
 */
 CREATE OR REPLACE FUNCTION salario_vendedor(
-    idvendedor INTEGER,
-    edicion INTEGER
+    p_idvendedor INTEGER,
+    p_edicion INTEGER
 )
 RETURNS REAL AS $$
 DECLARE
     total_ventas REAL;
 BEGIN
-    total_ventas := calcular_ventas_vendedor(idvendedor, edicion);
+    total_ventas := calcular_ventas_vendedor(p_idvendedor, p_edicion);
     RETURN total_ventas * 0.25;
 END;
 $$ LANGUAGE plpgsql;
@@ -1381,8 +1355,8 @@ $$ LANGUAGE plpgsql;
 * en una edición específica.
 */
 CREATE OR REPLACE FUNCTION contar_inscritos_encargado(
-    idpersona INTEGER,
-    edicion INTEGER
+    p_idpersona INTEGER,
+    p_edicion INTEGER
 )
 RETURNS INTEGER AS $$
 DECLARE
@@ -1392,8 +1366,8 @@ BEGIN
     FROM EncargadoInscribirParticipante eip
     JOIN ParticipanteInscribirEvento pie
         ON eip.IdPersona_participante = pie.IdPersona
-        AND pie.Edicion = edicion
-    WHERE eip.IdPersona_encargado = idpersona;
+        AND pie.Edicion = p_edicion
+    WHERE eip.IdPersona_encargado = p_idpersona;
 
     RETURN inscritos;
 END;
@@ -1404,19 +1378,19 @@ $$ LANGUAGE plpgsql;
 * en una edición específica, considerando 50 pesos por cada participante inscrito.
 */
 CREATE OR REPLACE FUNCTION salario_encargado_registro(
-    idpersona INTEGER,
-    edicion INTEGER
+    p_idpersona INTEGER,
+    p_edicion INTEGER
 )
 RETURNS REAL AS $$
 DECLARE
     inscritos INTEGER;
 BEGIN
     IF NOT EXISTS (
-        SELECT 1 FROM EncargadoRegistro WHERE IdPersona = idpersona
+        SELECT 1 FROM EncargadoRegistro WHERE IdPersona = p_idpersona
     ) THEN
-        RAISE EXCEPTION 'Encargado con id % no existe', idpersona;
+        RAISE EXCEPTION 'Encargado con id % no existe', p_idpersona;
     END IF;
-    inscritos := contar_inscritos_encargado(idpersona, edicion);
+    inscritos := contar_inscritos_encargado(p_idpersona, p_edicion);
     RETURN inscritos * 50.0;
 END;
 $$ LANGUAGE plpgsql;
