@@ -109,14 +109,16 @@ SELECT
     r.idpersona,
     r.edicion,
     r.idtorneo
-FROM
-    registrar r JOIN pokemon p ON p.idpokemon = r.idpokemon 
-    JOIN capturapokemon c ON c.edicion = r.edicion
+FROM registrar r 
+JOIN pokemon p 
+    ON p.idpokemon = r.idpokemon 
+JOIN capturapokemon c 
+    ON c.edicion = r.edicion
     AND r.idtorneo = c.idtorneo
     AND r.idcaptura = c.idcaptura
 WHERE
     p.shiny = TRUE
-    AND r.hora BETWEEN '14:00:00' AND '18:00:00';
+    AND EXTRACT(HOUR FROM r.hora) BETWEEN 14 AND 18;
 
 -- 7.(practica) Obtener el nombre completo de los participantes y su facultad que hayan participado tanto en el torneo de distancia recorrida como en el de captura de shinys, cuya distancia total recorrida sea mayor al promedio de distancia de todos los participantes y ademas que su numero de capturas de shinys sean mayor a 5.
 SELECT 
