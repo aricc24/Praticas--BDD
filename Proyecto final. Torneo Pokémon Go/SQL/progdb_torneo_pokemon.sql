@@ -555,11 +555,11 @@ BEGIN
         IF NOT EXISTS (
             SELECT 1
             FROM ParticipanteUNAM P
-            WHERE P.Nombre = NEW.Nombre
-                AND P.ApellidoPaterno = NEW.ApellidoPaterno
-                AND P.ApellidoMaterno = NEW.ApellidoMaterno
+            WHERE LOWER(P.Nombre) = LOWER(NEW.Nombre)
+                AND LOWER(P.ApellidoPaterno) = LOWER(NEW.ApellidoPaterno)
+                AND LOWER(P.ApellidoMaterno) = LOWER(NEW.ApellidoMaterno)
                 AND P.FechaNacimiento = NEW.FechaNacimiento
-                AND P.Sexo = NEW.Sexo
+                AND LOWER(P.Sexo) = LOWER(NEW.Sexo)
         ) THEN
             RAISE EXCEPTION 'Esta persona no está registrada como ParticipanteUNAM, por lo que no puede ser jugador.';
         END IF;
