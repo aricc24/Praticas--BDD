@@ -1,6 +1,0 @@
-ERROR:  duplicate key value violates unique constraint "pk_locacion"
-DETAIL:  Key (nombrelocacion)=(Universum) already exists.
-ERROR:  duplicate key value violates unique constraint "pk_locacion"
-DETAIL:  Key (nombrelocacion)=(Rectoria) already exists.
-ERROR:  duplicate key value violates unique constraint "pk_locacion"
-DETAIL:  Key (nombrelocacion)=(Entrada) already exists.

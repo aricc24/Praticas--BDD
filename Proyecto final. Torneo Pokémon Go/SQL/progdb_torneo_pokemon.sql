@@ -475,7 +475,7 @@ BEGIN
 
     IF ed IS NULL THEN
         RAISE EXCEPTION
-            'No existe un evento en la fecha % para determinar la edición', NEW.Fecha;
+            'No existe un evento en la fecha % para determinar la edición', DATE_TRUNC('day', NEW.Fecha);
     END IF;
 
     -- Validar que el encargado trabaja en esa edición
