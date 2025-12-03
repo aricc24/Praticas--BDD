@@ -162,7 +162,7 @@ WHERE
         );
 
 ---- Para el proyecto final
--- Calcular la distancia total recorrida en kilómetros por los participantes de cada facultad, desglosada por sexo.
+-- Calcular la distancia total recorrida en kilómetros por los participantes de cada facultad, desglosada por sexo / género.
 WITH distancia_total AS (
     SELECT
         dr.IdPersona,
@@ -191,7 +191,6 @@ ORDER BY
 
 -- 2. Top 5 pokemones mas registrados en el torneo de peleas 
 
--- 3. Top 10 horas con mas capturas de shiny
 -- Recuperar las 10 horas del día con más capturas de Pokémon shinys durante los torneos.
 SELECT
     EXTRACT(HOUR FROM r.Hora) AS hora,
@@ -204,3 +203,9 @@ GROUP BY EXTRACT(HOUR FROM r.Hora)
 ORDER BY total_capturas_shiny DESC
 LIMIT 10;
 
+-- Reportar las ganancias totales obtenidas en cada evento, ordenadas de mayor a menor ganancia.
+SELECT
+    e.Edicion,
+    COALESCE(ganancia_evento(e.Edicion), 0) AS Ganancia
+FROM Evento e
+ORDER BY Ganancia DESC;

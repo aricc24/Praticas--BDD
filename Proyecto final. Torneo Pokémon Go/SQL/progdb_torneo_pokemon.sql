@@ -745,13 +745,19 @@ BEGIN
     FROM peleas_cuenta
     WHERE cnt = ganador_cnt;
 
-    IF empate > 1 THEN
-        RAISE EXCEPTION 'Empate en torneo pelea %, edición %', torneo, ed;
-    END IF;
+    -- IF empate > 1 THEN
+    --     RAISE EXCEPTION 'Empate en torneo pelea %, edición %', torneo, ed;
+    -- END IF;
 
-    UPDATE TorneoPelea
-    SET IdPersona = ganador_id
-    WHERE Edicion = ed AND IdTorneo = torneo;
+    -- UPDATE TorneoPelea
+    -- SET IdPersona = ganador_id
+    -- WHERE Edicion = ed AND IdTorneo = torneo;
+
+    IF empate = 1 THEN
+        UPDATE TorneoPelea
+        SET IdPersona = ganador_id
+        WHERE Edicion = ed AND IdTorneo = torneo;
+    END IF;
 END;
 $$;
 
@@ -798,14 +804,20 @@ BEGIN
     FROM distancias_cuenta
     WHERE total_dist = max_distancia;
 
-    IF empate > 1 THEN
-        RAISE EXCEPTION 'Empate en torneo distancia recorrida %, edición %. Distancia recorrida: % metros',
-            torneo, edicion, max_distancia;
-    END IF;
+    -- IF empate > 1 THEN
+    --     RAISE EXCEPTION 'Empate en torneo distancia recorrida %, edición %. Distancia recorrida: % metros',
+    --         torneo, edicion, max_distancia;
+    -- END IF;
 
-    UPDATE TorneoDistanciaRecorrida
-    SET IdPersona = ganador_id
-    WHERE Edicion = edicion AND IdTorneo = torneo;
+    -- UPDATE TorneoDistanciaRecorrida
+    -- SET IdPersona = ganador_id
+    -- WHERE Edicion = edicion AND IdTorneo = torneo;
+
+    IF empate = 1 THEN
+        UPDATE TorneoDistanciaRecorrida
+        SET IdPersona = ganador_id
+        WHERE Edicion = edicion AND IdTorneo = torneo;
+    END IF;
 END;
 $$;
 
@@ -880,14 +892,20 @@ BEGIN
     FROM shinys_cuenta
     WHERE total_shinys = max_shinys;
 
-    IF empate > 1 THEN
-        RAISE EXCEPTION 'Empate en torneo captura shiny %, edición %. Cantidad de shinys capturados: %',
-            torneo, edicion, max_shinys;
-    END IF;
+    -- IF empate > 1 THEN
+    --     RAISE EXCEPTION 'Empate en torneo captura shiny %, edición %. Cantidad de shinys capturados: %',
+    --         torneo, edicion, max_shinys;
+    -- END IF;
 
-    UPDATE TorneoCapturaShinys
-    SET IdPersona = ganador_id
-    WHERE Edicion = edicion AND IdTorneo = torneo;
+    -- UPDATE TorneoCapturaShinys
+    -- SET IdPersona = ganador_id
+    -- WHERE Edicion = edicion AND IdTorneo = torneo;
+    
+    IF empate = 1 THEN
+        UPDATE TorneoCapturaShinys
+        SET IdPersona = ganador_id
+        WHERE Edicion = edicion AND IdTorneo = torneo;
+    END IF;
 END;
 $$;
 
@@ -1531,7 +1549,7 @@ FOR EACH ROW
 EXECUTE FUNCTION verificar_inscripcion_captura();
 
 /**
-* Función para calcular la ganancia neta de un evento en una edición específica.
+* Función para calcular la ganancia total de un evento en una edición específica.
 * Ganancia = ventas totales + ingresos por inscripciones - salarios - premios
 */
 CREATE OR REPLACE FUNCTION ganancia_evento(edicion INTEGER)
@@ -1610,7 +1628,7 @@ BEGIN
         SELECT CantidadAPremiar FROM TorneoCapturaShinys WHERE Edicion = edicion
     ) t;
 
-    -- Ganancia neta
+    -- Ganancia 
     RETURN total_ventas + ingresos_inscripcion
             - (salarios_vendedores + salarios_encargados + salarios_cuidador + salarios_limpiador + premios_totales);
 END;
