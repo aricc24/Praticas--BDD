@@ -1236,6 +1236,10 @@ ALTER TABLE EncargadoInscribirParticipante ALTER COLUMN IdPersona_encargado SET 
 ALTER TABLE EncargadoInscribirParticipante ALTER COLUMN IdPersona_participante SET NOT NULL;
 ALTER TABLE EncargadoInscribirParticipante ALTER COLUMN Fecha SET NOT NULL;
 
+ALTER TABLE EncargadoInscribirParticipante ADD CONSTRAINT CK_hora_inscripcion CHECK (EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') >= 7 AND EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') < 9);
+COMMENT ON CONSTRAINT CK_hora_inscripcion ON EncargadoInscribirParticipante IS 'Restricción CHECK que valida que la inscripción se realice entre las 7:00 y las 9:00 horas, hora local de Ciudad de México.';
+
+
 COMMENT ON TABLE EncargadoInscribirParticipante IS 'Tabla que registra las inscripciones realizadas por los encargados a los participantes, incluyendo la fecha en que se efectuó la inscripción.';
 COMMENT ON COLUMN EncargadoInscribirParticipante.IdPersona_encargado IS 'Identificador del encargado de registro que inscribe al participante (llave foránea hacia EncargadoRegistro).';
 COMMENT ON COLUMN EncargadoInscribirParticipante.IdPersona_participante IS 'Identificador del participante inscrito (llave foránea hacia ParticipanteUNAM).';
@@ -1274,6 +1278,7 @@ ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Costo SET NOT NULL;
 
 ALTER TABLE ParticipanteInscribirEvento ADD CONSTRAINT CK_Costo_Positive CHECK (Costo >= 0);
 ALTER TABLE ParticipanteInscribirEvento ADD CONSTRAINT CK_Fecha_Inscripcion CHECK (Fecha <= CURRENT_DATE);
+ALTER TABLE ParticipanteInscribirEvento ADD CONSTRAINT CK_hora_inscripcion CHECK (EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') >= 7 AND EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') < 9);
 ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Costo SET NOT NULL;
 ALTER TABLE ParticipanteInscribirEvento ALTER COLUMN Fecha SET NOT NULL;
 
@@ -1287,6 +1292,7 @@ COMMENT ON COLUMN ParticipanteInscribirEvento.Fecha IS 'Fecha en que el particip
 COMMENT ON COLUMN ParticipanteInscribirEvento.Costo IS 'Costo total de inscripción pagado por el participante.';
 COMMENT ON CONSTRAINT CK_Costo_Positive ON ParticipanteInscribirEvento IS 'Restricción CHECK que asegura que el costo de inscripción sea un valor no negativo.';
 COMMENT ON CONSTRAINT CK_Fecha_Inscripcion ON ParticipanteInscribirEvento IS 'Restricción CHECK que garantiza que la fecha de inscripción no sea posterior a la fecha actual.';
+COMMENT ON CONSTRAINT CK_hora_inscripcion ON ParticipanteInscribirEvento IS 'Restricción CHECK que valida que la inscripción se realice entre las 7:00 y las 9:00 horas, hora local de Ciudad de México.';
 COMMENT ON CONSTRAINT uq_inscripcionEvento ON ParticipanteInscribirEvento IS 'Restricción de unicidad que asegura que un participante no pueda inscribirse más de una vez en la misma edición del evento.';
 
 COMMENT ON CONSTRAINT PK_ParticipanteInscribirEvento ON ParticipanteInscribirEvento IS 'Llave primaria compuesta por Edicion e IdPersona que garantiza que un participante no se inscriba dos veces al mismo evento.';
@@ -1822,7 +1828,9 @@ ALTER TABLE InscripcionTorneoPelea ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE InscripcionTorneoPelea ALTER COLUMN IdTorneo SET NOT NULL;
 ALTER TABLE InscripcionTorneoPelea ALTER COLUMN Edicion SET NOT NULL;
 ALTER TABLE InscripcionTorneoPelea ALTER COLUMN FechaInscripcion SET DEFAULT CURRENT_DATE;
+ALTER TABLE InscripcionTorneoPelea ADD CONSTRAINT CK_hora_inscripcion CHECK (EXTRACT(HOUR FROM FechaInscripcion AT TIME ZONE 'America/Mexico_City') >= 7 AND EXTRACT(HOUR FROM FechaInscripcion AT TIME ZONE 'America/Mexico_City') < 9);
 
+COMMENT ON CONSTRAINT CK_hora_inscripcion ON InscripcionTorneoPelea IS 'Restricción CHECK que valida que la hora de inscripción esté dentro del horario permitido (7:00 a 9:00), hora local de Ciudad de México.';
 COMMENT ON TABLE InscripcionTorneoPelea IS 'Inscripciones al torneo de pelea Pokémon.';
 COMMENT ON COLUMN InscripcionTorneoPelea.Edicion IS 'Edición del torneo de pelea.';
 COMMENT ON COLUMN InscripcionTorneoPelea.IdTorneo IS 'Identificador del torneo de pelea.';
@@ -1865,6 +1873,7 @@ ALTER TABLE InscripcionTorneoDistancia ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE InscripcionTorneoDistancia ALTER COLUMN IdTorneo SET NOT NULL;
 ALTER TABLE InscripcionTorneoDistancia ALTER COLUMN Edicion SET NOT NULL;
 ALTER TABLE InscripcionTorneoDistancia ALTER COLUMN FechaInscripcion SET DEFAULT CURRENT_DATE;
+ALTER TABLE InscripcionTorneoDistancia ADD CONSTRAINT CK_hora_inscripcion_distancia CHECK (EXTRACT(HOUR FROM FechaInscripcion AT TIME ZONE 'America/Mexico_City') >= 7 AND EXTRACT(HOUR FROM FechaInscripcion AT TIME ZONE 'America/Mexico_City') < 9);
 
 COMMENT ON TABLE InscripcionTorneoDistancia IS 'Inscripciones al torneo de distancia Pokémon.';
 COMMENT ON COLUMN InscripcionTorneoDistancia.Edicion IS 'Edición del torneo de distancia.';
@@ -1872,6 +1881,7 @@ COMMENT ON COLUMN InscripcionTorneoDistancia.IdTorneo IS 'Identificador del torn
 COMMENT ON COLUMN InscripcionTorneoDistancia.IdPersona IS 'Persona inscrita.';
 COMMENT ON COLUMN InscripcionTorneoDistancia.CodigoDeEntrenador IS 'Código del entrenador inscrito.';
 COMMENT ON COLUMN InscripcionTorneoDistancia.FechaInscripcion IS 'Fecha de inscripción.';
+COMMENT ON CONSTRAINT CK_hora_inscripcion_distancia ON InscripcionTorneoDistancia IS 'Restricción CHECK que valida que la hora de inscripción esté dentro del horario permitido (7:00 a 9:00), hora local de Ciudad de México.';
 
 COMMENT ON CONSTRAINT fk_inscripcion_distancia_torneo ON InscripcionTorneoDistancia IS 'Restricción referencial que vincula InscripcionTorneoDistancia con TorneoDistancia.';
 COMMENT ON CONSTRAINT fk_inscripcion_distancia_cuenta ON InscripcionTorneoDistancia IS 'Restricción referencial que vincula InscripcionTorneoDistancia con CuentaPokemonGo.';
@@ -1906,6 +1916,7 @@ ALTER TABLE InscripcionTorneoCaptura ALTER COLUMN IdPersona SET NOT NULL;
 ALTER TABLE InscripcionTorneoCaptura ALTER COLUMN IdTorneo SET NOT NULL;
 ALTER TABLE InscripcionTorneoCaptura ALTER COLUMN Edicion SET NOT NULL;
 ALTER TABLE InscripcionTorneoCaptura ALTER COLUMN FechaInscripcion SET DEFAULT CURRENT_DATE;
+ALTER TABLE InscripcionTorneoCaptura ADD CONSTRAINT CK_hora_inscripcion_captura CHECK (EXTRACT(HOUR FROM FechaInscripcion AT TIME ZONE 'America/Mexico_City') >= 7 AND EXTRACT(HOUR FROM FechaInscripcion AT TIME ZONE 'America/Mexico_City') < 9);
 
 COMMENT ON TABLE InscripcionTorneoCaptura IS 'Inscripciones al torneo de captura Pokémon.';
 COMMENT ON COLUMN InscripcionTorneoCaptura.Edicion IS 'Edición del torneo de captura.';
@@ -1913,6 +1924,7 @@ COMMENT ON COLUMN InscripcionTorneoCaptura.IdTorneo IS 'Identificador del torneo
 COMMENT ON COLUMN InscripcionTorneoCaptura.IdPersona IS 'Persona inscrita.';
 COMMENT ON COLUMN InscripcionTorneoCaptura.CodigoDeEntrenador IS 'Código del entrenador inscrito.';
 COMMENT ON COLUMN InscripcionTorneoCaptura.FechaInscripcion IS 'Fecha de inscripción.';
+COMMENT ON CONSTRAINT CK_hora_inscripcion_captura ON InscripcionTorneoCaptura IS 'Restricción CHECK que valida que la hora de inscripción esté dentro del horario permitido (7:00 a 9:00), hora local de Ciudad de México.';
 
 COMMENT ON CONSTRAINT fk_inscripcion_captura_torneo ON InscripcionTorneoCaptura IS 'Restricción referencial que vincula InscripcionTorneoCaptura con TorneoCaptura.';
 COMMENT ON CONSTRAINT fk_inscripcion_captura_cuenta ON InscripcionTorneoCaptura IS 'Restricción referencial que vincula InscripcionTorneoCaptura con CuentaPokemonGo.';
