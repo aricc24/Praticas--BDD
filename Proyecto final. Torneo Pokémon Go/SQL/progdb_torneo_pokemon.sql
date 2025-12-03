@@ -796,7 +796,8 @@ BEGIN
     WHERE total_dist = max_distancia;
 
     IF empate > 1 THEN
-        RAISE EXCEPTION 'Empate en torneo distancia recorrida %, edición %', p_torneo, p_edicion;
+        RAISE EXCEPTION 'Empate en torneo distancia recorrida %, edición %. Distancia recorrida: % metros',
+            p_torneo, p_edicion, max_distancia;
     END IF;
 
     UPDATE TorneoDistanciaRecorrida
