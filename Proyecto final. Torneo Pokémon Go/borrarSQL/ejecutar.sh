@@ -31,7 +31,7 @@ docker exec -i postgres psql -U postgres -d prueba < inscribirtorneodistancia.sq
 docker exec -i postgres psql -U postgres -d prueba < inscribirtorneopelea.sql     2> errores/inscribirtorneopelea.err
 docker exec -i postgres psql -U postgres -d prueba < inscribirtorneocapturadistancia.sql     2> errores/inscribirtorneocapturadistancia.err
 docker exec -i postgres psql -U postgres -d prueba < Locacion.sql     2> errores/Locacion.err
-
 docker exec -i postgres psql -U postgres -d prueba < distancia_recorrida.sql    2> errores/distancia_recorrida.err
-
 docker exec -i postgres psql -U postgres -d prueba < registrar.sql    2> errores/registrar.err
+docker exec -i postgres psql -U postgres -d prueba < peleas.sql    2> errores/peleas.err
+docker exec -i postgres psql -U postgres -d prueba < utilizar.sql    2> errores/utilizar.err
