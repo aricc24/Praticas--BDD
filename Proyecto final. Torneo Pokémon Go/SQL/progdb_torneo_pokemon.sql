@@ -1534,7 +1534,7 @@ EXECUTE FUNCTION verificar_inscripcion_captura();
 * Función para calcular la ganancia total de un evento en una edición específica.
 * Ganancia = ventas totales + ingresos por inscripciones - salarios - premios
 */
-CREATE OR REPLACE FUNCTION ganancia_evento(edicion INTEGER)
+CREATE OR REPLACE FUNCTION ganancia_evento(ed INTEGER)
 RETURNS REAL AS $$
 DECLARE
     total_ventas REAL := 0;
@@ -1563,51 +1563,51 @@ BEGIN
     ) c
     JOIN Alimento a ON a.IdAlimento = c.IdAlimento
     JOIN TrabajarVendedor tv ON tv.IdPersona = a.IdPersona
-    WHERE tv.Edicion = edicion;
+    WHERE tv.Edicion = ed;
 
     -- 2. Ingresos por inscripciones
     SELECT COALESCE(SUM(Costo),0)
     INTO ingresos_inscripcion
     FROM ParticipanteInscribirEvento
-    WHERE Edicion = edicion;
+    WHERE Edicion = ed;
 
     -- 3. Salarios de vendedores
-    SELECT COALESCE(SUM(salario_vendedor(v.IdPersona, edicion)),0)
+    SELECT COALESCE(SUM(salario_vendedor(v.IdPersona, ed)),0)
     INTO salarios_vendedores
     FROM Vendedor v
     JOIN TrabajarVendedor tv ON tv.IdPersona = v.IdPersona
-    WHERE tv.Edicion = edicion;
+    WHERE tv.Edicion = ed;
 
     -- 4. Salarios de encargados
-    SELECT COALESCE(SUM(salario_encargado_registro(er.IdPersona, edicion)),0)
+    SELECT COALESCE(SUM(salario_encargado_registro(er.IdPersona, ed)),0)
     INTO salarios_encargados
     FROM EncargadoRegistro er
     JOIN TrabajarEncargadoRegistro ter ON ter.IdPersona = er.IdPersona
-    WHERE ter.Edicion = edicion;
+    WHERE ter.Edicion = ed;
 
     -- 5. Salarios de cuidadores 
     SELECT COALESCE(SUM(cu.Salario),0)
     INTO salarios_cuidador
     FROM Cuidador cu
     JOIN TrabajarCuidador tc ON tc.IdPersona = cu.IdPersona
-    WHERE tc.Edicion = edicion;
+    WHERE tc.Edicion = ed;
 
     -- 6. Salarios de limpiadores 
     SELECT COALESCE(SUM(li.Salario),0)
     INTO salarios_limpiador
     FROM Limpiador li
     JOIN TrabajarLimpiador tl ON tl.IdPersona = li.IdPersona
-    WHERE tl.Edicion = edicion;
+    WHERE tl.Edicion = ed;
 
     -- 7. Premios totales de torneos
     SELECT COALESCE(SUM(CantidadAPremiar),0)
     INTO premios_totales
     FROM (
-        SELECT CantidadAPremiar FROM TorneoPelea WHERE Edicion = edicion
+        SELECT CantidadAPremiar FROM TorneoPelea WHERE Edicion = ed
         UNION ALL
-        SELECT CantidadAPremiar FROM TorneoDistanciaRecorrida WHERE Edicion = edicion
+        SELECT CantidadAPremiar FROM TorneoDistanciaRecorrida WHERE Edicion = ed
         UNION ALL
-        SELECT CantidadAPremiar FROM TorneoCapturaShinys WHERE Edicion = edicion
+        SELECT CantidadAPremiar FROM TorneoCapturaShinys WHERE Edicion = ed
     ) t;
 
     -- Ganancia 
