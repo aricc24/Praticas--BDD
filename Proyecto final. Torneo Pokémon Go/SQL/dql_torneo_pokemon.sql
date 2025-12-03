@@ -1,3 +1,20 @@
+-- Determina ganadores
+DO $$
+DECLARE
+    t RECORD;
+BEGIN
+    FOR t IN SELECT Edicion, IdTorneo FROM TorneoPelea LOOP
+        CALL determinar_ganador_torneo_pelea(t.Edicion, t.IdTorneo);
+    END LOOP;
+
+    FOR t IN SELECT Edicion, IdTorneo FROM TorneoDistanciaRecorrida LOOP
+        CALL determinar_ganador_torneo_distancia(t.Edicion, t.IdTorneo);
+    END LOOP;
+    FOR t IN SELECT Edicion, IdTorneo FROM TorneoCapturaShinys LOOP
+        CALL determinar_ganador_torneo_shiny(t.Edicion, t.IdTorneo);
+    END LOOP;
+END $$;
+
 -- 1. (practica). Calcular la distancia total recorrida en kilómetros por los participantes de cada facultad, desglosada por sexo / género.
 WITH distancia_total AS (
     SELECT
@@ -169,28 +186,33 @@ GROUP BY
     p.ApellidoMaterno
 ORDER BY KilometrosRecorridos DESC;
 
--- 9. Sacar porcentaje de ganadores mujeres vs hombres en los tres torneos.
-WITH TodosGanadores AS (
-    SELECT IdPersona FROM TorneoPelea
+-- 9. Porcentaje de victorias por sexo/género en todos los torneos.
+WITH Ganadores AS (
+    SELECT IdPersona FROM TorneoPelea WHERE IdPersona IS NOT NULL
     UNION ALL
-    SELECT IdPersona FROM TorneoDistanciaRecorrida
+    SELECT IdPersona FROM TorneoDistanciaRecorrida WHERE IdPersona IS NOT NULL
     UNION ALL
-    SELECT IdPersona FROM TorneoCapturaShinys
+    SELECT IdPersona FROM TorneoCapturaShinys WHERE IdPersona IS NOT NULL
 ),
 ConteoPorSexo AS (
-    SELECT pu.Sexo, COUNT(*) AS total
-    FROM TodosGanadores g
-    JOIN ParticipanteUNAM pu ON pu.IdPersona = g.IdPersona
+    SELECT 
+        pu.Sexo,
+        COUNT(*) AS Cantidad
+    FROM Ganadores g
+    JOIN ParticipanteUNAM pu 
+        ON g.IdPersona = pu.IdPersona
     GROUP BY pu.Sexo
 ),
-Total AS (
-    SELECT SUM(total) AS total_global FROM ConteoPorSexo
+TotalGanadores AS (
+    SELECT SUM(Cantidad) AS Total FROM ConteoPorSexo
 )
 SELECT 
     c.Sexo,
-    ROUND((c.total::DECIMAL / t.total_global) * 100, 2) AS porcentaje
-FROM ConteoPorSexo c, Total t
-ORDER BY porcentaje DESC;
+    c.Cantidad AS Victorias,
+    ROUND((c.Cantidad::DECIMAL / t.Total) * 100, 2) AS PorcentajeVictorias
+FROM ConteoPorSexo c
+CROSS JOIN TotalGanadores t
+ORDER BY PorcentajeVictorias DESC;
 
 -- 10. Vendedores ordenados por ganancia y su producto más vendido.
 
@@ -272,3 +294,38 @@ ORDER BY g.GananciaTotal DESC NULLS LAST;
 -- 16. Listar los pokemones que han sido usados en más de un torneo, indicando en cuántos torneos han sido usados.
 
 -- 17. Listar los participantes que han ganado en más de un torneo, indicando en cuántos torneos han ganado.
+
+
+-- participantes que han ganado en más de un torneo pelea, distancia, shiny
+SELECT 
+    pu.Nombre || ' ' || pu.ApellidoPaterno || ' ' || pu.ApellidoMaterno AS NombreCompleto,
+    COUNT(*) AS TorneosGanados
+FROM (
+    SELECT IdPersona FROM TorneoPelea
+    UNION ALL
+    SELECT IdPersona FROM TorneoDistanciaRecorrida
+    UNION ALL
+    SELECT IdPersona FROM TorneoCapturaShinys
+) AS tp
+JOIN ParticipanteUNAM pu 
+    ON tp.IdPersona = pu.IdPersona
+GROUP BY 
+    pu.Nombre, 
+    pu.ApellidoPaterno, 
+    pu.ApellidoMaterno
+HAVING COUNT(*) > 0
+ORDER BY TorneosGanados DESC;
+
+-- SELECT 
+--     pu.Nombre || ' ' || pu.ApellidoPaterno || ' ' || pu.ApellidoMaterno AS NombreCompleto,
+--     COUNT(*) AS TorneosGanados
+-- FROM TorneoPelea tp
+-- JOIN ParticipanteUNAM pu 
+--     ON tp.IdPersona = pu.IdPersona
+-- GROUP BY 
+--     pu.Nombre, 
+--     pu.ApellidoPaterno, 
+--     pu.ApellidoMaterno
+-- HAVING COUNT(*) > 1
+-- ORDER BY TorneosGanados DESC;
+

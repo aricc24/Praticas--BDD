@@ -762,8 +762,10 @@ END;
 $$;
 
 /**
-* Procedimiento para determinar el ganador de un torneo de distancia recorrida
-* usando la cuenta con mayor distancia total. No actualiza si hay empate.
+* Procedimiento para determinar el ganador de un torneo de distancia recorrida.
+* usando la cuenta con mayor distancia total. 
+* El ganador es quien haya recorrido la mayor distancia total.
+* No actualiza si hay empate.
 */
 CREATE OR REPLACE PROCEDURE determinar_ganador_torneo_distancia(
     ed INT,
@@ -842,6 +844,7 @@ $$ LANGUAGE plpgsql;
 
 /**
 * Procedimiento para determinar el ganador de un torneo de captura de shinys.
+* El ganador es quien haya capturado más pokemones shiny.
 * En caso de empate, no se actualiza el ganador.
 */
 CREATE OR REPLACE PROCEDURE determinar_ganador_torneo_shiny(
