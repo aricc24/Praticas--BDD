@@ -865,12 +865,20 @@ BEGIN
         RAISE EXCEPTION 'No hubo capturas en torneo captura shiny %, edición %', p_torneo, p_edicion;
     END IF;
 
+    WITH shinys_cuenta AS (
+        SELECT IdPersona, CodigoDeEntrenador,
+                contar_shinys_cuenta(p_edicion, p_torneo, IdPersona, CodigoDeEntrenador) AS total_shinys
+        FROM Registrar
+        WHERE Edicion = p_edicion AND IdTorneo = p_torneo
+        GROUP BY IdPersona, CodigoDeEntrenador
+    )
     SELECT COUNT(*) INTO empate
     FROM shinys_cuenta
     WHERE total_shinys = max_shinys;
 
     IF empate > 1 THEN
-        RAISE EXCEPTION 'Empate en torneo captura shiny %, edición %', p_torneo, p_edicion;
+        RAISE EXCEPTION 'Empate en torneo captura shiny %, edición %. Cantidad de shinys capturados: %',
+            p_torneo, p_edicion, max_shinys;
     END IF;
 
     UPDATE TorneoCapturaShinys
