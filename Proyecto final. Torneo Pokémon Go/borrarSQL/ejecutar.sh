@@ -42,3 +42,47 @@ docker exec -i postgres psql -U postgres -d prueba < comprar_vendedor.sql    2> 
 docker exec -i postgres psql -U postgres -d prueba < comprar_cuidador.sql    2> errores/comprar_cuidador.err
 docker exec -i postgres psql -U postgres -d prueba < comprar_encargado_registro.sql    2> errores/comprar_encargado_registro.err
 docker exec -i postgres psql -U postgres -d prueba < comprar_limpiador.sql    2> errores/comprar_limpiador.err
+
+
+cat Evento.sql               >  ../SQL/dml_torneo_pokemon.sql
+cat ParticipanteUNAM.sql      >> ../SQL/dml_torneo_pokemon.sql
+cat CorreoParticipante.sql    >> ../SQL/dml_torneo_pokemon.sql
+cat TelefonoParticipante.sql  >> ../SQL/dml_torneo_pokemon.sql
+cat limpiador.sql             >> ../SQL/dml_torneo_pokemon.sql
+cat correo_limpiador.sql      >> ../SQL/dml_torneo_pokemon.sql
+cat telefono_limpiador.sql    >> ../SQL/dml_torneo_pokemon.sql
+cat trabajar_limpiador.sql    >> ../SQL/dml_torneo_pokemon.sql
+cat cuidador.sql              >> ../SQL/dml_torneo_pokemon.sql
+cat correo_cuidador.sql       >> ../SQL/dml_torneo_pokemon.sql      
+cat telefono_cuidador.sql     >> ../SQL/dml_torneo_pokemon.sql  
+cat trabajar_cuidador.sql     >> ../SQL/dml_torneo_pokemon.sql  
+cat encargado_registro.sql         >> ../SQL/dml_torneo_pokemon.sql
+cat correo_encargado_registro.sql  >> ../SQL/dml_torneo_pokemon.sql
+cat telefono_encargado_registro.sql >> ../SQL/dml_torneo_pokemon.sql
+cat trabajar_encargado_registro.sql >> ../SQL/dml_torneo_pokemon.sql
+cat CuentaPokemon.sql         >> ../SQL/dml_torneo_pokemon.sql
+cat Pokemon.sql               >> ../SQL/dml_torneo_pokemon.sql
+cat vendedor.sql              >> ../SQL/dml_torneo_pokemon.sql
+cat correo_vendedor.sql       >> ../SQL/dml_torneo_pokemon.sql
+cat telefono_vendedor.sql     >> ../SQL/dml_torneo_pokemon.sql
+cat trabajar_vendedor.sql     >> ../SQL/dml_torneo_pokemon.sql
+cat Alimentos.sql             >> ../SQL/dml_torneo_pokemon.sql
+cat Espectador.sql            >> ../SQL/dml_torneo_pokemon.sql
+cat Asistir.sql               >> ../SQL/dml_torneo_pokemon.sql
+cat CapturasPokemon.sql       >> ../SQL/dml_torneo_pokemon.sql
+cat inscripcionEncargado.sql  >> ../SQL/dml_torneo_pokemon.sql
+cat inscribirtorneocaptura.sql   >> ../SQL/dml_torneo_pokemon.sql
+cat inscribirtorneodistancia.sql >> ../SQL/dml_torneo_pokemon.sql
+cat inscribirtorneopelea.sql      >> ../SQL/dml_torneo_pokemon.sql
+cat inscribirtorneocapturadistancia.sql >> ../SQL/dml_torneo_pokemon.sql
+cat Locacion.sql               >> ../SQL/dml_torneo_pokemon.sql 
+cat distancia_recorrida.sql    >> ../SQL/dml_torneo_pokemon.sql
+cat registrar.sql              >> ../SQL/dml_torneo_pokemon.sql
+cat peleas.sql                 >> ../SQL/dml_torneo_pokemon.sql
+cat utilizar.sql               >> ../SQL/dml_torneo_pokemon.sql
+cat comprar_espectador.sql        >> ../SQL/dml_torneo_pokemon.sql
+cat comprar_participante_unam.sql >> ../SQL/dml_torneo_pokemon.sql
+cat comprar_vendedor.sql         >> ../SQL/dml_torneo_pokemon.sql
+cat comprar_cuidador.sql         >> ../SQL/dml_torneo_pokemon.sql
+cat comprar_encargado_registro.sql >> ../SQL/dml_torneo_pokemon.sql
+cat comprar_limpiador.sql        >> ../SQL/dml_torneo_pokemon.sql
