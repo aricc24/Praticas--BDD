@@ -908,7 +908,7 @@ BEGIN
     -- UPDATE TorneoCapturaShinys
     -- SET IdPersona = ganador_id
     -- WHERE Edicion = edicion AND IdTorneo = torneo;
-    
+
     IF empate = 1 THEN
         UPDATE TorneoCapturaShinys
         SET IdPersona = ganador_id

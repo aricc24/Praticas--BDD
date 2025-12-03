@@ -1596,6 +1596,8 @@ ALTER TABLE PeleaTorneo ALTER COLUMN CodigoDeEntrenador SET NOT NULL;
 ALTER TABLE PeleaTorneo ALTER COLUMN Fecha SET NOT NULL;
 ALTER TABLE PeleaTorneo ALTER COLUMN Fase SET NOT NULL;
 
+ALTER TABLE PeleaTorneo ADD CONSTRAINT ck_hora_pelea CHECK (EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') >= 9 AND EXTRACT(HOUR FROM Fecha AT TIME ZONE 'America/Mexico_City') < 21);
+
 
 COMMENT ON TABLE PeleaTorneo IS 'Tabla que almacena la información de las peleas en los torneos.';
 COMMENT ON COLUMN PeleaTorneo.Edicion IS 'Edición del torneo de pelea.';
@@ -1608,6 +1610,7 @@ COMMENT ON COLUMN PeleaTorneo.Fase IS 'Fase del torneo en la que se realizó la 
 COMMENT ON CONSTRAINT pk_pelea_torneo ON PeleaTorneo IS 'Restricción de entidad para la tabla PeleaTorneo.';
 COMMENT ON CONSTRAINT fk_pelea_torneo_torneo ON PeleaTorneo IS 'Restricción referencial que vincula PeleaTorneo con TorneoPelea.';
 COMMENT ON CONSTRAINT fk_pelea_torneo_cuenta_pokemon_go ON PeleaTorneo IS 'Restricción referencial que vincula PeleaTorneo con CuentaPokemonGo.';
+COMMENT ON CONSTRAINT ck_hora_pelea ON PeleaTorneo IS 'Restricción CHECK que valida que la hora de la pelea esté dentro del horario permitido (9:00 a 21:00), hora local de Ciudad de México.';
 
 CREATE SEQUENCE peleatorneo_numeropelea_seq OWNED BY PeleaTorneo.NumeroPelea;
 ALTER TABLE PeleaTorneo ALTER COLUMN NumeroPelea SET DEFAULT nextval('peleatorneo_numeropelea_seq');
