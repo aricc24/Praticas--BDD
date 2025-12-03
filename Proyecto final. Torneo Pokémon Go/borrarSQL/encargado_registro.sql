@@ -1,3169 +1,3602 @@
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (454, 1, '2005-10-10 12:50:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (140, 2, '2012-04-10 12:31:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1046, 2, '2009-04-10 13:14:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (178, 3, '2007-10-10 13:06:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (353, 3, '2023-10-10 13:59:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (460, 3, '2018-10-10 13:57:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (933, 3, '2006-04-10 13:48:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (963, 3, '2005-10-10 13:38:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (313, 4, '2022-10-10 13:17:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (18, 5, '2018-04-10 12:30:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (194, 5, '2012-04-10 13:36:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (701, 5, '2019-04-10 13:47:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (611, 5, '2023-10-10 13:25:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (515, 5, '2013-10-10 12:21:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (189, 6, '2011-10-10 12:51:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (185, 6, '2015-10-10 12:03:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (91, 7, '2008-04-10 12:01:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (840, 7, '2016-04-10 13:47:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (914, 7, '2024-04-10 13:51:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (271, 7, '2013-04-10 12:56:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1027, 8, '2007-10-10 13:09:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (506, 8, '2022-10-10 12:15:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (927, 8, '2014-04-10 13:50:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (347, 8, '2025-04-10 14:44:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (369, 9, '2006-04-10 12:00:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (634, 10, '2007-10-10 13:17:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (307, 10, '2012-04-10 13:36:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (796, 10, '2008-04-10 12:13:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (433, 11, '2010-04-10 12:43:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (461, 11, '2016-10-10 12:12:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (148, 11, '2016-04-10 12:32:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (620, 12, '2025-04-10 14:33:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (604, 12, '2010-04-10 13:06:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1042, 12, '2022-04-10 13:29:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (458, 12, '2012-10-10 13:22:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (599, 12, '2019-10-10 12:39:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (32, 13, '2012-04-10 12:37:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (430, 14, '2017-10-10 13:04:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (987, 14, '2013-10-10 12:11:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1068, 14, '2007-04-10 13:29:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (719, 15, '2011-10-10 12:34:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1070, 15, '2025-10-10 14:14:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (769, 15, '2020-10-10 13:17:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (486, 16, '2013-04-10 13:38:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (872, 16, '2009-04-10 12:23:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (469, 17, '2013-04-10 12:53:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (264, 17, '2023-10-10 14:26:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (881, 17, '2018-10-10 12:07:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (882, 17, '2017-10-10 12:09:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (159, 17, '2016-10-10 12:42:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (248, 18, '2008-10-10 13:55:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (135, 19, '2018-10-10 13:12:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (656, 19, '2024-04-10 14:12:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (943, 20, '2024-04-10 14:31:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (28, 20, '2019-10-10 12:15:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (180, 20, '2021-10-10 13:32:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (937, 20, '2013-04-10 12:10:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (472, 21, '2025-10-10 13:58:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (756, 21, '2015-10-10 12:32:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (264, 21, '2008-10-10 13:58:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (917, 22, '2005-04-10 13:13:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (251, 22, '2013-04-10 12:56:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1003, 22, '2021-04-10 12:29:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (508, 22, '2010-10-10 13:45:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (924, 23, '2024-04-10 13:09:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (15, 23, '2011-04-10 12:07:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1002, 23, '2009-10-10 12:31:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (568, 23, '2016-10-10 12:56:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (951, 23, '2010-04-10 13:32:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (717, 24, '2008-10-10 13:15:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (129, 25, '2012-10-10 12:11:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (192, 25, '2006-10-10 13:41:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (960, 25, '2023-04-10 14:59:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (241, 26, '2022-04-10 13:29:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (355, 27, '2020-04-10 12:46:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (399, 27, '2022-10-10 13:21:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (533, 28, '2024-04-10 13:45:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (737, 28, '2018-10-10 12:28:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (695, 28, '2011-10-10 12:23:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (822, 28, '2022-04-10 13:21:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1098, 28, '2011-04-10 12:54:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (671, 29, '2008-10-10 13:03:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (15, 29, '2012-10-10 12:54:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1048, 29, '2012-04-10 13:43:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (777, 29, '2007-04-10 12:47:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (21, 30, '2023-10-10 14:05:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (89, 30, '2012-04-10 13:24:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (78, 31, '2012-04-10 13:54:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (169, 32, '2015-10-10 13:07:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (203, 33, '2012-10-10 12:25:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (991, 33, '2013-10-10 12:53:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (953, 33, '2020-10-10 13:49:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (857, 33, '2011-10-10 13:41:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (447, 33, '2022-04-10 12:09:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (644, 34, '2018-04-10 12:04:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (911, 34, '2011-04-10 12:37:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (735, 34, '2008-04-10 12:29:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (818, 34, '2018-10-10 13:35:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1070, 35, '2025-10-10 13:19:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (683, 36, '2006-10-10 13:06:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (357, 37, '2008-04-10 12:41:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1040, 37, '2012-10-10 12:37:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (952, 37, '2011-04-10 12:45:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (528, 38, '2018-10-10 12:41:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (859, 38, '2010-10-10 12:56:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (777, 39, '2007-04-10 13:55:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (158, 39, '2019-04-10 12:59:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (905, 40, '2025-10-10 13:07:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (295, 41, '2007-10-10 12:16:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (851, 42, '2018-04-10 13:17:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (301, 42, '2020-10-10 12:35:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (653, 43, '2006-10-10 12:04:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (587, 43, '2010-04-10 13:41:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (828, 43, '2017-04-10 13:01:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (498, 43, '2005-04-10 13:28:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (428, 44, '2022-10-10 13:27:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (301, 44, '2020-10-10 12:36:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (66, 44, '2009-10-10 13:12:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (212, 44, '2011-04-10 13:00:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (873, 45, '2006-10-10 12:54:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (920, 45, '2023-10-10 14:56:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (354, 45, '2020-04-10 13:30:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (93, 46, '2021-04-10 13:04:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (119, 47, '2007-04-10 13:28:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (375, 47, '2024-04-10 13:16:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1093, 48, '2008-10-10 13:20:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (92, 48, '2023-04-10 13:05:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (129, 48, '2012-10-10 13:25:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (714, 48, '2023-10-10 13:29:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (588, 49, '2023-04-10 13:31:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (385, 49, '2021-10-10 13:40:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (564, 49, '2015-04-10 13:22:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (679, 49, '2013-04-10 13:33:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (222, 49, '2011-10-10 12:33:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (28, 50, '2019-10-10 12:46:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (872, 50, '2015-04-10 13:28:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (874, 50, '2007-04-10 13:08:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (474, 51, '2008-04-10 12:57:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (193, 51, '2007-04-10 12:32:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (606, 51, '2022-04-10 13:08:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (115, 51, '2011-10-10 13:25:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1017, 51, '2021-04-10 13:36:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (275, 52, '2016-10-10 12:59:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (744, 52, '2014-04-10 13:05:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1014, 53, '2014-10-10 12:58:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1069, 53, '2024-10-10 14:44:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (490, 53, '2025-10-10 14:07:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (172, 53, '2021-10-10 12:30:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (290, 53, '2005-04-10 13:01:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (248, 54, '2008-10-10 13:32:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (485, 54, '2008-04-10 13:02:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (419, 54, '2022-10-10 12:21:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (878, 55, '2011-10-10 13:12:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (491, 55, '2015-10-10 13:29:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (62, 55, '2025-04-10 14:29:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (221, 55, '2013-04-10 13:58:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (694, 55, '2021-04-10 12:48:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (266, 56, '2013-10-10 13:01:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (429, 56, '2006-04-10 12:29:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (310, 56, '2005-04-10 13:25:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (779, 56, '2015-10-10 13:52:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (353, 57, '2018-10-10 12:55:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (809, 57, '2022-10-10 12:42:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (98, 57, '2005-04-10 13:28:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (729, 57, '2008-10-10 13:33:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (839, 57, '2007-04-10 13:08:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (571, 58, '2009-10-10 13:03:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (112, 58, '2018-10-10 12:00:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (519, 58, '2009-04-10 13:53:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (324, 58, '2006-04-10 13:57:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1040, 58, '2014-10-10 12:49:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1010, 59, '2008-04-10 13:35:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (740, 59, '2016-04-10 13:48:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (37, 60, '2009-10-10 13:28:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (378, 60, '2012-10-10 12:13:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (689, 60, '2010-04-10 13:19:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (767, 60, '2010-10-10 12:51:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (494, 60, '2018-04-10 12:52:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (85, 61, '2010-04-10 12:54:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (813, 61, '2008-04-10 13:15:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (413, 61, '2017-04-10 12:34:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (560, 62, '2019-10-10 13:19:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (436, 62, '2016-04-10 12:35:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (618, 63, '2005-10-10 13:52:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (755, 63, '2011-04-10 12:22:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (936, 64, '2007-04-10 12:48:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (897, 64, '2013-10-10 12:28:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (726, 64, '2016-04-10 12:59:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1060, 65, '2015-10-10 13:44:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (442, 65, '2005-10-10 12:32:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (98, 65, '2008-10-10 13:56:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (251, 65, '2013-04-10 13:41:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (816, 65, '2010-10-10 12:16:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (948, 66, '2015-04-10 13:37:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (263, 66, '2018-10-10 12:46:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (656, 66, '2024-04-10 14:03:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1098, 67, '2011-04-10 13:46:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (937, 67, '2013-04-10 13:31:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (316, 67, '2006-04-10 13:11:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (658, 67, '2018-10-10 13:27:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (811, 67, '2005-04-10 13:16:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1098, 68, '2015-10-10 12:03:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (616, 69, '2008-10-10 13:48:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1014, 69, '2014-10-10 12:09:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (482, 69, '2021-04-10 13:33:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (307, 70, '2017-10-10 12:48:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (324, 70, '2014-04-10 12:58:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (587, 70, '2022-10-10 12:43:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (740, 71, '2010-10-10 13:15:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1069, 71, '2024-10-10 13:13:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (9, 71, '2023-04-10 13:04:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (487, 71, '2014-10-10 13:44:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1089, 72, '2011-10-10 12:30:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (624, 72, '2018-10-10 12:57:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (857, 72, '2023-10-10 13:48:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (250, 73, '2019-04-10 12:00:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (141, 73, '2011-10-10 13:31:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (343, 73, '2021-04-10 12:34:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1049, 73, '2020-04-10 12:22:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (419, 74, '2015-10-10 13:22:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (228, 74, '2007-10-10 13:14:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (37, 74, '2012-10-10 13:24:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (110, 74, '2014-10-10 13:45:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (270, 74, '2012-04-10 12:29:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1084, 75, '2024-10-10 14:05:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (288, 75, '2007-04-10 12:11:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (712, 75, '2019-10-10 13:22:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (887, 75, '2018-04-10 12:33:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (154, 76, '2012-10-10 12:53:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (685, 76, '2009-10-10 12:27:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (379, 76, '2025-10-10 14:31:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (349, 76, '2005-04-10 12:47:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (856, 77, '2019-10-10 12:40:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (284, 77, '2006-10-10 12:47:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (665, 77, '2022-10-10 13:45:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1006, 77, '2012-10-10 13:00:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1069, 77, '2008-10-10 13:28:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1023, 78, '2015-04-10 12:16:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (742, 78, '2019-04-10 12:50:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (298, 78, '2024-10-10 13:21:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (824, 78, '2021-04-10 13:39:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (824, 78, '2018-10-10 13:45:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (905, 79, '2013-04-10 13:58:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (964, 79, '2012-10-10 12:10:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (960, 79, '2025-04-10 13:56:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (450, 79, '2013-10-10 13:25:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (410, 80, '2019-04-10 12:52:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (396, 80, '2007-04-10 13:45:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (596, 80, '2014-04-10 12:57:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (286, 81, '2022-04-10 13:32:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (292, 81, '2007-10-10 12:28:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (541, 81, '2009-04-10 13:17:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (786, 82, '2011-10-10 12:30:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (590, 82, '2007-04-10 12:41:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (57, 83, '2022-04-10 13:47:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (392, 83, '2019-10-10 12:05:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (721, 83, '2018-04-10 12:55:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (870, 84, '2023-10-10 14:28:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (3, 84, '2005-10-10 12:37:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (679, 84, '2023-04-10 13:02:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (597, 84, '2017-04-10 12:17:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (871, 85, '2018-04-10 13:39:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (405, 85, '2022-04-10 12:52:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (497, 85, '2024-04-10 13:29:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (682, 85, '2012-04-10 13:08:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (284, 86, '2005-10-10 13:26:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (904, 86, '2017-04-10 13:58:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (330, 86, '2015-10-10 12:06:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1052, 86, '2017-10-10 12:06:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1058, 87, '2005-10-10 13:31:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (849, 87, '2017-10-10 12:56:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (264, 87, '2023-10-10 14:27:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (886, 87, '2023-04-10 14:43:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (248, 87, '2007-10-10 13:44:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (624, 88, '2013-04-10 12:15:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (619, 89, '2011-10-10 13:44:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (697, 89, '2019-10-10 13:16:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (607, 89, '2015-04-10 13:55:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (959, 90, '2013-04-10 12:58:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (96, 90, '2007-10-10 13:41:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (648, 90, '2020-04-10 12:48:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (363, 90, '2005-10-10 12:32:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (82, 91, '2025-10-10 13:45:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (405, 92, '2012-10-10 13:27:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (270, 93, '2024-10-10 14:05:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1045, 94, '2009-04-10 12:48:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (256, 94, '2020-04-10 12:14:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1089, 95, '2011-10-10 12:38:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (273, 95, '2019-10-10 13:40:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (393, 95, '2013-04-10 12:33:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (487, 95, '2016-10-10 12:27:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (229, 95, '2010-04-10 12:58:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (333, 96, '2005-10-10 13:42:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (147, 96, '2014-10-10 12:21:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (400, 96, '2023-04-10 13:41:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (127, 96, '2017-04-10 12:39:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (568, 96, '2017-10-10 13:56:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (838, 97, '2008-10-10 12:38:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (696, 97, '2023-04-10 13:07:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (89, 97, '2006-04-10 13:37:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (962, 97, '2016-04-10 12:15:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (600, 97, '2022-04-10 13:20:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (871, 98, '2018-04-10 12:38:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (658, 99, '2018-10-10 13:54:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (470, 100, '2009-10-10 12:19:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (952, 100, '2018-10-10 12:58:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (913, 100, '2010-10-10 13:12:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (815, 100, '2021-10-10 13:29:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (153, 101, '2023-10-10 13:34:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (515, 101, '2013-10-10 13:09:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (841, 101, '2015-04-10 13:13:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (531, 101, '2012-10-10 13:02:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (86, 102, '2023-04-10 14:42:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (969, 102, '2024-10-10 14:47:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (615, 102, '2017-04-10 12:10:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (410, 102, '2015-10-10 13:12:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (525, 103, '2011-10-10 12:40:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (553, 103, '2016-04-10 13:16:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (971, 103, '2013-04-10 13:05:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (89, 103, '2015-10-10 12:52:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (589, 104, '2011-04-10 13:44:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (759, 104, '2007-10-10 13:19:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (964, 104, '2012-10-10 13:35:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (801, 104, '2018-04-10 12:56:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (92, 104, '2020-10-10 13:37:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (365, 105, '2014-04-10 13:01:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (913, 106, '2012-10-10 12:43:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (836, 106, '2014-10-10 13:36:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (920, 106, '2023-10-10 13:14:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (600, 106, '2016-10-10 12:24:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (401, 107, '2022-10-10 12:11:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (577, 107, '2015-10-10 13:18:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (494, 107, '2016-04-10 13:05:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (444, 107, '2019-10-10 12:37:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (744, 108, '2011-04-10 12:07:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (310, 109, '2022-04-10 13:21:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (525, 110, '2011-10-10 13:00:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1058, 110, '2020-04-10 13:58:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (281, 111, '2014-04-10 13:16:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (557, 111, '2008-04-10 13:13:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (27, 111, '2011-04-10 13:31:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (952, 111, '2012-04-10 12:56:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (257, 111, '2016-10-10 12:17:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (508, 112, '2006-04-10 13:25:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (277, 112, '2006-10-10 12:52:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1048, 112, '2022-10-10 13:17:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (813, 113, '2008-04-10 12:54:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (886, 113, '2005-04-10 12:15:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (800, 113, '2023-04-10 13:49:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (615, 113, '2014-04-10 12:20:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (830, 114, '2006-10-10 12:31:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (263, 114, '2013-04-10 13:39:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (879, 115, '2017-10-10 13:14:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (102, 116, '2023-04-10 13:49:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (498, 117, '2009-10-10 13:11:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (126, 117, '2023-04-10 14:05:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (805, 118, '2008-10-10 12:10:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (999, 118, '2022-10-10 12:19:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (931, 119, '2024-10-10 14:45:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (326, 119, '2012-04-10 12:05:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1053, 119, '2021-10-10 13:49:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (800, 119, '2017-04-10 13:17:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (526, 119, '2019-04-10 13:27:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (430, 120, '2024-10-10 13:52:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (476, 120, '2006-10-10 12:02:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (164, 120, '2008-04-10 13:56:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (330, 120, '2011-10-10 13:29:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (435, 120, '2025-04-10 14:34:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (225, 121, '2022-10-10 13:35:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1, 121, '2007-04-10 12:33:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (73, 122, '2019-04-10 13:12:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (370, 122, '2024-04-10 13:57:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (570, 122, '2020-04-10 12:20:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (534, 122, '2014-04-10 13:10:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (842, 123, '2007-04-10 12:10:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (223, 123, '2012-04-10 13:50:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (704, 123, '2013-04-10 12:47:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (228, 123, '2025-04-10 14:27:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (76, 124, '2012-04-10 12:51:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (259, 124, '2025-10-10 14:32:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (503, 124, '2009-10-10 13:11:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1009, 124, '2013-10-10 13:59:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (812, 124, '2007-04-10 13:04:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (510, 125, '2019-04-10 13:32:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (762, 125, '2008-10-10 12:52:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (498, 125, '2019-10-10 13:50:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (40, 126, '2022-04-10 13:08:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (712, 126, '2020-10-10 12:52:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (551, 126, '2019-04-10 12:58:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1008, 126, '2007-10-10 13:46:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (440, 126, '2024-04-10 13:36:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (292, 127, '2007-10-10 12:32:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (296, 128, '2023-10-10 14:29:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (741, 128, '2005-10-10 13:19:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (917, 128, '2013-10-10 12:14:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (800, 128, '2023-04-10 13:13:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (478, 128, '2006-04-10 13:47:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (878, 129, '2023-10-10 13:27:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (250, 129, '2018-10-10 12:59:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (230, 130, '2016-04-10 12:23:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (277, 130, '2018-04-10 12:26:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (617, 130, '2015-10-10 13:43:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (816, 130, '2015-04-10 12:36:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (751, 131, '2014-04-10 12:00:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (222, 131, '2017-10-10 12:16:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (452, 131, '2022-10-10 13:35:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (409, 131, '2006-04-10 12:49:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (13, 132, '2008-10-10 12:17:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (953, 132, '2017-10-10 13:45:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (513, 132, '2021-04-10 12:54:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1099, 133, '2006-10-10 12:04:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1073, 133, '2011-04-10 13:57:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (756, 133, '2021-10-10 13:28:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (66, 133, '2016-10-10 12:44:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (266, 134, '2013-10-10 12:37:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (419, 134, '2022-10-10 13:12:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1006, 135, '2020-10-10 13:06:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (493, 135, '2008-10-10 12:24:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (281, 135, '2005-10-10 12:48:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (524, 135, '2025-04-10 14:59:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (271, 136, '2005-04-10 12:01:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (665, 136, '2022-10-10 13:52:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (212, 136, '2018-04-10 12:59:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1089, 136, '2007-10-10 13:50:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (187, 136, '2012-04-10 13:11:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (852, 137, '2014-04-10 12:05:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (524, 137, '2021-04-10 13:35:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (463, 137, '2013-10-10 13:19:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (802, 137, '2018-04-10 12:11:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (249, 138, '2009-10-10 13:54:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (81, 138, '2017-04-10 13:22:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (675, 138, '2011-04-10 12:55:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (743, 138, '2024-04-10 14:58:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (372, 138, '2021-04-10 12:59:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1001, 139, '2013-10-10 12:16:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (899, 139, '2005-04-10 12:06:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (251, 139, '2014-04-10 12:59:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (688, 139, '2014-10-10 12:59:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (923, 139, '2023-10-10 14:06:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (662, 140, '2016-04-10 12:34:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (808, 140, '2015-10-10 13:32:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (456, 140, '2022-10-10 12:30:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (312, 140, '2022-04-10 12:59:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (394, 141, '2023-04-10 14:42:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (784, 141, '2017-04-10 13:24:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (902, 142, '2015-04-10 12:17:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (40, 143, '2017-04-10 13:21:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (206, 143, '2025-10-10 14:50:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (875, 143, '2009-10-10 12:09:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (973, 143, '2020-10-10 12:21:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (796, 144, '2008-04-10 12:11:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (9, 144, '2019-04-10 13:13:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (223, 144, '2021-10-10 12:29:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (449, 145, '2025-10-10 13:42:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (554, 145, '2009-10-10 12:59:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (874, 145, '2007-04-10 13:53:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (751, 145, '2020-04-10 12:04:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1003, 146, '2015-10-10 12:15:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (85, 147, '2015-04-10 13:40:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (954, 147, '2025-04-10 14:56:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (142, 147, '2020-10-10 13:50:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (442, 147, '2022-04-10 13:46:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (125, 148, '2012-04-10 12:18:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1077, 148, '2007-10-10 13:06:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (257, 148, '2018-10-10 13:41:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (687, 149, '2010-04-10 13:52:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (137, 149, '2014-10-10 12:20:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (478, 149, '2005-10-10 12:41:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (654, 149, '2006-04-10 12:24:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (940, 150, '2018-10-10 12:53:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (679, 150, '2009-10-10 13:04:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (379, 150, '2012-10-10 13:54:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (703, 151, '2010-10-10 12:23:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1027, 151, '2007-10-10 13:45:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (220, 152, '2020-10-10 13:50:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (381, 152, '2023-10-10 13:07:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (702, 153, '2025-04-10 14:40:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (514, 153, '2013-04-10 13:55:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (970, 153, '2019-10-10 13:24:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (310, 153, '2005-04-10 13:01:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (606, 154, '2019-04-10 13:43:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (487, 155, '2014-10-10 12:27:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (361, 155, '2025-04-10 14:52:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (705, 155, '2018-10-10 13:07:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (795, 155, '2013-04-10 12:35:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (212, 155, '2019-10-10 12:57:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (661, 156, '2017-04-10 13:55:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (542, 156, '2023-04-10 14:50:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (6, 157, '2005-10-10 12:49:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (980, 157, '2017-10-10 12:54:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (167, 157, '2013-10-10 13:17:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (305, 158, '2020-10-10 12:20:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1021, 158, '2014-04-10 12:32:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (217, 158, '2012-04-10 12:18:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1026, 158, '2024-04-10 14:12:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (494, 158, '2016-04-10 13:11:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (960, 159, '2025-04-10 14:51:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (91, 159, '2008-04-10 13:58:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (643, 160, '2019-04-10 12:47:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (189, 160, '2006-04-10 13:20:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (153, 160, '2023-10-10 14:52:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (420, 161, '2015-04-10 12:25:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (219, 161, '2018-04-10 13:12:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1010, 161, '2010-10-10 12:17:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (286, 162, '2021-10-10 13:05:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (320, 162, '2021-04-10 13:55:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (870, 162, '2013-10-10 12:52:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (169, 163, '2015-10-10 13:25:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (246, 163, '2008-10-10 12:57:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (408, 163, '2019-10-10 13:14:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (4, 164, '2022-10-10 12:26:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (456, 164, '2016-10-10 12:06:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (840, 164, '2007-10-10 12:44:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (264, 164, '2017-10-10 13:53:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (682, 165, '2016-10-10 13:12:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (251, 165, '2013-04-10 13:49:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (381, 165, '2023-10-10 13:12:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (918, 165, '2017-04-10 13:46:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1074, 166, '2024-10-10 14:01:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (130, 167, '2024-10-10 13:28:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (735, 167, '2012-04-10 13:21:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (490, 167, '2025-10-10 13:27:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1019, 168, '2008-10-10 13:17:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (217, 168, '2009-04-10 12:59:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (141, 168, '2006-04-10 12:53:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (364, 168, '2014-10-10 12:54:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (621, 169, '2009-04-10 12:18:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (249, 169, '2017-04-10 12:12:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (758, 169, '2019-10-10 13:54:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (179, 169, '2016-10-10 12:32:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (960, 169, '2022-04-10 13:11:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (797, 170, '2018-04-10 13:24:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (799, 170, '2013-10-10 12:34:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (386, 170, '2006-04-10 12:08:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (681, 170, '2016-10-10 13:10:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (165, 170, '2011-10-10 12:46:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (57, 171, '2022-04-10 12:11:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (621, 171, '2025-10-10 14:17:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (553, 171, '2016-04-10 13:23:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (172, 172, '2008-10-10 13:46:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (403, 172, '2019-10-10 12:30:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (909, 173, '2005-10-10 12:24:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (364, 173, '2006-10-10 12:53:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (135, 173, '2015-10-10 12:08:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (417, 173, '2012-10-10 12:32:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (938, 173, '2009-04-10 13:53:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (183, 174, '2012-04-10 12:01:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1078, 174, '2015-10-10 13:07:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (277, 175, '2013-10-10 13:59:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (305, 176, '2022-04-10 13:53:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (263, 176, '2013-04-10 13:53:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (36, 177, '2009-04-10 13:52:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (15, 178, '2012-10-10 13:28:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (296, 178, '2023-10-10 13:22:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (564, 178, '2015-04-10 12:31:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (621, 179, '2009-04-10 13:11:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1022, 180, '2008-10-10 12:58:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (842, 180, '2007-04-10 13:42:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (246, 180, '2020-04-10 12:15:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (742, 180, '2019-04-10 12:27:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1058, 180, '2016-10-10 13:31:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1030, 181, '2024-10-10 13:21:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (524, 181, '2006-04-10 13:04:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (623, 182, '2025-10-10 14:32:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (626, 182, '2005-10-10 13:05:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (256, 182, '2006-10-10 13:36:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1016, 182, '2020-04-10 13:04:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (213, 183, '2007-04-10 12:54:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (154, 183, '2007-10-10 13:42:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (235, 183, '2015-04-10 13:11:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (512, 183, '2024-04-10 14:08:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (920, 184, '2025-04-10 13:44:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (920, 184, '2023-10-10 13:17:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (428, 184, '2022-10-10 12:29:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (872, 184, '2015-04-10 12:14:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (987, 184, '2017-04-10 12:40:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (455, 185, '2018-10-10 13:24:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (751, 185, '2008-04-10 13:57:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (878, 185, '2008-10-10 12:21:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (404, 185, '2025-10-10 14:32:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (576, 185, '2022-10-10 13:59:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (207, 186, '2019-10-10 12:00:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (615, 186, '2017-10-10 12:32:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (754, 186, '2018-04-10 12:43:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (790, 187, '2013-04-10 12:26:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (104, 187, '2016-10-10 12:28:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (169, 187, '2009-10-10 12:46:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (686, 188, '2007-10-10 13:23:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (257, 189, '2016-10-10 12:24:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (713, 190, '2006-10-10 12:25:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (641, 190, '2023-10-10 13:59:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (592, 190, '2022-10-10 13:31:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (127, 190, '2015-10-10 13:52:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (573, 190, '2008-10-10 13:39:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (337, 191, '2014-10-10 13:06:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (322, 191, '2016-04-10 12:25:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (814, 191, '2008-04-10 13:10:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (378, 191, '2023-04-10 13:41:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (989, 191, '2021-04-10 12:04:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (639, 192, '2016-04-10 13:28:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (991, 193, '2013-10-10 13:50:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1037, 194, '2018-10-10 12:05:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (40, 194, '2022-10-10 13:34:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (585, 195, '2013-10-10 13:51:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (3, 195, '2005-10-10 13:16:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (325, 195, '2010-10-10 12:05:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (257, 195, '2014-10-10 13:36:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1052, 195, '2015-10-10 13:56:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (135, 196, '2007-04-10 12:20:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (943, 196, '2009-10-10 12:57:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (370, 196, '2025-04-10 14:08:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (580, 196, '2005-10-10 12:01:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (560, 197, '2019-10-10 12:42:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (599, 197, '2015-10-10 12:57:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1039, 197, '2010-04-10 13:39:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (138, 197, '2016-10-10 12:42:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (282, 198, '2009-10-10 13:15:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (841, 199, '2006-10-10 13:39:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1008, 199, '2007-10-10 12:45:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (799, 199, '2013-10-10 13:22:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (694, 199, '2019-04-10 13:52:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (516, 199, '2018-10-10 13:00:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (380, 200, '2021-04-10 12:36:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (839, 200, '2008-10-10 12:39:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (939, 201, '2014-04-10 12:02:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (678, 202, '2021-10-10 13:44:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (887, 202, '2014-10-10 12:03:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (87, 202, '2006-04-10 12:58:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (4, 202, '2012-04-10 12:38:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (254, 203, '2014-10-10 13:59:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (504, 203, '2011-10-10 13:53:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (928, 204, '2015-04-10 12:22:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (839, 204, '2008-10-10 13:09:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (349, 204, '2005-04-10 13:47:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (464, 205, '2017-04-10 12:21:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (973, 205, '2022-04-10 12:03:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (71, 206, '2016-04-10 12:20:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (620, 206, '2007-04-10 12:06:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (214, 206, '2017-10-10 13:49:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (546, 206, '2006-04-10 12:47:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1042, 206, '2018-10-10 12:28:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (542, 207, '2023-04-10 13:17:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (235, 207, '2017-10-10 13:13:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (637, 207, '2025-04-10 13:11:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (38, 207, '2018-04-10 12:19:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (758, 208, '2010-04-10 12:40:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (189, 208, '2024-10-10 14:21:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (775, 208, '2019-10-10 13:31:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (869, 209, '2012-10-10 12:04:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (440, 210, '2017-10-10 12:37:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (577, 210, '2021-10-10 13:48:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (237, 210, '2007-10-10 12:54:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (147, 210, '2014-10-10 13:04:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (949, 210, '2015-10-10 12:43:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (939, 211, '2021-10-10 12:56:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (320, 212, '2016-04-10 12:49:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (416, 212, '2025-10-10 14:53:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (453, 213, '2009-10-10 13:37:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (296, 214, '2010-10-10 12:28:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1080, 214, '2024-04-10 14:11:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (941, 215, '2010-10-10 13:01:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (602, 216, '2023-04-10 14:06:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (558, 216, '2023-10-10 14:45:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (227, 216, '2019-04-10 13:54:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (692, 216, '2025-10-10 14:40:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (920, 217, '2020-04-10 13:47:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (644, 218, '2013-10-10 13:03:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (889, 218, '2023-10-10 13:45:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (181, 218, '2006-10-10 12:29:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (114, 219, '2019-10-10 12:48:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (646, 219, '2019-04-10 12:40:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (488, 219, '2006-04-10 12:12:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (170, 220, '2025-10-10 14:36:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (943, 221, '2024-04-10 13:41:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (888, 221, '2021-04-10 13:04:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (58, 221, '2017-04-10 12:23:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (831, 221, '2019-10-10 13:34:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1048, 221, '2023-10-10 13:01:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (902, 222, '2015-04-10 13:22:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (868, 222, '2024-04-10 14:36:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (256, 223, '2006-10-10 13:23:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (573, 223, '2019-04-10 13:48:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (717, 224, '2021-04-10 13:33:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (851, 225, '2006-04-10 13:51:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (872, 225, '2012-10-10 13:01:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (661, 226, '2021-10-10 13:21:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (911, 226, '2024-10-10 14:14:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (721, 226, '2010-04-10 13:02:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (66, 226, '2016-10-10 13:09:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1014, 226, '2014-04-10 13:45:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (781, 227, '2007-04-10 12:59:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (707, 227, '2015-10-10 13:15:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (508, 227, '2008-04-10 12:05:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (174, 228, '2024-04-10 14:31:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (989, 228, '2009-10-10 12:11:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (346, 228, '2015-10-10 13:02:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (252, 229, '2014-10-10 13:57:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (989, 229, '2025-10-10 13:24:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (220, 229, '2017-10-10 12:59:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (466, 230, '2022-10-10 12:54:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (194, 230, '2017-04-10 13:49:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1083, 230, '2025-10-10 14:21:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (48, 231, '2007-10-10 13:14:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (588, 231, '2025-10-10 13:36:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (620, 231, '2018-10-10 13:25:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (210, 231, '2021-04-10 13:55:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (360, 231, '2016-10-10 12:23:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (213, 232, '2020-10-10 12:11:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (463, 232, '2011-04-10 12:34:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (89, 232, '2012-04-10 12:17:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (935, 233, '2008-04-10 13:33:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (65, 233, '2021-04-10 13:32:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (600, 233, '2022-04-10 13:57:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (282, 234, '2009-04-10 13:29:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1026, 234, '2024-04-10 14:30:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (262, 234, '2017-04-10 12:04:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (702, 234, '2009-10-10 12:58:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (101, 234, '2010-04-10 13:19:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (474, 235, '2016-10-10 13:16:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (873, 235, '2012-10-10 12:42:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (392, 235, '2019-04-10 12:44:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1062, 235, '2024-10-10 14:40:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (319, 236, '2014-10-10 13:47:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (695, 236, '2020-04-10 13:48:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (894, 237, '2019-04-10 13:34:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (758, 237, '2019-10-10 12:16:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (259, 237, '2014-04-10 12:22:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (384, 237, '2017-04-10 13:36:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (893, 237, '2021-04-10 13:13:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (529, 238, '2009-04-10 12:41:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (967, 238, '2013-04-10 13:03:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (256, 238, '2006-10-10 12:07:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (848, 238, '2025-10-10 13:19:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (272, 238, '2020-04-10 13:49:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (736, 239, '2007-10-10 13:40:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (995, 239, '2010-04-10 12:27:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (277, 239, '2013-10-10 13:24:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (50, 240, '2007-10-10 13:03:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (620, 240, '2012-04-10 13:04:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (116, 240, '2019-04-10 12:24:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (719, 240, '2016-04-10 12:56:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (32, 241, '2016-10-10 12:53:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (698, 241, '2012-10-10 12:16:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (114, 241, '2017-04-10 12:04:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (511, 241, '2007-10-10 13:23:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (183, 241, '2012-04-10 12:42:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (885, 242, '2006-04-10 13:31:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (240, 242, '2014-04-10 13:38:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (24, 243, '2019-04-10 12:58:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (525, 243, '2024-10-10 13:11:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (410, 243, '2005-04-10 12:33:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (230, 243, '2007-10-10 13:40:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (375, 244, '2024-04-10 13:54:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (542, 244, '2021-10-10 13:37:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (285, 244, '2018-10-10 12:14:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (105, 244, '2008-10-10 13:55:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (435, 244, '2014-04-10 12:11:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (228, 245, '2025-04-10 14:58:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (969, 245, '2024-10-10 14:09:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (934, 245, '2019-10-10 13:18:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (29, 245, '2007-04-10 12:20:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (9, 246, '2023-04-10 13:41:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (741, 246, '2012-10-10 12:12:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (434, 246, '2009-10-10 13:19:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (927, 246, '2014-04-10 12:13:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (743, 246, '2018-10-10 13:42:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (614, 247, '2007-10-10 13:23:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (136, 247, '2021-10-10 13:15:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (894, 248, '2022-04-10 12:02:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (65, 248, '2021-04-10 12:19:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1048, 248, '2022-10-10 12:11:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (589, 248, '2005-10-10 13:40:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (699, 248, '2017-04-10 13:03:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (545, 249, '2005-10-10 13:13:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (443, 249, '2016-04-10 12:11:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1082, 249, '2007-04-10 12:41:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (603, 250, '2023-10-10 13:47:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (987, 251, '2006-04-10 12:29:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (576, 251, '2016-04-10 13:01:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (378, 252, '2019-10-10 13:55:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (337, 252, '2020-04-10 12:37:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (76, 253, '2019-10-10 13:07:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (738, 254, '2011-04-10 12:12:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (951, 254, '2006-04-10 12:29:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (780, 254, '2015-04-10 12:08:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (570, 255, '2020-04-10 13:48:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (598, 255, '2013-04-10 13:47:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (84, 255, '2006-04-10 13:17:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1081, 255, '2025-10-10 13:53:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (755, 255, '2011-04-10 12:59:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (762, 256, '2008-10-10 13:12:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (897, 256, '2016-10-10 12:03:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (705, 256, '2018-10-10 12:04:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (978, 257, '2010-10-10 13:40:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (403, 257, '2020-10-10 13:38:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (138, 257, '2016-10-10 12:49:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (844, 258, '2007-10-10 13:05:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (596, 258, '2018-10-10 13:45:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (539, 258, '2024-04-10 14:28:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (221, 258, '2010-10-10 12:30:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (610, 259, '2015-04-10 12:12:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (250, 260, '2019-04-10 12:44:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (771, 260, '2024-04-10 13:41:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (647, 260, '2018-10-10 12:45:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (478, 261, '2006-04-10 13:19:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (138, 261, '2016-04-10 12:36:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (131, 261, '2024-10-10 14:05:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (737, 261, '2018-10-10 12:31:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (161, 262, '2021-04-10 12:02:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1081, 262, '2010-04-10 12:33:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (661, 262, '2005-10-10 12:32:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (166, 263, '2009-04-10 13:19:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (588, 264, '2025-10-10 13:37:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (724, 264, '2016-10-10 12:50:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (678, 265, '2006-04-10 12:25:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (771, 265, '2024-04-10 14:15:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (116, 265, '2009-10-10 12:14:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (945, 265, '2019-04-10 12:48:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (260, 265, '2016-10-10 13:11:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (432, 266, '2016-10-10 13:06:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (235, 266, '2017-10-10 12:53:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (71, 266, '2015-04-10 12:49:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (279, 266, '2025-10-10 13:46:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (876, 266, '2013-10-10 13:06:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (412, 267, '2017-04-10 13:48:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1015, 267, '2022-10-10 12:05:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (573, 267, '2008-10-10 13:07:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (796, 267, '2013-04-10 12:41:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (327, 267, '2019-04-10 13:22:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (168, 268, '2009-04-10 12:04:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (644, 269, '2010-10-10 13:04:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (128, 269, '2019-04-10 13:32:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (853, 269, '2007-10-10 12:23:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1018, 269, '2015-04-10 13:21:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (314, 270, '2014-10-10 12:45:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (758, 270, '2010-04-10 12:25:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (809, 270, '2025-04-10 14:26:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (229, 271, '2008-10-10 13:31:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (589, 271, '2011-04-10 12:40:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (579, 272, '2005-10-10 12:20:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (955, 272, '2016-10-10 12:47:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (833, 272, '2022-10-10 13:33:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (227, 272, '2023-04-10 13:30:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (834, 273, '2007-10-10 12:21:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (590, 273, '2007-04-10 12:38:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (654, 273, '2014-10-10 13:24:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (984, 273, '2017-10-10 13:24:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (184, 273, '2020-04-10 13:10:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (165, 274, '2015-04-10 12:02:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (717, 274, '2025-10-10 13:45:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1053, 275, '2021-10-10 12:51:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (391, 275, '2016-04-10 13:03:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (227, 275, '2009-04-10 13:36:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (609, 275, '2022-10-10 12:17:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (314, 276, '2006-10-10 13:43:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (264, 276, '2008-10-10 12:51:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (567, 276, '2021-10-10 13:43:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (401, 276, '2009-10-10 13:37:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (544, 276, '2014-10-10 12:05:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (914, 277, '2014-04-10 13:14:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (365, 277, '2007-10-10 12:20:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (276, 277, '2013-04-10 13:45:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (722, 277, '2011-04-10 12:58:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (952, 277, '2025-04-10 13:59:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (936, 278, '2007-10-10 12:29:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (161, 278, '2021-04-10 12:29:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (259, 278, '2025-10-10 13:53:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1081, 278, '2010-04-10 13:15:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (611, 278, '2023-10-10 14:43:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (429, 279, '2006-04-10 13:21:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1075, 279, '2005-10-10 12:48:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (274, 279, '2007-10-10 12:59:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (950, 279, '2025-10-10 13:18:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (784, 279, '2023-04-10 14:26:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (998, 280, '2025-04-10 13:14:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (479, 280, '2005-10-10 13:20:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (806, 280, '2020-10-10 12:32:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (447, 280, '2022-04-10 12:21:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (692, 280, '2014-04-10 12:11:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (342, 281, '2019-10-10 13:01:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (612, 281, '2007-04-10 12:10:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (731, 281, '2006-10-10 12:34:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (313, 282, '2019-10-10 13:09:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (579, 282, '2011-10-10 12:24:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (591, 282, '2015-10-10 12:15:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (601, 282, '2024-04-10 13:43:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (210, 283, '2009-04-10 12:49:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (527, 283, '2016-10-10 13:35:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (309, 283, '2021-04-10 12:34:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (665, 283, '2022-10-10 13:24:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (817, 284, '2013-10-10 12:13:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (58, 285, '2009-10-10 13:19:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (532, 285, '2008-04-10 13:02:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (663, 286, '2024-10-10 13:03:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1007, 286, '2018-04-10 12:15:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (698, 286, '2012-10-10 12:17:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (330, 286, '2010-04-10 12:55:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (777, 287, '2020-10-10 12:27:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (549, 287, '2021-04-10 13:39:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (615, 288, '2020-10-10 13:29:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (838, 288, '2005-10-10 13:27:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (755, 288, '2007-10-10 12:50:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (670, 289, '2011-10-10 12:08:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (78, 289, '2023-10-10 14:43:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (867, 290, '2014-04-10 12:53:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (188, 291, '2025-10-10 13:31:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (829, 291, '2020-04-10 12:17:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (240, 291, '2014-04-10 12:05:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (471, 291, '2022-04-10 13:39:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (696, 291, '2005-04-10 13:38:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1100, 292, '2016-10-10 12:07:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (309, 292, '2006-04-10 12:21:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (676, 292, '2017-10-10 12:25:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (923, 292, '2006-10-10 12:26:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (619, 293, '2007-04-10 13:14:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1055, 293, '2017-04-10 12:20:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (321, 293, '2021-04-10 13:20:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (848, 294, '2024-10-10 14:47:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (671, 294, '2008-10-10 12:20:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (872, 294, '2009-04-10 13:17:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (649, 294, '2008-04-10 13:07:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (335, 294, '2017-10-10 12:25:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (689, 295, '2024-04-10 13:45:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (602, 295, '2021-04-10 12:05:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (64, 296, '2006-04-10 13:03:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (958, 297, '2015-10-10 13:22:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (956, 297, '2020-04-10 12:59:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (236, 298, '2024-04-10 13:11:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (366, 298, '2021-04-10 13:59:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (675, 299, '2015-04-10 13:15:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (969, 299, '2010-04-10 12:18:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (889, 299, '2017-10-10 13:19:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1062, 299, '2024-10-10 14:43:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (746, 299, '2014-10-10 13:07:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1025, 300, '2014-10-10 12:51:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (256, 300, '2020-04-10 12:13:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (624, 300, '2005-10-10 12:45:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (487, 300, '2016-10-10 12:15:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (93, 300, '2015-10-10 13:34:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (450, 301, '2020-04-10 13:32:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (107, 301, '2013-04-10 13:46:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (969, 301, '2025-10-10 14:37:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (870, 301, '2023-10-10 14:55:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (276, 301, '2023-04-10 13:33:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (53, 302, '2025-04-10 13:14:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1084, 302, '2024-10-10 13:16:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (153, 302, '2017-04-10 12:23:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (357, 302, '2009-10-10 13:38:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (15, 302, '2012-10-10 12:00:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (816, 303, '2015-04-10 13:54:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (904, 303, '2018-04-10 12:34:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1054, 303, '2009-10-10 12:22:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (857, 303, '2011-10-10 12:55:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (830, 304, '2009-04-10 12:08:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1099, 305, '2022-10-10 12:45:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (913, 305, '2015-04-10 13:32:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (653, 306, '2017-04-10 12:03:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1018, 306, '2015-04-10 13:31:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (664, 306, '2010-10-10 13:24:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (480, 306, '2019-10-10 12:13:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (916, 306, '2022-04-10 12:08:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (666, 307, '2012-10-10 13:58:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (440, 307, '2013-10-10 12:43:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (587, 308, '2014-04-10 13:19:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (868, 308, '2011-10-10 12:30:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (524, 308, '2020-10-10 13:40:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (695, 309, '2013-10-10 13:00:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (689, 309, '2014-04-10 13:47:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (701, 309, '2008-10-10 12:38:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (242, 309, '2023-04-10 14:43:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (528, 309, '2022-04-10 12:35:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (136, 310, '2014-04-10 12:43:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (812, 311, '2019-04-10 12:36:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (372, 311, '2025-10-10 14:22:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (428, 311, '2013-04-10 13:00:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1007, 312, '2013-10-10 12:16:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (367, 312, '2022-10-10 12:36:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (382, 312, '2009-04-10 12:30:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (118, 312, '2008-04-10 12:18:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1050, 312, '2024-10-10 13:27:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (62, 313, '2025-04-10 13:54:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (125, 313, '2012-04-10 12:58:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (29, 314, '2015-10-10 12:33:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1080, 314, '2020-04-10 12:24:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (330, 314, '2008-04-10 13:52:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (611, 314, '2009-04-10 13:00:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (627, 315, '2020-04-10 12:15:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (470, 315, '2025-10-10 14:59:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (212, 315, '2011-04-10 12:20:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (154, 315, '2014-04-10 13:35:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (208, 316, '2012-04-10 13:24:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (27, 316, '2022-04-10 13:27:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (747, 316, '2006-04-10 12:27:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (941, 316, '2010-10-10 13:58:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (362, 316, '2018-04-10 12:08:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1046, 317, '2006-04-10 13:56:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1036, 317, '2005-04-10 13:19:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (208, 317, '2014-10-10 13:31:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (913, 318, '2014-04-10 12:16:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (929, 318, '2019-10-10 13:57:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (825, 318, '2025-10-10 14:52:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (321, 319, '2021-04-10 13:46:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (381, 319, '2019-10-10 12:35:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (379, 320, '2015-10-10 12:59:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (537, 321, '2025-10-10 13:04:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (528, 321, '2013-04-10 13:26:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1065, 321, '2010-10-10 13:33:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (376, 321, '2005-04-10 13:48:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (898, 322, '2024-10-10 14:50:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (671, 322, '2025-04-10 14:26:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (263, 323, '2015-04-10 12:46:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (763, 323, '2007-10-10 12:54:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (625, 323, '2017-10-10 13:24:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (412, 323, '2008-04-10 12:02:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (11, 323, '2010-10-10 13:07:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (547, 324, '2017-04-10 12:04:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (703, 324, '2012-10-10 12:27:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (510, 324, '2019-04-10 12:05:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (397, 325, '2023-04-10 13:59:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (159, 325, '2005-04-10 12:02:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (271, 325, '2013-04-10 12:18:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (750, 325, '2025-10-10 13:46:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (487, 325, '2016-10-10 13:33:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (596, 326, '2017-10-10 12:56:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (763, 326, '2021-04-10 12:23:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (501, 327, '2025-04-10 14:59:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (962, 328, '2024-10-10 13:51:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (187, 328, '2012-04-10 13:16:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (723, 328, '2009-04-10 13:07:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (360, 329, '2016-10-10 13:32:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (494, 329, '2018-04-10 12:20:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (976, 329, '2022-10-10 13:04:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (221, 329, '2020-04-10 13:21:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1004, 329, '2022-04-10 12:54:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (180, 330, '2021-10-10 13:42:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (68, 330, '2016-10-10 12:48:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (777, 330, '2007-04-10 12:04:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (986, 330, '2023-04-10 14:08:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (258, 331, '2023-04-10 14:16:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (301, 331, '2022-04-10 13:25:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (365, 332, '2021-10-10 13:59:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (962, 332, '2019-04-10 12:49:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1006, 332, '2008-10-10 13:18:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (512, 333, '2021-04-10 12:35:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (293, 334, '2019-10-10 12:09:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (833, 335, '2018-04-10 12:00:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (560, 335, '2019-10-10 13:49:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (23, 335, '2023-04-10 14:52:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (682, 335, '2006-10-10 12:39:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (391, 335, '2022-10-10 13:47:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1026, 336, '2011-10-10 13:59:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (806, 337, '2006-04-10 13:11:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (119, 338, '2007-04-10 13:50:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (894, 338, '2022-04-10 12:28:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (92, 338, '2006-10-10 12:40:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (721, 339, '2018-04-10 13:10:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (686, 339, '2010-10-10 12:30:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (537, 339, '2009-04-10 13:56:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (660, 340, '2017-04-10 12:50:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (195, 340, '2007-10-10 12:07:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (305, 340, '2022-04-10 12:05:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (834, 340, '2009-04-10 13:16:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (40, 341, '2021-10-10 12:22:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (468, 341, '2009-04-10 12:17:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (735, 341, '2012-04-10 13:07:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (964, 341, '2005-04-10 12:25:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (853, 342, '2022-04-10 13:22:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (660, 342, '2017-04-10 13:25:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (187, 342, '2012-04-10 12:58:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (575, 342, '2012-10-10 13:28:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (805, 343, '2008-10-10 12:06:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (13, 343, '2006-04-10 13:41:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (165, 344, '2011-10-10 13:23:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (843, 344, '2007-04-10 13:30:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (980, 345, '2019-04-10 12:38:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (47, 346, '2012-10-10 12:34:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (124, 347, '2019-04-10 13:20:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (177, 347, '2012-04-10 12:54:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (973, 347, '2022-04-10 13:24:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (565, 347, '2011-10-10 12:10:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (602, 348, '2023-04-10 13:23:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (458, 348, '2015-04-10 12:34:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (679, 349, '2009-10-10 13:54:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (542, 349, '2021-10-10 12:33:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (307, 349, '2012-04-10 12:28:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (974, 350, '2022-10-10 13:03:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (845, 351, '2025-04-10 14:03:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (876, 351, '2018-10-10 13:33:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (662, 352, '2016-04-10 13:22:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (377, 353, '2015-04-10 12:28:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (962, 353, '2018-04-10 13:17:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (769, 353, '2009-10-10 13:43:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (364, 353, '2014-10-10 12:12:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (413, 353, '2017-04-10 12:59:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (960, 354, '2009-10-10 12:40:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (749, 354, '2019-10-10 12:56:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (731, 354, '2006-10-10 12:46:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (365, 355, '2021-10-10 12:32:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (490, 355, '2009-04-10 13:25:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (106, 355, '2017-04-10 13:07:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (873, 355, '2012-10-10 12:41:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (609, 355, '2013-04-10 12:55:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (312, 356, '2022-04-10 13:55:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (695, 357, '2013-10-10 12:17:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (953, 358, '2024-04-10 14:39:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (335, 358, '2006-04-10 12:55:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (680, 358, '2007-04-10 13:48:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (547, 358, '2011-04-10 12:36:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (603, 358, '2023-10-10 13:13:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (274, 359, '2005-04-10 13:23:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (868, 359, '2011-10-10 12:31:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (632, 359, '2011-04-10 12:24:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (546, 360, '2011-10-10 13:16:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (687, 360, '2017-10-10 13:05:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (908, 360, '2012-10-10 12:39:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (800, 360, '2022-10-10 12:47:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (681, 360, '2015-04-10 12:04:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (804, 361, '2013-04-10 12:27:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (955, 361, '2016-10-10 12:17:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (105, 361, '2021-04-10 12:02:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (95, 362, '2015-04-10 12:38:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1016, 362, '2011-10-10 12:07:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (374, 362, '2016-10-10 12:57:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (251, 362, '2018-04-10 13:38:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (967, 363, '2013-04-10 12:47:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (603, 364, '2023-10-10 14:32:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (415, 364, '2018-04-10 13:18:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (662, 364, '2014-04-10 13:37:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (963, 364, '2009-10-10 12:23:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (632, 364, '2011-04-10 13:07:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (707, 365, '2022-10-10 12:14:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1070, 365, '2025-10-10 13:57:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (908, 365, '2015-10-10 13:56:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (744, 365, '2013-04-10 12:03:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (260, 366, '2016-04-10 12:55:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1025, 366, '2010-04-10 13:29:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (979, 367, '2010-10-10 13:46:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (27, 367, '2022-04-10 12:59:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (143, 367, '2025-10-10 13:57:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (97, 367, '2006-10-10 13:46:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (226, 368, '2018-04-10 12:10:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (23, 369, '2007-04-10 13:47:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (387, 369, '2009-10-10 12:21:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (865, 370, '2019-10-10 12:04:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (998, 370, '2016-10-10 13:25:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (61, 370, '2006-10-10 13:54:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (13, 370, '2024-10-10 13:29:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (820, 370, '2025-04-10 13:42:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (962, 371, '2018-04-10 12:03:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (498, 371, '2005-04-10 12:41:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (69, 371, '2005-10-10 13:40:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (911, 371, '2021-10-10 12:02:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (753, 371, '2013-10-10 13:32:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (323, 372, '2008-04-10 12:05:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (385, 372, '2021-10-10 12:35:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (525, 373, '2024-10-10 14:09:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (603, 373, '2021-10-10 12:14:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (747, 374, '2017-10-10 12:39:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (755, 374, '2007-10-10 13:40:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (432, 374, '2016-10-10 12:34:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (962, 375, '2014-10-10 12:16:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (51, 375, '2007-10-10 13:07:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (687, 376, '2017-10-10 12:31:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (4, 377, '2022-10-10 12:10:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (355, 377, '2020-04-10 12:37:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (192, 377, '2006-10-10 13:18:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (742, 377, '2025-04-10 14:22:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (863, 378, '2025-10-10 13:27:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (124, 378, '2015-10-10 12:57:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (394, 378, '2023-04-10 14:08:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (378, 378, '2008-04-10 12:52:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (84, 379, '2020-04-10 12:36:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (356, 379, '2013-10-10 13:36:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (546, 379, '2006-04-10 12:15:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (29, 379, '2007-04-10 12:31:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (334, 379, '2022-04-10 13:06:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (963, 380, '2009-10-10 12:23:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (479, 380, '2017-10-10 12:45:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (812, 380, '2007-04-10 12:08:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (592, 380, '2014-10-10 12:36:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1025, 380, '2010-04-10 12:45:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (987, 381, '2017-04-10 13:16:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (501, 381, '2009-04-10 13:53:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (96, 381, '2007-10-10 13:33:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (460, 382, '2018-10-10 12:24:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1083, 383, '2015-10-10 13:22:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (497, 384, '2024-04-10 14:44:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (859, 384, '2017-10-10 13:27:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (914, 384, '2015-04-10 13:41:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (375, 384, '2005-10-10 12:55:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (596, 384, '2025-04-10 13:11:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (584, 385, '2017-04-10 13:17:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (490, 385, '2018-10-10 12:53:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (155, 385, '2010-10-10 13:28:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (124, 385, '2023-10-10 13:57:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (348, 385, '2007-10-10 13:13:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (249, 386, '2017-04-10 13:34:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (626, 386, '2025-04-10 14:57:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (17, 387, '2016-10-10 13:27:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (574, 387, '2008-04-10 12:20:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (727, 387, '2007-10-10 12:33:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (203, 388, '2013-10-10 12:56:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (346, 388, '2008-04-10 13:22:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (655, 388, '2009-04-10 13:30:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (40, 389, '2022-10-10 13:42:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (93, 389, '2021-04-10 12:01:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (644, 389, '2018-04-10 13:40:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (988, 389, '2008-04-10 13:23:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1000, 390, '2024-04-10 14:56:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (784, 391, '2017-04-10 12:30:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (713, 391, '2005-04-10 13:20:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (136, 391, '2014-04-10 12:54:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (370, 392, '2012-10-10 12:09:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (231, 392, '2023-04-10 14:35:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (449, 392, '2021-10-10 12:28:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (647, 392, '2010-04-10 13:26:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (547, 392, '2017-04-10 13:58:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (472, 393, '2009-10-10 13:40:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (595, 393, '2007-04-10 12:26:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (647, 393, '2010-04-10 13:55:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (834, 393, '2018-10-10 13:06:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (455, 394, '2016-10-10 13:00:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (920, 395, '2025-04-10 14:01:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1025, 395, '2020-10-10 13:09:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (302, 396, '2019-10-10 12:37:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (557, 396, '2008-04-10 12:34:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (663, 397, '2017-10-10 12:28:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (220, 398, '2017-04-10 12:50:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (555, 398, '2015-10-10 12:27:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (551, 398, '2019-04-10 12:10:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1094, 398, '2018-10-10 13:46:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (295, 398, '2025-10-10 13:48:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (914, 399, '2015-04-10 12:28:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1086, 399, '2010-10-10 13:27:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (486, 399, '2017-10-10 12:42:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (593, 399, '2014-04-10 13:01:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (987, 400, '2013-10-10 12:54:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (423, 400, '2017-10-10 13:38:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1085, 400, '2016-10-10 13:47:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (325, 400, '2008-10-10 12:11:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (142, 401, '2005-10-10 12:08:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (749, 401, '2019-10-10 12:50:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (905, 401, '2011-10-10 13:47:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (196, 401, '2019-04-10 12:50:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1021, 401, '2014-04-10 13:21:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (863, 402, '2012-10-10 12:26:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (624, 402, '2013-04-10 13:50:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (116, 402, '2009-10-10 13:15:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (914, 403, '2024-04-10 14:59:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1048, 403, '2020-04-10 13:05:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (714, 403, '2023-10-10 14:54:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (953, 403, '2017-10-10 13:47:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1076, 404, '2016-10-10 12:12:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (328, 405, '2025-04-10 13:48:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1089, 405, '2007-10-10 12:51:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (91, 405, '2008-04-10 12:37:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (827, 405, '2012-10-10 12:03:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (572, 405, '2016-04-10 13:06:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (918, 406, '2008-04-10 13:57:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (929, 406, '2005-04-10 12:59:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (971, 406, '2013-04-10 12:48:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1043, 406, '2012-04-10 13:09:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1048, 407, '2012-04-10 13:57:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (865, 407, '2019-04-10 13:52:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (271, 407, '2016-10-10 12:34:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (668, 407, '2017-10-10 13:19:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (66, 407, '2019-10-10 12:16:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (186, 408, '2008-04-10 13:39:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (244, 408, '2014-04-10 12:22:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (635, 408, '2018-04-10 12:59:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (450, 408, '2007-10-10 12:46:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (865, 409, '2019-10-10 12:27:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (653, 409, '2011-10-10 12:58:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (835, 409, '2021-10-10 12:37:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (742, 410, '2019-04-10 12:49:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1055, 411, '2007-04-10 12:41:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (229, 411, '2014-10-10 13:01:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (13, 411, '2006-04-10 12:16:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (417, 412, '2025-10-10 14:08:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (924, 412, '2008-04-10 12:12:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (316, 412, '2010-04-10 13:11:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (499, 413, '2010-04-10 12:58:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (725, 413, '2015-10-10 12:15:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1033, 413, '2022-10-10 13:21:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (392, 413, '2018-10-10 12:16:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (378, 413, '2019-10-10 12:07:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (859, 414, '2017-10-10 13:51:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (934, 414, '2005-10-10 13:44:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (920, 414, '2024-10-10 13:10:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (832, 414, '2011-04-10 13:05:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (418, 415, '2011-10-10 12:55:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (760, 416, '2007-04-10 13:42:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (296, 416, '2023-04-10 13:54:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (649, 416, '2008-04-10 12:35:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (641, 417, '2011-04-10 12:07:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (873, 417, '2019-10-10 12:48:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1032, 417, '2008-10-10 13:08:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (672, 418, '2024-04-10 13:01:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (153, 418, '2017-04-10 13:40:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (723, 418, '2024-10-10 14:20:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (549, 419, '2019-10-10 13:35:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1095, 419, '2024-10-10 13:42:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (162, 419, '2010-10-10 13:24:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (458, 420, '2015-04-10 13:27:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (616, 420, '2008-10-10 12:59:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (686, 421, '2010-10-10 13:02:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (482, 422, '2021-04-10 12:28:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (220, 422, '2017-04-10 12:02:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1051, 423, '2017-04-10 13:31:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (390, 423, '2018-10-10 12:57:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1040, 423, '2010-10-10 12:09:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (262, 423, '2020-10-10 12:11:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (734, 423, '2025-04-10 13:42:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (718, 424, '2009-04-10 12:11:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (74, 424, '2010-10-10 12:04:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (681, 424, '2015-04-10 12:37:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (213, 425, '2020-10-10 13:37:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (987, 426, '2017-04-10 13:04:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1095, 426, '2022-10-10 13:04:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (141, 427, '2018-04-10 13:08:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (937, 427, '2020-10-10 13:00:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (64, 427, '2019-04-10 13:27:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (463, 427, '2010-04-10 13:07:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (976, 428, '2006-04-10 13:09:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (516, 428, '2013-10-10 12:07:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (198, 428, '2012-04-10 12:58:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (185, 429, '2023-04-10 13:41:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (953, 429, '2020-10-10 12:42:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (184, 429, '2022-10-10 13:24:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (321, 429, '2021-04-10 12:51:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (850, 430, '2016-10-10 12:48:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (171, 430, '2022-04-10 13:23:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (403, 430, '2006-04-10 13:21:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (510, 430, '2019-04-10 13:30:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (46, 430, '2011-10-10 13:21:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (271, 431, '2013-04-10 12:22:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (443, 431, '2016-04-10 12:58:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (274, 431, '2007-10-10 13:10:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (972, 431, '2019-04-10 13:01:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (315, 432, '2024-10-10 13:00:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (952, 432, '2025-04-10 13:31:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (315, 432, '2018-10-10 13:07:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1016, 433, '2011-10-10 13:13:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (556, 433, '2006-10-10 13:58:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (528, 434, '2013-10-10 13:28:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (523, 434, '2024-04-10 13:32:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1050, 434, '2022-04-10 13:00:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (604, 434, '2010-04-10 12:50:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (948, 434, '2015-04-10 13:49:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (611, 435, '2009-04-10 13:54:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1090, 436, '2013-10-10 12:09:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (248, 437, '2009-04-10 13:14:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (700, 437, '2012-10-10 13:58:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (335, 438, '2017-10-10 13:29:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (953, 438, '2020-10-10 13:50:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (682, 439, '2025-04-10 13:13:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (121, 439, '2018-04-10 13:16:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (108, 439, '2017-04-10 13:13:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (549, 440, '2021-04-10 12:32:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (551, 440, '2013-10-10 12:03:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (17, 440, '2016-10-10 12:41:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (202, 440, '2019-10-10 12:58:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (633, 441, '2025-04-10 14:23:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (417, 441, '2016-04-10 13:43:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (598, 441, '2007-04-10 13:48:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (383, 441, '2022-04-10 12:47:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (958, 442, '2013-10-10 12:49:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1089, 442, '2015-04-10 12:17:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (224, 442, '2014-04-10 13:55:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1052, 442, '2015-10-10 12:38:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (808, 443, '2015-10-10 13:54:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (61, 443, '2006-10-10 13:30:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (184, 443, '2006-04-10 12:23:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (330, 443, '2008-04-10 13:45:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (293, 444, '2019-10-10 12:10:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1083, 444, '2005-04-10 13:40:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (616, 444, '2018-10-10 12:32:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (467, 444, '2011-04-10 13:10:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (306, 445, '2007-10-10 12:02:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (151, 445, '2025-10-10 13:59:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (682, 445, '2016-10-10 13:46:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (506, 446, '2006-10-10 12:48:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (470, 446, '2017-10-10 12:04:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (372, 447, '2025-10-10 13:31:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (763, 447, '2007-10-10 12:19:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (153, 447, '2008-04-10 13:19:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (280, 447, '2005-04-10 12:45:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (152, 448, '2012-04-10 12:17:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (739, 448, '2021-10-10 12:16:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (192, 448, '2019-04-10 13:01:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (886, 448, '2005-04-10 12:56:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (169, 448, '2015-10-10 13:02:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (127, 449, '2017-04-10 13:03:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (193, 449, '2007-10-10 12:44:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (717, 450, '2016-10-10 12:28:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (254, 450, '2014-10-10 12:06:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1017, 450, '2009-04-10 13:55:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (812, 451, '2007-04-10 12:50:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (34, 451, '2021-10-10 12:01:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1051, 452, '2025-10-10 13:31:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (306, 452, '2010-04-10 12:47:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (673, 452, '2019-04-10 12:15:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (790, 452, '2016-04-10 13:56:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (428, 452, '2011-10-10 13:53:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (247, 453, '2008-04-10 13:04:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (683, 454, '2023-10-10 14:07:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (490, 455, '2018-10-10 12:41:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (607, 455, '2015-04-10 13:20:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1017, 455, '2009-04-10 12:45:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (588, 456, '2012-10-10 12:17:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (328, 457, '2014-10-10 12:57:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1079, 458, '2024-04-10 14:31:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (67, 458, '2021-04-10 12:19:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (589, 458, '2011-04-10 12:07:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (882, 458, '2017-10-10 13:03:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (671, 458, '2014-04-10 12:34:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (967, 459, '2012-10-10 12:09:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (193, 460, '2007-04-10 13:32:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (661, 460, '2021-10-10 13:56:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (988, 460, '2005-04-10 12:12:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (833, 460, '2016-10-10 12:14:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (709, 460, '2015-04-10 12:03:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (136, 461, '2010-10-10 12:25:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (50, 461, '2020-04-10 13:08:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (382, 461, '2007-04-10 13:40:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (350, 461, '2005-10-10 12:08:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (75, 461, '2023-10-10 14:47:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (885, 462, '2017-10-10 12:38:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (671, 463, '2025-04-10 13:14:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (763, 463, '2021-04-10 13:03:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (705, 463, '2018-04-10 12:56:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (820, 464, '2025-04-10 13:03:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (185, 465, '2024-10-10 13:55:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (909, 465, '2009-10-10 13:35:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (408, 465, '2013-10-10 13:45:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (230, 465, '2007-10-10 12:15:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (816, 465, '2014-10-10 12:04:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (200, 466, '2017-10-10 13:15:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (545, 466, '2023-10-10 13:08:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1073, 466, '2025-04-10 13:30:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (167, 467, '2012-10-10 13:57:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (815, 467, '2006-10-10 13:52:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1011, 467, '2007-10-10 13:43:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1094, 467, '2018-10-10 12:18:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1014, 468, '2014-10-10 13:38:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (229, 469, '2008-10-10 12:33:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (27, 469, '2005-04-10 12:02:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (868, 470, '2020-10-10 12:38:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1023, 470, '2016-04-10 13:17:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (604, 471, '2010-04-10 12:37:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (244, 471, '2016-10-10 12:02:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (47, 471, '2009-04-10 13:26:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (135, 472, '2018-10-10 12:36:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (494, 472, '2013-10-10 13:56:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1023, 472, '2021-10-10 13:24:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (769, 473, '2020-10-10 12:26:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (682, 474, '2016-10-10 13:55:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (313, 474, '2006-10-10 12:41:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (367, 474, '2020-10-10 13:45:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (173, 474, '2023-04-10 13:03:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1045, 474, '2010-04-10 13:17:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (905, 475, '2012-04-10 13:55:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (12, 476, '2006-04-10 12:40:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (669, 477, '2006-04-10 12:08:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (749, 477, '2020-04-10 12:05:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1023, 478, '2010-10-10 13:27:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (786, 478, '2006-04-10 12:39:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (818, 479, '2015-04-10 12:02:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (698, 479, '2012-10-10 12:50:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (158, 480, '2007-04-10 13:35:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (986, 480, '2023-04-10 14:51:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (66, 480, '2016-10-10 12:37:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (42, 481, '2012-04-10 12:52:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (694, 481, '2021-10-10 12:03:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (539, 482, '2019-10-10 13:41:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (872, 483, '2015-04-10 12:16:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (39, 483, '2007-10-10 12:06:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (510, 483, '2022-10-10 13:34:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (555, 484, '2014-04-10 12:15:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (400, 484, '2023-04-10 14:24:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1085, 485, '2016-10-10 13:59:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (427, 485, '2023-10-10 13:44:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (243, 485, '2020-10-10 13:40:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (15, 485, '2011-04-10 13:39:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1050, 486, '2005-10-10 13:54:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (9, 486, '2012-04-10 13:13:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (593, 486, '2022-04-10 13:58:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (44, 486, '2016-04-10 12:01:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (364, 487, '2014-10-10 12:16:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (741, 487, '2008-04-10 13:45:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (878, 487, '2011-10-10 12:28:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (134, 487, '2021-10-10 13:11:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (145, 488, '2013-10-10 12:58:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (292, 488, '2007-10-10 12:18:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (168, 489, '2018-04-10 13:10:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1058, 489, '2016-10-10 12:02:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (302, 489, '2019-10-10 13:56:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1077, 489, '2007-10-10 13:44:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (702, 489, '2023-10-10 14:06:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1003, 490, '2023-10-10 14:24:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (294, 491, '2018-10-10 12:03:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (587, 492, '2014-04-10 12:21:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (679, 492, '2013-04-10 12:00:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (442, 493, '2015-04-10 12:42:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (135, 493, '2019-04-10 12:35:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (392, 493, '2013-10-10 12:22:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (277, 494, '2023-10-10 13:36:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (181, 494, '2008-04-10 12:42:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (548, 495, '2019-04-10 13:26:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (749, 495, '2019-10-10 13:42:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (636, 496, '2022-04-10 12:44:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (806, 497, '2019-04-10 13:53:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (416, 497, '2014-10-10 13:07:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (235, 498, '2007-10-10 12:34:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (539, 499, '2024-04-10 14:26:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (204, 499, '2006-04-10 13:16:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (145, 499, '2011-10-10 13:30:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1002, 500, '2016-04-10 13:00:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (181, 500, '2017-10-10 13:02:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (689, 501, '2013-04-10 13:02:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (823, 501, '2010-10-10 13:13:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (907, 501, '2005-10-10 12:00:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (11, 502, '2012-10-10 12:59:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (132, 502, '2008-04-10 13:54:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (408, 502, '2019-10-10 13:16:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (227, 502, '2009-04-10 12:56:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (357, 502, '2008-10-10 13:44:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (456, 503, '2016-10-10 12:26:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (91, 503, '2025-04-10 13:05:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (18, 503, '2025-10-10 13:09:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (154, 503, '2007-10-10 13:50:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (206, 504, '2025-10-10 14:39:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (149, 504, '2019-04-10 12:56:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (105, 505, '2008-10-10 12:21:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (260, 505, '2006-04-10 13:51:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1070, 505, '2019-10-10 12:33:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (849, 506, '2017-10-10 13:39:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (281, 506, '2020-10-10 12:23:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (565, 506, '2005-10-10 12:08:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (412, 506, '2017-04-10 12:35:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (313, 507, '2013-10-10 12:20:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (73, 507, '2019-04-10 12:02:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (911, 508, '2024-10-10 13:46:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (950, 508, '2012-10-10 12:14:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (130, 508, '2025-10-10 13:03:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (154, 508, '2014-04-10 13:17:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (404, 508, '2020-10-10 13:05:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (832, 509, '2009-04-10 13:30:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (494, 509, '2018-04-10 13:03:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (31, 509, '2011-04-10 13:14:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (595, 509, '2025-10-10 13:18:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (648, 510, '2020-04-10 12:00:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1045, 510, '2022-04-10 13:28:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (847, 510, '2020-10-10 13:00:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (17, 511, '2017-04-10 13:52:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (546, 511, '2013-10-10 12:25:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (351, 511, '2010-10-10 12:00:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (171, 512, '2013-10-10 13:07:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (247, 513, '2021-10-10 12:48:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (201, 513, '2016-04-10 12:08:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (427, 513, '2023-10-10 13:42:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (268, 513, '2012-04-10 13:43:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1050, 514, '2022-04-10 13:02:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (653, 514, '2006-10-10 12:17:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (418, 514, '2012-04-10 13:15:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (531, 515, '2010-10-10 12:19:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (741, 515, '2012-10-10 12:10:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (794, 516, '2005-10-10 13:55:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1100, 516, '2016-04-10 12:40:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (578, 516, '2023-04-10 13:54:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (351, 516, '2009-10-10 12:44:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1046, 516, '2011-04-10 13:15:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (131, 517, '2007-10-10 12:56:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (24, 518, '2024-04-10 13:43:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (930, 518, '2012-04-10 12:34:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (280, 519, '2005-04-10 12:10:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (622, 519, '2015-10-10 12:41:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (333, 519, '2024-10-10 14:01:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (753, 519, '2011-04-10 12:33:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (271, 520, '2005-10-10 13:37:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (583, 521, '2009-10-10 13:38:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (756, 521, '2008-10-10 13:43:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1053, 521, '2021-10-10 12:51:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (179, 521, '2016-10-10 12:20:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (519, 521, '2007-04-10 12:58:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (822, 522, '2015-04-10 12:57:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1009, 522, '2009-04-10 12:27:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (951, 522, '2010-04-10 13:54:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (664, 523, '2010-10-10 12:07:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (345, 523, '2022-10-10 13:05:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1095, 523, '2024-10-10 13:28:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (584, 524, '2017-04-10 13:11:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (252, 524, '2014-10-10 13:43:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (724, 525, '2005-04-10 13:29:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (87, 525, '2023-04-10 13:17:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1009, 526, '2024-04-10 14:00:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (441, 526, '2015-04-10 12:26:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (405, 527, '2008-04-10 12:54:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (524, 527, '2020-10-10 12:56:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (509, 527, '2009-10-10 12:14:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (398, 527, '2015-10-10 13:59:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (881, 527, '2007-04-10 13:32:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (542, 528, '2025-04-10 13:22:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (175, 529, '2005-04-10 13:11:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (597, 529, '2013-04-10 12:00:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (504, 529, '2011-10-10 13:34:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (154, 529, '2012-10-10 13:06:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (653, 530, '2006-10-10 12:37:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (635, 531, '2018-04-10 12:22:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1025, 531, '2010-04-10 12:23:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (575, 531, '2020-10-10 12:04:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (114, 531, '2017-04-10 12:55:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (871, 532, '2023-04-10 14:34:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (143, 532, '2025-10-10 14:29:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (32, 532, '2012-04-10 13:38:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (636, 532, '2010-04-10 13:28:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (564, 533, '2015-04-10 13:30:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (519, 534, '2007-04-10 13:14:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (90, 535, '2017-04-10 13:46:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1030, 535, '2010-04-10 12:09:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1078, 536, '2015-10-10 13:15:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (829, 537, '2020-04-10 13:12:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (281, 537, '2005-10-10 13:24:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (114, 537, '2018-10-10 12:20:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (187, 537, '2025-10-10 14:32:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (689, 537, '2010-04-10 12:33:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (641, 538, '2011-04-10 13:51:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (552, 538, '2018-04-10 13:51:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (818, 539, '2012-10-10 13:26:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1071, 539, '2008-04-10 13:38:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (923, 539, '2006-10-10 13:13:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (685, 540, '2009-10-10 12:31:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (217, 540, '2006-10-10 13:47:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (481, 540, '2016-10-10 13:16:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1062, 540, '2005-04-10 13:38:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (355, 541, '2020-04-10 12:23:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (717, 541, '2011-04-10 13:51:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (164, 541, '2008-04-10 12:39:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (741, 541, '2005-10-10 12:52:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (192, 541, '2011-10-10 12:13:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (529, 542, '2017-10-10 12:09:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (222, 542, '2020-04-10 12:58:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1087, 542, '2020-10-10 12:33:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (536, 543, '2017-04-10 13:46:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (819, 543, '2010-10-10 12:16:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (955, 543, '2016-10-10 13:13:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (430, 543, '2019-04-10 12:32:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (340, 543, '2006-04-10 13:32:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (163, 544, '2023-04-10 14:09:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (192, 544, '2006-10-10 13:45:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (563, 544, '2009-10-10 13:09:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (695, 545, '2018-04-10 13:57:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (911, 545, '2023-10-10 14:19:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (620, 545, '2012-04-10 13:41:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (800, 545, '2022-10-10 12:15:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (817, 545, '2006-10-10 13:46:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (41, 546, '2012-10-10 13:20:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1048, 546, '2020-04-10 13:22:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (858, 546, '2014-10-10 12:53:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (821, 546, '2007-10-10 12:09:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (984, 546, '2017-10-10 13:16:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (387, 547, '2009-10-10 12:53:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (335, 547, '2008-10-10 13:28:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (192, 547, '2019-04-10 12:40:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (52, 547, '2010-10-10 13:32:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (877, 547, '2010-04-10 13:49:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (415, 548, '2018-10-10 12:47:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (538, 549, '2024-04-10 13:00:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (150, 549, '2013-04-10 12:50:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1067, 550, '2017-04-10 13:59:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (663, 551, '2022-10-10 12:31:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (51, 551, '2015-04-10 12:37:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1028, 551, '2013-10-10 13:09:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1053, 551, '2021-10-10 12:30:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1010, 552, '2018-04-10 12:06:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (178, 552, '2008-10-10 13:41:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (231, 552, '2009-10-10 13:00:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (163, 552, '2023-04-10 13:32:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (486, 552, '2023-10-10 14:20:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (896, 553, '2016-04-10 13:51:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1007, 553, '2018-04-10 13:18:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1050, 553, '2013-04-10 12:58:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (918, 553, '2017-04-10 13:30:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (74, 553, '2025-10-10 14:22:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (277, 554, '2013-10-10 12:33:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1052, 554, '2017-10-10 13:40:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (869, 555, '2017-10-10 12:25:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (461, 555, '2006-04-10 12:16:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (677, 555, '2015-10-10 12:01:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (15, 555, '2012-10-10 12:00:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (526, 555, '2006-10-10 13:10:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1051, 556, '2014-10-10 12:52:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (204, 556, '2013-10-10 13:39:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (311, 556, '2020-10-10 12:46:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (517, 557, '2014-10-10 12:47:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (450, 557, '2019-04-10 12:30:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (771, 558, '2024-04-10 14:30:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (372, 558, '2025-10-10 13:42:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (663, 558, '2007-10-10 13:23:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1046, 558, '2011-04-10 13:21:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (487, 559, '2016-10-10 13:42:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (873, 559, '2006-10-10 13:53:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (461, 559, '2021-04-10 13:40:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (282, 559, '2010-04-10 13:11:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (758, 559, '2007-04-10 12:49:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (87, 560, '2005-10-10 13:48:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (858, 560, '2010-10-10 12:08:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (180, 560, '2011-04-10 13:02:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (584, 560, '2006-10-10 13:55:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (405, 560, '2012-10-10 13:56:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (735, 561, '2016-10-10 12:34:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (275, 561, '2019-10-10 13:40:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (744, 561, '2021-04-10 12:27:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (773, 562, '2012-10-10 12:53:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (983, 563, '2024-04-10 14:03:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (914, 563, '2019-04-10 13:49:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (644, 563, '2010-10-10 13:09:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (648, 563, '2020-04-10 12:52:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (514, 564, '2013-04-10 13:24:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (50, 564, '2007-10-10 13:44:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (393, 565, '2006-10-10 13:07:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (463, 565, '2010-04-10 12:58:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (325, 565, '2023-04-10 13:24:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (523, 565, '2011-10-10 13:16:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1049, 566, '2021-04-10 13:41:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (254, 566, '2005-10-10 13:43:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1082, 566, '2005-04-10 12:08:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (356, 566, '2020-04-10 13:43:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1082, 567, '2005-04-10 13:41:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (307, 567, '2012-04-10 12:43:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (704, 567, '2013-04-10 12:36:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (636, 567, '2024-04-10 14:14:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (544, 567, '2014-10-10 12:20:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (905, 568, '2013-04-10 12:57:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1100, 568, '2011-10-10 12:06:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (729, 568, '2019-10-10 12:43:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (862, 568, '2014-10-10 12:55:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (925, 569, '2005-04-10 13:53:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (999, 570, '2022-10-10 13:26:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (470, 570, '2025-10-10 13:26:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (527, 570, '2024-04-10 13:50:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (178, 571, '2020-04-10 12:18:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (515, 572, '2013-10-10 13:12:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (438, 572, '2025-04-10 13:37:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (613, 572, '2015-04-10 13:58:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (434, 573, '2009-10-10 13:50:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (134, 573, '2021-10-10 13:27:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (882, 574, '2017-10-10 12:25:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (610, 574, '2015-04-10 13:08:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (426, 574, '2009-04-10 12:09:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (624, 574, '2005-10-10 12:29:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (623, 574, '2025-10-10 14:59:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (601, 575, '2006-04-10 13:33:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (361, 575, '2023-10-10 13:39:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1070, 575, '2023-04-10 13:25:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1001, 575, '2011-04-10 13:51:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (969, 576, '2021-04-10 13:46:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1010, 576, '2014-10-10 13:27:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1032, 576, '2010-04-10 13:18:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (796, 577, '2014-04-10 13:49:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (208, 577, '2008-04-10 13:03:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1095, 578, '2022-10-10 12:06:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (174, 578, '2010-10-10 13:32:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (436, 578, '2015-10-10 13:54:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (356, 579, '2012-04-10 13:40:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (582, 579, '2014-10-10 12:41:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (529, 579, '2018-04-10 13:09:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1021, 580, '2014-04-10 12:42:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1090, 580, '2019-10-10 12:41:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1081, 580, '2008-10-10 12:04:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (184, 580, '2020-04-10 13:03:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (817, 580, '2006-10-10 12:39:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1003, 581, '2021-04-10 12:38:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (741, 581, '2008-10-10 13:27:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (323, 582, '2014-10-10 12:31:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (634, 582, '2018-04-10 12:57:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (713, 582, '2006-10-10 13:05:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (963, 582, '2009-10-10 13:44:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (723, 582, '2009-04-10 12:13:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (171, 583, '2015-04-10 13:24:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (921, 583, '2010-10-10 13:35:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (973, 584, '2025-04-10 14:12:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (117, 584, '2010-10-10 13:45:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (20, 584, '2015-04-10 13:57:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (336, 585, '2013-10-10 12:29:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (878, 585, '2011-10-10 12:23:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (206, 585, '2010-04-10 12:26:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (227, 585, '2023-04-10 14:06:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (7, 586, '2018-10-10 13:54:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (53, 586, '2025-04-10 14:31:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (936, 586, '2017-10-10 13:45:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (424, 586, '2020-04-10 13:08:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (699, 586, '2017-04-10 13:01:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1002, 587, '2015-04-10 13:54:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1044, 588, '2005-10-10 13:24:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (472, 588, '2005-04-10 13:50:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (250, 589, '2016-04-10 13:28:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (208, 589, '2014-10-10 13:41:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (84, 590, '2021-04-10 13:20:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (75, 590, '2023-10-10 14:03:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (487, 590, '2014-10-10 13:59:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (636, 590, '2010-04-10 12:34:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (190, 591, '2021-10-10 12:27:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (551, 591, '2024-04-10 13:27:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (908, 591, '2015-10-10 13:14:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (651, 591, '2018-10-10 12:01:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (54, 592, '2010-04-10 13:59:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (470, 592, '2017-10-10 12:57:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (37, 593, '2009-04-10 12:45:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1054, 593, '2011-10-10 13:07:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (782, 594, '2010-04-10 12:05:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (499, 594, '2008-10-10 12:12:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1076, 594, '2016-10-10 12:10:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1049, 594, '2025-10-10 13:37:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (84, 594, '2006-04-10 13:07:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (731, 595, '2006-10-10 12:33:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (763, 595, '2008-04-10 13:36:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (595, 595, '2025-10-10 13:15:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (248, 595, '2005-10-10 12:23:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1055, 595, '2008-10-10 13:18:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (50, 596, '2020-04-10 12:42:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (498, 596, '2009-10-10 13:14:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (786, 596, '2011-10-10 12:50:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (449, 597, '2021-10-10 12:40:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1026, 598, '2024-04-10 14:35:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (222, 598, '2009-04-10 12:10:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (552, 598, '2018-04-10 13:58:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (186, 598, '2008-04-10 13:23:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (888, 598, '2021-04-10 12:27:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (296, 599, '2020-10-10 12:00:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (717, 600, '2011-04-10 13:53:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (393, 600, '2013-04-10 12:49:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (56, 600, '2021-10-10 13:08:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (940, 600, '2016-04-10 13:31:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (387, 600, '2018-04-10 13:45:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (272, 601, '2015-10-10 12:09:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (967, 601, '2012-10-10 12:40:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (303, 601, '2005-04-10 13:22:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (178, 601, '2007-10-10 12:59:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (620, 602, '2007-04-10 12:51:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (532, 602, '2008-04-10 12:24:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (492, 602, '2013-04-10 13:13:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (750, 602, '2025-10-10 13:46:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (48, 602, '2012-04-10 12:44:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (52, 603, '2010-10-10 12:28:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (209, 604, '2016-10-10 13:53:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (187, 604, '2015-04-10 13:50:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (112, 604, '2018-10-10 13:46:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1039, 605, '2009-04-10 12:29:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (779, 606, '2015-10-10 13:26:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (524, 606, '2016-04-10 12:16:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (582, 607, '2016-10-10 13:56:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (762, 608, '2008-10-10 13:24:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (861, 608, '2017-10-10 12:09:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (262, 609, '2017-04-10 13:39:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (256, 609, '2020-04-10 13:59:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (219, 609, '2018-04-10 12:00:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (229, 610, '2010-04-10 12:19:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (306, 611, '2023-10-10 14:41:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (718, 611, '2020-04-10 13:59:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (679, 611, '2023-04-10 14:20:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1000, 611, '2019-04-10 13:49:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (765, 612, '2009-04-10 12:32:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (134, 613, '2008-10-10 13:35:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (529, 613, '2018-04-10 13:04:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (548, 613, '2019-04-10 13:36:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (12, 613, '2006-04-10 13:17:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (163, 614, '2023-04-10 13:24:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (682, 614, '2012-04-10 13:14:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (484, 614, '2015-10-10 12:40:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (844, 614, '2021-10-10 13:26:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (723, 614, '2024-10-10 14:31:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (11, 615, '2009-10-10 12:36:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1089, 615, '2022-10-10 12:04:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (298, 615, '2024-10-10 14:18:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (873, 615, '2006-10-10 12:42:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (316, 616, '2020-10-10 12:30:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (689, 616, '2010-04-10 13:35:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (400, 616, '2007-04-10 12:11:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (118, 616, '2015-04-10 13:10:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (268, 617, '2012-04-10 13:43:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (90, 617, '2022-10-10 12:19:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (740, 617, '2025-10-10 14:19:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (819, 617, '2017-04-10 13:39:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (984, 617, '2017-10-10 13:31:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (195, 618, '2007-10-10 13:47:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (837, 618, '2020-10-10 12:33:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (24, 618, '2019-04-10 13:11:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (215, 618, '2015-04-10 13:34:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (149, 619, '2018-04-10 13:02:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (524, 619, '2006-04-10 13:59:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (727, 619, '2022-10-10 12:17:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (971, 619, '2005-04-10 13:32:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (537, 620, '2025-10-10 14:39:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (685, 620, '2019-10-10 13:35:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (698, 621, '2012-04-10 12:13:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (674, 622, '2022-10-10 13:45:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (818, 622, '2024-10-10 13:33:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (772, 622, '2024-04-10 13:36:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (385, 623, '2008-04-10 13:34:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (662, 624, '2015-10-10 12:26:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (154, 625, '2022-10-10 13:59:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (56, 625, '2021-10-10 13:00:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (287, 625, '2016-10-10 13:26:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (975, 626, '2009-04-10 12:09:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (380, 626, '2018-04-10 13:27:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (357, 626, '2008-04-10 13:30:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (271, 626, '2013-04-10 12:41:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (189, 627, '2011-10-10 12:04:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (758, 627, '2019-10-10 13:46:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (133, 627, '2011-04-10 13:07:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1064, 627, '2015-10-10 12:41:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (801, 628, '2019-04-10 12:15:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (824, 629, '2021-04-10 12:33:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (134, 629, '2009-04-10 12:03:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (907, 629, '2020-10-10 12:46:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (811, 629, '2005-04-10 12:43:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1049, 629, '2021-10-10 12:19:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (105, 630, '2021-04-10 13:48:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (729, 630, '2010-10-10 12:10:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (586, 630, '2023-10-10 14:36:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (802, 630, '2009-04-10 12:56:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (700, 631, '2018-04-10 13:04:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (551, 631, '2024-04-10 14:20:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (648, 631, '2012-10-10 12:33:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (817, 631, '2013-10-10 12:33:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (965, 632, '2009-04-10 13:04:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (907, 632, '2018-04-10 12:09:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (326, 633, '2022-10-10 13:15:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (420, 633, '2015-04-10 13:53:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (369, 633, '2025-04-10 13:59:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (873, 634, '2014-04-10 13:52:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1100, 634, '2016-04-10 12:37:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1078, 634, '2009-04-10 12:43:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1056, 634, '2025-10-10 13:33:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (583, 634, '2010-10-10 13:06:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (892, 635, '2016-04-10 13:48:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (21, 636, '2023-04-10 13:35:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (924, 636, '2018-04-10 12:35:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (171, 636, '2022-04-10 13:42:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (54, 636, '2014-04-10 12:29:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (704, 636, '2018-10-10 13:46:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (477, 637, '2006-10-10 13:50:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (467, 637, '2011-04-10 13:31:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (528, 638, '2013-04-10 12:35:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (373, 638, '2009-10-10 13:18:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (921, 638, '2006-10-10 13:32:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (805, 639, '2016-04-10 13:28:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1074, 640, '2024-10-10 13:18:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (605, 641, '2025-10-10 14:12:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (367, 641, '2022-10-10 13:39:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (914, 642, '2014-04-10 13:31:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (97, 642, '2006-10-10 12:05:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (11, 642, '2017-04-10 13:13:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (506, 642, '2018-04-10 12:56:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (420, 642, '2015-04-10 13:16:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (972, 643, '2019-04-10 13:19:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (992, 643, '2012-04-10 13:18:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (934, 643, '2025-04-10 13:15:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (295, 643, '2025-10-10 14:58:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (324, 643, '2016-10-10 13:00:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (292, 644, '2019-04-10 12:20:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (315, 644, '2010-10-10 12:25:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (739, 644, '2007-04-10 13:59:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (58, 645, '2017-04-10 12:00:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (336, 646, '2013-10-10 12:58:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (967, 646, '2022-10-10 12:04:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (488, 646, '2013-04-10 12:44:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (10, 646, '2009-04-10 12:42:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (339, 647, '2019-10-10 12:41:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (549, 647, '2009-10-10 13:10:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (84, 647, '2006-04-10 13:21:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (147, 648, '2014-10-10 13:09:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (436, 648, '2020-10-10 12:46:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1023, 648, '2023-04-10 13:11:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (345, 648, '2022-10-10 12:44:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (391, 648, '2016-04-10 13:45:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (760, 649, '2007-04-10 12:25:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (461, 649, '2021-04-10 12:17:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (206, 649, '2010-04-10 12:07:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (635, 649, '2018-04-10 12:08:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (405, 649, '2022-04-10 13:16:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (554, 650, '2015-10-10 13:00:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (360, 650, '2016-10-10 12:51:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (180, 651, '2021-10-10 13:47:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (648, 651, '2020-04-10 12:55:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (659, 651, '2022-10-10 13:51:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (416, 651, '2025-10-10 13:09:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1082, 651, '2005-04-10 13:56:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (214, 652, '2024-10-10 14:40:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (814, 652, '2012-10-10 12:08:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (409, 652, '2006-04-10 12:20:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1018, 652, '2015-04-10 12:29:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (581, 652, '2017-04-10 13:02:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (625, 653, '2021-10-10 13:34:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1021, 654, '2021-04-10 12:24:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (317, 654, '2019-04-10 12:04:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (437, 654, '2020-10-10 12:05:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (951, 654, '2006-04-10 13:53:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (136, 654, '2014-04-10 13:27:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1024, 655, '2010-04-10 12:00:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (264, 656, '2005-04-10 12:21:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (369, 656, '2025-04-10 14:19:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (760, 656, '2007-04-10 13:46:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (819, 656, '2011-10-10 12:23:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (142, 656, '2018-10-10 12:53:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (532, 657, '2005-10-10 12:05:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (76, 657, '2019-10-10 12:15:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (93, 658, '2007-04-10 12:46:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (156, 659, '2013-04-10 13:14:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (959, 659, '2022-10-10 13:29:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (675, 660, '2013-04-10 12:28:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (801, 660, '2018-04-10 12:57:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (285, 661, '2018-10-10 12:33:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1008, 661, '2015-04-10 13:04:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (3, 661, '2005-10-10 13:26:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (81, 661, '2017-04-10 12:53:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (508, 662, '2006-04-10 13:24:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (994, 662, '2007-04-10 13:57:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (559, 662, '2016-04-10 13:06:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (671, 662, '2021-04-10 13:24:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (169, 662, '2008-04-10 12:56:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (64, 663, '2019-04-10 12:40:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (918, 663, '2017-04-10 13:40:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (355, 663, '2017-10-10 12:07:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (183, 664, '2012-04-10 12:52:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (468, 664, '2009-04-10 13:26:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (679, 664, '2017-10-10 13:17:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (8, 664, '2022-04-10 12:56:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (914, 664, '2014-04-10 12:08:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1002, 665, '2009-10-10 12:14:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (756, 665, '2008-10-10 13:15:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (976, 665, '2006-04-10 13:46:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (965, 665, '2005-04-10 12:35:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (126, 665, '2023-04-10 13:24:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (910, 666, '2011-10-10 12:42:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (320, 666, '2016-04-10 13:44:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (277, 666, '2018-04-10 12:26:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (271, 667, '2012-04-10 13:28:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (380, 667, '2024-10-10 14:04:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1065, 668, '2010-10-10 13:56:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (665, 669, '2022-10-10 12:17:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1080, 670, '2007-04-10 12:18:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (929, 670, '2014-04-10 12:30:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (796, 670, '2013-04-10 12:39:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (598, 670, '2008-04-10 12:43:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (777, 670, '2011-04-10 13:24:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (187, 671, '2025-10-10 14:03:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (588, 671, '2012-10-10 13:40:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (514, 672, '2007-04-10 13:26:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (738, 672, '2011-04-10 13:36:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1094, 672, '2015-04-10 12:01:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (243, 672, '2020-10-10 12:09:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (931, 672, '2019-04-10 13:56:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (527, 673, '2016-10-10 12:08:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (501, 673, '2015-04-10 13:27:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (456, 673, '2018-10-10 12:42:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (885, 673, '2010-04-10 12:14:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (482, 673, '2005-04-10 12:34:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (759, 674, '2009-04-10 12:45:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (791, 674, '2015-10-10 12:30:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (657, 674, '2020-04-10 13:55:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (281, 675, '2020-10-10 12:44:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1089, 675, '2022-10-10 12:44:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (164, 675, '2008-04-10 12:53:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (426, 676, '2009-04-10 13:10:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (67, 676, '2022-04-10 13:02:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (234, 676, '2011-04-10 12:00:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (694, 677, '2021-04-10 12:12:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1069, 678, '2023-10-10 14:17:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (452, 679, '2023-10-10 13:04:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (985, 679, '2011-10-10 13:54:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (987, 679, '2006-04-10 12:42:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (674, 679, '2022-10-10 12:12:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (374, 680, '2016-10-10 13:46:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (998, 680, '2017-10-10 12:20:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (806, 681, '2009-04-10 13:22:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (202, 681, '2019-10-10 13:50:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (461, 681, '2021-04-10 12:55:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (989, 682, '2021-04-10 12:14:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1046, 682, '2005-04-10 13:07:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (370, 682, '2012-10-10 13:49:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (902, 683, '2009-04-10 12:22:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (203, 683, '2019-04-10 12:32:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (945, 683, '2010-04-10 12:41:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (664, 683, '2010-10-10 12:23:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (92, 683, '2023-04-10 14:10:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (142, 684, '2020-10-10 13:59:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (292, 684, '2012-04-10 12:34:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (916, 685, '2012-04-10 13:13:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (669, 685, '2006-04-10 13:55:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (713, 685, '2011-10-10 13:27:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (212, 686, '2019-10-10 12:33:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (953, 686, '2006-04-10 13:20:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1056, 686, '2025-10-10 14:40:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (607, 686, '2015-04-10 12:13:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (296, 687, '2023-10-10 14:37:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (719, 687, '2022-04-10 12:43:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (721, 687, '2023-04-10 13:59:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (911, 688, '2023-10-10 14:02:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (431, 688, '2025-10-10 14:22:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (571, 688, '2007-04-10 13:45:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (603, 689, '2021-10-10 13:45:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (668, 689, '2017-10-10 13:51:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (337, 690, '2020-04-10 13:21:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (771, 690, '2024-04-10 13:09:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (332, 690, '2005-04-10 12:57:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (305, 690, '2021-04-10 12:05:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (717, 691, '2021-04-10 13:38:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (330, 692, '2011-10-10 12:09:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (571, 692, '2009-10-10 13:59:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (279, 692, '2010-10-10 12:28:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (206, 693, '2018-04-10 13:23:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (895, 693, '2015-10-10 12:13:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (794, 694, '2020-04-10 13:10:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (23, 694, '2011-10-10 13:48:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (427, 694, '2023-10-10 13:44:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (101, 694, '2010-04-10 13:07:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (268, 695, '2023-04-10 13:20:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (264, 695, '2023-10-10 13:46:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (429, 696, '2006-04-10 12:48:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (296, 696, '2023-04-10 14:59:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (929, 696, '2009-10-10 12:45:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (683, 696, '2006-10-10 12:43:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1077, 696, '2010-04-10 13:18:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (682, 697, '2025-04-10 14:01:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (963, 697, '2005-10-10 13:19:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (796, 697, '2014-04-10 13:41:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (763, 697, '2007-10-10 12:55:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (367, 697, '2011-10-10 12:42:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (251, 698, '2018-04-10 12:28:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (982, 698, '2024-04-10 14:32:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (584, 699, '2024-10-10 14:51:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (179, 699, '2021-04-10 12:19:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (130, 700, '2019-10-10 13:22:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (370, 700, '2024-04-10 14:09:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (676, 700, '2023-10-10 13:42:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (830, 701, '2009-04-10 12:58:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (822, 701, '2008-04-10 13:33:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (624, 701, '2005-10-10 13:47:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (463, 701, '2011-04-10 12:08:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (86, 702, '2008-04-10 12:20:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (993, 702, '2010-10-10 13:45:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1048, 702, '2020-04-10 13:03:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (236, 702, '2024-10-10 13:19:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (176, 702, '2024-04-10 14:37:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1046, 703, '2009-04-10 13:34:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1080, 703, '2024-04-10 13:05:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (814, 703, '2022-04-10 13:19:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (929, 703, '2005-04-10 12:55:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (375, 704, '2016-10-10 12:55:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (911, 704, '2006-04-10 13:23:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (647, 704, '2021-10-10 13:27:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (647, 704, '2018-10-10 12:48:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (922, 705, '2023-04-10 14:04:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (401, 705, '2008-04-10 12:43:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (231, 705, '2018-10-10 13:30:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (435, 705, '2009-04-10 12:34:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1020, 705, '2013-04-10 13:17:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (924, 706, '2018-04-10 13:30:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (271, 706, '2013-04-10 12:08:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1098, 706, '2011-04-10 12:50:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (17, 706, '2005-04-10 13:52:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (721, 706, '2023-04-10 13:14:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (709, 707, '2015-04-10 13:45:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (175, 707, '2018-04-10 13:52:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1044, 708, '2018-10-10 12:02:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (431, 708, '2025-10-10 14:58:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (658, 709, '2022-04-10 12:11:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (528, 709, '2018-10-10 13:59:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (746, 709, '2023-04-10 14:10:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (990, 710, '2018-04-10 13:15:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (680, 710, '2022-10-10 13:38:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1100, 711, '2016-10-10 13:22:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (680, 711, '2022-10-10 12:00:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1095, 712, '2014-10-10 12:36:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (746, 712, '2023-04-10 13:19:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (260, 712, '2016-04-10 13:08:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (694, 713, '2012-04-10 13:04:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (918, 714, '2008-04-10 13:46:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (727, 714, '2011-10-10 12:39:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (225, 715, '2022-10-10 13:01:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (880, 715, '2024-10-10 14:21:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (14, 715, '2006-10-10 12:20:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (769, 716, '2009-10-10 12:09:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (693, 717, '2018-10-10 13:52:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (167, 717, '2007-10-10 12:06:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (856, 717, '2007-04-10 12:03:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (93, 717, '2013-04-10 12:15:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (513, 717, '2012-04-10 13:44:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (100, 718, '2024-10-10 13:22:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (270, 718, '2025-10-10 14:45:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (886, 718, '2021-10-10 13:29:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (744, 718, '2014-04-10 12:43:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1098, 719, '2011-04-10 13:08:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1091, 720, '2011-04-10 13:27:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (953, 720, '2006-04-10 13:12:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (370, 720, '2024-04-10 13:11:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (10, 721, '2010-04-10 13:25:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (239, 721, '2006-04-10 13:42:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (159, 721, '2016-10-10 12:53:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (575, 721, '2012-10-10 13:17:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (623, 721, '2025-10-10 14:23:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (901, 722, '2017-10-10 12:45:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (29, 722, '2023-10-10 14:23:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (221, 722, '2011-04-10 12:25:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (419, 723, '2022-10-10 12:17:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (307, 724, '2023-10-10 13:38:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (840, 724, '2016-04-10 12:47:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (711, 724, '2013-10-10 13:21:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1041, 724, '2012-04-10 13:35:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (3, 724, '2024-04-10 13:38:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (221, 725, '2010-10-10 12:32:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (990, 725, '2018-04-10 13:37:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (84, 725, '2021-04-10 12:15:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (904, 726, '2014-04-10 13:41:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1059, 726, '2015-10-10 12:04:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (499, 726, '2008-10-10 13:56:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (763, 726, '2021-04-10 13:37:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (720, 726, '2013-04-10 13:10:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (878, 727, '2023-04-10 13:17:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (956, 727, '2020-04-10 13:11:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (37, 727, '2012-10-10 12:28:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (895, 727, '2015-10-10 13:24:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (150, 728, '2013-04-10 12:26:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (596, 729, '2025-04-10 14:28:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (916, 729, '2012-04-10 12:15:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1008, 729, '2015-04-10 12:12:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (35, 729, '2018-04-10 12:10:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (827, 730, '2012-10-10 12:10:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (615, 730, '2014-04-10 13:17:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (164, 730, '2007-10-10 12:41:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1086, 731, '2010-10-10 13:49:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (509, 731, '2020-04-10 13:32:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (377, 731, '2015-04-10 13:05:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (403, 731, '2016-04-10 12:52:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (905, 731, '2011-10-10 13:01:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (417, 732, '2012-10-10 12:19:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (472, 732, '2013-04-10 13:44:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (741, 733, '2012-10-10 12:19:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (270, 733, '2024-10-10 14:21:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (162, 734, '2008-10-10 13:29:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (962, 735, '2024-10-10 13:16:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (703, 735, '2005-04-10 12:48:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (580, 735, '2022-04-10 12:45:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (929, 735, '2006-04-10 13:50:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (440, 736, '2013-10-10 12:30:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (953, 736, '2020-10-10 13:17:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (283, 736, '2010-10-10 13:17:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (67, 736, '2021-04-10 13:35:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (932, 736, '2017-10-10 12:21:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (648, 737, '2020-04-10 13:13:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (729, 737, '2022-04-10 12:05:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (288, 737, '2006-04-10 12:58:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (513, 737, '2021-04-10 12:32:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (796, 738, '2021-10-10 12:29:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1005, 739, '2005-04-10 13:22:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (165, 739, '2011-10-10 13:26:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (615, 739, '2017-04-10 13:39:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1069, 740, '2024-10-10 13:42:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (492, 740, '2013-04-10 13:18:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (361, 740, '2010-10-10 12:22:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (666, 741, '2020-04-10 12:31:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (366, 741, '2024-10-10 13:50:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (937, 741, '2015-10-10 12:51:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (525, 742, '2011-10-10 12:25:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (801, 742, '2018-04-10 13:40:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (299, 742, '2016-10-10 13:21:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (984, 742, '2017-10-10 12:39:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (163, 743, '2023-04-10 13:47:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (298, 743, '2012-04-10 12:35:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (544, 744, '2022-10-10 12:50:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (415, 744, '2018-10-10 12:30:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (11, 745, '2009-10-10 12:20:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (356, 745, '2020-04-10 13:41:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (886, 746, '2020-10-10 13:04:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (488, 746, '2009-04-10 12:22:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (734, 746, '2025-04-10 14:15:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (542, 746, '2021-10-10 12:15:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (546, 747, '2022-10-10 13:59:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (163, 747, '2023-04-10 13:18:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (313, 747, '2006-10-10 12:28:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (504, 748, '2011-10-10 13:07:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (438, 749, '2025-04-10 14:31:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (649, 749, '2008-04-10 13:03:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (643, 749, '2019-04-10 13:59:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1044, 749, '2015-10-10 13:48:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (597, 750, '2013-04-10 13:11:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (409, 750, '2016-04-10 12:13:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (926, 750, '2005-10-10 12:29:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1007, 750, '2018-04-10 12:36:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1039, 750, '2008-10-10 12:44:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (593, 751, '2014-04-10 13:31:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1002, 751, '2016-04-10 13:55:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (471, 752, '2019-04-10 12:44:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (757, 752, '2007-10-10 13:05:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (227, 752, '2017-04-10 13:02:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (315, 752, '2024-10-10 13:40:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1007, 753, '2018-04-10 13:53:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (637, 753, '2025-04-10 14:48:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (131, 753, '2024-10-10 13:00:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (721, 754, '2010-04-10 12:16:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (610, 755, '2015-04-10 13:31:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (452, 755, '2025-10-10 14:19:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (980, 756, '2025-10-10 13:53:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (901, 756, '2017-10-10 13:38:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (817, 756, '2013-10-10 13:58:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (673, 756, '2019-04-10 13:29:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (287, 756, '2016-10-10 12:07:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (387, 757, '2005-10-10 12:48:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1039, 757, '2009-04-10 12:33:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (648, 758, '2007-10-10 12:17:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (189, 758, '2011-10-10 13:53:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (223, 758, '2010-04-10 12:33:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1080, 759, '2020-04-10 12:00:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (595, 760, '2005-10-10 13:08:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (167, 761, '2007-10-10 12:58:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (662, 761, '2008-04-10 12:14:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (567, 761, '2013-04-10 12:15:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (479, 761, '2024-10-10 13:51:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (443, 761, '2009-10-10 12:33:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (192, 762, '2019-04-10 13:58:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (816, 762, '2025-04-10 14:35:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (267, 762, '2009-04-10 13:20:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (654, 763, '2006-04-10 12:40:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (509, 764, '2020-04-10 12:09:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (976, 764, '2019-10-10 13:21:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (822, 764, '2022-04-10 13:22:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1082, 765, '2022-04-10 12:28:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (858, 765, '2010-10-10 13:39:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (647, 766, '2018-10-10 12:21:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (844, 766, '2021-10-10 13:32:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (821, 766, '2025-04-10 13:47:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (409, 766, '2022-04-10 13:24:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (178, 766, '2014-10-10 13:14:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (258, 767, '2014-10-10 12:49:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (486, 767, '2016-10-10 13:55:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (35, 767, '2018-04-10 13:38:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (5, 767, '2013-04-10 12:47:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (36, 768, '2009-04-10 12:01:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (896, 768, '2016-04-10 12:15:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (852, 768, '2014-04-10 13:25:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (605, 768, '2020-04-10 12:43:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (8, 768, '2022-04-10 12:37:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (914, 769, '2014-04-10 12:03:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (618, 769, '2024-04-10 13:52:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (217, 769, '2012-04-10 12:14:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (732, 769, '2005-04-10 13:18:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (705, 770, '2018-10-10 13:36:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (687, 770, '2017-10-10 12:33:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (458, 770, '2012-10-10 12:21:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (587, 770, '2010-04-10 13:03:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (151, 770, '2025-10-10 13:33:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1058, 771, '2025-04-10 13:25:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (559, 771, '2012-10-10 13:26:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (501, 771, '2021-10-10 12:22:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1062, 771, '2024-10-10 13:06:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (362, 772, '2018-04-10 12:04:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (416, 772, '2011-04-10 13:45:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (445, 772, '2007-04-10 12:00:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (684, 773, '2025-04-10 14:11:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (551, 774, '2019-04-10 12:48:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (63, 774, '2013-10-10 12:44:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (270, 774, '2024-10-10 14:46:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (134, 774, '2020-10-10 12:41:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (31, 774, '2011-04-10 12:32:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (485, 775, '2008-04-10 13:50:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (224, 775, '2014-04-10 13:33:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (27, 776, '2005-04-10 12:33:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (801, 776, '2012-04-10 13:31:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (280, 776, '2007-10-10 13:49:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (554, 776, '2009-10-10 13:01:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1051, 777, '2014-10-10 12:08:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (101, 777, '2020-10-10 12:22:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (580, 777, '2016-10-10 13:58:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (177, 777, '2019-10-10 12:40:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (682, 778, '2006-10-10 13:03:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (176, 778, '2013-10-10 12:49:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (50, 779, '2020-04-10 13:04:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (279, 779, '2010-10-10 13:31:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (632, 779, '2011-04-10 13:40:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (675, 779, '2013-04-10 12:44:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (819, 779, '2017-04-10 13:37:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (870, 780, '2006-04-10 12:44:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (302, 780, '2011-04-10 12:49:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (330, 781, '2011-10-10 12:18:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (113, 781, '2020-04-10 12:31:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1055, 781, '2017-04-10 13:37:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (767, 781, '2014-10-10 13:10:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (231, 781, '2015-04-10 13:08:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (424, 782, '2020-04-10 13:04:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (602, 782, '2025-04-10 13:59:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (128, 782, '2014-10-10 12:25:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (839, 783, '2008-10-10 13:53:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (700, 783, '2012-10-10 12:55:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (605, 784, '2010-04-10 13:07:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1081, 785, '2008-10-10 13:47:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (869, 785, '2017-10-10 13:01:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (283, 785, '2012-10-10 13:03:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (703, 785, '2005-04-10 12:30:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (133, 785, '2006-04-10 13:45:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (206, 786, '2010-04-10 12:46:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1034, 786, '2020-10-10 12:32:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (998, 787, '2025-04-10 14:12:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (297, 787, '2006-10-10 12:10:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1069, 787, '2016-04-10 12:41:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (777, 788, '2009-04-10 12:01:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (677, 789, '2015-04-10 13:17:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (643, 789, '2022-10-10 13:25:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (565, 790, '2005-10-10 13:28:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (220, 790, '2017-04-10 13:55:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1031, 791, '2006-04-10 12:39:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (412, 791, '2020-10-10 12:37:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (903, 791, '2019-04-10 13:15:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (774, 792, '2011-04-10 13:56:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (602, 792, '2023-04-10 13:49:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (859, 792, '2010-10-10 12:55:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (489, 792, '2022-04-10 13:18:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (659, 793, '2022-10-10 12:02:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (636, 793, '2010-04-10 12:18:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (382, 793, '2007-04-10 13:49:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (991, 793, '2021-10-10 12:10:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (571, 793, '2009-10-10 13:08:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (356, 794, '2005-04-10 13:29:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (12, 794, '2025-04-10 14:11:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (690, 794, '2021-04-10 13:18:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (683, 794, '2017-04-10 12:45:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (388, 795, '2012-10-10 13:44:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1002, 795, '2015-04-10 13:27:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (994, 795, '2007-04-10 12:59:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (965, 795, '2022-04-10 12:04:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1055, 795, '2017-04-10 13:07:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (663, 796, '2024-10-10 14:48:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (693, 796, '2014-04-10 13:36:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (134, 797, '2008-10-10 13:19:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (91, 797, '2008-04-10 13:57:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (186, 797, '2021-10-10 13:54:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (162, 798, '2006-04-10 12:04:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1046, 798, '2011-04-10 12:15:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1071, 799, '2008-04-10 13:10:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (736, 799, '2006-04-10 12:39:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (102, 800, '2021-10-10 13:37:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (818, 800, '2024-10-10 13:26:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (361, 800, '2023-10-10 14:11:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1050, 800, '2013-04-10 13:03:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (406, 801, '2005-04-10 13:15:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (614, 802, '2007-10-10 13:47:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1020, 802, '2019-10-10 12:53:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (650, 802, '2025-04-10 13:33:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (611, 802, '2006-10-10 12:25:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (592, 803, '2024-10-10 14:47:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (141, 804, '2006-04-10 13:05:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (144, 804, '2007-04-10 13:28:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (363, 804, '2014-10-10 13:57:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (977, 804, '2011-10-10 12:40:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (661, 804, '2021-10-10 13:08:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (632, 805, '2011-04-10 12:29:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1007, 805, '2021-10-10 13:34:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (154, 806, '2022-10-10 12:25:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1093, 806, '2018-04-10 13:49:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (391, 807, '2016-04-10 12:38:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (976, 807, '2019-10-10 12:31:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (737, 807, '2018-10-10 12:06:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (822, 807, '2008-04-10 13:16:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (721, 807, '2010-04-10 12:30:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (822, 808, '2022-04-10 13:55:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (606, 808, '2024-04-10 14:16:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (576, 809, '2022-10-10 12:18:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (822, 809, '2015-04-10 13:03:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (568, 809, '2016-10-10 13:26:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (532, 810, '2012-10-10 12:25:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (691, 810, '2023-04-10 14:19:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (829, 810, '2022-04-10 12:13:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (842, 810, '2011-10-10 13:56:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (755, 810, '2017-04-10 13:08:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (488, 811, '2006-04-10 13:31:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (479, 812, '2005-10-10 12:28:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (374, 812, '2021-10-10 13:09:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (332, 812, '2009-04-10 12:11:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (508, 812, '2014-10-10 13:23:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (40, 812, '2005-04-10 13:38:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (959, 813, '2022-10-10 12:58:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (161, 813, '2021-04-10 12:42:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (163, 813, '2023-04-10 13:46:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (667, 814, '2019-10-10 12:25:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (526, 815, '2009-04-10 12:54:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1011, 815, '2013-04-10 13:29:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (326, 816, '2012-04-10 13:48:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (221, 816, '2013-04-10 13:48:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (870, 817, '2017-10-10 12:00:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (288, 817, '2023-04-10 13:54:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (878, 817, '2011-10-10 12:30:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1039, 817, '2007-04-10 12:34:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1089, 817, '2015-04-10 12:59:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1079, 818, '2024-04-10 14:39:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (115, 819, '2006-04-10 12:57:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (103, 819, '2023-04-10 14:26:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (623, 819, '2017-04-10 13:45:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (460, 820, '2018-10-10 13:19:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1049, 820, '2018-04-10 13:13:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (33, 820, '2008-10-10 13:53:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (510, 821, '2006-10-10 12:58:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (825, 821, '2014-10-10 13:58:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1007, 821, '2021-10-10 13:40:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (234, 821, '2006-04-10 12:13:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (67, 822, '2021-04-10 12:59:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (514, 822, '2012-04-10 13:11:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (707, 822, '2009-10-10 12:21:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (542, 823, '2023-04-10 14:12:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (888, 823, '2021-04-10 13:10:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (648, 823, '2007-10-10 12:36:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (183, 823, '2012-04-10 13:22:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (294, 823, '2018-10-10 13:55:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (96, 824, '2007-10-10 12:26:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1080, 824, '2020-04-10 13:37:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (757, 824, '2023-04-10 14:11:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (686, 825, '2007-10-10 13:54:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (307, 825, '2017-10-10 12:18:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (826, 825, '2021-04-10 13:27:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (424, 826, '2020-04-10 13:20:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (707, 826, '2022-10-10 13:02:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1048, 827, '2025-10-10 14:55:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1023, 827, '2023-04-10 13:07:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (632, 827, '2011-04-10 12:37:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (385, 827, '2022-10-10 12:41:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (753, 828, '2013-10-10 13:21:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (763, 829, '2023-04-10 13:23:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (677, 829, '2007-10-10 12:29:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (717, 829, '2008-10-10 12:19:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (34, 830, '2011-04-10 12:20:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (627, 830, '2015-04-10 12:44:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (341, 830, '2016-04-10 12:07:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (931, 831, '2024-10-10 14:42:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (102, 831, '2019-04-10 13:34:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (427, 831, '2009-10-10 12:51:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (138, 832, '2016-10-10 12:07:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (239, 832, '2009-10-10 12:58:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (226, 833, '2012-10-10 13:08:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (618, 834, '2005-04-10 12:44:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (791, 834, '2015-10-10 13:22:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (939, 834, '2008-10-10 12:34:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (426, 835, '2015-10-10 13:28:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (868, 836, '2011-10-10 12:50:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (256, 836, '2022-04-10 13:39:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (40, 836, '2021-10-10 12:36:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (624, 836, '2013-04-10 13:29:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (967, 836, '2022-10-10 13:51:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (316, 837, '2006-04-10 13:16:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1068, 837, '2013-04-10 13:32:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (604, 837, '2010-04-10 13:52:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (97, 837, '2006-10-10 12:38:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (753, 837, '2014-04-10 12:39:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (585, 838, '2007-04-10 13:11:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (481, 839, '2016-10-10 13:56:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (662, 839, '2008-04-10 12:56:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (375, 839, '2005-10-10 12:04:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1003, 840, '2021-04-10 12:49:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (966, 840, '2008-04-10 13:59:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (173, 840, '2015-04-10 13:36:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (294, 840, '2020-10-10 12:31:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (627, 841, '2021-04-10 12:12:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (60, 841, '2019-10-10 13:59:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1006, 842, '2012-10-10 12:49:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (379, 843, '2015-10-10 12:57:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (92, 843, '2020-10-10 12:31:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (668, 843, '2017-10-10 13:29:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (443, 844, '2016-04-10 13:58:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (798, 844, '2025-04-10 14:43:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (434, 844, '2014-10-10 12:43:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (437, 845, '2025-04-10 14:50:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (272, 846, '2005-10-10 12:19:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (483, 846, '2022-10-10 12:25:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (702, 846, '2013-10-10 13:09:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (177, 846, '2012-04-10 13:10:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1025, 847, '2017-04-10 13:52:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (301, 848, '2025-04-10 13:27:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (628, 848, '2012-04-10 13:03:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (584, 848, '2018-04-10 13:45:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (703, 848, '2012-10-10 13:36:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (871, 848, '2023-04-10 14:51:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1059, 849, '2009-04-10 12:04:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (417, 849, '2011-10-10 13:04:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (207, 849, '2025-10-10 13:00:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (545, 849, '2023-10-10 14:51:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1004, 849, '2022-04-10 13:37:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1038, 850, '2018-10-10 13:29:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (282, 850, '2009-10-10 12:29:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1080, 851, '2007-04-10 13:10:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (187, 851, '2022-10-10 12:58:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (310, 851, '2022-04-10 12:59:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (679, 852, '2009-10-10 12:59:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (621, 852, '2005-10-10 12:57:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (613, 852, '2015-04-10 12:26:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (226, 853, '2025-04-10 14:44:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (266, 853, '2013-10-10 12:54:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (352, 853, '2009-10-10 13:00:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (34, 853, '2011-04-10 13:35:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (479, 854, '2024-10-10 13:55:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (443, 854, '2013-10-10 12:38:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (36, 854, '2024-04-10 13:08:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (679, 854, '2023-04-10 14:31:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (114, 854, '2012-04-10 13:03:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1036, 855, '2009-04-10 12:12:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (384, 855, '2021-04-10 13:21:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (317, 855, '2024-04-10 14:44:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (749, 855, '2020-04-10 13:05:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (443, 856, '2020-04-10 13:37:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (94, 856, '2009-04-10 13:20:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (841, 856, '2010-04-10 13:23:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (27, 856, '2011-04-10 12:19:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (387, 857, '2018-04-10 13:29:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (78, 857, '2012-04-10 12:39:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (480, 857, '2011-04-10 13:59:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (506, 858, '2024-10-10 14:47:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (685, 858, '2020-10-10 13:17:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (804, 858, '2015-04-10 12:32:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (97, 858, '2019-10-10 13:46:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1051, 859, '2017-04-10 12:55:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1002, 859, '2015-04-10 13:17:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (119, 859, '2017-10-10 12:53:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1030, 859, '2024-10-10 13:32:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (173, 859, '2023-04-10 13:18:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (934, 860, '2019-10-10 12:02:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (747, 860, '2006-04-10 12:59:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (47, 860, '2012-10-10 12:28:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1001, 860, '2021-10-10 12:27:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (507, 861, '2021-10-10 12:27:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (677, 861, '2025-04-10 13:45:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (682, 861, '2006-10-10 12:34:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (722, 861, '2011-04-10 12:48:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (546, 862, '2019-10-10 12:31:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1092, 862, '2010-04-10 12:56:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (114, 862, '2018-10-10 12:01:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (875, 863, '2009-10-10 13:45:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (273, 863, '2019-10-10 12:40:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (279, 863, '2025-10-10 14:38:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (962, 863, '2019-04-10 12:10:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (844, 863, '2007-10-10 12:11:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (625, 864, '2017-10-10 13:34:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (801, 864, '2018-04-10 12:10:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (858, 865, '2010-10-10 12:28:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (467, 866, '2011-04-10 12:10:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (275, 866, '2019-10-10 12:15:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (178, 866, '2007-10-10 13:52:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (263, 866, '2013-04-10 13:26:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (841, 866, '2015-04-10 12:23:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (783, 867, '2007-10-10 12:47:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1098, 867, '2021-10-10 13:14:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (257, 867, '2017-04-10 13:14:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (466, 868, '2022-10-10 13:19:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1074, 868, '2017-04-10 13:08:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (234, 868, '2006-04-10 12:29:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (308, 868, '2010-04-10 12:31:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (772, 869, '2010-10-10 12:25:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (506, 869, '2006-10-10 13:00:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (292, 870, '2019-04-10 12:12:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (209, 870, '2014-04-10 12:10:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (252, 870, '2025-04-10 13:15:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (475, 871, '2005-04-10 13:01:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (25, 871, '2024-10-10 13:18:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (837, 872, '2020-10-10 13:01:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (442, 872, '2022-04-10 12:38:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (410, 872, '2005-04-10 12:03:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (983, 872, '2024-04-10 13:57:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (6, 873, '2019-10-10 13:46:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (494, 873, '2018-04-10 13:08:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (914, 873, '2019-04-10 13:33:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (365, 873, '2007-10-10 12:20:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (299, 874, '2025-04-10 13:08:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (68, 874, '2022-10-10 12:39:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (653, 874, '2011-10-10 13:53:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (92, 874, '2006-10-10 12:02:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (288, 874, '2010-10-10 12:04:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (566, 875, '2023-04-10 13:18:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (668, 876, '2007-10-10 12:54:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (329, 876, '2006-10-10 12:32:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (330, 876, '2008-04-10 13:27:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1074, 877, '2024-10-10 13:05:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (303, 877, '2024-04-10 14:14:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (878, 877, '2023-04-10 13:54:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (682, 878, '2016-10-10 12:40:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (716, 878, '2006-04-10 13:35:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (154, 878, '2007-10-10 12:40:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (673, 878, '2014-10-10 13:30:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1023, 878, '2015-04-10 13:12:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (796, 879, '2014-04-10 12:46:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (670, 880, '2008-10-10 13:50:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (921, 880, '2013-10-10 12:28:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (172, 881, '2021-10-10 12:40:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1022, 881, '2011-10-10 13:00:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1050, 881, '2024-10-10 14:22:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (217, 881, '2006-10-10 12:23:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (469, 882, '2024-04-10 14:54:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (889, 882, '2014-04-10 12:32:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1042, 882, '2018-10-10 12:21:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (681, 882, '2015-04-10 13:39:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (969, 883, '2024-10-10 13:13:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1000, 883, '2023-04-10 13:39:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (412, 884, '2020-10-10 12:30:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (338, 884, '2010-10-10 13:25:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (13, 884, '2024-10-10 13:52:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (152, 884, '2012-04-10 13:27:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (275, 885, '2019-10-10 13:19:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (911, 886, '2024-10-10 14:25:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (82, 886, '2018-04-10 13:22:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (417, 887, '2016-04-10 12:28:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (4, 887, '2022-10-10 13:39:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (973, 887, '2025-04-10 14:31:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (119, 888, '2014-04-10 13:43:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (567, 888, '2013-04-10 13:04:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (840, 889, '2021-04-10 12:22:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (2, 889, '2022-10-10 13:51:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (218, 889, '2015-04-10 12:44:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1090, 890, '2015-10-10 12:31:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (113, 890, '2017-10-10 12:30:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (288, 890, '2023-04-10 14:40:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (890, 891, '2015-10-10 13:36:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (84, 891, '2020-04-10 12:03:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (956, 892, '2020-04-10 12:59:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (946, 892, '2009-10-10 12:02:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (915, 893, '2019-10-10 13:52:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (575, 893, '2018-04-10 12:00:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (947, 893, '2006-10-10 13:53:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (317, 894, '2022-10-10 12:14:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1050, 894, '2022-04-10 13:26:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (532, 894, '2005-10-10 12:22:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (49, 895, '2007-04-10 13:22:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (554, 895, '2009-10-10 12:15:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (695, 895, '2013-10-10 13:48:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1077, 896, '2010-04-10 12:56:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (185, 896, '2023-04-10 13:03:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (533, 896, '2024-04-10 13:40:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (614, 896, '2017-04-10 13:52:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (50, 896, '2010-10-10 13:05:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (455, 897, '2018-04-10 12:22:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (625, 897, '2007-10-10 12:57:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (742, 897, '2020-10-10 12:22:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (394, 898, '2011-10-10 12:27:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (180, 898, '2021-10-10 13:52:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (582, 898, '2014-10-10 13:14:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (301, 899, '2011-04-10 13:23:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (232, 900, '2021-04-10 13:34:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (540, 900, '2005-10-10 13:53:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1014, 900, '2020-04-10 12:10:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (943, 900, '2009-10-10 13:05:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (982, 901, '2015-04-10 12:23:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (247, 901, '2009-10-10 12:57:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (374, 901, '2008-04-10 13:29:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (712, 902, '2019-10-10 12:13:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (172, 903, '2008-10-10 12:10:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (642, 903, '2005-04-10 12:27:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (702, 903, '2014-10-10 12:04:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (81, 903, '2006-04-10 12:48:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (193, 903, '2024-04-10 14:53:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (517, 904, '2014-10-10 13:44:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (333, 904, '2005-10-10 13:31:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (312, 904, '2023-04-10 13:33:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (484, 904, '2025-04-10 14:20:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (525, 904, '2011-10-10 12:23:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (290, 905, '2015-04-10 12:39:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (470, 905, '2019-04-10 12:37:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (195, 905, '2008-10-10 12:10:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (35, 905, '2013-10-10 13:26:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1068, 905, '2009-10-10 12:23:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (627, 906, '2021-04-10 13:37:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (580, 906, '2008-04-10 12:30:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (523, 906, '2011-10-10 12:31:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (256, 906, '2022-04-10 13:13:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (554, 906, '2016-04-10 13:53:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (711, 907, '2012-10-10 12:57:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1025, 907, '2010-04-10 13:12:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (612, 907, '2007-04-10 13:46:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (128, 907, '2014-10-10 12:29:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (249, 907, '2024-10-10 13:17:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (170, 908, '2020-04-10 12:39:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (71, 909, '2017-04-10 13:44:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (730, 910, '2018-10-10 13:11:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1041, 911, '2024-04-10 14:13:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (835, 911, '2023-10-10 14:36:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (195, 912, '2016-04-10 13:43:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (702, 912, '2014-10-10 12:45:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1052, 912, '2015-10-10 13:06:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (409, 912, '2011-04-10 12:20:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (120, 912, '2022-04-10 13:07:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (800, 913, '2008-04-10 12:39:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (863, 913, '2019-10-10 12:27:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (363, 913, '2014-10-10 13:01:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (379, 913, '2025-10-10 13:04:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (818, 914, '2024-10-10 13:16:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (679, 914, '2013-04-10 13:25:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (808, 915, '2015-10-10 13:20:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (914, 915, '2015-04-10 13:52:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (660, 916, '2007-04-10 12:12:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (892, 917, '2016-04-10 13:36:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1045, 918, '2010-04-10 12:47:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (224, 918, '2014-04-10 12:10:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1002, 918, '2016-04-10 13:11:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (193, 918, '2024-04-10 13:48:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (153, 919, '2008-04-10 12:23:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (613, 919, '2015-04-10 12:02:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (800, 919, '2022-10-10 13:24:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (750, 919, '2025-10-10 13:12:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (427, 920, '2023-10-10 13:02:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (989, 920, '2018-04-10 12:35:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (331, 920, '2012-10-10 12:49:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (962, 920, '2024-10-10 14:02:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (611, 921, '2007-04-10 12:31:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (756, 921, '2015-10-10 12:08:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1016, 921, '2011-10-10 13:20:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (611, 921, '2023-10-10 14:21:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (167, 922, '2012-10-10 12:32:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (859, 922, '2010-10-10 12:18:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (505, 922, '2007-04-10 13:17:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1087, 922, '2023-04-10 14:02:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (169, 922, '2020-10-10 12:41:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (221, 923, '2010-10-10 13:26:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1040, 923, '2014-10-10 12:01:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1001, 923, '2017-10-10 13:07:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (571, 923, '2007-04-10 13:48:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (155, 924, '2020-10-10 12:05:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (372, 924, '2025-10-10 13:42:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (284, 924, '2006-10-10 12:44:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (501, 925, '2025-04-10 14:31:30+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (713, 925, '2005-04-10 12:20:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1054, 925, '2009-10-10 12:54:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (945, 925, '2019-04-10 12:18:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (829, 925, '2022-04-10 12:07:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (572, 926, '2011-10-10 12:33:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1088, 926, '2015-04-10 12:06:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1044, 927, '2018-10-10 13:47:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (70, 927, '2016-04-10 13:13:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1011, 927, '2007-10-10 12:13:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (966, 928, '2017-10-10 12:01:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (134, 928, '2009-04-10 12:16:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (12, 928, '2014-04-10 12:11:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (936, 928, '2006-10-10 12:33:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (659, 928, '2016-10-10 12:27:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (54, 929, '2014-04-10 13:48:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (730, 930, '2018-10-10 13:04:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (558, 930, '2023-10-10 13:03:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (430, 931, '2017-10-10 12:27:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (279, 931, '2017-04-10 13:51:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (824, 931, '2018-10-10 12:50:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (243, 931, '2022-04-10 12:08:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (506, 932, '2022-10-10 12:24:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (799, 932, '2017-04-10 12:42:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (240, 933, '2014-04-10 13:19:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (36, 933, '2009-04-10 12:21:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (18, 934, '2025-10-10 13:21:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (213, 935, '2020-10-10 13:58:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (231, 935, '2018-10-10 12:35:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (740, 936, '2025-10-10 14:48:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1049, 936, '2018-04-10 12:07:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (920, 937, '2024-10-10 13:09:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1023, 937, '2010-10-10 13:32:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (831, 937, '2019-10-10 13:21:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (418, 937, '2021-04-10 12:03:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1062, 938, '2012-04-10 13:02:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (11, 938, '2010-10-10 13:35:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1042, 938, '2018-10-10 13:34:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1065, 939, '2012-10-10 13:20:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (639, 939, '2021-04-10 12:44:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (661, 939, '2013-10-10 12:27:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (66, 939, '2018-04-10 12:01:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (922, 940, '2023-04-10 13:50:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (162, 941, '2008-10-10 13:42:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (275, 941, '2023-10-10 14:57:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1058, 941, '2020-04-10 13:09:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (915, 942, '2019-10-10 12:50:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1098, 942, '2021-10-10 13:03:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (178, 942, '2007-10-10 13:00:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (184, 943, '2020-04-10 12:54:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1046, 943, '2025-04-10 13:52:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (923, 944, '2023-10-10 14:00:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (69, 944, '2014-10-10 12:47:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (961, 944, '2024-10-10 14:16:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (815, 944, '2006-10-10 13:07:00+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (949, 944, '2015-10-10 13:33:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (542, 945, '2023-04-10 14:06:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (554, 945, '2015-10-10 12:24:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (300, 945, '2018-04-10 13:33:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (91, 945, '2016-04-10 13:20:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (718, 946, '2014-10-10 13:26:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (276, 946, '2023-04-10 13:27:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1004, 946, '2013-04-10 12:20:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (97, 946, '2006-10-10 13:02:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1017, 946, '2025-04-10 14:48:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (967, 947, '2024-10-10 14:50:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (159, 947, '2005-10-10 13:54:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (224, 947, '2014-04-10 12:56:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (400, 948, '2007-04-10 12:54:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (515, 948, '2013-10-10 12:24:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (488, 948, '2013-04-10 12:59:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (36, 948, '2009-04-10 12:19:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (214, 948, '2024-10-10 14:15:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (315, 949, '2010-10-10 12:21:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (452, 949, '2023-10-10 14:18:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (434, 949, '2009-10-10 13:22:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (822, 949, '2019-04-10 13:41:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (299, 949, '2016-10-10 13:41:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (234, 950, '2006-04-10 12:47:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (937, 950, '2015-10-10 12:46:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (663, 950, '2007-10-10 12:04:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (631, 950, '2009-10-10 13:20:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (375, 950, '2024-04-10 14:03:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (593, 951, '2025-04-10 13:54:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (130, 951, '2010-04-10 12:28:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (521, 951, '2011-10-10 13:55:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (185, 951, '2023-04-10 14:47:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (936, 952, '2010-04-10 13:22:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (718, 953, '2020-04-10 13:09:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1040, 953, '2014-10-10 12:13:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (728, 953, '2022-04-10 12:50:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (745, 953, '2012-04-10 12:28:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (11, 954, '2009-10-10 12:43:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (501, 954, '2021-10-10 13:06:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (804, 954, '2018-10-10 12:58:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1008, 955, '2015-04-10 12:52:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (603, 955, '2021-10-10 13:16:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (817, 955, '2006-04-10 13:27:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (485, 955, '2008-04-10 13:27:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1090, 956, '2013-10-10 12:08:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1080, 956, '2008-04-10 12:11:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (679, 956, '2013-04-10 13:02:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (711, 957, '2012-10-10 12:52:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (306, 957, '2023-10-10 14:37:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (744, 957, '2011-04-10 13:00:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (996, 957, '2021-10-10 13:47:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (175, 958, '2005-04-10 13:00:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (168, 959, '2018-04-10 13:40:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (414, 960, '2008-04-10 13:51:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (317, 960, '2019-04-10 12:11:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (91, 960, '2016-04-10 12:50:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (29, 960, '2012-04-10 12:07:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1008, 960, '2014-04-10 12:00:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1029, 961, '2006-10-10 12:11:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (209, 962, '2024-04-10 13:57:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1074, 962, '2025-04-10 13:52:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1008, 963, '2007-10-10 12:08:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1074, 964, '2017-04-10 12:09:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (279, 964, '2025-10-10 13:10:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (407, 965, '2010-10-10 13:53:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (856, 966, '2019-10-10 12:29:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (400, 966, '2007-04-10 13:04:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (671, 966, '2025-04-10 14:54:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (504, 967, '2013-04-10 12:50:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (139, 967, '2010-04-10 13:52:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (571, 967, '2007-04-10 12:02:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (779, 968, '2015-10-10 12:37:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (160, 968, '2006-10-10 12:23:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (796, 968, '2013-04-10 12:33:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (341, 968, '2010-10-10 12:30:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (335, 969, '2017-10-10 13:06:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1010, 969, '2010-10-10 13:13:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (675, 969, '2025-10-10 13:58:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (301, 969, '2020-10-10 13:32:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (181, 969, '2008-04-10 13:51:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (156, 970, '2013-04-10 13:11:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1071, 970, '2008-04-10 12:44:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (409, 970, '2006-04-10 13:54:14+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (619, 970, '2007-04-10 12:43:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (243, 971, '2020-10-10 12:48:51+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (736, 972, '2006-04-10 13:50:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (980, 973, '2009-10-10 13:56:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (29, 973, '2015-10-10 13:38:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (889, 973, '2017-10-10 12:22:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1073, 974, '2020-04-10 13:13:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (456, 974, '2018-10-10 12:50:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (37, 974, '2017-10-10 13:44:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (585, 974, '2007-04-10 12:44:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (670, 975, '2008-10-10 12:14:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (566, 975, '2023-04-10 13:26:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (733, 975, '2022-04-10 12:43:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (138, 975, '2016-04-10 12:22:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1076, 976, '2016-10-10 12:33:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1089, 977, '2007-10-10 13:54:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (386, 977, '2019-10-10 13:22:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (281, 977, '2014-04-10 13:49:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (654, 978, '2006-04-10 13:17:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (965, 978, '2017-04-10 12:20:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (247, 978, '2011-04-10 12:07:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (903, 978, '2014-10-10 13:27:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (763, 978, '2008-04-10 12:47:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (291, 979, '2009-04-10 12:28:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (22, 979, '2006-04-10 12:01:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (670, 980, '2012-10-10 13:19:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (837, 980, '2020-10-10 12:28:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1051, 980, '2017-04-10 12:37:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (619, 980, '2007-04-10 13:32:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (10, 980, '2022-04-10 12:47:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (133, 981, '2015-10-10 13:59:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (335, 982, '2006-04-10 12:37:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (901, 982, '2017-10-10 13:42:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (897, 982, '2008-10-10 12:56:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (251, 983, '2009-10-10 13:08:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (878, 983, '2023-10-10 14:55:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (16, 983, '2012-04-10 13:56:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (660, 983, '2007-04-10 13:42:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (81, 983, '2006-04-10 12:32:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (9, 984, '2025-10-10 13:51:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (272, 984, '2009-04-10 12:42:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (197, 985, '2014-10-10 13:21:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (211, 986, '2024-10-10 13:34:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (231, 986, '2010-04-10 13:27:05+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (884, 986, '2023-10-10 14:59:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (843, 986, '2007-04-10 12:17:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (522, 987, '2012-04-10 13:38:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (505, 987, '2007-04-10 12:20:18+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (378, 987, '2011-04-10 13:29:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1042, 987, '2018-10-10 13:19:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1007, 987, '2015-10-10 13:02:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (95, 988, '2015-04-10 13:56:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1054, 988, '2011-10-10 13:00:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (303, 989, '2015-10-10 13:23:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (400, 989, '2007-04-10 13:56:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (684, 990, '2018-04-10 12:46:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1030, 990, '2010-04-10 12:29:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (962, 991, '2019-04-10 13:38:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (47, 991, '2012-10-10 12:39:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (654, 992, '2008-04-10 12:37:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (318, 992, '2025-04-10 13:13:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (151, 993, '2020-10-10 13:36:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (349, 994, '2005-04-10 12:39:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (980, 995, '2025-10-10 13:10:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (387, 996, '2018-04-10 12:42:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (344, 996, '2020-04-10 12:30:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1009, 996, '2009-04-10 12:41:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (385, 997, '2021-10-10 12:42:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (273, 997, '2019-04-10 12:40:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1061, 997, '2018-04-10 13:56:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (317, 998, '2024-04-10 14:11:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (723, 999, '2024-10-10 13:18:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (668, 999, '2007-10-10 12:48:46+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (6, 999, '2025-04-10 13:39:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (838, 999, '2014-10-10 12:35:55+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (302, 1000, '2011-04-10 13:21:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (717, 1000, '2008-10-10 13:17:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (321, 1001, '2021-04-10 13:39:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (48, 1001, '2012-04-10 13:20:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (381, 1001, '2019-10-10 13:37:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (228, 1001, '2025-04-10 13:11:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (323, 1001, '2011-10-10 13:05:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (19, 547, '2011-10-10 13:10:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (26, 176, '2016-10-10 13:15:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (30, 60, '2006-10-10 13:23:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (43, 310, '2018-04-10 12:14:17+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (45, 479, '2011-10-10 13:04:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (55, 369, '2024-04-10 14:14:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (59, 905, '2022-10-10 13:33:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (72, 45, '2014-10-10 12:11:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (77, 816, '2025-04-10 14:06:32+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (79, 599, '2017-10-10 13:51:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (80, 170, '2020-04-10 13:11:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (83, 534, '2014-04-10 12:17:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (88, 83, '2013-04-10 12:07:45+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (99, 792, '2008-10-10 12:32:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (109, 654, '2023-04-10 14:13:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (111, 463, '2024-04-10 14:42:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (122, 816, '2016-04-10 13:15:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (123, 248, '2020-10-10 12:57:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (146, 364, '2021-04-10 12:02:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (157, 109, '2014-10-10 13:35:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (182, 811, '2024-04-10 13:19:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (191, 974, '2022-10-10 12:00:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (199, 419, '2008-10-10 13:40:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (205, 87, '2007-04-10 12:49:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (216, 645, '2023-10-10 13:04:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (233, 59, '2021-10-10 13:00:08+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (238, 160, '2016-04-10 12:34:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (245, 675, '2009-04-10 12:53:52+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (253, 204, '2022-10-10 13:18:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (255, 410, '2009-04-10 12:44:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (261, 511, '2018-10-10 12:06:56+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (265, 215, '2018-04-10 12:23:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (269, 304, '2015-10-10 12:45:20+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (278, 371, '2014-10-10 12:31:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (289, 33, '2015-04-10 12:05:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (304, 316, '2013-04-10 12:05:35+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (358, 129, '2007-04-10 12:20:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (359, 518, '2019-10-10 12:18:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (368, 184, '2010-04-10 13:22:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (371, 240, '2020-04-10 13:36:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (389, 676, '2019-04-10 13:05:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (395, 880, '2013-04-10 12:31:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (402, 642, '2013-04-10 12:12:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (411, 93, '2021-10-10 13:37:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (421, 949, '2009-04-10 12:12:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (422, 953, '2017-10-10 13:31:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (425, 649, '2020-04-10 12:58:26+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (439, 936, '2007-10-10 13:57:36+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (446, 314, '2019-10-10 12:04:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (448, 817, '2013-04-10 13:06:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (451, 825, '2022-10-10 12:38:57+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (457, 269, '2025-04-10 14:12:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (459, 478, '2011-10-10 13:38:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (462, 983, '2022-04-10 12:20:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (465, 636, '2009-04-10 12:54:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (473, 461, '2009-04-10 13:03:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (495, 44, '2010-10-10 13:27:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (496, 806, '2009-10-10 13:50:42+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (500, 465, '2006-10-10 13:22:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (502, 541, '2019-10-10 12:30:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (518, 507, '2017-04-10 13:29:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (520, 268, '2016-04-10 12:14:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (530, 620, '2007-04-10 13:17:33+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (535, 756, '2020-10-10 12:54:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (543, 450, '2018-04-10 13:11:38+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (550, 151, '2008-10-10 12:46:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (561, 329, '2014-10-10 13:44:03+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (562, 705, '2011-04-10 12:22:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (569, 19, '2025-04-10 13:29:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (594, 737, '2014-10-10 12:20:39+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (608, 182, '2019-10-10 13:30:43+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (629, 951, '2018-10-10 13:51:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (630, 496, '2020-04-10 12:39:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (638, 848, '2024-10-10 14:53:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (640, 956, '2020-10-10 12:30:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (645, 201, '2005-04-10 13:13:02+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (652, 701, '2019-04-10 13:04:54+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (706, 771, '2005-04-10 12:08:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (708, 961, '2013-04-10 12:44:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (710, 427, '2009-10-10 12:41:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (715, 372, '2015-10-10 13:48:16+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (748, 331, '2014-04-10 12:54:06+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (752, 824, '2016-04-10 13:20:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (761, 769, '2010-04-10 13:06:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (764, 877, '2009-04-10 13:47:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (766, 697, '2019-10-10 13:27:13+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (768, 828, '2022-10-10 12:35:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (770, 574, '2007-04-10 13:50:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (776, 993, '2007-10-10 13:05:29+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (778, 123, '2007-10-10 13:21:15+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (785, 407, '2009-10-10 13:42:19+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (787, 683, '2006-10-10 13:26:27+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (788, 396, '2011-04-10 12:25:49+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (789, 190, '2009-04-10 12:09:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (792, 623, '2018-10-10 13:03:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (793, 154, '2005-10-10 12:29:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (803, 260, '2011-04-10 13:22:59+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (807, 713, '2010-10-10 13:04:07+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (810, 822, '2019-04-10 12:43:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (846, 828, '2023-10-10 14:01:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (854, 362, '2008-10-10 12:49:12+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (855, 985, '2013-10-10 13:31:53+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (860, 562, '2007-04-10 13:07:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (864, 311, '2023-10-10 13:37:50+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (866, 70, '2006-04-10 12:59:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (883, 381, '2025-04-10 13:14:34+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (891, 534, '2005-10-10 13:23:24+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (900, 520, '2014-10-10 13:30:09+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (906, 588, '2011-10-10 12:16:58+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (912, 513, '2019-10-10 12:23:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (919, 892, '2017-04-10 13:40:31+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (942, 204, '2009-04-10 13:46:41+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (944, 98, '2022-10-10 13:57:22+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (957, 435, '2009-10-10 12:54:44+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (968, 322, '2012-10-10 12:45:47+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (981, 118, '2021-10-10 12:36:23+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (997, 308, '2019-04-10 13:02:04+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1012, 768, '2025-04-10 13:49:25+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1013, 549, '2011-10-10 12:57:28+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1035, 979, '2018-04-10 13:37:01+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1047, 569, '2016-04-10 12:04:48+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1057, 330, '2018-10-10 13:38:10+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1063, 766, '2018-04-10 12:32:40+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1066, 518, '2020-04-10 13:43:37+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1072, 469, '2006-04-10 13:10:21+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1096, 818, '2025-04-10 13:03:11+0000');
-INSERT INTO encargadoinscribirparticipante (idpersona_encargado, idpersona_participante, fecha) VALUES (1097, 330, '2008-10-10 13:39:34+0000');
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1, 'David', 'Sandoval', 'Jiménez', '1975-09-24', 'Otro', 'Avenida Reforma', 'San Pedro Garza García', 'Chihuahua', 45641, 6, 66, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (2, 'Mauricio', 'Camacho', 'Cortés', '1966-08-18', 'H', 'Calle Norte 45', 'La Paz', 'Toluca', 64545, 1, 194, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (3, 'Leonardo', 'Meléndez', 'Peña', '1980-03-16', 'Otro', 'Calle Morelos', 'Roma Sur', 'Morelia', 28381, 16, 160, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (4, 'Zoe', 'Velasco', 'Roldán', '1965-04-08', 'H', 'Avenida Gonzalitos', 'Las Américas', 'Reynosa', 41722, 8, 259, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (5, 'Carolina', 'Morales', 'Camacho', '1992-02-06', 'M', 'Calle Hidalgo', 'Roma Norte', 'Chihuahua', 37932, 11, 92, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (6, 'Alejandra', 'Ochoa', 'Arriaga', '1959-12-22', 'H', 'Insurgentes Sur', 'Americana', 'Reynosa', 51875, 6, 302, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (7, 'Montserrat', 'Estrada', 'Padilla', '1972-04-11', 'M', 'Calle de las Rosas', 'Juárez', 'Chihuahua', 25138, 6, 98, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (8, 'Sergio', 'Serna', 'Sánchez', '1958-05-24', 'H', 'Avenida Patria', 'Huexotitla', 'Tuxtla Gutiérrez', 99150, 2, 256, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (9, 'Leonardo', 'Ortiz', 'Velasco', '1983-06-04', 'H', 'Benito Juárez', 'Lindavista', 'La Paz', 73636, 20, 118, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (10, 'Emilio', 'Reyes', 'Villalobos', '1970-07-01', 'H', 'Avenida Patria', 'San Manuel', 'Puebla', 36812, 0, 222, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (11, 'Camila', 'Galindo', 'Estrada', '1959-09-09', 'Otro', 'Sendero del Bosque', 'Huexotitla', 'Toluca', 90945, 8, 296, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (12, 'Paula', 'Sandoval', 'Rangel', '1980-09-09', 'Otro', 'Privada San Diego', 'San Ángel', 'Ciudad de México', 35237, 14, 351, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (13, 'María', 'Valencia', 'Hernández', '1987-01-09', 'Otro', 'Calzada de Tlalpan', 'Anzures', 'Mérida', 46852, 14, 139, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (14, 'Leonardo', 'Escobar', 'Fuentes', '1969-02-20', 'Otro', 'Privada San Diego', 'Chapalita', 'Ensenada', 36701, 11, 271, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (15, 'Miguel', 'Figueroa', 'Cortés', '1975-08-30', 'H', 'Avenida Colón', 'Del Valle', 'Cancún', 24624, 16, 312, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (16, 'Alondra', 'Rangel', 'Gómez', '1988-04-10', 'H', 'Calzada Independencia', 'Juárez', 'Aguascalientes', 19490, 2, 289, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (17, 'María', 'Pineda', 'Rangel', '1966-04-27', 'H', 'Calle Emiliano Zapata', 'Doctores', 'Tepic', 59443, 4, 389, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (18, 'Gael', 'Luna', 'Acosta', '1994-01-21', 'M', 'Sendero del Bosque', 'Doctores', 'Querétaro', 36402, 16, 348, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (19, 'Ángel', 'López', 'Luna', '1955-06-05', 'M', 'Calle Río Mixcoac', 'Cumbres', 'Mérida', 32993, 1, 140, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (20, 'Montserrat', 'Rangel', 'Mendoza', '1951-10-06', 'M', 'Calle Durango', 'Chapalita', 'Querétaro', 55704, 4, 350, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (21, 'Tomás', 'Arriaga', 'Meléndez', '1994-02-09', 'Otro', 'Calle Emiliano Zapata', 'Itzimná', 'Ciudad de México', 34269, 12, 140, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (22, 'Montserrat', 'Camacho', 'Jiménez', '1948-10-17', 'Otro', 'Avenida del Trabajo', 'Cumbres', 'Ensenada', 97630, 9, 68, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (23, 'David', 'Valdez', 'Montes', '1958-10-03', 'M', 'Calle de las Rosas', 'Clavería', 'Ensenada', 86540, 12, 185, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (24, 'Mauricio', 'Ochoa', 'Rangel', '1975-12-13', 'H', 'Avenida Constitución', 'San Nicolás', 'Coatzacoalcos', 75324, 11, 308, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (25, 'Mauricio', 'Galindo', 'Figueroa', '1982-04-22', 'Otro', 'Calle Mérida', 'San Ángel', 'Culiacán', 58074, 15, 21, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (26, 'Ximena', 'Mejía', 'López', '1961-11-10', 'H', 'Avenida Reforma', 'Chuburná', 'Mazatlán', 44413, 5, 38, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (27, 'Marisol', 'Torres', 'Castillo', '1971-11-08', 'Otro', 'Camino Real', 'Condesa', 'Saltillo', 93958, 10, 287, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (28, 'Mario', 'García', 'Reyes', '1964-02-20', 'Otro', 'Calle de las Rosas', 'Coyoacán Centro', 'Querétaro', 34454, 15, 134, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (29, 'Héctor', 'Escobar', 'Sandoval', '1955-10-04', 'Otro', 'Calle Nueva Era', 'Cumbres', 'Aguascalientes', 91317, 6, 68, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (30, 'Ernesto', 'Aguilar', 'Rosales', '1980-06-18', 'H', 'Avenida Colón', 'Centro Monterrey', 'Mérida', 80420, 2, 253, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (31, 'Ángel', 'Cruz', 'Escobar', '1979-09-28', 'H', 'Avenida Reforma', 'Huexotitla', 'Puebla', 15929, 11, 288, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (32, 'Emilio', 'Figueroa', 'López', '1989-01-16', 'Otro', 'Insurgentes Sur', 'San Manuel', 'Reynosa', 80353, 6, 70, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (33, 'Eduardo', 'Estrada', 'González', '1965-01-03', 'Otro', 'Calle Oaxaca', 'Providencia', 'Aguascalientes', 49292, 2, 40, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (34, 'David', 'Estrada', 'Rodríguez', '1969-07-25', 'Otro', 'Benito Juárez', 'Chapalita', 'Morelia', 55259, 1, 214, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (35, 'Victoria', 'Silva', 'Luna', '1956-04-10', 'Otro', 'Privada San Diego', 'Clavería', 'Guadalajara', 47545, 10, 7, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (36, 'Jorge', 'Herrera', 'López', '1965-08-18', 'Otro', 'Avenida del Trabajo', 'Analco', 'Villahermosa', 37459, 4, 307, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (37, 'Paula', 'Delgado', 'González', '1961-03-25', 'M', 'Avenida Patria', 'San Nicolás', 'Mazatlán', 79749, 14, 238, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (38, 'Mauricio', 'Salinas', 'Juárez', '1950-03-31', 'Otro', 'Calzada de Tlalpan', 'Itzimná', 'La Paz', 18847, 4, 298, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (39, 'Mauricio', 'García', 'Cedillo', '1962-12-15', 'M', 'Calle Mérida', 'Narvarte', 'Hermosillo', 27755, 16, 149, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (40, 'Bianca', 'Sánchez', 'Salinas', '1964-12-10', 'H', 'Camino Viejo', 'Xilotzingo', 'Puebla', 17049, 10, 46, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (41, 'Iván', 'Ortiz', 'Aguilar', '1949-09-07', 'M', 'Calle Palmeras', 'Doctores', 'Tuxtla Gutiérrez', 98896, 20, 156, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (42, 'Miguel', 'Fuentes', 'Ochoa', '1961-05-10', 'H', 'Calle Emiliano Zapata', 'Huinalá', 'Durango', 84022, 5, 356, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (43, 'David', 'Díaz', 'Treviño', '1971-05-30', 'M', 'Avenida Universidad', 'Roma Sur', 'Aguascalientes', 54763, 14, 201, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (44, 'Francisco', 'Estrada', 'Camacho', '1956-08-28', 'H', 'Calle Hidalgo', 'San Pedro Garza García', 'Morelia', 86333, 11, 206, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (45, 'Zoe', 'Navarrete', 'Roldán', '1988-05-23', 'Otro', 'Calle del Sol', 'Tlalpan Centro', 'Toluca', 15837, 20, 353, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (46, 'Carolina', 'Jiménez', 'Juárez', '1955-04-21', 'M', 'Prolongación Zaragoza', 'Huinalá', 'Tuxtla Gutiérrez', 68618, 9, 251, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (47, 'Mario', 'Peña', 'Roldán', '1953-11-21', 'H', 'Calle Tabasco', 'Analco', 'Ensenada', 29929, 7, 252, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (48, 'Renata', 'Díaz', 'Jiménez', '1956-03-12', 'Otro', 'Calle Emiliano Zapata', 'Juárez', 'Querétaro', 36794, 14, 145, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (49, 'Leonardo', 'Jiménez', 'Esquivel', '1954-01-18', 'Otro', 'Calle Morelos', 'Americana', 'Ciudad de México', 21096, 1, 270, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (50, 'Héctor', 'Herrera', 'Estrada', '1985-02-21', 'Otro', 'Calle Hidalgo', 'Itzimná', 'Cancún', 97702, 15, 33, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (51, 'Jimena', 'Serna', 'Camacho', '1954-08-16', 'M', 'Calle del Sol', 'Chuburná', 'Cancún', 29393, 7, 179, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (52, 'Zoe', 'Sandoval', 'Cortés', '1968-02-14', 'M', 'Calle Río Mixcoac', 'Chapalita', 'Tijuana', 34744, 7, 149, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (53, 'Lucía', 'Pineda', 'Valencia', '1988-11-13', 'M', 'Privada San Diego', 'Linda Vista', 'Ciudad de México', 95102, 8, 341, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (54, 'Andrea', 'Torres', 'Ramírez', '1969-02-05', 'Otro', 'Francisco I. Madero', 'Xilotzingo', 'Veracruz', 86452, 16, 184, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (55, 'Fernanda', 'Serna', 'Sandoval', '1991-11-16', 'Otro', 'Avenida Patria', 'Roma Norte', 'Ensenada', 47189, 0, 115, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (56, 'Juan', 'González', 'Silva', '2000-11-13', 'Otro', 'Prolongación Zaragoza', 'Santa María la Ribera', 'Mazatlán', 69911, 3, 149, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (57, 'Diego', 'Díaz', 'Villalobos', '1962-07-22', 'H', 'Calle Hidalgo', 'Clavería', 'Veracruz', 50584, 18, 79, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (58, 'Sergio', 'Vargas', 'Ramírez', '1965-06-16', 'Otro', 'Prolongación Zaragoza', 'San Manuel', 'Monterrey', 82698, 15, 92, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (59, 'Elena', 'Pineda', 'Villalobos', '1957-08-10', 'Otro', 'Calle Hidalgo', 'Tacubaya', 'Tijuana', 20442, 8, 137, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (60, 'Adrián', 'Sandoval', 'Camacho', '1959-07-20', 'H', 'Insurgentes Sur', 'Cumbres', 'Ciudad de México', 38529, 19, 58, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (61, 'Rebeca', 'Chávez', 'Villalobos', '1946-10-12', 'H', 'Avenida Reforma', 'Chuburná', 'La Paz', 27253, 10, 285, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (62, 'Ximena', 'Camacho', 'Fuentes', '1954-10-21', 'M', 'Calzada Independencia', 'Escandón', 'La Paz', 46944, 0, 33, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (63, 'Fátima', 'Vargas', 'Cruz', '1971-12-22', 'H', 'Calle Morelos', 'Linda Vista', 'León', 81867, 14, 280, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (64, 'Ángel', 'Pérez', 'Pérez', '1949-02-04', 'Otro', 'Calle Norte 45', 'Anzures', 'Durango', 77410, 4, 300, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (65, 'Eduardo', 'García', 'Mejía', '1985-08-20', 'M', 'Privada Jardines', 'San Ángel', 'Guadalajara', 14290, 10, 168, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (66, 'Daniela', 'Zamora', 'Martínez', '1988-07-11', 'Otro', 'Avenida Colón', 'Itzimná', 'Aguascalientes', 60671, 1, 272, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (67, 'Sergio', 'Galindo', 'Mendoza', '1958-11-06', 'H', 'Calle Norte 45', 'Huinalá', 'Irapuato', 59755, 9, 330, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (68, 'Ariana', 'Ochoa', 'Delgado', '1963-08-04', 'M', 'Calle de las Rosas', 'Tlalpan Centro', 'Reynosa', 48624, 5, 178, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (69, 'Tomás', 'Valencia', 'Rosales', '1957-07-05', 'M', 'Calle Emiliano Zapata', 'Clavería', 'Ensenada', 14853, 10, 245, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (70, 'Iván', 'Pérez', 'Cruz', '1957-12-23', 'M', 'Calle Palmeras', 'Doctores', 'Ensenada', 53045, 3, 84, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (71, 'Mateo', 'Delgado', 'Herrera', '1981-08-11', 'Otro', 'Avenida Universidad', 'Chuburná', 'Mérida', 56216, 2, 135, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (72, 'Rubén', 'Rodríguez', 'Camacho', '1956-05-16', 'H', 'Benito Juárez', 'Analco', 'Aguascalientes', 88654, 2, 154, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (73, 'Romina', 'Solís', 'Luna', '1974-11-08', 'H', 'Eje Central', 'Providencia', 'Hermosillo', 38347, 4, 140, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (74, 'Gael', 'Serna', 'Hernández', '1977-10-20', 'M', 'Avenida Constitución', 'Narvarte', 'Veracruz', 99014, 16, 312, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (75, 'Bianca', 'González', 'Vargas', '1966-06-10', 'M', 'Calle Mérida', 'Analco', 'Oaxaca', 19127, 8, 297, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (76, 'David', 'Cedillo', 'Reyes', '1983-09-05', 'H', 'Calle Hidalgo', 'Santa María la Ribera', 'Mazatlán', 37844, 6, 200, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (77, 'Francisco', 'Fuentes', 'Meléndez', '1973-12-02', 'M', 'Calle Oaxaca', 'Providencia', 'Toluca', 97915, 5, 289, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (78, 'Gabriela', 'Delgado', 'Ruiz', '1981-11-17', 'H', 'Calle de las Rosas', 'Copilco', 'La Paz', 80307, 8, 265, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (79, 'Bianca', 'Gómez', 'Fuentes', '1987-02-11', 'M', 'Calle Río Mixcoac', 'Nápoles', 'Puebla', 74180, 17, 20, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (80, 'Iván', 'Camacho', 'Fuentes', '1997-09-04', 'M', 'Benito Juárez', 'Azcapotzalco', 'Durango', 89143, 1, 57, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (81, 'Adrián', 'Ortiz', 'Salazar', '1951-11-01', 'M', 'Calle Mérida', 'San Nicolás', 'Ciudad de México', 13562, 2, 169, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (82, 'José', 'Galindo', 'Rosales', '1971-07-07', 'Otro', 'Avenida Constitución', 'Juárez', 'Culiacán', 67797, 12, 102, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (83, 'Ernesto', 'Villalobos', 'Juárez', '1984-12-05', 'M', 'Insurgentes Sur', 'San Pedro Garza García', 'Ensenada', 14142, 12, 62, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (84, 'Fernanda', 'Sánchez', 'Gómez', '1962-12-21', 'Otro', 'Calle Luna', 'Las Américas', 'Ciudad de México', 13756, 19, 248, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (85, 'Ricardo', 'Esquivel', 'Salazar', '1962-01-18', 'Otro', 'Calzada Independencia', 'Chuburná', 'Cancún', 96465, 10, 108, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (86, 'Rebeca', 'Jiménez', 'Ruiz', '1948-08-19', 'M', 'Camino Viejo', 'Roma Sur', 'Tuxtla Gutiérrez', 33072, 0, 176, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (87, 'Ana', 'Aguilar', 'Montes', '1964-10-06', 'H', 'Calle del Sol', 'Itzimná', 'Celaya', 91869, 6, 110, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (88, 'Carlos', 'Montes', 'Valencia', '1992-12-03', 'Otro', 'Prolongación Zaragoza', 'Xilotzingo', 'Hermosillo', 42961, 8, 136, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (89, 'Luis', 'Treviño', 'Castillo', '1962-01-06', 'H', 'Eje Central', 'Azcapotzalco', 'Ensenada', 34607, 4, 207, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (90, 'Victoria', 'Jiménez', 'Acosta', '1988-10-27', 'H', 'Privada Jardines', 'Tlalpan Centro', 'Guadalajara', 25660, 8, 215, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (91, 'Paula', 'Ochoa', 'Velasco', '1955-06-15', 'H', 'Avenida Gonzalitos', 'Chapalita', 'Puebla', 16062, 8, 79, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (92, 'Diego', 'Delgado', 'Padilla', '1960-10-27', 'H', 'Avenida Colón', 'San Manuel', 'Culiacán', 44063, 10, 114, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (93, 'Adrián', 'Zamora', 'Martínez', '1957-01-31', 'M', 'Calle Hidalgo', 'Cumbres', 'Guadalajara', 70263, 15, 398, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (94, 'Jorge', 'Martínez', 'Calderón', '1976-02-08', 'H', 'Calle Nueva Era', 'San Pedro Garza García', 'Querétaro', 70947, 11, 26, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (95, 'Raúl', 'Jiménez', 'Mendoza', '1968-10-22', 'H', 'Avenida Constitución', 'Coyoacán Centro', 'Mérida', 32631, 16, 40, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (96, 'Diego', 'Zamora', 'Treviño', '1955-04-13', 'H', 'Calle 16 de Septiembre', 'Cumbres', 'Mazatlán', 47216, 3, 211, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (97, 'José', 'Ramos', 'Nava', '1975-06-24', 'H', 'Calle 16 de Septiembre', 'Analco', 'Toluca', 70535, 2, 20, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (98, 'Leonardo', 'García', 'López', '1978-02-28', 'Otro', 'Avenida Colón', 'Oblatos', 'Monterrey', 83261, 0, 336, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (99, 'Jimena', 'Ortiz', 'Peña', '1989-04-11', 'M', 'Calle Sur 20', 'Centro Monterrey', 'Ciudad de México', 77240, 14, 257, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (100, 'Gael', 'Martínez', 'Martínez', '1987-07-18', 'Otro', 'Calle Palmeras', 'Mixcoac', 'La Paz', 54262, 19, 315, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (101, 'Alejandra', 'Pérez', 'Torres', '1951-08-12', 'H', 'Calle Río Lerma', 'San Ángel', 'Cancún', 66386, 18, 82, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (102, 'Carlos', 'Aguilar', 'Herrera', '1976-12-04', 'H', 'Eje Central', 'Centro Monterrey', 'Ensenada', 34113, 15, 116, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (103, 'Renata', 'Castillo', 'Aguilar', '1974-06-08', 'Otro', 'Boulevard Díaz Ordaz', 'Roma Sur', 'Chihuahua', 35778, 13, 168, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (104, 'Rubén', 'Calderón', 'Sandoval', '1971-08-20', 'M', 'Avenida Reforma', 'Anzures', 'Villahermosa', 95908, 1, 59, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (105, 'Luis', 'Ochoa', 'Sánchez', '1980-03-26', 'H', 'Avenida Colón', 'Narvarte', 'Mazatlán', 32060, 10, 394, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (106, 'Pedro', 'Herrera', 'Aguilar', '1958-02-22', 'M', 'Calle Palmeras', 'Doctores', 'Saltillo', 47151, 7, 302, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (107, 'Iván', 'Velasco', 'Hernández', '1968-12-15', 'H', 'Calle 16 de Septiembre', 'Huinalá', 'La Paz', 11258, 7, 364, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (108, 'Francisco', 'Nava', 'Mejía', '1961-10-24', 'Otro', 'Calle Mérida', 'Condesa', 'Puebla', 17968, 15, 211, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (109, 'Jorge', 'Pérez', 'Cruz', '1985-03-19', 'Otro', 'Calzada Independencia', 'Juárez', 'Chihuahua', 72881, 2, 148, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (110, 'Gabriela', 'Herrera', 'Velasco', '1980-05-28', 'Otro', 'Privada Jardines', 'Roma Norte', 'Saltillo', 47149, 20, 230, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (111, 'Adrián', 'Salinas', 'López', '1985-02-05', 'Otro', 'Calle Emiliano Zapata', 'Lindavista', 'Monterrey', 26755, 3, 171, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (112, 'Jorge', 'Rangel', 'Navarrete', '1969-01-14', 'Otro', 'Héroes de Chapultepec', 'Escandón', 'Mérida', 27762, 17, 10, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (113, 'Andrea', 'Ochoa', 'Ramos', '1987-09-05', 'H', 'Camino Viejo', 'San Ángel', 'Mazatlán', 34133, 19, 157, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (114, 'Lucía', 'Juárez', 'Peña', '1954-08-25', 'M', 'Calle Sur 20', 'Nápoles', 'Toluca', 15511, 4, 257, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (115, 'Carolina', 'Cruz', 'Morales', '1953-01-10', 'H', 'Avenida del Trabajo', 'Linda Vista', 'Puebla', 71573, 12, 101, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (116, 'Elena', 'Peña', 'Bautista', '1949-07-03', 'H', 'Camino Real', 'San Ángel', 'Cancún', 80198, 19, 51, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (117, 'Rebeca', 'Pineda', 'Delgado', '1975-10-29', 'M', 'Camino Viejo', 'Santa María la Ribera', 'Tepic', 44759, 5, 138, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (118, 'Mario', 'Peña', 'Valencia', '1961-05-08', 'Otro', 'Calle del Sol', 'Cumbres', 'Villahermosa', 60901, 0, 33, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (119, 'Iván', 'Navarrete', 'Nava', '1987-02-25', 'H', 'Avenida Colón', 'Centro Monterrey', 'Saltillo', 15701, 16, 170, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (120, 'Montserrat', 'Gómez', 'Castillo', '1985-02-26', 'H', 'Privada San Diego', 'Itzimná', 'Guadalajara', 17356, 18, 338, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (121, 'Camila', 'Zamora', 'Ortiz', '1989-06-30', 'H', 'Calle Hidalgo', 'Chuburná', 'Ensenada', 14489, 20, 305, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (122, 'Lucía', 'Díaz', 'Ramírez', '1986-01-14', 'M', 'Avenida del Trabajo', 'Escandón', 'Saltillo', 80972, 0, 300, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (123, 'Emilio', 'Fuentes', 'Ramos', '2000-08-03', 'H', 'Héroes de Chapultepec', 'Polanco', 'Matamoros', 42815, 1, 369, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (124, 'Pedro', 'Salazar', 'Ramos', '1954-12-07', 'Otro', 'Benito Juárez', 'Tlalpan Centro', 'Durango', 66361, 20, 61, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (125, 'Elena', 'Ramírez', 'Nava', '1965-04-09', 'H', 'Sendero del Bosque', 'Oblatos', 'Veracruz', 47745, 14, 324, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (126, 'Renata', 'Sánchez', 'Zamora', '2003-05-14', 'M', 'Héroes de Chapultepec', 'Las Américas', 'Cancún', 78072, 20, 160, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (127, 'Valeria', 'Treviño', 'Sánchez', '1968-04-13', 'Otro', 'Insurgentes Sur', 'Oblatos', 'Tuxtla Gutiérrez', 60518, 17, 65, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (128, 'Luna', 'Nava', 'Navarrete', '1967-08-29', 'M', 'Calzada de Tlalpan', 'Narvarte', 'Saltillo', 18829, 12, 104, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (129, 'Adrián', 'Vargas', 'Arriaga', '1973-10-24', 'Otro', 'Calle Río Mixcoac', 'Huexotitla', 'Morelia', 45068, 9, 83, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (130, 'Francisco', 'Mejía', 'Sánchez', '1954-10-05', 'H', 'Avenida Colón', 'Condesa', 'Aguascalientes', 97064, 14, 379, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (131, 'Bianca', 'Juárez', 'Mendoza', '1954-09-01', 'Otro', 'Insurgentes Sur', 'Anzures', 'Aguascalientes', 90899, 5, 5, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (132, 'Tomás', 'Camacho', 'Reyes', '1978-02-03', 'H', 'Privada San Diego', 'Cumbres', 'La Paz', 60751, 1, 65, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (133, 'Bianca', 'Meléndez', 'Zamora', '1947-04-16', 'M', 'Calle Oaxaca', 'San Manuel', 'Reynosa', 25541, 2, 260, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (134, 'Bianca', 'Rangel', 'Galindo', '1976-08-28', 'M', 'Avenida Patria', 'San Manuel', 'Tuxtla Gutiérrez', 75760, 2, 400, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (135, 'Pedro', 'Rosales', 'Silva', '1988-04-02', 'H', 'Camino Real', 'San Nicolás', 'Morelia', 21640, 18, 348, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (136, 'Sergio', 'Calderón', 'Acosta', '1956-11-19', 'H', 'Avenida Gonzalitos', 'Anzures', 'La Paz', 82428, 16, 318, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (137, 'Renata', 'Ochoa', 'Salazar', '1973-06-01', 'H', 'Héroes de Chapultepec', 'Narvarte', 'Saltillo', 21390, 6, 227, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (138, 'Gael', 'Velasco', 'Pérez', '1969-11-03', 'H', 'Privada Jardines', 'Huexotitla', 'Morelia', 55649, 6, 81, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (139, 'Elena', 'Chávez', 'Calderón', '1974-09-05', 'M', 'Camino Viejo', 'Oblatos', 'Aguascalientes', 24983, 13, 168, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (140, 'Marisol', 'Juárez', 'Mejía', '1966-03-08', 'Otro', 'Calle Palmeras', 'Tacubaya', 'Ciudad de México', 98471, 1, 352, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (141, 'Sebastián', 'Flores', 'Ruiz', '1969-10-28', 'Otro', 'Sendero del Bosque', 'Chuburná', 'Villahermosa', 47763, 4, 102, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (142, 'David', 'Peña', 'Rosales', '1956-08-28', 'H', 'Eje Central', 'San Ángel', 'La Paz', 61340, 14, 164, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (143, 'Pedro', 'Navarrete', 'Salazar', '1990-03-23', 'M', 'Calle Norte 45', 'San Pedro Garza García', 'Culiacán', 55775, 6, 215, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (144, 'Leonardo', 'Villalobos', 'Solís', '1960-12-08', 'Otro', 'Calle del Sol', 'Anzures', 'Coatzacoalcos', 94241, 16, 3, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (145, 'Luis', 'Vargas', 'Díaz', '1971-06-04', 'Otro', 'Calle Morelos', 'Linda Vista', 'Ensenada', 54908, 4, 94, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (146, 'Miranda', 'Salazar', 'Díaz', '1999-01-27', 'M', 'Camino Real', 'Roma Norte', 'León', 26756, 19, 367, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (147, 'Miguel', 'Sandoval', 'Ochoa', '1980-10-24', 'M', 'Calzada Independencia', 'San Manuel', 'Villahermosa', 85136, 20, 221, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (148, 'Carolina', 'García', 'Herrera', '1961-09-28', 'H', 'Avenida Gonzalitos', 'Cumbres', 'Aguascalientes', 51722, 0, 195, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (149, 'Alondra', 'Navarrete', 'Solís', '1987-06-01', 'H', 'Avenida Patria', 'Del Valle', 'Puebla', 42155, 16, 141, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (150, 'Gael', 'Montes', 'Sánchez', '1982-12-15', 'Otro', 'Calle Mérida', 'Centro Monterrey', 'Tijuana', 52032, 8, 372, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (151, 'Ricardo', 'Delgado', 'Rosales', '1972-08-24', 'Otro', 'Avenida Universidad', 'San Manuel', 'León', 14620, 10, 379, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (152, 'Daniela', 'Navarrete', 'Meléndez', '1971-03-17', 'H', 'Boulevard Díaz Ordaz', 'La Paz', 'Cancún', 55087, 16, 261, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (153, 'Sofía', 'Torres', 'Velasco', '1985-06-08', 'Otro', 'Avenida Reforma', 'Huinalá', 'Ciudad de México', 88227, 2, 41, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (154, 'Renata', 'Flores', 'Estrada', '1947-09-11', 'Otro', 'Privada San Diego', 'Nápoles', 'Tijuana', 69832, 10, 376, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (155, 'Fátima', 'Martínez', 'Ramírez', '1960-06-28', 'H', 'Insurgentes Sur', 'Coyoacán Centro', 'Guadalajara', 29419, 11, 193, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (156, 'Carlos', 'Juárez', 'Treviño', '1977-08-02', 'M', 'Prolongación Zaragoza', 'Providencia', 'Puebla', 32865, 2, 13, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (157, 'Juan', 'Figueroa', 'Cruz', '1972-03-15', 'H', 'Calle Sur 20', 'Lindavista', 'Mazatlán', 92092, 0, 151, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (158, 'Mario', 'Gómez', 'Ruiz', '1977-01-13', 'M', 'Prolongación Zaragoza', 'Narvarte', 'Matamoros', 30045, 20, 49, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (159, 'Ariana', 'Herrera', 'Jiménez', '1958-12-23', 'M', 'Calle Luna', 'Americana', 'Mérida', 14903, 0, 128, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (160, 'David', 'Salinas', 'Cruz', '1977-06-27', 'H', 'Boulevard Díaz Ordaz', 'Xilotzingo', 'Querétaro', 42035, 2, 125, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (161, 'Sofía', 'González', 'Gómez', '1964-07-22', 'Otro', 'Calle Río Mixcoac', 'Narvarte', 'Ciudad de México', 58137, 10, 380, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (162, 'Ángel', 'Cortés', 'Delgado', '1984-02-07', 'Otro', 'Calle Luna', 'Azcapotzalco', 'Reynosa', 28197, 12, 242, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (163, 'Fernanda', 'Montes', 'Herrera', '1991-05-15', 'H', 'Benito Juárez', 'Centro Monterrey', 'León', 83342, 16, 25, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (164, 'Gabriela', 'López', 'Estrada', '1963-10-12', 'H', 'Avenida Patria', 'San Pedro Garza García', 'Morelia', 79438, 15, 70, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (165, 'Elena', 'Ochoa', 'Pérez', '1970-07-07', 'H', 'Insurgentes Sur', 'Tlalpan Centro', 'Matamoros', 10019, 2, 333, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (166, 'Sofía', 'Sandoval', 'Cruz', '1952-03-11', 'M', 'Avenida Patria', 'Las Américas', 'León', 78196, 13, 209, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (167, 'Ana', 'Herrera', 'Escobar', '1978-05-05', 'M', 'Avenida del Trabajo', 'Narvarte', 'Reynosa', 98636, 17, 326, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (168, 'Alondra', 'Mejía', 'Ruiz', '1958-03-11', 'M', 'Avenida Constitución', 'Chapalita', 'Oaxaca', 72544, 15, 132, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (169, 'Ximena', 'Cedillo', 'Luna', '1969-04-06', 'M', 'Calle 16 de Septiembre', 'Juárez', 'Irapuato', 17405, 7, 362, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (170, 'Pedro', 'Salazar', 'Escobar', '1973-11-12', 'M', 'Calle Durango', 'Azcapotzalco', 'Puebla', 23056, 12, 15, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (171, 'Alejandra', 'Camacho', 'Ruiz', '1951-01-07', 'M', 'Avenida Colón', 'Xilotzingo', 'Reynosa', 79632, 13, 160, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (172, 'Marisol', 'Arriaga', 'Ruiz', '1979-10-21', 'Otro', 'Calle Luna', 'Condesa', 'Puebla', 44721, 3, 97, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (173, 'Valeria', 'Mendoza', 'Mejía', '1953-07-21', 'Otro', 'Calle Durango', 'Centro Monterrey', 'Celaya', 54047, 14, 310, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (174, 'Luis', 'Morales', 'Cedillo', '1973-02-14', 'M', 'Avenida Colón', 'Del Valle', 'León', 23311, 19, 375, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (175, 'Miranda', 'González', 'López', '1973-11-28', 'Otro', 'Calle Mérida', 'Lindavista', 'Celaya', 29426, 4, 75, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (176, 'Pedro', 'Hernández', 'López', '1959-05-03', 'Otro', 'Calle Río Lerma', 'Cumbres', 'Saltillo', 56196, 20, 200, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (177, 'Elena', 'Ochoa', 'Meléndez', '1987-06-19', 'M', 'Calle Río Lerma', 'Chapalita', 'Monterrey', 73327, 6, 9, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (178, 'Romina', 'Mejía', 'Aguilar', '1951-11-05', 'H', 'Francisco I. Madero', 'Narvarte', 'Toluca', 85915, 10, 4, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (179, 'Andrea', 'Castillo', 'Rangel', '1986-06-10', 'M', 'Calle Morelos', 'Nápoles', 'Cancún', 90390, 9, 182, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (180, 'Victoria', 'Figueroa', 'Peña', '1965-06-17', 'M', 'Prolongación Zaragoza', 'Tacubaya', 'Morelia', 42917, 18, 42, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (181, 'Paula', 'Flores', 'Hernández', '1948-08-04', 'Otro', 'Benito Juárez', 'Lindavista', 'León', 12629, 18, 288, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (182, 'Sebastián', 'Herrera', 'Navarrete', '2004-08-22', 'H', 'Avenida Constitución', 'Condesa', 'Durango', 14460, 2, 312, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (183, 'Jimena', 'Mendoza', 'Sandoval', '1954-12-26', 'M', 'Calle Nueva Era', 'Analco', 'Querétaro', 31740, 18, 130, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (184, 'Mateo', 'Estrada', 'Mejía', '1963-11-05', 'M', 'Avenida Colón', 'Chuburná', 'Tijuana', 18336, 6, 73, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (185, 'Miguel', 'Camacho', 'García', '1972-04-09', 'H', 'Calle de las Rosas', 'Santa María la Ribera', 'Mazatlán', 12883, 1, 61, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (186, 'Paula', 'Treviño', 'Martínez', '1983-05-04', 'H', 'Privada Jardines', 'Tlalpan Centro', 'Culiacán', 87849, 1, 60, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (187, 'Carlos', 'Cortés', 'Meléndez', '1966-06-08', 'Otro', 'Calzada Independencia', 'Analco', 'Saltillo', 73655, 10, 129, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (188, 'Valeria', 'Serna', 'Pineda', '1962-06-20', 'Otro', 'Camino Viejo', 'Condesa', 'Villahermosa', 38018, 13, 167, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (189, 'Bianca', 'Ochoa', 'Cortés', '1951-05-17', 'H', 'Avenida Patria', 'La Paz', 'Ensenada', 64858, 6, 171, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (190, 'Ernesto', 'Sandoval', 'Cortés', '2000-10-26', 'Otro', 'Calle Tabasco', 'San Nicolás', 'Tijuana', 76548, 7, 353, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (191, 'Pedro', 'Ortiz', 'Treviño', '1995-09-10', 'Otro', 'Calle Mérida', 'La Paz', 'Monterrey', 41399, 15, 327, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (192, 'Bianca', 'Silva', 'Velasco', '1959-12-30', 'H', 'Calle Hidalgo', 'Chapalita', 'Tijuana', 39030, 19, 363, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (193, 'Bianca', 'Valdez', 'Jiménez', '1972-12-04', 'H', 'Sendero del Bosque', 'San Pedro Garza García', 'León', 99992, 18, 173, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (194, 'Zoe', 'Gómez', 'Reyes', '1968-04-12', 'H', 'Calle Río Mixcoac', 'Tlalpan Centro', 'Veracruz', 44883, 16, 354, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (195, 'Luna', 'Montes', 'Cortés', '1952-07-26', 'Otro', 'Sendero del Bosque', 'Azcapotzalco', 'Querétaro', 31349, 15, 50, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (196, 'María', 'Jiménez', 'González', '1965-02-03', 'H', 'Boulevard Díaz Ordaz', 'Chapalita', 'Cancún', 53973, 4, 191, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (197, 'Gael', 'Treviño', 'Camacho', '1955-06-22', 'H', 'Calle Mérida', 'Chuburná', 'Veracruz', 54073, 0, 90, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (198, 'Jimena', 'Bautista', 'Torres', '1981-12-28', 'M', 'Avenida Patria', 'Huinalá', 'Cancún', 52477, 2, 171, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (199, 'Rubén', 'Navarrete', 'Ruiz', '1959-03-17', 'Otro', 'Calle Sur 20', 'Lindavista', 'Coatzacoalcos', 73684, 10, 10, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (200, 'Rubén', 'Díaz', 'Salinas', '1954-02-08', 'H', 'Calle Magnolia', 'Chuburná', 'Puebla', 48536, 17, 66, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (201, 'Gabriela', 'Herrera', 'González', '1996-01-01', 'M', 'Calle Palmeras', 'Huinalá', 'Ciudad de México', 24144, 0, 293, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (202, 'Camila', 'Vargas', 'Camacho', '1958-04-07', 'M', 'Calle Morelos', 'Xilotzingo', 'Reynosa', 91125, 4, 237, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (203, 'Ángel', 'Herrera', 'Zamora', '1989-08-08', 'H', 'Boulevard Díaz Ordaz', 'Itzimná', 'Morelia', 42696, 10, 280, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (204, 'Iván', 'Díaz', 'Ramírez', '1947-01-15', 'H', 'Calle Luna', 'Itzimná', 'Tijuana', 62892, 1, 247, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (205, 'Miguel', 'Aguilar', 'Camacho', '1977-02-10', 'H', 'Calle Nueva Era', 'San Nicolás', 'Monterrey', 87459, 2, 194, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (206, 'Ariana', 'Ramos', 'Flores', '1959-03-23', 'M', 'Camino Viejo', 'Americana', 'Toluca', 52264, 5, 229, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (207, 'Mateo', 'García', 'Chávez', '1992-08-23', 'M', 'Avenida Constitución', 'Doctores', 'Saltillo', 81856, 18, 159, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (208, 'Paula', 'Flores', 'Vargas', '1969-01-01', 'Otro', 'Francisco I. Madero', 'Roma Sur', 'La Paz', 65291, 19, 314, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (209, 'Alondra', 'Luna', 'Bautista', '1988-11-24', 'M', 'Calle Morelos', 'San Pedro Garza García', 'Ensenada', 21672, 8, 207, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (210, 'Zoe', 'Fuentes', 'Escobar', '1951-03-11', 'M', 'Calle Morelos', 'Linda Vista', 'Saltillo', 66003, 19, 194, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (211, 'Rubén', 'Gómez', 'Aguilar', '1999-07-15', 'M', 'Calle Durango', 'Tlalpan Centro', 'Cancún', 11615, 14, 275, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (212, 'Rebeca', 'Velasco', 'Cedillo', '1982-12-11', 'M', 'Privada San Diego', 'Itzimná', 'Villahermosa', 60986, 1, 253, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (213, 'Montserrat', 'Solís', 'Franco', '1976-12-30', 'H', 'Calle Emiliano Zapata', 'Azcapotzalco', 'Aguascalientes', 21761, 13, 88, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (214, 'Gael', 'Valencia', 'Villalobos', '1994-05-05', 'M', 'Calle Tabasco', 'Analco', 'Monterrey', 88511, 0, 341, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (215, 'Ana', 'López', 'Zamora', '1994-09-21', 'M', 'Calzada Independencia', 'Centro Monterrey', 'Puebla', 99189, 10, 391, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (216, 'Camila', 'Luna', 'Fuentes', '1964-08-14', 'Otro', 'Calzada Independencia', 'Del Valle', 'Tijuana', 62040, 16, 162, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (217, 'Camila', 'Arriaga', 'Hernández', '1983-07-29', 'M', 'Calle Mérida', 'La Paz', 'Mérida', 27708, 17, 195, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (218, 'Jorge', 'Vargas', 'Sánchez', '1959-07-05', 'Otro', 'Calle Nueva Era', 'Escandón', 'Tijuana', 91187, 10, 89, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (219, 'Zoe', 'Jiménez', 'Montes', '1972-11-29', 'M', 'Avenida Constitución', 'Roma Norte', 'Irapuato', 85038, 10, 102, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (220, 'Mateo', 'Mejía', 'Solís', '1962-08-29', 'Otro', 'Calle de las Rosas', 'Del Valle', 'Celaya', 55073, 4, 11, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (221, 'Mateo', 'Figueroa', 'Navarrete', '1956-12-08', 'M', 'Calle Hidalgo', 'Chapalita', 'Puebla', 77437, 12, 287, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (222, 'Francisco', 'Castillo', 'Salazar', '1963-07-14', 'H', 'Avenida Patria', 'Santa María la Ribera', 'Chihuahua', 65627, 18, 377, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (223, 'Montserrat', 'Bautista', 'Herrera', '1983-12-17', 'M', 'Benito Juárez', 'Chapalita', 'Morelia', 20121, 13, 260, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (224, 'Montserrat', 'Valdez', 'Montes', '1953-01-29', 'Otro', 'Calle Oaxaca', 'Roma Norte', 'Reynosa', 19978, 6, 158, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (225, 'Sebastián', 'Nava', 'Arriaga', '1952-07-23', 'H', 'Sendero del Bosque', 'Clavería', 'Durango', 33510, 19, 121, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (226, 'Ariana', 'Torres', 'Vargas', '1954-10-12', 'Otro', 'Avenida Constitución', 'Roma Norte', 'Tepic', 74714, 3, 29, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (227, 'Sebastián', 'Sánchez', 'García', '1956-12-12', 'Otro', 'Calzada Independencia', 'Nápoles', 'Chihuahua', 24757, 3, 347, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (228, 'Alejandra', 'Rosales', 'Cortés', '1953-01-31', 'H', 'Calle Tabasco', 'Centro Monterrey', 'Saltillo', 71310, 17, 212, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (229, 'María', 'Villalobos', 'Chávez', '1973-08-25', 'M', 'Avenida Colón', 'Providencia', 'Cancún', 74670, 4, 110, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (230, 'Leonardo', 'Chávez', 'Cortés', '1976-08-25', 'Otro', 'Calle Durango', 'Chuburná', 'León', 86751, 4, 390, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (231, 'Mateo', 'Silva', 'Pérez', '1987-10-19', 'M', 'Calle Tabasco', 'Anzures', 'Hermosillo', 33251, 11, 253, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (232, 'Luis', 'Ramos', 'Díaz', '1984-07-08', 'M', 'Héroes de Chapultepec', 'Cumbres', 'Irapuato', 70792, 2, 96, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (233, 'Lucía', 'García', 'Luna', '1982-04-06', 'H', 'Calzada de Tlalpan', 'Santa María la Ribera', 'Matamoros', 35557, 3, 393, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (234, 'Ernesto', 'Bautista', 'Camacho', '1961-10-01', 'H', 'Insurgentes Sur', 'Nápoles', 'León', 27017, 16, 209, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (235, 'Héctor', 'Calderón', 'Ochoa', '1971-07-05', 'Otro', 'Boulevard Díaz Ordaz', 'San Nicolás', 'Puebla', 81352, 3, 229, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (236, 'Emilio', 'Arriaga', 'Montes', '1966-08-24', 'Otro', 'Avenida Universidad', 'Chapalita', 'Toluca', 12921, 18, 350, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (237, 'María', 'Peña', 'Torres', '1975-09-22', 'M', 'Calzada de Tlalpan', 'Analco', 'Mazatlán', 22327, 7, 241, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (238, 'Juan', 'Jiménez', 'Ochoa', '1990-07-08', 'H', 'Calle Durango', 'La Paz', 'Veracruz', 77627, 3, 50, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (239, 'Marisol', 'Calderón', 'Ochoa', '1975-01-23', 'H', 'Insurgentes Sur', 'San Ángel', 'Reynosa', 56473, 1, 228, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (240, 'Renata', 'Treviño', 'Arriaga', '1992-03-06', 'M', 'Calle de las Rosas', 'Anzures', 'Mérida', 17775, 4, 90, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (241, 'María', 'Villalobos', 'Sánchez', '1952-01-15', 'H', 'Héroes de Chapultepec', 'Chapalita', 'Reynosa', 13563, 5, 324, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (242, 'Paula', 'Torres', 'Jiménez', '1977-10-02', 'H', 'Avenida Constitución', 'Roma Sur', 'Tuxtla Gutiérrez', 74549, 0, 248, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (243, 'Ximena', 'Valdez', 'Sánchez', '1992-12-24', 'H', 'Avenida Reforma', 'Polanco', 'Culiacán', 63851, 13, 286, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (244, 'Tomás', 'Martínez', 'Acosta', '1991-11-20', 'M', 'Calle Emiliano Zapata', 'Nápoles', 'Tijuana', 42238, 12, 41, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (245, 'Valeria', 'Flores', 'Padilla', '1985-08-22', 'H', 'Camino Viejo', 'Centro Monterrey', 'Durango', 63422, 8, 306, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (246, 'Eduardo', 'Hernández', 'Castillo', '1986-05-06', 'M', 'Calle Tabasco', 'Del Valle', 'Villahermosa', 64992, 17, 293, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (247, 'Marisol', 'Ruiz', 'Vargas', '1984-11-01', 'M', 'Calle Río Lerma', 'Copilco', 'Matamoros', 25173, 13, 137, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (248, 'Leonardo', 'Valdez', 'Solís', '1966-02-03', 'M', 'Camino Real', 'Itzimná', 'Coatzacoalcos', 77362, 19, 15, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (249, 'Gabriela', 'Salinas', 'Pineda', '1954-01-13', 'Otro', 'Calle Hidalgo', 'Azcapotzalco', 'Tijuana', 21245, 10, 106, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (250, 'Eduardo', 'Salinas', 'Valdez', '1967-04-22', 'M', 'Prolongación Zaragoza', 'La Paz', 'Querétaro', 66317, 20, 108, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (251, 'Ángel', 'Bautista', 'Valdez', '1956-10-27', 'Otro', 'Benito Juárez', 'Xilotzingo', 'Oaxaca', 39943, 17, 315, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (252, 'Bianca', 'Valdez', 'Escobar', '1993-10-25', 'M', 'Calle Emiliano Zapata', 'Nápoles', 'Mazatlán', 21631, 2, 81, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (253, 'Romina', 'Pineda', 'Chávez', '1990-05-16', 'H', 'Sendero del Bosque', 'Roma Norte', 'Cancún', 15117, 15, 180, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (254, 'Camila', 'Juárez', 'Juárez', '1965-02-24', 'Otro', 'Calle Nueva Era', 'Centro Monterrey', 'Reynosa', 72748, 12, 138, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (255, 'Alondra', 'González', 'Serna', '1974-06-01', 'M', 'Calle Río Mixcoac', 'Chapalita', 'Toluca', 38942, 6, 393, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (256, 'David', 'Flores', 'García', '1959-04-27', 'M', 'Sendero del Bosque', 'Copilco', 'Culiacán', 25225, 8, 166, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (257, 'Ximena', 'Salazar', 'Salazar', '1982-04-13', 'Otro', 'Boulevard Díaz Ordaz', 'Santa María la Ribera', 'Chihuahua', 64959, 15, 302, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (258, 'Montserrat', 'Ruiz', 'Padilla', '1987-02-19', 'Otro', 'Héroes de Chapultepec', 'Tacubaya', 'Oaxaca', 82492, 20, 32, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (259, 'Camila', 'Mendoza', 'Camacho', '1971-07-15', 'H', 'Héroes de Chapultepec', 'La Paz', 'Veracruz', 19087, 7, 322, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (260, 'Diego', 'Figueroa', 'Herrera', '1957-09-12', 'M', 'Privada San Diego', 'Tacubaya', 'Monterrey', 28384, 6, 91, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (261, 'Alejandra', 'González', 'Hernández', '1970-06-12', 'Otro', 'Calle Río Mixcoac', 'Chuburná', 'Durango', 95575, 5, 310, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (262, 'Victoria', 'Bautista', 'López', '1994-09-11', 'M', 'Prolongación Zaragoza', 'Chuburná', 'Oaxaca', 29791, 17, 62, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (263, 'Ximena', 'Meléndez', 'Castillo', '1986-03-10', 'Otro', 'Privada Jardines', 'Coyoacán Centro', 'Querétaro', 61814, 14, 308, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (264, 'Daniela', 'Sánchez', 'Valdez', '1959-02-06', 'H', 'Camino Real', 'Huexotitla', 'Ensenada', 13419, 17, 4, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (265, 'Adrián', 'Aguilar', 'Nava', '1949-09-04', 'Otro', 'Privada San Diego', 'Xilotzingo', 'Monterrey', 15440, 2, 397, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (266, 'Bianca', 'Ramírez', 'Meléndez', '1978-04-06', 'M', 'Sendero del Bosque', 'San Nicolás', 'Guadalajara', 65978, 3, 167, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (267, 'Adrián', 'Sandoval', 'Pineda', '1955-02-13', 'H', 'Avenida Constitución', 'Roma Sur', 'León', 17720, 12, 269, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (268, 'Luis', 'Camacho', 'Reyes', '1970-02-07', 'H', 'Calle de las Rosas', 'Narvarte', 'Tuxtla Gutiérrez', 71500, 12, 306, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (269, 'Valeria', 'Villalobos', 'Peña', '1961-12-06', 'H', 'Calle Morelos', 'Centro Monterrey', 'Mérida', 64333, 9, 90, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (270, 'José', 'Aguilar', 'Esquivel', '1967-07-13', 'H', 'Benito Juárez', 'Itzimná', 'Reynosa', 37593, 20, 124, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (271, 'Fernanda', 'Mendoza', 'Navarrete', '1969-03-09', 'Otro', 'Calle Magnolia', 'Anzures', 'Irapuato', 57005, 8, 76, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (272, 'Miranda', 'Flores', 'Salazar', '1960-02-12', 'Otro', 'Avenida Gonzalitos', 'Cumbres', 'Mazatlán', 78998, 14, 122, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (273, 'Luna', 'Castillo', 'Zamora', '1950-08-26', 'Otro', 'Avenida Constitución', 'Chapalita', 'Reynosa', 81028, 18, 97, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (274, 'Raúl', 'Flores', 'Pineda', '1947-12-24', 'H', 'Camino Viejo', 'Copilco', 'Cancún', 88125, 10, 334, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (275, 'Miguel', 'Silva', 'Calderón', '1958-06-07', 'Otro', 'Sendero del Bosque', 'Escandón', 'Chihuahua', 83982, 10, 179, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (276, 'Alejandra', 'Meléndez', 'Villalobos', '1973-05-27', 'H', 'Calle Mérida', 'San Nicolás', 'Ciudad de México', 23649, 0, 13, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (277, 'Ernesto', 'Vargas', 'Figueroa', '1962-05-19', 'H', 'Avenida Patria', 'Providencia', 'Puebla', 37067, 8, 39, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (278, 'Victoria', 'Rangel', 'Salinas', '1972-05-09', 'Otro', 'Calle Luna', 'Roma Norte', 'Chihuahua', 92065, 6, 263, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (279, 'Andrea', 'Juárez', 'Ortiz', '1987-04-10', 'Otro', 'Calle Norte 45', 'Roma Norte', 'Coatzacoalcos', 78737, 14, 328, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (280, 'Tomás', 'Franco', 'Mendoza', '1982-04-24', 'M', 'Calle Río Mixcoac', 'Santa María la Ribera', 'Coatzacoalcos', 45459, 16, 333, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (281, 'Raúl', 'Camacho', 'Herrera', '1965-02-16', 'H', 'Calle Magnolia', 'San Pedro Garza García', 'Tepic', 58491, 15, 81, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (282, 'Gael', 'Sánchez', 'Luna', '1987-10-06', 'H', 'Calle Morelos', 'Narvarte', 'Ciudad de México', 14564, 0, 150, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (283, 'Sebastián', 'Figueroa', 'Morales', '1950-06-13', 'M', 'Prolongación Zaragoza', 'Copilco', 'Hermosillo', 82742, 14, 398, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (284, 'Bianca', 'Figueroa', 'Nava', '1959-12-28', 'H', 'Calle Norte 45', 'Escandón', 'Mazatlán', 56594, 7, 62, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (285, 'Alejandra', 'Pineda', 'Esquivel', '1949-09-26', 'H', 'Héroes de Chapultepec', 'Chuburná', 'Saltillo', 15250, 17, 90, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (286, 'Gael', 'Camacho', 'Torres', '1976-03-21', 'H', 'Avenida Colón', 'Nápoles', 'Reynosa', 88926, 17, 365, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (287, 'Daniela', 'Escobar', 'Salinas', '1982-06-30', 'M', 'Héroes de Chapultepec', 'Providencia', 'Aguascalientes', 53186, 6, 374, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (288, 'Tomás', 'López', 'Estrada', '1959-11-07', 'H', 'Calle Palmeras', 'Narvarte', 'Tepic', 84842, 9, 145, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (289, 'Luna', 'Silva', 'Ruiz', '1980-09-08', 'M', 'Eje Central', 'San Nicolás', 'La Paz', 34536, 8, 104, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (290, 'Rubén', 'González', 'Martínez', '1972-04-02', 'Otro', 'Calle Río Lerma', 'La Paz', 'Morelia', 64896, 4, 294, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (291, 'Ariana', 'Meléndez', 'Pineda', '1964-03-28', 'M', 'Calle Morelos', 'Copilco', 'La Paz', 77620, 11, 317, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (292, 'Paula', 'Sánchez', 'Estrada', '1969-04-11', 'M', 'Calle de las Rosas', 'Linda Vista', 'Tepic', 10256, 5, 97, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (293, 'Mateo', 'Mendoza', 'Zamora', '1991-04-15', 'Otro', 'Calle Mérida', 'Xilotzingo', 'León', 93456, 10, 49, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (294, 'Ernesto', 'Cedillo', 'Solís', '1973-05-27', 'H', 'Calle del Sol', 'Linda Vista', 'Irapuato', 61804, 15, 201, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (295, 'David', 'Silva', 'Escobar', '1961-06-16', 'M', 'Calle Sur 20', 'Mixcoac', 'Oaxaca', 34821, 17, 209, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (296, 'Gabriela', 'Solís', 'Castillo', '1981-06-01', 'Otro', 'Prolongación Zaragoza', 'Mixcoac', 'Irapuato', 58100, 0, 352, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (297, 'Zoe', 'Acosta', 'Rodríguez', '1974-09-20', 'M', 'Calle Luna', 'San Ángel', 'Mazatlán', 69093, 11, 392, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (298, 'Rubén', 'Sánchez', 'Silva', '1970-02-02', 'H', 'Francisco I. Madero', 'Lindavista', 'Toluca', 94387, 4, 18, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (299, 'Fernanda', 'Solís', 'Pérez', '1961-12-04', 'Otro', 'Calle Río Mixcoac', 'Roma Norte', 'Cancún', 23324, 13, 218, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (300, 'Romina', 'Ruiz', 'Serna', '1973-09-01', 'Otro', 'Avenida Constitución', 'Del Valle', 'Villahermosa', 27142, 19, 209, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (301, 'Miranda', 'Ruiz', 'Gómez', '1983-12-26', 'Otro', 'Avenida Universidad', 'Roma Norte', 'Veracruz', 19356, 20, 296, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (302, 'Andrea', 'Salinas', 'Valencia', '1978-07-11', 'Otro', 'Calle Río Lerma', 'Itzimná', 'Aguascalientes', 10563, 16, 317, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (303, 'Fernanda', 'Cedillo', 'Herrera', '1957-01-15', 'Otro', 'Calle Norte 45', 'Tlalpan Centro', 'Veracruz', 98169, 13, 221, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (304, 'Mario', 'Fuentes', 'Mendoza', '1992-12-22', 'Otro', 'Francisco I. Madero', 'Escandón', 'Ciudad de México', 37295, 13, 69, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (305, 'Daniela', 'Flores', 'Rosales', '1958-05-07', 'Otro', 'Calle Luna', 'Narvarte', 'Guadalajara', 40362, 9, 302, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (306, 'Carolina', 'Cruz', 'Salazar', '1974-11-05', 'H', 'Calle del Sol', 'La Paz', 'Mérida', 55705, 10, 68, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (307, 'Marisol', 'Esquivel', 'Salinas', '1968-04-16', 'M', 'Avenida Reforma', 'Lindavista', 'Durango', 89502, 12, 234, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (308, 'Julián', 'Roldán', 'Cruz', '1983-02-17', 'Otro', 'Camino Viejo', 'Providencia', 'Cancún', 54070, 15, 147, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (309, 'Iván', 'Villalobos', 'García', '1985-05-16', 'M', 'Prolongación Zaragoza', 'San Nicolás', 'Morelia', 25946, 15, 375, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (310, 'Valeria', 'Acosta', 'Rangel', '1979-09-16', 'M', 'Avenida Constitución', 'Oblatos', 'Cancún', 71237, 11, 395, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (311, 'Juan', 'Vargas', 'Mendoza', '1970-10-30', 'Otro', 'Calle Río Mixcoac', 'Del Valle', 'Monterrey', 60078, 0, 137, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (312, 'Adrián', 'Meléndez', 'Montes', '1984-04-08', 'M', 'Calle Morelos', 'San Ángel', 'Tepic', 71906, 12, 297, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (313, 'Andrea', 'Fuentes', 'Franco', '1957-03-02', 'H', 'Prolongación Zaragoza', 'Huexotitla', 'Monterrey', 45783, 15, 210, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (314, 'Ariana', 'Nava', 'Figueroa', '1954-10-13', 'Otro', 'Calle Oaxaca', 'Itzimná', 'Oaxaca', 47794, 6, 311, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (315, 'José', 'Cruz', 'Delgado', '1952-08-17', 'M', 'Calle Nueva Era', 'Analco', 'Aguascalientes', 76296, 10, 127, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (316, 'Adrián', 'Aguilar', 'Estrada', '1950-05-19', 'H', 'Calle Norte 45', 'Xilotzingo', 'Tuxtla Gutiérrez', 77274, 12, 163, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (317, 'Alejandra', 'Zamora', 'Díaz', '1977-11-13', 'H', 'Avenida Gonzalitos', 'Chuburná', 'Oaxaca', 99547, 9, 344, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (318, 'Renata', 'Gómez', 'Aguilar', '1994-05-17', 'Otro', 'Avenida Gonzalitos', 'Escandón', 'Saltillo', 23376, 20, 116, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (319, 'Rebeca', 'Fuentes', 'Villalobos', '1987-12-25', 'Otro', 'Avenida Patria', 'San Nicolás', 'Celaya', 73240, 4, 181, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (320, 'Montserrat', 'Rosales', 'Pineda', '1981-10-26', 'H', 'Calle Nueva Era', 'San Pedro Garza García', 'Irapuato', 70487, 1, 349, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (321, 'Jorge', 'Navarrete', 'Acosta', '1975-07-01', 'M', 'Avenida Colón', 'Juárez', 'La Paz', 22998, 18, 85, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (322, 'Ximena', 'Valencia', 'Serna', '1959-10-03', 'M', 'Calzada de Tlalpan', 'Condesa', 'La Paz', 45874, 4, 171, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (323, 'Miranda', 'Meléndez', 'Salinas', '1960-11-24', 'H', 'Eje Central', 'Chuburná', 'Villahermosa', 28745, 9, 375, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (324, 'Luis', 'Ochoa', 'Castillo', '1949-03-10', 'M', 'Calzada Independencia', 'Las Américas', 'Puebla', 52666, 9, 189, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (325, 'Iván', 'Peña', 'Aguilar', '1966-10-15', 'Otro', 'Calle 16 de Septiembre', 'Huinalá', 'Reynosa', 17476, 5, 8, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (326, 'Romina', 'Rangel', 'Camacho', '1961-05-29', 'Otro', 'Francisco I. Madero', 'San Nicolás', 'Tepic', 97662, 11, 39, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (327, 'Carlos', 'Navarrete', 'Martínez', '1962-08-06', 'H', 'Calle Mérida', 'Providencia', 'Culiacán', 57501, 17, 320, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (328, 'Andrea', 'Camacho', 'Galindo', '1960-06-05', 'Otro', 'Calle Durango', 'Providencia', 'Toluca', 71514, 0, 153, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (329, 'Miranda', 'Treviño', 'Solís', '1979-11-06', 'Otro', 'Calle Oaxaca', 'Americana', 'Oaxaca', 63010, 6, 75, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (330, 'Jorge', 'Díaz', 'Escobar', '1963-03-18', 'Otro', 'Calle Luna', 'Oblatos', 'Mérida', 29379, 14, 353, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (331, 'Renata', 'Franco', 'Aguilar', '1951-03-12', 'M', 'Eje Central', 'Coyoacán Centro', 'Morelia', 11459, 8, 4, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (332, 'Paula', 'Herrera', 'Galindo', '1963-04-20', 'H', 'Calle Emiliano Zapata', 'Xilotzingo', 'Ensenada', 44382, 7, 230, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (333, 'Mauricio', 'García', 'Díaz', '1981-04-25', 'Otro', 'Calzada de Tlalpan', 'Anzures', 'Mazatlán', 59795, 15, 207, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (334, 'Lucía', 'López', 'Pineda', '1969-02-14', 'H', 'Calle Emiliano Zapata', 'Narvarte', 'Celaya', 22553, 20, 130, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (335, 'Daniela', 'Padilla', 'López', '1967-02-11', 'M', 'Calle Morelos', 'Chuburná', 'Tuxtla Gutiérrez', 45476, 8, 44, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (336, 'Luis', 'Sandoval', 'Cedillo', '1951-02-20', 'M', 'Calle Río Lerma', 'Providencia', 'Monterrey', 46641, 1, 203, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (337, 'José', 'Torres', 'Bautista', '1964-02-01', 'Otro', 'Calle Sur 20', 'San Pedro Garza García', 'Tepic', 87678, 13, 192, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (338, 'Leonardo', 'Reyes', 'Meléndez', '1961-04-29', 'H', 'Avenida Patria', 'Lindavista', 'Durango', 17031, 7, 258, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (339, 'Adrián', 'Ochoa', 'Serna', '1984-04-08', 'M', 'Insurgentes Sur', 'Santa María la Ribera', 'Durango', 65652, 10, 389, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (340, 'Eduardo', 'Vargas', 'Chávez', '1965-07-01', 'M', 'Calle Durango', 'Chapalita', 'Ensenada', 42779, 5, 300, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (341, 'Ariana', 'Esquivel', 'Gómez', '1959-07-20', 'M', 'Calle Durango', 'Juárez', 'Hermosillo', 19138, 13, 71, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (342, 'Leonardo', 'Flores', 'Solís', '1976-07-27', 'H', 'Avenida Patria', 'Tacubaya', 'Tepic', 89913, 7, 383, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (343, 'Jimena', 'Acosta', 'García', '1965-08-26', 'M', 'Camino Viejo', 'Xilotzingo', 'Mazatlán', 55212, 13, 226, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (344, 'Valeria', 'Franco', 'Zamora', '1984-11-30', 'H', 'Privada Jardines', 'Condesa', 'Tijuana', 73880, 12, 288, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (345, 'Mario', 'Serna', 'Mendoza', '1975-07-30', 'H', 'Calle Oaxaca', 'Huexotitla', 'Puebla', 27138, 7, 228, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (346, 'Miguel', 'Esquivel', 'Camacho', '1982-06-27', 'M', 'Sendero del Bosque', 'Santa María la Ribera', 'Ensenada', 87550, 16, 223, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (347, 'Jorge', 'García', 'Rangel', '1986-03-08', 'M', 'Sendero del Bosque', 'Clavería', 'Hermosillo', 18361, 0, 98, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (348, 'Paula', 'Ramos', 'Arriaga', '1986-03-31', 'Otro', 'Calle Mérida', 'Polanco', 'Hermosillo', 81619, 4, 135, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (349, 'Raúl', 'Vargas', 'Solís', '1974-02-24', 'Otro', 'Privada San Diego', 'Nápoles', 'Irapuato', 19619, 5, 83, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (350, 'Julián', 'Rosales', 'Escobar', '1959-10-23', 'M', 'Calle Norte 45', 'Condesa', 'Monterrey', 44724, 3, 60, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (351, 'Fernanda', 'González', 'Serna', '1959-03-17', 'M', 'Calle Tabasco', 'Oblatos', 'Celaya', 39754, 16, 396, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (352, 'Mauricio', 'Ochoa', 'Galindo', '1955-04-01', 'Otro', 'Avenida Colón', 'San Nicolás', 'Mazatlán', 60809, 0, 73, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (353, 'Miguel', 'Delgado', 'Flores', '1981-07-24', 'H', 'Camino Viejo', 'Narvarte', 'Aguascalientes', 64800, 0, 136, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (354, 'Tomás', 'Flores', 'Pineda', '1979-03-03', 'Otro', 'Calle Tabasco', 'Clavería', 'Oaxaca', 47888, 19, 221, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (355, 'Eduardo', 'Mejía', 'Estrada', '1963-05-14', 'M', 'Avenida Colón', 'San Ángel', 'Mazatlán', 27746, 0, 65, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (356, 'Luis', 'Sánchez', 'Morales', '1980-08-27', 'Otro', 'Avenida del Trabajo', 'Centro Monterrey', 'Saltillo', 18384, 7, 357, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (357, 'Juan', 'Díaz', 'Pérez', '1961-02-01', 'Otro', 'Calle Luna', 'Mixcoac', 'Morelia', 49075, 14, 107, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (358, 'Ximena', 'Galindo', 'Ramírez', '1980-01-24', 'Otro', 'Calle Palmeras', 'Condesa', 'Mérida', 63451, 11, 46, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (359, 'Miranda', 'Valdez', 'Estrada', '1957-10-23', 'Otro', 'Calle Río Mixcoac', 'Roma Norte', 'Matamoros', 59027, 6, 82, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (360, 'Raúl', 'Hernández', 'Velasco', '1956-08-22', 'Otro', 'Calle Nueva Era', 'Santa María la Ribera', 'León', 92352, 3, 366, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (361, 'Sergio', 'Treviño', 'García', '1951-04-22', 'H', 'Calle Luna', 'San Ángel', 'Saltillo', 22760, 10, 208, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (362, 'Luna', 'Arriaga', 'Solís', '1987-08-12', 'Otro', 'Prolongación Zaragoza', 'San Ángel', 'Coatzacoalcos', 24223, 14, 213, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (363, 'Alondra', 'Valdez', 'Herrera', '1968-07-01', 'Otro', 'Avenida Reforma', 'Polanco', 'León', 95830, 5, 117, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (364, 'Montserrat', 'Zamora', 'Torres', '1976-10-06', 'M', 'Francisco I. Madero', 'Lindavista', 'Tijuana', 50577, 5, 296, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (365, 'Ricardo', 'Salazar', 'Gómez', '1967-10-15', 'M', 'Calzada Independencia', 'San Pedro Garza García', 'Culiacán', 12326, 4, 89, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (366, 'Fátima', 'Acosta', 'López', '1996-11-18', 'H', 'Avenida Patria', 'Roma Sur', 'Querétaro', 16593, 13, 35, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (367, 'Valeria', 'Fuentes', 'García', '1961-08-22', 'Otro', 'Calle Durango', 'Huexotitla', 'Veracruz', 11646, 17, 1, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (368, 'Juan', 'Calderón', 'Luna', '1982-04-16', 'M', 'Privada San Diego', 'Polanco', 'Matamoros', 28752, 7, 9, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (369, 'Alondra', 'Pérez', 'Padilla', '1948-12-03', 'Otro', 'Calle Norte 45', 'San Manuel', 'Matamoros', 13470, 19, 392, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (370, 'Gael', 'Salinas', 'Estrada', '1985-05-08', 'Otro', 'Avenida Colón', 'Roma Sur', 'Oaxaca', 51981, 19, 243, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (371, 'Iván', 'Galindo', 'Salazar', '1961-06-17', 'H', 'Calle Hidalgo', 'Clavería', 'Veracruz', 86605, 17, 82, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (372, 'Bianca', 'Franco', 'Silva', '1969-08-09', 'M', 'Calzada Independencia', 'San Nicolás', 'Mérida', 23260, 2, 86, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (373, 'Ximena', 'Nava', 'Salinas', '1950-04-03', 'H', 'Calzada Independencia', 'Huexotitla', 'Puebla', 40514, 8, 378, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (374, 'Diego', 'Rosales', 'Valdez', '1971-05-27', 'M', 'Calle Tabasco', 'Itzimná', 'Toluca', 55561, 6, 149, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (375, 'Fernanda', 'Sánchez', 'Rosales', '1985-07-31', 'M', 'Calzada Independencia', 'Oblatos', 'Tuxtla Gutiérrez', 97297, 12, 50, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (376, 'Rubén', 'Rosales', 'Mejía', '1971-11-25', 'Otro', 'Héroes de Chapultepec', 'Huexotitla', 'Aguascalientes', 64618, 8, 335, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (377, 'Juan', 'Pérez', 'Velasco', '1946-07-09', 'H', 'Avenida Colón', 'Las Américas', 'Irapuato', 12014, 10, 309, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (378, 'Victoria', 'Montes', 'Meléndez', '1977-02-03', 'H', 'Prolongación Zaragoza', 'San Pedro Garza García', 'Coatzacoalcos', 84778, 7, 346, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (379, 'Ricardo', 'Zamora', 'Mejía', '1963-05-21', 'Otro', 'Calzada Independencia', 'Santa María la Ribera', 'Hermosillo', 39139, 4, 148, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (380, 'Victoria', 'Sandoval', 'Roldán', '1979-12-22', 'H', 'Calzada Independencia', 'Huexotitla', 'Monterrey', 19859, 14, 350, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (381, 'Julián', 'Pérez', 'López', '1983-10-09', 'M', 'Avenida Universidad', 'San Nicolás', 'Monterrey', 24849, 1, 110, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (382, 'Ricardo', 'Flores', 'Cortés', '1952-03-10', 'M', 'Calzada Independencia', 'Tlalpan Centro', 'Tijuana', 68370, 18, 209, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (383, 'José', 'Juárez', 'Sandoval', '1990-06-18', 'Otro', 'Calle Palmeras', 'Lindavista', 'Villahermosa', 26330, 1, 340, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (384, 'Luna', 'Mendoza', 'Silva', '1989-07-09', 'M', 'Calle Norte 45', 'Mixcoac', 'Celaya', 74448, 13, 184, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (385, 'Fernanda', 'Sandoval', 'Sandoval', '1958-06-02', 'Otro', 'Camino Viejo', 'Huinalá', 'Celaya', 89473, 18, 378, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (386, 'Sergio', 'Rodríguez', 'Hernández', '1950-06-07', 'Otro', 'Avenida Gonzalitos', 'Coyoacán Centro', 'Cancún', 11895, 16, 374, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (387, 'Bianca', 'Bautista', 'Rodríguez', '1978-11-04', 'M', 'Calle Morelos', 'Linda Vista', 'Villahermosa', 53479, 12, 95, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (388, 'Jimena', 'Chávez', 'Estrada', '1988-11-24', 'Otro', 'Benito Juárez', 'Lindavista', 'Oaxaca', 49777, 12, 4, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (389, 'Luna', 'Calderón', 'Pérez', '1964-09-26', 'H', 'Calle Oaxaca', 'Lindavista', 'Aguascalientes', 66262, 18, 397, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (390, 'Sofía', 'Nava', 'Bautista', '1990-02-15', 'Otro', 'Calle Emiliano Zapata', 'Nápoles', 'Irapuato', 88797, 15, 392, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (391, 'Bianca', 'Vargas', 'Figueroa', '1977-09-28', 'Otro', 'Eje Central', 'Providencia', 'Reynosa', 97490, 13, 375, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (392, 'Alejandra', 'Rangel', 'Ramírez', '1992-09-10', 'Otro', 'Calzada Independencia', 'Itzimná', 'Chihuahua', 84035, 1, 48, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (393, 'Renata', 'Salinas', 'Morales', '1960-11-18', 'M', 'Insurgentes Sur', 'Roma Norte', 'Cancún', 76361, 11, 190, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (394, 'Ana', 'Fuentes', 'Padilla', '1982-11-03', 'Otro', 'Prolongación Zaragoza', 'Las Américas', 'Ensenada', 90992, 11, 11, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (395, 'Juan', 'Camacho', 'Cruz', '1965-04-07', 'M', 'Calle Luna', 'Del Valle', 'Culiacán', 31843, 19, 136, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (396, 'Bianca', 'Rosales', 'Fuentes', '1980-03-19', 'M', 'Calle Durango', 'Azcapotzalco', 'Celaya', 37502, 20, 349, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (397, 'Daniela', 'Acosta', 'Martínez', '1961-01-16', 'M', 'Avenida Universidad', 'Xilotzingo', 'Mazatlán', 89436, 6, 274, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (398, 'Ariana', 'Gómez', 'Fuentes', '1986-02-17', 'Otro', 'Calle Magnolia', 'San Pedro Garza García', 'Puebla', 85534, 13, 163, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (399, 'Ricardo', 'Rangel', 'Silva', '1996-01-31', 'Otro', 'Calle Mérida', 'Tacubaya', 'Mérida', 21030, 4, 130, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (400, 'Mauricio', 'Montes', 'Camacho', '1974-06-05', 'H', 'Calzada Independencia', 'Coyoacán Centro', 'Irapuato', 48466, 20, 120, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (401, 'Raúl', 'Herrera', 'Morales', '1989-03-21', 'Otro', 'Eje Central', 'Linda Vista', 'Morelia', 40555, 16, 89, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (402, 'Sebastián', 'Meléndez', 'Ruiz', '1969-10-03', 'H', 'Prolongación Zaragoza', 'Santa María la Ribera', 'Matamoros', 31243, 5, 233, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (403, 'Miranda', 'Delgado', 'Rangel', '1947-07-22', 'M', 'Eje Central', 'Azcapotzalco', 'Coatzacoalcos', 73441, 2, 38, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (404, 'Fátima', 'Treviño', 'Hernández', '1968-08-25', 'Otro', 'Calle Oaxaca', 'Coyoacán Centro', 'La Paz', 94931, 6, 81, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (405, 'Alondra', 'Montes', 'Valdez', '1950-07-07', 'M', 'Privada San Diego', 'Santa María la Ribera', 'Saltillo', 14683, 3, 88, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (406, 'Leonardo', 'Rosales', 'Aguilar', '1961-08-10', 'M', 'Privada Jardines', 'Chuburná', 'Puebla', 10901, 15, 176, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (407, 'Adrián', 'Arriaga', 'Cortés', '1953-11-26', 'Otro', 'Boulevard Díaz Ordaz', 'Copilco', 'Hermosillo', 68471, 16, 95, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (408, 'Héctor', 'Cedillo', 'Montes', '1984-10-04', 'H', 'Calle Magnolia', 'Escandón', 'Tepic', 89337, 1, 215, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (409, 'Sergio', 'Pérez', 'Nava', '1974-05-22', 'M', 'Calzada de Tlalpan', 'Anzures', 'Durango', 92246, 1, 33, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (410, 'Andrea', 'Estrada', 'Herrera', '1953-12-14', 'H', 'Calle Sur 20', 'Roma Sur', 'León', 52857, 3, 348, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (411, 'Montserrat', 'Morales', 'Cortés', '1971-01-10', 'Otro', 'Calle Oaxaca', 'Itzimná', 'León', 91150, 18, 159, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (412, 'Marisol', 'Bautista', 'Luna', '1958-01-23', 'Otro', 'Calle Durango', 'Tacubaya', 'Mérida', 17904, 14, 364, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (413, 'Mateo', 'García', 'Cedillo', '1984-08-20', 'M', 'Calle Sur 20', 'Juárez', 'Hermosillo', 81230, 2, 170, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (414, 'Eduardo', 'Cruz', 'Cortés', '1966-02-28', 'M', 'Insurgentes Sur', 'Tlalpan Centro', 'Guadalajara', 23790, 3, 395, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (415, 'Andrea', 'Herrera', 'Jiménez', '1969-06-21', 'M', 'Héroes de Chapultepec', 'Providencia', 'Guadalajara', 11626, 10, 125, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (416, 'Paula', 'Reyes', 'Arriaga', '1968-01-07', 'Otro', 'Calle Luna', 'Lindavista', 'Morelia', 75698, 7, 214, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (417, 'Marisol', 'Meléndez', 'Galindo', '1953-10-15', 'Otro', 'Calle Mérida', 'Escandón', 'León', 63515, 18, 361, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (418, 'Juan', 'Bautista', 'Rosales', '1985-10-27', 'M', 'Eje Central', 'Cumbres', 'Coatzacoalcos', 18116, 11, 161, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (419, 'Alejandra', 'Mendoza', 'Calderón', '1946-07-28', 'H', 'Avenida del Trabajo', 'Doctores', 'Reynosa', 81660, 4, 250, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (420, 'Sergio', 'Zamora', 'Mejía', '1991-09-11', 'Otro', 'Sendero del Bosque', 'Americana', 'Celaya', 99490, 7, 79, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (421, 'Fernanda', 'Zamora', 'Castillo', '1960-11-18', 'M', 'Calle 16 de Septiembre', 'Lindavista', 'Oaxaca', 10675, 7, 176, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (422, 'Ernesto', 'Cruz', 'Montes', '1979-07-17', 'Otro', 'Calle Durango', 'La Paz', 'Mérida', 83921, 13, 168, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (423, 'Iván', 'Rangel', 'Flores', '1992-11-22', 'H', 'Calle Magnolia', 'Doctores', 'Puebla', 88350, 17, 46, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (424, 'Marisol', 'Velasco', 'Valencia', '1963-07-24', 'H', 'Calle Oaxaca', 'Clavería', 'Matamoros', 23096, 18, 289, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (425, 'Pedro', 'Meléndez', 'Cortés', '1999-08-11', 'Otro', 'Calle Hidalgo', 'Nápoles', 'Guadalajara', 20362, 17, 387, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (426, 'Julián', 'Morales', 'Silva', '1965-10-21', 'M', 'Calle Emiliano Zapata', 'Del Valle', 'Cancún', 74972, 6, 347, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (427, 'Zoe', 'Delgado', 'Chávez', '1980-08-10', 'Otro', 'Calle 16 de Septiembre', 'Xilotzingo', 'Durango', 31917, 7, 179, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (428, 'Ernesto', 'Camacho', 'Jiménez', '1979-10-12', 'Otro', 'Calle de las Rosas', 'Mixcoac', 'Ciudad de México', 42286, 19, 103, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (429, 'Mauricio', 'Torres', 'Pérez', '1958-02-26', 'M', 'Camino Real', 'Cumbres', 'Durango', 49509, 14, 220, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (430, 'Rebeca', 'Esquivel', 'Sandoval', '1993-07-15', 'H', 'Camino Real', 'Cumbres', 'Culiacán', 12505, 1, 156, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (431, 'Miranda', 'Arriaga', 'Camacho', '1960-10-26', 'M', 'Calle del Sol', 'Del Valle', 'Hermosillo', 53435, 17, 160, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (432, 'Miguel', 'Torres', 'Figueroa', '1948-03-28', 'M', 'Avenida del Trabajo', 'Linda Vista', 'Oaxaca', 87544, 9, 42, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (433, 'Eduardo', 'Treviño', 'Bautista', '1962-01-19', 'H', 'Avenida Constitución', 'Roma Sur', 'Villahermosa', 35108, 12, 27, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (434, 'Victoria', 'Sánchez', 'Franco', '1986-08-31', 'H', 'Francisco I. Madero', 'San Manuel', 'Puebla', 21554, 7, 293, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (435, 'Julián', 'Velasco', 'Hernández', '1974-12-26', 'M', 'Calle Durango', 'Roma Sur', 'Aguascalientes', 15312, 17, 164, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (436, 'Luis', 'Figueroa', 'Silva', '1986-09-05', 'Otro', 'Avenida Patria', 'Polanco', 'Aguascalientes', 97676, 9, 3, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (437, 'Jimena', 'Valencia', 'Silva', '1981-10-18', 'Otro', 'Calle 16 de Septiembre', 'Lindavista', 'Coatzacoalcos', 37287, 7, 258, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (438, 'Gael', 'Delgado', 'Villalobos', '1992-07-24', 'H', 'Avenida Colón', 'San Ángel', 'Veracruz', 53549, 3, 177, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (439, 'Alejandra', 'Roldán', 'Mejía', '1984-01-08', 'H', 'Calle del Sol', 'San Pedro Garza García', 'Tepic', 12075, 7, 292, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (440, 'Ernesto', 'Esquivel', 'Figueroa', '1992-11-12', 'Otro', 'Francisco I. Madero', 'Coyoacán Centro', 'Morelia', 12627, 1, 275, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (441, 'Bianca', 'Luna', 'Pineda', '1955-10-06', 'Otro', 'Calzada Independencia', 'Cumbres', 'Aguascalientes', 78344, 11, 98, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (442, 'Francisco', 'Solís', 'Calderón', '1955-01-28', 'M', 'Avenida del Trabajo', 'Juárez', 'Veracruz', 42378, 8, 62, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (443, 'Marisol', 'Estrada', 'Ruiz', '1983-12-09', 'M', 'Calle Norte 45', 'Roma Sur', 'Coatzacoalcos', 43599, 12, 374, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (444, 'Luis', 'Valdez', 'Rodríguez', '1971-09-28', 'H', 'Calle Emiliano Zapata', 'Condesa', 'Ciudad de México', 65928, 17, 155, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (445, 'Renata', 'Acosta', 'Vargas', '1946-11-07', 'M', 'Francisco I. Madero', 'Chuburná', 'Celaya', 65968, 0, 88, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (446, 'Alejandra', 'Sandoval', 'Jiménez', '1963-11-25', 'Otro', 'Calle Nueva Era', 'Coyoacán Centro', 'Guadalajara', 32210, 7, 71, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (447, 'José', 'Treviño', 'Aguilar', '1977-06-30', 'H', 'Calle de las Rosas', 'Las Américas', 'León', 35055, 17, 279, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (448, 'Rebeca', 'Villalobos', 'Mejía', '1991-06-03', 'Otro', 'Calle Emiliano Zapata', 'Del Valle', 'Tijuana', 59569, 3, 30, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (449, 'Francisco', 'Treviño', 'Ramírez', '1986-05-29', 'M', 'Héroes de Chapultepec', 'Oblatos', 'Aguascalientes', 40695, 15, 25, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (450, 'Ximena', 'Fuentes', 'Luna', '1968-06-13', 'M', 'Calle Sur 20', 'Copilco', 'Durango', 70627, 10, 274, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (451, 'Raúl', 'Calderón', 'Serna', '1974-12-07', 'M', 'Calle Río Lerma', 'Copilco', 'Matamoros', 71932, 13, 42, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (452, 'Carlos', 'Zamora', 'Mejía', '2001-05-20', 'Otro', 'Calzada Independencia', 'San Pedro Garza García', 'La Paz', 67162, 9, 191, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (453, 'Adrián', 'Pineda', 'Gómez', '1975-11-12', 'M', 'Camino Real', 'Xilotzingo', 'Villahermosa', 10622, 18, 1, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (454, 'Rebeca', 'Delgado', 'Treviño', '1966-03-26', 'M', 'Calle Emiliano Zapata', 'Providencia', 'Puebla', 36969, 9, 113, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (455, 'Carlos', 'Ramos', 'Pérez', '1960-03-22', 'M', 'Calzada Independencia', 'Anzures', 'Saltillo', 79369, 18, 174, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (456, 'Mario', 'Morales', 'Cruz', '1985-11-04', 'Otro', 'Avenida Colón', 'Del Valle', 'Cancún', 95169, 0, 168, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (457, 'María', 'Arriaga', 'Peña', '1999-07-05', 'Otro', 'Avenida Constitución', 'Linda Vista', 'Irapuato', 57144, 5, 124, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (458, 'Eduardo', 'Morales', 'Valdez', '1973-05-03', 'H', 'Calle de las Rosas', 'Clavería', 'Culiacán', 60656, 5, 241, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (459, 'Luna', 'Cruz', 'Padilla', '1992-03-20', 'Otro', 'Calle Sur 20', 'Juárez', 'Toluca', 30640, 17, 85, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (460, 'Julián', 'Figueroa', 'Meléndez', '1971-12-28', 'Otro', 'Francisco I. Madero', 'Lindavista', 'Oaxaca', 47200, 0, 230, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (461, 'Camila', 'Zamora', 'Valdez', '1959-07-26', 'H', 'Calle de las Rosas', 'San Ángel', 'Tijuana', 16760, 6, 157, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (462, 'Paula', 'López', 'Cortés', '1989-03-17', 'H', 'Calle Morelos', 'Cumbres', 'Tuxtla Gutiérrez', 23679, 10, 361, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (463, 'Jorge', 'Treviño', 'Nava', '1960-06-14', 'Otro', 'Privada San Diego', 'Huinalá', 'Oaxaca', 79767, 13, 231, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (464, 'Luna', 'Acosta', 'Montes', '1960-01-25', 'H', 'Avenida Colón', 'La Paz', 'Celaya', 55654, 17, 8, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (465, 'Sofía', 'Figueroa', 'Ochoa', '1983-03-14', 'M', 'Privada Jardines', 'San Manuel', 'Irapuato', 55747, 15, 113, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (466, 'Mario', 'Camacho', 'Herrera', '1958-03-27', 'M', 'Boulevard Díaz Ordaz', 'Cumbres', 'Mérida', 32759, 2, 202, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (467, 'Gael', 'Ruiz', 'Estrada', '1954-02-11', 'Otro', 'Avenida Reforma', 'San Nicolás', 'Veracruz', 60938, 15, 139, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (468, 'Gael', 'Ramos', 'Morales', '1970-02-21', 'Otro', 'Sendero del Bosque', 'Lindavista', 'Ciudad de México', 71909, 11, 149, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (469, 'Diego', 'Pineda', 'Salinas', '1972-05-26', 'Otro', 'Calle Río Lerma', 'Xilotzingo', 'Mérida', 57260, 12, 68, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (470, 'Bianca', 'Silva', 'Ochoa', '1984-03-24', 'H', 'Calle de las Rosas', 'Itzimná', 'Saltillo', 96509, 5, 308, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (471, 'Sofía', 'Aguilar', 'Herrera', '1978-10-08', 'H', 'Calle Hidalgo', 'Doctores', 'Matamoros', 14085, 2, 20, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (472, 'Bianca', 'Martínez', 'Calderón', '1953-07-09', 'M', 'Héroes de Chapultepec', 'Las Américas', 'Tuxtla Gutiérrez', 28209, 11, 264, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (473, 'María', 'Castillo', 'Rodríguez', '1965-04-20', 'H', 'Calzada de Tlalpan', 'Itzimná', 'Chihuahua', 55382, 6, 179, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (474, 'Elena', 'Cruz', 'Hernández', '1950-06-29', 'M', 'Francisco I. Madero', 'Oblatos', 'Saltillo', 19499, 13, 149, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (475, 'David', 'Pineda', 'Ramírez', '1980-05-29', 'M', 'Calle Sur 20', 'San Manuel', 'Tuxtla Gutiérrez', 89538, 16, 129, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (476, 'Elena', 'Escobar', 'Delgado', '1952-07-03', 'Otro', 'Héroes de Chapultepec', 'San Pedro Garza García', 'Aguascalientes', 95355, 14, 318, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (477, 'Fernanda', 'Ochoa', 'Rodríguez', '1986-10-17', 'H', 'Calle Luna', 'Providencia', 'Hermosillo', 41241, 12, 387, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (478, 'Ángel', 'Treviño', 'Valdez', '1975-03-14', 'M', 'Calle Tabasco', 'Mixcoac', 'Puebla', 56253, 18, 123, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (479, 'Ximena', 'Morales', 'Mejía', '1977-11-18', 'H', 'Boulevard Díaz Ordaz', 'Tlalpan Centro', 'Mérida', 57008, 7, 167, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (480, 'Rebeca', 'Acosta', 'Estrada', '1967-11-03', 'Otro', 'Calle Emiliano Zapata', 'Roma Sur', 'Reynosa', 57690, 15, 268, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (481, 'Juan', 'Herrera', 'Escobar', '1972-10-02', 'Otro', 'Calle Emiliano Zapata', 'Polanco', 'Celaya', 51519, 8, 69, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (482, 'Mauricio', 'Cruz', 'Cruz', '1958-04-21', 'H', 'Calle Hidalgo', 'Anzures', 'Tepic', 11560, 1, 387, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (483, 'Victoria', 'Juárez', 'Acosta', '1967-07-11', 'Otro', 'Avenida Universidad', 'Americana', 'Celaya', 75762, 20, 169, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (484, 'Ariana', 'Fuentes', 'Gómez', '1957-06-16', 'M', 'Calle Magnolia', 'Condesa', 'León', 44524, 10, 257, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (485, 'Camila', 'Nava', 'González', '1980-02-15', 'M', 'Insurgentes Sur', 'Huinalá', 'Reynosa', 32673, 8, 28, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (486, 'Jorge', 'Delgado', 'Ruiz', '1985-07-09', 'H', 'Calle Mérida', 'Tlalpan Centro', 'Ciudad de México', 86690, 19, 190, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (487, 'Sebastián', 'Hernández', 'Arriaga', '1960-09-12', 'Otro', 'Calle Sur 20', 'Escandón', 'Chihuahua', 39205, 2, 358, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (488, 'Iván', 'Pérez', 'Ruiz', '1948-10-08', 'Otro', 'Calle del Sol', 'Mixcoac', 'Durango', 39030, 11, 283, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (489, 'Julián', 'Torres', 'Luna', '1954-10-01', 'H', 'Francisco I. Madero', 'San Manuel', 'Matamoros', 41687, 15, 76, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (490, 'Gael', 'Mejía', 'Solís', '1973-06-16', 'Otro', 'Calle Río Lerma', 'Huinalá', 'Culiacán', 12081, 20, 234, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (491, 'Renata', 'Castillo', 'Torres', '1993-06-09', 'M', 'Calle Durango', 'Condesa', 'Matamoros', 53848, 14, 253, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (492, 'Sofía', 'Rangel', 'Cortés', '1978-09-23', 'M', 'Boulevard Díaz Ordaz', 'Itzimná', 'Mérida', 37440, 1, 93, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (493, 'Ernesto', 'Ruiz', 'Flores', '1958-01-29', 'H', 'Calle Morelos', 'Copilco', 'Oaxaca', 14468, 11, 345, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (494, 'Alejandra', 'Montes', 'Meléndez', '1971-02-20', 'M', 'Avenida Reforma', 'Centro Monterrey', 'León', 33893, 12, 114, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (495, 'Ángel', 'Meléndez', 'Meléndez', '1957-01-31', 'Otro', 'Avenida Universidad', 'Del Valle', 'Querétaro', 70855, 10, 362, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (496, 'Andrea', 'Ochoa', 'Rangel', '1951-02-25', 'M', 'Privada Jardines', 'San Nicolás', 'La Paz', 96679, 17, 247, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (497, 'Adrián', 'Mendoza', 'Valencia', '1970-09-17', 'M', 'Privada San Diego', 'Condesa', 'Celaya', 92632, 2, 306, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (498, 'Lucía', 'Castillo', 'Ramírez', '1981-12-24', 'H', 'Calle Palmeras', 'Juárez', 'Ensenada', 43634, 8, 241, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (499, 'Luis', 'Velasco', 'Mejía', '1987-03-06', 'H', 'Calle Magnolia', 'Chapalita', 'Saltillo', 66821, 8, 14, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (500, 'Gabriela', 'Serna', 'Padilla', '1974-08-29', 'Otro', 'Calle Morelos', 'La Paz', 'Irapuato', 41218, 4, 334, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (501, 'Eduardo', 'Valdez', 'Padilla', '1958-04-21', 'H', 'Calle Emiliano Zapata', 'Itzimná', 'Monterrey', 19303, 6, 396, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (502, 'Diego', 'Solís', 'Flores', '1993-08-11', 'H', 'Avenida Universidad', 'Juárez', 'Chihuahua', 62563, 8, 367, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (503, 'Jimena', 'Meléndez', 'Cortés', '1980-09-02', 'M', 'Calle Hidalgo', 'Clavería', 'Toluca', 41130, 15, 241, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (504, 'Fernanda', 'Camacho', 'Herrera', '1963-06-03', 'M', 'Avenida Constitución', 'Santa María la Ribera', 'Culiacán', 42915, 8, 176, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (505, 'Andrea', 'Chávez', 'Esquivel', '1974-07-24', 'Otro', 'Boulevard Díaz Ordaz', 'Mixcoac', 'Guadalajara', 55062, 11, 339, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (506, 'Francisco', 'Rangel', 'Zamora', '1982-07-18', 'H', 'Benito Juárez', 'Roma Sur', 'Ensenada', 62635, 17, 329, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (507, 'Luna', 'Ruiz', 'Castillo', '1967-10-13', 'Otro', 'Sendero del Bosque', 'Escandón', 'Veracruz', 48595, 8, 200, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (508, 'Adrián', 'Roldán', 'Estrada', '1962-12-22', 'H', 'Calle Palmeras', 'Azcapotzalco', 'Irapuato', 51603, 5, 218, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (509, 'Jimena', 'Rosales', 'Acosta', '1951-09-14', 'H', 'Avenida Constitución', 'Del Valle', 'Celaya', 83055, 11, 40, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (510, 'Jorge', 'Serna', 'Luna', '1967-03-10', 'M', 'Sendero del Bosque', 'Azcapotzalco', 'Tijuana', 19955, 16, 321, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (511, 'Camila', 'Silva', 'Camacho', '1950-02-06', 'Otro', 'Avenida Gonzalitos', 'Centro Monterrey', 'Tepic', 36169, 4, 260, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (512, 'Elena', 'Díaz', 'Escobar', '1964-08-16', 'Otro', 'Avenida Reforma', 'Huexotitla', 'Mazatlán', 62020, 3, 263, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (513, 'Mario', 'Herrera', 'García', '1970-12-21', 'H', 'Privada Jardines', 'Linda Vista', 'Villahermosa', 90217, 0, 15, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (514, 'Mauricio', 'Acosta', 'Villalobos', '1959-08-07', 'M', 'Boulevard Díaz Ordaz', 'Roma Norte', 'Tuxtla Gutiérrez', 55215, 19, 234, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (515, 'Fernanda', 'Delgado', 'Villalobos', '1956-04-22', 'H', 'Avenida Constitución', 'Nápoles', 'Tepic', 74103, 3, 43, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (516, 'Bianca', 'Pineda', 'Fuentes', '1987-05-16', 'H', 'Calle Oaxaca', 'Analco', 'Monterrey', 21769, 11, 96, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (517, 'Sofía', 'Silva', 'Herrera', '1975-09-12', 'M', 'Camino Viejo', 'Mixcoac', 'Matamoros', 80698, 8, 280, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (518, 'Valeria', 'Arriaga', 'Vargas', '1981-02-02', 'H', 'Calle Magnolia', 'Polanco', 'Saltillo', 29453, 0, 269, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (519, 'Mario', 'Flores', 'Fuentes', '1983-12-11', 'H', 'Avenida Universidad', 'Centro Monterrey', 'Saltillo', 29460, 13, 302, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (520, 'Ariana', 'Meléndez', 'Herrera', '1980-06-02', 'M', 'Benito Juárez', 'La Paz', 'Ensenada', 79081, 12, 251, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (521, 'Ana', 'Salinas', 'González', '1954-12-01', 'H', 'Avenida Universidad', 'Coyoacán Centro', 'Coatzacoalcos', 75419, 6, 375, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (522, 'Rubén', 'Morales', 'Velasco', '1961-11-02', 'Otro', 'Calle Norte 45', 'Oblatos', 'Ciudad de México', 33318, 14, 101, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (523, 'Sebastián', 'Gómez', 'Arriaga', '1968-01-02', 'Otro', 'Calle Emiliano Zapata', 'Polanco', 'León', 48031, 18, 270, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (524, 'José', 'Franco', 'Roldán', '1964-02-18', 'Otro', 'Sendero del Bosque', 'Santa María la Ribera', 'Toluca', 69892, 12, 217, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (525, 'Bianca', 'Rosales', 'Sánchez', '1954-12-21', 'M', 'Calle Morelos', 'Analco', 'Guadalajara', 70546, 19, 313, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (526, 'Jorge', 'García', 'Fuentes', '1947-04-09', 'H', 'Calle Oaxaca', 'Roma Sur', 'Celaya', 52773, 9, 344, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (527, 'Raúl', 'Pineda', 'García', '1986-10-07', 'H', 'Calle Morelos', 'Las Américas', 'Culiacán', 72962, 6, 288, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (528, 'David', 'Jiménez', 'Rangel', '1962-09-05', 'H', 'Francisco I. Madero', 'Clavería', 'Matamoros', 74602, 16, 66, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (529, 'José', 'Delgado', 'Díaz', '1958-10-06', 'H', 'Francisco I. Madero', 'Huinalá', 'Cancún', 39886, 2, 342, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (530, 'Tomás', 'Calderón', 'Jiménez', '1967-09-25', 'Otro', 'Calle Morelos', 'Copilco', 'Guadalajara', 54909, 2, 127, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (531, 'Fátima', 'Hernández', 'Esquivel', '1973-06-13', 'Otro', 'Avenida Colón', 'Cumbres', 'Puebla', 81317, 2, 371, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (532, 'María', 'Luna', 'Villalobos', '1957-08-05', 'H', 'Calle Palmeras', 'Copilco', 'Toluca', 40298, 18, 220, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (533, 'Renata', 'Montes', 'Figueroa', '1964-09-27', 'H', 'Calle Morelos', 'San Nicolás', 'Morelia', 33546, 20, 153, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (534, 'Adrián', 'Martínez', 'Cortés', '1960-11-12', 'H', 'Calle Río Lerma', 'Chapalita', 'Toluca', 62276, 1, 319, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (535, 'Emilio', 'Roldán', 'Mendoza', '1970-08-05', 'M', 'Calle Oaxaca', 'Polanco', 'Hermosillo', 57057, 4, 21, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (536, 'Jimena', 'Ochoa', 'Delgado', '1963-10-28', 'Otro', 'Calle Oaxaca', 'Centro Monterrey', 'Culiacán', 19299, 17, 195, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (537, 'Renata', 'Aguilar', 'Aguilar', '1956-07-10', 'H', 'Calle Oaxaca', 'Americana', 'Hermosillo', 76766, 1, 117, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (538, 'Eduardo', 'Cortés', 'Franco', '1972-11-19', 'M', 'Insurgentes Sur', 'Clavería', 'Matamoros', 19822, 12, 86, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (539, 'Ana', 'Morales', 'Meléndez', '1991-08-18', 'H', 'Calle Tabasco', 'Escandón', 'Mérida', 64643, 3, 239, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (540, 'Ernesto', 'Ramírez', 'Hernández', '1961-04-24', 'H', 'Avenida Constitución', 'Lindavista', 'Tijuana', 82342, 19, 77, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (541, 'Sergio', 'Camacho', 'Jiménez', '1969-01-04', 'M', 'Avenida Colón', 'Santa María la Ribera', 'Monterrey', 29352, 15, 354, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (542, 'Sergio', 'Peña', 'Herrera', '1988-11-03', 'M', 'Benito Juárez', 'Narvarte', 'Toluca', 62058, 6, 354, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (543, 'Eduardo', 'Hernández', 'Hernández', '1955-01-31', 'Otro', 'Benito Juárez', 'Condesa', 'Matamoros', 25697, 8, 44, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (544, 'Mario', 'Mendoza', 'Delgado', '1954-01-07', 'M', 'Avenida Patria', 'Condesa', 'Mérida', 60360, 16, 207, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (545, 'Fátima', 'Salazar', 'Ruiz', '1945-03-24', 'Otro', 'Avenida Gonzalitos', 'Narvarte', 'Saltillo', 91805, 6, 264, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (546, 'Ximena', 'Calderón', 'Ortiz', '1986-01-29', 'M', 'Calle Hidalgo', 'Analco', 'Ensenada', 46634, 5, 183, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (547, 'Jimena', 'Arriaga', 'Ruiz', '1989-03-30', 'M', 'Calle Norte 45', 'Doctores', 'Villahermosa', 21694, 10, 29, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (548, 'Mateo', 'Castillo', 'Camacho', '1973-10-14', 'M', 'Privada San Diego', 'San Nicolás', 'Tepic', 85079, 12, 51, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (549, 'Rebeca', 'Morales', 'Pérez', '1973-01-07', 'H', 'Sendero del Bosque', 'Analco', 'La Paz', 95326, 12, 71, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (550, 'Mateo', 'Fuentes', 'Zamora', '1980-02-10', 'M', 'Calle Magnolia', 'Doctores', 'Chihuahua', 38716, 13, 270, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (551, 'José', 'Salazar', 'Aguilar', '1989-04-08', 'H', 'Calle 16 de Septiembre', 'Narvarte', 'Villahermosa', 28907, 9, 395, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (552, 'Iván', 'Sánchez', 'Peña', '1969-02-10', 'H', 'Calle Luna', 'Del Valle', 'Reynosa', 52050, 8, 52, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (553, 'Carlos', 'Fuentes', 'Arriaga', '1955-11-19', 'H', 'Calle Sur 20', 'Del Valle', 'Toluca', 24666, 0, 110, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (554, 'Miguel', 'Delgado', 'Treviño', '1977-01-11', 'Otro', 'Sendero del Bosque', 'Tlalpan Centro', 'Hermosillo', 46769, 13, 191, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (555, 'David', 'Roldán', 'Mendoza', '1988-10-29', 'H', 'Privada San Diego', 'Lindavista', 'Irapuato', 48012, 12, 115, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (556, 'Ana', 'Fuentes', 'Salinas', '1971-02-21', 'Otro', 'Calle Oaxaca', 'Santa María la Ribera', 'Mazatlán', 22228, 3, 356, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (557, 'Ximena', 'Montes', 'Cruz', '1988-06-10', 'M', 'Calzada de Tlalpan', 'La Paz', 'La Paz', 99303, 8, 78, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (558, 'Emilio', 'González', 'Salinas', '1965-04-17', 'M', 'Calle Luna', 'Tlalpan Centro', 'Saltillo', 92930, 13, 28, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (559, 'Mateo', 'Sandoval', 'Pérez', '1990-04-07', 'M', 'Calle Durango', 'Mixcoac', 'Cancún', 64167, 0, 192, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (560, 'Renata', 'Herrera', 'Galindo', '1983-07-30', 'H', 'Calzada de Tlalpan', 'Juárez', 'Saltillo', 96891, 6, 329, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (561, 'Juan', 'Martínez', 'Estrada', '1962-02-02', 'M', 'Calle Norte 45', 'Providencia', 'Tijuana', 86963, 8, 295, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (562, 'Sebastián', 'Pérez', 'Cortés', '1986-08-08', 'M', 'Avenida Universidad', 'Condesa', 'Morelia', 19566, 5, 4, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (563, 'Mateo', 'Hernández', 'Nava', '1951-10-16', 'Otro', 'Eje Central', 'Analco', 'Ensenada', 29778, 6, 283, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (564, 'Daniela', 'Morales', 'Franco', '1973-09-04', 'M', 'Benito Juárez', 'Del Valle', 'Oaxaca', 86267, 0, 19, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (565, 'Mateo', 'Estrada', 'Hernández', '1985-03-17', 'Otro', 'Avenida del Trabajo', 'Roma Sur', 'Tijuana', 96776, 19, 224, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (566, 'Iván', 'García', 'Aguilar', '2001-05-10', 'H', 'Avenida del Trabajo', 'Azcapotzalco', 'Oaxaca', 28846, 4, 302, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (567, 'Daniela', 'Cruz', 'Cruz', '1989-11-06', 'H', 'Calle Río Mixcoac', 'Centro Monterrey', 'Irapuato', 69071, 8, 41, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (568, 'Ángel', 'Silva', 'Herrera', '1986-07-21', 'H', 'Avenida Constitución', 'Linda Vista', 'Aguascalientes', 75425, 12, 50, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (569, 'Zoe', 'González', 'Silva', '1978-04-13', 'H', 'Calle Oaxaca', 'Centro Monterrey', 'Morelia', 86470, 1, 145, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (570, 'Iván', 'Pérez', 'Calderón', '1987-03-16', 'M', 'Calle Palmeras', 'San Nicolás', 'Monterrey', 31833, 7, 236, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (571, 'Fátima', 'Galindo', 'Ramos', '1948-01-16', 'M', 'Insurgentes Sur', 'Centro Monterrey', 'Tepic', 19140, 7, 232, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (572, 'Jimena', 'Solís', 'Valdez', '1957-09-21', 'Otro', 'Calle Oaxaca', 'Linda Vista', 'Hermosillo', 93476, 12, 345, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (573, 'Pedro', 'Aguilar', 'Galindo', '1969-07-29', 'M', 'Calle Sur 20', 'Tlalpan Centro', 'Hermosillo', 97421, 0, 130, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (574, 'Diego', 'Villalobos', 'Valdez', '1971-09-30', 'H', 'Camino Viejo', 'Condesa', 'Saltillo', 54867, 15, 159, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (575, 'Juan', 'Villalobos', 'Bautista', '1969-01-17', 'M', 'Calle Oaxaca', 'Escandón', 'Reynosa', 17358, 8, 193, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (576, 'Alondra', 'Silva', 'Aguilar', '1973-01-28', 'M', 'Benito Juárez', 'Huinalá', 'Celaya', 26612, 14, 289, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (577, 'Camila', 'López', 'González', '1973-04-24', 'Otro', 'Benito Juárez', 'Condesa', 'Mérida', 35787, 18, 350, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (578, 'Diego', 'Cruz', 'Juárez', '1987-01-09', 'Otro', 'Avenida Colón', 'Lindavista', 'Tepic', 25986, 14, 273, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (579, 'Mauricio', 'Arriaga', 'Esquivel', '1968-06-26', 'Otro', 'Calle Río Mixcoac', 'Providencia', 'Matamoros', 76240, 6, 302, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (580, 'Bianca', 'Acosta', 'Roldán', '1984-01-11', 'H', 'Calle Norte 45', 'Juárez', 'Monterrey', 14545, 2, 336, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (581, 'Ángel', 'Navarrete', 'Rosales', '1962-08-22', 'H', 'Camino Viejo', 'Chuburná', 'La Paz', 76107, 17, 296, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (582, 'Sergio', 'Salinas', 'Torres', '1966-09-17', 'M', 'Avenida Reforma', 'Del Valle', 'Durango', 82621, 6, 269, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (583, 'Fernanda', 'Acosta', 'Meléndez', '1985-04-25', 'H', 'Avenida Colón', 'Chapalita', 'Reynosa', 42191, 7, 78, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (584, 'Sebastián', 'Martínez', 'Bautista', '1987-07-29', 'Otro', 'Benito Juárez', 'Copilco', 'Aguascalientes', 91502, 4, 352, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (585, 'Rebeca', 'Rosales', 'Morales', '1956-05-23', 'M', 'Calle 16 de Septiembre', 'Cumbres', 'La Paz', 69314, 0, 89, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (586, 'Emilio', 'Pérez', 'Sandoval', '1963-07-16', 'M', 'Privada San Diego', 'Huinalá', 'Tijuana', 54771, 1, 91, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (587, 'Romina', 'Villalobos', 'Rodríguez', '1987-12-29', 'M', 'Calle Norte 45', 'Polanco', 'Aguascalientes', 86878, 2, 70, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (588, 'Gael', 'Delgado', 'Mejía', '1969-02-06', 'H', 'Calle de las Rosas', 'Analco', 'Cancún', 22604, 12, 222, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (589, 'Elena', 'Cruz', 'Figueroa', '1953-08-05', 'H', 'Eje Central', 'Del Valle', 'Cancún', 17066, 11, 394, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (590, 'Raúl', 'Valencia', 'Camacho', '1976-08-08', 'M', 'Avenida Patria', 'Americana', 'Puebla', 11080, 12, 351, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (591, 'Bianca', 'Pérez', 'Estrada', '1979-11-14', 'M', 'Calle de las Rosas', 'Las Américas', 'Durango', 46120, 4, 141, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (592, 'Diego', 'Galindo', 'Valdez', '1963-02-12', 'M', 'Calle Oaxaca', 'Doctores', 'Tijuana', 48936, 20, 295, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (593, 'Andrea', 'Hernández', 'González', '1955-10-25', 'H', 'Avenida del Trabajo', 'Doctores', 'Puebla', 64875, 2, 26, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (594, 'Lucía', 'Serna', 'Torres', '1985-10-21', 'Otro', 'Calle Emiliano Zapata', 'Narvarte', 'Monterrey', 46988, 12, 157, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (595, 'Valeria', 'Castillo', 'Ortiz', '1956-11-10', 'H', 'Calle de las Rosas', 'Mixcoac', 'Mazatlán', 17613, 20, 305, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (596, 'Gabriela', 'Ochoa', 'Herrera', '1969-08-21', 'H', 'Calzada de Tlalpan', 'Condesa', 'Querétaro', 76322, 18, 232, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (597, 'Sofía', 'López', 'Morales', '1979-06-17', 'H', 'Calle Morelos', 'Condesa', 'León', 37976, 2, 5, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (598, 'Sebastián', 'Calderón', 'Zamora', '1977-09-07', 'M', 'Prolongación Zaragoza', 'Xilotzingo', 'Aguascalientes', 26109, 11, 98, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (599, 'Ariana', 'Galindo', 'Hernández', '1994-08-10', 'Otro', 'Calle Sur 20', 'Huinalá', 'Ciudad de México', 84206, 1, 260, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (600, 'Fátima', 'Serna', 'Galindo', '1980-06-03', 'M', 'Calle Nueva Era', 'Escandón', 'Matamoros', 99124, 7, 284, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (601, 'Sofía', 'Cedillo', 'Valencia', '1985-10-23', 'M', 'Calle Sur 20', 'Coyoacán Centro', 'Toluca', 49845, 2, 394, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (602, 'Mario', 'García', 'Ramírez', '1969-05-27', 'Otro', 'Privada Jardines', 'Del Valle', 'Cancún', 96726, 17, 278, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (603, 'Francisco', 'Flores', 'Pérez', '1967-05-19', 'M', 'Calle de las Rosas', 'Polanco', 'Mazatlán', 54968, 20, 273, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (604, 'Mauricio', 'Figueroa', 'García', '1984-07-26', 'M', 'Calle Norte 45', 'Centro Monterrey', 'Puebla', 37298, 3, 141, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (605, 'Mario', 'Martínez', 'Meléndez', '1969-05-01', 'H', 'Avenida Constitución', 'Las Américas', 'Saltillo', 69298, 14, 27, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (606, 'Luis', 'Torres', 'Sánchez', '1975-07-16', 'M', 'Calle de las Rosas', 'Juárez', 'Matamoros', 17400, 5, 50, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (607, 'Alondra', 'Navarrete', 'Peña', '1961-09-23', 'M', 'Camino Viejo', 'Nápoles', 'Monterrey', 54480, 15, 61, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (608, 'Francisco', 'Escobar', 'Peña', '1983-02-24', 'Otro', 'Calle Durango', 'Oblatos', 'Cancún', 27557, 14, 14, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (609, 'Luna', 'Villalobos', 'Mejía', '1975-03-14', 'H', 'Héroes de Chapultepec', 'Analco', 'Mérida', 63402, 7, 332, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (610, 'Miguel', 'Sánchez', 'Solís', '1948-04-20', 'H', 'Héroes de Chapultepec', 'Copilco', 'Matamoros', 61900, 20, 75, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (611, 'Sebastián', 'Galindo', 'Valdez', '1950-12-31', 'Otro', 'Avenida Gonzalitos', 'Azcapotzalco', 'Saltillo', 41051, 5, 385, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (612, 'Ana', 'Torres', 'Reyes', '1970-07-06', 'H', 'Calle del Sol', 'Condesa', 'Reynosa', 73750, 14, 48, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (613, 'Alejandra', 'Ramos', 'Zamora', '1956-05-21', 'H', 'Camino Real', 'Tlalpan Centro', 'Aguascalientes', 71155, 11, 182, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (614, 'Marisol', 'Hernández', 'García', '1950-01-04', 'M', 'Calle del Sol', 'Azcapotzalco', 'Coatzacoalcos', 68520, 20, 333, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (615, 'Emilio', 'Vargas', 'Juárez', '1963-08-06', 'Otro', 'Calle del Sol', 'Del Valle', 'Hermosillo', 36380, 5, 156, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (616, 'Mateo', 'Cruz', 'López', '1960-04-23', 'H', 'Calle Magnolia', 'Cumbres', 'Puebla', 61382, 11, 150, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (617, 'Sofía', 'Ramírez', 'Luna', '1981-04-26', 'M', 'Calle Luna', 'Juárez', 'Villahermosa', 87648, 2, 53, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (618, 'Bianca', 'Pineda', 'Juárez', '1949-12-15', 'H', 'Calle Sur 20', 'Condesa', 'Villahermosa', 14735, 19, 204, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (619, 'Adrián', 'Jiménez', 'Montes', '1975-12-14', 'M', 'Calle Mérida', 'Chuburná', 'Aguascalientes', 72919, 17, 68, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (620, 'Iván', 'Rangel', 'Nava', '1953-05-18', 'Otro', 'Calle Durango', 'Tacubaya', 'Oaxaca', 88431, 6, 73, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (621, 'Paula', 'Calderón', 'Meléndez', '1970-01-24', 'Otro', 'Sendero del Bosque', 'Las Américas', 'Morelia', 25307, 5, 154, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (622, 'Bianca', 'Solís', 'Solís', '1987-02-22', 'M', 'Camino Real', 'Narvarte', 'La Paz', 30255, 12, 275, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (623, 'Luis', 'Peña', 'Vargas', '1948-10-04', 'M', 'Calle de las Rosas', 'Roma Sur', 'Reynosa', 31071, 15, 33, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (624, 'José', 'Juárez', 'Estrada', '1984-02-16', 'M', 'Calle del Sol', 'Escandón', 'León', 41491, 7, 349, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (625, 'Montserrat', 'Navarrete', 'Flores', '1965-10-15', 'H', 'Calle Palmeras', 'Juárez', 'Coatzacoalcos', 92746, 20, 192, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (626, 'José', 'Villalobos', 'Navarrete', '1973-09-07', 'M', 'Avenida Gonzalitos', 'Polanco', 'Ensenada', 87094, 3, 63, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (627, 'Miguel', 'Calderón', 'Herrera', '1956-03-11', 'M', 'Héroes de Chapultepec', 'Clavería', 'Monterrey', 23820, 20, 330, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (628, 'Diego', 'González', 'Treviño', '1963-01-29', 'Otro', 'Calle Magnolia', 'Xilotzingo', 'Tepic', 70730, 12, 67, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (629, 'Ángel', 'Galindo', 'Gómez', '1956-06-26', 'M', 'Calle Sur 20', 'San Ángel', 'Coatzacoalcos', 65872, 17, 287, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (630, 'Rebeca', 'Flores', 'Ochoa', '1976-11-30', 'H', 'Insurgentes Sur', 'Nápoles', 'Coatzacoalcos', 14849, 16, 292, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (631, 'Lucía', 'Gómez', 'Peña', '1981-12-02', 'H', 'Eje Central', 'Juárez', 'Aguascalientes', 59042, 10, 76, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (632, 'Daniela', 'Rosales', 'Figueroa', '1976-12-06', 'Otro', 'Avenida del Trabajo', 'Providencia', 'Hermosillo', 42112, 3, 326, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (633, 'Carlos', 'González', 'Castillo', '1984-09-24', 'M', 'Avenida Gonzalitos', 'Chuburná', 'Reynosa', 46304, 19, 52, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (634, 'Miranda', 'Nava', 'Treviño', '1981-05-03', 'H', 'Calle Río Mixcoac', 'Analco', 'Mazatlán', 25607, 17, 158, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (635, 'Miguel', 'Acosta', 'Mejía', '1985-07-17', 'Otro', 'Calle Durango', 'Tacubaya', 'Toluca', 57967, 3, 294, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (636, 'Alondra', 'Chávez', 'Ramos', '1969-12-27', 'H', 'Calle del Sol', 'Roma Norte', 'Culiacán', 71878, 2, 367, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (637, 'Julián', 'Castillo', 'Navarrete', '1965-06-28', 'Otro', 'Calle Nueva Era', 'Clavería', 'Oaxaca', 80934, 18, 390, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (638, 'María', 'Bautista', 'Aguilar', '1966-03-27', 'Otro', 'Camino Real', 'Clavería', 'Ensenada', 21202, 16, 114, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (639, 'Camila', 'Gómez', 'Nava', '1980-08-18', 'Otro', 'Privada San Diego', 'Las Américas', 'Mazatlán', 17619, 4, 236, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (640, 'Mauricio', 'Ochoa', 'Ochoa', '1962-03-29', 'Otro', 'Calle Río Mixcoac', 'San Ángel', 'Tuxtla Gutiérrez', 53049, 1, 206, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (641, 'Adrián', 'Ruiz', 'Ramos', '1982-07-17', 'Otro', 'Calle Oaxaca', 'Las Américas', 'Mérida', 19268, 12, 142, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (642, 'Iván', 'Aguilar', 'Pérez', '1984-03-30', 'M', 'Calle Emiliano Zapata', 'San Nicolás', 'Ciudad de México', 77278, 9, 332, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (643, 'Fátima', 'Escobar', 'Cedillo', '1966-03-07', 'H', 'Privada Jardines', 'Santa María la Ribera', 'Morelia', 42679, 13, 333, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (644, 'Julián', 'Flores', 'Sánchez', '1958-04-17', 'Otro', 'Calle Morelos', 'Doctores', 'Querétaro', 71121, 2, 271, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (645, 'Victoria', 'Díaz', 'Martínez', '1981-10-13', 'Otro', 'Calle Emiliano Zapata', 'Roma Norte', 'Tepic', 66183, 18, 158, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (646, 'Camila', 'Sandoval', 'Valencia', '1976-12-28', 'Otro', 'Privada San Diego', 'Narvarte', 'Ciudad de México', 47952, 0, 324, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (647, 'Diego', 'Navarrete', 'Chávez', '1958-04-04', 'Otro', 'Privada Jardines', 'Americana', 'Hermosillo', 77218, 7, 255, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (648, 'Valeria', 'Delgado', 'Arriaga', '1959-03-19', 'Otro', 'Camino Real', 'San Ángel', 'Toluca', 94677, 2, 43, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (649, 'Romina', 'Juárez', 'González', '1950-05-31', 'Otro', 'Sendero del Bosque', 'Condesa', 'León', 49158, 10, 91, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (650, 'Miguel', 'Camacho', 'Franco', '1971-09-16', 'H', 'Camino Viejo', 'Tacubaya', 'Tepic', 42589, 5, 245, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (651, 'Leonardo', 'Reyes', 'Rangel', '1960-11-03', 'H', 'Calle Oaxaca', 'Narvarte', 'Irapuato', 25480, 11, 218, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (652, 'Emilio', 'Pineda', 'Figueroa', '1980-04-14', 'H', 'Avenida Reforma', 'Oblatos', 'Toluca', 21088, 4, 380, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (653, 'Leonardo', 'Ochoa', 'Ortiz', '1958-02-02', 'H', 'Avenida del Trabajo', 'Roma Sur', 'Toluca', 64749, 2, 3, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (654, 'Carolina', 'Ochoa', 'García', '1952-06-18', 'Otro', 'Calle Magnolia', 'Juárez', 'Oaxaca', 62908, 16, 298, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (655, 'Emilio', 'Salinas', 'Calderón', '1980-04-14', 'H', 'Avenida Reforma', 'Coyoacán Centro', 'Tuxtla Gutiérrez', 54448, 2, 68, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (656, 'Raúl', 'González', 'Aguilar', '2002-04-11', 'M', 'Avenida Universidad', 'Tlalpan Centro', 'Oaxaca', 14372, 10, 66, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (657, 'Montserrat', 'Gómez', 'Fuentes', '1969-10-22', 'H', 'Boulevard Díaz Ordaz', 'Juárez', 'Durango', 46174, 8, 329, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (658, 'Rebeca', 'Juárez', 'Rodríguez', '1987-05-01', 'M', 'Sendero del Bosque', 'Huinalá', 'Villahermosa', 86921, 8, 39, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (659, 'Gael', 'Chávez', 'Ortiz', '1962-11-26', 'Otro', 'Camino Viejo', 'Tlalpan Centro', 'Guadalajara', 11400, 10, 84, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (660, 'Ariana', 'López', 'Ruiz', '1961-02-06', 'M', 'Eje Central', 'La Paz', 'Tijuana', 50913, 9, 156, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (661, 'Mauricio', 'Zamora', 'Sandoval', '1975-04-06', 'Otro', 'Insurgentes Sur', 'Anzures', 'Monterrey', 83188, 11, 91, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (662, 'Luna', 'Ochoa', 'Juárez', '1988-04-07', 'Otro', 'Calle Magnolia', 'Oblatos', 'Reynosa', 40318, 11, 1, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (663, 'Montserrat', 'Solís', 'Cortés', '1986-03-16', 'M', 'Calle Norte 45', 'Santa María la Ribera', 'Reynosa', 63311, 3, 228, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (664, 'Julián', 'Mendoza', 'Roldán', '1983-04-15', 'Otro', 'Privada Jardines', 'Chuburná', 'La Paz', 32807, 18, 2, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (665, 'Mateo', 'Zamora', 'Silva', '1964-01-24', 'H', 'Calle Palmeras', 'Tlalpan Centro', 'Chihuahua', 70043, 11, 15, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (666, 'Valeria', 'Montes', 'Sandoval', '1959-12-07', 'M', 'Calle Río Mixcoac', 'Analco', 'León', 84895, 18, 262, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (667, 'Julián', 'Gómez', 'Villalobos', '1988-05-01', 'M', 'Avenida Colón', 'Las Américas', 'Chihuahua', 10834, 3, 397, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (668, 'Raúl', 'Velasco', 'Montes', '1949-05-30', 'M', 'Camino Real', 'Xilotzingo', 'Veracruz', 76244, 6, 105, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (669, 'Marisol', 'Escobar', 'Jiménez', '1981-03-13', 'M', 'Calle Palmeras', 'San Ángel', 'Veracruz', 22130, 5, 31, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (670, 'Carlos', 'Estrada', 'López', '1966-12-29', 'H', 'Avenida Patria', 'Chuburná', 'Aguascalientes', 23726, 15, 285, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (671, 'Daniela', 'Sandoval', 'Martínez', '1951-06-16', 'H', 'Calle Luna', 'Xilotzingo', 'Saltillo', 74121, 17, 169, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (672, 'Carlos', 'Roldán', 'Ochoa', '1958-12-05', 'Otro', 'Calle Magnolia', 'Escandón', 'Aguascalientes', 12461, 0, 327, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (673, 'Bianca', 'Fuentes', 'Chávez', '1985-10-30', 'H', 'Calle de las Rosas', 'Nápoles', 'Irapuato', 86027, 9, 13, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (674, 'Ximena', 'Chávez', 'Rosales', '1987-07-18', 'H', 'Calle Hidalgo', 'Centro Monterrey', 'Hermosillo', 49741, 17, 99, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (675, 'María', 'Torres', 'Rosales', '1973-03-05', 'H', 'Prolongación Zaragoza', 'Roma Sur', 'Tepic', 97968, 2, 163, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (676, 'Ana', 'Pineda', 'Ortiz', '1949-01-15', 'Otro', 'Benito Juárez', 'Doctores', 'Culiacán', 19220, 15, 316, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (677, 'Mauricio', 'Arriaga', 'Delgado', '1953-04-28', 'H', 'Calzada de Tlalpan', 'Narvarte', 'Ciudad de México', 62319, 5, 57, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (678, 'Iván', 'Navarrete', 'Treviño', '1983-01-21', 'Otro', 'Calle Oaxaca', 'Xilotzingo', 'Celaya', 22507, 1, 69, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (679, 'Miranda', 'Ruiz', 'Flores', '1975-02-26', 'H', 'Privada Jardines', 'Chuburná', 'Tijuana', 68797, 9, 82, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (680, 'José', 'Reyes', 'Delgado', '1968-09-16', 'H', 'Calle Mérida', 'Itzimná', 'Oaxaca', 12540, 14, 228, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (681, 'Elena', 'García', 'Silva', '1957-02-12', 'M', 'Avenida Gonzalitos', 'Analco', 'Chihuahua', 13908, 15, 81, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (682, 'Paula', 'Díaz', 'Calderón', '1969-02-04', 'M', 'Avenida Patria', 'Chapalita', 'Oaxaca', 57256, 13, 63, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (683, 'Bianca', 'Zamora', 'Sandoval', '1973-10-22', 'H', 'Calle Norte 45', 'La Paz', 'Toluca', 16449, 18, 179, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (684, 'Camila', 'Salazar', 'Pérez', '1985-09-30', 'M', 'Calle Nueva Era', 'Tlalpan Centro', 'Coatzacoalcos', 85831, 0, 5, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (685, 'Héctor', 'Montes', 'Silva', '1954-09-22', 'M', 'Calzada de Tlalpan', 'Coyoacán Centro', 'Durango', 63026, 0, 7, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (686, 'Luis', 'Sandoval', 'Montes', '1985-12-28', 'M', 'Sendero del Bosque', 'Del Valle', 'Ensenada', 33418, 15, 279, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (687, 'Raúl', 'Camacho', 'Camacho', '1964-12-17', 'H', 'Sendero del Bosque', 'Nápoles', 'Oaxaca', 72572, 9, 51, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (688, 'Rubén', 'Valdez', 'Villalobos', '1955-12-13', 'Otro', 'Avenida Universidad', 'San Ángel', 'Villahermosa', 39051, 6, 87, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (689, 'David', 'Cedillo', 'Juárez', '1984-05-12', 'Otro', 'Calle del Sol', 'San Pedro Garza García', 'Ensenada', 21597, 5, 88, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (690, 'Gael', 'Serna', 'Rosales', '1991-07-05', 'H', 'Benito Juárez', 'Roma Norte', 'Coatzacoalcos', 68918, 1, 205, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (691, 'Leonardo', 'Juárez', 'Cortés', '1968-05-23', 'Otro', 'Calle Sur 20', 'Santa María la Ribera', 'Monterrey', 77386, 5, 131, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (692, 'Elena', 'Zamora', 'Cedillo', '1966-02-28', 'M', 'Calle Luna', 'Tacubaya', 'Culiacán', 91331, 11, 123, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (693, 'Zoe', 'Navarrete', 'Calderón', '1986-07-02', 'M', 'Avenida Reforma', 'Mixcoac', 'Durango', 72129, 5, 75, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (694, 'Ariana', 'Ramírez', 'Figueroa', '1970-11-02', 'H', 'Boulevard Díaz Ordaz', 'Nápoles', 'Irapuato', 94221, 14, 343, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (695, 'Diego', 'Díaz', 'Castillo', '1961-01-14', 'Otro', 'Calle Río Lerma', 'Mixcoac', 'Ensenada', 77766, 4, 265, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (696, 'Leonardo', 'Castillo', 'López', '1954-10-23', 'H', 'Privada Jardines', 'Las Américas', 'Veracruz', 48165, 5, 24, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (697, 'Gael', 'Velasco', 'Valdez', '1966-02-06', 'Otro', 'Calle Luna', 'Roma Norte', 'Tepic', 94654, 11, 389, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (698, 'Ernesto', 'Morales', 'Galindo', '1971-03-29', 'Otro', 'Calle Emiliano Zapata', 'Tacubaya', 'Culiacán', 85548, 7, 61, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (699, 'Mario', 'Fuentes', 'Navarrete', '1967-07-26', 'M', 'Calle del Sol', 'Lindavista', 'Coatzacoalcos', 84862, 3, 397, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (700, 'Gabriela', 'Serna', 'Flores', '1975-09-02', 'H', 'Boulevard Díaz Ordaz', 'Clavería', 'Aguascalientes', 13346, 13, 194, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (701, 'Bianca', 'Peña', 'Cortés', '1953-03-08', 'H', 'Calle Río Lerma', 'Clavería', 'Guadalajara', 94974, 10, 343, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (702, 'Elena', 'Figueroa', 'Silva', '1955-03-30', 'H', 'Calle Luna', 'Americana', 'Saltillo', 45918, 9, 71, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (703, 'Rubén', 'Gómez', 'Rangel', '1950-02-10', 'H', 'Calle Tabasco', 'Tlalpan Centro', 'Querétaro', 49202, 2, 205, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (704, 'Iván', 'Hernández', 'Peña', '1962-04-21', 'M', 'Avenida Constitución', 'Centro Monterrey', 'Ensenada', 27120, 7, 203, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (705, 'Gael', 'Rosales', 'Martínez', '1982-08-29', 'M', 'Camino Viejo', 'Roma Sur', 'Irapuato', 71005, 8, 37, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (706, 'Diego', 'Vargas', 'Ruiz', '1949-10-29', 'M', 'Prolongación Zaragoza', 'Oblatos', 'Irapuato', 96422, 2, 172, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (707, 'Mateo', 'Figueroa', 'Gómez', '1977-04-26', 'H', 'Avenida Colón', 'Azcapotzalco', 'Oaxaca', 44866, 12, 122, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (708, 'Andrea', 'Escobar', 'García', '1992-04-09', 'M', 'Calle Luna', 'La Paz', 'Ensenada', 22387, 18, 288, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (709, 'Ernesto', 'Valencia', 'Silva', '1993-11-30', 'H', 'Calle Nueva Era', 'Providencia', 'Chihuahua', 54669, 6, 17, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (710, 'Sebastián', 'Meléndez', 'Navarrete', '1981-05-15', 'H', 'Calzada Independencia', 'Xilotzingo', 'Villahermosa', 56523, 10, 275, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (711, 'Carlos', 'Esquivel', 'Villalobos', '1980-07-22', 'M', 'Eje Central', 'La Paz', 'Tijuana', 66273, 18, 298, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (712, 'José', 'Valencia', 'Galindo', '1969-05-09', 'Otro', 'Francisco I. Madero', 'Condesa', 'Villahermosa', 74214, 8, 178, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (713, 'Ariana', 'Solís', 'Meléndez', '1957-08-08', 'H', 'Calle Tabasco', 'San Pedro Garza García', 'Irapuato', 43639, 5, 213, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (714, 'Sergio', 'Peña', 'Pérez', '1964-11-07', 'M', 'Calle de las Rosas', 'La Paz', 'Mérida', 64752, 14, 349, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (715, 'Fátima', 'Padilla', 'Rosales', '1966-06-17', 'M', 'Avenida Gonzalitos', 'Cumbres', 'Aguascalientes', 88232, 10, 308, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (716, 'Bianca', 'Díaz', 'Treviño', '1977-03-24', 'Otro', 'Calzada de Tlalpan', 'Chuburná', 'La Paz', 14002, 2, 78, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (717, 'Sebastián', 'Castillo', 'Ortiz', '1951-03-20', 'H', 'Calzada Independencia', 'Juárez', 'Aguascalientes', 93927, 13, 203, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (718, 'María', 'Salinas', 'Cruz', '1988-09-11', 'Otro', 'Avenida Patria', 'La Paz', 'La Paz', 58375, 1, 240, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (719, 'Ximena', 'Treviño', 'Padilla', '1952-10-11', 'H', 'Calle Norte 45', 'Clavería', 'Matamoros', 45956, 1, 74, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (720, 'Ricardo', 'Arriaga', 'Galindo', '1967-09-22', 'M', 'Sendero del Bosque', 'Americana', 'León', 40114, 12, 130, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (721, 'Montserrat', 'Serna', 'Fuentes', '1989-11-16', 'Otro', 'Avenida Universidad', 'Del Valle', 'Culiacán', 74294, 7, 104, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (722, 'Juan', 'Navarrete', 'Serna', '1985-10-10', 'Otro', 'Calle Luna', 'Azcapotzalco', 'Cancún', 38370, 1, 166, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (723, 'María', 'Ruiz', 'Valencia', '1965-03-15', 'H', 'Calle Norte 45', 'Roma Sur', 'Matamoros', 19696, 6, 113, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (724, 'Ernesto', 'Velasco', 'Franco', '1973-01-18', 'Otro', 'Avenida Colón', 'Juárez', 'Tuxtla Gutiérrez', 63833, 16, 79, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (725, 'Carlos', 'Herrera', 'Mejía', '1962-05-07', 'H', 'Insurgentes Sur', 'Providencia', 'Matamoros', 49844, 7, 325, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (726, 'Alejandra', 'Delgado', 'Rodríguez', '1960-05-08', 'M', 'Avenida Colón', 'Tlalpan Centro', 'Tuxtla Gutiérrez', 75204, 14, 66, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (727, 'Sergio', 'Sandoval', 'Peña', '1946-12-07', 'M', 'Privada San Diego', 'Chuburná', 'Morelia', 13488, 5, 66, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (728, 'Ernesto', 'Nava', 'Cedillo', '1996-05-18', 'Otro', 'Prolongación Zaragoza', 'Itzimná', 'Veracruz', 28882, 9, 70, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (729, 'Juan', 'Salazar', 'Padilla', '1974-01-17', 'M', 'Calle Nueva Era', 'Coyoacán Centro', 'Morelia', 93202, 13, 290, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (730, 'Miranda', 'Roldán', 'Arriaga', '1972-08-02', 'H', 'Avenida Universidad', 'Del Valle', 'Puebla', 15930, 8, 13, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (731, 'Ernesto', 'Roldán', 'López', '1980-04-17', 'H', 'Avenida Patria', 'Americana', 'Coatzacoalcos', 53752, 13, 138, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (732, 'Renata', 'Rosales', 'Gómez', '1983-07-23', 'H', 'Boulevard Díaz Ordaz', 'Tacubaya', 'Durango', 32985, 7, 300, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (733, 'Carlos', 'Fuentes', 'Ruiz', '1957-05-31', 'H', 'Calle Nueva Era', 'Tlalpan Centro', 'Mérida', 33979, 0, 217, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (734, 'Fernanda', 'Salazar', 'Velasco', '1996-03-10', 'M', 'Avenida Constitución', 'Americana', 'Villahermosa', 69488, 12, 49, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (735, 'Fátima', 'Esquivel', 'Vargas', '1976-09-26', 'Otro', 'Calle Oaxaca', 'Itzimná', 'Durango', 14725, 9, 37, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (736, 'Miranda', 'Mendoza', 'Hernández', '1946-05-01', 'Otro', 'Insurgentes Sur', 'Analco', 'Mazatlán', 86161, 18, 84, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (737, 'Ricardo', 'González', 'Gómez', '1983-07-10', 'Otro', 'Privada Jardines', 'Centro Monterrey', 'Celaya', 34068, 16, 166, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (738, 'Fátima', 'Arriaga', 'Esquivel', '1961-09-05', 'Otro', 'Calle Río Lerma', 'San Manuel', 'Ciudad de México', 17196, 6, 318, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (739, 'Daniela', 'Esquivel', 'Bautista', '1950-08-02', 'M', 'Avenida Constitución', 'Oblatos', 'Morelia', 55699, 15, 365, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (740, 'Montserrat', 'Roldán', 'Montes', '1959-05-17', 'H', 'Avenida Colón', 'Tacubaya', 'Villahermosa', 76269, 6, 68, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (741, 'Adrián', 'Torres', 'Sánchez', '1971-12-05', 'M', 'Calle del Sol', 'Cumbres', 'Oaxaca', 99748, 1, 306, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (742, 'Mateo', 'Ortiz', 'Delgado', '1978-05-02', 'Otro', 'Calle Magnolia', 'Doctores', 'Hermosillo', 21183, 8, 5, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (743, 'David', 'Cedillo', 'Chávez', '1966-01-04', 'H', 'Avenida Gonzalitos', 'Clavería', 'Cancún', 79457, 5, 67, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (744, 'Jorge', 'Mejía', 'Fuentes', '1951-12-07', 'Otro', 'Avenida Gonzalitos', 'Escandón', 'Celaya', 85147, 12, 108, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (745, 'Romina', 'Reyes', 'Zamora', '1970-12-15', 'M', 'Insurgentes Sur', 'Cumbres', 'Tepic', 73999, 14, 336, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (746, 'Romina', 'Herrera', 'Luna', '1963-02-25', 'Otro', 'Avenida Colón', 'Coyoacán Centro', 'Coatzacoalcos', 68222, 17, 85, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (747, 'Fernanda', 'Sánchez', 'Castillo', '1948-06-18', 'H', 'Calle Tabasco', 'San Nicolás', 'Monterrey', 16630, 10, 214, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (748, 'Andrea', 'Esquivel', 'Díaz', '1986-06-18', 'H', 'Privada San Diego', 'Linda Vista', 'Ensenada', 49443, 2, 126, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (749, 'Sofía', 'Mejía', 'Rodríguez', '1966-12-21', 'M', 'Calle Emiliano Zapata', 'Linda Vista', 'Hermosillo', 53309, 15, 98, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (750, 'Valeria', 'Franco', 'Escobar', '1997-05-15', 'Otro', 'Boulevard Díaz Ordaz', 'Itzimná', 'Chihuahua', 11006, 17, 321, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (751, 'Francisco', 'Ramírez', 'Valencia', '1959-02-19', 'H', 'Avenida Constitución', 'Linda Vista', 'Coatzacoalcos', 94193, 10, 334, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (752, 'Rubén', 'Luna', 'Fuentes', '1977-08-20', 'Otro', 'Calle Luna', 'Roma Norte', 'Celaya', 56979, 11, 39, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (753, 'Montserrat', 'Cortés', 'García', '1990-02-24', 'M', 'Prolongación Zaragoza', 'Chapalita', 'Chihuahua', 41494, 1, 167, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (754, 'Diego', 'Roldán', 'Mendoza', '1989-08-08', 'H', 'Prolongación Zaragoza', 'Mixcoac', 'Tepic', 45488, 9, 320, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (755, 'Zoe', 'Rangel', 'García', '1985-04-17', 'Otro', 'Avenida Patria', 'Americana', 'Celaya', 33661, 20, 51, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (756, 'Lucía', 'Padilla', 'Solís', '1979-07-29', 'H', 'Insurgentes Sur', 'Del Valle', 'Reynosa', 78887, 20, 379, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (757, 'Gael', 'Nava', 'Salazar', '1957-04-21', 'H', 'Calle de las Rosas', 'Roma Norte', 'Tijuana', 59068, 12, 87, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (758, 'Juan', 'Chávez', 'Flores', '1951-03-31', 'H', 'Calle Norte 45', 'Mixcoac', 'Coatzacoalcos', 41851, 3, 362, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (759, 'María', 'Cedillo', 'López', '1958-08-27', 'Otro', 'Calle Norte 45', 'Centro Monterrey', 'Durango', 77887, 10, 141, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (760, 'Carlos', 'Salazar', 'Nava', '1976-02-04', 'H', 'Avenida Universidad', 'Chuburná', 'Chihuahua', 12800, 16, 3, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (761, 'Gabriela', 'Ruiz', 'Meléndez', '1968-06-04', 'M', 'Calle 16 de Septiembre', 'Escandón', 'Saltillo', 56343, 0, 150, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (762, 'Ángel', 'Esquivel', 'Cortés', '1965-09-27', 'M', 'Calle Hidalgo', 'Lindavista', 'Tepic', 42522, 17, 265, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (763, 'Rebeca', 'Mejía', 'Juárez', '1950-06-05', 'Otro', 'Sendero del Bosque', 'Copilco', 'La Paz', 38670, 4, 314, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (764, 'Tomás', 'López', 'Reyes', '1973-01-28', 'Otro', 'Insurgentes Sur', 'Xilotzingo', 'Reynosa', 61560, 19, 256, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (765, 'Gael', 'Sánchez', 'Flores', '1989-06-12', 'Otro', 'Avenida Reforma', 'Copilco', 'Coatzacoalcos', 81350, 20, 78, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (766, 'Luis', 'Galindo', 'Sánchez', '1995-07-01', 'H', 'Calle Río Mixcoac', 'San Pedro Garza García', 'León', 92674, 11, 23, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (767, 'Tomás', 'Velasco', 'Valdez', '1990-08-25', 'M', 'Calzada de Tlalpan', 'San Ángel', 'Tepic', 40868, 7, 207, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (768, 'Miranda', 'Reyes', 'Solís', '1997-01-15', 'H', 'Calle Durango', 'Huinalá', 'Coatzacoalcos', 32075, 3, 380, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (769, 'Paula', 'Martínez', 'Jiménez', '1952-06-19', 'M', 'Calle Emiliano Zapata', 'Cumbres', 'Ensenada', 44678, 2, 193, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (770, 'Héctor', 'Salinas', 'Estrada', '1970-12-21', 'Otro', 'Sendero del Bosque', 'Huexotitla', 'Mazatlán', 35630, 1, 334, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (771, 'Tomás', 'Acosta', 'Delgado', '1992-08-14', 'Otro', 'Calle Río Lerma', 'San Pedro Garza García', 'Monterrey', 57700, 13, 134, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (772, 'Mateo', 'Velasco', 'Figueroa', '1970-02-05', 'Otro', 'Calle Magnolia', 'Clavería', 'Cancún', 47595, 16, 196, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (773, 'Raúl', 'Fuentes', 'Treviño', '1959-07-02', 'M', 'Avenida Universidad', 'Roma Norte', 'Tuxtla Gutiérrez', 89228, 6, 346, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (774, 'Jorge', 'Rangel', 'Velasco', '1951-08-19', 'H', 'Calle 16 de Septiembre', 'San Nicolás', 'Coatzacoalcos', 61736, 15, 304, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (775, 'Bianca', 'Serna', 'Cruz', '1966-03-31', 'Otro', 'Avenida Colón', 'Narvarte', 'Tepic', 24426, 3, 250, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (776, 'Mateo', 'Salazar', 'Cedillo', '1970-01-28', 'M', 'Camino Real', 'Huinalá', 'León', 33586, 0, 316, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (777, 'Alejandra', 'Franco', 'Flores', '1956-06-09', 'H', 'Privada Jardines', 'Condesa', 'Querétaro', 54624, 2, 399, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (778, 'Emilio', 'Treviño', 'Hernández', '1978-08-20', 'H', 'Avenida Patria', 'Doctores', 'Querétaro', 52840, 17, 297, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (779, 'Marisol', 'Ramírez', 'Martínez', '1949-11-25', 'M', 'Héroes de Chapultepec', 'San Pedro Garza García', 'Oaxaca', 99880, 9, 159, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (780, 'Mauricio', 'González', 'Velasco', '1956-11-27', 'Otro', 'Eje Central', 'Clavería', 'Monterrey', 20263, 2, 357, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (781, 'Gabriela', 'Esquivel', 'Díaz', '1986-12-02', 'H', 'Calle Norte 45', 'La Paz', 'Reynosa', 26875, 14, 358, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (782, 'Luna', 'Mejía', 'Villalobos', '1957-03-06', 'Otro', 'Calle Hidalgo', 'Huinalá', 'Puebla', 16913, 2, 224, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (783, 'Jimena', 'Galindo', 'Cruz', '1948-05-23', 'Otro', 'Calle Norte 45', 'Linda Vista', 'La Paz', 73967, 20, 242, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (784, 'Jimena', 'Figueroa', 'Navarrete', '1988-08-24', 'Otro', 'Avenida Universidad', 'Americana', 'Tijuana', 12043, 18, 386, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (785, 'Ana', 'Peña', 'Acosta', '1962-11-04', 'Otro', 'Calle Río Lerma', 'Azcapotzalco', 'Guadalajara', 75937, 11, 210, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (786, 'Jimena', 'Calderón', 'Montes', '1946-03-11', 'H', 'Calzada de Tlalpan', 'San Ángel', 'Chihuahua', 95386, 2, 278, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (787, 'Jimena', 'Rangel', 'Treviño', '1953-10-14', 'Otro', 'Privada Jardines', 'San Ángel', 'Ensenada', 57143, 15, 287, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (788, 'Carolina', 'Escobar', 'Pérez', '1989-08-13', 'H', 'Calle Palmeras', 'Huinalá', 'Oaxaca', 38682, 11, 31, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (789, 'Carlos', 'Bautista', 'Martínez', '1955-09-26', 'Otro', 'Francisco I. Madero', 'Clavería', 'Ciudad de México', 80523, 5, 225, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (790, 'Emilio', 'Herrera', 'Rangel', '1959-12-23', 'H', 'Calle Luna', 'Escandón', 'Tepic', 11259, 1, 204, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (791, 'Juan', 'Calderón', 'Fuentes', '1963-07-14', 'H', 'Calzada de Tlalpan', 'Las Américas', 'Tijuana', 74340, 17, 22, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (792, 'Tomás', 'Reyes', 'Galindo', '1965-09-20', 'Otro', 'Avenida Constitución', 'Azcapotzalco', 'Saltillo', 62846, 14, 127, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (793, 'Ximena', 'Peña', 'Pérez', '1946-02-13', 'Otro', 'Calle Tabasco', 'Xilotzingo', 'Mérida', 95739, 4, 149, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (794, 'Renata', 'Pérez', 'Ruiz', '1957-02-26', 'M', 'Calle del Sol', 'Itzimná', 'Oaxaca', 51544, 10, 117, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (795, 'Emilio', 'Figueroa', 'Montes', '1986-01-05', 'H', 'Privada Jardines', 'Roma Norte', 'Monterrey', 25885, 9, 349, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (796, 'Iván', 'Valencia', 'Jiménez', '1972-01-30', 'H', 'Calle Oaxaca', 'Roma Norte', 'Querétaro', 66797, 14, 123, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (797, 'Mateo', 'Meléndez', 'Calderón', '1984-12-08', 'Otro', 'Avenida Constitución', 'San Pedro Garza García', 'Oaxaca', 91819, 12, 312, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (798, 'Rebeca', 'Nava', 'Ruiz', '1966-05-17', 'Otro', 'Calle de las Rosas', 'Narvarte', 'Querétaro', 16109, 9, 271, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (799, 'Gabriela', 'Esquivel', 'Vargas', '1977-07-19', 'H', 'Avenida del Trabajo', 'Xilotzingo', 'Oaxaca', 81483, 7, 307, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (800, 'Carolina', 'Treviño', 'Rosales', '1985-03-24', 'Otro', 'Avenida del Trabajo', 'Huinalá', 'Tepic', 86408, 11, 13, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (801, 'Luis', 'Navarrete', 'Cruz', '1966-07-18', 'H', 'Eje Central', 'Condesa', 'Aguascalientes', 70518, 12, 234, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (802, 'Alejandra', 'Franco', 'Hernández', '1957-12-29', 'M', 'Calzada de Tlalpan', 'Roma Sur', 'Coatzacoalcos', 51947, 3, 356, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (803, 'Gael', 'Valdez', 'Rodríguez', '1952-12-12', 'H', 'Calzada de Tlalpan', 'Itzimná', 'Saltillo', 12028, 0, 193, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (804, 'Adrián', 'Sánchez', 'Serna', '1978-12-31', 'Otro', 'Calle Oaxaca', 'Americana', 'Ensenada', 45270, 11, 35, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (805, 'Eduardo', 'Pérez', 'Solís', '1978-11-21', 'M', 'Calle Hidalgo', 'Del Valle', 'Guadalajara', 68055, 4, 342, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (806, 'Fernanda', 'Serna', 'Treviño', '1982-11-14', 'H', 'Insurgentes Sur', 'Santa María la Ribera', 'Morelia', 26409, 1, 78, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (807, 'Tomás', 'Salazar', 'Gómez', '1953-09-30', 'H', 'Avenida del Trabajo', 'Coyoacán Centro', 'Irapuato', 58596, 19, 174, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (808, 'Mario', 'Arriaga', 'Ruiz', '1962-02-18', 'M', 'Boulevard Díaz Ordaz', 'Lindavista', 'Reynosa', 93845, 4, 171, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (809, 'Alejandra', 'Ruiz', 'Galindo', '1999-03-27', 'H', 'Boulevard Díaz Ordaz', 'Lindavista', 'Hermosillo', 92604, 3, 321, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (810, 'Daniela', 'Hernández', 'Hernández', '1989-08-31', 'H', 'Eje Central', 'Xilotzingo', 'Saltillo', 34742, 0, 84, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (811, 'Juan', 'Montes', 'Escobar', '1949-08-10', 'Otro', 'Francisco I. Madero', 'Americana', 'Chihuahua', 52216, 20, 292, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (812, 'Ángel', 'Zamora', 'Galindo', '1953-06-19', 'H', 'Benito Juárez', 'Xilotzingo', 'Oaxaca', 53659, 15, 38, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (813, 'Zoe', 'Reyes', 'Mendoza', '1954-09-19', 'H', 'Calle Magnolia', 'Chapalita', 'Puebla', 98484, 16, 156, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (814, 'Carolina', 'Rodríguez', 'Montes', '1977-05-09', 'Otro', 'Camino Real', 'Tacubaya', 'Toluca', 69914, 6, 155, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (815, 'Jimena', 'Aguilar', 'Aguilar', '1981-12-14', 'H', 'Avenida Universidad', 'Mixcoac', 'Puebla', 39097, 2, 168, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (816, 'Rebeca', 'Pérez', 'Luna', '1975-10-10', 'H', 'Calle Emiliano Zapata', 'La Paz', 'Tepic', 65899, 11, 367, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (817, 'Ernesto', 'Treviño', 'Torres', '1980-12-06', 'M', 'Calle Tabasco', 'Nápoles', 'Puebla', 93102, 2, 317, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (818, 'Raúl', 'Estrada', 'Valencia', '1965-08-13', 'H', 'Avenida Colón', 'San Pedro Garza García', 'Mazatlán', 68156, 16, 165, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (819, 'Valeria', 'Silva', 'Ruiz', '1986-11-29', 'H', 'Calle Río Lerma', 'Cumbres', 'Ciudad de México', 70335, 5, 325, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (820, 'Bianca', 'Figueroa', 'Salinas', '1987-04-12', 'Otro', 'Calle de las Rosas', 'San Pedro Garza García', 'Ensenada', 85322, 14, 168, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (821, 'Rubén', 'Galindo', 'Velasco', '1952-07-24', 'Otro', 'Francisco I. Madero', 'Itzimná', 'Reynosa', 84444, 1, 202, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (822, 'María', 'Rangel', 'García', '1961-05-11', 'H', 'Avenida del Trabajo', 'Doctores', 'Chihuahua', 56719, 3, 316, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (823, 'Francisco', 'Aguilar', 'Solís', '1978-08-25', 'M', 'Avenida Constitución', 'Americana', 'Ciudad de México', 55790, 9, 14, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (824, 'Adrián', 'Pérez', 'Rosales', '1982-09-18', 'H', 'Insurgentes Sur', 'Condesa', 'Ensenada', 15111, 12, 91, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (825, 'Daniela', 'Montes', 'Peña', '1972-03-22', 'M', 'Avenida Gonzalitos', 'Huexotitla', 'Morelia', 56709, 4, 198, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (826, 'Rubén', 'Flores', 'López', '1957-09-18', 'Otro', 'Calle Oaxaca', 'Tacubaya', 'Querétaro', 65383, 19, 129, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (827, 'Francisco', 'Hernández', 'Pineda', '1992-10-06', 'M', 'Calle Hidalgo', 'Tlalpan Centro', 'Morelia', 80908, 2, 400, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (828, 'Ariana', 'Sandoval', 'Sandoval', '1985-10-22', 'M', 'Avenida Reforma', 'Xilotzingo', 'Guadalajara', 36930, 13, 93, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (829, 'Marisol', 'Reyes', 'Nava', '1982-07-23', 'H', 'Avenida Reforma', 'La Paz', 'Tuxtla Gutiérrez', 95745, 14, 54, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (830, 'Bianca', 'Galindo', 'Galindo', '1959-02-02', 'M', 'Calle Emiliano Zapata', 'Centro Monterrey', 'Celaya', 59252, 5, 45, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (831, 'Marisol', 'Ruiz', 'Arriaga', '1957-06-16', 'Otro', 'Calle Norte 45', 'Juárez', 'Hermosillo', 93516, 6, 89, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (832, 'Mateo', 'Morales', 'Juárez', '1961-06-23', 'M', 'Avenida Gonzalitos', 'Cumbres', 'Toluca', 12566, 16, 239, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (833, 'Ximena', 'Aguilar', 'Galindo', '1991-09-13', 'M', 'Calle Sur 20', 'Tlalpan Centro', 'Monterrey', 36044, 16, 338, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (834, 'Andrea', 'Villalobos', 'Cedillo', '1956-02-07', 'H', 'Eje Central', 'Copilco', 'Ensenada', 58892, 1, 63, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (835, 'Leonardo', 'Acosta', 'López', '1985-10-16', 'Otro', 'Eje Central', 'Anzures', 'La Paz', 63800, 11, 175, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (836, 'Renata', 'Camacho', 'Aguilar', '1954-06-02', 'Otro', 'Calle Morelos', 'Del Valle', 'Tuxtla Gutiérrez', 28322, 11, 297, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (837, 'Fátima', 'García', 'Juárez', '1994-06-01', 'M', 'Calle Hidalgo', 'Azcapotzalco', 'Tepic', 61429, 13, 244, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (838, 'Valeria', 'Rodríguez', 'Padilla', '1976-05-27', 'Otro', 'Calle Sur 20', 'Juárez', 'Durango', 40532, 14, 361, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (839, 'Valeria', 'Chávez', 'Arriaga', '1950-05-23', 'Otro', 'Francisco I. Madero', 'Narvarte', 'Querétaro', 50543, 1, 208, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (840, 'Juan', 'Rangel', 'Mejía', '1982-01-28', 'H', 'Calle Luna', 'Cumbres', 'Ciudad de México', 62507, 19, 381, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (841, 'Luna', 'Ochoa', 'Ochoa', '1948-04-02', 'M', 'Boulevard Díaz Ordaz', 'San Ángel', 'Toluca', 14066, 15, 172, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (842, 'Raúl', 'Esquivel', 'Esquivel', '1958-07-11', 'H', 'Calle Río Mixcoac', 'San Nicolás', 'La Paz', 40698, 3, 249, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (843, 'Rubén', 'Cortés', 'Rodríguez', '1961-01-16', 'Otro', 'Calle Morelos', 'Juárez', 'Ciudad de México', 69340, 8, 11, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (844, 'Diego', 'Pérez', 'Bautista', '1946-11-09', 'H', 'Privada San Diego', 'Coyoacán Centro', 'Coatzacoalcos', 67956, 4, 218, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (845, 'Valeria', 'Mejía', 'Franco', '1997-07-08', 'M', 'Calle Sur 20', 'San Nicolás', 'Tepic', 82792, 5, 133, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (846, 'Adrián', 'Franco', 'Herrera', '1964-08-03', 'H', 'Avenida Constitución', 'Linda Vista', 'Tuxtla Gutiérrez', 66994, 14, 152, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (847, 'Mateo', 'Bautista', 'Serna', '1975-11-06', 'H', 'Francisco I. Madero', 'Condesa', 'Tijuana', 58237, 16, 119, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (848, 'Valeria', 'Camacho', 'Figueroa', '1993-05-25', 'M', 'Camino Viejo', 'Huinalá', 'Toluca', 23786, 8, 264, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (849, 'Daniela', 'Delgado', 'Esquivel', '1983-01-07', 'H', 'Calle Morelos', 'Providencia', 'Celaya', 97026, 11, 194, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (850, 'Iván', 'Salinas', 'Gómez', '1948-02-09', 'Otro', 'Calle Morelos', 'Roma Sur', 'Ensenada', 40570, 8, 207, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (851, 'Victoria', 'Treviño', 'Zamora', '1958-09-05', 'M', 'Privada San Diego', 'San Manuel', 'Tuxtla Gutiérrez', 88506, 8, 68, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (852, 'Elena', 'Roldán', 'Delgado', '1990-07-15', 'H', 'Calle Sur 20', 'Las Américas', 'León', 27540, 9, 199, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (853, 'Alejandra', 'Pineda', 'Navarrete', '1948-12-11', 'M', 'Calle Emiliano Zapata', 'Clavería', 'León', 91447, 20, 391, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (854, 'Luis', 'Ramírez', 'Rosales', '1985-10-01', 'H', 'Avenida Gonzalitos', 'Santa María la Ribera', 'Matamoros', 13026, 11, 225, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (855, 'Gael', 'Bautista', 'Díaz', '1965-03-20', 'Otro', 'Calle Mérida', 'Americana', 'Saltillo', 99672, 19, 398, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (856, 'Raúl', 'Pineda', 'Velasco', '1951-12-28', 'Otro', 'Avenida Reforma', 'Escandón', 'Ensenada', 36731, 4, 74, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (857, 'Ernesto', 'Rodríguez', 'Vargas', '1945-03-22', 'M', 'Calle de las Rosas', 'Roma Sur', 'Mérida', 13469, 12, 357, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (858, 'Valeria', 'Delgado', 'Montes', '1971-07-21', 'Otro', 'Calle Río Mixcoac', 'Cumbres', 'León', 73459, 9, 289, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (859, 'Emilio', 'Franco', 'Salazar', '1961-08-18', 'Otro', 'Avenida Gonzalitos', 'Mixcoac', 'Mazatlán', 87478, 2, 355, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (860, 'Iván', 'Meléndez', 'Montes', '1971-08-30', 'Otro', 'Calle de las Rosas', 'Polanco', 'Irapuato', 81797, 13, 24, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (861, 'Carolina', 'Ortiz', 'Pérez', '1995-01-30', 'Otro', 'Benito Juárez', 'Clavería', 'Mazatlán', 28785, 16, 302, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (862, 'Pedro', 'Díaz', 'Mendoza', '1971-05-19', 'M', 'Sendero del Bosque', 'Providencia', 'León', 41357, 14, 285, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (863, 'Ernesto', 'Arriaga', 'Rosales', '1976-10-09', 'Otro', 'Calle Mérida', 'Chapalita', 'Celaya', 34176, 9, 246, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (864, 'Luis', 'Zamora', 'Cortés', '1982-11-06', 'H', 'Avenida del Trabajo', 'Narvarte', 'Tepic', 10395, 12, 30, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (865, 'María', 'Padilla', 'Herrera', '1985-08-23', 'Otro', 'Calle Tabasco', 'Tlalpan Centro', 'La Paz', 13123, 17, 395, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (866, 'Elena', 'García', 'Nava', '1952-11-25', 'M', 'Calle Magnolia', 'San Nicolás', 'Irapuato', 63481, 1, 362, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (867, 'Alondra', 'Valdez', 'Cortés', '1966-03-09', 'M', 'Calle Durango', 'San Nicolás', 'Veracruz', 73273, 16, 384, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (868, 'Mario', 'Rodríguez', 'Martínez', '1961-10-17', 'H', 'Calle Morelos', 'Linda Vista', 'Mérida', 77925, 0, 145, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (869, 'Andrea', 'Cortés', 'Salazar', '1973-02-03', 'M', 'Avenida Constitución', 'Americana', 'Celaya', 81918, 6, 391, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (870, 'Leonardo', 'Delgado', 'Ortiz', '1959-06-05', 'H', 'Privada San Diego', 'Providencia', 'Villahermosa', 76596, 0, 45, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (871, 'Sofía', 'Herrera', 'Montes', '1961-11-21', 'M', 'Calle Río Mixcoac', 'Del Valle', 'Culiacán', 30254, 15, 147, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (872, 'Ana', 'Jiménez', 'Torres', '1957-06-05', 'H', 'Avenida Colón', 'Azcapotzalco', 'Coatzacoalcos', 23144, 8, 165, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (873, 'Marisol', 'Vargas', 'Jiménez', '1955-03-14', 'Otro', 'Calle Luna', 'Nápoles', 'Celaya', 43885, 3, 344, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (874, 'Renata', 'Salazar', 'Morales', '1953-07-07', 'M', 'Eje Central', 'Oblatos', 'León', 76195, 10, 106, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (875, 'Andrea', 'Juárez', 'Rosales', '1963-07-07', 'Otro', 'Sendero del Bosque', 'Nápoles', 'Culiacán', 56029, 15, 226, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (876, 'Tomás', 'Hernández', 'Pérez', '1984-10-30', 'H', 'Calle del Sol', 'Huinalá', 'Aguascalientes', 95089, 4, 25, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (877, 'Mauricio', 'Padilla', 'Zamora', '1978-09-29', 'H', 'Calle Oaxaca', 'Clavería', 'Toluca', 59542, 13, 63, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (878, 'Ariana', 'Escobar', 'Cedillo', '1984-05-23', 'H', 'Calle 16 de Septiembre', 'Lindavista', 'Chihuahua', 47300, 9, 305, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (879, 'Renata', 'Díaz', 'Cedillo', '1954-06-27', 'H', 'Calle Tabasco', 'Azcapotzalco', 'Mazatlán', 72565, 11, 94, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (880, 'Renata', 'Cruz', 'Franco', '1953-04-24', 'H', 'Benito Juárez', 'Roma Norte', 'Querétaro', 64208, 12, 208, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (881, 'Sofía', 'Velasco', 'Estrada', '1961-09-26', 'M', 'Calle del Sol', 'Coyoacán Centro', 'Chihuahua', 51518, 0, 27, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (882, 'Alejandra', 'Fuentes', 'Rodríguez', '1960-02-06', 'H', 'Calle Luna', 'Xilotzingo', 'Saltillo', 41583, 1, 317, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (883, 'Victoria', 'Zamora', 'Juárez', '1988-01-06', 'Otro', 'Calle Morelos', 'Chapalita', 'Mazatlán', 12501, 19, 361, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (884, 'Miranda', 'Navarrete', 'Cortés', '1981-11-16', 'Otro', 'Calle Durango', 'Coyoacán Centro', 'Tuxtla Gutiérrez', 76223, 18, 240, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (885, 'Zoe', 'Mejía', 'Navarrete', '1953-04-10', 'Otro', 'Calle Emiliano Zapata', 'Doctores', 'Monterrey', 48099, 5, 151, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (886, 'Tomás', 'Calderón', 'Cortés', '1948-04-18', 'H', 'Calle Luna', 'Xilotzingo', 'Aguascalientes', 65849, 13, 174, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (887, 'Juan', 'Cedillo', 'Escobar', '1961-12-21', 'M', 'Calle de las Rosas', 'Azcapotzalco', 'Culiacán', 32122, 18, 260, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (888, 'Paula', 'Escobar', 'Díaz', '1991-09-16', 'M', 'Avenida Reforma', 'Condesa', 'Chihuahua', 21783, 0, 204, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (889, 'José', 'Serna', 'Valencia', '1984-10-24', 'H', 'Calle de las Rosas', 'Xilotzingo', 'Puebla', 45068, 4, 193, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (890, 'Miguel', 'Solís', 'Rangel', '1965-01-03', 'H', 'Privada San Diego', 'Linda Vista', 'Ciudad de México', 49530, 11, 234, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (891, 'José', 'López', 'Gómez', '1978-12-14', 'H', 'Calle Río Lerma', 'Analco', 'Tepic', 70530, 0, 373, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (892, 'Luna', 'Meléndez', 'Valencia', '1958-11-22', 'H', 'Sendero del Bosque', 'Oblatos', 'Cancún', 36588, 1, 376, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (893, 'Daniela', 'Pérez', 'Ramos', '1989-02-09', 'H', 'Calle Hidalgo', 'Lindavista', 'Hermosillo', 84365, 12, 209, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (894, 'Héctor', 'Pérez', 'Cedillo', '1989-05-16', 'Otro', 'Avenida Gonzalitos', 'Del Valle', 'Culiacán', 98616, 5, 387, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (895, 'Miranda', 'Camacho', 'Fuentes', '1977-01-14', 'M', 'Insurgentes Sur', 'Coyoacán Centro', 'Mazatlán', 17283, 7, 155, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (896, 'Elena', 'Zamora', 'Torres', '1983-10-04', 'H', 'Avenida Colón', 'Las Américas', 'Toluca', 40372, 6, 176, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (897, 'Ariana', 'Solís', 'Mendoza', '1950-04-27', 'M', 'Insurgentes Sur', 'La Paz', 'Mazatlán', 26329, 6, 240, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (898, 'Emilio', 'Navarrete', 'Serna', '1966-10-16', 'Otro', 'Avenida Patria', 'Santa María la Ribera', 'Celaya', 54973, 7, 85, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (899, 'Iván', 'González', 'Escobar', '1981-05-20', 'M', 'Benito Juárez', 'Tacubaya', 'Guadalajara', 16633, 9, 387, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (900, 'Fátima', 'Montes', 'Sánchez', '1974-04-17', 'H', 'Avenida Gonzalitos', 'Lindavista', 'La Paz', 41398, 9, 22, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (901, 'Gabriela', 'Salazar', 'Valencia', '1955-01-21', 'M', 'Avenida Colón', 'Huinalá', 'La Paz', 61558, 20, 369, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (902, 'Mateo', 'Velasco', 'Herrera', '1976-06-27', 'Otro', 'Calle Mérida', 'Chapalita', 'Oaxaca', 73477, 11, 310, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (903, 'Paula', 'Mejía', 'Zamora', '1970-06-18', 'Otro', 'Calle Emiliano Zapata', 'Huexotitla', 'Coatzacoalcos', 16190, 12, 267, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (904, 'Francisco', 'Navarrete', 'Esquivel', '1989-10-16', 'Otro', 'Calle Emiliano Zapata', 'Roma Sur', 'Culiacán', 14429, 19, 244, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (905, 'Zoe', 'Reyes', 'Fuentes', '1968-04-14', 'Otro', 'Privada Jardines', 'Anzures', 'Tijuana', 39378, 12, 373, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (906, 'Miguel', 'Mendoza', 'Ortiz', '1981-05-17', 'H', 'Calle Oaxaca', 'Roma Sur', 'Monterrey', 54202, 12, 59, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (907, 'Fernanda', 'Díaz', 'López', '1969-10-02', 'M', 'Calle de las Rosas', 'Tacubaya', 'La Paz', 80166, 15, 341, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (908, 'Juan', 'López', 'García', '1980-09-04', 'Otro', 'Avenida Constitución', 'Nápoles', 'Querétaro', 74455, 17, 233, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (909, 'David', 'García', 'Valencia', '1978-05-11', 'M', 'Calle del Sol', 'La Paz', 'La Paz', 56232, 16, 338, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (910, 'Sofía', 'Sánchez', 'Pérez', '1977-06-05', 'Otro', 'Calle Nueva Era', 'Tlalpan Centro', 'Oaxaca', 31549, 8, 165, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (911, 'Luna', 'Valdez', 'Escobar', '1971-01-01', 'H', 'Calle Durango', 'Del Valle', 'Morelia', 66045, 8, 332, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (912, 'Montserrat', 'Jiménez', 'Chávez', '1974-12-07', 'H', 'Avenida Constitución', 'Oblatos', 'Oaxaca', 35075, 8, 324, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (913, 'Paula', 'Escobar', 'Figueroa', '1975-11-18', 'H', 'Calle Oaxaca', 'Tlalpan Centro', 'Durango', 89801, 1, 276, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (914, 'Ricardo', 'Ramos', 'Pineda', '1968-11-29', 'H', 'Calle Norte 45', 'Santa María la Ribera', 'Hermosillo', 24636, 12, 110, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (915, 'Pedro', 'Juárez', 'Solís', '1975-08-21', 'H', 'Calle Nueva Era', 'La Paz', 'Reynosa', 82733, 16, 304, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (916, 'Fernanda', 'Zamora', 'Valencia', '1989-03-03', 'H', 'Benito Juárez', 'Del Valle', 'Mérida', 27427, 1, 274, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (917, 'Rubén', 'Valencia', 'Ramos', '1956-01-21', 'H', 'Francisco I. Madero', 'Coyoacán Centro', 'Aguascalientes', 14224, 11, 180, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (918, 'María', 'Ochoa', 'González', '1961-02-24', 'H', 'Calle Magnolia', 'Tlalpan Centro', 'Villahermosa', 53540, 12, 282, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (919, 'Elena', 'Cruz', 'Reyes', '1988-05-27', 'Otro', 'Calle Río Lerma', 'Huexotitla', 'Puebla', 23461, 10, 190, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (920, 'Lucía', 'Vargas', 'Camacho', '1969-08-02', 'M', 'Calle Oaxaca', 'Huinalá', 'Cancún', 40044, 18, 350, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (921, 'Ana', 'Roldán', 'González', '1987-03-29', 'M', 'Calle Tabasco', 'Linda Vista', 'Cancún', 93009, 3, 151, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (922, 'Leonardo', 'Serna', 'Jiménez', '1974-08-27', 'M', 'Calle Oaxaca', 'Chuburná', 'Chihuahua', 50980, 0, 21, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (923, 'Daniela', 'Estrada', 'Silva', '1982-05-10', 'Otro', 'Calle Sur 20', 'Tacubaya', 'Aguascalientes', 96343, 14, 53, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (924, 'Jimena', 'Castillo', 'Delgado', '1986-05-04', 'Otro', 'Calle 16 de Septiembre', 'Las Américas', 'Cancún', 36319, 8, 348, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (925, 'Mauricio', 'Treviño', 'Ramos', '1963-04-15', 'H', 'Calle Hidalgo', 'Copilco', 'Culiacán', 57311, 7, 168, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (926, 'Alejandra', 'Calderón', 'Delgado', '1985-07-22', 'M', 'Francisco I. Madero', 'Chapalita', 'Coatzacoalcos', 67531, 6, 97, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (927, 'Raúl', 'Valencia', 'Esquivel', '1981-02-02', 'H', 'Avenida Constitución', 'Roma Norte', 'Toluca', 72247, 0, 384, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (928, 'Rebeca', 'Bautista', 'Nava', '1957-04-30', 'H', 'Avenida Colón', 'Xilotzingo', 'Ensenada', 69723, 2, 310, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (929, 'Victoria', 'Sánchez', 'Montes', '1955-05-07', 'H', 'Avenida Gonzalitos', 'Americana', 'Ensenada', 23279, 6, 326, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (930, 'Gael', 'Pérez', 'Morales', '1992-09-20', 'M', 'Sendero del Bosque', 'Santa María la Ribera', 'Celaya', 10101, 14, 208, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (931, 'Romina', 'Salinas', 'Ortiz', '1956-12-07', 'M', 'Calle Río Mixcoac', 'Roma Norte', 'Oaxaca', 66418, 8, 152, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (932, 'Fátima', 'Solís', 'Ramírez', '1983-11-10', 'M', 'Calle Río Lerma', 'Americana', 'Tijuana', 42919, 10, 212, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (933, 'Jorge', 'Franco', 'Flores', '1961-12-15', 'Otro', 'Avenida Universidad', 'Doctores', 'Cancún', 80577, 6, 299, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (934, 'Iván', 'Ruiz', 'Silva', '1964-07-10', 'H', 'Sendero del Bosque', 'Roma Norte', 'Coatzacoalcos', 19133, 4, 117, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (935, 'Leonardo', 'Cortés', 'Díaz', '1988-04-10', 'H', 'Avenida Gonzalitos', 'Roma Sur', 'Ensenada', 26220, 7, 304, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (936, 'Bianca', 'Meléndez', 'Navarrete', '1950-10-08', 'Otro', 'Avenida del Trabajo', 'Xilotzingo', 'La Paz', 60103, 16, 376, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (937, 'Rubén', 'Delgado', 'Serna', '1983-12-30', 'H', 'Calle Oaxaca', 'Clavería', 'León', 31490, 12, 187, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (938, 'Victoria', 'Pineda', 'Jiménez', '1967-11-25', 'H', 'Calle 16 de Septiembre', 'Coyoacán Centro', 'Hermosillo', 90775, 8, 109, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (939, 'Fernanda', 'Ortiz', 'Calderón', '1962-04-30', 'H', 'Calle Nueva Era', 'Centro Monterrey', 'Oaxaca', 82220, 3, 354, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (940, 'Ricardo', 'Salazar', 'Juárez', '1976-07-21', 'H', 'Calle Río Mixcoac', 'Escandón', 'Tijuana', 58227, 17, 234, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (941, 'Gabriela', 'Chávez', 'Serna', '1977-03-29', 'Otro', 'Avenida Constitución', 'Americana', 'Mazatlán', 73174, 2, 115, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (942, 'José', 'Pineda', 'Navarrete', '1985-11-15', 'Otro', 'Calle Durango', 'Las Américas', 'Puebla', 43991, 5, 172, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (943, 'Elena', 'Díaz', 'Luna', '1975-11-04', 'H', 'Camino Viejo', 'Centro Monterrey', 'Irapuato', 57841, 13, 266, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (944, 'Héctor', 'Salazar', 'Rangel', '1988-05-17', 'M', 'Calle Tabasco', 'Nápoles', 'Guadalajara', 77183, 12, 369, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (945, 'Rebeca', 'Esquivel', 'Rangel', '1988-12-18', 'Otro', 'Insurgentes Sur', 'Nápoles', 'Coatzacoalcos', 38699, 20, 87, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (946, 'Tomás', 'Calderón', 'Valencia', '1956-01-30', 'H', 'Sendero del Bosque', 'Mixcoac', 'Monterrey', 71855, 10, 100, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (947, 'Francisco', 'Rosales', 'Roldán', '1986-05-15', 'H', 'Héroes de Chapultepec', 'Juárez', 'Villahermosa', 58313, 20, 26, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (948, 'Fernanda', 'Figueroa', 'Calderón', '1978-06-25', 'H', 'Calle Mérida', 'Analco', 'Chihuahua', 74769, 5, 341, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (949, 'Eduardo', 'Sánchez', 'Calderón', '1960-08-08', 'M', 'Camino Real', 'Coyoacán Centro', 'Hermosillo', 15673, 2, 71, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (950, 'Iván', 'Rosales', 'Bautista', '1960-06-16', 'M', 'Calle 16 de Septiembre', 'Cumbres', 'Puebla', 89110, 19, 76, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (951, 'Ernesto', 'Navarrete', 'Ramos', '1960-12-03', 'Otro', 'Calle Hidalgo', 'Tacubaya', 'Ciudad de México', 90791, 2, 372, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (952, 'Alondra', 'Zamora', 'Serna', '1980-02-01', 'M', 'Avenida Colón', 'San Manuel', 'León', 30771, 17, 55, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (953, 'Raúl', 'Ramos', 'Ramírez', '1958-08-18', 'M', 'Calle Magnolia', 'Anzures', 'Saltillo', 42144, 1, 140, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (954, 'Carolina', 'González', 'Castillo', '1969-03-28', 'H', 'Privada Jardines', 'Huinalá', 'La Paz', 31597, 17, 157, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (955, 'Jimena', 'Estrada', 'Peña', '1960-12-24', 'M', 'Calle Mérida', 'Del Valle', 'León', 58926, 8, 208, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (956, 'Daniela', 'Camacho', 'Vargas', '1959-08-07', 'H', 'Calle Magnolia', 'Huexotitla', 'León', 38665, 18, 56, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (957, 'Fátima', 'Cruz', 'Díaz', '1954-12-12', 'Otro', 'Calle Nueva Era', 'Doctores', 'Querétaro', 78438, 17, 79, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (958, 'Alejandra', 'Juárez', 'Acosta', '1946-05-16', 'M', 'Benito Juárez', 'Escandón', 'Toluca', 16863, 16, 225, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (959, 'Raúl', 'Acosta', 'Castillo', '1974-01-23', 'Otro', 'Calle Río Lerma', 'Doctores', 'León', 33394, 3, 103, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (960, 'José', 'Reyes', 'García', '1971-09-09', 'M', 'Eje Central', 'Tacubaya', 'Irapuato', 47952, 7, 197, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (961, 'Fernanda', 'Escobar', 'Morales', '1971-10-15', 'Otro', 'Prolongación Zaragoza', 'Analco', 'Mazatlán', 49513, 4, 303, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (962, 'Montserrat', 'Herrera', 'Vargas', '1973-11-02', 'H', 'Benito Juárez', 'Cumbres', 'Culiacán', 19136, 14, 209, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (963, 'Sofía', 'Torres', 'García', '1976-09-15', 'Otro', 'Camino Real', 'Polanco', 'La Paz', 44054, 2, 133, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (964, 'Rubén', 'Estrada', 'Padilla', '1949-01-22', 'Otro', 'Calle Sur 20', 'Escandón', 'Tuxtla Gutiérrez', 80639, 5, 233, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (965, 'Rebeca', 'Padilla', 'Estrada', '1952-01-02', 'H', 'Calle Morelos', 'Juárez', 'Tepic', 34975, 18, 263, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (966, 'Victoria', 'Martínez', 'Reyes', '1955-08-06', 'M', 'Calle Sur 20', 'Huexotitla', 'Villahermosa', 45640, 6, 357, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (967, 'Raúl', 'Salazar', 'Herrera', '1976-04-23', 'M', 'Calle Emiliano Zapata', 'Centro Monterrey', 'Tijuana', 90727, 13, 226, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (968, 'Zoe', 'Velasco', 'Aguilar', '1970-01-31', 'H', 'Calle Nueva Era', 'Escandón', 'Veracruz', 37266, 16, 57, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (969, 'Valeria', 'Ochoa', 'Castillo', '1988-03-14', 'M', 'Calle de las Rosas', 'Centro Monterrey', 'Morelia', 68202, 5, 339, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (970, 'Luis', 'Sánchez', 'Franco', '1981-01-20', 'M', 'Privada San Diego', 'Azcapotzalco', 'Veracruz', 68178, 11, 274, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (971, 'Elena', 'Solís', 'Ramírez', '1973-10-14', 'H', 'Calle Emiliano Zapata', 'Clavería', 'Chihuahua', 80539, 0, 214, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (972, 'Fátima', 'Rangel', 'Salazar', '1964-03-27', 'M', 'Calle Río Mixcoac', 'Clavería', 'Guadalajara', 74041, 14, 142, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (973, 'José', 'Nava', 'Arriaga', '1979-07-09', 'M', 'Calzada de Tlalpan', 'Juárez', 'Saltillo', 75600, 13, 257, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (974, 'Bianca', 'Morales', 'Mejía', '1964-06-30', 'H', 'Eje Central', 'Americana', 'Ensenada', 84987, 5, 305, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (975, 'Alejandra', 'Galindo', 'Ortiz', '1986-09-12', 'H', 'Calle Oaxaca', 'Providencia', 'Ciudad de México', 38712, 6, 186, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (976, 'Miguel', 'Franco', 'Martínez', '1947-03-05', 'Otro', 'Calzada de Tlalpan', 'Clavería', 'Culiacán', 31951, 7, 35, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (977, 'Valeria', 'Ochoa', 'Nava', '1951-01-20', 'H', 'Avenida Patria', 'Clavería', 'Tuxtla Gutiérrez', 34008, 9, 390, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (978, 'Camila', 'Sandoval', 'Valencia', '1974-08-31', 'M', 'Calle Tabasco', 'Providencia', 'Chihuahua', 58249, 15, 107, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (979, 'Gabriela', 'Rosales', 'Rangel', '1974-10-27', 'H', 'Calle del Sol', 'Santa María la Ribera', 'Morelia', 54974, 0, 264, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (980, 'Ricardo', 'Nava', 'López', '1969-10-02', 'M', 'Calle Mérida', 'Nápoles', 'Culiacán', 15952, 17, 63, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (981, 'Valeria', 'Torres', 'Martínez', '1960-12-15', 'Otro', 'Calle Río Mixcoac', 'Roma Norte', 'Cancún', 47060, 16, 8, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (982, 'Ariana', 'Pérez', 'López', '1973-10-10', 'M', 'Calle Río Mixcoac', 'Coyoacán Centro', 'Culiacán', 11976, 12, 71, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (983, 'Elena', 'Rodríguez', 'Sandoval', '2003-08-11', 'Otro', 'Camino Real', 'Clavería', 'Monterrey', 64090, 7, 313, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (984, 'Elena', 'Salazar', 'Salinas', '1961-11-25', 'H', 'Calle Río Lerma', 'Huexotitla', 'Ciudad de México', 82012, 17, 374, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (985, 'Andrea', 'Bautista', 'Escobar', '1956-08-31', 'M', 'Avenida Gonzalitos', 'Nápoles', 'Querétaro', 91246, 13, 81, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (986, 'Mario', 'Martínez', 'Vargas', '1960-04-16', 'H', 'Calle Hidalgo', 'Huinalá', 'Morelia', 90206, 6, 288, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (987, 'Leonardo', 'Torres', 'Esquivel', '1959-02-18', 'M', 'Calle Norte 45', 'Narvarte', 'Durango', 49523, 11, 222, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (988, 'Gabriela', 'Ortiz', 'Ruiz', '1969-04-01', 'Otro', 'Avenida Patria', 'San Manuel', 'Coatzacoalcos', 34596, 13, 214, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (989, 'Ángel', 'Morales', 'Montes', '1967-01-28', 'H', 'Privada Jardines', 'Juárez', 'Reynosa', 91345, 8, 212, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (990, 'Julián', 'Vargas', 'Cortés', '1975-06-25', 'Otro', 'Prolongación Zaragoza', 'Mixcoac', 'Hermosillo', 36647, 14, 252, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (991, 'Raúl', 'Flores', 'Valencia', '1979-10-17', 'H', 'Calle Oaxaca', 'Analco', 'Tijuana', 26207, 5, 66, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (992, 'Mauricio', 'Valdez', 'Arriaga', '1983-05-08', 'Otro', 'Sendero del Bosque', 'Chapalita', 'Mérida', 28500, 10, 107, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (993, 'Zoe', 'Franco', 'Velasco', '1971-09-24', 'M', 'Calle Emiliano Zapata', 'Santa María la Ribera', 'Monterrey', 97803, 20, 393, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (994, 'Montserrat', 'Estrada', 'Ramos', '1959-03-07', 'H', 'Benito Juárez', 'Azcapotzalco', 'Veracruz', 12783, 13, 165, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (995, 'Eduardo', 'González', 'Escobar', '1946-05-19', 'H', 'Avenida Colón', 'San Manuel', 'Matamoros', 14816, 14, 252, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (996, 'Marisol', 'Cedillo', 'Camacho', '1982-10-03', 'Otro', 'Calle Nueva Era', 'San Nicolás', 'Mazatlán', 63949, 10, 241, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (997, 'Francisco', 'Meléndez', 'Esquivel', '1966-04-26', 'H', 'Calle Emiliano Zapata', 'Polanco', 'Aguascalientes', 29224, 5, 234, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (998, 'Rubén', 'Bautista', 'Ochoa', '1968-09-04', 'M', 'Calle Hidalgo', 'Las Américas', 'Culiacán', 42123, 3, 99, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (999, 'Jimena', 'González', 'Valdez', '1960-08-27', 'H', 'Calle Emiliano Zapata', 'San Pedro Garza García', 'Monterrey', 62306, 2, 237, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1000, 'Ana', 'Peña', 'Ramírez', '1988-02-14', 'M', 'Calle Norte 45', 'Xilotzingo', 'Toluca', 44403, 5, 216, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1001, 'Gabriela', 'González', 'Solís', '1958-10-20', 'H', 'Calle Magnolia', 'Juárez', 'La Paz', 78896, 19, 3, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1002, 'Fernanda', 'Chávez', 'Cedillo', '1984-01-27', 'M', 'Calle Norte 45', 'Roma Sur', 'Mazatlán', 41627, 0, 330, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1003, 'Montserrat', 'Acosta', 'Zamora', '1977-05-14', 'Otro', 'Boulevard Díaz Ordaz', 'Itzimná', 'Puebla', 59064, 5, 291, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1004, 'David', 'Luna', 'Zamora', '1970-02-24', 'M', 'Calzada de Tlalpan', 'Huexotitla', 'La Paz', 26842, 15, 275, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1005, 'Elena', 'Valdez', 'Montes', '1958-11-22', 'H', 'Héroes de Chapultepec', 'Narvarte', 'Monterrey', 46945, 8, 273, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1006, 'Ximena', 'Luna', 'Mejía', '1974-01-16', 'Otro', 'Calle Mérida', 'San Nicolás', 'Monterrey', 76208, 13, 33, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1007, 'Andrea', 'Mejía', 'Torres', '1982-11-16', 'H', 'Calle Río Lerma', 'Roma Norte', 'Tuxtla Gutiérrez', 75353, 13, 168, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1008, 'Lucía', 'Nava', 'Montes', '1972-10-03', 'M', 'Calle Emiliano Zapata', 'Cumbres', 'Guadalajara', 95444, 2, 398, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1009, 'Camila', 'Luna', 'Rangel', '1982-05-10', 'M', 'Avenida Colón', 'Doctores', 'Durango', 50431, 13, 237, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1010, 'José', 'Pérez', 'Cortés', '1966-08-16', 'M', 'Calle Palmeras', 'Huexotitla', 'Ciudad de México', 75694, 14, 51, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1011, 'Zoe', 'Valdez', 'Velasco', '1953-09-12', 'H', 'Calle del Sol', 'Juárez', 'Mérida', 90769, 11, 245, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1012, 'Rebeca', 'Esquivel', 'Rodríguez', '1974-12-27', 'Otro', 'Avenida Constitución', 'Americana', 'Veracruz', 14593, 5, 304, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1013, 'Raúl', 'Sandoval', 'Arriaga', '1951-12-10', 'Otro', 'Calle Mérida', 'Narvarte', 'Tepic', 94185, 8, 367, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1014, 'Iván', 'Figueroa', 'Ruiz', '1978-11-05', 'H', 'Calle Oaxaca', 'Roma Norte', 'Toluca', 57321, 9, 101, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1015, 'Francisco', 'Serna', 'Valencia', '1965-05-12', 'M', 'Calle 16 de Septiembre', 'Americana', 'Aguascalientes', 41651, 19, 146, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1016, 'Ariana', 'Mendoza', 'Acosta', '1979-09-16', 'Otro', 'Calle Magnolia', 'Narvarte', 'Culiacán', 67999, 4, 354, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1017, 'Sebastián', 'Torres', 'Valencia', '1958-06-28', 'Otro', 'Avenida Reforma', 'Roma Sur', 'Tepic', 92978, 6, 393, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1018, 'Ernesto', 'Peña', 'Aguilar', '1985-01-26', 'H', 'Calle del Sol', 'Clavería', 'Guadalajara', 70474, 1, 287, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1019, 'Diego', 'Villalobos', 'Díaz', '1981-02-22', 'Otro', 'Avenida Constitución', 'Narvarte', 'Tuxtla Gutiérrez', 30620, 13, 278, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1020, 'Fernanda', 'Treviño', 'Zamora', '1957-07-28', 'M', 'Avenida Universidad', 'Doctores', 'Culiacán', 38688, 3, 119, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1021, 'Carlos', 'Flores', 'Gómez', '1957-04-25', 'H', 'Prolongación Zaragoza', 'Roma Norte', 'La Paz', 69938, 7, 284, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1022, 'Daniela', 'Padilla', 'Pineda', '1970-10-06', 'Otro', 'Prolongación Zaragoza', 'Juárez', 'Celaya', 66674, 19, 9, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1023, 'Alondra', 'Montes', 'Serna', '1951-07-24', 'Otro', 'Calle Tabasco', 'Centro Monterrey', 'Hermosillo', 21471, 3, 153, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1024, 'Fernanda', 'Padilla', 'Gómez', '1989-04-11', 'H', 'Avenida Constitución', 'Nápoles', 'Durango', 41591, 2, 238, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1025, 'Miranda', 'Flores', 'Hernández', '1952-09-18', 'H', 'Insurgentes Sur', 'Polanco', 'La Paz', 44101, 20, 176, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1026, 'Carolina', 'Treviño', 'Esquivel', '1976-05-22', 'M', 'Camino Real', 'Providencia', 'Celaya', 16198, 6, 350, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1027, 'Ana', 'Galindo', 'Ortiz', '1965-03-12', 'M', 'Calle 16 de Septiembre', 'San Pedro Garza García', 'Celaya', 65733, 20, 318, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1028, 'Ernesto', 'Salinas', 'Navarrete', '1967-05-30', 'H', 'Calle Río Lerma', 'Doctores', 'Ciudad de México', 90180, 15, 349, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1029, 'Jorge', 'Acosta', 'Montes', '1948-03-12', 'Otro', 'Sendero del Bosque', 'Oblatos', 'León', 95907, 8, 184, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1030, 'Ricardo', 'Vargas', 'Ruiz', '1974-11-16', 'Otro', 'Avenida Universidad', 'Xilotzingo', 'Aguascalientes', 10380, 1, 323, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1031, 'Luna', 'Navarrete', 'Velasco', '1972-09-14', 'H', 'Avenida Universidad', 'La Paz', 'Mérida', 36384, 18, 198, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1032, 'Jimena', 'Ortiz', 'Treviño', '1960-04-05', 'Otro', 'Avenida Universidad', 'Lindavista', 'Culiacán', 60079, 12, 217, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1033, 'Ariana', 'Nava', 'Hernández', '1964-06-19', 'Otro', 'Calle Nueva Era', 'Linda Vista', 'Ciudad de México', 63386, 14, 284, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1034, 'Sofía', 'Acosta', 'Cruz', '1993-10-13', 'M', 'Calle Morelos', 'Cumbres', 'Toluca', 85248, 2, 207, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1035, 'Miguel', 'Padilla', 'Nava', '1995-05-27', 'M', 'Avenida Patria', 'Huexotitla', 'Querétaro', 38731, 11, 96, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1036, 'Jimena', 'Franco', 'González', '1982-06-04', 'H', 'Avenida Reforma', 'Oblatos', 'Ciudad de México', 70058, 19, 270, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1037, 'Ernesto', 'Gómez', 'Bautista', '1981-09-03', 'H', 'Héroes de Chapultepec', 'Juárez', 'Ensenada', 45059, 6, 351, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1038, 'Adrián', 'Acosta', 'Flores', '1985-05-11', 'H', 'Privada Jardines', 'Doctores', 'Ensenada', 46702, 14, 153, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1039, 'Iván', 'Camacho', 'Ramírez', '1950-07-10', 'H', 'Calle Durango', 'Huexotitla', 'Coatzacoalcos', 31466, 18, 123, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1040, 'María', 'Gómez', 'Escobar', '1975-04-20', 'M', 'Calle del Sol', 'Chapalita', 'Durango', 11035, 4, 10, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1041, 'Mario', 'Hernández', 'Sánchez', '1963-11-18', 'M', 'Boulevard Díaz Ordaz', 'Clavería', 'Aguascalientes', 84071, 0, 94, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1042, 'Ariana', 'Jiménez', 'Serna', '1978-07-21', 'H', 'Avenida Patria', 'Juárez', 'Hermosillo', 58735, 16, 305, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1043, 'Miranda', 'Martínez', 'Gómez', '1986-12-02', 'H', 'Camino Viejo', 'Chuburná', 'Tuxtla Gutiérrez', 72540, 17, 333, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1044, 'Sofía', 'Bautista', 'Villalobos', '1953-01-01', 'Otro', 'Francisco I. Madero', 'Juárez', 'Durango', 76718, 8, 368, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1045, 'Miranda', 'Ochoa', 'Delgado', '1969-09-10', 'H', 'Calle Morelos', 'Mixcoac', 'Celaya', 27464, 14, 147, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1046, 'Adrián', 'Bautista', 'Navarrete', '1967-04-22', 'H', 'Calle Norte 45', 'Providencia', 'Aguascalientes', 95478, 7, 193, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1047, 'Carolina', 'Villalobos', 'Ramírez', '1956-04-24', 'Otro', 'Calle Hidalgo', 'Cumbres', 'Chihuahua', 89728, 8, 102, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1048, 'Emilio', 'Nava', 'Castillo', '1958-10-11', 'M', 'Calle Palmeras', 'San Manuel', 'La Paz', 50134, 14, 145, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1049, 'Miranda', 'Hernández', 'Morales', '1969-12-17', 'Otro', 'Camino Viejo', 'Coyoacán Centro', 'Querétaro', 18080, 10, 51, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1050, 'Elena', 'Valencia', 'Ramos', '1970-03-08', 'M', 'Calle Nueva Era', 'Polanco', 'Hermosillo', 58556, 8, 363, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1051, 'Francisco', 'Hernández', 'Arriaga', '1972-10-07', 'Otro', 'Calle 16 de Septiembre', 'Linda Vista', 'Monterrey', 47537, 2, 311, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1052, 'Fátima', 'Ruiz', 'Herrera', '1946-04-05', 'Otro', 'Calle Norte 45', 'Coyoacán Centro', 'León', 67688, 4, 141, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1053, 'Ricardo', 'Valdez', 'Vargas', '1977-08-15', 'Otro', 'Calle Tabasco', 'Providencia', 'Querétaro', 67537, 2, 222, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1054, 'Valeria', 'Montes', 'Navarrete', '1953-05-07', 'H', 'Avenida Universidad', 'San Manuel', 'Mazatlán', 23365, 18, 109, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1055, 'Lucía', 'Bautista', 'Mendoza', '1949-12-23', 'H', 'Francisco I. Madero', 'Polanco', 'Mazatlán', 86259, 7, 393, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1056, 'Miranda', 'Sánchez', 'Silva', '1997-09-02', 'M', 'Calle Morelos', 'Chuburná', 'Guadalajara', 50692, 6, 282, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1057, 'Leonardo', 'González', 'Fuentes', '1990-03-31', 'H', 'Benito Juárez', 'Chuburná', 'Culiacán', 80286, 11, 188, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1058, 'Montserrat', 'Castillo', 'Valdez', '1971-11-17', 'M', 'Calle del Sol', 'Roma Norte', 'Toluca', 63343, 8, 220, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1059, 'Ricardo', 'Navarrete', 'Solís', '1969-02-20', 'Otro', 'Calle Hidalgo', 'San Manuel', 'Cancún', 15396, 20, 151, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1060, 'Adrián', 'Cedillo', 'Arriaga', '1969-04-13', 'Otro', 'Calle Nueva Era', 'Clavería', 'Durango', 76265, 11, 143, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1061, 'Iván', 'Pérez', 'Valencia', '1972-03-24', 'M', 'Calle 16 de Septiembre', 'Tlalpan Centro', 'Veracruz', 44473, 0, 350, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1062, 'Sergio', 'Fuentes', 'Salazar', '1980-06-14', 'H', 'Privada San Diego', 'Narvarte', 'Matamoros', 67788, 0, 292, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1063, 'Alejandra', 'Solís', 'Estrada', '1998-04-22', 'M', 'Héroes de Chapultepec', 'Tlalpan Centro', 'Ciudad de México', 84748, 0, 137, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1064, 'Luis', 'Salazar', 'Ortiz', '1989-02-18', 'M', 'Avenida Patria', 'Analco', 'Celaya', 29731, 1, 370, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1065, 'Rebeca', 'Ochoa', 'Esquivel', '1984-02-25', 'Otro', 'Calle Río Lerma', 'Nápoles', 'La Paz', 78003, 9, 264, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1066, 'Adrián', 'Valdez', 'Pineda', '1998-04-25', 'H', 'Prolongación Zaragoza', 'Clavería', 'Villahermosa', 88173, 6, 358, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1067, 'Gael', 'Gómez', 'Aguilar', '1968-02-04', 'H', 'Privada Jardines', 'Narvarte', 'Culiacán', 64408, 9, 52, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1068, 'Paula', 'Roldán', 'Valencia', '1963-09-02', 'H', 'Calle Nueva Era', 'Providencia', 'Coatzacoalcos', 47275, 9, 7, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1069, 'Renata', 'Franco', 'González', '1964-01-06', 'Otro', 'Calle Palmeras', 'Cumbres', 'Saltillo', 89045, 4, 350, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1070, 'Alondra', 'Pérez', 'Montes', '1958-07-27', 'H', 'Calle del Sol', 'Narvarte', 'Irapuato', 37373, 6, 305, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1071, 'Carolina', 'Chávez', 'Juárez', '1958-02-21', 'H', 'Boulevard Díaz Ordaz', 'Analco', 'La Paz', 17375, 9, 165, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1072, 'Eduardo', 'Calderón', 'Esquivel', '1979-02-08', 'Otro', 'Calzada Independencia', 'Polanco', 'Veracruz', 42507, 2, 41, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1073, 'Carlos', 'Navarrete', 'Nava', '1986-01-03', 'H', 'Calle Palmeras', 'Doctores', 'La Paz', 72916, 7, 102, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1074, 'Ángel', 'Flores', 'Juárez', '1970-06-05', 'H', 'Avenida Patria', 'Roma Norte', 'Oaxaca', 34137, 8, 107, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1075, 'Miranda', 'López', 'Mendoza', '1985-03-20', 'H', 'Calle Oaxaca', 'Roma Norte', 'Culiacán', 86356, 13, 394, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1076, 'Mario', 'Vargas', 'Herrera', '1965-07-02', 'Otro', 'Calle Hidalgo', 'Americana', 'Guadalajara', 85821, 1, 112, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1077, 'Miranda', 'Morales', 'Ramos', '1958-01-14', 'Otro', 'Boulevard Díaz Ordaz', 'Linda Vista', 'Mérida', 86902, 20, 215, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1078, 'Héctor', 'Galindo', 'Castillo', '1990-03-20', 'Otro', 'Calle Hidalgo', 'Polanco', 'Saltillo', 95284, 1, 315, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1079, 'Carolina', 'Morales', 'Sánchez', '1958-06-22', 'M', 'Calle Palmeras', 'Oblatos', 'Reynosa', 79278, 17, 130, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1080, 'Jorge', 'Rosales', 'Sandoval', '1954-02-01', 'H', 'Calle Norte 45', 'Roma Sur', 'Villahermosa', 42477, 14, 35, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1081, 'José', 'Solís', 'Hernández', '1945-10-28', 'Otro', 'Calle Durango', 'Xilotzingo', 'Querétaro', 12900, 11, 142, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1082, 'Emilio', 'Arriaga', 'Estrada', '1944-06-20', 'M', 'Calle Morelos', 'Azcapotzalco', 'Matamoros', 52914, 16, 224, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1083, 'Marisol', 'Vargas', 'Nava', '1958-02-08', 'M', 'Calle Hidalgo', 'Itzimná', 'Chihuahua', 59492, 19, 153, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1084, 'Adrián', 'Treviño', 'Sandoval', '1963-12-21', 'M', 'Calle 16 de Septiembre', 'Escandón', 'Hermosillo', 63802, 12, 370, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1085, 'Gael', 'Ramírez', 'Solís', '1954-08-30', 'Otro', 'Calle del Sol', 'Condesa', 'Chihuahua', 45227, 14, 262, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1086, 'Julián', 'Navarrete', 'Rodríguez', '1973-06-23', 'Otro', 'Calle Río Mixcoac', 'Anzures', 'Culiacán', 91674, 20, 76, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1087, 'Fernanda', 'Hernández', 'Castillo', '1987-09-04', 'H', 'Calle Emiliano Zapata', 'Narvarte', 'Puebla', 66615, 7, 124, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1088, 'Valeria', 'Vargas', 'Torres', '1970-10-22', 'H', 'Calle Palmeras', 'Nápoles', 'Veracruz', 69806, 9, 312, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1089, 'Jimena', 'Navarrete', 'Luna', '1949-05-30', 'M', 'Calle Hidalgo', 'Escandón', 'Mérida', 82542, 4, 359, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1090, 'Rubén', 'Arriaga', 'Flores', '1986-09-23', 'Otro', 'Calle Río Mixcoac', 'Roma Norte', 'Celaya', 27930, 10, 21, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1091, 'Juan', 'Meléndez', 'Ochoa', '1990-03-17', 'Otro', 'Calle Durango', 'Linda Vista', 'Ciudad de México', 24556, 19, 263, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1092, 'Mauricio', 'Pineda', 'Treviño', '1968-09-05', 'H', 'Calle del Sol', 'San Pedro Garza García', 'Chihuahua', 73860, 13, 92, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1093, 'Carolina', 'Figueroa', 'González', '1958-03-02', 'H', 'Calzada Independencia', 'San Nicolás', 'Durango', 95710, 16, 244, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1094, 'Jimena', 'Escobar', 'Vargas', '1989-09-18', 'Otro', 'Eje Central', 'Linda Vista', 'Chihuahua', 49046, 16, 288, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1095, 'Sergio', 'Ochoa', 'Nava', '1962-09-19', 'H', 'Benito Juárez', 'Santa María la Ribera', 'Matamoros', 23317, 6, 341, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1096, 'Héctor', 'Torres', 'Peña', '2005-11-26', 'H', 'Calle Palmeras', 'Oblatos', 'Saltillo', 28233, 8, 61, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1097, 'Jimena', 'Ortiz', 'Juárez', '1984-11-03', 'M', 'Privada San Diego', 'Coyoacán Centro', 'Coatzacoalcos', 72529, 1, 294, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1098, 'Ángel', 'Montes', 'Pineda', '1958-04-17', 'H', 'Calle 16 de Septiembre', 'Escandón', 'León', 54218, 16, 203, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1099, 'Leonardo', 'Ruiz', 'Hernández', '1965-09-17', 'Otro', 'Calle Hidalgo', 'Analco', 'Mazatlán', 33146, 11, 353, FALSE);
+
+INSERT INTO EncargadoRegistro (IdPersona, Nombre, ApellidoMaterno, ApellidoPaterno, FechaNacimiento, Sexo, Calle, Colonia, Ciudad, CodigoPostal, NumInterior, NumExterior, EsJugador)
+VALUES (1100, 'María', 'Zamora', 'Rangel', '1972-08-11', 'Otro', 'Calzada de Tlalpan', 'Oblatos', 'Saltillo', 17882, 0, 204, FALSE);
+
+
+
+UPDATE EncargadoRegistro SET Nombre = 'Elmira', ApellidoMaterno = 'Murrow', ApellidoPaterno = 'Harce', FechaNacimiento = '1947-08-08', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 9;
+UPDATE EncargadoRegistro SET Nombre = 'Guglielmo', ApellidoMaterno = 'Maes', ApellidoPaterno = 'Harding', FechaNacimiento = '1956-10-21', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 740;
+UPDATE EncargadoRegistro SET Nombre = 'Faydra', ApellidoMaterno = 'Garth', ApellidoPaterno = 'Haddow', FechaNacimiento = '1995-01-08', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 149;
+UPDATE EncargadoRegistro SET Nombre = 'Shawn', ApellidoMaterno = 'Blankman', ApellidoPaterno = 'Steenson', FechaNacimiento = '1963-03-23', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 828;
+UPDATE EncargadoRegistro SET Nombre = 'Minni', ApellidoMaterno = 'Brett', ApellidoPaterno = 'Shiels', FechaNacimiento = '1928-02-03', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 262;
+UPDATE EncargadoRegistro SET Nombre = 'Angel', ApellidoMaterno = 'Denisot', ApellidoPaterno = 'Aiers', FechaNacimiento = '1933-10-13', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 968;
+UPDATE EncargadoRegistro SET Nombre = 'Kelley', ApellidoMaterno = 'Eilhart', ApellidoPaterno = 'Tumber', FechaNacimiento = '1985-02-06', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 902;
+UPDATE EncargadoRegistro SET Nombre = 'Lil', ApellidoMaterno = 'Meese', ApellidoPaterno = 'Reeman', FechaNacimiento = '1941-11-27', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 109;
+UPDATE EncargadoRegistro SET Nombre = 'Filip', ApellidoMaterno = 'Rendall', ApellidoPaterno = 'Cobbledick', FechaNacimiento = '1968-03-27', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 201;
+UPDATE EncargadoRegistro SET Nombre = 'Derrik', ApellidoMaterno = 'Dennison', ApellidoPaterno = 'Stuer', FechaNacimiento = '1999-04-18', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 524;
+UPDATE EncargadoRegistro SET Nombre = 'Lacee', ApellidoMaterno = 'McCarlie', ApellidoPaterno = 'Klimshuk', FechaNacimiento = '1931-09-08', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 555;
+UPDATE EncargadoRegistro SET Nombre = 'Shelba', ApellidoMaterno = 'Jocelyn', ApellidoPaterno = 'Mellmer', FechaNacimiento = '1957-02-19', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 385;
+UPDATE EncargadoRegistro SET Nombre = 'Gayla', ApellidoMaterno = 'Ottley', ApellidoPaterno = 'Hannam', FechaNacimiento = '1946-10-10', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 417;
+UPDATE EncargadoRegistro SET Nombre = 'Ashby', ApellidoMaterno = 'Bednell', ApellidoPaterno = 'Jacklin', FechaNacimiento = '1979-08-13', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 900;
+UPDATE EncargadoRegistro SET Nombre = 'Tamarra', ApellidoMaterno = 'Farriar', ApellidoPaterno = 'Housecroft', FechaNacimiento = '1952-06-04', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 185;
+UPDATE EncargadoRegistro SET Nombre = 'Dora', ApellidoMaterno = 'Hourigan', ApellidoPaterno = 'Ingrey', FechaNacimiento = '1976-01-11', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 463;
+UPDATE EncargadoRegistro SET Nombre = 'Paulo', ApellidoMaterno = 'Jellico', ApellidoPaterno = 'Ebdon', FechaNacimiento = '1927-08-21', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 905;
+UPDATE EncargadoRegistro SET Nombre = 'Coral', ApellidoMaterno = 'Swainson', ApellidoPaterno = 'Henfre', FechaNacimiento = '2001-05-17', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 728;
+UPDATE EncargadoRegistro SET Nombre = 'Mellie', ApellidoMaterno = 'Gemlett', ApellidoPaterno = 'Faas', FechaNacimiento = '1986-12-18', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 935;
+UPDATE EncargadoRegistro SET Nombre = 'Cthrine', ApellidoMaterno = 'Leggen', ApellidoPaterno = 'Southworth', FechaNacimiento = '1943-01-01', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 475;
+UPDATE EncargadoRegistro SET Nombre = 'Fletcher', ApellidoMaterno = 'Loader', ApellidoPaterno = 'Kilbane', FechaNacimiento = '1932-06-26', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 346;
+UPDATE EncargadoRegistro SET Nombre = 'Celeste', ApellidoMaterno = 'Gaskin', ApellidoPaterno = 'Kuhl', FechaNacimiento = '1940-11-28', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 224;
+UPDATE EncargadoRegistro SET Nombre = 'Taylor', ApellidoMaterno = 'Boggers', ApellidoPaterno = 'Egginson', FechaNacimiento = '2004-10-24', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 777;
+UPDATE EncargadoRegistro SET Nombre = 'Clarke', ApellidoMaterno = 'Cosgrave', ApellidoPaterno = 'Renwick', FechaNacimiento = '1959-02-15', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 23;
+UPDATE EncargadoRegistro SET Nombre = 'Leonora', ApellidoMaterno = 'Gillani', ApellidoPaterno = 'Abthorpe', FechaNacimiento = '1944-10-26', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1069;
+UPDATE EncargadoRegistro SET Nombre = 'Agata', ApellidoMaterno = 'Wenzel', ApellidoPaterno = 'O''Hengerty', FechaNacimiento = '1988-05-28', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1041;
+UPDATE EncargadoRegistro SET Nombre = 'Betteann', ApellidoMaterno = 'Outerbridge', ApellidoPaterno = 'Mangenot', FechaNacimiento = '1972-01-13', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 297;
+UPDATE EncargadoRegistro SET Nombre = 'Sara-ann', ApellidoMaterno = 'Dumpleton', ApellidoPaterno = 'Sancto', FechaNacimiento = '1986-11-08', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 137;
+UPDATE EncargadoRegistro SET Nombre = 'Carey', ApellidoMaterno = 'Rosier', ApellidoPaterno = 'Cartwight', FechaNacimiento = '1936-08-01', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 69;
+UPDATE EncargadoRegistro SET Nombre = 'Gaven', ApellidoMaterno = 'Prevost', ApellidoPaterno = 'Dudleston', FechaNacimiento = '1937-09-21', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 753;
+UPDATE EncargadoRegistro SET Nombre = 'Levi', ApellidoMaterno = 'Blackall', ApellidoPaterno = 'Novelli', FechaNacimiento = '1981-03-28', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 951;
+UPDATE EncargadoRegistro SET Nombre = 'Bearnard', ApellidoMaterno = 'Battlestone', ApellidoPaterno = 'Gillooly', FechaNacimiento = '1981-07-31', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 84;
+UPDATE EncargadoRegistro SET Nombre = 'Hamish', ApellidoMaterno = 'Altham', ApellidoPaterno = 'Mockler', FechaNacimiento = '1942-04-05', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 924;
+UPDATE EncargadoRegistro SET Nombre = 'Lilias', ApellidoMaterno = 'Rogerson', ApellidoPaterno = 'Yurocjkin', FechaNacimiento = '1995-05-10', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 574;
+UPDATE EncargadoRegistro SET Nombre = 'Berne', ApellidoMaterno = 'Flanagan', ApellidoPaterno = 'Ends', FechaNacimiento = '1958-12-04', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 755;
+UPDATE EncargadoRegistro SET Nombre = 'Elwin', ApellidoMaterno = 'Budgen', ApellidoPaterno = 'Hartshorn', FechaNacimiento = '1973-09-17', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 793;
+UPDATE EncargadoRegistro SET Nombre = 'Michaelina', ApellidoMaterno = 'Jorioz', ApellidoPaterno = 'Davidovsky', FechaNacimiento = '1988-02-15', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 640;
+UPDATE EncargadoRegistro SET Nombre = 'Susann', ApellidoMaterno = 'Manser', ApellidoPaterno = 'Astley', FechaNacimiento = '1996-02-25', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 196;
+UPDATE EncargadoRegistro SET Nombre = 'Elset', ApellidoMaterno = 'Ramsier', ApellidoPaterno = 'Ledgard', FechaNacimiento = '1956-10-14', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 130;
+UPDATE EncargadoRegistro SET Nombre = 'Devin', ApellidoMaterno = 'Glen', ApellidoPaterno = 'Andrassy', FechaNacimiento = '1989-04-01', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 244;
+UPDATE EncargadoRegistro SET Nombre = 'Meridith', ApellidoMaterno = 'Rudeforth', ApellidoPaterno = 'Crowley', FechaNacimiento = '1935-07-15', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 717;
+UPDATE EncargadoRegistro SET Nombre = 'Christin', ApellidoMaterno = 'Kerbler', ApellidoPaterno = 'Giacobbo', FechaNacimiento = '1987-04-04', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 499;
+UPDATE EncargadoRegistro SET Nombre = 'Lester', ApellidoMaterno = 'Cooch', ApellidoPaterno = 'Greson', FechaNacimiento = '1981-08-30', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 959;
+UPDATE EncargadoRegistro SET Nombre = 'Rheta', ApellidoMaterno = 'Whyke', ApellidoPaterno = 'Eyree', FechaNacimiento = '2001-04-19', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 1033;
+UPDATE EncargadoRegistro SET Nombre = 'Taite', ApellidoMaterno = 'O''Loghlen', ApellidoPaterno = 'Corrison', FechaNacimiento = '1943-08-20', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 1012;
+UPDATE EncargadoRegistro SET Nombre = 'Eduardo', ApellidoMaterno = 'Blundon', ApellidoPaterno = 'Leel', FechaNacimiento = '1966-05-08', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 769;
+UPDATE EncargadoRegistro SET Nombre = 'Vernon', ApellidoMaterno = 'Dowdney', ApellidoPaterno = 'Ornils', FechaNacimiento = '1983-05-04', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1031;
+UPDATE EncargadoRegistro SET Nombre = 'Merrel', ApellidoMaterno = 'Breit', ApellidoPaterno = 'Stillmann', FechaNacimiento = '2003-08-13', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 135;
+UPDATE EncargadoRegistro SET Nombre = 'Yehudi', ApellidoMaterno = 'Lerego', ApellidoPaterno = 'Asman', FechaNacimiento = '1930-10-22', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 938;
+UPDATE EncargadoRegistro SET Nombre = 'Luce', ApellidoMaterno = 'Rattry', ApellidoPaterno = 'Abramson', FechaNacimiento = '1954-06-08', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 163;
+UPDATE EncargadoRegistro SET Nombre = 'Catrina', ApellidoMaterno = 'Goodger', ApellidoPaterno = 'Joblin', FechaNacimiento = '1970-12-05', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 324;
+UPDATE EncargadoRegistro SET Nombre = 'Blair', ApellidoMaterno = 'Ratie', ApellidoPaterno = 'Boram', FechaNacimiento = '1954-10-01', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 771;
+UPDATE EncargadoRegistro SET Nombre = 'Huntlee', ApellidoMaterno = 'Donnett', ApellidoPaterno = 'Plampeyn', FechaNacimiento = '1972-09-12', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 190;
+UPDATE EncargadoRegistro SET Nombre = 'Sayers', ApellidoMaterno = 'Addicott', ApellidoPaterno = 'Merryweather', FechaNacimiento = '1969-02-16', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 576;
+UPDATE EncargadoRegistro SET Nombre = 'Niko', ApellidoMaterno = 'Allcroft', ApellidoPaterno = 'Rowthorne', FechaNacimiento = '1962-02-28', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 426;
+UPDATE EncargadoRegistro SET Nombre = 'Max', ApellidoMaterno = 'Ricardin', ApellidoPaterno = 'Shaylor', FechaNacimiento = '1986-06-11', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 523;
+UPDATE EncargadoRegistro SET Nombre = 'Tedman', ApellidoMaterno = 'Park', ApellidoPaterno = 'Stelle', FechaNacimiento = '1940-08-06', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 842;
+UPDATE EncargadoRegistro SET Nombre = 'Hendrika', ApellidoMaterno = 'Dubique', ApellidoPaterno = 'Yurchenko', FechaNacimiento = '1975-04-27', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 177;
+UPDATE EncargadoRegistro SET Nombre = 'Ajay', ApellidoMaterno = 'Allwood', ApellidoPaterno = 'Biddy', FechaNacimiento = '1991-09-24', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 686;
+UPDATE EncargadoRegistro SET Nombre = 'Carver', ApellidoMaterno = 'Goranov', ApellidoPaterno = 'Ferrick', FechaNacimiento = '1997-08-28', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 831;
+UPDATE EncargadoRegistro SET Nombre = 'Johnath', ApellidoMaterno = 'Rillstone', ApellidoPaterno = 'Kopmann', FechaNacimiento = '1938-12-05', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 695;
+UPDATE EncargadoRegistro SET Nombre = 'Faith', ApellidoMaterno = 'Robilliard', ApellidoPaterno = 'Corse', FechaNacimiento = '1939-04-14', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 825;
+UPDATE EncargadoRegistro SET Nombre = 'Johny', ApellidoMaterno = 'Barter', ApellidoPaterno = 'Scott', FechaNacimiento = '1931-02-19', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 204;
+UPDATE EncargadoRegistro SET Nombre = 'Velvet', ApellidoMaterno = 'Bromhead', ApellidoPaterno = 'Graver', FechaNacimiento = '1930-12-06', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 922;
+UPDATE EncargadoRegistro SET Nombre = 'Jeralee', ApellidoMaterno = 'Spofforth', ApellidoPaterno = 'Mate', FechaNacimiento = '1939-04-15', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 397;
+UPDATE EncargadoRegistro SET Nombre = 'Maible', ApellidoMaterno = 'Rooms', ApellidoPaterno = 'Yea', FechaNacimiento = '1992-04-26', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 197;
+UPDATE EncargadoRegistro SET Nombre = 'Bettina', ApellidoMaterno = 'Obbard', ApellidoPaterno = 'Beresford', FechaNacimiento = '1969-07-28', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 595;
+UPDATE EncargadoRegistro SET Nombre = 'Ame', ApellidoMaterno = 'Skough', ApellidoPaterno = 'Brotherick', FechaNacimiento = '1964-09-25', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 778;
+UPDATE EncargadoRegistro SET Nombre = 'Hogan', ApellidoMaterno = 'Marian', ApellidoPaterno = 'Flippen', FechaNacimiento = '1930-08-07', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 716;
+UPDATE EncargadoRegistro SET Nombre = 'Merl', ApellidoMaterno = 'Paur', ApellidoPaterno = 'Krysiak', FechaNacimiento = '1956-06-05', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 733;
+UPDATE EncargadoRegistro SET Nombre = 'Natasha', ApellidoMaterno = 'Borzone', ApellidoPaterno = 'Idel', FechaNacimiento = '1998-08-23', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 930;
+UPDATE EncargadoRegistro SET Nombre = 'Arni', ApellidoMaterno = 'McAteer', ApellidoPaterno = 'Swaile', FechaNacimiento = '1933-01-14', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1079;
+UPDATE EncargadoRegistro SET Nombre = 'Kendricks', ApellidoMaterno = 'Withrington', ApellidoPaterno = 'Dorrian', FechaNacimiento = '1987-04-15', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 375;
+UPDATE EncargadoRegistro SET Nombre = 'Nadya', ApellidoMaterno = 'Kellie', ApellidoPaterno = 'Hengoed', FechaNacimiento = '1999-06-19', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 849;
+UPDATE EncargadoRegistro SET Nombre = 'Kenneth', ApellidoMaterno = 'Puttnam', ApellidoPaterno = 'Thorsby', FechaNacimiento = '1930-02-07', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 483;
+UPDATE EncargadoRegistro SET Nombre = 'Rudd', ApellidoMaterno = 'Coppock.', ApellidoPaterno = 'McRamsey', FechaNacimiento = '1936-01-09', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 148;
+UPDATE EncargadoRegistro SET Nombre = 'Hurley', ApellidoMaterno = 'Foad', ApellidoPaterno = 'Meiklem', FechaNacimiento = '1946-10-25', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 837;
+UPDATE EncargadoRegistro SET Nombre = 'Swen', ApellidoMaterno = 'Dyson', ApellidoPaterno = 'Dredge', FechaNacimiento = '1995-07-15', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 799;
+UPDATE EncargadoRegistro SET Nombre = 'Mariska', ApellidoMaterno = 'Praton', ApellidoPaterno = 'Willerson', FechaNacimiento = '1972-11-25', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 605;
+UPDATE EncargadoRegistro SET Nombre = 'Ayn', ApellidoMaterno = 'Truluck', ApellidoPaterno = 'Dodgshun', FechaNacimiento = '1956-04-21', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 334;
+UPDATE EncargadoRegistro SET Nombre = 'Della', ApellidoMaterno = 'Lott', ApellidoPaterno = 'Haslock', FechaNacimiento = '1989-09-07', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 858;
+UPDATE EncargadoRegistro SET Nombre = 'Jozef', ApellidoMaterno = 'Pena', ApellidoPaterno = 'Gregon', FechaNacimiento = '1926-02-28', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 827;
+UPDATE EncargadoRegistro SET Nombre = 'Art', ApellidoMaterno = 'Sine', ApellidoPaterno = 'Bowen', FechaNacimiento = '1997-06-24', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 1050;
+UPDATE EncargadoRegistro SET Nombre = 'Berna', ApellidoMaterno = 'Ferraresi', ApellidoPaterno = 'Trevaskus', FechaNacimiento = '1979-09-01', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 298;
+UPDATE EncargadoRegistro SET Nombre = 'Ralf', ApellidoMaterno = 'Warcup', ApellidoPaterno = 'Sevier', FechaNacimiento = '1969-03-08', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 824;
+UPDATE EncargadoRegistro SET Nombre = 'Kimmie', ApellidoMaterno = 'Beaty', ApellidoPaterno = 'Zupone', FechaNacimiento = '1945-11-08', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 588;
+UPDATE EncargadoRegistro SET Nombre = 'Mattheus', ApellidoMaterno = 'Kinvig', ApellidoPaterno = 'Cottle', FechaNacimiento = '1990-11-13', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 296;
+UPDATE EncargadoRegistro SET Nombre = 'Leland', ApellidoMaterno = 'Howieson', ApellidoPaterno = 'Cohr', FechaNacimiento = '1998-08-04', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 666;
+UPDATE EncargadoRegistro SET Nombre = 'Krissy', ApellidoMaterno = 'Lumb', ApellidoPaterno = 'Sneddon', FechaNacimiento = '1927-06-15', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 860;
+UPDATE EncargadoRegistro SET Nombre = 'Markos', ApellidoMaterno = 'Hamlett', ApellidoPaterno = 'Kelinge', FechaNacimiento = '1933-01-21', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 736;
+UPDATE EncargadoRegistro SET Nombre = 'Lonee', ApellidoMaterno = 'Minci', ApellidoPaterno = 'Walcot', FechaNacimiento = '1975-07-20', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 382;
+UPDATE EncargadoRegistro SET Nombre = 'Garner', ApellidoMaterno = 'Baulch', ApellidoPaterno = 'Mulryan', FechaNacimiento = '1957-01-20', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 443;
+UPDATE EncargadoRegistro SET Nombre = 'Wilhelmine', ApellidoMaterno = 'Mathevon', ApellidoPaterno = 'Benkin', FechaNacimiento = '1946-09-16', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 143;
+UPDATE EncargadoRegistro SET Nombre = 'Shelbi', ApellidoMaterno = 'Paddison', ApellidoPaterno = 'Bayston', FechaNacimiento = '1973-04-16', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 54;
+UPDATE EncargadoRegistro SET Nombre = 'Aldon', ApellidoMaterno = 'Stother', ApellidoPaterno = 'Burds', FechaNacimiento = '1935-08-03', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 870;
+UPDATE EncargadoRegistro SET Nombre = 'Reilly', ApellidoMaterno = 'Georgeon', ApellidoPaterno = 'Igounet', FechaNacimiento = '1942-04-08', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 364;
+UPDATE EncargadoRegistro SET Nombre = 'Griffin', ApellidoMaterno = 'Leyband', ApellidoPaterno = 'Trouncer', FechaNacimiento = '1957-09-08', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1092;
+UPDATE EncargadoRegistro SET Nombre = 'Dorrie', ApellidoMaterno = 'Yakebowitch', ApellidoPaterno = 'Nucci', FechaNacimiento = '1978-05-02', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 277;
+UPDATE EncargadoRegistro SET Nombre = 'Philomena', ApellidoMaterno = 'Elgram', ApellidoPaterno = 'Sayce', FechaNacimiento = '1954-03-13', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 1035;
+UPDATE EncargadoRegistro SET Nombre = 'Gerhardine', ApellidoMaterno = 'Marxsen', ApellidoPaterno = 'Murthwaite', FechaNacimiento = '1944-03-21', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 42;
+UPDATE EncargadoRegistro SET Nombre = 'Ashbey', ApellidoMaterno = 'Senton', ApellidoPaterno = 'Farlow', FechaNacimiento = '1949-07-22', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 655;
+UPDATE EncargadoRegistro SET Nombre = 'Morna', ApellidoMaterno = 'Degenhardt', ApellidoPaterno = 'Samarth', FechaNacimiento = '1954-04-07', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 981;
+UPDATE EncargadoRegistro SET Nombre = 'Bobbie', ApellidoMaterno = 'Mothersdale', ApellidoPaterno = 'McElory', FechaNacimiento = '1995-10-11', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 316;
+UPDATE EncargadoRegistro SET Nombre = 'Loleta', ApellidoMaterno = 'Aris', ApellidoPaterno = 'Legerton', FechaNacimiento = '1960-12-23', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 856;
+UPDATE EncargadoRegistro SET Nombre = 'Brantley', ApellidoMaterno = 'Allington', ApellidoPaterno = 'Ekell', FechaNacimiento = '1955-03-27', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 579;
+UPDATE EncargadoRegistro SET Nombre = 'Bel', ApellidoMaterno = 'Jeenes', ApellidoPaterno = 'Martina', FechaNacimiento = '1956-12-29', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 970;
+UPDATE EncargadoRegistro SET Nombre = 'Bellina', ApellidoMaterno = 'Cutting', ApellidoPaterno = 'Di Bartolommeo', FechaNacimiento = '1982-04-19', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 690;
+UPDATE EncargadoRegistro SET Nombre = 'Aline', ApellidoMaterno = 'Dudek', ApellidoPaterno = 'Rodolfi', FechaNacimiento = '1968-06-15', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 242;
+UPDATE EncargadoRegistro SET Nombre = 'Torr', ApellidoMaterno = 'Merington', ApellidoPaterno = 'Brogioni', FechaNacimiento = '2001-09-05', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 116;
+UPDATE EncargadoRegistro SET Nombre = 'Asa', ApellidoMaterno = 'Mayor', ApellidoPaterno = 'Cuthill', FechaNacimiento = '1942-05-25', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 76;
+UPDATE EncargadoRegistro SET Nombre = 'Francyne', ApellidoMaterno = 'Haughin', ApellidoPaterno = 'Niccolls', FechaNacimiento = '1964-07-04', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 286;
+UPDATE EncargadoRegistro SET Nombre = 'Carolan', ApellidoMaterno = 'Mercey', ApellidoPaterno = 'Harriman', FechaNacimiento = '1969-02-17', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 35;
+UPDATE EncargadoRegistro SET Nombre = 'Robenia', ApellidoMaterno = 'Edmead', ApellidoPaterno = 'Broad', FechaNacimiento = '1930-11-11', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 963;
+UPDATE EncargadoRegistro SET Nombre = 'Albie', ApellidoMaterno = 'Brikner', ApellidoPaterno = 'Strank', FechaNacimiento = '1954-01-26', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 439;
+UPDATE EncargadoRegistro SET Nombre = 'Lanni', ApellidoMaterno = 'Athy', ApellidoPaterno = 'Benger', FechaNacimiento = '1958-07-23', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 362;
+UPDATE EncargadoRegistro SET Nombre = 'Marlie', ApellidoMaterno = 'Peele', ApellidoPaterno = 'Melato', FechaNacimiento = '1960-09-22', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 343;
+UPDATE EncargadoRegistro SET Nombre = 'Aluino', ApellidoMaterno = 'Molines', ApellidoPaterno = 'Workman', FechaNacimiento = '1949-06-02', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 731;
+UPDATE EncargadoRegistro SET Nombre = 'Marsiella', ApellidoMaterno = 'Addicote', ApellidoPaterno = 'Stormouth', FechaNacimiento = '2005-01-20', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 392;
+UPDATE EncargadoRegistro SET Nombre = 'Brittney', ApellidoMaterno = 'Mathiassen', ApellidoPaterno = 'Bassingham', FechaNacimiento = '1956-08-27', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 1080;
+UPDATE EncargadoRegistro SET Nombre = 'Aubrette', ApellidoMaterno = 'Hayball', ApellidoPaterno = 'Grewar', FechaNacimiento = '1926-06-21', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 73;
+UPDATE EncargadoRegistro SET Nombre = 'Olympe', ApellidoMaterno = 'Toun', ApellidoPaterno = 'Hoonahan', FechaNacimiento = '1940-09-12', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 123;
+UPDATE EncargadoRegistro SET Nombre = 'Ashlin', ApellidoMaterno = 'Sundin', ApellidoPaterno = 'Inold', FechaNacimiento = '2001-11-29', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 88;
+UPDATE EncargadoRegistro SET Nombre = 'Sadye', ApellidoMaterno = 'Millyard', ApellidoPaterno = 'Triswell', FechaNacimiento = '1950-11-25', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 115;
+UPDATE EncargadoRegistro SET Nombre = 'Daryl', ApellidoMaterno = 'Tams', ApellidoPaterno = 'Harnwell', FechaNacimiento = '1943-05-02', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 270;
+UPDATE EncargadoRegistro SET Nombre = 'Vernen', ApellidoMaterno = 'Hughf', ApellidoPaterno = 'Semken', FechaNacimiento = '1937-07-04', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 834;
+UPDATE EncargadoRegistro SET Nombre = 'Lynnelle', ApellidoMaterno = 'Rivel', ApellidoPaterno = 'Jankovsky', FechaNacimiento = '1984-03-25', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 742;
+UPDATE EncargadoRegistro SET Nombre = 'Win', ApellidoMaterno = 'Thirsk', ApellidoPaterno = 'MacGebenay', FechaNacimiento = '1993-12-19', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 441;
+UPDATE EncargadoRegistro SET Nombre = 'Neel', ApellidoMaterno = 'Knutsen', ApellidoPaterno = 'Proud', FechaNacimiento = '1934-04-18', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 10;
+UPDATE EncargadoRegistro SET Nombre = 'Jamie', ApellidoMaterno = 'Eads', ApellidoPaterno = 'Douthwaite', FechaNacimiento = '1946-05-29', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 961;
+UPDATE EncargadoRegistro SET Nombre = 'Sadella', ApellidoMaterno = 'Storkes', ApellidoPaterno = 'Snailham', FechaNacimiento = '1952-12-17', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 413;
+UPDATE EncargadoRegistro SET Nombre = 'Sibylle', ApellidoMaterno = 'Heis', ApellidoPaterno = 'Conibeer', FechaNacimiento = '1928-02-21', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 213;
+UPDATE EncargadoRegistro SET Nombre = 'Darbee', ApellidoMaterno = 'Caldera', ApellidoPaterno = 'Stit', FechaNacimiento = '1986-02-12', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 738;
+UPDATE EncargadoRegistro SET Nombre = 'Lilias', ApellidoMaterno = 'Cuckoo', ApellidoPaterno = 'Kobiera', FechaNacimiento = '1970-12-21', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 3;
+UPDATE EncargadoRegistro SET Nombre = 'Brocky', ApellidoMaterno = 'Neiland', ApellidoPaterno = 'Peskett', FechaNacimiento = '1954-06-29', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 784;
+UPDATE EncargadoRegistro SET Nombre = 'Sheffie', ApellidoMaterno = 'Blay', ApellidoPaterno = 'Pauletti', FechaNacimiento = '1984-09-11', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 469;
+UPDATE EncargadoRegistro SET Nombre = 'Lancelot', ApellidoMaterno = 'Marsden', ApellidoPaterno = 'Fideler', FechaNacimiento = '1986-08-24', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 942;
+UPDATE EncargadoRegistro SET Nombre = 'Sigismund', ApellidoMaterno = 'Bouskill', ApellidoPaterno = 'Tremble', FechaNacimiento = '1951-09-09', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 195;
+UPDATE EncargadoRegistro SET Nombre = 'Boyd', ApellidoMaterno = 'Charlet', ApellidoPaterno = 'Churchley', FechaNacimiento = '1958-12-26', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 240;
+UPDATE EncargadoRegistro SET Nombre = 'Mela', ApellidoMaterno = 'Pennyman', ApellidoPaterno = 'Simione', FechaNacimiento = '1987-11-16', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 1099;
+UPDATE EncargadoRegistro SET Nombre = 'Ricki', ApellidoMaterno = 'Hulburd', ApellidoPaterno = 'Smitheman', FechaNacimiento = '1938-05-28', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 152;
+UPDATE EncargadoRegistro SET Nombre = 'Carlynne', ApellidoMaterno = 'Berick', ApellidoPaterno = 'Heelis', FechaNacimiento = '1997-12-16', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 673;
+UPDATE EncargadoRegistro SET Nombre = 'Chad', ApellidoMaterno = 'Brito', ApellidoPaterno = 'Farbrace', FechaNacimiento = '2003-05-14', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 577;
+UPDATE EncargadoRegistro SET Nombre = 'Annecorinne', ApellidoMaterno = 'Hyett', ApellidoPaterno = 'Georgeon', FechaNacimiento = '1939-09-22', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 880;
+UPDATE EncargadoRegistro SET Nombre = 'Hamel', ApellidoMaterno = 'Wapple', ApellidoPaterno = 'Praton', FechaNacimiento = '1943-07-17', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 820;
+UPDATE EncargadoRegistro SET Nombre = 'Locke', ApellidoMaterno = 'Newbegin', ApellidoPaterno = 'Shepard', FechaNacimiento = '1959-09-05', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1028;
+UPDATE EncargadoRegistro SET Nombre = 'Tammi', ApellidoMaterno = 'De Banke', ApellidoPaterno = 'Scourfield', FechaNacimiento = '1969-03-03', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 1006;
+UPDATE EncargadoRegistro SET Nombre = 'Dory', ApellidoMaterno = 'Barrs', ApellidoPaterno = 'Libbe', FechaNacimiento = '1972-06-14', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 41;
+UPDATE EncargadoRegistro SET Nombre = 'Mariel', ApellidoMaterno = 'Chatin', ApellidoPaterno = 'McIlhagga', FechaNacimiento = '1939-09-07', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 91;
+UPDATE EncargadoRegistro SET Nombre = 'Helena', ApellidoMaterno = 'Stonebridge', ApellidoPaterno = 'Giacovetti', FechaNacimiento = '1952-10-01', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 675;
+UPDATE EncargadoRegistro SET Nombre = 'Celie', ApellidoMaterno = 'Donald', ApellidoPaterno = 'Mould', FechaNacimiento = '1979-02-28', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 430;
+UPDATE EncargadoRegistro SET Nombre = 'Tommy', ApellidoMaterno = 'Guppey', ApellidoPaterno = 'Wixey', FechaNacimiento = '2003-03-02', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 446;
+UPDATE EncargadoRegistro SET Nombre = 'Jedd', ApellidoMaterno = 'Hazel', ApellidoPaterno = 'Gainor', FechaNacimiento = '1986-01-24', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 453;
+UPDATE EncargadoRegistro SET Nombre = 'Iseabal', ApellidoMaterno = 'Boc', ApellidoPaterno = 'Rickett', FechaNacimiento = '1935-08-31', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 559;
+UPDATE EncargadoRegistro SET Nombre = 'Emelyne', ApellidoMaterno = 'Easter', ApellidoPaterno = 'McCreedy', FechaNacimiento = '1942-04-02', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 318;
+UPDATE EncargadoRegistro SET Nombre = 'Gardener', ApellidoMaterno = 'Cella', ApellidoPaterno = 'Grouvel', FechaNacimiento = '2000-03-25', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 336;
+UPDATE EncargadoRegistro SET Nombre = 'Darryl', ApellidoMaterno = 'McLaughlan', ApellidoPaterno = 'Caney', FechaNacimiento = '1966-03-23', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 939;
+UPDATE EncargadoRegistro SET Nombre = 'Molly', ApellidoMaterno = 'Ricket', ApellidoPaterno = 'Conyers', FechaNacimiento = '1998-07-21', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 848;
+UPDATE EncargadoRegistro SET Nombre = 'Abbie', ApellidoMaterno = 'Veryard', ApellidoPaterno = 'Matissoff', FechaNacimiento = '1942-11-04', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 766;
+UPDATE EncargadoRegistro SET Nombre = 'Cindra', ApellidoMaterno = 'Waldren', ApellidoPaterno = 'Durning', FechaNacimiento = '1992-08-01', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 906;
+UPDATE EncargadoRegistro SET Nombre = 'Saidee', ApellidoMaterno = 'Hows', ApellidoPaterno = 'Davison', FechaNacimiento = '2005-12-08', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 525;
+UPDATE EncargadoRegistro SET Nombre = 'Jenica', ApellidoMaterno = 'Massimi', ApellidoPaterno = 'Norgate', FechaNacimiento = '1941-04-25', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 310;
+UPDATE EncargadoRegistro SET Nombre = 'Coralie', ApellidoMaterno = 'Spedding', ApellidoPaterno = 'Blunderfield', FechaNacimiento = '1962-07-21', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 131;
+UPDATE EncargadoRegistro SET Nombre = 'Kristi', ApellidoMaterno = 'Reightley', ApellidoPaterno = 'Myrick', FechaNacimiento = '1977-05-04', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 791;
+UPDATE EncargadoRegistro SET Nombre = 'Pierson', ApellidoMaterno = 'Boich', ApellidoPaterno = 'Soitoux', FechaNacimiento = '1937-12-29', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 319;
+UPDATE EncargadoRegistro SET Nombre = 'Marta', ApellidoMaterno = 'Ingerman', ApellidoPaterno = 'Cowsby', FechaNacimiento = '1991-07-21', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 56;
+UPDATE EncargadoRegistro SET Nombre = 'Coral', ApellidoMaterno = 'Gadesby', ApellidoPaterno = 'Parren', FechaNacimiento = '1943-10-16', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 4;
+UPDATE EncargadoRegistro SET Nombre = 'Pepi', ApellidoMaterno = 'Emblen', ApellidoPaterno = 'Pic', FechaNacimiento = '1931-10-29', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 30;
+UPDATE EncargadoRegistro SET Nombre = 'Ashien', ApellidoMaterno = 'Tillett', ApellidoPaterno = 'McCrone', FechaNacimiento = '1940-12-22', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 840;
+UPDATE EncargadoRegistro SET Nombre = 'Shalne', ApellidoMaterno = 'Watchorn', ApellidoPaterno = 'Sussex', FechaNacimiento = '1929-03-26', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 341;
+UPDATE EncargadoRegistro SET Nombre = 'Priscilla', ApellidoMaterno = 'Filewood', ApellidoPaterno = 'Cripwell', FechaNacimiento = '1976-06-02', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 706;
+UPDATE EncargadoRegistro SET Nombre = 'Webster', ApellidoMaterno = 'Oulet', ApellidoPaterno = 'Harbertson', FechaNacimiento = '1929-05-04', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 954;
+UPDATE EncargadoRegistro SET Nombre = 'Kass', ApellidoMaterno = 'Ipwell', ApellidoPaterno = 'Ortelt', FechaNacimiento = '1933-12-07', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 246;
+UPDATE EncargadoRegistro SET Nombre = 'Bourke', ApellidoMaterno = 'Hughs', ApellidoPaterno = 'Craig', FechaNacimiento = '1930-03-18', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 376;
+UPDATE EncargadoRegistro SET Nombre = 'Kelwin', ApellidoMaterno = 'McLinden', ApellidoPaterno = 'Barthelet', FechaNacimiento = '1961-03-29', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 971;
+UPDATE EncargadoRegistro SET Nombre = 'Trent', ApellidoMaterno = 'Kubicka', ApellidoPaterno = 'Kernar', FechaNacimiento = '1929-06-26', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 300;
+UPDATE EncargadoRegistro SET Nombre = 'Carny', ApellidoMaterno = 'Winkworth', ApellidoPaterno = 'Josipovitz', FechaNacimiento = '1954-03-12', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 129;
+UPDATE EncargadoRegistro SET Nombre = 'Hortense', ApellidoMaterno = 'Threadgill', ApellidoPaterno = 'Imrie', FechaNacimiento = '1955-01-08', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 897;
+UPDATE EncargadoRegistro SET Nombre = 'Arty', ApellidoMaterno = 'Picott', ApellidoPaterno = 'Wooffitt', FechaNacimiento = '1941-07-25', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 751;
+UPDATE EncargadoRegistro SET Nombre = 'Angie', ApellidoMaterno = 'Dalligan', ApellidoPaterno = 'Goodfellow', FechaNacimiento = '1944-02-15', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 833;
+UPDATE EncargadoRegistro SET Nombre = 'Charlton', ApellidoMaterno = 'Bantock', ApellidoPaterno = 'Gear', FechaNacimiento = '1926-08-06', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1096;
+UPDATE EncargadoRegistro SET Nombre = 'Jodee', ApellidoMaterno = 'Merrgen', ApellidoPaterno = 'Alps', FechaNacimiento = '1975-03-29', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 465;
+UPDATE EncargadoRegistro SET Nombre = 'Brockie', ApellidoMaterno = 'Geerits', ApellidoPaterno = 'Kelwick', FechaNacimiento = '2004-01-03', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 862;
+UPDATE EncargadoRegistro SET Nombre = 'Babs', ApellidoMaterno = 'Castro', ApellidoPaterno = 'Borg-Bartolo', FechaNacimiento = '1974-08-10', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 601;
+UPDATE EncargadoRegistro SET Nombre = 'Gardiner', ApellidoMaterno = 'Alford', ApellidoPaterno = 'Cammidge', FechaNacimiento = '1976-08-25', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 294;
+UPDATE EncargadoRegistro SET Nombre = 'Whittaker', ApellidoMaterno = 'Dicte', ApellidoPaterno = 'Sweetnam', FechaNacimiento = '1992-04-12', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 449;
+UPDATE EncargadoRegistro SET Nombre = 'Rosa', ApellidoMaterno = 'Itzcak', ApellidoPaterno = 'Fawdrey', FechaNacimiento = '1998-04-20', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 255;
+UPDATE EncargadoRegistro SET Nombre = 'Irving', ApellidoMaterno = 'Blaxlande', ApellidoPaterno = 'Langtree', FechaNacimiento = '1947-12-10', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 628;
+UPDATE EncargadoRegistro SET Nombre = 'Kitti', ApellidoMaterno = 'Gauche', ApellidoPaterno = 'Fincher', FechaNacimiento = '1965-05-22', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 182;
+UPDATE EncargadoRegistro SET Nombre = 'Kenny', ApellidoMaterno = 'Camilleri', ApellidoPaterno = 'Ickowics', FechaNacimiento = '1964-12-13', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 546;
+UPDATE EncargadoRegistro SET Nombre = 'Keary', ApellidoMaterno = 'Elies', ApellidoPaterno = 'Gilyott', FechaNacimiento = '1997-06-09', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 958;
+UPDATE EncargadoRegistro SET Nombre = 'Huntlee', ApellidoMaterno = 'Colbourn', ApellidoPaterno = 'Anders', FechaNacimiento = '1928-01-27', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 658;
+UPDATE EncargadoRegistro SET Nombre = 'Giulia', ApellidoMaterno = 'Harnetty', ApellidoPaterno = 'Begley', FechaNacimiento = '1935-08-25', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 352;
+UPDATE EncargadoRegistro SET Nombre = 'Morris', ApellidoMaterno = 'De la Yglesias', ApellidoPaterno = 'Tustin', FechaNacimiento = '1957-09-22', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 94;
+UPDATE EncargadoRegistro SET Nombre = 'Vonnie', ApellidoMaterno = 'Lehemann', ApellidoPaterno = 'Shackleton', FechaNacimiento = '1991-05-02', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 171;
+UPDATE EncargadoRegistro SET Nombre = 'Brendan', ApellidoMaterno = 'Colbourn', ApellidoPaterno = 'Pedler', FechaNacimiento = '1949-08-05', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 712;
+UPDATE EncargadoRegistro SET Nombre = 'Mahala', ApellidoMaterno = 'Zywicki', ApellidoPaterno = 'Duer', FechaNacimiento = '1983-06-21', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1082;
+UPDATE EncargadoRegistro SET Nombre = 'Aurlie', ApellidoMaterno = 'Ell', ApellidoPaterno = 'Glasgow', FechaNacimiento = '1970-10-24', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 550;
+UPDATE EncargadoRegistro SET Nombre = 'Lowell', ApellidoMaterno = 'Ashe', ApellidoPaterno = 'Shilton', FechaNacimiento = '1959-09-15', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 454;
+UPDATE EncargadoRegistro SET Nombre = 'Anne-corinne', ApellidoMaterno = 'Pifford', ApellidoPaterno = 'Biasini', FechaNacimiento = '1937-08-15', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 147;
+UPDATE EncargadoRegistro SET Nombre = 'Lemar', ApellidoMaterno = 'Dabner', ApellidoPaterno = 'Poolton', FechaNacimiento = '2000-09-28', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 811;
+UPDATE EncargadoRegistro SET Nombre = 'Nefen', ApellidoMaterno = 'Carlsen', ApellidoPaterno = 'Aaronsohn', FechaNacimiento = '2003-12-16', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 317;
+UPDATE EncargadoRegistro SET Nombre = 'Joli', ApellidoMaterno = 'Voff', ApellidoPaterno = 'Pittle', FechaNacimiento = '1942-11-17', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 688;
+UPDATE EncargadoRegistro SET Nombre = 'Antonella', ApellidoMaterno = 'Buscombe', ApellidoPaterno = 'Coenraets', FechaNacimiento = '1934-05-10', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 998;
+UPDATE EncargadoRegistro SET Nombre = 'Stephan', ApellidoMaterno = 'Gaither', ApellidoPaterno = 'Valencia', FechaNacimiento = '1929-03-24', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 78;
+UPDATE EncargadoRegistro SET Nombre = 'Bobbye', ApellidoMaterno = 'Pedrocco', ApellidoPaterno = 'Copping', FechaNacimiento = '1984-11-19', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 199;
+UPDATE EncargadoRegistro SET Nombre = 'Bonnee', ApellidoMaterno = 'Tuting', ApellidoPaterno = 'Alekhov', FechaNacimiento = '2004-12-04', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 360;
+UPDATE EncargadoRegistro SET Nombre = 'Rriocard', ApellidoMaterno = 'Blore', ApellidoPaterno = 'Averill', FechaNacimiento = '1986-02-13', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 189;
+UPDATE EncargadoRegistro SET Nombre = 'Genny', ApellidoMaterno = 'Bodycomb', ApellidoPaterno = 'Stearns', FechaNacimiento = '1961-12-31', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 663;
+UPDATE EncargadoRegistro SET Nombre = 'Emlynn', ApellidoMaterno = 'Hansley', ApellidoPaterno = 'Childs', FechaNacimiento = '1986-11-29', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 747;
+UPDATE EncargadoRegistro SET Nombre = 'Carlen', ApellidoMaterno = 'Nevins', ApellidoPaterno = 'Ruckledge', FechaNacimiento = '1950-12-29', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 423;
+UPDATE EncargadoRegistro SET Nombre = 'Crista', ApellidoMaterno = 'Syphas', ApellidoPaterno = 'Lampard', FechaNacimiento = '1975-03-01', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 458;
+UPDATE EncargadoRegistro SET Nombre = 'Valery', ApellidoMaterno = 'Nowaczyk', ApellidoPaterno = 'Bottrill', FechaNacimiento = '1955-12-04', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 948;
+UPDATE EncargadoRegistro SET Nombre = 'Tomas', ApellidoMaterno = 'Cumbers', ApellidoPaterno = 'Rome', FechaNacimiento = '1992-03-05', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 28;
+UPDATE EncargadoRegistro SET Nombre = 'Derril', ApellidoMaterno = 'Mc Faul', ApellidoPaterno = 'Gilardone', FechaNacimiento = '1992-03-01', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 433;
+UPDATE EncargadoRegistro SET Nombre = 'Ellen', ApellidoMaterno = 'Union', ApellidoPaterno = 'Bawdon', FechaNacimiento = '1981-09-23', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 349;
+UPDATE EncargadoRegistro SET Nombre = 'Sarajane', ApellidoMaterno = 'Rosina', ApellidoPaterno = 'Rodie', FechaNacimiento = '1971-10-10', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 47;
+UPDATE EncargadoRegistro SET Nombre = 'Mort', ApellidoMaterno = 'Naden', ApellidoPaterno = 'Eustace', FechaNacimiento = '1933-10-22', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 18;
+UPDATE EncargadoRegistro SET Nombre = 'Earvin', ApellidoMaterno = 'Barnsley', ApellidoPaterno = 'McFie', FechaNacimiento = '1970-06-16', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 823;
+UPDATE EncargadoRegistro SET Nombre = 'Mariellen', ApellidoMaterno = 'Easson', ApellidoPaterno = 'Joy', FechaNacimiento = '1956-10-08', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 618;
+UPDATE EncargadoRegistro SET Nombre = 'Beverie', ApellidoMaterno = 'Burrow', ApellidoPaterno = 'Kaubisch', FechaNacimiento = '1984-08-24', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 563;
+UPDATE EncargadoRegistro SET Nombre = 'Jennifer', ApellidoMaterno = 'Petrowsky', ApellidoPaterno = 'Verdy', FechaNacimiento = '1995-12-25', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 541;
+UPDATE EncargadoRegistro SET Nombre = 'Codi', ApellidoMaterno = 'O''Leagham', ApellidoPaterno = 'Stringer', FechaNacimiento = '1937-09-11', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 58;
+UPDATE EncargadoRegistro SET Nombre = 'Mufi', ApellidoMaterno = 'Goundry', ApellidoPaterno = 'Antcliff', FechaNacimiento = '1935-10-10', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 611;
+UPDATE EncargadoRegistro SET Nombre = 'Kirbee', ApellidoMaterno = 'Danick', ApellidoPaterno = 'Kittles', FechaNacimiento = '1930-04-23', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 491;
+UPDATE EncargadoRegistro SET Nombre = 'Everett', ApellidoMaterno = 'Barg', ApellidoPaterno = 'Trunchion', FechaNacimiento = '1969-08-06', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 561;
+UPDATE EncargadoRegistro SET Nombre = 'Palmer', ApellidoMaterno = 'Brownlea', ApellidoPaterno = 'Bruneton', FechaNacimiento = '1960-06-18', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 661;
+UPDATE EncargadoRegistro SET Nombre = 'Manolo', ApellidoMaterno = 'Fassbindler', ApellidoPaterno = 'Cooch', FechaNacimiento = '1955-07-03', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1008;
+UPDATE EncargadoRegistro SET Nombre = 'Calli', ApellidoMaterno = 'Diprose', ApellidoPaterno = 'Binnion', FechaNacimiento = '1949-10-08', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 186;
+UPDATE EncargadoRegistro SET Nombre = 'Lind', ApellidoMaterno = 'Augur', ApellidoPaterno = 'Sivill', FechaNacimiento = '1990-04-04', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 320;
+UPDATE EncargadoRegistro SET Nombre = 'Horatio', ApellidoMaterno = 'Messent', ApellidoPaterno = 'Westberg', FechaNacimiento = '1953-01-18', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 797;
+UPDATE EncargadoRegistro SET Nombre = 'Celestina', ApellidoMaterno = 'MacInherney', ApellidoPaterno = 'McNirlan', FechaNacimiento = '1966-02-15', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 447;
+UPDATE EncargadoRegistro SET Nombre = 'Christina', ApellidoMaterno = 'Hayen', ApellidoPaterno = 'Siebert', FechaNacimiento = '1975-09-10', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 554;
+UPDATE EncargadoRegistro SET Nombre = 'Loren', ApellidoMaterno = 'Hartington', ApellidoPaterno = 'Curry', FechaNacimiento = '1943-03-29', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 314;
+UPDATE EncargadoRegistro SET Nombre = 'Ola', ApellidoMaterno = 'Measey', ApellidoPaterno = 'MacCarter', FechaNacimiento = '1984-09-18', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 280;
+UPDATE EncargadoRegistro SET Nombre = 'Fleurette', ApellidoMaterno = 'Humerstone', ApellidoPaterno = 'Ivens', FechaNacimiento = '1994-03-25', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 594;
+UPDATE EncargadoRegistro SET Nombre = 'Wylma', ApellidoMaterno = 'Dolohunty', ApellidoPaterno = 'Byford', FechaNacimiento = '1956-12-09', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 1056;
+UPDATE EncargadoRegistro SET Nombre = 'Milli', ApellidoMaterno = 'Weaben', ApellidoPaterno = 'Cicci', FechaNacimiento = '1926-03-09', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 515;
+UPDATE EncargadoRegistro SET Nombre = 'Quentin', ApellidoMaterno = 'Loan', ApellidoPaterno = 'Clouston', FechaNacimiento = '1972-09-12', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 379;
+UPDATE EncargadoRegistro SET Nombre = 'Benedicto', ApellidoMaterno = 'Ordish', ApellidoPaterno = 'Gold', FechaNacimiento = '2004-11-21', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 93;
+UPDATE EncargadoRegistro SET Nombre = 'Randene', ApellidoMaterno = 'Negro', ApellidoPaterno = 'Heeks', FechaNacimiento = '1979-02-13', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 530;
+UPDATE EncargadoRegistro SET Nombre = 'Barbi', ApellidoMaterno = 'Gauld', ApellidoPaterno = 'Cutts', FechaNacimiento = '1980-10-20', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 127;
+UPDATE EncargadoRegistro SET Nombre = 'Ring', ApellidoMaterno = 'Swalowe', ApellidoPaterno = 'Fussie', FechaNacimiento = '1971-07-16', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 26;
+UPDATE EncargadoRegistro SET Nombre = 'Cecil', ApellidoMaterno = 'Bortol', ApellidoPaterno = 'Curran', FechaNacimiento = '1990-02-07', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 228;
+UPDATE EncargadoRegistro SET Nombre = 'Nannette', ApellidoMaterno = 'Blaber', ApellidoPaterno = 'Zorzoni', FechaNacimiento = '1958-11-05', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 311;
+UPDATE EncargadoRegistro SET Nombre = 'Woodie', ApellidoMaterno = 'Timewell', ApellidoPaterno = 'Tremellan', FechaNacimiento = '1984-12-14', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 700;
+UPDATE EncargadoRegistro SET Nombre = 'Dewain', ApellidoMaterno = 'Fishbourne', ApellidoPaterno = 'Frankiewicz', FechaNacimiento = '1988-03-30', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 117;
+UPDATE EncargadoRegistro SET Nombre = 'Quincy', ApellidoMaterno = 'Ponceford', ApellidoPaterno = 'Langrick', FechaNacimiento = '1957-02-23', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 217;
+UPDATE EncargadoRegistro SET Nombre = 'Benoite', ApellidoMaterno = 'Camilletti', ApellidoPaterno = 'McGown', FechaNacimiento = '1995-04-22', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1075;
+UPDATE EncargadoRegistro SET Nombre = 'Nelle', ApellidoMaterno = 'Polini', ApellidoPaterno = 'McEvoy', FechaNacimiento = '1931-07-23', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 249;
+UPDATE EncargadoRegistro SET Nombre = 'Damita', ApellidoMaterno = 'Pollen', ApellidoPaterno = 'Couronne', FechaNacimiento = '1979-06-11', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 569;
+UPDATE EncargadoRegistro SET Nombre = 'Dalila', ApellidoMaterno = 'Patrono', ApellidoPaterno = 'Earingey', FechaNacimiento = '1966-09-20', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 380;
+UPDATE EncargadoRegistro SET Nombre = 'Marjorie', ApellidoMaterno = 'Bourgaize', ApellidoPaterno = 'Holttom', FechaNacimiento = '2001-10-10', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 617;
+UPDATE EncargadoRegistro SET Nombre = 'Giuseppe', ApellidoMaterno = 'Bairstow', ApellidoPaterno = 'Maling', FechaNacimiento = '1935-06-20', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1046;
+UPDATE EncargadoRegistro SET Nombre = 'Jarid', ApellidoMaterno = 'Di Napoli', ApellidoPaterno = 'Claworth', FechaNacimiento = '1991-03-04', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 973;
+UPDATE EncargadoRegistro SET Nombre = 'Athene', ApellidoMaterno = 'Felderer', ApellidoPaterno = 'Pharro', FechaNacimiento = '2002-12-01', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 560;
+UPDATE EncargadoRegistro SET Nombre = 'Jesse', ApellidoMaterno = 'Tanner', ApellidoPaterno = 'Mion', FechaNacimiento = '1971-12-10', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 456;
+UPDATE EncargadoRegistro SET Nombre = 'Stormi', ApellidoMaterno = 'Rosenberg', ApellidoPaterno = 'Clues', FechaNacimiento = '1962-10-30', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1076;
+UPDATE EncargadoRegistro SET Nombre = 'Natka', ApellidoMaterno = 'Gladden', ApellidoPaterno = 'Derges', FechaNacimiento = '1992-03-12', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 767;
+UPDATE EncargadoRegistro SET Nombre = 'Alexandro', ApellidoMaterno = 'Tyce', ApellidoPaterno = 'Sayburn', FechaNacimiento = '2002-10-18', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 448;
+UPDATE EncargadoRegistro SET Nombre = 'Dela', ApellidoMaterno = 'Barth', ApellidoPaterno = 'Thow', FechaNacimiento = '1990-07-22', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 749;
+UPDATE EncargadoRegistro SET Nombre = 'Franky', ApellidoMaterno = 'Jones', ApellidoPaterno = 'McCamish', FechaNacimiento = '1935-10-13', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 603;
+UPDATE EncargadoRegistro SET Nombre = 'Humfried', ApellidoMaterno = 'Murney', ApellidoPaterno = 'MacQuarrie', FechaNacimiento = '1960-08-31', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 787;
+UPDATE EncargadoRegistro SET Nombre = 'Anestassia', ApellidoMaterno = 'Rollason', ApellidoPaterno = 'Kubec', FechaNacimiento = '1930-06-22', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 734;
+UPDATE EncargadoRegistro SET Nombre = 'Osborn', ApellidoMaterno = 'Roon', ApellidoPaterno = 'Burnham', FechaNacimiento = '1990-08-22', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 815;
+UPDATE EncargadoRegistro SET Nombre = 'Blair', ApellidoMaterno = 'Mountfort', ApellidoPaterno = 'Scamadine', FechaNacimiento = '1976-03-17', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 45;
+UPDATE EncargadoRegistro SET Nombre = 'Amber', ApellidoMaterno = 'Knighton', ApellidoPaterno = 'Aujean', FechaNacimiento = '1941-08-28', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 183;
+UPDATE EncargadoRegistro SET Nombre = 'Trude', ApellidoMaterno = 'Hoggan', ApellidoPaterno = 'Rigge', FechaNacimiento = '1984-12-15', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 806;
+UPDATE EncargadoRegistro SET Nombre = 'Rickie', ApellidoMaterno = 'Mainds', ApellidoPaterno = 'Crossby', FechaNacimiento = '1963-06-20', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 646;
+UPDATE EncargadoRegistro SET Nombre = 'Ignace', ApellidoMaterno = 'Lindhe', ApellidoPaterno = 'Shannahan', FechaNacimiento = '1988-05-20', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 992;
+UPDATE EncargadoRegistro SET Nombre = 'Fayth', ApellidoMaterno = 'Gallaher', ApellidoPaterno = 'Skirvin', FechaNacimiento = '1980-05-11', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 674;
+UPDATE EncargadoRegistro SET Nombre = 'Benito', ApellidoMaterno = 'Randleson', ApellidoPaterno = 'Margetts', FechaNacimiento = '1927-12-31', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 284;
+UPDATE EncargadoRegistro SET Nombre = 'Nicoline', ApellidoMaterno = 'Bleas', ApellidoPaterno = 'Defont', FechaNacimiento = '1928-12-15', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 521;
+UPDATE EncargadoRegistro SET Nombre = 'Joella', ApellidoMaterno = 'Ragate', ApellidoPaterno = 'Ferenczy', FechaNacimiento = '1977-01-12', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 85;
+UPDATE EncargadoRegistro SET Nombre = 'Alica', ApellidoMaterno = 'Sinyard', ApellidoPaterno = 'Pollins', FechaNacimiento = '1971-06-24', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 48;
+UPDATE EncargadoRegistro SET Nombre = 'Bren', ApellidoMaterno = 'Frango', ApellidoPaterno = 'Morewood', FechaNacimiento = '1951-12-02', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 535;
+UPDATE EncargadoRegistro SET Nombre = 'Angelia', ApellidoMaterno = 'Alliberton', ApellidoPaterno = 'Pannaman', FechaNacimiento = '1980-05-06', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 37;
+UPDATE EncargadoRegistro SET Nombre = 'Kirk', ApellidoMaterno = 'Marmion', ApellidoPaterno = 'Hacun', FechaNacimiento = '1970-06-09', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 730;
+UPDATE EncargadoRegistro SET Nombre = 'Whitaker', ApellidoMaterno = 'Merrill', ApellidoPaterno = 'Crossgrove', FechaNacimiento = '2001-01-26', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 886;
+UPDATE EncargadoRegistro SET Nombre = 'Decca', ApellidoMaterno = 'Couttes', ApellidoPaterno = 'Vanini', FechaNacimiento = '1940-03-29', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 772;
+UPDATE EncargadoRegistro SET Nombre = 'Kippy', ApellidoMaterno = 'Elner', ApellidoPaterno = 'Dosdell', FechaNacimiento = '1991-08-27', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 471;
+UPDATE EncargadoRegistro SET Nombre = 'Scarface', ApellidoMaterno = 'Jaggli', ApellidoPaterno = 'Minshull', FechaNacimiento = '1946-11-12', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 330;
+UPDATE EncargadoRegistro SET Nombre = 'Stanislaw', ApellidoMaterno = 'Andras', ApellidoPaterno = 'Maggiori', FechaNacimiento = '1967-03-03', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 95;
+UPDATE EncargadoRegistro SET Nombre = 'Wheeler', ApellidoMaterno = 'Braddock', ApellidoPaterno = 'Marcussen', FechaNacimiento = '1927-11-07', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 893;
+UPDATE EncargadoRegistro SET Nombre = 'Ryun', ApellidoMaterno = 'Baudoux', ApellidoPaterno = 'Rottgers', FechaNacimiento = '1957-12-08', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 489;
+UPDATE EncargadoRegistro SET Nombre = 'Orelee', ApellidoMaterno = 'Elliff', ApellidoPaterno = 'Feehery', FechaNacimiento = '1953-01-26', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 279;
+UPDATE EncargadoRegistro SET Nombre = 'Dorice', ApellidoMaterno = 'Gubbins', ApellidoPaterno = 'Symons', FechaNacimiento = '1946-10-07', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 587;
+UPDATE EncargadoRegistro SET Nombre = 'Donall', ApellidoMaterno = 'Lusk', ApellidoPaterno = 'McDunlevy', FechaNacimiento = '1979-07-12', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 1072;
+UPDATE EncargadoRegistro SET Nombre = 'Reiko', ApellidoMaterno = 'Sorbie', ApellidoPaterno = 'Iannitti', FechaNacimiento = '1984-02-25', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 122;
+UPDATE EncargadoRegistro SET Nombre = 'Barde', ApellidoMaterno = 'Podbury', ApellidoPaterno = 'Winteringham', FechaNacimiento = '1972-11-30', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 873;
+UPDATE EncargadoRegistro SET Nombre = 'Ryann', ApellidoMaterno = 'McCandie', ApellidoPaterno = 'Fearnside', FechaNacimiento = '1959-11-26', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 368;
+UPDATE EncargadoRegistro SET Nombre = 'Dell', ApellidoMaterno = 'Westhead', ApellidoPaterno = 'Tordoff', FechaNacimiento = '1960-09-11', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 564;
+UPDATE EncargadoRegistro SET Nombre = 'Maye', ApellidoMaterno = 'Rosell', ApellidoPaterno = 'Scoggan', FechaNacimiento = '1974-12-18', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 291;
+UPDATE EncargadoRegistro SET Nombre = 'Carola', ApellidoMaterno = 'Ruzek', ApellidoPaterno = 'Crose', FechaNacimiento = '1935-03-30', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 1052;
+UPDATE EncargadoRegistro SET Nombre = 'Arlina', ApellidoMaterno = 'Brood', ApellidoPaterno = 'Mead', FechaNacimiento = '1999-04-09', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 934;
+UPDATE EncargadoRegistro SET Nombre = 'Marna', ApellidoMaterno = 'Carrane', ApellidoPaterno = 'O''Hogertie', FechaNacimiento = '1999-02-24', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 782;
+UPDATE EncargadoRegistro SET Nombre = 'Sibylle', ApellidoMaterno = 'Pass', ApellidoPaterno = 'Durnill', FechaNacimiento = '1931-03-07', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 830;
+UPDATE EncargadoRegistro SET Nombre = 'Arley', ApellidoMaterno = 'Foston', ApellidoPaterno = 'Vonderdell', FechaNacimiento = '1953-06-28', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 191;
+UPDATE EncargadoRegistro SET Nombre = 'Todd', ApellidoMaterno = 'Baldocci', ApellidoPaterno = 'Climance', FechaNacimiento = '2005-04-29', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 868;
+UPDATE EncargadoRegistro SET Nombre = 'Brande', ApellidoMaterno = 'Kirlin', ApellidoPaterno = 'Kurth', FechaNacimiento = '1981-01-21', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 984;
+UPDATE EncargadoRegistro SET Nombre = 'Berton', ApellidoMaterno = 'MacKniely', ApellidoPaterno = 'Kenneford', FechaNacimiento = '1967-03-27', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 1083;
