@@ -1,4 +1,4 @@
--- 1(practica). Calcular la distancia total recorrida en kilómetros por los participantes de cada facultad, desglosada por sexo / género.
+-- 1. (practica). Calcular la distancia total recorrida en kilómetros por los participantes de cada facultad, desglosada por sexo / género.
 WITH distancia_total AS (
     SELECT
         dr.IdPersona,
@@ -12,18 +12,18 @@ WITH distancia_total AS (
         dr.CodigoDeEntrenador
 )
 SELECT
-    p.Facultad,
-    p.Sexo,
-    SUM(dt.distancia_total) / 1000 AS kilometros_recorridos
+    pu.Facultad,
+    pu.Sexo,
+    SUM(dt.distancia_total) / 1000 AS KilometrosRecorridos
 FROM distancia_total dt
-JOIN ParticipanteUNAM p
-    ON p.IdPersona = dt.IdPersona
+JOIN ParticipanteUNAM pu
+    ON pu.IdPersona = dt.IdPersona
 GROUP BY
-    p.Facultad,
-    p.Sexo
+    pu.Facultad,
+    pu.Sexo
 ORDER BY
-    p.Facultad,
-    p.Sexo;
+    pu.Facultad,
+    pu.Sexo;
 
 -- 2. Top 5 pokemones mas registrados en el torneo de peleas 
 WITH Conteo AS (
@@ -34,7 +34,8 @@ WITH Conteo AS (
         COUNT(*) AS VecesRegistrado
     FROM TorneoPelea tp
     JOIN Utilizar u 
-        ON u.Edicion = tp.Edicion AND u.IdTorneo = tp.IdTorneo
+        ON u.Edicion = tp.Edicion 
+        AND u.IdTorneo = tp.IdTorneo
     JOIN Pokemon p 
         ON p.IdPokemon = u.IdPokemon
     GROUP BY tp.Edicion, u.IdPokemon, p.Nombre
@@ -56,7 +57,6 @@ SELECT
 FROM Top5
 WHERE rn <= 5
 ORDER BY Edicion, VecesRegistrado DESC;
-
 
 -- 3. Recuperar las 10 horas del día con más capturas de Pokémon shinys durante los torneos.
 SELECT
@@ -87,13 +87,13 @@ participantes_distancia AS (
     FROM InscripcionTorneoDistancia
 )
 SELECT 
-    p.IdPersona,
-    p.Nombre || ' ' || p.ApellidoPaterno || ' ' || p.ApellidoMaterno AS NombreCompleto
-FROM ParticipanteUNAM p
+    pu.IdPersona,
+    pu.Nombre || ' ' || pu.ApellidoPaterno || ' ' || pu.ApellidoMaterno AS NombreCompleto
+FROM ParticipanteUNAM pu
 JOIN participantes_shiny s
-    ON p.IdPersona = s.IdPersona
+    ON pu.IdPersona = s.IdPersona
 LEFT JOIN participantes_distancia d
-    ON p.IdPersona = d.IdPersona
+    ON pu.IdPersona = d.IdPersona
 WHERE d.IdPersona IS NULL;
 
 -- 6.(practica) Listar los Pokémones shinys, que fueron capturados durante el evento, únicamente si fueron capturados entre
@@ -120,92 +120,54 @@ WHERE
     p.shiny = TRUE
     AND EXTRACT(HOUR FROM r.hora) BETWEEN 14 AND 18;
 
--- 7.(practica) Obtener el nombre completo de los participantes y su facultad que hayan participado tanto en el torneo de distancia recorrida como en el de captura de shinys, cuya distancia total recorrida sea mayor al promedio de distancia de todos los participantes y ademas que su numero de capturas de shinys sean mayor a 5.
+-- 7.(practica) Obtener el nombre completo de los participantes y su facultad que hayan participado tanto en el 
+-- torneo de distancia recorrida como en el de captura de shinys (en la misma edición), cuya distancia total recorrida sea mayor 
+-- al promedio de distancia de todos los participantes y ademas que su numero de capturas de shinys sean mayor a 5.
+WITH participantes AS (
+    SELECT DISTINCT 
+        c.IdPersona, 
+        c.CodigoDeEntrenador, 
+        c.Edicion
+    FROM InscripcionTorneoCaptura c
+    JOIN InscripcionTorneoDistancia d
+        ON c.IdPersona = d.IdPersona
+        AND c.Edicion = d.Edicion
+)
 SELECT 
     pu.Nombre || ' ' || pu.ApellidoPaterno || ' ' || pu.ApellidoMaterno AS NombreCompleto,
-    pu.Facultad
-FROM (  SELECT 
-            dr.IdPersona,
-            SUM(CASE lower(dr.Locacion)
-                    WHEN 'entrada'   THEN 0
-                    WHEN 'universum' THEN 100
-                    WHEN 'rectoria'  THEN 200
-                END) AS DistanciaTotal
-        FROM DistanciaRecorrida dr
-        GROUP BY dr.IdPersona
-    ) AS dt
-JOIN (  SELECT 
-            r.IdPersona, 
-            COUNT(DISTINCT r.IdCaptura) AS NumeroCapturas
-        FROM Registrar r
-        JOIN Pokemon p ON p.IdPokemon = r.IdPokemon
-        WHERE p.Shiny = TRUE
-        GROUP BY r.IdPersona
-    ) AS cs 
-        ON cs.IdPersona = dt.IdPersona
+    pu.Facultad,
+    p.Edicion,
+    distancia_total_entrenador(p.Edicion, p.CodigoDeEntrenador) AS DistanciaTotal,
+    contar_shinys_cuenta(p.Edicion, NULL, p.IdPersona, p.CodigoDeEntrenador) AS NumeroShinys
+FROM participantes p
 JOIN ParticipanteUNAM pu
-        ON pu.IdPersona = dt.IdPersona
+    ON pu.IdPersona = p.IdPersona
 WHERE 
-    cs.NumeroCapturas > 5 
-    AND dt.DistanciaTotal >
-        (   SELECT 
-                AVG(suma.DistanciaTotal)
-            FROM ( SELECT 
-                    dr2.IdPersona,
-                    SUM(CASE lower(dr2.Locacion)
-                            WHEN 'entrada'   THEN 0
-                            WHEN 'universum' THEN 100
-                            WHEN 'rectoria'  THEN 200
-                        END) AS DistanciaTotal
-                FROM DistanciaRecorrida dr2
-                GROUP BY dr2.IdPersona
-            ) AS suma
-        );
+    contar_shinys_cuenta(p.Edicion, NULL, p.IdPersona, p.CodigoDeEntrenador) > 5
+    AND distancia_total_entrenador(p.Edicion, p.CodigoDeEntrenador) > (
+        SELECT AVG(distancia_total_entrenador(d.Edicion, d.CodigoDeEntrenador))
+        FROM InscripcionTorneoDistancia d
+    );
 
-
--- 8.(practica) Calcular la distancia total recorrida por cada participante en el torneo de distancia recorrida en kilómetros, 
--- utilizando las coordenadas geográficas de cada locación.
-
-WITH Reg AS (
-    SELECT
-        d.idpersona,
-        d.edicion,
-        d.idtorneo,
-        d.nombrelocacion AS actual,
-        d.fecha,
-        d.hora,
-        LEAD(d.nombrelocacion) OVER (
-            PARTITION BY d.edicion, d.idtorneo, d.idpersona
-            ORDER BY d.fecha, d.hora
-        ) AS siguiente
-    FROM distanciarecorrida d
-),
-Coords AS (
-    SELECT
-        r.idpersona,
-        r.edicion,
-        r.idtorneo,
-        c1.lat  AS lat1, c1.lon AS lon1,
-        c2.lat AS lat2, c2.lon AS lon2
-    FROM Reg r
-    JOIN Locacion c1 ON c1.locacion = r.cp_actual
-    JOIN Locacion c2 ON c2.locacion = r.cp_siguiente
-    WHERE r.cp_siguiente IS NOT NULL
-)
+-- 8.(practica) Calcular la distancia total recorrida por cada participante en el torneo de distancia recorrida en kilómetros por torneo y edición, 
+-- utilizando las coordenadas geográficas de cada locación. Ordenados de mayor a menor distancia.
 SELECT
-    edicion,
-    idtorneo,
-    idpersona,
-    SUM(
-        6371 * acos(
-            cos(radians(lat1)) * cos(radians(lat2)) *
-            cos(radians(lon2) - radians(lon1)) +
-            sin(radians(lat1)) * sin(radians(lat2))
-        )
-    ) AS distancia_total_km
-FROM Coords
-GROUP BY edicion, idtorneo, idpersona
-ORDER BY distancia_total_km DESC;
+    d.Edicion,
+    d.CodigoDeEntrenador,
+    p.IdPersona,
+    p.Nombre || ' ' || p.ApellidoPaterno || ' ' || p.ApellidoMaterno AS NombreCompleto,
+    distancia_total_entrenador(d.Edicion, d.CodigoDeEntrenador) / 1000 AS KilometrosRecorridos
+FROM DistanciaRecorrida d
+JOIN ParticipanteUNAM p 
+    ON p.IdPersona = d.IdPersona
+GROUP BY 
+    d.Edicion, 
+    d.CodigoDeEntrenador, 
+    p.IdPersona, 
+    p.Nombre, 
+    p.ApellidoPaterno, 
+    p.ApellidoMaterno
+ORDER BY KilometrosRecorridos DESC;
 
 -- 9. Sacar porcentaje de ganadores mujeres vs hombres en los tres torneos.
 WITH TodosGanadores AS (
@@ -216,10 +178,10 @@ WITH TodosGanadores AS (
     SELECT IdPersona FROM TorneoCapturaShinys
 ),
 ConteoPorSexo AS (
-    SELECT p.Sexo, COUNT(*) AS total
+    SELECT pu.Sexo, COUNT(*) AS total
     FROM TodosGanadores g
-    JOIN ParticipanteUNAM p ON p.IdPersona = g.IdPersona
-    GROUP BY p.Sexo
+    JOIN ParticipanteUNAM pu ON pu.IdPersona = g.IdPersona
+    GROUP BY pu.Sexo
 ),
 Total AS (
     SELECT SUM(total) AS total_global FROM ConteoPorSexo
@@ -310,4 +272,3 @@ ORDER BY g.GananciaTotal DESC NULLS LAST;
 -- 16. Listar los pokemones que han sido usados en más de un torneo, indicando en cuántos torneos han sido usados.
 
 -- 17. Listar los participantes que han ganado en más de un torneo, indicando en cuántos torneos han ganado.
-
