@@ -1,1 +1,6 @@
-Error response from daemon: container 17ebf501d0a599c9e574fc4937aad809d26de5d8df15b35b43ff6d100e2eeb1a is not running
+ERROR:  duplicate key value violates unique constraint "pk_locacion"
+DETAIL:  Key (nombrelocacion)=(Universum) already exists.
+ERROR:  duplicate key value violates unique constraint "pk_locacion"
+DETAIL:  Key (nombrelocacion)=(Rectoria) already exists.
+ERROR:  duplicate key value violates unique constraint "pk_locacion"
+DETAIL:  Key (nombrelocacion)=(Entrada) already exists.
