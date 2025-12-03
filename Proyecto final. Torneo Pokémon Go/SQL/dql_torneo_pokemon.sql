@@ -25,7 +25,6 @@ ORDER BY
     p.Facultad,
     p.Sexo;
 
-
 -- 2. Top 5 pokemones mas registrados en el torneo de peleas 
 WITH Conteo AS (
     SELECT
@@ -81,11 +80,11 @@ ORDER BY Ganancia DESC;
 -- 5.(practica) Obtener la lista de participantes que estén inscritos en el Torneo de Captura de Shiny y a su vez que no estén inscritos en el torneo de distancia recorrida.
 WITH participantes_shiny AS (
     SELECT DISTINCT IdPersona
-    FROM Registrar
+    FROM InscripcionTorneoCaptura
 ),
 participantes_distancia AS (
     SELECT DISTINCT IdPersona
-    FROM DistanciaRecorrida
+    FROM InscripcionTorneoDistancia
 )
 SELECT 
     p.IdPersona,
@@ -96,7 +95,6 @@ JOIN participantes_shiny s
 LEFT JOIN participantes_distancia d
     ON p.IdPersona = d.IdPersona
 WHERE d.IdPersona IS NULL;
-
 
 -- 6.(practica) Listar los Pokémones shinys, que fueron capturados durante el evento, únicamente si fueron capturados entre
 -- las 14:00hrs y las 18:00hrs.
