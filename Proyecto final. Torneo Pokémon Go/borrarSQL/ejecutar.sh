@@ -35,3 +35,10 @@ docker exec -i postgres psql -U postgres -d prueba < Locacion.sql     2> errores
 docker exec -i postgres psql -U postgres -d prueba < distancia_recorrida.sql    2> errores/distancia_recorrida.err
 
 docker exec -i postgres psql -U postgres -d prueba < registrar.sql    2> errores/registrar.err
+
+docker exec -i postgres psql -U postgres -d prueba < comprar_espectador.sql    2> errores/comprar_espectador.err
+docker exec -i postgres psql -U postgres -d prueba < comprar_participante_unam.sql    2> errores/comprar_participante_unam.err
+docker exec -i postgres psql -U postgres -d prueba < comprar_vendedor.sql    2> errores/comprar_vendedor.err
+docker exec -i postgres psql -U postgres -d prueba < comprar_cuidador.sql    2> errores/comprar_cuidador.err
+docker exec -i postgres psql -U postgres -d prueba < comprar_encargado_registro.sql    2> errores/comprar_encargado_registro.err
+docker exec -i postgres psql -U postgres -d prueba < comprar_limpiador.sql    2> errores/comprar_limpiador.err
