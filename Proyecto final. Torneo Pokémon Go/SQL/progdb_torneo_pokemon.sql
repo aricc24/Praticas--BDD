@@ -1143,7 +1143,6 @@ BEFORE INSERT ON ComprarVendedor
 FOR EACH ROW
 EXECUTE FUNCTION verificar_compra_alimento();
 
-
 /**
 * Función para calcular el total de compras (el monto sin IVA y con IVA)
 * realizadas por una persona en una edición específica, según su rol.

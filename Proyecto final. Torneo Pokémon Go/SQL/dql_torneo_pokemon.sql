@@ -285,33 +285,23 @@ WITH TodasLasCompras AS (
     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
     FROM ComprarEncargadoRegistro c
     JOIN Alimento a ON a.IdAlimento = c.IdAlimento
-
     UNION ALL 
-
     SELECT a.IdPersona, c.IdAlimento, c.Cantidad, a.Precio
     FROM ComprarLimpiador c
     JOIN Alimento a ON a.IdAlimento = c.IdAlimento
-
     UNION ALL 
-
     SELECT a.IdPersona, c.IdAlimento, c.Cantidad, a.Precio
     FROM ComprarCuidador c
     JOIN Alimento a ON a.IdAlimento = c.IdAlimento
-
     UNION ALL 
-
     SELECT a.IdPersona, c.IdAlimento, c.Cantidad, a.Precio
     FROM ComprarVendedor c
     JOIN Alimento a ON a.IdAlimento = c.IdAlimento
-
     UNION ALL 
-
     SELECT a.IdPersona, c.IdAlimento, c.Cantidad, a.Precio
     FROM ComprarEspectador c
     JOIN Alimento a ON a.IdAlimento = c.IdAlimento
-
     UNION ALL 
-
     SELECT a.IdPersona, c.IdAlimento, c.Cantidad, a.Precio
     FROM ComprarParticipanteUNAM c
     JOIN Alimento a ON a.IdAlimento = c.IdAlimento
@@ -347,8 +337,8 @@ LEFT JOIN ProductoMasVendido pmv
     ON v.IdPersona = pmv.IdVendedor AND pmv.rn = 1
 LEFT JOIN Alimento a 
     ON pmv.IdAlimento = a.IdAlimento
-ORDER BY g.GananciaTotal DESC NULLS LAST;
-
+WHERE g.GananciaTotal IS NOT NULL
+ORDER BY g.GananciaTotal DESC;
 -- 11. Porcentaje de participantes por facultad inscritos en cada torneo.
 WITH TotalParticipantes AS (
     SELECT COUNT(DISTINCT IdPersona) AS Total FROM ParticipanteUNAM
