@@ -215,71 +215,71 @@ CROSS JOIN TotalGanadores t
 ORDER BY PorcentajeVictorias DESC;
 
 -- 10. Vendedores ordenados por ganancia y su producto más vendido.
+-- no hechecado
+-- WITH TodasLasCompras AS (
 
-WITH TodasLasCompras AS (
+--     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
+--     FROM ComprarEncargadoRegistro c
+--     JOIN Alimento a ON c.IdAlimento = a.IdAlimento
 
-    SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
-    FROM ComprarEncargadoRegistro c
-    JOIN Alimento a ON c.IdAlimento = a.IdAlimento
-
-    UNION ALL
+--     UNION ALL
  
-    SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
-    FROM ComprarLimpiador c
-    JOIN Alimento a ON c.IdAlimento = a.IdAlimento
+--     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
+--     FROM ComprarLimpiador c
+--     JOIN Alimento a ON c.IdAlimento = a.IdAlimento
 
-    UNION ALL
+--     UNION ALL
   
-    SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
-    FROM ComprarCuidador c
-    JOIN Alimento a ON c.IdAlimento = a.IdAlimento
+--     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
+--     FROM ComprarCuidador c
+--     JOIN Alimento a ON c.IdAlimento = a.IdAlimento
 
-    UNION ALL
+--     UNION ALL
    
-    SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
-    FROM ComprarVendedor c
-    JOIN Alimento a ON c.IdAlimento = a.IdAlimento
+--     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
+--     FROM ComprarVendedor c
+--     JOIN Alimento a ON c.IdAlimento = a.IdAlimento
 
-    UNION ALL
+--     UNION ALL
   
-    SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
-    FROM ComprarEspectador c
-    JOIN Alimento a ON c.IdAlimento = a.IdAlimento
+--     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
+--     FROM ComprarEspectador c
+--     JOIN Alimento a ON c.IdAlimento = a.IdAlimento
 
-    UNION ALL
+--     UNION ALL
 
-    SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
-    FROM ComprarParticipanteUNAM c
-    JOIN Alimento a ON c.IdAlimento = a.IdAlimento
-),
+--     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
+--     FROM ComprarParticipanteUNAM c
+--     JOIN Alimento a ON c.IdAlimento = a.IdAlimento
+-- ),
 
-GananciasPorVendedor AS (
-    SELECT IdVendedor, SUM(Cantidad * Precio) AS GananciaTotal
-    FROM TodasLasCompras
-    GROUP BY IdVendedor
-),
+-- GananciasPorVendedor AS (
+--     SELECT IdVendedor, SUM(Cantidad * Precio) AS GananciaTotal
+--     FROM TodasLasCompras
+--     GROUP BY IdVendedor
+-- ),
 
-ProductoMasVendido AS (
-    SELECT t.IdVendedor, t.IdAlimento,
-           SUM(t.Cantidad) AS TotalVendidos,
-           ROW_NUMBER() OVER (PARTITION BY t.IdVendedor ORDER BY SUM(t.Cantidad) DESC) AS rn
-    FROM TodasLasCompras t
-    GROUP BY t.IdVendedor, t.IdAlimento
-)
+-- ProductoMasVendido AS (
+--     SELECT t.IdVendedor, t.IdAlimento,
+--            SUM(t.Cantidad) AS TotalVendidos,
+--            ROW_NUMBER() OVER (PARTITION BY t.IdVendedor ORDER BY SUM(t.Cantidad) DESC) AS rn
+--     FROM TodasLasCompras t
+--     GROUP BY t.IdVendedor, t.IdAlimento
+-- )
 
-SELECT 
-    v.IdPersona AS IdVendedor,
-    v.Nombre,
-    v.ApellidoPaterno,
-    v.ApellidoMaterno,
-    g.GananciaTotal,
-    a.Nombre AS ProductoMasVendido,
-    pmv.TotalVendidos
-FROM Vendedor v
-LEFT JOIN GananciasPorVendedor g ON v.IdPersona = g.IdVendedor
-LEFT JOIN ProductoMasVendido pmv ON v.IdPersona = pmv.IdVendedor AND pmv.rn = 1
-LEFT JOIN Alimento a ON pmv.IdAlimento = a.IdAlimento
-ORDER BY g.GananciaTotal DESC NULLS LAST;
+-- SELECT 
+--     v.IdPersona AS IdVendedor,
+--     v.Nombre,
+--     v.ApellidoPaterno,
+--     v.ApellidoMaterno,
+--     g.GananciaTotal,
+--     a.Nombre AS ProductoMasVendido,
+--     pmv.TotalVendidos
+-- FROM Vendedor v
+-- LEFT JOIN GananciasPorVendedor g ON v.IdPersona = g.IdVendedor
+-- LEFT JOIN ProductoMasVendido pmv ON v.IdPersona = pmv.IdVendedor AND pmv.rn = 1
+-- LEFT JOIN Alimento a ON pmv.IdAlimento = a.IdAlimento
+-- ORDER BY g.GananciaTotal DESC NULLS LAST;
 
 -- 11. Sacar los pokemones mas usados por los ganadores de las peleas.
 with ganadores
@@ -341,36 +341,92 @@ ORDER BY Torneo, facultad;
 -- 17. Listar los participantes que han ganado en más de un torneo, indicando en cuántos torneos han ganado.
 
 
--- participantes que han ganado en más de un torneo pelea, distancia, shiny
-SELECT 
-    pu.Nombre || ' ' || pu.ApellidoPaterno || ' ' || pu.ApellidoMaterno AS NombreCompleto,
-    COUNT(*) AS TorneosGanados
-FROM (
-    SELECT IdPersona FROM TorneoPelea
-    UNION ALL
-    SELECT IdPersona FROM TorneoDistanciaRecorrida
-    UNION ALL
-    SELECT IdPersona FROM TorneoCapturaShinys
-) AS tp
-JOIN ParticipanteUNAM pu 
-    ON tp.IdPersona = pu.IdPersona
-GROUP BY 
-    pu.Nombre, 
-    pu.ApellidoPaterno, 
-    pu.ApellidoMaterno
-HAVING COUNT(*) > 0
-ORDER BY TorneosGanados DESC;
+-- Calcular las ganancias totales por vendedor, ordenadas de mayor a menor ganancia.
+WITH Ganancias AS (
+    SELECT
+        v.IdPersona AS IdVendedor,
+        SUM(calcular_ventas_vendedor(v.IdPersona, tv.Edicion)) AS GananciaTotal
+    FROM Vendedor v
+    JOIN TrabajarVendedor tv ON tv.IdPersona = v.IdPersona
+    GROUP BY v.IdPersona
+)
 
--- SELECT 
---     pu.Nombre || ' ' || pu.ApellidoPaterno || ' ' || pu.ApellidoMaterno AS NombreCompleto,
---     COUNT(*) AS TorneosGanados
--- FROM TorneoPelea tp
--- JOIN ParticipanteUNAM pu 
---     ON tp.IdPersona = pu.IdPersona
--- GROUP BY 
---     pu.Nombre, 
---     pu.ApellidoPaterno, 
---     pu.ApellidoMaterno
--- HAVING COUNT(*) > 1
--- ORDER BY TorneosGanados DESC;
+SELECT
+    v.IdPersona,
+    v.Nombre || ' ' || v.ApellidoPaterno || ' ' || v.ApellidoMaterno AS NombreCompleto,
+    g.GananciaTotal
+FROM Vendedor v
+LEFT JOIN Ganancias g ON g.IdVendedor = v.IdPersona
+ORDER BY g.GananciaTotal DESC;
 
+
+-- Calcular el gasto promedio por rol en los eventos.
+WITH Gastos AS (
+    SELECT *
+    FROM (
+        SELECT tc.Edicion AS Edicion,
+            'cuidador' AS Rol,
+            (SELECT MontoConIVA
+                FROM total_compras_persona(tc.IdPersona,'cuidador',tc.Edicion)
+            ) AS gasto
+        FROM TrabajarCuidador tc
+    ) gc
+    WHERE gc.gasto > 0
+
+    UNION ALL
+
+    SELECT *
+    FROM (
+        SELECT tl.Edicion AS Edicion,
+            'limpiador' AS Rol,
+            (SELECT MontoConIVA
+                FROM total_compras_persona(tl.IdPersona,'limpiador',tl.Edicion)
+            ) AS gasto
+        FROM TrabajarLimpiador tl
+        GROUP BY tl.Edicion, tl.IdPersona
+    ) gl
+    WHERE gl.gasto > 0
+
+    UNION ALL
+
+    SELECT *
+    FROM (
+        SELECT er.Edicion AS Edicion,
+            'encargadoregistro' AS Rol,
+            (SELECT MontoConIVA
+                FROM total_compras_persona(er.IdPersona,'encargadoregistro',er.Edicion)
+            ) AS gasto
+        FROM TrabajarEncargadoRegistro er
+    ) ger
+    WHERE ger.gasto > 0
+
+    UNION ALL
+
+    SELECT *
+    FROM (
+        SELECT pe.Edicion AS Edicion,
+            'participanteunam' AS Rol,
+            (SELECT MontoConIVA
+                FROM total_compras_persona(pe.IdPersona,'participanteunam',pe.Edicion)
+            ) AS gasto
+        FROM ParticipanteInscribirEvento pe
+    ) gpe   
+    WHERE gpe.gasto > 0
+
+    UNION ALL
+
+    SELECT *
+    FROM (
+        SELECT a.Edicion AS Edicion,
+            'espectador' AS Rol,
+            (SELECT MontoConIVA
+                FROM total_compras_persona(a.IdPersona,'espectador',a.Edicion)
+            ) AS gasto
+        FROM Asistir a
+    ) ga
+    WHERE ga.gasto > 0
+)
+SELECT rol, AVG(gasto) AS gasto_promedio
+FROM Gastos
+GROUP BY rol
+ORDER BY rol, gasto_promedio DESC;
