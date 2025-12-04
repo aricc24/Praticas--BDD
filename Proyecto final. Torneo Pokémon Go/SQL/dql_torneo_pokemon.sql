@@ -287,7 +287,38 @@ ORDER BY g.GananciaTotal DESC NULLS LAST;
 
 -- 13. El jugador que más peleas perdió en el torneo de peleas.
 
--- 14. Porcentaje de participantes por facultad en el torneo de distancia recorrida.
+-- 14. Porcentaje de participantes por facultad inscritos en cada torneo.
+WITH TotalParticipantes AS (
+    SELECT COUNT(DISTINCT IdPersona) AS Total FROM ParticipanteUNAM
+),
+ParticionatesDistancia AS (
+    SELECT 
+        facultad,   
+        ROUND((count(DISTINCT InscripcionTorneoDistancia.IdPersona) AS CantidadParticipantes, / count(DISTINCT InscripcionTorneoDistancia.IdPersona) ) * 100, 2) AS PorcentajeParticipantes
+    FROM InscripcionTorneoDistancia INNER JOIN ParticipanteUNAM 
+        ON InscripcionTorneoDistancia.IdPersona = ParticipanteUNAM.IdPersona
+    GROUP BY facultad
+),
+ParticionatesPelea AS (
+    SELECT 
+        e.Edicion,
+        COUNT(DISTINCT ip.IdPersona) AS CantidadParticipantes
+    FROM InscripcionTorneoPelea ip
+    JOIN Evento e 
+        ON ip.Edicion = e.Edicion
+    GROUP BY e.Edicion
+),
+ParticipnatesCapturas AS (
+    SELECT 
+        e.Edicion,
+        COUNT(DISTINCT ic.IdPersona) AS CantidadParticipantes
+    FROM InscripcionTorneoCaptura ic
+    JOIN Evento e 
+        ON ic.Edicion = e.Edicion
+    GROUP BY e.Edicion
+)
+SELECT 
+    
 
 -- 15. Porcentaje de pokemones shinys capturados por sexo/género de los participantes en el torneo de captura de shinys.
 
