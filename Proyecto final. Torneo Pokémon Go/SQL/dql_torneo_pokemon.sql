@@ -282,7 +282,7 @@ LEFT JOIN Alimento a ON pmv.IdAlimento = a.IdAlimento
 ORDER BY g.GananciaTotal DESC NULLS LAST;
 
 -- 11. Sacar los pokemones mas usados por los ganadores de las peleas.
-
+with ganadores
 -- 12. Porcentaje de pokemones por tipo capturados en el torneo de captura.
 
 -- 13. El jugador que más peleas perdió en el torneo de peleas.

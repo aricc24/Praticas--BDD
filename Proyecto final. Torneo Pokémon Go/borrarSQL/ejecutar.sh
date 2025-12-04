@@ -87,3 +87,5 @@ cat comprar_vendedor.sql         >> ../SQL/dml_torneo_pokemon.sql
 cat comprar_cuidador.sql         >> ../SQL/dml_torneo_pokemon.sql
 cat comprar_encargado_registro.sql >> ../SQL/dml_torneo_pokemon.sql
 cat comprar_limpiador.sql        >> ../SQL/dml_torneo_pokemon.sql
+
+
