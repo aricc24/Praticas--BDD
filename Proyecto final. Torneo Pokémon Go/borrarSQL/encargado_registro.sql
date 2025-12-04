@@ -3302,7 +3302,6 @@ VALUES (1100, 'María', 'Zamora', 'Rangel', '1972-08-11', 'Otro', 'Calzada de Tl
 
 UPDATE EncargadoRegistro SET Nombre = 'Elmira', ApellidoMaterno = 'Murrow', ApellidoPaterno = 'Harce', FechaNacimiento = '1947-08-08', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 9;
 UPDATE EncargadoRegistro SET Nombre = 'Guglielmo', ApellidoMaterno = 'Maes', ApellidoPaterno = 'Harding', FechaNacimiento = '1956-10-21', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 740;
-UPDATE EncargadoRegistro SET Nombre = 'Faydra', ApellidoMaterno = 'Garth', ApellidoPaterno = 'Haddow', FechaNacimiento = '1995-01-08', Sexo = 'H', EsJugador = TRUE WHERE IdPersona = 149;
 UPDATE EncargadoRegistro SET Nombre = 'Shawn', ApellidoMaterno = 'Blankman', ApellidoPaterno = 'Steenson', FechaNacimiento = '1963-03-23', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 828;
 UPDATE EncargadoRegistro SET Nombre = 'Minni', ApellidoMaterno = 'Brett', ApellidoPaterno = 'Shiels', FechaNacimiento = '1928-02-03', Sexo = 'Otro', EsJugador = TRUE WHERE IdPersona = 262;
 UPDATE EncargadoRegistro SET Nombre = 'Angel', ApellidoMaterno = 'Denisot', ApellidoPaterno = 'Aiers', FechaNacimiento = '1933-10-13', Sexo = 'M', EsJugador = TRUE WHERE IdPersona = 968;

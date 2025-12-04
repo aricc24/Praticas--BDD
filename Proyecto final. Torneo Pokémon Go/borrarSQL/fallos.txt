@@ -1,0 +1,2 @@
+ERROR:  La persona 149 es menor de edad para trabajar en la edición 7.
+CONTEXT:  PL/pgSQL function validar_trabajador() line 45 at RAISE
