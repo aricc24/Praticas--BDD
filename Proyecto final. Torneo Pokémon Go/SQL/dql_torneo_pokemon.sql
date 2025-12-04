@@ -340,6 +340,26 @@ ORDER BY Torneo, facultad;
 
 -- 17. Listar los participantes que han ganado en más de un torneo, indicando en cuántos torneos han ganado.
 
+
+-- Calcular las ganancias totales por vendedor, ordenadas de mayor a menor ganancia.
+WITH Ganancias AS (
+    SELECT
+        v.IdPersona AS IdVendedor,
+        SUM(calcular_ventas_vendedor(v.IdPersona, tv.Edicion)) AS GananciaTotal
+    FROM Vendedor v
+    JOIN TrabajarVendedor tv ON tv.IdPersona = v.IdPersona
+    GROUP BY v.IdPersona
+)
+
+SELECT
+    v.IdPersona,
+    v.Nombre || ' ' || v.ApellidoPaterno || ' ' || v.ApellidoMaterno AS NombreCompleto,
+    g.GananciaTotal
+FROM Vendedor v
+LEFT JOIN Ganancias g ON g.IdVendedor = v.IdPersona
+ORDER BY g.GananciaTotal DESC;
+
+
 -- Calcular el gasto promedio por rol en los eventos.
 WITH Gastos AS (
     SELECT *
