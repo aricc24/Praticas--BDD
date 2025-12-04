@@ -293,31 +293,45 @@ WITH TotalParticipantes AS (
 ),
 ParticionatesDistancia AS (
     SELECT 
-        facultad,   
-        ROUND((count(DISTINCT InscripcionTorneoDistancia.IdPersona) AS CantidadParticipantes, / count(DISTINCT InscripcionTorneoDistancia.IdPersona) ) * 100, 2) AS PorcentajeParticipantes
+        facultad, 
+        count(DISTINCT InscripcionTorneoDistancia.IdPersona) AS CantidadParticipantes
     FROM InscripcionTorneoDistancia INNER JOIN ParticipanteUNAM 
         ON InscripcionTorneoDistancia.IdPersona = ParticipanteUNAM.IdPersona
     GROUP BY facultad
 ),
 ParticionatesPelea AS (
-    SELECT 
-        e.Edicion,
-        COUNT(DISTINCT ip.IdPersona) AS CantidadParticipantes
-    FROM InscripcionTorneoPelea ip
-    JOIN Evento e 
-        ON ip.Edicion = e.Edicion
-    GROUP BY e.Edicion
+     SELECT 
+        facultad, 
+        count(DISTINCT InscripcionTorneoPelea.IdPersona) AS CantidadParticipantes
+    FROM InscripcionTorneoPelea INNER JOIN ParticipanteUNAM 
+        ON InscripcionTorneoPelea.IdPersona = ParticipanteUNAM.IdPersona
+    GROUP BY facultad
 ),
 ParticipnatesCapturas AS (
     SELECT 
-        e.Edicion,
-        COUNT(DISTINCT ic.IdPersona) AS CantidadParticipantes
-    FROM InscripcionTorneoCaptura ic
-    JOIN Evento e 
-        ON ic.Edicion = e.Edicion
-    GROUP BY e.Edicion
-)
+        facultad, 
+        count(DISTINCT InscripcionTorneoCaptura.IdPersona) AS CantidadParticipantes
+    FROM InscripcionTorneoCaptura INNER JOIN ParticipanteUNAM 
+        ON InscripcionTorneoCaptura.IdPersona = ParticipanteUNAM.IdPersona
+    GROUP BY facultad
+) SELECT 
+    'Distancia Recorrida' AS Torneo,
+    pd.facultad,
+    ROUND((pd.CantidadParticipantes::DECIMAL / tp.Total) * 100, 2) AS PorcentajeParticipantes
+FROM ParticionatesDistancia pd, TotalParticipantes tp
+UNION ALL
 SELECT 
+    'Pelea' AS Torneo,  
+    pp.facultad,
+    ROUND((pp.CantidadParticipantes::DECIMAL / tp.Total) * 100, 2) AS PorcentajeParticipantes
+FROM ParticionatesPelea pp, TotalParticipantes tp
+UNION ALL
+SELECT 
+    'Captura de Shinys' AS Torneo,  
+    pc.facultad,
+    ROUND((pc.CantidadParticipantes::DECIMAL / tp.Total) * 100, 2) AS PorcentajeParticipantes
+FROM ParticipnatesCapturas pc, TotalParticipantes tp
+ORDER BY Torneo, facultad;  
     
 
 -- 15. Porcentaje de pokemones shinys capturados por sexo/género de los participantes en el torneo de captura de shinys.
