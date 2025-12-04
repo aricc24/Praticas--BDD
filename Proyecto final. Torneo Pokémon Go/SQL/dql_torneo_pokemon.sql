@@ -43,6 +43,7 @@ ORDER BY
     pu.Sexo;
 
 -- 2. Top 5 pokemones mas registrados en el torneo de peleas por cada edición y el top 5 global
+
 WITH TopGlobal AS (
     SELECT
         u.IdPokemon,
@@ -81,8 +82,6 @@ TopGlobal5 AS (
     ORDER BY VecesRegistrado DESC
     LIMIT 5
 ),
-
--- Unión con columna de orden extra
 Unioned AS (
     SELECT
         Edicion,
@@ -103,8 +102,6 @@ Unioned AS (
         999999 AS OrdenEdicion
     FROM TopGlobal5
 )
-
--- SELECT final sin mostrar columna extra
 SELECT
     Edicion,
     IdPokemon,
