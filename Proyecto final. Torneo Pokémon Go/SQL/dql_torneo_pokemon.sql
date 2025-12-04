@@ -125,10 +125,8 @@ LIMIT 10;
 
 -- 4. Reportar las ganancias totales obtenidas en cada evento, ordenadas de mayor a menor ganancia.
 SELECT
-    e.Edicion,
-    COALESCE(ganancia_evento(e.Edicion), 0) AS Ganancia
-FROM Evento e
-ORDER BY Ganancia DESC;
+    SUM(COALESCE(ganancia_evento(e.Edicion), 0)) AS Ganancia
+FROM Evento e;
 
 -- 5.(practica) Obtener la lista de participantes que estén inscritos en el Torneo de Captura de Shiny y a su vez que no estén inscritos en el torneo de distancia recorrida.
 WITH participantes_shiny AS (
@@ -483,18 +481,18 @@ LEFT JOIN Conteo c
     ON c.IdEncargado = p.IdPersona
 ORDER BY c.TotalInscritos DESC;
 
--- 15. Listar los pokemones que han sido usados en más de un torneo, indicando en cuántos torneos han sido usados.
+-- 15. Calcula en cuántos torneos se ha usado un pokémon.
 WITH UsoPokemon AS (
     SELECT 
         u.IdPokemon,
-        COUNT(DISTINCT u.Edicion || '-' || u.IdTorneo) AS CantidadTorneos
+        COUNT(DISTINCT (u.Edicion, u.IdTorneo)) AS CantidadTorneos
     FROM Utilizar u
     GROUP BY u.IdPokemon
-    HAVING COUNT(DISTINCT u.Edicion || '-' || u.IdTorneo) > 1
+    HAVING COUNT(DISTINCT (u.Edicion, u.IdTorneo)) > 1
 )
 SELECT 
     p.IdPokemon,
-    p.Nombre,
+    p.Nombre AS PokemonNombre,
     up.CantidadTorneos
 FROM UsoPokemon up 
 JOIN Pokemon p ON up.IdPokemon = p.IdPokemon
