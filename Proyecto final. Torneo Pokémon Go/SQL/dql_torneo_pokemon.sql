@@ -123,12 +123,42 @@ GROUP BY EXTRACT(HOUR FROM r.Hora)
 ORDER BY total_capturas_shiny DESC
 LIMIT 10;
 
--- 4. Reportar las ganancias totales obtenidas en cada evento, ordenadas de mayor a menor ganancia.
+-- 4. Reportar las ganancias totales por edición de evento, así como un total general al final.
+WITH Por_edicion AS (
+    SELECT
+        e.Edicion::text AS Edicion,
+        COALESCE(ganancia_evento(e.Edicion), 0) AS Ganancia,
+        e.Edicion AS OrdenEdicion
+    FROM Evento e
+), 
+Total AS (
+    SELECT
+        SUM(Ganancia) AS Ganancia,
+        999999 AS OrdenEdicion,
+        'TOTAL' AS Edicion
+    FROM Por_edicion
+),
+Unioned AS (
+    SELECT
+        Edicion,
+        Ganancia,
+        OrdenEdicion
+    FROM Por_edicion
+
+    UNION ALL
+
+    SELECT
+        Edicion,
+        Ganancia,
+        OrdenEdicion
+    FROM Total
+)
 SELECT
-    e.Edicion,
-    COALESCE(ganancia_evento(e.Edicion), 0) AS Ganancia
-FROM Evento e
-ORDER BY Ganancia DESC;
+    Edicion,
+    Ganancia
+FROM Unioned
+ORDER BY OrdenEdicion, Ganancia DESC;
+
 
 -- 5.(practica) Obtener la lista de participantes que estén inscritos en el Torneo de Captura de Shiny y a su vez que no estén inscritos en el torneo de distancia recorrida.
 WITH participantes_shiny AS (
@@ -228,7 +258,7 @@ WITH Ganadores AS (
     UNION ALL
     SELECT IdPersona FROM TorneoDistanciaRecorrida WHERE IdPersona IS NOT NULL
     UNION ALL
-    SELECT IdPersona FROM TorneoCapturaShinys WHERE IdPersona IS NOT NULL
+    SELECT IdPersona FROM TorneoCapturaShinys   WHERE IdPersona IS NOT NULL
 ),
 ConteoPorSexo AS (
     SELECT 
