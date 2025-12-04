@@ -828,6 +828,21 @@ AS $$
 DECLARE
     total_shinys INTEGER;
 BEGIN
+
+    IF torneo IS NULL THEN
+        SELECT COUNT(*)
+        INTO total_shinys
+        FROM Registrar r
+        JOIN Pokemon p ON r.IdPokemon = p.IdPokemon
+        WHERE r.Edicion = ed
+            AND r.IdPersona = id_persona
+            AND r.CodigoDeEntrenador = codigo_entrenador
+            AND p.Shiny = TRUE;
+
+        
+        RETURN total_shinys;
+    END IF;
+
     SELECT COUNT(*)
     INTO total_shinys
     FROM Registrar r
