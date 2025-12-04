@@ -15,7 +15,7 @@ BEGIN
     END LOOP;
 END $$;
 
--- 1. (practica). Calcular la distancia total recorrida en kilómetros por los participantes de cada facultad, desglosada por sexo / género.
+-- 1. Calcular la distancia total recorrida en kilómetros por los participantes de cada facultad, desglosada por sexo / género.
 WITH distancia_total AS (
     SELECT
         dr.IdPersona,
@@ -42,38 +42,77 @@ ORDER BY
     pu.Facultad,
     pu.Sexo;
 
--- 2. Top 5 pokemones mas registrados en el torneo de peleas 
-WITH Conteo AS (
+-- 2. Top 5 pokemones mas registrados en el torneo de peleas por cada edición y el top 5 global
+WITH TopGlobal AS (
     SELECT
-        tp.Edicion,
+        u.IdPokemon,
+        p.Nombre AS NombrePokemon,
+        COUNT(*) AS VecesRegistrado
+    FROM Utilizar u
+    JOIN Pokemon p 
+        ON p.IdPokemon = u.IdPokemon
+    GROUP BY u.IdPokemon, p.Nombre
+),
+Conteo AS (
+    SELECT
+        tp.Edicion::text AS Edicion,
         u.IdPokemon,
         p.Nombre AS NombrePokemon,
         COUNT(*) AS VecesRegistrado
     FROM TorneoPelea tp
     JOIN Utilizar u 
         ON u.Edicion = tp.Edicion 
-        AND u.IdTorneo = tp.IdTorneo
+       AND u.IdTorneo = tp.IdTorneo
     JOIN Pokemon p 
         ON p.IdPokemon = u.IdPokemon
     GROUP BY tp.Edicion, u.IdPokemon, p.Nombre
 ),
 Top5 AS (
-    SELECT
-        *,
+    SELECT *,
         ROW_NUMBER() OVER (
             PARTITION BY Edicion
             ORDER BY VecesRegistrado DESC
         ) AS rn
     FROM Conteo
+),
+TopGlobal5 AS (
+    SELECT *
+    FROM TopGlobal
+    ORDER BY VecesRegistrado DESC
+    LIMIT 5
+),
+
+-- Unión con columna de orden extra
+Unioned AS (
+    SELECT
+        Edicion,
+        IdPokemon,
+        NombrePokemon,
+        VecesRegistrado,
+        Edicion::int AS OrdenEdicion
+    FROM Top5
+    WHERE rn <= 5
+
+    UNION ALL
+
+    SELECT
+        'GLOBAL' AS Edicion,
+        IdPokemon,
+        NombrePokemon,
+        VecesRegistrado,
+        999999 AS OrdenEdicion
+    FROM TopGlobal5
 )
+
+-- SELECT final sin mostrar columna extra
 SELECT
     Edicion,
     IdPokemon,
     NombrePokemon,
     VecesRegistrado
-FROM Top5
-WHERE rn <= 5
-ORDER BY Edicion, VecesRegistrado DESC;
+FROM Unioned
+ORDER BY OrdenEdicion, VecesRegistrado DESC;
+
 
 -- 3. Recuperar las 10 horas del día con más capturas de Pokémon shinys durante los torneos.
 SELECT
@@ -216,76 +255,96 @@ ORDER BY PorcentajeVictorias DESC;
 
 -- 10. Vendedores ordenados por ganancia y su producto más vendido.
 -- no hechecado
--- WITH TodasLasCompras AS (
 
---     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
---     FROM ComprarEncargadoRegistro c
---     JOIN Alimento a ON c.IdAlimento = a.IdAlimento
+WITH TodasLasCompras AS (
 
---     UNION ALL
+    SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
+    FROM ComprarEncargadoRegistro c
+    JOIN Alimento a ON c.IdAlimento = a.IdAlimento
+
+    UNION ALL
  
---     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
---     FROM ComprarLimpiador c
---     JOIN Alimento a ON c.IdAlimento = a.IdAlimento
+    SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
+    FROM ComprarLimpiador c
+    JOIN Alimento a ON c.IdAlimento = a.IdAlimento
 
---     UNION ALL
+    UNION ALL
   
---     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
---     FROM ComprarCuidador c
---     JOIN Alimento a ON c.IdAlimento = a.IdAlimento
+    SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
+    FROM ComprarCuidador c
+    JOIN Alimento a ON c.IdAlimento = a.IdAlimento
 
---     UNION ALL
+    UNION ALL
    
---     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
---     FROM ComprarVendedor c
---     JOIN Alimento a ON c.IdAlimento = a.IdAlimento
+    SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
+    FROM ComprarVendedor c
+    JOIN Alimento a ON c.IdAlimento = a.IdAlimento
 
---     UNION ALL
+    UNION ALL
   
---     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
---     FROM ComprarEspectador c
---     JOIN Alimento a ON c.IdAlimento = a.IdAlimento
+    SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
+    FROM ComprarEspectador c
+    JOIN Alimento a ON c.IdAlimento = a.IdAlimento
 
---     UNION ALL
+    UNION ALL
 
---     SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
---     FROM ComprarParticipanteUNAM c
---     JOIN Alimento a ON c.IdAlimento = a.IdAlimento
--- ),
+    SELECT a.IdPersona AS IdVendedor, c.IdAlimento, c.Cantidad, a.Precio
+    FROM ComprarParticipanteUNAM c
+    JOIN Alimento a ON c.IdAlimento = a.IdAlimento
+),
 
--- GananciasPorVendedor AS (
---     SELECT IdVendedor, SUM(Cantidad * Precio) AS GananciaTotal
---     FROM TodasLasCompras
---     GROUP BY IdVendedor
--- ),
+WITH Ganancia AS (
+    SELECT
+        v.IdPersona AS IdVendedor,
+        SUM(calcular_ventas_vendedor(v.IdPersona, tv.Edicion)) AS GananciaTotal
+    FROM Vendedor v
+    JOIN TrabajarVendedor tv ON tv.IdPersona = v.IdPersona
+    GROUP BY v.IdPersona
+)
 
--- ProductoMasVendido AS (
---     SELECT t.IdVendedor, t.IdAlimento,
---            SUM(t.Cantidad) AS TotalVendidos,
---            ROW_NUMBER() OVER (PARTITION BY t.IdVendedor ORDER BY SUM(t.Cantidad) DESC) AS rn
---     FROM TodasLasCompras t
---     GROUP BY t.IdVendedor, t.IdAlimento
--- )
+ProductoMasVendido AS (
+    SELECT t.IdVendedor, t.IdAlimento,
+           SUM(t.Cantidad) AS TotalVendidos,
+           ROW_NUMBER() OVER (PARTITION BY t.IdVendedor ORDER BY SUM(t.Cantidad) DESC) AS rn
+    FROM TodasLasCompras t
+    GROUP BY t.IdVendedor, t.IdAlimento
+)
 
--- SELECT 
---     v.IdPersona AS IdVendedor,
---     v.Nombre,
---     v.ApellidoPaterno,
---     v.ApellidoMaterno,
---     g.GananciaTotal,
---     a.Nombre AS ProductoMasVendido,
---     pmv.TotalVendidos
--- FROM Vendedor v
--- LEFT JOIN GananciasPorVendedor g ON v.IdPersona = g.IdVendedor
--- LEFT JOIN ProductoMasVendido pmv ON v.IdPersona = pmv.IdVendedor AND pmv.rn = 1
--- LEFT JOIN Alimento a ON pmv.IdAlimento = a.IdAlimento
--- ORDER BY g.GananciaTotal DESC NULLS LAST;
+SELECT 
+    v.IdPersona AS IdVendedor,
+    v.Nombre,
+    v.ApellidoPaterno,
+    v.ApellidoMaterno,
+    g.GananciaTotal,
+    a.Nombre AS ProductoMasVendido,
+    pmv.TotalVendidos
+FROM Vendedor v
+LEFT JOIN GananciasPorVendedor g ON v.IdPersona = g.IdVendedor
+LEFT JOIN ProductoMasVendido pmv ON v.IdPersona = pmv.IdVendedor AND pmv.rn = 1
+LEFT JOIN Alimento a ON pmv.IdAlimento = a.IdAlimento
+ORDER BY g.GananciaTotal DESC NULLS LAST;
 
 -- 11. Sacar los pokemones mas usados por los ganadores de las peleas.
-with ganadores
+
+
 -- 12. Porcentaje de pokemones por tipo capturados en el torneo de captura.
 
+
 -- 13. El jugador que más peleas perdió en el torneo de peleas.
+
+
+SELECT 
+    pu.Nombre || ' ' || pu.ApellidoPaterno || ' ' || pu.ApellidoMaterno AS NombreCompleto,
+FROM peleatorneo pt
+INNER JOINT Pokemon p
+    ON pt.IdPokemon = p.IdPokemon
+INNER JOIN CuentaPokemonGo cpg
+    ON pt.CodigoDeEntrenador = cpg.CodigoDeEntrenador
+INNER JOIN ParticipanteUNAM pu
+    ON cpg.IdPersona = pu.IdPersona
+WHERE pt.idPersona <> p.IdPersona
+GROUP BY pu.IdPersona
+
 
 -- 14. Porcentaje de participantes por facultad inscritos en cada torneo.
 WITH TotalParticipantes AS (
@@ -335,11 +394,77 @@ ORDER BY Torneo, facultad;
     
 
 -- 15. Porcentaje de pokemones shinys capturados por sexo/género de los participantes en el torneo de captura de shinys.
+WITH TotalCapturas AS (
+    SELECT 
+        pu.Sexo,
+        COUNT(*) AS TotalCapturas
+    FROM Registrar r
+    JOIN ParticipanteUNAM pu ON r.IdPersona = pu.IdPersona
+    JOIN CapturaPokemon c ON r.Edicion = c.Edicion AND r.IdTorneo = c.IdTorneo AND r.IdCaptura = c.IdCaptura
+    GROUP BY pu.Sexo
+),
+CapturasShinys AS (
+    SELECT 
+        pu.Sexo,
+        COUNT(*) AS CapturasShinys
+    FROM Registrar r
+    JOIN ParticipanteUNAM pu ON r.IdPersona = pu.IdPersona
+    JOIN CapturaPokemon c ON r.Edicion = c.Edicion AND r.IdTorneo = c.IdTorneo AND r.IdCaptura = c.IdCaptura
+    JOIN Pokemon p ON r.IdPokemon = p.IdPokemon
+    WHERE p.Shiny = TRUE
+    GROUP BY pu.Sexo
+)
+SELECT 
+    tc.Sexo,
+    tc.TotalCapturas,
+    cs.CapturasShinys,
+    ROUND((cs.CapturasShinys::DECIMAL / tc.TotalCapturas) * 100, 2) AS PorcentajeShinys
+FROM TotalCapturas tc
+LEFT JOIN CapturasShinys cs ON tc.Sexo = cs.Sexo
+ORDER BY tc.Sexo;
 
 -- 16. Listar los pokemones que han sido usados en más de un torneo, indicando en cuántos torneos han sido usados.
 
+WITH UsoPokemon AS (
+    SELECT 
+        u.IdPokemon,
+        COUNT(DISTINCT u.Edicion || '-' || u.IdTorneo) AS CantidadTorneos
+    FROM Utilizar u
+    GROUP BY u.IdPokemon
+    HAVING COUNT(DISTINCT u.Edicion || '-' || u.IdTorneo) > 1
+)
+SELECT 
+    p.IdPokemon,
+    p.Nombre,
+    up.CantidadTorneos
+FROM UsoPokemon up 
+JOIN Pokemon p ON up.IdPokemon = p.IdPokemon
+ORDER BY up.CantidadTorneos DESC, p.Nombre;
+
 -- 17. Listar los participantes que han ganado en más de un torneo, indicando en cuántos torneos han ganado.
 
+WITH Ganadores AS (
+    SELECT IdPersona, Edicion || '-' || IdTorneo AS Torneo FROM TorneoPelea WHERE IdPersona IS NOT NULL
+    UNION ALL
+    SELECT IdPersona, Edicion || '-' || IdTorneo AS Torneo FROM TorneoDistanciaRecorrida WHERE IdPersona IS NOT NULL
+    UNION ALL
+    SELECT IdPersona, Edicion || '-' || IdTorneo AS Torneo FROM TorneoCapturaShinys WHERE IdPersona IS NOT NULL
+),
+ConteoGanadores AS (
+    SELECT 
+        g.IdPersona,
+        COUNT(DISTINCT g.Torneo) AS CantidadTorneosGanados
+    FROM Ganadores g
+    GROUP BY g.IdPersona
+    HAVING COUNT(DISTINCT g.Torneo) > 1
+)
+SELECT 
+    pu.IdPersona,
+    pu.Nombre || ' ' || pu.ApellidoPaterno || ' ' || pu.ApellidoMaterno AS NombreCompleto,
+    cg.CantidadTorneosGanados
+FROM ConteoGanadores cg
+JOIN ParticipanteUNAM pu ON cg.IdPersona = pu.IdPersona
+ORDER BY cg.CantidadTorneosGanados DESC, pu.Nombre;
 
 -- Calcular las ganancias totales por vendedor, ordenadas de mayor a menor ganancia.
 WITH Ganancias AS (
