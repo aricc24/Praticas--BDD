@@ -339,6 +339,7 @@ LEFT JOIN Alimento a
     ON pmv.IdAlimento = a.IdAlimento
 WHERE g.GananciaTotal IS NOT NULL
 ORDER BY g.GananciaTotal DESC;
+
 -- 11. Porcentaje de participantes por facultad inscritos en cada torneo.
 WITH TotalParticipantes AS (
     SELECT COUNT(DISTINCT IdPersona) AS Total FROM ParticipanteUNAM
