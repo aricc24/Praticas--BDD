@@ -340,12 +340,12 @@ ORDER BY Torneo, facultad;
 
 -- 17. Listar los participantes que han ganado en más de un torneo, indicando en cuántos torneos han ganado.
 
--- Calcular el gasto promedio por edición y rol de los participantes en el evento.
+-- Calcular el gasto promedio por rol en los eventos.
 WITH Gastos AS (
     SELECT *
     FROM (
-        SELECT tc.Edicion AS edicion,
-            'cuidador' AS rol,
+        SELECT tc.Edicion AS Edicion,
+            'cuidador' AS Rol,
             (SELECT MontoConIVA
                 FROM total_compras_persona(tc.IdPersona,'cuidador',tc.Edicion)
             ) AS gasto
@@ -357,8 +357,8 @@ WITH Gastos AS (
 
     SELECT *
     FROM (
-        SELECT tl.Edicion,
-            'limpiador',
+        SELECT tl.Edicion AS Edicion,
+            'limpiador' AS Rol,
             (SELECT MontoConIVA
                 FROM total_compras_persona(tl.IdPersona,'limpiador',tl.Edicion)
             ) AS gasto
@@ -371,8 +371,8 @@ WITH Gastos AS (
 
     SELECT *
     FROM (
-        SELECT er.Edicion,
-            'encargadoregistro',
+        SELECT er.Edicion AS Edicion,
+            'encargadoregistro' AS Rol,
             (SELECT MontoConIVA
                 FROM total_compras_persona(er.IdPersona,'encargadoregistro',er.Edicion)
             ) AS gasto
@@ -384,8 +384,8 @@ WITH Gastos AS (
 
     SELECT *
     FROM (
-        SELECT pe.Edicion,
-            'participanteunam',
+        SELECT pe.Edicion AS Edicion,
+            'participanteunam' AS Rol,
             (SELECT MontoConIVA
                 FROM total_compras_persona(pe.IdPersona,'participanteunam',pe.Edicion)
             ) AS gasto
@@ -397,8 +397,8 @@ WITH Gastos AS (
 
     SELECT *
     FROM (
-        SELECT a.Edicion,
-            'espectador',
+        SELECT a.Edicion AS Edicion,
+            'espectador' AS Rol,
             (SELECT MontoConIVA
                 FROM total_compras_persona(a.IdPersona,'espectador',a.Edicion)
             ) AS gasto
@@ -406,9 +406,7 @@ WITH Gastos AS (
     ) ga
     WHERE ga.gasto > 0
 )
-SELECT edicion, rol, AVG(gasto) AS gasto_promedio
+SELECT rol, AVG(gasto) AS gasto_promedio
 FROM Gastos
-GROUP BY edicion, rol
-ORDER BY edicion, rol, gasto_promedio DESC;
-
-
+GROUP BY rol
+ORDER BY rol, gasto_promedio DESC;
