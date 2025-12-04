@@ -646,8 +646,8 @@ $$ LANGUAGE plpgsql;
 CREATE OR REPLACE FUNCTION contar_pokemones_en_torneo_pelea(
     p_idPersona INTEGER,
     p_codigoEntrenador INTEGER,
-    p_edicion   INTEGER,
-    p_idtorneo  INTEGER
+    p_edicion INTEGER,
+    p_idtorneo INTEGER
 )
 RETURNS INTEGER
 AS $$

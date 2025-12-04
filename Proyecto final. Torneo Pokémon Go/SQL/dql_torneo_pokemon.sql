@@ -513,74 +513,19 @@ LEFT JOIN Conteo c
     ON c.IdEncargado = p.IdPersona
 ORDER BY c.TotalInscritos DESC;
 
--- 15. Listar los pokemones que han sido usados en más de un torneo, indicando en cuántos torneos han sido usados.
+-- 15. Calcula en cuántos torneos se ha usado un pokémon.
 WITH UsoPokemon AS (
     SELECT 
         u.IdPokemon,
-        COUNT(DISTINCT u.Edicion || '-' || u.IdTorneo) AS CantidadTorneos
+        COUNT(DISTINCT (u.Edicion, u.IdTorneo)) AS CantidadTorneos
     FROM Utilizar u
     GROUP BY u.IdPokemon
-    HAVING COUNT(DISTINCT u.Edicion || '-' || u.IdTorneo) > 1
+    HAVING COUNT(DISTINCT (u.Edicion, u.IdTorneo)) > 1
 )
 SELECT 
     p.IdPokemon,
-    p.Nombre,
+    p.Nombre AS PokemonNombre,
     up.CantidadTorneos
 FROM UsoPokemon up 
 JOIN Pokemon p ON up.IdPokemon = p.IdPokemon
 ORDER BY up.CantidadTorneos DESC, p.Nombre;
-
-
-
-
-
---- ya con esas, no?
-
--- 11. Sacar los pokemones mas usados por los ganadores de las peleas.
-
-
--- 12. Porcentaje de pokemones por tipo capturados en el torneo de captura.
-
-
--- 13. El jugador que más peleas perdió en el torneo de peleas.
-
-
--- SELECT 
---     pu.Nombre || ' ' || pu.ApellidoPaterno || ' ' || pu.ApellidoMaterno AS NombreCompleto,
--- FROM peleatorneo pt
--- INNER JOINT Pokemon p
---     ON pt.IdPokemon = p.IdPokemon
--- INNER JOIN CuentaPokemonGo cpg
---     ON pt.CodigoDeEntrenador = cpg.CodigoDeEntrenador
--- INNER JOIN ParticipanteUNAM pu
---     ON cpg.IdPersona = pu.IdPersona
--- WHERE pt.idPersona <> p.IdPersona
--- GROUP BY pu.IdPersona
-
-
--- 17. Listar los participantes que han ganado en más de un torneo, indicando en cuántos torneos han ganado.
-
-WITH Ganadores AS (
-    SELECT IdPersona, Edicion || '-' || IdTorneo AS Torneo FROM TorneoPelea WHERE IdPersona IS NOT NULL
-    UNION ALL
-    SELECT IdPersona, Edicion || '-' || IdTorneo AS Torneo FROM TorneoDistanciaRecorrida WHERE IdPersona IS NOT NULL
-    UNION ALL
-    SELECT IdPersona, Edicion || '-' || IdTorneo AS Torneo FROM TorneoCapturaShinys WHERE IdPersona IS NOT NULL
-),
-ConteoGanadores AS (
-    SELECT 
-        g.IdPersona,
-        COUNT(DISTINCT g.Torneo) AS CantidadTorneosGanados
-    FROM Ganadores g
-    GROUP BY g.IdPersona
-    HAVING COUNT(DISTINCT g.Torneo) > 1
-)
-SELECT 
-    pu.IdPersona,
-    pu.Nombre || ' ' || pu.ApellidoPaterno || ' ' || pu.ApellidoMaterno AS NombreCompleto,
-    cg.CantidadTorneosGanados
-FROM ConteoGanadores cg
-JOIN ParticipanteUNAM pu ON cg.IdPersona = pu.IdPersona
-ORDER BY cg.CantidadTorneosGanados DESC, pu.Nombre;
-
-
